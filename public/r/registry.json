@@ -5557,6 +5557,33 @@
       }
     },
     {
+      "name": "map",
+      "type": "registry:component",
+      "title": "Map",
+      "description": "MapLibre 기반 지도 컴포넌트(map, maplibre, interactive map). API 키 없이 CARTO 무료 베이스맵으로 바로 뜨고 라이트·다크 스타일을 테마에 맞춰 바꾼다. 위치 표시나 지역 시각화가 필요할 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "maplibre-gl@^6"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/map.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/map.tsx"
+        }
+      ],
+      "meta": {
+        "source": "mapcn",
+        "sourceUrl": "https://mapcn.vercel.app/docs/components/map",
+        "author": "AnmolSaini16",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "marquee",
       "type": "registry:component",
       "title": "Marquee",

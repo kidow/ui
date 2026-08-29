@@ -201,6 +201,7 @@ import MagneticDemo from './magnetic'
 import MagneticDockDemo from './magnetic-dock'
 import MagneticSnapRevealDemo from './magnetic-snap-reveal'
 import ManifestoTextRevealDemo from './manifesto-text-reveal'
+import MapDemo from './map'
 import MarqueeDemo from './marquee'
 import MarqueeSpellDemo from './marquee-spell'
 import MaskedAvatarsDemo from './masked-avatars'
@@ -547,6 +548,7 @@ export const demos: Record<string, ComponentType> = {
   'magnetic-dock': MagneticDockDemo,
   'magnetic-snap-reveal': MagneticSnapRevealDemo,
   'manifesto-text-reveal': ManifestoTextRevealDemo,
+  'map': MapDemo,
   'marquee': MarqueeDemo,
   'marquee-spell': MarqueeSpellDemo,
   'masked-avatars': MaskedAvatarsDemo,
