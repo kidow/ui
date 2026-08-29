@@ -17,6 +17,15 @@ export interface RelatedRegistry {
 
 export const RELATED_REGISTRIES: RelatedRegistry[] = [
   {
+    name: 'DevsLoka UI',
+    url: 'https://ui.devsloka.in/components',
+    summary:
+      'shadcn 레지스트리로 배포되는 컴포넌트 27종. morphing 카드·모달·내비와 온보딩 투어처럼 여기 없는 것들이 있다.',
+    reason:
+      '라이선스를 찾을 수 없다. 사이트 어디에도 명시가 없고 공개 저장소나 npm 패키지도 없어 소스가 /r/*.json 으로만 배포된다. 재배포해도 되는지 확인할 방법이 없다.',
+    revisitWhen: '사이트나 저장소에 라이선스가 명시되면',
+  },
+  {
     name: 'ui-x',
     url: 'https://ui-x.junwen-k.dev',
     summary:
