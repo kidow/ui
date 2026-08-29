@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "weather-sm-04",
+  "title": "Weather Sm 04",
+  "description": "현재 날씨와 예보를 보여주는 작은 날씨 위젯(weather widget, 기온, 예보). Open-Meteo 무료 API를 쓰며 API 키가 필요 없다.",
+  "registryDependencies": [
+    "@kidow/use-location",
+    "@kidow/use-weather",
+    "@kidow/weather-utils",
+    "@kidow/widget",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/weather-sm-04.tsx",
+      "content": "import {\n  DEFAULT_LOCATION,\n  useLocation,\n} from \"@/components/kidow/use-location\";\nimport { useWeather } from \"@/components/kidow/use-weather\";\nimport { getWeatherDescription } from \"@/components/kidow/weather-utils\";\nimport { Label } from \"@/components/ui/label\";\nimport { Widget, WidgetContent } from \"@/components/kidow/widget\";\n\nexport default function WidgetDemo() {\n  const { coordinates, isLoading: isLoadingLocation } = useLocation();\n  const { data: weather, isLoading: isLoadingWeather } = useWeather(\n    coordinates?.lat ?? DEFAULT_LOCATION.lat,\n    coordinates?.lon ?? DEFAULT_LOCATION.lon,\n  );\n\n  const isLoading = isLoadingLocation || isLoadingWeather;\n\n  const currentDate = new Date().toLocaleDateString(\"en-US\", {\n    weekday: \"short\",\n    month: \"short\",\n    day: \"numeric\",\n  });\n\n  if (isLoading) {\n    return (\n      <Widget>\n        <WidgetContent className=\"mx-auto flex-col items-center justify-center\">\n          <Label className=\"animate-pulse\">Loading...</Label>\n        </WidgetContent>\n      </Widget>\n    );\n  }\n\n  return (\n    <Widget>\n      <WidgetContent className=\"mx-auto flex-col items-start\">\n        <Label className=\"text-6xl\">{weather?.temperature}&deg;</Label>\n        <Label className=\"text-2xl\">\n          {weather ? getWeatherDescription(weather.weatherCode) : \"Sunny\"}\n        </Label>\n        <Label>{currentDate}</Label>\n      </WidgetContent>\n    </Widget>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/weather-sm-04.tsx"
+    }
+  ],
+  "meta": {
+    "source": "wigggle-ui",
+    "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/weather-sm-04",
+    "author": "wigggle-ui",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

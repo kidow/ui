@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sports-sm-04",
+  "title": "Sports Sm 04",
+  "description": "경기 점수와 일정을 보여주는 작은 스포츠 위젯(sports widget, 스코어보드, 경기 결과).",
+  "registryDependencies": [
+    "@kidow/widget",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/sports-sm-04.tsx",
+      "content": "import * as React from \"react\";\r\nimport Image from \"next/image\";\r\n\r\nimport {\r\n  Widget,\r\n  WidgetContent,\r\n  WidgetHeader,\r\n  WidgetTitle,\r\n} from \"@/components/kidow/widget\";\r\nimport { Label } from \"@/components/ui/label\";\r\n\r\nconst upcomingMatches = [\r\n  {\r\n    home: \"/assets/logos/fcb.png\",\r\n    away: \"/assets/logos/bvb.png\",\r\n    date: \"25 Oct\",\r\n    time: \"8:30 PM\",\r\n  },\r\n  {\r\n    home: \"/assets/logos/mci.png\",\r\n    away: \"/assets/logos/fcb.png\",\r\n    date: \"29 Oct\",\r\n    time: \"12:30 PM\",\r\n  },\r\n  {\r\n    home: \"/assets/logos/bvb.png\",\r\n    away: \"/assets/logos/fcb.png\",\r\n    date: \"31 Oct\",\r\n    time: \"8:30 PM\",\r\n  },\r\n];\r\n\r\nexport default function WidgetDemo() {\r\n  return (\r\n    <Widget design=\"mumbai\">\r\n      <WidgetHeader>\r\n        <WidgetTitle className=\"text-muted-foreground text-sm font-normal\">\r\n          Fixtures\r\n        </WidgetTitle>\r\n      </WidgetHeader>\r\n      <WidgetContent className=\"mt-2 flex-col items-center gap-1.5\">\r\n        {upcomingMatches.map((match, i) => (\r\n          <div\r\n            key={i}\r\n            className=\"bg-secondary flex w-full items-center justify-between rounded-lg px-2 py-1\"\r\n          >\r\n            <Image\r\n              className=\"size-7\"\r\n              src={match.home}\r\n              alt={match.home}\r\n              width={64}\r\n              height={64}\r\n            />\r\n            <div className=\"flex flex-col items-center justify-center gap-0\">\r\n              <Label className=\"text-muted-foreground text-xs\">\r\n                {match.date}\r\n              </Label>\r\n              <Label className=\"text-muted-foreground text-xs\">\r\n                {match.time}\r\n              </Label>\r\n            </div>\r\n            <Image\r\n              className=\"size-7\"\r\n              src={match.away}\r\n              alt={match.away}\r\n              width={64}\r\n              height={64}\r\n            />\r\n          </div>\r\n        ))}\r\n      </WidgetContent>\r\n    </Widget>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "components/kidow/sports-sm-04.tsx"
+    }
+  ],
+  "meta": {
+    "source": "wigggle-ui",
+    "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/sports-sm-04",
+    "author": "wigggle-ui",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

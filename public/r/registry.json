@@ -1201,6 +1201,669 @@
       }
     },
     {
+      "name": "calendar-lg-01",
+      "type": "registry:component",
+      "title": "Calendar Lg 01",
+      "description": "날짜를 보여주는 큰 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/utils",
+        "@kidow/widget",
+        "button",
+        "label",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-lg-01.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-lg-01.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-lg-01",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-lg-02",
+      "type": "registry:component",
+      "title": "Calendar Lg 02",
+      "description": "날짜를 보여주는 큰 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-lg-02.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-lg-02.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-lg-02",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-lg-03",
+      "type": "registry:component",
+      "title": "Calendar Lg 03",
+      "description": "날짜를 보여주는 큰 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "avatar",
+        "button",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-lg-03.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-lg-03.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-lg-03",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-lg-04",
+      "type": "registry:component",
+      "title": "Calendar Lg 04",
+      "description": "날짜를 보여주는 큰 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-lg-04.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-lg-04.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-lg-04",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-lg-05",
+      "type": "registry:component",
+      "title": "Calendar Lg 05",
+      "description": "날짜를 보여주는 큰 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "button",
+        "label",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-lg-05.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-lg-05.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-lg-05",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-lg-06",
+      "type": "registry:component",
+      "title": "Calendar Lg 06",
+      "description": "날짜를 보여주는 큰 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/utils",
+        "@kidow/widget",
+        "badge",
+        "button",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-lg-06.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-lg-06.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-lg-06",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-md-01",
+      "type": "registry:component",
+      "title": "Calendar Md 01",
+      "description": "날짜를 보여주는 중간 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "badge",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-md-01.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-md-01.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-md-01",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-md-02",
+      "type": "registry:component",
+      "title": "Calendar Md 02",
+      "description": "날짜를 보여주는 중간 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "badge",
+        "button",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-md-02.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-md-02.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-md-02",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-md-03",
+      "type": "registry:component",
+      "title": "Calendar Md 03",
+      "description": "날짜를 보여주는 중간 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "badge",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-md-03.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-md-03.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-md-03",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-md-04",
+      "type": "registry:component",
+      "title": "Calendar Md 04",
+      "description": "날짜를 보여주는 중간 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "badge",
+        "button",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-md-04.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-md-04.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-md-04",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-md-05",
+      "type": "registry:component",
+      "title": "Calendar Md 05",
+      "description": "날짜를 보여주는 중간 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/utils",
+        "@kidow/widget",
+        "button",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-md-05.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-md-05.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-md-05",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-md-06",
+      "type": "registry:component",
+      "title": "Calendar Md 06",
+      "description": "날짜를 보여주는 중간 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "button",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-md-06.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-md-06.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-md-06",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-sm-01",
+      "type": "registry:component",
+      "title": "Calendar Sm 01",
+      "description": "날짜를 보여주는 작은 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-sm-01.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-sm-01.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-sm-01",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-sm-02",
+      "type": "registry:component",
+      "title": "Calendar Sm 02",
+      "description": "날짜를 보여주는 작은 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "badge",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-sm-02.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-sm-02.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-sm-02",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-sm-03",
+      "type": "registry:component",
+      "title": "Calendar Sm 03",
+      "description": "날짜를 보여주는 작은 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "badge",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-sm-03.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-sm-03.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-sm-03",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-sm-04",
+      "type": "registry:component",
+      "title": "Calendar Sm 04",
+      "description": "날짜를 보여주는 작은 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "badge",
+        "button",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-sm-04.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-sm-04.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-sm-04",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-sm-05",
+      "type": "registry:component",
+      "title": "Calendar Sm 05",
+      "description": "날짜를 보여주는 작은 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "badge",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-sm-05.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-sm-05.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-sm-05",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-sm-06",
+      "type": "registry:component",
+      "title": "Calendar Sm 06",
+      "description": "날짜를 보여주는 작은 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/utils",
+        "@kidow/widget",
+        "button",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-sm-06.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-sm-06.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-sm-06",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-sm-07",
+      "type": "registry:component",
+      "title": "Calendar Sm 07",
+      "description": "날짜를 보여주는 작은 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "button",
+        "label",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-sm-07.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-sm-07.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-sm-07",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-sm-08",
+      "type": "registry:component",
+      "title": "Calendar Sm 08",
+      "description": "날짜를 보여주는 작은 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-sm-08.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-sm-08.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-sm-08",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-sm-09",
+      "type": "registry:component",
+      "title": "Calendar Sm 09",
+      "description": "날짜를 보여주는 작은 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-sm-09.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-sm-09.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-sm-09",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calendar-sm-10",
+      "type": "registry:component",
+      "title": "Calendar Sm 10",
+      "description": "날짜를 보여주는 작은 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-sm-10.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-sm-10.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-sm-10",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "calender",
       "type": "registry:component",
       "title": "Calender",
@@ -1482,6 +2145,29 @@
       }
     },
     {
+      "name": "circular-progress",
+      "type": "registry:component",
+      "title": "Circular Progress",
+      "description": "진행률을 원형 링으로 보여주는 게이지(circular progress, ring progress). 완료율이나 목표 달성도를 표시할 때 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/circular-progress.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/circular-progress.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/circular-progress",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "client-tweet-card",
       "type": "registry:component",
       "title": "Client Tweet Card",
@@ -1505,6 +2191,370 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "clock-sm-01",
+      "type": "registry:component",
+      "title": "Clock Sm 01",
+      "description": "현재 시각을 보여주는 작은 시계 위젯(clock widget, 시계, 아날로그·디지털 시간). 대시보드 상단이나 사이드바에 시간을 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/clock-sm-01.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/clock-sm-01.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/clock-sm-01",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "clock-sm-02",
+      "type": "registry:component",
+      "title": "Clock Sm 02",
+      "description": "현재 시각을 보여주는 작은 시계 위젯(clock widget, 시계, 아날로그·디지털 시간). 대시보드 상단이나 사이드바에 시간을 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/clock-sm-02.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/clock-sm-02.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/clock-sm-02",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "clock-sm-03",
+      "type": "registry:component",
+      "title": "Clock Sm 03",
+      "description": "현재 시각을 보여주는 작은 시계 위젯(clock widget, 시계, 아날로그·디지털 시간). 대시보드 상단이나 사이드바에 시간을 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/clock-sm-03.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/clock-sm-03.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/clock-sm-03",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "clock-sm-04",
+      "type": "registry:component",
+      "title": "Clock Sm 04",
+      "description": "현재 시각을 보여주는 작은 시계 위젯(clock widget, 시계, 아날로그·디지털 시간). 대시보드 상단이나 사이드바에 시간을 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/clock-sm-04.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/clock-sm-04.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/clock-sm-04",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "clock-sm-05",
+      "type": "registry:component",
+      "title": "Clock Sm 05",
+      "description": "현재 시각을 보여주는 작은 시계 위젯(clock widget, 시계, 아날로그·디지털 시간). 대시보드 상단이나 사이드바에 시간을 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/clock-sm-05.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/clock-sm-05.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/clock-sm-05",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "clock-sm-06",
+      "type": "registry:component",
+      "title": "Clock Sm 06",
+      "description": "현재 시각을 보여주는 작은 시계 위젯(clock widget, 시계, 아날로그·디지털 시간). 대시보드 상단이나 사이드바에 시간을 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/clock-sm-06.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/clock-sm-06.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/clock-sm-06",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "clock-sm-07",
+      "type": "registry:component",
+      "title": "Clock Sm 07",
+      "description": "현재 시각을 보여주는 작은 시계 위젯(clock widget, 시계, 아날로그·디지털 시간). 대시보드 상단이나 사이드바에 시간을 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/clock-sm-07.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/clock-sm-07.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/clock-sm-07",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "clock-sm-08",
+      "type": "registry:component",
+      "title": "Clock Sm 08",
+      "description": "현재 시각을 보여주는 작은 시계 위젯(clock widget, 시계, 아날로그·디지털 시간). 대시보드 상단이나 사이드바에 시간을 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/clock-sm-08.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/clock-sm-08.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/clock-sm-08",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "clock-sm-09",
+      "type": "registry:component",
+      "title": "Clock Sm 09",
+      "description": "현재 시각을 보여주는 작은 시계 위젯(clock widget, 시계, 아날로그·디지털 시간). 대시보드 상단이나 사이드바에 시간을 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/clock-sm-09.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/clock-sm-09.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/clock-sm-09",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "clock-sm-10",
+      "type": "registry:component",
+      "title": "Clock Sm 10",
+      "description": "현재 시각을 보여주는 작은 시계 위젯(clock widget, 시계, 아날로그·디지털 시간). 대시보드 상단이나 사이드바에 시간을 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label",
+        "switch"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/clock-sm-10.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/clock-sm-10.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/clock-sm-10",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "clock-sm-11",
+      "type": "registry:component",
+      "title": "Clock Sm 11",
+      "description": "현재 시각을 보여주는 작은 시계 위젯(clock widget, 시계, 아날로그·디지털 시간). 대시보드 상단이나 사이드바에 시간을 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "button",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/clock-sm-11.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/clock-sm-11.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/clock-sm-11",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "clock-sm-12",
+      "type": "registry:component",
+      "title": "Clock Sm 12",
+      "description": "현재 시각을 보여주는 작은 시계 위젯(clock widget, 시계, 아날로그·디지털 시간). 대시보드 상단이나 사이드바에 시간을 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "button",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/clock-sm-12.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/clock-sm-12.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/clock-sm-12",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "clock-sm-13",
+      "type": "registry:component",
+      "title": "Clock Sm 13",
+      "description": "현재 시각을 보여주는 작은 시계 위젯(clock widget, 시계, 아날로그·디지털 시간). 대시보드 상단이나 사이드바에 시간을 띄울 때 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/clock-sm-13.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/clock-sm-13.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/clock-sm-13",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -2215,6 +3265,322 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "dashboard-lg-01",
+      "type": "registry:component",
+      "title": "Dashboard Lg 01",
+      "description": "지표를 요약해 보여주는 큰 대시보드 위젯(dashboard widget, 통계 카드, KPI). 방문자·매출 같은 수치를 차트와 함께 한눈에 보여준다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "button",
+        "chart",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dashboard-lg-01.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dashboard-lg-01.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/dashboard-lg-01",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "dashboard-lg-02",
+      "type": "registry:component",
+      "title": "Dashboard Lg 02",
+      "description": "지표를 요약해 보여주는 큰 대시보드 위젯(dashboard widget, 통계 카드, KPI). 방문자·매출 같은 수치를 차트와 함께 한눈에 보여준다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "chart",
+        "label",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dashboard-lg-02.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dashboard-lg-02.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/dashboard-lg-02",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "dashboard-md-01",
+      "type": "registry:component",
+      "title": "Dashboard Md 01",
+      "description": "지표를 요약해 보여주는 중간 대시보드 위젯(dashboard widget, 통계 카드, KPI). 방문자·매출 같은 수치를 차트와 함께 한눈에 보여준다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "chart",
+        "table"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dashboard-md-01.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dashboard-md-01.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/dashboard-md-01",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "dashboard-md-02",
+      "type": "registry:component",
+      "title": "Dashboard Md 02",
+      "description": "지표를 요약해 보여주는 중간 대시보드 위젯(dashboard widget, 통계 카드, KPI). 방문자·매출 같은 수치를 차트와 함께 한눈에 보여준다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/icons",
+        "@kidow/utils",
+        "@kidow/widget",
+        "avatar",
+        "button",
+        "dropdown-menu",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dashboard-md-02.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dashboard-md-02.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/dashboard-md-02",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "dashboard-sm-01",
+      "type": "registry:component",
+      "title": "Dashboard Sm 01",
+      "description": "지표를 요약해 보여주는 작은 대시보드 위젯(dashboard widget, 통계 카드, KPI). 방문자·매출 같은 수치를 차트와 함께 한눈에 보여준다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/utils",
+        "@kidow/widget",
+        "label",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dashboard-sm-01.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dashboard-sm-01.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/dashboard-sm-01",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "dashboard-sm-02",
+      "type": "registry:component",
+      "title": "Dashboard Sm 02",
+      "description": "지표를 요약해 보여주는 작은 대시보드 위젯(dashboard widget, 통계 카드, KPI). 방문자·매출 같은 수치를 차트와 함께 한눈에 보여준다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "chart",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dashboard-sm-02.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dashboard-sm-02.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/dashboard-sm-02",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "dashboard-sm-03",
+      "type": "registry:component",
+      "title": "Dashboard Sm 03",
+      "description": "지표를 요약해 보여주는 작은 대시보드 위젯(dashboard widget, 통계 카드, KPI). 방문자·매출 같은 수치를 차트와 함께 한눈에 보여준다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "table"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dashboard-sm-03.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dashboard-sm-03.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/dashboard-sm-03",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "dashboard-sm-04",
+      "type": "registry:component",
+      "title": "Dashboard Sm 04",
+      "description": "지표를 요약해 보여주는 작은 대시보드 위젯(dashboard widget, 통계 카드, KPI). 방문자·매출 같은 수치를 차트와 함께 한눈에 보여준다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "chart"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dashboard-sm-04.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dashboard-sm-04.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/dashboard-sm-04",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "dashboard-sm-05",
+      "type": "registry:component",
+      "title": "Dashboard Sm 05",
+      "description": "지표를 요약해 보여주는 작은 대시보드 위젯(dashboard widget, 통계 카드, KPI). 방문자·매출 같은 수치를 차트와 함께 한눈에 보여준다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "avatar",
+        "button",
+        "label",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dashboard-sm-05.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dashboard-sm-05.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/dashboard-sm-05",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "dashboard-sm-06",
+      "type": "registry:component",
+      "title": "Dashboard Sm 06",
+      "description": "지표를 요약해 보여주는 작은 대시보드 위젯(dashboard widget, 통계 카드, KPI). 방문자·매출 같은 수치를 차트와 함께 한눈에 보여준다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "button",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dashboard-sm-06.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dashboard-sm-06.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/dashboard-sm-06",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -4253,6 +5619,29 @@
       }
     },
     {
+      "name": "icons",
+      "type": "registry:component",
+      "title": "Icons",
+      "description": "위젯에서 쓰는 아이콘 모음(icons, svg icon set).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/icons.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/icons.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/icons",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "image-comparison",
       "type": "registry:component",
       "title": "Image Comparison",
@@ -4674,6 +6063,36 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "item",
+      "type": "registry:component",
+      "title": "Item",
+      "description": "아이콘·제목·설명·액션을 한 줄로 배치하는 목록 항목(list item, row). 설정 목록이나 알림 목록에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@radix-ui/react-slot",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/item.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/item.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/item",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -5876,6 +7295,158 @@
       }
     },
     {
+      "name": "media-md-04",
+      "type": "registry:component",
+      "title": "Media Md 04",
+      "description": "음악·영상 재생 상태를 보여주는 중간 미디어 위젯(media widget, now playing, 플레이어 카드).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/utils",
+        "@kidow/widget",
+        "carousel"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/media-md-04.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/media-md-04.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/media-md-04",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "media-sm-05",
+      "type": "registry:component",
+      "title": "Media Sm 05",
+      "description": "음악·영상 재생 상태를 보여주는 작은 미디어 위젯(media widget, now playing, 플레이어 카드).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/media-sm-05.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/media-sm-05.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/media-sm-05",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "media-sm-06",
+      "type": "registry:component",
+      "title": "Media Sm 06",
+      "description": "음악·영상 재생 상태를 보여주는 작은 미디어 위젯(media widget, now playing, 플레이어 카드).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/media-sm-06.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/media-sm-06.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/media-sm-06",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "media-sm-07",
+      "type": "registry:component",
+      "title": "Media Sm 07",
+      "description": "음악·영상 재생 상태를 보여주는 작은 미디어 위젯(media widget, now playing, 플레이어 카드).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/media-sm-07.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/media-sm-07.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/media-sm-07",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "media-sm-08",
+      "type": "registry:component",
+      "title": "Media Sm 08",
+      "description": "음악·영상 재생 상태를 보여주는 작은 미디어 위젯(media widget, now playing, 플레이어 카드).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "button",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/media-sm-08.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/media-sm-08.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/media-sm-08",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "meteors",
       "type": "registry:component",
       "title": "Meteors",
@@ -6917,6 +8488,343 @@
         "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "productivity-md-01",
+      "type": "registry:component",
+      "title": "Productivity Md 01",
+      "description": "할 일과 집중 시간을 다루는 중간 생산성 위젯(productivity widget, todo, 타이머, 포모도로).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@kidow/icons",
+        "@kidow/widget",
+        "chart",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/productivity-md-01.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/productivity-md-01.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/productivity-md-01",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "productivity-md-02",
+      "type": "registry:component",
+      "title": "Productivity Md 02",
+      "description": "할 일과 집중 시간을 다루는 중간 생산성 위젯(productivity widget, todo, 타이머, 포모도로).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/utils",
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/productivity-md-02.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/productivity-md-02.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/productivity-md-02",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "productivity-md-03",
+      "type": "registry:component",
+      "title": "Productivity Md 03",
+      "description": "할 일과 집중 시간을 다루는 중간 생산성 위젯(productivity widget, todo, 타이머, 포모도로).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/productivity-md-03.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/productivity-md-03.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/productivity-md-03",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "productivity-md-04",
+      "type": "registry:component",
+      "title": "Productivity Md 04",
+      "description": "할 일과 집중 시간을 다루는 중간 생산성 위젯(productivity widget, todo, 타이머, 포모도로).",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/circular-progress",
+        "@kidow/widget",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/productivity-md-04.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/productivity-md-04.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/productivity-md-04",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "productivity-sm-01",
+      "type": "registry:component",
+      "title": "Productivity Sm 01",
+      "description": "할 일과 집중 시간을 다루는 작은 생산성 위젯(productivity widget, todo, 타이머, 포모도로).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/utils",
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/productivity-sm-01.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/productivity-sm-01.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/productivity-sm-01",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "productivity-sm-02",
+      "type": "registry:component",
+      "title": "Productivity Sm 02",
+      "description": "할 일과 집중 시간을 다루는 작은 생산성 위젯(productivity widget, todo, 타이머, 포모도로).",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/utils",
+        "@kidow/widget",
+        "button",
+        "select",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/productivity-sm-02.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/productivity-sm-02.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/productivity-sm-02",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "productivity-sm-03",
+      "type": "registry:component",
+      "title": "Productivity Sm 03",
+      "description": "할 일과 집중 시간을 다루는 작은 생산성 위젯(productivity widget, todo, 타이머, 포모도로).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "button",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/productivity-sm-03.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/productivity-sm-03.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/productivity-sm-03",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "productivity-sm-04",
+      "type": "registry:component",
+      "title": "Productivity Sm 04",
+      "description": "할 일과 집중 시간을 다루는 작은 생산성 위젯(productivity widget, todo, 타이머, 포모도로).",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/utils",
+        "@kidow/widget",
+        "label",
+        "separator",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/productivity-sm-04.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/productivity-sm-04.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/productivity-sm-04",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "productivity-sm-05",
+      "type": "registry:component",
+      "title": "Productivity Sm 05",
+      "description": "할 일과 집중 시간을 다루는 작은 생산성 위젯(productivity widget, todo, 타이머, 포모도로).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/utils",
+        "@kidow/widget",
+        "button",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/productivity-sm-05.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/productivity-sm-05.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/productivity-sm-05",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "productivity-sm-06",
+      "type": "registry:component",
+      "title": "Productivity Sm 06",
+      "description": "할 일과 집중 시간을 다루는 작은 생산성 위젯(productivity widget, todo, 타이머, 포모도로).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/productivity-sm-06.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/productivity-sm-06.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/productivity-sm-06",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "productivity-sm-07",
+      "type": "registry:component",
+      "title": "Productivity Sm 07",
+      "description": "할 일과 집중 시간을 다루는 작은 생산성 위젯(productivity widget, todo, 타이머, 포모도로).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "badge",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/productivity-sm-07.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/productivity-sm-07.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/productivity-sm-07",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -8329,6 +10237,199 @@
       }
     },
     {
+      "name": "sports-sm-01",
+      "type": "registry:component",
+      "title": "Sports Sm 01",
+      "description": "경기 점수와 일정을 보여주는 작은 스포츠 위젯(sports widget, 스코어보드, 경기 결과).",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sports-sm-01.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sports-sm-01.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/sports-sm-01",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "sports-sm-02",
+      "type": "registry:component",
+      "title": "Sports Sm 02",
+      "description": "경기 점수와 일정을 보여주는 작은 스포츠 위젯(sports widget, 스코어보드, 경기 결과).",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "badge",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sports-sm-02.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sports-sm-02.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/sports-sm-02",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "sports-sm-03",
+      "type": "registry:component",
+      "title": "Sports Sm 03",
+      "description": "경기 점수와 일정을 보여주는 작은 스포츠 위젯(sports widget, 스코어보드, 경기 결과).",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sports-sm-03.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sports-sm-03.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/sports-sm-03",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "sports-sm-04",
+      "type": "registry:component",
+      "title": "Sports Sm 04",
+      "description": "경기 점수와 일정을 보여주는 작은 스포츠 위젯(sports widget, 스코어보드, 경기 결과).",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sports-sm-04.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sports-sm-04.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/sports-sm-04",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "sports-sm-05",
+      "type": "registry:component",
+      "title": "Sports Sm 05",
+      "description": "경기 점수와 일정을 보여주는 작은 스포츠 위젯(sports widget, 스코어보드, 경기 결과).",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sports-sm-05.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sports-sm-05.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/sports-sm-05",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "sports-sm-06",
+      "type": "registry:component",
+      "title": "Sports Sm 06",
+      "description": "경기 점수와 일정을 보여주는 작은 스포츠 위젯(sports widget, 스코어보드, 경기 결과).",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sports-sm-06.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sports-sm-06.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/sports-sm-06",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "sports-sm-07",
+      "type": "registry:component",
+      "title": "Sports Sm 07",
+      "description": "경기 점수와 일정을 보여주는 작은 스포츠 위젯(sports widget, 스코어보드, 경기 결과).",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/utils",
+        "@kidow/widget",
+        "label",
+        "table"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sports-sm-07.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sports-sm-07.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/sports-sm-07",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "spotify-card",
       "type": "registry:component",
       "title": "Spotify Card",
@@ -8605,6 +10706,185 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "stock-sm-01",
+      "type": "registry:component",
+      "title": "Stock Sm 01",
+      "description": "주가와 등락을 보여주는 작은 주식 위젯(stock widget, 시세, 티커, 차트).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/stock-sm-01.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stock-sm-01.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/stock-sm-01",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "stock-sm-02",
+      "type": "registry:component",
+      "title": "Stock Sm 02",
+      "description": "주가와 등락을 보여주는 작은 주식 위젯(stock widget, 시세, 티커, 차트).",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/stock-sm-02.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stock-sm-02.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/stock-sm-02",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "stock-sm-03",
+      "type": "registry:component",
+      "title": "Stock Sm 03",
+      "description": "주가와 등락을 보여주는 작은 주식 위젯(stock widget, 시세, 티커, 차트).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/utils",
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/stock-sm-03.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stock-sm-03.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/stock-sm-03",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "stock-sm-04",
+      "type": "registry:component",
+      "title": "Stock Sm 04",
+      "description": "주가와 등락을 보여주는 작은 주식 위젯(stock widget, 시세, 티커, 차트).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "chart",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/stock-sm-04.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stock-sm-04.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/stock-sm-04",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "stock-sm-05",
+      "type": "registry:component",
+      "title": "Stock Sm 05",
+      "description": "주가와 등락을 보여주는 작은 주식 위젯(stock widget, 시세, 티커, 차트).",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "label",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/stock-sm-05.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stock-sm-05.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/stock-sm-05",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "stock-sm-06",
+      "type": "registry:component",
+      "title": "Stock Sm 06",
+      "description": "주가와 등락을 보여주는 작은 주식 위젯(stock widget, 시세, 티커, 차트).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@kidow/widget",
+        "chart"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/stock-sm-06.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stock-sm-06.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/stock-sm-06",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -9235,6 +11515,52 @@
       }
     },
     {
+      "name": "use-location",
+      "type": "registry:component",
+      "title": "Use Location",
+      "description": "브라우저 위치와 IP 기반 역지오코딩으로 현재 지역을 알아내는 훅(use location, geolocation). ipwho.is 와 BigDataCloud 무료 API를 쓴다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/use-location.ts",
+          "type": "registry:component",
+          "target": "hooks/use-location.ts"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/use-location",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "use-weather",
+      "type": "registry:component",
+      "title": "Use Weather",
+      "description": "좌표로 현재 날씨와 7일 예보를 가져오는 훅(use weather, forecast). Open-Meteo 무료 API를 쓰며 키가 필요 없다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/use-weather.ts",
+          "type": "registry:component",
+          "target": "hooks/use-weather.ts"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/use-weather",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "velocity-brake-reveal",
       "type": "registry:component",
       "title": "Velocity Brake Reveal",
@@ -9493,6 +11819,390 @@
       }
     },
     {
+      "name": "weather-md-01",
+      "type": "registry:component",
+      "title": "Weather Md 01",
+      "description": "현재 날씨와 예보를 보여주는 중간 날씨 위젯(weather widget, 기온, 예보). Open-Meteo 무료 API를 쓰며 API 키가 필요 없다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/use-location",
+        "@kidow/use-weather",
+        "@kidow/weather-utils",
+        "@kidow/widget",
+        "label",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/weather-md-01.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/weather-md-01.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/weather-md-01",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "weather-md-02",
+      "type": "registry:component",
+      "title": "Weather Md 02",
+      "description": "현재 날씨와 예보를 보여주는 중간 날씨 위젯(weather widget, 기온, 예보). Open-Meteo 무료 API를 쓰며 API 키가 필요 없다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/use-location",
+        "@kidow/use-weather",
+        "@kidow/weather-utils",
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/weather-md-02.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/weather-md-02.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/weather-md-02",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "weather-sm-01",
+      "type": "registry:component",
+      "title": "Weather Sm 01",
+      "description": "현재 날씨와 예보를 보여주는 작은 날씨 위젯(weather widget, 기온, 예보). Open-Meteo 무료 API를 쓰며 API 키가 필요 없다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/use-location",
+        "@kidow/use-weather",
+        "@kidow/weather-utils",
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/weather-sm-01.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/weather-sm-01.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/weather-sm-01",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "weather-sm-02",
+      "type": "registry:component",
+      "title": "Weather Sm 02",
+      "description": "현재 날씨와 예보를 보여주는 작은 날씨 위젯(weather widget, 기온, 예보). Open-Meteo 무료 API를 쓰며 API 키가 필요 없다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/use-location",
+        "@kidow/use-weather",
+        "@kidow/weather-utils",
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/weather-sm-02.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/weather-sm-02.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/weather-sm-02",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "weather-sm-03",
+      "type": "registry:component",
+      "title": "Weather Sm 03",
+      "description": "현재 날씨와 예보를 보여주는 작은 날씨 위젯(weather widget, 기온, 예보). Open-Meteo 무료 API를 쓰며 API 키가 필요 없다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/use-location",
+        "@kidow/use-weather",
+        "@kidow/weather-utils",
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/weather-sm-03.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/weather-sm-03.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/weather-sm-03",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "weather-sm-04",
+      "type": "registry:component",
+      "title": "Weather Sm 04",
+      "description": "현재 날씨와 예보를 보여주는 작은 날씨 위젯(weather widget, 기온, 예보). Open-Meteo 무료 API를 쓰며 API 키가 필요 없다.",
+      "categories": [
+        "위젯"
+      ],
+      "registryDependencies": [
+        "@kidow/use-location",
+        "@kidow/use-weather",
+        "@kidow/weather-utils",
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/weather-sm-04.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/weather-sm-04.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/weather-sm-04",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "weather-sm-05",
+      "type": "registry:component",
+      "title": "Weather Sm 05",
+      "description": "현재 날씨와 예보를 보여주는 작은 날씨 위젯(weather widget, 기온, 예보). Open-Meteo 무료 API를 쓰며 API 키가 필요 없다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/use-location",
+        "@kidow/use-weather",
+        "@kidow/weather-utils",
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/weather-sm-05.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/weather-sm-05.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/weather-sm-05",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "weather-sm-06",
+      "type": "registry:component",
+      "title": "Weather Sm 06",
+      "description": "현재 날씨와 예보를 보여주는 작은 날씨 위젯(weather widget, 기온, 예보). Open-Meteo 무료 API를 쓰며 API 키가 필요 없다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/use-location",
+        "@kidow/use-weather",
+        "@kidow/weather-utils",
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/weather-sm-06.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/weather-sm-06.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/weather-sm-06",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "weather-sm-07",
+      "type": "registry:component",
+      "title": "Weather Sm 07",
+      "description": "현재 날씨와 예보를 보여주는 작은 날씨 위젯(weather widget, 기온, 예보). Open-Meteo 무료 API를 쓰며 API 키가 필요 없다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/use-location",
+        "@kidow/use-weather",
+        "@kidow/weather-utils",
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/weather-sm-07.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/weather-sm-07.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/weather-sm-07",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "weather-sm-08",
+      "type": "registry:component",
+      "title": "Weather Sm 08",
+      "description": "현재 날씨와 예보를 보여주는 작은 날씨 위젯(weather widget, 기온, 예보). Open-Meteo 무료 API를 쓰며 API 키가 필요 없다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/use-location",
+        "@kidow/use-weather",
+        "@kidow/weather-utils",
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/weather-sm-08.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/weather-sm-08.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/weather-sm-08",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "weather-sm-09",
+      "type": "registry:component",
+      "title": "Weather Sm 09",
+      "description": "현재 날씨와 예보를 보여주는 작은 날씨 위젯(weather widget, 기온, 예보). Open-Meteo 무료 API를 쓰며 API 키가 필요 없다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/use-location",
+        "@kidow/use-weather",
+        "@kidow/weather-utils",
+        "@kidow/widget",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/weather-sm-09.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/weather-sm-09.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/weather-sm-09",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "weather-utils",
+      "type": "registry:component",
+      "title": "Weather Utils",
+      "description": "날씨 코드를 아이콘과 설명으로 옮겨주는 유틸(weather utils, weather code). 날씨 위젯들이 함께 쓴다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/weather-utils.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/weather-utils.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/weather-utils",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "webgl-liquid",
       "type": "registry:component",
       "title": "Webgl Liquid",
@@ -9572,6 +12282,58 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "wheel-picker",
+      "type": "registry:component",
+      "title": "Wheel Picker",
+      "description": "굴려서 값을 고르는 휠 피커(wheel picker, iOS picker). 시간·날짜·수량 선택에 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@ncdai/react-wheel-picker"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/wheel-picker.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/wheel-picker.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/wheel-picker",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "widget",
+      "type": "registry:component",
+      "title": "Widget",
+      "description": "위젯의 공통 껍데기(widget shell, 카드 컨테이너). 크기와 여백 규격을 잡아주며 이 레지스트리의 위젯들이 모두 이걸 기반으로 한다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/widget.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/widget.tsx"
+        }
+      ],
+      "meta": {
+        "source": "wigggle-ui",
+        "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/widget",
+        "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {

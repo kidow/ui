@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "clock-sm-10",
+  "title": "Clock Sm 10",
+  "description": "현재 시각을 보여주는 작은 시계 위젯(clock widget, 시계, 아날로그·디지털 시간). 대시보드 상단이나 사이드바에 시간을 띄울 때 쓴다.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@kidow/widget",
+    "label",
+    "switch"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/clock-sm-10.tsx",
+      "content": "import * as React from \"react\";\nimport { AlarmClockIcon } from \"lucide-react\";\n\nimport { Switch } from \"@/components/ui/switch\";\nimport {\n  Widget,\n  WidgetContent,\n  WidgetHeader,\n  WidgetTitle,\n} from \"@/components/kidow/widget\";\nimport { Label } from \"@/components/ui/label\";\n\nconst alarms = [\"7:00 AM\", \"12:30 PM\", \"5:30 PM\", \"10:00 PM\"];\n\nexport default function WidgetDemo() {\n  return (\n    <Widget design=\"mumbai\">\n      <WidgetHeader>\n        <WidgetTitle>Alarms</WidgetTitle>\n        <AlarmClockIcon className=\"size-5\" />\n      </WidgetHeader>\n      <WidgetContent className=\"mt-3 flex-col gap-3\">\n        {alarms.map((alarm) => (\n          <div\n            key={alarm}\n            className=\"flex w-full items-center justify-between space-x-2\"\n          >\n            <Label htmlFor={alarm} className=\"font-semibold\">\n              {alarm}\n            </Label>\n            <Switch id={alarm} />\n          </div>\n        ))}\n      </WidgetContent>\n    </Widget>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/clock-sm-10.tsx"
+    }
+  ],
+  "meta": {
+    "source": "wigggle-ui",
+    "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/clock-sm-10",
+    "author": "wigggle-ui",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

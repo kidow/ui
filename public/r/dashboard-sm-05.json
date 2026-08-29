@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dashboard-sm-05",
+  "title": "Dashboard Sm 05",
+  "description": "지표를 요약해 보여주는 작은 대시보드 위젯(dashboard widget, 통계 카드, KPI). 방문자·매출 같은 수치를 차트와 함께 한눈에 보여준다.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@kidow/widget",
+    "avatar",
+    "button",
+    "label",
+    "tooltip"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/dashboard-sm-05.tsx",
+      "content": "import {\r\n  GitBranchIcon,\r\n  GitCommitHorizontalIcon,\r\n  ShieldCheckIcon,\r\n} from \"lucide-react\";\r\nimport Link from \"next/link\";\r\n\r\nimport {\r\n  Widget,\r\n  WidgetContent,\r\n  WidgetFooter,\r\n  WidgetHeader,\r\n  WidgetTitle,\r\n} from \"@/components/kidow/widget\";\r\nimport {\r\n  Avatar,\r\n  AvatarFallback,\r\n  AvatarImage,\r\n} from \"@/components/ui/avatar\";\r\nimport { Button } from \"@/components/ui/button\";\r\nimport { Label } from \"@/components/ui/label\";\r\nimport {\r\n  Tooltip,\r\n  TooltipContent,\r\n  TooltipTrigger,\r\n} from \"@/components/ui/tooltip\";\r\n\r\nexport default function WidgetDemo() {\r\n  return (\r\n    <Widget className=\"gap-2.5\" design=\"mumbai\">\r\n      <WidgetHeader className=\"items-center\">\r\n        <div className=\"flex items-center justify-start gap-2\">\r\n          <Avatar className=\"size-6\">\r\n            <AvatarImage\r\n              className=\"border-4 border-black\"\r\n              src=\"https://github.com/wigggle-ui.png\"\r\n              alt=\"@wigggle-ui\"\r\n            />\r\n            <AvatarFallback>WUI</AvatarFallback>\r\n          </Avatar>\r\n          <WidgetTitle className=\"text-sm font-medium\">wigggle-ui</WidgetTitle>\r\n        </div>\r\n        <Tooltip delayDuration={300}>\r\n          <TooltipTrigger asChild>\r\n            <div className=\"bg-productive size-2.5 animate-pulse rounded-full\" />\r\n          </TooltipTrigger>\r\n          <TooltipContent className=\"text-foreground px-2 py-1 text-sm\">\r\n            Running\r\n          </TooltipContent>\r\n        </Tooltip>\r\n      </WidgetHeader>\r\n      <WidgetContent className=\"w-full flex-col items-start justify-start gap-2\">\r\n        <div className=\"flex w-max items-center justify-center gap-2\">\r\n          <GitCommitHorizontalIcon className=\"stroke-muted-foreground size-5\" />\r\n          <Label className=\"text-sm\">chore: nextjs v16</Label>\r\n        </div>\r\n        <div className=\"flex w-max items-center justify-center gap-2\">\r\n          <GitBranchIcon className=\"stroke-muted-foreground size-5\" />\r\n          <Label className=\"-mt-1.5 text-sm\">prod</Label>\r\n        </div>\r\n        <div className=\"flex w-max items-center justify-center gap-2\">\r\n          <ShieldCheckIcon className=\"stroke-productive size-5\" />\r\n          <Label className=\"text-sm\">Firewall Active</Label>\r\n        </div>\r\n      </WidgetContent>\r\n      <WidgetFooter>\r\n        <Button className=\"w-full\" variant=\"outline\" size=\"sm\" asChild>\r\n          <Link href=\"https://github.com/wigggle-ui/ui\">Visit</Link>\r\n        </Button>\r\n      </WidgetFooter>\r\n    </Widget>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "components/kidow/dashboard-sm-05.tsx"
+    }
+  ],
+  "meta": {
+    "source": "wigggle-ui",
+    "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/dashboard-sm-05",
+    "author": "wigggle-ui",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

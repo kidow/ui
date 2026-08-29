@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "clock-sm-08",
+  "title": "Clock Sm 08",
+  "description": "현재 시각을 보여주는 작은 시계 위젯(clock widget, 시계, 아날로그·디지털 시간). 대시보드 상단이나 사이드바에 시간을 띄울 때 쓴다.",
+  "registryDependencies": [
+    "@kidow/widget",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/clock-sm-08.tsx",
+      "content": "import * as React from \"react\";\r\n\r\nimport {\r\n  Widget,\r\n  WidgetContent,\r\n  WidgetTitle,\r\n} from \"@/components/kidow/widget\";\r\nimport { Label } from \"@/components/ui/label\";\r\n\r\nexport default function WidgetDemo() {\r\n  return (\r\n    <Widget>\r\n      <WidgetContent className=\"flex-col justify-between\">\r\n        <div className=\"flex w-full items-center justify-between gap-2\">\r\n          <Label className=\"text-sm\">Mumbai</Label>\r\n          <WidgetTitle>8:15 AM</WidgetTitle>\r\n        </div>\r\n        <div className=\"flex w-full items-center justify-between gap-2\">\r\n          <Label className=\"text-sm\">London</Label>\r\n          <WidgetTitle>6:45 PM</WidgetTitle>\r\n        </div>\r\n        <div className=\"flex w-full items-center justify-between gap-2\">\r\n          <Label className=\"text-sm\">Tokyo</Label>\r\n          <WidgetTitle>8:15 AM</WidgetTitle>\r\n        </div>\r\n        <div className=\"flex w-full items-center justify-between gap-2\">\r\n          <Label className=\"text-sm\">Seoul</Label>\r\n          <WidgetTitle>6:45 PM</WidgetTitle>\r\n        </div>\r\n      </WidgetContent>\r\n    </Widget>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "components/kidow/clock-sm-08.tsx"
+    }
+  ],
+  "meta": {
+    "source": "wigggle-ui",
+    "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/clock-sm-08",
+    "author": "wigggle-ui",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

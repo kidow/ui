@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "calendar-sm-05",
+  "title": "Calendar Sm 05",
+  "description": "날짜를 보여주는 작은 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+  "registryDependencies": [
+    "@kidow/widget",
+    "badge",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/calendar-sm-05.tsx",
+      "content": "import * as React from \"react\";\n\nimport {\n  Widget,\n  WidgetHeader,\n  WidgetContent,\n} from \"@/components/kidow/widget\";\nimport { Badge } from \"@/components/ui/badge\";\nimport { Label } from \"@/components/ui/label\";\n\nexport default function WidgetDemo() {\n  const now = new Date();\n\n  const day = now.toLocaleDateString(\"en-US\", { weekday: \"long\" });\n  const date = now.getDate().toString().padStart(2, \"0\");\n\n  const events = [\n    { title: \"Scrum\", time: \"9 AM\" },\n    { title: \"Design Roundup\", time: \"11 AM\" },\n  ];\n\n  return (\n    <Widget design=\"mumbai\">\n      <WidgetHeader className=\"text-destructive text-base\">{day}</WidgetHeader>\n      <WidgetContent className=\"flex-col items-start justify-start gap-2\">\n        <Label className=\"text-3xl\">{date}</Label>\n        {events.map((event, i) => (\n          <Badge\n            key={i}\n            variant=\"secondary\"\n            className=\"flex w-full items-center justify-between gap-2 px-2 py-1 text-xs\"\n          >\n            {event.title}\n            <span className=\"text-muted-foreground\">{event.time}</span>\n          </Badge>\n        ))}\n      </WidgetContent>\n    </Widget>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/calendar-sm-05.tsx"
+    }
+  ],
+  "meta": {
+    "source": "wigggle-ui",
+    "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-sm-05",
+    "author": "wigggle-ui",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

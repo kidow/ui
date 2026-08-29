@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "calendar-sm-01",
+  "title": "Calendar Sm 01",
+  "description": "날짜를 보여주는 작은 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+  "registryDependencies": [
+    "@kidow/widget",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/calendar-sm-01.tsx",
+      "content": "import { Widget, WidgetContent } from \"@/components/kidow/widget\";\nimport { Label } from \"@/components/ui/label\";\n\nexport default function WidgetDemo() {\n  const now = new Date();\n\n  const day = now.toLocaleDateString(\"en-US\", { weekday: \"short\" });\n  const month = now.toLocaleDateString(\"en-US\", { month: \"short\" });\n  const date = now.getDate().toString().padStart(2, \"0\");\n\n  return (\n    <Widget>\n      <WidgetContent className=\"mx-auto flex-col items-start\">\n        <div className=\"flex w-full items-center justify-center gap-2\">\n          <Label className=\"text-destructive text-2xl\">{day}</Label>\n          <Label className=\"text-2xl\">{month}</Label>\n        </div>\n        <Label className=\"text-8xl\">{date}</Label>\n      </WidgetContent>\n    </Widget>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/calendar-sm-01.tsx"
+    }
+  ],
+  "meta": {
+    "source": "wigggle-ui",
+    "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-sm-01",
+    "author": "wigggle-ui",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

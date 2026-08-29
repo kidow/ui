@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "media-sm-08",
+  "title": "Media Sm 08",
+  "description": "음악·영상 재생 상태를 보여주는 작은 미디어 위젯(media widget, now playing, 플레이어 카드).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@kidow/widget",
+    "button",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/media-sm-08.tsx",
+      "content": "\"use client\";\r\n\r\nimport { XIcon } from \"lucide-react\";\r\nimport Image from \"next/image\";\r\n\r\nimport {\r\n  Widget,\r\n  WidgetContent,\r\n  WidgetFooter,\r\n} from \"@/components/kidow/widget\";\r\nimport { Label } from \"@/components/ui/label\";\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\nexport default function WidgetDemo() {\r\n  return (\r\n    <Widget design=\"mumbai\" className=\"relative justify-between gap-0\">\r\n      <Button\r\n        variant=\"outline\"\r\n        size=\"icon-sm\"\r\n        className=\"absolute top-2 right-2 rounded-full\"\r\n      >\r\n        <XIcon />\r\n      </Button>\r\n      <WidgetContent className=\"flex-col gap-2\">\r\n        <Image\r\n          src=\"/assets/products/airpods-max.png\"\r\n          alt=\"Airpods Max\"\r\n          width={192}\r\n          height={192}\r\n          className=\"size-20\"\r\n        />\r\n        <Label>Henil's AirPods Max</Label>\r\n      </WidgetContent>\r\n      <WidgetFooter>\r\n        <Button variant=\"outline\" className=\"w-full rounded-full\">\r\n          Connect\r\n        </Button>\r\n      </WidgetFooter>\r\n    </Widget>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "components/kidow/media-sm-08.tsx"
+    }
+  ],
+  "meta": {
+    "source": "wigggle-ui",
+    "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/media-sm-08",
+    "author": "wigggle-ui",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

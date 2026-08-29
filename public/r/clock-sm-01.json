@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "clock-sm-01",
+  "title": "Clock Sm 01",
+  "description": "현재 시각을 보여주는 작은 시계 위젯(clock widget, 시계, 아날로그·디지털 시간). 대시보드 상단이나 사이드바에 시간을 띄울 때 쓴다.",
+  "registryDependencies": [
+    "@kidow/widget"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/clock-sm-01.tsx",
+      "content": "\"use client\";\n\nimport * as React from \"react\";\nimport {\n  Widget,\n  WidgetContent,\n  WidgetTitle,\n} from \"@/components/kidow/widget\";\n\nexport default function WidgetDemo() {\n  const [time, setTime] = React.useState(new Date());\n\n  React.useEffect(() => {\n    const timer = setInterval(() => {\n      setTime(new Date());\n    }, 1000);\n\n    return () => {\n      clearInterval(timer);\n    };\n  }, []);\n\n  const formatTime = (num: number) => String(num).padStart(2, \"0\");\n\n  const minutes = formatTime(time.getMinutes());\n  const hours = time.getHours() % 12 || 12;\n\n  return (\n    <Widget>\n      <WidgetContent className=\"flex-col gap-4\">\n        <WidgetTitle className=\"text-5xl tracking-widest\">\n          {hours}:{minutes}\n        </WidgetTitle>\n      </WidgetContent>\n    </Widget>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/clock-sm-01.tsx"
+    }
+  ],
+  "meta": {
+    "source": "wigggle-ui",
+    "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/clock-sm-01",
+    "author": "wigggle-ui",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

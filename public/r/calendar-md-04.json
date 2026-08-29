@@ -1,0 +1,34 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "calendar-md-04",
+  "title": "Calendar Md 04",
+  "description": "날짜를 보여주는 중간 캘린더 위젯(calendar widget, 달력, 일정). 이번 달 날짜와 예정된 일정을 대시보드나 홈 화면 카드로 띄울 때 쓴다.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@kidow/widget",
+    "badge",
+    "button",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/calendar-md-04.tsx",
+      "content": "import { VideoIcon } from \"lucide-react\";\n\nimport {\n  Widget,\n  WidgetContent,\n  WidgetTitle,\n} from \"@/components/kidow/widget\";\nimport { Label } from \"@/components/ui/label\";\nimport { Badge } from \"@/components/ui/badge\";\nimport { Button } from \"@/components/ui/button\";\n\nexport default function WidgetDemo() {\n  const now = new Date();\n\n  const monthName = now.toLocaleDateString(\"en-US\", { month: \"long\" });\n  const date = now.getDate();\n\n  const year = now.getFullYear();\n  const month = now.getMonth();\n\n  const daysInMonth = new Date(year, month + 1, 0).getDate();\n  const firstDayOfMonth = new Date(year, month, 1).getDay();\n\n  const calendarDays = [\n    ...Array(firstDayOfMonth).fill(null),\n    ...Array.from({ length: daysInMonth }, (_, i) => i + 1),\n  ];\n\n  return (\n    <Widget size=\"md\">\n      <WidgetContent className=\"items-center justify-between gap-4\">\n        <div className=\"flex size-full flex-col items-center justify-between\">\n          <div className=\"flex size-full flex-col items-start justify-start gap-1\">\n            <Label className=\"text-muted-foreground text-sm font-normal\">\n              Google Meet\n            </Label>\n            <Label className=\"text-xl\">Meet in 7 mins</Label>\n            <Label className=\"border-l-productive border-l-4 px-4 text-base font-normal\">\n              Daily Scrum\n            </Label>\n          </div>\n          <Button variant=\"outline\" size=\"sm\" className=\"w-full\">\n            <VideoIcon /> Join Call\n          </Button>\n        </div>\n        <div className=\"flex size-full flex-col items-center justify-between gap-3\">\n          <WidgetTitle className=\"text-center\">{monthName}</WidgetTitle>\n          <div className=\"flex flex-col items-center justify-between gap-4\">\n            <div className=\"grid size-full grid-cols-7 gap-2 text-center\">\n              {[\"S\", \"M\", \"T\", \"W\", \"T\", \"F\", \"S\"].map((d, i) => (\n                <div key={i} className=\"text-xs\">\n                  {d}\n                </div>\n              ))}\n              {calendarDays.map((d, i) => (\n                <div key={i} className=\"text-muted-foreground text-xs\">\n                  {d === date ? (\n                    <Badge className=\"bg-productive flex size-4 items-center justify-center p-2\">\n                      {d}\n                    </Badge>\n                  ) : (\n                    (d ?? <>&nbsp;</>)\n                  )}\n                </div>\n              ))}\n            </div>\n          </div>\n        </div>\n      </WidgetContent>\n    </Widget>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/calendar-md-04.tsx"
+    }
+  ],
+  "meta": {
+    "source": "wigggle-ui",
+    "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/calendar-md-04",
+    "author": "wigggle-ui",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "clock-sm-07",
+  "title": "Clock Sm 07",
+  "description": "현재 시각을 보여주는 작은 시계 위젯(clock widget, 시계, 아날로그·디지털 시간). 대시보드 상단이나 사이드바에 시간을 띄울 때 쓴다.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@kidow/widget",
+    "label",
+    "separator"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/clock-sm-07.tsx",
+      "content": "import * as React from \"react\";\r\nimport { MoonIcon, SunIcon } from \"lucide-react\";\r\n\r\nimport {\r\n  Widget,\r\n  WidgetContent,\r\n  WidgetTitle,\r\n} from \"@/components/kidow/widget\";\r\nimport { Separator } from \"@/components/ui/separator\";\r\nimport { Label } from \"@/components/ui/label\";\r\n\r\nexport default function WidgetDemo() {\r\n  return (\r\n    <Widget>\r\n      <WidgetContent className=\"flex-col justify-between gap-3\">\r\n        <div className=\"flex w-full flex-col gap-2\">\r\n          <div className=\"flex w-full items-center justify-between\">\r\n            <Label>Mumbai</Label>\r\n            <SunIcon className=\"size-5\" />\r\n          </div>\r\n          <WidgetTitle className=\"text-xl\">8:15 AM</WidgetTitle>\r\n        </div>\r\n        <Separator />\r\n        <div className=\"flex w-full flex-col gap-2\">\r\n          <div className=\"flex w-full items-center justify-between\">\r\n            <Label>Vancouver</Label>\r\n            <MoonIcon className=\"size-5\" />\r\n          </div>\r\n          <WidgetTitle className=\"text-xl\">6:45 PM</WidgetTitle>\r\n        </div>\r\n      </WidgetContent>\r\n    </Widget>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "components/kidow/clock-sm-07.tsx"
+    }
+  ],
+  "meta": {
+    "source": "wigggle-ui",
+    "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/clock-sm-07",
+    "author": "wigggle-ui",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

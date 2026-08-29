@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "weather-sm-09",
+  "title": "Weather Sm 09",
+  "description": "현재 날씨와 예보를 보여주는 작은 날씨 위젯(weather widget, 기온, 예보). Open-Meteo 무료 API를 쓰며 API 키가 필요 없다.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@kidow/use-location",
+    "@kidow/use-weather",
+    "@kidow/weather-utils",
+    "@kidow/widget",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/weather-sm-09.tsx",
+      "content": "import {\n  DEFAULT_LOCATION,\n  useLocation,\n} from \"@/components/kidow/use-location\";\nimport { useWeather } from \"@/components/kidow/use-weather\";\nimport { getWeatherIcon } from \"@/components/kidow/weather-utils\";\nimport { Label } from \"@/components/ui/label\";\nimport { Widget, WidgetContent } from \"@/components/kidow/widget\";\n\nexport default function WidgetDemo() {\n  const { coordinates, isLoading: isLoadingLocation } = useLocation();\n  const { data: weather, isLoading: isLoadingWeather } = useWeather(\n    coordinates?.lat ?? DEFAULT_LOCATION.lat,\n    coordinates?.lon ?? DEFAULT_LOCATION.lon,\n  );\n\n  const isLoading = isLoadingLocation || isLoadingWeather;\n\n  const getDayName = (dateStr: string) => {\n    const date = new Date(dateStr);\n    return date.toLocaleDateString(\"en-US\", { weekday: \"short\" });\n  };\n\n  const forecast =\n    weather?.daily?.time.slice(0, 4).map((time, index) => ({\n      day: getDayName(time),\n      min: weather.daily.temperatureMin[index],\n      max: weather.daily.temperatureMax[index],\n      weatherCode: weather.daily.weatherCode[index],\n    })) || [];\n\n  if (isLoading) {\n    return (\n      <Widget design=\"mumbai\">\n        <WidgetContent className=\"flex items-center justify-center\">\n          <Label className=\"animate-pulse\">Loading...</Label>\n        </WidgetContent>\n      </Widget>\n    );\n  }\n\n  return (\n    <Widget design=\"mumbai\">\n      <WidgetContent className=\"mt-1.5 flex w-full flex-col gap-2\">\n        {forecast.map((el, index) => (\n          <div\n            key={index}\n            className=\"grid w-full grid-cols-4 items-center gap-3 border-b pb-2 last:border-none\"\n          >\n            <Label className=\"text-muted-foreground text-base\">{el.day}</Label>\n            {getWeatherIcon(el.weatherCode, \"size-4\", { className: \"mx-auto\" })}\n            <Label className=\"mx-aut text-base\">{el.min}&deg;</Label>\n            <Label className=\"mx-auto text-base\">{el.max}&deg;</Label>\n          </div>\n        ))}\n      </WidgetContent>\n    </Widget>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/weather-sm-09.tsx"
+    }
+  ],
+  "meta": {
+    "source": "wigggle-ui",
+    "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/weather-sm-09",
+    "author": "wigggle-ui",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

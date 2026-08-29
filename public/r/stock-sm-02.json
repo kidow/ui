@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "stock-sm-02",
+  "title": "Stock Sm 02",
+  "description": "주가와 등락을 보여주는 작은 주식 위젯(stock widget, 시세, 티커, 차트).",
+  "registryDependencies": [
+    "@kidow/widget",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/stock-sm-02.tsx",
+      "content": "import * as React from \"react\";\n\nimport {\n  Widget,\n  WidgetHeader,\n  WidgetTitle,\n  WidgetContent,\n  WidgetFooter,\n} from \"@/components/kidow/widget\";\nimport { Label } from \"@/components/ui/label\";\n\nexport default function WidgetDemo() {\n  return (\n    <Widget design=\"mumbai\">\n      <WidgetHeader>\n        <WidgetTitle className=\"flex w-full flex-col items-start justify-start\">\n          <Label className=\"text-2xl font-medium\">AAPL</Label>\n          <Label className=\"text-muted-foreground text-lg\">Apple Inc</Label>\n        </WidgetTitle>\n      </WidgetHeader>\n      <WidgetContent className=\"justify-between\"></WidgetContent>\n      <WidgetFooter className=\"flex-col items-end\">\n        <Label className=\"text-destructive text-4xl\">262.24</Label>\n      </WidgetFooter>\n    </Widget>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/stock-sm-02.tsx"
+    }
+  ],
+  "meta": {
+    "source": "wigggle-ui",
+    "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/stock-sm-02",
+    "author": "wigggle-ui",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

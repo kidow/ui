@@ -1,0 +1,36 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "weather-md-01",
+  "title": "Weather Md 01",
+  "description": "현재 날씨와 예보를 보여주는 중간 날씨 위젯(weather widget, 기온, 예보). Open-Meteo 무료 API를 쓰며 API 키가 필요 없다.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@kidow/use-location",
+    "@kidow/use-weather",
+    "@kidow/weather-utils",
+    "@kidow/widget",
+    "label",
+    "tooltip"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/weather-md-01.tsx",
+      "content": "import {\n  CloudRainIcon,\n  DropletsIcon,\n  ThermometerIcon,\n  WindIcon,\n} from \"lucide-react\";\n\nimport {\n  DEFAULT_LOCATION,\n  useLocation,\n} from \"@/components/kidow/use-location\";\nimport { useWeather } from \"@/components/kidow/use-weather\";\nimport { getWeatherIcon } from \"@/components/kidow/weather-utils\";\nimport { Label } from \"@/components/ui/label\";\nimport {\n  Tooltip,\n  TooltipContent,\n  TooltipTrigger,\n} from \"@/components/ui/tooltip\";\nimport { Widget, WidgetContent } from \"@/components/kidow/widget\";\n\nexport default function WidgetDemo() {\n  const { coordinates, city, isLoading: isLoadingLocation } = useLocation();\n  const { data: weather, isLoading: isLoadingWeather } = useWeather(\n    coordinates?.lat ?? DEFAULT_LOCATION.lat,\n    coordinates?.lon ?? DEFAULT_LOCATION.lon,\n  );\n\n  const isLoading = isLoadingLocation || isLoadingWeather;\n\n  if (isLoading) {\n    return (\n      <Widget size=\"md\">\n        <WidgetContent>\n          <div className=\"flex w-full items-center justify-center\">\n            <Label className=\"animate-pulse\">Loading weather data...</Label>\n          </div>\n        </WidgetContent>\n      </Widget>\n    );\n  }\n\n  return (\n    <Widget size=\"md\">\n      <WidgetContent>\n        <div className=\"flex w-full flex-col items-center justify-center gap-3\">\n          {weather && getWeatherIcon(weather.weatherCode)}\n          <div className=\"flex flex-col items-center justify-center gap-2\">\n            <Label className=\"text-3xl\">{weather?.temperature}&deg;C</Label>\n            <Label>{city || \"Unknown Location\"}</Label>\n          </div>\n        </div>\n        <div className=\"flex w-full flex-col items-center justify-center gap-5\">\n          <div className=\"flex w-full items-center justify-center gap-16\">\n            <InfoItem\n              icon={WindIcon}\n              label=\"Wind Speed\"\n              value={`${weather?.windSpeed} km/h`}\n            />\n            <InfoItem\n              icon={ThermometerIcon}\n              label=\"Feels like\"\n              value={`${weather?.feelsLike}\\u00b0`}\n            />\n          </div>\n          <div className=\"flex w-full items-center justify-center gap-16\">\n            <InfoItem\n              icon={CloudRainIcon}\n              label=\"Precipitation\"\n              value={`${weather?.chanceOfRain} mm`}\n            />\n            <InfoItem\n              icon={DropletsIcon}\n              label=\"Humidity\"\n              value={`${weather?.humidity}%`}\n            />\n          </div>\n        </div>\n      </WidgetContent>\n    </Widget>\n  );\n}\n\ntype InfoItemProps = {\n  icon: React.FC<React.SVGProps<SVGSVGElement>>;\n  label: string;\n  value: string;\n};\n\nconst InfoItem = (el: InfoItemProps) => {\n  return (\n    <Tooltip delayDuration={300}>\n      <TooltipTrigger asChild>\n        <div className=\"space-y-2\">\n          <el.icon className=\"stroke-muted-foreground size-6\" />\n          <Label className=\"text-base font-normal\">{el.value}</Label>\n        </div>\n      </TooltipTrigger>\n      <TooltipContent>\n        <Label className=\"text-sm font-normal\">{el.label}</Label>\n      </TooltipContent>\n    </Tooltip>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/weather-md-01.tsx"
+    }
+  ],
+  "meta": {
+    "source": "wigggle-ui",
+    "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/weather-md-01",
+    "author": "wigggle-ui",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

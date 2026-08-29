@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sports-sm-03",
+  "title": "Sports Sm 03",
+  "description": "경기 점수와 일정을 보여주는 작은 스포츠 위젯(sports widget, 스코어보드, 경기 결과).",
+  "registryDependencies": [
+    "@kidow/widget",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/sports-sm-03.tsx",
+      "content": "import * as React from \"react\";\nimport Image from \"next/image\";\n\nimport {\n  Widget,\n  WidgetContent,\n  WidgetHeader,\n} from \"@/components/kidow/widget\";\nimport { Label } from \"@/components/ui/label\";\n\nconst upcomingMatches = [\n  { teamName: \"FCB (H)\", date: \"25 Oct\", time: \"18:00\" },\n  { teamName: \"BVB (A)\", date: \"29 Oct\", time: \"21:00\" },\n];\n\nexport default function WidgetDemo() {\n  return (\n    <Widget design=\"mumbai\">\n      <WidgetHeader className=\"items-center\">\n        <Image\n          className=\"size-12\"\n          src=\"/assets/logos/mci.png\"\n          alt=\"FC Barcelona\"\n          width={48}\n          height={48}\n        />\n        <div className=\"text-muted-foreground flex flex-col gap-2\">\n          <Label>UCL - 1st</Label>\n          <Label>EPL - 4th</Label>\n        </div>\n      </WidgetHeader>\n      <WidgetContent className=\"mt-3 flex-col items-center gap-3\">\n        {upcomingMatches.map((match, i) => (\n          <div\n            key={i}\n            className=\"bg-secondary flex w-full items-center justify-between rounded-lg px-2 py-1\"\n          >\n            <Label className=\"text-base tracking-wider\">{match.teamName}</Label>\n            <div className=\"text-muted-foreground flex flex-col gap-0.5\">\n              <Label className=\"text-xs\">{match.date}</Label>\n              <Label className=\"text-xs\">{match.time}</Label>\n            </div>\n          </div>\n        ))}\n      </WidgetContent>\n    </Widget>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/sports-sm-03.tsx"
+    }
+  ],
+  "meta": {
+    "source": "wigggle-ui",
+    "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/sports-sm-03",
+    "author": "wigggle-ui",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

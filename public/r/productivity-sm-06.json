@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "productivity-sm-06",
+  "title": "Productivity Sm 06",
+  "description": "할 일과 집중 시간을 다루는 작은 생산성 위젯(productivity widget, todo, 타이머, 포모도로).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@kidow/widget",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/productivity-sm-06.tsx",
+      "content": "import { DumbbellIcon, SunIcon } from \"lucide-react\";\r\n\r\nimport { Widget, WidgetContent } from \"@/components/kidow/widget\";\r\nimport { Label } from \"@/components/ui/label\";\r\n\r\nexport default function WidgetDemo() {\r\n  return (\r\n    <Widget className=\"gap-3\">\r\n      <WidgetContent className=\"flex-col items-center justify-center gap-4\">\r\n        <div className=\"flex w-full items-center justify-start rounded-lg border p-2\">\r\n          <div className=\"flex items-center justify-center gap-3 px-1\">\r\n            <SunIcon className=\"size-8 stroke-yellow-500\" />\r\n            <div className=\"flex flex-col items-start justify-start gap-1.5\">\r\n              <Label className=\"font-normal\">Sleep early</Label>\r\n              <Label className=\"text-muted-foreground font-normal\">\r\n                13 days\r\n              </Label>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div className=\"flex w-full items-center justify-start rounded-lg border p-2\">\r\n          <div className=\"flex items-center justify-center gap-3 px-1\">\r\n            <DumbbellIcon className=\"size-8 stroke-amber-700\" />\r\n            <div className=\"flex flex-col items-start justify-start gap-1.5\">\r\n              <Label className=\"font-normal\">Workout</Label>\r\n              <Label className=\"text-muted-foreground font-normal\">\r\n                6 days\r\n              </Label>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </WidgetContent>\r\n    </Widget>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "components/kidow/productivity-sm-06.tsx"
+    }
+  ],
+  "meta": {
+    "source": "wigggle-ui",
+    "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/productivity-sm-06",
+    "author": "wigggle-ui",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

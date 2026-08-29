@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dashboard-sm-06",
+  "title": "Dashboard Sm 06",
+  "description": "지표를 요약해 보여주는 작은 대시보드 위젯(dashboard widget, 통계 카드, KPI). 방문자·매출 같은 수치를 차트와 함께 한눈에 보여준다.",
+  "dependencies": [
+    "recharts"
+  ],
+  "registryDependencies": [
+    "@kidow/widget",
+    "button",
+    "textarea"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/dashboard-sm-06.tsx",
+      "content": "import {\r\n  Widget,\r\n  WidgetContent,\r\n  WidgetFooter,\r\n} from \"@/components/kidow/widget\";\r\nimport { Textarea } from \"@/components/ui/textarea\";\r\nimport { Button } from \"@/components/ui/button\";\r\n\r\nexport default function WidgetDemo() {\r\n  return (\r\n    <Widget className=\"gap-3\" design=\"mumbai\">\r\n      <WidgetContent className=\"w-full flex-col items-start justify-start gap-2\">\r\n        <Textarea\r\n          className=\"h-full max-h-28\"\r\n          placeholder=\"Type your message here.\"\r\n        />\r\n      </WidgetContent>\r\n      <WidgetFooter>\r\n        <Button className=\"w-full\" size=\"sm\">\r\n          Send Feedback\r\n        </Button>\r\n      </WidgetFooter>\r\n    </Widget>\r\n  );\r\n}\r\n",
+      "type": "registry:component",
+      "target": "components/kidow/dashboard-sm-06.tsx"
+    }
+  ],
+  "meta": {
+    "source": "wigggle-ui",
+    "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/dashboard-sm-06",
+    "author": "wigggle-ui",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

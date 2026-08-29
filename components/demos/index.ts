@@ -43,6 +43,28 @@ import BorderBeamDemo from './border-beam'
 import BorderBeamComponentryDemo from './border-beam-componentry'
 import BorderBeamVengeanceDemo from './border-beam-vengeance'
 import BottomHingeTextRevealDemo from './bottom-hinge-text-reveal'
+import CalendarLg01Demo from './calendar-lg-01'
+import CalendarLg02Demo from './calendar-lg-02'
+import CalendarLg03Demo from './calendar-lg-03'
+import CalendarLg04Demo from './calendar-lg-04'
+import CalendarLg05Demo from './calendar-lg-05'
+import CalendarLg06Demo from './calendar-lg-06'
+import CalendarMd01Demo from './calendar-md-01'
+import CalendarMd02Demo from './calendar-md-02'
+import CalendarMd03Demo from './calendar-md-03'
+import CalendarMd04Demo from './calendar-md-04'
+import CalendarMd05Demo from './calendar-md-05'
+import CalendarMd06Demo from './calendar-md-06'
+import CalendarSm01Demo from './calendar-sm-01'
+import CalendarSm02Demo from './calendar-sm-02'
+import CalendarSm03Demo from './calendar-sm-03'
+import CalendarSm04Demo from './calendar-sm-04'
+import CalendarSm05Demo from './calendar-sm-05'
+import CalendarSm06Demo from './calendar-sm-06'
+import CalendarSm07Demo from './calendar-sm-07'
+import CalendarSm08Demo from './calendar-sm-08'
+import CalendarSm09Demo from './calendar-sm-09'
+import CalendarSm10Demo from './calendar-sm-10'
 import CandyButtonDemo from './candy-button'
 import CascaderDemo from './cascader'
 import CaseStudyFlipStackDemo from './case-study-flip-stack'
@@ -51,7 +73,21 @@ import ChatBubbleDemo from './chat-bubble'
 import CircuitBoardDemo from './circuit-board'
 import CircularGalleryDemo from './circular-gallery'
 import CircularNavigationDemo from './circular-navigation'
+import CircularProgressDemo from './circular-progress'
 import ClientTweetCardDemo from './client-tweet-card'
+import ClockSm01Demo from './clock-sm-01'
+import ClockSm02Demo from './clock-sm-02'
+import ClockSm03Demo from './clock-sm-03'
+import ClockSm04Demo from './clock-sm-04'
+import ClockSm05Demo from './clock-sm-05'
+import ClockSm06Demo from './clock-sm-06'
+import ClockSm07Demo from './clock-sm-07'
+import ClockSm08Demo from './clock-sm-08'
+import ClockSm09Demo from './clock-sm-09'
+import ClockSm10Demo from './clock-sm-10'
+import ClockSm11Demo from './clock-sm-11'
+import ClockSm12Demo from './clock-sm-12'
+import ClockSm13Demo from './clock-sm-13'
 import ClosingPlasmaDemo from './closing-plasma'
 import CodeBlockDemo from './code-block'
 import CodeBlockCommandDemo from './code-block-command'
@@ -77,6 +113,16 @@ import CronScheduleDemo from './cron-schedule'
 import CursorCardDemo from './cursor-card'
 import CursorDrivenParticleTypographyDemo from './cursor-driven-particle-typography'
 import CyberGlitchTextDemo from './cyber-glitch-text'
+import DashboardLg01Demo from './dashboard-lg-01'
+import DashboardLg02Demo from './dashboard-lg-02'
+import DashboardMd01Demo from './dashboard-md-01'
+import DashboardMd02Demo from './dashboard-md-02'
+import DashboardSm01Demo from './dashboard-sm-01'
+import DashboardSm02Demo from './dashboard-sm-02'
+import DashboardSm03Demo from './dashboard-sm-03'
+import DashboardSm04Demo from './dashboard-sm-04'
+import DashboardSm05Demo from './dashboard-sm-05'
+import DashboardSm06Demo from './dashboard-sm-06'
 import DateWheelPickerDemo from './date-wheel-picker'
 import DepthTrailDemo from './depth-trail'
 import DiaTextRevealDemo from './dia-text-reveal'
@@ -168,6 +214,7 @@ import InteractiveKeyboardDemo from './interactive-keyboard'
 import InteractiveLineChartDemo from './interactive-line-chart'
 import InteractiveParticlesDemo from './interactive-particles'
 import IphoneDemo from './iphone'
+import ItemDemo from './item'
 import JsonViewerDemo from './json-viewer'
 import KaleidoscopeTrailDemo from './kaleidoscope-trail'
 import KeyboardShortcutDemo from './keyboard-shortcut'
@@ -212,6 +259,11 @@ import MaskedAvatarsDemo from './masked-avatars'
 import MaskedRevealDemo from './masked-reveal'
 import MasonryGridDemo from './masonry-grid'
 import MatrixRainDemo from './matrix-rain'
+import MediaMd04Demo from './media-md-04'
+import MediaSm05Demo from './media-sm-05'
+import MediaSm06Demo from './media-sm-06'
+import MediaSm07Demo from './media-sm-07'
+import MediaSm08Demo from './media-sm-08'
 import MeteorsDemo from './meteors'
 import MorphTextDemo from './morph-text'
 import MorphingCursorDemo from './morphing-cursor'
@@ -248,6 +300,17 @@ import PopButtonVengeanceDemo from './pop-button-vengeance'
 import Pricing01Demo from './pricing-01'
 import Pricing02Demo from './pricing-02'
 import PrismGradientDemo from './prism-gradient'
+import ProductivityMd01Demo from './productivity-md-01'
+import ProductivityMd02Demo from './productivity-md-02'
+import ProductivityMd03Demo from './productivity-md-03'
+import ProductivityMd04Demo from './productivity-md-04'
+import ProductivitySm01Demo from './productivity-sm-01'
+import ProductivitySm02Demo from './productivity-sm-02'
+import ProductivitySm03Demo from './productivity-sm-03'
+import ProductivitySm04Demo from './productivity-sm-04'
+import ProductivitySm05Demo from './productivity-sm-05'
+import ProductivitySm06Demo from './productivity-sm-06'
+import ProductivitySm07Demo from './productivity-sm-07'
 import ProgressiveBlurDemo from './progressive-blur'
 import PulsatingButtonDemo from './pulsating-button'
 import PulsatingButtonComponentryDemo from './pulsating-button-componentry'
@@ -294,6 +357,13 @@ import SparklesTextDemo from './sparkles-text'
 import SpecialTextDemo from './special-text'
 import SpinningTextDemo from './spinning-text'
 import SplitFlapDisplayDemo from './split-flap-display'
+import SportsSm01Demo from './sports-sm-01'
+import SportsSm02Demo from './sports-sm-02'
+import SportsSm03Demo from './sports-sm-03'
+import SportsSm04Demo from './sports-sm-04'
+import SportsSm05Demo from './sports-sm-05'
+import SportsSm06Demo from './sports-sm-06'
+import SportsSm07Demo from './sports-sm-07'
 import SpotlightCardDemo from './spotlight-card'
 import SpotlightNavbarDemo from './spotlight-navbar'
 import SquircleTrailDemo from './squircle-trail'
@@ -304,6 +374,12 @@ import StatsCounterDemo from './stats-counter'
 import StatusIndicatorDemo from './status-indicator'
 import StepperDemo from './stepper'
 import StickyScrollCardsDemo from './sticky-scroll-cards'
+import StockSm01Demo from './stock-sm-01'
+import StockSm02Demo from './stock-sm-02'
+import StockSm03Demo from './stock-sm-03'
+import StockSm04Demo from './stock-sm-04'
+import StockSm05Demo from './stock-sm-05'
+import StockSm06Demo from './stock-sm-06'
 import StripedPatternDemo from './striped-pattern'
 import TeamRevealGridDemo from './team-reveal-grid'
 import TerminalDemo from './terminal'
@@ -338,9 +414,22 @@ import VideoTextDemo from './video-text'
 import WarpBackgroundDemo from './warp-background'
 import WaveCarouselDemo from './wave-carousel'
 import WaveGridBackgroundDemo from './wave-grid-background'
+import WeatherMd01Demo from './weather-md-01'
+import WeatherMd02Demo from './weather-md-02'
+import WeatherSm01Demo from './weather-sm-01'
+import WeatherSm02Demo from './weather-sm-02'
+import WeatherSm03Demo from './weather-sm-03'
+import WeatherSm04Demo from './weather-sm-04'
+import WeatherSm05Demo from './weather-sm-05'
+import WeatherSm06Demo from './weather-sm-06'
+import WeatherSm07Demo from './weather-sm-07'
+import WeatherSm08Demo from './weather-sm-08'
+import WeatherSm09Demo from './weather-sm-09'
 import WebglLiquidDemo from './webgl-liquid'
 import WeightlessFloatRevealDemo from './weightless-float-reveal'
 import WheelCarouselDemo from './wheel-carousel'
+import WheelPickerDemo from './wheel-picker'
+import WidgetDemo from './widget'
 import WindShearRevealDemo from './wind-shear-reveal'
 import WindTrailDemo from './wind-trail'
 import WordRotateDemo from './word-rotate'
@@ -396,6 +485,28 @@ export const demos: Record<string, ComponentType> = {
   'border-beam-componentry': BorderBeamComponentryDemo,
   'border-beam-vengeance': BorderBeamVengeanceDemo,
   'bottom-hinge-text-reveal': BottomHingeTextRevealDemo,
+  'calendar-lg-01': CalendarLg01Demo,
+  'calendar-lg-02': CalendarLg02Demo,
+  'calendar-lg-03': CalendarLg03Demo,
+  'calendar-lg-04': CalendarLg04Demo,
+  'calendar-lg-05': CalendarLg05Demo,
+  'calendar-lg-06': CalendarLg06Demo,
+  'calendar-md-01': CalendarMd01Demo,
+  'calendar-md-02': CalendarMd02Demo,
+  'calendar-md-03': CalendarMd03Demo,
+  'calendar-md-04': CalendarMd04Demo,
+  'calendar-md-05': CalendarMd05Demo,
+  'calendar-md-06': CalendarMd06Demo,
+  'calendar-sm-01': CalendarSm01Demo,
+  'calendar-sm-02': CalendarSm02Demo,
+  'calendar-sm-03': CalendarSm03Demo,
+  'calendar-sm-04': CalendarSm04Demo,
+  'calendar-sm-05': CalendarSm05Demo,
+  'calendar-sm-06': CalendarSm06Demo,
+  'calendar-sm-07': CalendarSm07Demo,
+  'calendar-sm-08': CalendarSm08Demo,
+  'calendar-sm-09': CalendarSm09Demo,
+  'calendar-sm-10': CalendarSm10Demo,
   'candy-button': CandyButtonDemo,
   'cascader': CascaderDemo,
   'case-study-flip-stack': CaseStudyFlipStackDemo,
@@ -404,7 +515,21 @@ export const demos: Record<string, ComponentType> = {
   'circuit-board': CircuitBoardDemo,
   'circular-gallery': CircularGalleryDemo,
   'circular-navigation': CircularNavigationDemo,
+  'circular-progress': CircularProgressDemo,
   'client-tweet-card': ClientTweetCardDemo,
+  'clock-sm-01': ClockSm01Demo,
+  'clock-sm-02': ClockSm02Demo,
+  'clock-sm-03': ClockSm03Demo,
+  'clock-sm-04': ClockSm04Demo,
+  'clock-sm-05': ClockSm05Demo,
+  'clock-sm-06': ClockSm06Demo,
+  'clock-sm-07': ClockSm07Demo,
+  'clock-sm-08': ClockSm08Demo,
+  'clock-sm-09': ClockSm09Demo,
+  'clock-sm-10': ClockSm10Demo,
+  'clock-sm-11': ClockSm11Demo,
+  'clock-sm-12': ClockSm12Demo,
+  'clock-sm-13': ClockSm13Demo,
   'closing-plasma': ClosingPlasmaDemo,
   'code-block': CodeBlockDemo,
   'code-block-command': CodeBlockCommandDemo,
@@ -430,6 +555,16 @@ export const demos: Record<string, ComponentType> = {
   'cursor-card': CursorCardDemo,
   'cursor-driven-particle-typography': CursorDrivenParticleTypographyDemo,
   'cyber-glitch-text': CyberGlitchTextDemo,
+  'dashboard-lg-01': DashboardLg01Demo,
+  'dashboard-lg-02': DashboardLg02Demo,
+  'dashboard-md-01': DashboardMd01Demo,
+  'dashboard-md-02': DashboardMd02Demo,
+  'dashboard-sm-01': DashboardSm01Demo,
+  'dashboard-sm-02': DashboardSm02Demo,
+  'dashboard-sm-03': DashboardSm03Demo,
+  'dashboard-sm-04': DashboardSm04Demo,
+  'dashboard-sm-05': DashboardSm05Demo,
+  'dashboard-sm-06': DashboardSm06Demo,
   'date-wheel-picker': DateWheelPickerDemo,
   'depth-trail': DepthTrailDemo,
   'dia-text-reveal': DiaTextRevealDemo,
@@ -521,6 +656,7 @@ export const demos: Record<string, ComponentType> = {
   'interactive-line-chart': InteractiveLineChartDemo,
   'interactive-particles': InteractiveParticlesDemo,
   'iphone': IphoneDemo,
+  'item': ItemDemo,
   'json-viewer': JsonViewerDemo,
   'kaleidoscope-trail': KaleidoscopeTrailDemo,
   'keyboard-shortcut': KeyboardShortcutDemo,
@@ -565,6 +701,11 @@ export const demos: Record<string, ComponentType> = {
   'masked-reveal': MaskedRevealDemo,
   'masonry-grid': MasonryGridDemo,
   'matrix-rain': MatrixRainDemo,
+  'media-md-04': MediaMd04Demo,
+  'media-sm-05': MediaSm05Demo,
+  'media-sm-06': MediaSm06Demo,
+  'media-sm-07': MediaSm07Demo,
+  'media-sm-08': MediaSm08Demo,
   'meteors': MeteorsDemo,
   'morph-text': MorphTextDemo,
   'morphing-cursor': MorphingCursorDemo,
@@ -601,6 +742,17 @@ export const demos: Record<string, ComponentType> = {
   'pricing-01': Pricing01Demo,
   'pricing-02': Pricing02Demo,
   'prism-gradient': PrismGradientDemo,
+  'productivity-md-01': ProductivityMd01Demo,
+  'productivity-md-02': ProductivityMd02Demo,
+  'productivity-md-03': ProductivityMd03Demo,
+  'productivity-md-04': ProductivityMd04Demo,
+  'productivity-sm-01': ProductivitySm01Demo,
+  'productivity-sm-02': ProductivitySm02Demo,
+  'productivity-sm-03': ProductivitySm03Demo,
+  'productivity-sm-04': ProductivitySm04Demo,
+  'productivity-sm-05': ProductivitySm05Demo,
+  'productivity-sm-06': ProductivitySm06Demo,
+  'productivity-sm-07': ProductivitySm07Demo,
   'progressive-blur': ProgressiveBlurDemo,
   'pulsating-button': PulsatingButtonDemo,
   'pulsating-button-componentry': PulsatingButtonComponentryDemo,
@@ -647,6 +799,13 @@ export const demos: Record<string, ComponentType> = {
   'special-text': SpecialTextDemo,
   'spinning-text': SpinningTextDemo,
   'split-flap-display': SplitFlapDisplayDemo,
+  'sports-sm-01': SportsSm01Demo,
+  'sports-sm-02': SportsSm02Demo,
+  'sports-sm-03': SportsSm03Demo,
+  'sports-sm-04': SportsSm04Demo,
+  'sports-sm-05': SportsSm05Demo,
+  'sports-sm-06': SportsSm06Demo,
+  'sports-sm-07': SportsSm07Demo,
   'spotlight-card': SpotlightCardDemo,
   'spotlight-navbar': SpotlightNavbarDemo,
   'squircle-trail': SquircleTrailDemo,
@@ -657,6 +816,12 @@ export const demos: Record<string, ComponentType> = {
   'status-indicator': StatusIndicatorDemo,
   'stepper': StepperDemo,
   'sticky-scroll-cards': StickyScrollCardsDemo,
+  'stock-sm-01': StockSm01Demo,
+  'stock-sm-02': StockSm02Demo,
+  'stock-sm-03': StockSm03Demo,
+  'stock-sm-04': StockSm04Demo,
+  'stock-sm-05': StockSm05Demo,
+  'stock-sm-06': StockSm06Demo,
   'striped-pattern': StripedPatternDemo,
   'team-reveal-grid': TeamRevealGridDemo,
   'terminal': TerminalDemo,
@@ -691,9 +856,22 @@ export const demos: Record<string, ComponentType> = {
   'warp-background': WarpBackgroundDemo,
   'wave-carousel': WaveCarouselDemo,
   'wave-grid-background': WaveGridBackgroundDemo,
+  'weather-md-01': WeatherMd01Demo,
+  'weather-md-02': WeatherMd02Demo,
+  'weather-sm-01': WeatherSm01Demo,
+  'weather-sm-02': WeatherSm02Demo,
+  'weather-sm-03': WeatherSm03Demo,
+  'weather-sm-04': WeatherSm04Demo,
+  'weather-sm-05': WeatherSm05Demo,
+  'weather-sm-06': WeatherSm06Demo,
+  'weather-sm-07': WeatherSm07Demo,
+  'weather-sm-08': WeatherSm08Demo,
+  'weather-sm-09': WeatherSm09Demo,
   'webgl-liquid': WebglLiquidDemo,
   'weightless-float-reveal': WeightlessFloatRevealDemo,
   'wheel-carousel': WheelCarouselDemo,
+  'wheel-picker': WheelPickerDemo,
+  'widget': WidgetDemo,
   'wind-shear-reveal': WindShearRevealDemo,
   'wind-trail': WindTrailDemo,
   'word-rotate': WordRotateDemo,
