@@ -90,6 +90,35 @@
       }
     },
     {
+      "name": "ai-prompt-box",
+      "type": "registry:component",
+      "title": "Ai Prompt Box",
+      "description": "AI 채팅 입력창(ai prompt box, chat input). 파일 첨부·모델 선택·전송 상태를 갖춘 완성형 입력 박스로 챗봇 화면에 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "@radix-ui/react-tooltip",
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ai-prompt-box.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ai-prompt-box.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/ai-prompt-box",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "android",
       "type": "registry:component",
       "title": "Android",
@@ -469,6 +498,63 @@
       }
     },
     {
+      "name": "animated-table",
+      "type": "registry:component",
+      "title": "Animated Table",
+      "description": "정렬·검색·페이지네이션·행 확장이 애니메이션으로 붙은 데이터 테이블(animated table, data table). 대시보드 목록에 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-table.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-table.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/animated-table",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "animated-theme-toggle",
+      "type": "registry:component",
+      "title": "Animated Theme Toggle",
+      "description": "해와 달이 부드럽게 전환되는 다크모드 토글(theme toggle, dark mode switch). next-themes 와 함께 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion",
+        "next-themes"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-theme-toggle.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-theme-toggle.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/animated-theme-toggle",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "animated-theme-toggler",
       "type": "registry:component",
       "title": "Theme Toggler",
@@ -498,6 +584,33 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-toast",
+      "type": "registry:component",
+      "title": "Animated Toast",
+      "description": "쌓이고 사라지는 토스트 알림(toast, notification). undo·promise 상태까지 다루는 완성형이다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-toast.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-toast.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/animated-toast",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -1088,6 +1201,38 @@
       }
     },
     {
+      "name": "calender",
+      "type": "registry:component",
+      "title": "Calender",
+      "description": "범위·다중 선택과 시간 지정까지 되는 달력(calendar, date picker). 이름의 오타는 원본 그대로 두었다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "date-fns",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "button",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/calender.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calender.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/calender",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "candy-button",
       "type": "registry:component",
       "title": "Candy Button",
@@ -1134,6 +1279,32 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "character-morph",
+      "type": "registry:component",
+      "title": "Character Morph",
+      "description": "글자 하나가 다른 글자로 변형되는 모핑 텍스트(character morph, letter morph).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/character-morph.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/character-morph.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/character-morph",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -1588,6 +1759,33 @@
       }
     },
     {
+      "name": "command-palette",
+      "type": "registry:component",
+      "title": "Command Palette",
+      "description": "⌘K 로 여는 커맨드 팔레트(command palette, cmdk). 검색과 빠른 이동을 한 곳에서 처리한다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/command-palette.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/command-palette.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/command-palette",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "commit-graph",
       "type": "registry:component",
       "title": "Commit Graph",
@@ -1955,6 +2153,32 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "date-wheel-picker",
+      "type": "registry:component",
+      "title": "Date Wheel Picker",
+      "description": "iOS 처럼 굴려서 고르는 날짜 휠 피커(wheel picker, date picker). 모바일 폼에 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/date-wheel-picker.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/date-wheel-picker.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/date-wheel-picker",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -2407,6 +2631,32 @@
       }
     },
     {
+      "name": "expanded-map",
+      "type": "registry:component",
+      "title": "Expanded Map",
+      "description": "클릭하면 펼쳐지는 지도 카드(expanded map, location card). 외부 지도 API 없이 동작한다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/expanded-map.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/expanded-map.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/expanded-map",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "exploding-input",
       "type": "registry:component",
       "title": "Exploding Input",
@@ -2479,6 +2729,32 @@
       }
     },
     {
+      "name": "falling-text",
+      "type": "registry:component",
+      "title": "Falling Text",
+      "description": "글자가 물리 법칙에 따라 떨어져 쌓이는 텍스트(falling text, physics text). matter-js 기반.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "matter-js"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/falling-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/falling-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/falling-text",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "faq-accordion",
       "type": "registry:component",
       "title": "Faq Accordion",
@@ -2499,6 +2775,34 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "feedback-widget",
+      "type": "registry:component",
+      "title": "Feedback Widget",
+      "description": "별점과 의견을 받는 피드백 위젯(feedback widget, rating form). 마크다운 입력을 지원한다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@radix-ui/react-toggle-group",
+        "motion",
+        "react-markdown"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/feedback-widget.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/feedback-widget.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/feedback-widget",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -3123,6 +3427,65 @@
       }
     },
     {
+      "name": "github-contributors",
+      "type": "registry:component",
+      "title": "Github Contributors",
+      "description": "깃허브 기여자 아바타 목록(contributors, avatar list). 서버에서 GitHub API 를 호출한다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "@radix-ui/react-tooltip",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "card",
+        "skeleton",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/github-contributors.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/github-contributors.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/github-contributors",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "github-star",
+      "type": "registry:component",
+      "title": "Github Star",
+      "description": "저장소 스타 수를 보여주는 버튼(github star, star count).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/github-star.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/github-star.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/github-star",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "github-stars-button",
       "type": "registry:component",
       "title": "GitHub Stars Button",
@@ -3201,6 +3564,32 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "glitch-text",
+      "type": "registry:component",
+      "title": "Glitch Text",
+      "description": "RGB 가 어긋나며 흔들리는 글리치 텍스트(glitch text, chromatic aberration).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glitch-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/glitch-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/glitch-text",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -3300,6 +3689,29 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "gooey-text-morphing",
+      "type": "registry:component",
+      "title": "Gooey Text Morphing",
+      "description": "점성 있는 액체처럼 단어가 뭉쳤다 바뀌는 텍스트(gooey text morph, blob text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/gooey-text-morphing.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gooey-text-morphing.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/gooey-text-morphing",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -3549,6 +3961,32 @@
       }
     },
     {
+      "name": "highlight-text",
+      "type": "registry:component",
+      "title": "Highlight Text",
+      "description": "문장 일부에 형광펜을 칠하는 강조(highlight text, marker). 색 변형이 여러 개 있다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/highlight-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/highlight-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/highlight-text",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "highlighted-text",
       "type": "registry:component",
       "title": "Highlighted Text",
@@ -3599,6 +4037,29 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "hover-preview",
+      "type": "registry:component",
+      "title": "Hover Preview",
+      "description": "링크에 hover 하면 미리보기가 뜨는 효과(hover preview, link preview). 포트폴리오·상품 목록에 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/hover-preview.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hover-preview.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/hover-preview",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -3704,6 +4165,33 @@
       }
     },
     {
+      "name": "image-comparison",
+      "type": "registry:component",
+      "title": "Image Comparison",
+      "description": "전후 이미지를 슬라이더로 비교(image comparison, before after). 세로·페이드·렌즈 변형이 있다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/image-comparison.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/image-comparison.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/image-comparison",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "image-reveal-list",
       "type": "registry:component",
       "title": "Image Reveal List",
@@ -3750,6 +4238,32 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "image-sphere",
+      "type": "registry:component",
+      "title": "Image Sphere",
+      "description": "이미지가 구체 위를 도는 3D 갤러리(image sphere, orbit gallery). three.js 없이 CSS 로 동작한다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/image-sphere.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/image-sphere.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/image-sphere",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -3825,6 +4339,29 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "infinite-ribbon",
+      "type": "registry:component",
+      "title": "Infinite Ribbon",
+      "description": "사선으로 흐르는 무한 리본 띠(infinite ribbon, marquee band). 섹션 구분에 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/infinite-ribbon.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/infinite-ribbon.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/infinite-ribbon",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -4282,6 +4819,29 @@
       }
     },
     {
+      "name": "lazy-video",
+      "type": "registry:component",
+      "title": "Lazy Video",
+      "description": "화면에 들어올 때 로드되는 지연 비디오(lazy video, intersection loading). 무거운 영상을 여러 개 둘 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/lazy-video.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/lazy-video.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/lazy-video",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "lens",
       "type": "registry:component",
       "title": "Lens",
@@ -4659,6 +5219,33 @@
       }
     },
     {
+      "name": "liquid-metal-button",
+      "type": "registry:component",
+      "title": "Liquid Metal Button",
+      "description": "셰이더로 금속 표면이 일렁이는 버튼(liquid metal button, shader button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "@paper-design/shaders",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-metal-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-metal-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/liquid-metal-button",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "liquid-text",
       "type": "registry:component",
       "title": "Liquid Text",
@@ -4861,6 +5448,32 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "magnetic",
+      "type": "registry:component",
+      "title": "Magnetic",
+      "description": "커서에 끌려오는 자석 효과 래퍼(magnetic, cursor attraction). 버튼·아이콘을 감싸 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/magnetic.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/magnetic.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/magnetic",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -5185,6 +5798,29 @@
       }
     },
     {
+      "name": "morphing-cursor",
+      "type": "registry:component",
+      "title": "Morphing Cursor",
+      "description": "요소 위에서 모양이 변하는 커스텀 커서(morphing cursor, custom cursor).",
+      "categories": [
+        "인터랙션"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/morphing-cursor.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/morphing-cursor.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/morphing-cursor",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "morphing-disclosure",
       "type": "registry:component",
       "title": "Morphing Disclosure",
@@ -5457,6 +6093,32 @@
       }
     },
     {
+      "name": "number-counter",
+      "type": "registry:component",
+      "title": "Number Counter",
+      "description": "숫자가 목표값까지 굴러 올라가는 카운터(number counter, count up).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/number-counter.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/number-counter.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/number-counter",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "number-ticker",
       "type": "registry:component",
       "title": "Number Ticker",
@@ -5722,6 +6384,32 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "phone-card",
+      "type": "registry:component",
+      "title": "Phone Card",
+      "description": "폰 프레임 안에서 영상이 재생되는 카드(phone card, device mockup). lazy-video 를 함께 설치한다.",
+      "categories": [
+        "디바이스 목업"
+      ],
+      "registryDependencies": [
+        "@kidow/lazy-video"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/phone-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/phone-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/phone-card",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -6577,6 +7265,32 @@
       }
     },
     {
+      "name": "rotate-text",
+      "type": "registry:component",
+      "title": "Rotate Text",
+      "description": "단어가 회전하며 교체되는 텍스트(rotate text, word rotator).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/rotate-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/rotate-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/rotate-text",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "safari",
       "type": "registry:component",
       "title": "Safari",
@@ -6753,6 +7467,32 @@
       }
     },
     {
+      "name": "scroll-text",
+      "type": "registry:component",
+      "title": "Scroll Text",
+      "description": "스크롤에 맞춰 블러·페이드·회전으로 드러나는 텍스트(scroll text, scroll reveal). 변형이 여러 개 있다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/scroll-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/scroll-text",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "scroll-tilted-grid",
       "type": "registry:component",
       "title": "Scroll Tilted Grid",
@@ -6827,6 +7567,32 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "segmented-button",
+      "type": "registry:component",
+      "title": "Segmented Button",
+      "description": "iOS 풍 세그먼트 컨트롤(segmented button, tab switch). 선택 표시가 미끄러진다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/segmented-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/segmented-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/segmented-button",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -7045,6 +7811,32 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "shutter-text",
+      "type": "registry:component",
+      "title": "Shutter Text",
+      "description": "셔터가 열리듯 위아래에서 드러나는 텍스트(shutter text, split reveal).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/shutter-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shutter-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/shutter-text",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -7933,6 +8725,32 @@
       }
     },
     {
+      "name": "text-morphing",
+      "type": "registry:component",
+      "title": "Text Morphing",
+      "description": "문장이 다른 문장으로 자연스럽게 변형되는 텍스트(text morphing, sentence morph).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/text-morphing.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-morphing.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/text-morphing",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "text-repel",
       "type": "registry:component",
       "title": "text-repel",
@@ -8149,6 +8967,32 @@
       }
     },
     {
+      "name": "typewritter-text",
+      "type": "registry:component",
+      "title": "Typewritter Text",
+      "description": "커서가 깜빡이는 타이핑 애니메이션(typewriter, typing text). 이름의 오타는 원본 그대로다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/typewritter-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/typewritter-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/typewritter-text",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "typing-animation",
       "type": "registry:component",
       "title": "Typing Animation",
@@ -8240,6 +9084,32 @@
       }
     },
     {
+      "name": "velocity-morph",
+      "type": "registry:component",
+      "title": "Velocity Morph",
+      "description": "스크롤 속도에 따라 글자가 늘어나고 휘는 텍스트(velocity morph, scroll distortion).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/velocity-morph.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/velocity-morph.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/velocity-morph",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "velocity-trail",
       "type": "registry:component",
       "title": "Velocity Trail",
@@ -8260,6 +9130,32 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "vercel-tabs",
+      "type": "registry:component",
+      "title": "Vercel Tabs",
+      "description": "Vercel 대시보드 스타일 탭(vercel tabs, underline tabs). 활성 표시가 미끄러진다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "registryDependencies": [
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/vercel-tabs.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/vercel-tabs.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/vercel-tabs",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -8287,6 +9183,33 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "video-player",
+      "type": "registry:component",
+      "title": "Video Player",
+      "description": "자막·화질·플레이리스트를 갖춘 커스텀 비디오 플레이어(video player, custom controls).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/video-player.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/video-player.tsx"
+        }
+      ],
+      "meta": {
+        "source": "JolyUI",
+        "sourceUrl": "https://www.jolyui.dev/docs/components/video-player",
+        "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {

@@ -1,0 +1,18 @@
+'use client'
+
+import { PhoneCard } from "@/components/kidow/phone-card";
+
+export default function PhoneCardDemo() {
+  return (
+    <div className="flex min-h-screen items-center justify-center p-8">
+      <PhoneCard
+        title="8°"
+        sub="Clear night. Great for render farm runs."
+        tone="calm"
+        gradient="from-[#0f172a] via-[#14532d] to-[#052e16]"
+        videoSrc="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/A%20new%20chapter%20in%20the%20story%20of%20success.__Introducing%20the%20new%20TAG%20Heuer%20Carrera%20Day-Date%20collection%2C%20reimagined%20with%20bold%20colors%2C%20refined%20finishes%2C%20and%20upgraded%20functionality%20to%20keep%20you%20focused%20on%20your%20goals.%20__Six%20-nDNoRQyFaZ8oaaoty4XaQz8W8E5bqA.mp4"
+        mediaType="video"
+      />
+    </div>
+  );
+}

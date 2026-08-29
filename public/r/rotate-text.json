@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "rotate-text",
+  "title": "Rotate Text",
+  "description": "단어가 회전하며 교체되는 텍스트(rotate text, word rotator).",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/rotate-text.tsx",
+      "content": "\"use client\";\n\nimport { AnimatePresence, motion } from \"motion/react\";\nimport * as React from \"react\";\nimport { cn } from \"@/lib/utils\";\n\ninterface RotatingTextProps {\n  words: string[];\n  className?: string;\n  interval?: number;\n}\n\nconst RotatingText = React.forwardRef<HTMLSpanElement, RotatingTextProps>(\n  ({ words, className, interval = 2000 }, ref) => {\n    const [currentIndex, setCurrentIndex] = React.useState(0);\n\n    React.useEffect(() => {\n      const timer = setInterval(() => {\n        setCurrentIndex((prev) => (prev + 1) % words.length);\n      }, interval);\n      return () => clearInterval(timer);\n    }, [words.length, interval]);\n\n    return (\n      <span\n        ref={ref}\n        className={cn(\"relative inline-flex overflow-hidden\", className)}\n      >\n        <AnimatePresence mode=\"popLayout\">\n          <motion.span\n            key={currentIndex}\n            initial={{ y: \"100%\", opacity: 0 }}\n            animate={{ y: 0, opacity: 1 }}\n            exit={{ y: \"-100%\", opacity: 0 }}\n            transition={{\n              type: \"spring\",\n              stiffness: 300,\n              damping: 30,\n            }}\n            className=\"inline-block\"\n          >\n            {words[currentIndex]}\n          </motion.span>\n        </AnimatePresence>\n      </span>\n    );\n  },\n);\nRotatingText.displayName = \"RotatingText\";\n\nexport { RotatingText };\n",
+      "type": "registry:component",
+      "target": "components/kidow/rotate-text.tsx"
+    }
+  ],
+  "meta": {
+    "source": "JolyUI",
+    "sourceUrl": "https://www.jolyui.dev/docs/components/rotate-text",
+    "author": "Johuniq",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}
