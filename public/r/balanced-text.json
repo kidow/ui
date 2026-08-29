@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "balanced-text",
+  "title": "Pretext Balanced Text",
+  "description": "줄바꿈 폭을 고르게 맞춰주는 텍스트 래퍼(balanced text, text wrap balance). 제목이 한쪽으로 쏠려 보이는 걸 막는다. DOM 측정 없이 계산한다.",
+  "dependencies": [
+    "@chenglou/pretext"
+  ],
+  "registryDependencies": [
+    "@kidow/pretext"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/balanced-text/balanced-text.tsx",
+      "content": "/**\n * jalco-ui\n * BalancedText\n * by Justin Levine\n * ui.justinlevine.me\n *\n * Text wrapper that uses Pretext to balance line widths so all lines\n * are roughly equal length. CSS `text-wrap: balance` only works up\n * to ~6 lines and is inconsistent cross-browser. This is deterministic\n * and works on any length.\n *\n * Dependencies: @chenglou/pretext (via pretext registry item)\n *\n * Powered by Pretext by Cheng Lou — github.com/chenglou/pretext\n */\n\n\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/lib/utils\"\nimport {\n  usePretextWithSegments,\n  useBalancedWidth,\n} from \"@/components/kidow/pretext/use-pretext\"\n\ninterface BalancedTextProps extends React.ComponentProps<\"div\"> {\n  /** The text string to balance. */\n  text: string\n  /** CSS font shorthand for Pretext measurement. Must match the rendered font.\n   * @default '16px ui-sans-serif, system-ui, sans-serif' */\n  font?: string\n  /** Maximum width in pixels. The balanced width will never exceed this. @default 600 */\n  maxWidth?: number\n  /** HTML element to render as. @default \"p\" */\n  as?: \"p\" | \"h1\" | \"h2\" | \"h3\" | \"h4\" | \"span\" | \"div\"\n}\n\nconst DEFAULT_FONT = \"16px ui-sans-serif, system-ui, sans-serif\"\nconst DEFAULT_MAX_WIDTH = 600\n\nfunction BalancedText({\n  text,\n  font = DEFAULT_FONT,\n  maxWidth = DEFAULT_MAX_WIDTH,\n  as: Tag = \"p\",\n  className,\n  style,\n  ...props\n}: BalancedTextProps) {\n  const prepared = usePretextWithSegments(text, font)\n  const balancedWidth = useBalancedWidth(prepared, maxWidth)\n\n  return (\n    <Tag\n      data-slot=\"balanced-text\"\n      className={cn(className)}\n      style={{ maxWidth: balancedWidth || maxWidth, ...style }}\n      {...props}\n    >\n      {text}\n    </Tag>\n  )\n}\n\nexport { BalancedText, type BalancedTextProps }\n",
+      "type": "registry:component",
+      "target": "components/kidow/balanced-text/balanced-text.tsx"
+    }
+  ],
+  "meta": {
+    "source": "jal-co/ui",
+    "sourceUrl": "https://ui.justinlevine.me/docs/components/balanced-text",
+    "author": "jal-co",
+    "license": "MIT",
+    "retrievedAt": "2026-08-29"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

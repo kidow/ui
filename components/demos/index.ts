@@ -1,5 +1,6 @@
 import type { ComponentType } from 'react'
 
+import AiCopyButtonDemo from './ai-copy-button'
 import AndroidDemo from './android'
 import AnimatedBeamDemo from './animated-beam'
 import AnimatedCheckboxDemo from './animated-checkbox'
@@ -11,12 +12,14 @@ import AnimatedGridPatternDemo from './animated-grid-pattern'
 import AnimatedListDemo from './animated-list'
 import AnimatedShinyTextDemo from './animated-shiny-text'
 import AnimatedThemeTogglerDemo from './animated-theme-toggler'
+import ApiRefTableDemo from './api-ref-table'
 import AsciiEffectDemo from './ascii-effect'
 import AuroraFlowDemo from './aurora-flow'
 import AuroraTextDemo from './aurora-text'
 import AuthModalDemo from './auth-modal'
 import AvatarCirclesDemo from './avatar-circles'
 import BacklightDemo from './backlight'
+import BalancedTextDemo from './balanced-text'
 import BarsSpinnerDemo from './bars-spinner'
 import BentoGridDemo from './bento-grid'
 import BlurFadeDemo from './blur-fade'
@@ -24,29 +27,39 @@ import BlurRevealDemo from './blur-reveal'
 import BorderBeamDemo from './border-beam'
 import BorderBeamComponentryDemo from './border-beam-componentry'
 import CaseStudyFlipStackDemo from './case-study-flip-stack'
+import ChatBubbleDemo from './chat-bubble'
 import CircuitBoardDemo from './circuit-board'
 import ClientTweetCardDemo from './client-tweet-card'
 import ClosingPlasmaDemo from './closing-plasma'
+import CodeBlockDemo from './code-block'
+import CodeBlockCommandDemo from './code-block-command'
 import CodeComparisonDemo from './code-comparison'
+import CodeLineDemo from './code-line'
 import CollectionSurferDemo from './collection-surfer'
 import ColorBadgeDemo from './color-badge'
+import ColorPaletteDemo from './color-palette'
 import ColorSelectorDemo from './color-selector'
 import ComicTextDemo from './comic-text'
 import CommandMenuDemo from './command-menu'
+import CommitGraphDemo from './commit-graph'
 import ConfettiDemo from './confetti'
 import CoolModeDemo from './cool-mode'
 import CopyButtonDemo from './copy-button'
+import CronScheduleDemo from './cron-schedule'
 import CursorDrivenParticleTypographyDemo from './cursor-driven-particle-typography'
 import DiaTextRevealDemo from './dia-text-reveal'
+import DiffViewerDemo from './diff-viewer'
 import DitherGradientDemo from './dither-gradient'
 import DitheredLogoDemo from './dithered-logo'
 import DockDemo from './dock'
 import DotPatternDemo from './dot-pattern'
 import DottedMapDemo from './dotted-map'
+import EnvTableDemo from './env-table'
 import ExplodingInputDemo from './exploding-input'
 import EyeTrackingDemo from './eye-tracking'
 import FallbackAvatarDemo from './fallback-avatar'
 import FileTreeDemo from './file-tree'
+import FileTreeJalcoDemo from './file-tree-jalco'
 import FisheyeInfiniteGridDemo from './fisheye-infinite-grid'
 import FlickeringGridDemo from './flickering-grid'
 import FlightStatusCardDemo from './flight-status-card'
@@ -74,18 +87,23 @@ import InteractiveHoverButtonDemo from './interactive-hover-button'
 import InteractiveHoverButtonComponentryDemo from './interactive-hover-button-componentry'
 import InteractiveLineChartDemo from './interactive-line-chart'
 import IphoneDemo from './iphone'
+import JsonViewerDemo from './json-viewer'
 import KeyboardShortcutDemo from './keyboard-shortcut'
+import KeycapDemo from './keycap'
 import KineticTextDemo from './kinetic-text'
 import KineticTextRevealDemo from './kinetic-text-reveal'
 import LabelInputDemo from './label-input'
 import LayeredStackDemo from './layered-stack'
 import LensDemo from './lens'
 import LetterCascadeDemo from './letter-cascade'
+import LicenseBadgeDemo from './license-badge'
 import LightRaysDemo from './light-rays'
 import LightRaysSpellDemo from './light-rays-spell'
 import LineShadowTextDemo from './line-shadow-text'
 import LiquidBlobDemo from './liquid-blob'
 import LiquidChromeDemo from './liquid-chrome'
+import LogViewerDemo from './log-viewer'
+import LogoCloudDemo from './logo-cloud'
 import LogosCarouselDemo from './logos-carousel'
 import MacKeyboardDemo from './mac-keyboard'
 import MagicCardDemo from './magic-card'
@@ -93,6 +111,7 @@ import MagnetLinesDemo from './magnet-lines'
 import MagneticDockDemo from './magnetic-dock'
 import MarqueeDemo from './marquee'
 import MarqueeSpellDemo from './marquee-spell'
+import MasonryGridDemo from './masonry-grid'
 import MatrixRainDemo from './matrix-rain'
 import MeteorsDemo from './meteors'
 import MorphingTextDemo from './morphing-text'
@@ -120,6 +139,7 @@ import PulsatingButtonComponentryDemo from './pulsating-button-componentry'
 import QrCodeDemo from './qr-code'
 import RainbowButtonDemo from './rainbow-button'
 import RandomizedTextDemo from './randomized-text'
+import RequestViewerDemo from './request-viewer'
 import RetroGridDemo from './retro-grid'
 import RichButtonDemo from './rich-button'
 import RippleDemo from './ripple'
@@ -147,9 +167,12 @@ import SpecialTextDemo from './special-text'
 import SpinningTextDemo from './spinning-text'
 import SplitFlapDisplayDemo from './split-flap-display'
 import SpotlightCardDemo from './spotlight-card'
+import StatusIndicatorDemo from './status-indicator'
+import StepperDemo from './stepper'
 import StickyScrollCardsDemo from './sticky-scroll-cards'
 import StripedPatternDemo from './striped-pattern'
 import TerminalDemo from './terminal'
+import TestimonialDemo from './testimonial'
 import TestimonialMarqueeDemo from './testimonial-marquee'
 import Text3dFlipDemo from './text-3d-flip'
 import TextAnimateDemo from './text-animate'
@@ -159,6 +182,7 @@ import TextMorphDemo from './text-morph'
 import TextRepelDemo from './text-repel'
 import TextRevealDemo from './text-reveal'
 import TiltCardDemo from './tilt-card'
+import TipJarDemo from './tip-jar'
 import TweetDemo from './tweet'
 import TweetCardDemo from './tweet-card'
 import TypingAnimationDemo from './typing-animation'
@@ -174,6 +198,7 @@ import WordsStaggerDemo from './words-stagger'
  * 이 파일은 scripts/sync-demos.mjs 가 생성한다 — 직접 고치지 말 것.
  */
 export const demos: Record<string, ComponentType> = {
+  'ai-copy-button': AiCopyButtonDemo,
   'android': AndroidDemo,
   'animated-beam': AnimatedBeamDemo,
   'animated-checkbox': AnimatedCheckboxDemo,
@@ -185,12 +210,14 @@ export const demos: Record<string, ComponentType> = {
   'animated-list': AnimatedListDemo,
   'animated-shiny-text': AnimatedShinyTextDemo,
   'animated-theme-toggler': AnimatedThemeTogglerDemo,
+  'api-ref-table': ApiRefTableDemo,
   'ascii-effect': AsciiEffectDemo,
   'aurora-flow': AuroraFlowDemo,
   'aurora-text': AuroraTextDemo,
   'auth-modal': AuthModalDemo,
   'avatar-circles': AvatarCirclesDemo,
   'backlight': BacklightDemo,
+  'balanced-text': BalancedTextDemo,
   'bars-spinner': BarsSpinnerDemo,
   'bento-grid': BentoGridDemo,
   'blur-fade': BlurFadeDemo,
@@ -198,29 +225,39 @@ export const demos: Record<string, ComponentType> = {
   'border-beam': BorderBeamDemo,
   'border-beam-componentry': BorderBeamComponentryDemo,
   'case-study-flip-stack': CaseStudyFlipStackDemo,
+  'chat-bubble': ChatBubbleDemo,
   'circuit-board': CircuitBoardDemo,
   'client-tweet-card': ClientTweetCardDemo,
   'closing-plasma': ClosingPlasmaDemo,
+  'code-block': CodeBlockDemo,
+  'code-block-command': CodeBlockCommandDemo,
   'code-comparison': CodeComparisonDemo,
+  'code-line': CodeLineDemo,
   'collection-surfer': CollectionSurferDemo,
   'color-badge': ColorBadgeDemo,
+  'color-palette': ColorPaletteDemo,
   'color-selector': ColorSelectorDemo,
   'comic-text': ComicTextDemo,
   'command-menu': CommandMenuDemo,
+  'commit-graph': CommitGraphDemo,
   'confetti': ConfettiDemo,
   'cool-mode': CoolModeDemo,
   'copy-button': CopyButtonDemo,
+  'cron-schedule': CronScheduleDemo,
   'cursor-driven-particle-typography': CursorDrivenParticleTypographyDemo,
   'dia-text-reveal': DiaTextRevealDemo,
+  'diff-viewer': DiffViewerDemo,
   'dither-gradient': DitherGradientDemo,
   'dithered-logo': DitheredLogoDemo,
   'dock': DockDemo,
   'dot-pattern': DotPatternDemo,
   'dotted-map': DottedMapDemo,
+  'env-table': EnvTableDemo,
   'exploding-input': ExplodingInputDemo,
   'eye-tracking': EyeTrackingDemo,
   'fallback-avatar': FallbackAvatarDemo,
   'file-tree': FileTreeDemo,
+  'file-tree-jalco': FileTreeJalcoDemo,
   'fisheye-infinite-grid': FisheyeInfiniteGridDemo,
   'flickering-grid': FlickeringGridDemo,
   'flight-status-card': FlightStatusCardDemo,
@@ -248,18 +285,23 @@ export const demos: Record<string, ComponentType> = {
   'interactive-hover-button-componentry': InteractiveHoverButtonComponentryDemo,
   'interactive-line-chart': InteractiveLineChartDemo,
   'iphone': IphoneDemo,
+  'json-viewer': JsonViewerDemo,
   'keyboard-shortcut': KeyboardShortcutDemo,
+  'keycap': KeycapDemo,
   'kinetic-text': KineticTextDemo,
   'kinetic-text-reveal': KineticTextRevealDemo,
   'label-input': LabelInputDemo,
   'layered-stack': LayeredStackDemo,
   'lens': LensDemo,
   'letter-cascade': LetterCascadeDemo,
+  'license-badge': LicenseBadgeDemo,
   'light-rays': LightRaysDemo,
   'light-rays-spell': LightRaysSpellDemo,
   'line-shadow-text': LineShadowTextDemo,
   'liquid-blob': LiquidBlobDemo,
   'liquid-chrome': LiquidChromeDemo,
+  'log-viewer': LogViewerDemo,
+  'logo-cloud': LogoCloudDemo,
   'logos-carousel': LogosCarouselDemo,
   'mac-keyboard': MacKeyboardDemo,
   'magic-card': MagicCardDemo,
@@ -267,6 +309,7 @@ export const demos: Record<string, ComponentType> = {
   'magnetic-dock': MagneticDockDemo,
   'marquee': MarqueeDemo,
   'marquee-spell': MarqueeSpellDemo,
+  'masonry-grid': MasonryGridDemo,
   'matrix-rain': MatrixRainDemo,
   'meteors': MeteorsDemo,
   'morphing-text': MorphingTextDemo,
@@ -294,6 +337,7 @@ export const demos: Record<string, ComponentType> = {
   'qr-code': QrCodeDemo,
   'rainbow-button': RainbowButtonDemo,
   'randomized-text': RandomizedTextDemo,
+  'request-viewer': RequestViewerDemo,
   'retro-grid': RetroGridDemo,
   'rich-button': RichButtonDemo,
   'ripple': RippleDemo,
@@ -321,9 +365,12 @@ export const demos: Record<string, ComponentType> = {
   'spinning-text': SpinningTextDemo,
   'split-flap-display': SplitFlapDisplayDemo,
   'spotlight-card': SpotlightCardDemo,
+  'status-indicator': StatusIndicatorDemo,
+  'stepper': StepperDemo,
   'sticky-scroll-cards': StickyScrollCardsDemo,
   'striped-pattern': StripedPatternDemo,
   'terminal': TerminalDemo,
+  'testimonial': TestimonialDemo,
   'testimonial-marquee': TestimonialMarqueeDemo,
   'text-3d-flip': Text3dFlipDemo,
   'text-animate': TextAnimateDemo,
@@ -333,6 +380,7 @@ export const demos: Record<string, ComponentType> = {
   'text-repel': TextRepelDemo,
   'text-reveal': TextRevealDemo,
   'tilt-card': TiltCardDemo,
+  'tip-jar': TipJarDemo,
   'tweet': TweetDemo,
   'tweet-card': TweetCardDemo,
   'typing-animation': TypingAnimationDemo,

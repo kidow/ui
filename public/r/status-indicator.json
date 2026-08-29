@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "status-indicator",
+  "title": "Status Indicator",
+  "description": "운영 상태 배지(status indicator, uptime status). 점 색과 라벨로 정상·지연·장애를 표시해 대시보드나 상태 페이지에 쓴다.",
+  "dependencies": [
+    "class-variance-authority"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/status-indicator/status-indicator.tsx",
+      "content": "/**\n * jalco-ui\n * StatusIndicator\n * by Justin Levine\n * ui.justinlevine.me\n *\n * Operational status badge with colored dot and label for dashboards,\n * status pages, and header bars.\n *\n * Props:\n * - status: operational | degraded | partial-outage | major-outage | maintenance | incident | unknown\n * - label?: custom label text (auto-generated from status when omitted)\n * - size?: sm | md | lg\n *\n * Notes:\n * - Server component — no client JS required\n * - No external dependencies\n */\n\nimport * as React from \"react\"\nimport { cva, type VariantProps } from \"class-variance-authority\"\nimport { cn } from \"@/lib/utils\"\n\ntype Status =\n  | \"operational\"\n  | \"degraded\"\n  | \"partial-outage\"\n  | \"major-outage\"\n  | \"maintenance\"\n  | \"incident\"\n  | \"unknown\"\n\nconst STATUS_CONFIG: Record<Status, { label: string; dot: string; text: string }> = {\n  operational: {\n    label: \"Operational\",\n    dot: \"bg-emerald-500\",\n    text: \"text-emerald-700 dark:text-emerald-400\",\n  },\n  degraded: {\n    label: \"Degraded\",\n    dot: \"bg-amber-500\",\n    text: \"text-amber-700 dark:text-amber-400\",\n  },\n  \"partial-outage\": {\n    label: \"Partial Outage\",\n    dot: \"bg-orange-500\",\n    text: \"text-orange-700 dark:text-orange-400\",\n  },\n  \"major-outage\": {\n    label: \"Major Outage\",\n    dot: \"bg-rose-500\",\n    text: \"text-rose-700 dark:text-rose-400\",\n  },\n  maintenance: {\n    label: \"Maintenance\",\n    dot: \"bg-sky-500\",\n    text: \"text-sky-700 dark:text-sky-400\",\n  },\n  incident: {\n    label: \"Incident\",\n    dot: \"bg-rose-500\",\n    text: \"text-rose-700 dark:text-rose-400\",\n  },\n  unknown: {\n    label: \"Unknown\",\n    dot: \"bg-zinc-400 dark:bg-zinc-500\",\n    text: \"text-zinc-600 dark:text-zinc-400\",\n  },\n}\n\nconst statusIndicatorVariants = cva(\n  \"inline-flex items-center gap-2 rounded-full border font-medium\",\n  {\n    variants: {\n      size: {\n        sm: \"h-6 px-2.5 text-[11px] [&>[data-slot=status-dot]]:size-1.5\",\n        md: \"h-7 px-3 text-xs [&>[data-slot=status-dot]]:size-2\",\n        lg: \"h-8 px-3.5 text-sm [&>[data-slot=status-dot]]:size-2.5\",\n      },\n    },\n    defaultVariants: {\n      size: \"md\",\n    },\n  }\n)\n\ninterface StatusIndicatorProps\n  extends Omit<React.ComponentProps<\"span\">, \"children\">,\n    VariantProps<typeof statusIndicatorVariants> {\n  /** Current operational status. */\n  status: Status\n  /** Custom label text. Auto-generated from status when omitted. */\n  label?: string\n}\n\nfunction StatusIndicator({\n  status,\n  label,\n  size,\n  className,\n  ...props\n}: StatusIndicatorProps) {\n  const config = STATUS_CONFIG[status]\n  const displayLabel = label ?? config.label\n\n  return (\n    <span\n      data-slot=\"status-indicator\"\n      data-status={status}\n      role=\"status\"\n      aria-label={displayLabel}\n      className={cn(\n        statusIndicatorVariants({ size }),\n        \"border-border/60 bg-card shadow-xs\",\n        className\n      )}\n      {...props}\n    >\n     <span\n       data-slot=\"status-dot\"\n        className={cn(\"relative shrink-0 rounded-full\", config.dot)}\n        aria-hidden=\"true\"\n      >\n        <span\n          className={cn(\"absolute inset-0 rounded-full animate-ping opacity-40\", config.dot)}\n        />\n      </span>\n      <span className={cn(\"whitespace-nowrap\", config.text)}>\n        {displayLabel}\n      </span>\n    </span>\n  )\n}\n\nexport {\n  StatusIndicator,\n  statusIndicatorVariants,\n  STATUS_CONFIG,\n  type StatusIndicatorProps,\n  type Status,\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/status-indicator/status-indicator.tsx"
+    }
+  ],
+  "meta": {
+    "source": "jal-co/ui",
+    "sourceUrl": "https://ui.justinlevine.me/docs/components/status-indicator",
+    "author": "jal-co",
+    "license": "MIT",
+    "retrievedAt": "2026-08-29"
+  },
+  "categories": [
+    "미디어·데이터"
+  ],
+  "type": "registry:component"
+}

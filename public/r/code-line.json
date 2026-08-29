@@ -1,0 +1,39 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "code-line",
+  "title": "Code Line",
+  "description": "한 줄짜리 코드 스니펫(inline code, single line code). 문법 강조와 인라인 복사 버튼이 붙는다.",
+  "dependencies": [
+    "lucide-react",
+    "shiki"
+  ],
+  "registryDependencies": [
+    "https://svgl.app/r/shiki.json",
+    "@kidow/code-block"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/code-line/code-line.tsx",
+      "content": "/**\n * jalco-ui\n * CodeLine\n * by Justin Levine\n * ui.justinlevine.me\n *\n * Compact single-line code snippet with syntax highlighting and an inline copy button.\n *\n * Props:\n * - code: single-line code string to render\n * - language?: shiki language key, defaults to \"tsx\"\n * - label?: optional leading label\n * - hideCopy?: hide the copy button\n * - theme?: shiki theme name for single-theme rendering (e.g. \"dracula\", \"nord\")\n *\n * Dependencies: shiki, lucide-react\n */\n\nimport * as React from \"react\"\nimport { cn } from \"@/lib/utils\"\nimport { highlightCode } from \"@/components/kidow/code-block/lib/highlight-code\"\nimport { CodeLineCopyButton } from \"@/components/kidow/code-line/code-line-copy-button\"\n\ninterface CodeLineProps extends Omit<React.ComponentProps<\"div\">, \"children\"> {\n  /** The code string to display. Should be a single line. */\n  code: string\n  /** Language for syntax highlighting. */\n  language?: string\n  /** Optional leading label displayed before the code (e.g. \"Import\"). */\n  label?: string\n  /** Hide the copy button. */\n  hideCopy?: boolean\n  /** Shiki theme name for single-theme rendering (e.g. \"dracula\", \"nord\"). */\n  theme?: string\n}\n\nasync function CodeLine({\n  code,\n  language = \"tsx\",\n  label,\n  hideCopy = false,\n  theme,\n  className,\n  ...props\n}: CodeLineProps) {\n  const highlighted = await highlightCode(code.trim(), language, theme)\n\n  // Extract background color from shiki's inline theme output\n  const themeBg = theme\n    ? highlighted.match(/background-color:\\s*([^;\"]+)/)?.[1]\n    : undefined\n\n  return (\n    <div\n      data-slot=\"code-line\"\n      className={cn(\n        \"inline-flex w-full items-center gap-2 overflow-hidden rounded-lg border border-border/60 shadow-xs\",\n        !theme && \"bg-muted/30\",\n        className\n      )}\n      style={themeBg ? { backgroundColor: themeBg } : undefined}\n      {...props}\n    >\n      {label && (\n        <span className=\"flex shrink-0 items-center self-stretch border-r border-border/60 bg-muted/50 px-3 text-xs font-medium text-muted-foreground\">\n          {label}\n        </span>\n      )}\n      <div className=\"flex min-w-0 flex-1 items-center overflow-x-auto\">\n        <div\n          className={cn(\n            \"code-block whitespace-nowrap px-3 py-2\",\n            \"[&_pre]:m-0 [&_pre]:inline [&_pre]:bg-transparent [&_pre]:p-0\",\n            \"[&_code]:font-mono [&_code]:text-[13px]\"\n          )}\n          dangerouslySetInnerHTML={{ __html: highlighted }}\n        />\n      </div>\n      {!hideCopy && <CodeLineCopyButton value={code.trim()} />}\n    </div>\n  )\n}\n\nexport { CodeLine, type CodeLineProps }\n",
+      "type": "registry:component",
+      "target": "components/kidow/code-line/code-line.tsx"
+    },
+    {
+      "path": "registry/kidow/code-line/code-line-copy-button.tsx",
+      "content": "\"use client\"\n\n/**\n * jalco-ui\n * CodeLineCopyButton\n * by Justin Levine\n * ui.justinlevine.me\n *\n * Inline copy button for the CodeLine component.\n *\n * Dependencies: lucide-react\n */\n\nimport * as React from \"react\"\nimport { Check, Copy } from \"lucide-react\"\nimport { cn } from \"@/lib/utils\"\n\ninterface CodeLineCopyButtonProps extends Omit<React.ComponentProps<\"button\">, \"value\"> {\n  value: string\n}\n\nfunction CodeLineCopyButton({ value, className, ...props }: CodeLineCopyButtonProps) {\n  const [copied, setCopied] = React.useState(false)\n\n  async function handleCopy() {\n    await navigator.clipboard.writeText(value)\n    setCopied(true)\n    window.setTimeout(() => setCopied(false), 1500)\n  }\n\n  return (\n    <button\n      type=\"button\"\n      onClick={handleCopy}\n      data-slot=\"code-line-copy-button\"\n      className={cn(\n        \"inline-flex shrink-0 items-center justify-center rounded-md p-2 text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/50\",\n        className\n      )}\n      aria-label={copied ? \"Copied\" : \"Copy to clipboard\"}\n      {...props}\n    >\n      {copied ? (\n        <Check className=\"size-3.5 text-emerald-500\" />\n      ) : (\n        <Copy className=\"size-3.5\" />\n      )}\n    </button>\n  )\n}\n\nexport { CodeLineCopyButton, type CodeLineCopyButtonProps }\n",
+      "type": "registry:component",
+      "target": "components/kidow/code-line/code-line-copy-button.tsx"
+    }
+  ],
+  "meta": {
+    "source": "jal-co/ui",
+    "sourceUrl": "https://ui.justinlevine.me/docs/components/code-line",
+    "author": "jal-co",
+    "license": "MIT",
+    "retrievedAt": "2026-08-29"
+  },
+  "categories": [
+    "코드·터미널"
+  ],
+  "type": "registry:component"
+}

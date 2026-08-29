@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "masonry-grid",
+  "title": "Pretext Masonry Grid",
+  "description": "카드 높이를 미리 계산해 배치하는 메이슨리 그리드(masonry grid, pinterest layout). DOM 측정 없이 높이를 예측한다.",
+  "dependencies": [
+    "@chenglou/pretext"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/masonry-grid/masonry-grid.tsx",
+      "content": "/**\n * jalco-ui\n * MasonryGrid\n * by Justin Levine\n * ui.justinlevine.me\n *\n * Text-aware masonry layout where card heights are predicted by Pretext\n * without DOM measurement. Cards flow into columns with zero layout\n * shift, positioned using pure arithmetic.\n *\n * Dependencies: @chenglou/pretext (via pretext registry item)\n *\n * Powered by Pretext by Cheng Lou — github.com/chenglou/pretext\n */\n\n\"use client\"\n\nimport * as React from \"react\"\nimport { cn } from \"@/lib/utils\"\nimport type { PreparedText } from \"@chenglou/pretext\"\n\nconst isBrowser = typeof window !== \"undefined\"\n\nfunction getPretext() {\n  // eslint-disable-next-line @typescript-eslint/no-require-imports\n  return require(\"@chenglou/pretext\") as typeof import(\"@chenglou/pretext\")\n}\n\ninterface MasonryItem {\n  /** Text content of the card. */\n  text: string\n  /** Optional title above the text. */\n  title?: string\n}\n\ninterface MasonryGridProps extends Omit<React.ComponentProps<\"div\">, \"children\"> {\n  /** Array of items to display. */\n  items: MasonryItem[]\n  /** Number of columns. @default 3 */\n  columns?: 2 | 3 | 4\n  /** Gap between cards in pixels. @default 12 */\n  gap?: number\n  /** CSS font shorthand for body text measurement. Must match rendered font.\n   * @default '14px/20px ui-sans-serif, system-ui, sans-serif' */\n  font?: string\n  /** Body text line height in pixels. @default 20 */\n  lineHeight?: number\n  /** Card padding in pixels. @default 16 */\n  cardPadding?: number\n}\n\nconst DEFAULT_FONT = \"14px ui-sans-serif, system-ui, sans-serif\"\nconst DEFAULT_LINE_HEIGHT = 20\nconst DEFAULT_CARD_PADDING = 16\nconst TITLE_HEIGHT = 28\n\nfunction MasonryGrid({\n  items,\n  columns = 3,\n  gap = 12,\n  font = DEFAULT_FONT,\n  lineHeight = DEFAULT_LINE_HEIGHT,\n  cardPadding = DEFAULT_CARD_PADDING,\n  className,\n  ...props\n}: MasonryGridProps) {\n  const containerRef = React.useRef<HTMLDivElement>(null)\n  const [containerWidth, setContainerWidth] = React.useState(0)\n\n  React.useEffect(() => {\n    const el = containerRef.current\n    if (!el) return\n    const observer = new ResizeObserver((entries) => {\n      for (const entry of entries) {\n        setContainerWidth(entry.contentRect.width)\n      }\n    })\n    observer.observe(el)\n    setContainerWidth(el.clientWidth)\n    return () => observer.disconnect()\n  }, [])\n\n  const prepared = React.useMemo(\n    () => {\n      if (!isBrowser) return [] as PreparedText[]\n      const { prepare } = getPretext()\n      return items.map((item) => prepare(item.text, font))\n    },\n    [items, font],\n  )\n\n  const positioned = React.useMemo(() => {\n    if (containerWidth <= 0) return { cards: [] as { x: number; y: number; w: number; h: number; index: number }[], height: 0 }\n\n    const colWidth = (containerWidth - (columns - 1) * gap) / columns\n    const textWidth = Math.max(1, colWidth - cardPadding * 2)\n    const colHeights = new Array(columns).fill(0) as number[]\n\n    const cards = items.map((item, i) => {\n      let shortest = 0\n      for (let c = 1; c < columns; c++) {\n        if (colHeights[c]! < colHeights[shortest]!) shortest = c\n      }\n\n      const { height: textHeight } = getPretext().layout(prepared[i]!, textWidth, lineHeight)\n      const titleExtra = item.title ? TITLE_HEIGHT : 0\n      const cardHeight = textHeight + titleExtra + cardPadding * 2\n\n      const x = shortest * (colWidth + gap)\n      const y = colHeights[shortest]!\n\n      colHeights[shortest]! += cardHeight + gap\n\n      return { x, y, w: colWidth, h: cardHeight, index: i }\n    })\n\n    const height = Math.max(...colHeights)\n    return { cards, height }\n  }, [items, prepared, containerWidth, columns, gap, cardPadding, lineHeight])\n\n  return (\n    <div\n      ref={containerRef}\n      data-slot=\"masonry-grid\"\n      className={cn(\"relative w-full\", className)}\n      style={{ height: positioned.height || \"auto\" }}\n      {...props}\n    >\n      {containerWidth > 0 &&\n        positioned.cards.map((card) => {\n          const item = items[card.index]!\n          return (\n            <div\n              key={card.index}\n              className=\"absolute rounded-lg border border-border/60 bg-card p-4 shadow-sm\"\n              style={{\n                left: card.x,\n                top: card.y,\n                width: card.w,\n                height: card.h,\n              }}\n            >\n              {item.title && (\n                <p className=\"mb-1 text-sm font-semibold text-foreground\">\n                  {item.title}\n                </p>\n              )}\n              <p className=\"text-sm leading-5 text-muted-foreground\">\n                {item.text}\n              </p>\n            </div>\n          )\n        })}\n    </div>\n  )\n}\n\nexport { MasonryGrid, type MasonryGridProps, type MasonryItem }\n",
+      "type": "registry:component",
+      "target": "components/kidow/masonry-grid/masonry-grid.tsx"
+    }
+  ],
+  "meta": {
+    "source": "jal-co/ui",
+    "sourceUrl": "https://ui.justinlevine.me/docs/components/masonry-grid",
+    "author": "jal-co",
+    "license": "MIT",
+    "retrievedAt": "2026-08-29"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

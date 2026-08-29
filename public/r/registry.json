@@ -4,6 +4,65 @@
   "homepage": "https://ui.dongwook.kim",
   "items": [
     {
+      "name": "activity-graph",
+      "type": "registry:component",
+      "title": "Activity Graph",
+      "description": "GitHub 잔디처럼 일별 활동량을 색 농도로 그리는 히트맵(activity heatmap, contribution graph). 사용량·게시 빈도 시각화에 쓴다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/activity-graph/activity-graph.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/activity-graph/activity-graph.tsx"
+        },
+        {
+          "path": "registry/kidow/activity-graph/lib/github.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/activity-graph/lib/github.ts"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/activity-graph",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "ai-copy-button",
+      "type": "registry:component",
+      "title": "AI Copy Button",
+      "description": "복사와 함께 ChatGPT·Claude 등으로 바로 보내는 드롭다운이 달린 버튼(copy for AI, share to LLM). 문서 페이지에서 코드나 문단을 에이전트에 넘길 때 쓴다.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ai-copy-button/ai-copy-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ai-copy-button/ai-copy-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/ai-copy-button",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "android",
       "type": "registry:component",
       "title": "Android",
@@ -313,6 +372,29 @@
       }
     },
     {
+      "name": "api-ref-table",
+      "type": "registry:component",
+      "title": "API Reference Table",
+      "description": "props 레퍼런스 표(api reference table, props table). 타입 색 구분과 펼침 설명이 있어 컴포넌트 문서에 쓴다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/api-ref-table/api-ref-table.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/api-ref-table/api-ref-table.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/api-ref-table",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "ascii-effect",
       "type": "registry:component",
       "title": "ASCII Effect",
@@ -484,6 +566,35 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/backlight",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "balanced-text",
+      "type": "registry:component",
+      "title": "Pretext Balanced Text",
+      "description": "줄바꿈 폭을 고르게 맞춰주는 텍스트 래퍼(balanced text, text wrap balance). 제목이 한쪽으로 쏠려 보이는 걸 막는다. DOM 측정 없이 계산한다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "@chenglou/pretext"
+      ],
+      "registryDependencies": [
+        "@kidow/pretext"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/balanced-text/balanced-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/balanced-text/balanced-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/balanced-text",
+        "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -671,6 +782,66 @@
       }
     },
     {
+      "name": "chat-bubble",
+      "type": "registry:component",
+      "title": "Pretext Chat Bubble",
+      "description": "말풍선과 대화 스레드(chat bubble, message thread). AI 대화 예시나 고객 문의 화면을 보여줄 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@chenglou/pretext"
+      ],
+      "registryDependencies": [
+        "@kidow/pretext"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/chat-bubble/chat-bubble.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/chat-bubble/chat-bubble.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/chat-bubble",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "ci-badge",
+      "type": "registry:component",
+      "title": "CI Badge",
+      "description": "GitHub Actions CI 상태 배지(ci badge, build status). passing·failing·pending 을 표시한다. 서버에서 GitHub API 를 호출한다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ci-badge/ci-badge.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ci-badge/ci-badge.tsx"
+        },
+        {
+          "path": "registry/kidow/ci-badge/lib/github.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/ci-badge/lib/github.ts"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/ci-badge",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "circuit-board",
       "type": "registry:component",
       "title": "circuit-board",
@@ -746,6 +917,74 @@
       }
     },
     {
+      "name": "code-block",
+      "type": "registry:component",
+      "title": "Code Block",
+      "description": "문법 강조 코드 블록(code block, syntax highlight). 언어 아이콘·복사 버튼·접기를 지원하고 Shiki 로 하이라이트한다. 문서 페이지의 기본 요소.",
+      "categories": [
+        "코드·터미널"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "shiki"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/code-block/code-block.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/code-block/code-block.tsx"
+        },
+        {
+          "path": "registry/kidow/code-block/code-block-client.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/code-block/code-block-client.tsx"
+        },
+        {
+          "path": "registry/kidow/code-block/lib/highlight-code.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/code-block/lib/highlight-code.ts"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/code-block",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "code-block-command",
+      "type": "registry:component",
+      "title": "Code Block Command",
+      "description": "패키지 매니저 탭이 달린 CLI 명령 블록(install command, package manager tabs). pnpm·npm·yarn·bun 을 한 블록에서 전환한다.",
+      "categories": [
+        "코드·터미널"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/code-block-command/code-block-command.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/code-block-command/code-block-command.tsx"
+        },
+        {
+          "path": "registry/kidow/code-block-command/lib/convert-npm-command.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/code-block-command/lib/convert-npm-command.ts"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/code-block-command",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "code-comparison",
       "type": "registry:component",
       "title": "Code Comparison",
@@ -770,6 +1009,42 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/code-comparison",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "code-line",
+      "type": "registry:component",
+      "title": "Code Line",
+      "description": "한 줄짜리 코드 스니펫(inline code, single line code). 문법 강조와 인라인 복사 버튼이 붙는다.",
+      "categories": [
+        "코드·터미널"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "shiki"
+      ],
+      "registryDependencies": [
+        "https://svgl.app/r/shiki.json",
+        "@kidow/code-block"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/code-line/code-line.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/code-line/code-line.tsx"
+        },
+        {
+          "path": "registry/kidow/code-line/code-line-copy-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/code-line/code-line-copy-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/code-line",
+        "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -823,6 +1098,32 @@
         "source": "Spell UI",
         "sourceUrl": "https://spell.sh/docs/components/badge",
         "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "color-palette",
+      "type": "registry:component",
+      "title": "Color Palette",
+      "description": "색 스와치 목록(color palette, design tokens). 이름과 hex·hsl·rgb 값을 보여주고 클릭하면 복사된다. 디자인 시스템 문서에 쓴다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/color-palette/color-palette.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/color-palette/color-palette.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/color-palette",
+        "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -906,6 +1207,32 @@
       }
     },
     {
+      "name": "commit-graph",
+      "type": "registry:component",
+      "title": "Commit Graph",
+      "description": "커밋 히스토리를 세로 타임라인으로 그린다(commit graph, git history). 해시·메시지·작성자·태그·브랜치를 표시한다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/commit-graph/commit-graph.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/commit-graph/commit-graph.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/commit-graph",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "confetti",
       "type": "registry:component",
       "title": "Confetti",
@@ -930,6 +1257,45 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/confetti",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "contributor-grid",
+      "type": "registry:component",
+      "title": "Contributor Grid",
+      "description": "깃허브 기여자 목록을 아바타 그리드로 보여준다(contributors, avatar grid). 서버에서 GitHub API 를 호출한다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/contributor-grid/contributor-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/contributor-grid/contributor-grid.tsx"
+        },
+        {
+          "path": "registry/kidow/contributor-grid/lib/github.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/contributor-grid/lib/github.ts"
+        },
+        {
+          "path": "registry/kidow/contributor-grid/contributor-grid-client.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/contributor-grid/contributor-grid-client.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/contributor-grid",
+        "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -984,6 +1350,29 @@
       }
     },
     {
+      "name": "cron-schedule",
+      "type": "registry:component",
+      "title": "Cron Schedule",
+      "description": "cron 표현식을 필드별로 쪼개 사람이 읽을 수 있게 보여준다(cron schedule, crontab). 스케줄러 설정 화면에 쓴다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/cron-schedule/cron-schedule.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cron-schedule/cron-schedule.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/cron-schedule",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "cursor-driven-particle-typography",
       "type": "registry:component",
       "title": "cursor-driven-particle-typography",
@@ -1028,6 +1417,69 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/dia-text-reveal",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "diff-viewer",
+      "type": "registry:component",
+      "title": "Diff Viewer",
+      "description": "코드 차이를 줄 번호와 추가·삭제 색으로 보여주는 뷰어(diff viewer, code diff). 마이그레이션 안내나 변경 이력에 쓴다.",
+      "categories": [
+        "코드·터미널"
+      ],
+      "dependencies": [
+        "diff",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/diff-viewer/diff-viewer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/diff-viewer/diff-viewer.tsx"
+        },
+        {
+          "path": "registry/kidow/diff-viewer/diff-viewer-client.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/diff-viewer/diff-viewer-client.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/diff-viewer",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "discord-badge",
+      "type": "registry:component",
+      "title": "Discord Badge",
+      "description": "디스코드 서버 이름과 접속자 수를 보여주는 라이브 배지(discord badge, community). 서버에서 Discord API 를 호출한다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/discord-badge/discord-badge.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/discord-badge/discord-badge.tsx"
+        },
+        {
+          "path": "registry/kidow/discord-badge/lib/discord.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/discord-badge/lib/discord.ts"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/discord-badge",
+        "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1158,6 +1610,60 @@
       }
     },
     {
+      "name": "download-sparkline",
+      "type": "registry:component",
+      "title": "Download Sparkline",
+      "description": "npm 다운로드 추이를 인라인 스파크라인으로(sparkline, npm downloads). 서버에서 npm API 를 호출한다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/download-sparkline/download-sparkline.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/download-sparkline/download-sparkline.tsx"
+        },
+        {
+          "path": "registry/kidow/download-sparkline/lib/npm.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/download-sparkline/lib/npm.ts"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/download-sparkline",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "env-table",
+      "type": "registry:component",
+      "title": "Env Table",
+      "description": "환경 변수 표(env table, environment variables). 값이 가려져 있고 클릭하면 드러난다. 배포 설정 문서에 쓴다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/env-table/env-table.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/env-table/env-table.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/env-table",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "exploding-input",
       "type": "registry:component",
       "title": "Exploding Input",
@@ -1256,6 +1762,29 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/file-tree",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "file-tree-jalco",
+      "type": "registry:component",
+      "title": "File Tree",
+      "description": "접었다 펴는 파일·폴더 트리(file tree, directory structure). 파일 타입 아이콘과 강조 표시를 지원한다. MagicUI 버전보다 옵션이 많다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/file-tree-jalco/file-tree.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/file-tree-jalco/file-tree.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/file-tree",
+        "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1386,6 +1915,37 @@
       }
     },
     {
+      "name": "github-button-group",
+      "type": "registry:component",
+      "title": "GitHub Button Group",
+      "description": "스타·포크·이슈 등 저장소 지표를 한 줄 버튼 그룹으로(github metrics, repo stats). 서버에서 GitHub API 를 호출한다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/github-button-group/github-button-group.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/github-button-group/github-button-group.tsx"
+        },
+        {
+          "path": "registry/kidow/github-button-group/lib/github.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/github-button-group/lib/github.ts"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/github-button-group",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "github-calendar",
       "type": "registry:component",
       "title": "github-calendar",
@@ -1407,6 +1967,37 @@
         "source": "Componentry",
         "sourceUrl": "https://componentry.dev/docs/components/github-calendar",
         "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "github-stars-button",
+      "type": "registry:component",
+      "title": "GitHub Stars Button",
+      "description": "저장소 스타 수를 보여주는 링크 버튼(github stars, star button). 서버에서 GitHub API 를 호출한다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/github-stars-button/github-stars-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/github-stars-button/github-stars-button.tsx"
+        },
+        {
+          "path": "registry/kidow/github-stars-button/lib/github.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/github-stars-button/lib/github.ts"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/github-stars-button",
+        "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1952,6 +2543,37 @@
       }
     },
     {
+      "name": "json-viewer",
+      "type": "registry:component",
+      "title": "JSON Viewer",
+      "description": "접었다 펴는 JSON 트리 뷰어(json viewer, json tree). 경로 복사·검색·색 테마를 지원해 API 응답을 보여줄 때 쓴다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/json-viewer/json-viewer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/json-viewer/json-viewer.tsx"
+        },
+        {
+          "path": "registry/kidow/json-viewer/lib/themes.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/json-viewer/lib/themes.ts"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/json-viewer",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "keyboard-shortcut",
       "type": "registry:component",
       "title": "Keyboard Shortcuts",
@@ -1973,6 +2595,32 @@
         "source": "Spell UI",
         "sourceUrl": "https://spell.sh/docs/components/kbd",
         "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "keycap",
+      "type": "registry:component",
+      "title": "Kbd",
+      "description": "키보드 키캡(kbd, keycap, keyboard shortcut). flat·raised 등 세 가지 외형이 있고 조합키도 표시한다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/keycap/kbd.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/keycap/kbd.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/kbd",
+        "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -2131,6 +2779,37 @@
       }
     },
     {
+      "name": "license-badge",
+      "type": "registry:component",
+      "title": "License Badge",
+      "description": "SPDX 라이선스 배지(license badge, MIT, Apache-2.0). 카테고리별 색과 OSI 승인 표시가 붙는다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/license-badge/license-badge.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/license-badge/license-badge.tsx"
+        },
+        {
+          "path": "registry/kidow/license-badge/lib/licenses.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/license-badge/lib/licenses.ts"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/license-badge",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "light-rays",
       "type": "registry:component",
       "title": "Light Rays",
@@ -2268,6 +2947,60 @@
         "source": "Componentry",
         "sourceUrl": "https://componentry.dev/docs/components/liquid-chrome",
         "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "log-viewer",
+      "type": "registry:component",
+      "title": "Log Viewer",
+      "description": "스크롤되는 로그 출력 뷰어(log viewer, console output). 배포 로그나 CLI 출력을 그대로 보여줄 때 쓴다. 레벨 필터가 있다.",
+      "categories": [
+        "코드·터미널"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/log-viewer/log-viewer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/log-viewer/log-viewer.tsx"
+        },
+        {
+          "path": "registry/kidow/log-viewer/lib/sample-logs.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/log-viewer/lib/sample-logs.ts"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/log-viewer",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "logo-cloud",
+      "type": "registry:component",
+      "title": "Logo Cloud",
+      "description": "\"이런 곳에서 씁니다\" 로고 모음(logo cloud, trusted by). 정적 그리드와 무한 스크롤 두 배치가 있다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/logo-cloud/logo-cloud.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/logo-cloud/logo-cloud.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/logo-cloud",
+        "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -2474,6 +3207,32 @@
       }
     },
     {
+      "name": "masonry-grid",
+      "type": "registry:component",
+      "title": "Pretext Masonry Grid",
+      "description": "카드 높이를 미리 계산해 배치하는 메이슨리 그리드(masonry grid, pinterest layout). DOM 측정 없이 높이를 예측한다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@chenglou/pretext"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/masonry-grid/masonry-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/masonry-grid/masonry-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/masonry-grid",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "matrix-rain",
       "type": "registry:component",
       "title": "matrix-rain",
@@ -2668,6 +3427,37 @@
         "source": "Componentry",
         "sourceUrl": "https://componentry.dev/docs/components/noise-texture",
         "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "npm-badge",
+      "type": "registry:component",
+      "title": "npm Badge",
+      "description": "npm 패키지의 버전·주간 다운로드·라이선스를 보여주는 라이브 배지(npm badge, package info). 서버에서 npm API 를 호출한다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/npm-badge/npm-badge.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/npm-badge/npm-badge.tsx"
+        },
+        {
+          "path": "registry/kidow/npm-badge/lib/npm.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/npm-badge/lib/npm.ts"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/npm-badge",
+        "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -2962,6 +3752,32 @@
       }
     },
     {
+      "name": "pretext",
+      "type": "registry:component",
+      "title": "Pretext Hooks",
+      "description": "DOM 없이 텍스트 폭을 재는 React 훅 모음(text measurement, pretext). balanced-text·masonry-grid 가 이걸 쓴다. 화면에 보이는 컴포넌트가 아니라 유틸이다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "@chenglou/pretext"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/pretext/use-pretext.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/pretext/use-pretext.ts"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/pretext",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "pricing-01",
       "type": "registry:component",
       "title": "Pricing 01",
@@ -3035,6 +3851,37 @@
         "source": "Componentry",
         "sourceUrl": "https://componentry.dev/docs/components/prism-gradient",
         "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "producthunt-button",
+      "type": "registry:component",
+      "title": "Product Hunt Button",
+      "description": "Product Hunt 게시물의 업보트 수를 보여주는 버튼(product hunt, upvote). 서버에서 API 를 호출한다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/producthunt-button/producthunt-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/producthunt-button/producthunt-button.tsx"
+        },
+        {
+          "path": "registry/kidow/producthunt-button/lib/producthunt.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/producthunt-button/lib/producthunt.ts"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/producthunt-button",
+        "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -3236,6 +4083,94 @@
         "source": "Spell UI",
         "sourceUrl": "https://spell.sh/docs/components/randomized-text",
         "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "release-badge",
+      "type": "registry:component",
+      "title": "Release Badge",
+      "description": "최신 릴리스 태그와 배포일을 보여주는 배지(release badge, latest version). 서버에서 GitHub API 를 호출한다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/release-badge/release-badge.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/release-badge/release-badge.tsx"
+        },
+        {
+          "path": "registry/kidow/release-badge/lib/github.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/release-badge/lib/github.ts"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/release-badge",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "repo-card",
+      "type": "registry:component",
+      "title": "Repo Card",
+      "description": "깃허브 저장소 미리보기 카드(repo card, repository preview). 설명·언어·스타·포크를 담는다. 서버에서 GitHub API 를 호출한다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/repo-card/repo-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/repo-card/repo-card.tsx"
+        },
+        {
+          "path": "registry/kidow/repo-card/lib/github.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/repo-card/lib/github.ts"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/repo-card",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "request-viewer",
+      "type": "registry:component",
+      "title": "Request Viewer",
+      "description": "네트워크 요청 인스펙터(request viewer, network inspector). 헤더·응답 본문·타이밍 워터폴을 보여줘 API 문서에 쓴다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/request-viewer/request-viewer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/request-viewer/request-viewer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/request-viewer",
+        "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -4080,6 +5015,55 @@
       }
     },
     {
+      "name": "status-indicator",
+      "type": "registry:component",
+      "title": "Status Indicator",
+      "description": "운영 상태 배지(status indicator, uptime status). 점 색과 라벨로 정상·지연·장애를 표시해 대시보드나 상태 페이지에 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/status-indicator/status-indicator.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/status-indicator/status-indicator.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/status-indicator",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "stepper",
+      "type": "registry:component",
+      "title": "Stepper",
+      "description": "번호가 매겨진 단계별 안내(stepper, step by step guide). 세로 연결선과 자동 번호가 있어 설치 가이드에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/stepper/stepper.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stepper/stepper.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/stepper",
+        "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "sticky-scroll-cards",
       "type": "registry:component",
       "title": "Sticky Scroll Cards",
@@ -4151,6 +5135,29 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/terminal",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "testimonial",
+      "type": "registry:component",
+      "title": "Testimonial",
+      "description": "고객 후기 카드와 그리드(testimonial, review card). 단일 카드·그리드·무한 스크롤 세 배치가 있다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/testimonial/testimonial.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/testimonial/testimonial.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/testimonial",
+        "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -4373,6 +5380,43 @@
         "source": "Spell UI",
         "sourceUrl": "https://spell.sh/docs/components/tilt-card",
         "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "tip-jar",
+      "type": "registry:component",
+      "title": "Crypto + Tip Jar",
+      "description": "후원·팁 컴포넌트(tip jar, donation, crypto wallet). QR 코드와 지갑 주소를 함께 보여준다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "uqr"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/tip-jar/tip-jar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tip-jar/tip-jar.tsx"
+        },
+        {
+          "path": "registry/kidow/tip-jar/lib/chains.ts",
+          "type": "registry:lib",
+          "target": "components/kidow/tip-jar/lib/chains.ts"
+        },
+        {
+          "path": "registry/kidow/tip-jar/icons/provider-icons.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tip-jar/icons/provider-icons.tsx"
+        }
+      ],
+      "meta": {
+        "source": "jal-co/ui",
+        "sourceUrl": "https://ui.justinlevine.me/docs/components/tip-jar",
+        "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
