@@ -18,6 +18,7 @@ shadcn 레지스트리에서 온 것만 받는 게 아니다. 기준은 **"React
 |---|---|
 | Vue / Svelte / Angular / 웹 컴포넌트 | 이 사이트가 React라 프리뷰 불가. 레지스트리에만 있고 확인 못 하는 아이템은 만들지 않는다 |
 | CSS-in-JS 프레임워크 의존 (MUI, Chakra, styled-components, Emotion) | 아이템 하나 때문에 사이트가 그 런타임 전체를 물게 된다. 정말 필요하면 **사용자에게 먼저 묻는다** |
+| shadcn/ui 공식 기본 컴포넌트 | 복제하지 않는다. CLI에 `@shadcn` 네임스페이스가 내장돼 검색·설치가 이미 되고, 우리가 중계하면 style(radix/base/aria) 자동 선택이 깨진다. 사이트 홈에 링크 섹션으로만 노출 |
 | 라이선스 불명 | 예외 없음. 확인 못 하면 추가하지 않는다 |
 | 유료/상용 라이선스 (Tailwind UI, Tailwind Plus 등) | 재배포 불가. 링크만 걸고 싶어도 담지 않는다 |
 

@@ -7,6 +7,7 @@ import { CopyCommand } from '@/components/copy-command'
 import { PreviewTabs } from '@/components/preview-tabs'
 import { Badge } from '@/components/ui/badge'
 import { addCommand, getItem, items, readItemSources } from '@/lib/registry'
+import { isShadcnBase, shadcnDocUrl } from '@/lib/shadcn-base'
 
 export function generateStaticParams() {
   return items.map((item) => ({ name: item.name }))
@@ -96,7 +97,21 @@ export default async function ComponentPage({ params }: PageProps<'/c/[name]'>) 
                   <li key={dependency}>{dependency}</li>
                 ))}
                 {item.registryDependencies?.map((dependency) => (
-                  <li key={dependency}>{dependency}</li>
+                  <li key={dependency}>
+                    {isShadcnBase(dependency) ? (
+                      <a
+                        href={shadcnDocUrl(dependency)}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="hover:text-foreground inline-flex items-center gap-1 underline underline-offset-4"
+                      >
+                        {dependency}
+                        <ExternalLink className="size-2.5" />
+                      </a>
+                    ) : (
+                      dependency
+                    )}
+                  </li>
                 ))}
               </ul>
             </MetaBox>

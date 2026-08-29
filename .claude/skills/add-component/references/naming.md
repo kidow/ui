@@ -12,14 +12,24 @@
 ## 예약 이름 — 등록 금지
 
 shadcn/ui 기본 컴포넌트 이름으로는 아이템을 만들지 않는다.
+목록의 단일 진실 원천은 [`lib/shadcn-base.ts`](../../../../lib/shadcn-base.ts) 의
+`SHADCN_BASE_COMPONENTS` 다. 코드에서 판단할 땐 `isShadcnBase(name)` 를 쓴다.
 
 ```
-accordion alert alert-dialog aspect-ratio avatar badge breadcrumb button
-calendar card carousel chart checkbox collapsible command context-menu
-dialog drawer dropdown-menu form hover-card input input-otp label menubar
-navigation-menu pagination popover progress radio-group resizable scroll-area
-select separator sheet sidebar skeleton slider sonner switch table tabs
-textarea toggle toggle-group tooltip
+accordion alert alert-dialog aspect-ratio attachment avatar badge breadcrumb
+bubble button button-group calendar card carousel chart checkbox collapsible
+combobox command context-menu dialog direction drawer dropdown-menu empty
+field form hover-card input input-group input-otp item kbd label marker menubar
+message message-scroller native-select navigation-menu pagination popover
+progress questionnaire radio-group resizable scroll-area select separator sheet
+sidebar skeleton slider sonner spinner switch table tabs textarea toggle
+toggle-group tooltip
+```
+
+이 목록은 공식 레지스트리에서 실제로 뽑은 것이다. 갱신하려면:
+
+```bash
+pnpm dlx shadcn@latest search @shadcn -t ui -l 200 --json
 ```
 
 이유: 우리 아이템은 기본 컴포넌트를 **대체**하는 게 아니라 **나란히** 쓰는 것이다.
