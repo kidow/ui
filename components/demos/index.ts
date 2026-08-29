@@ -236,6 +236,7 @@ import PerspectiveBookDemo from './perspective-book'
 import PerspectiveCarouselDemo from './perspective-carousel'
 import PerspectiveGridDemo from './perspective-grid'
 import PhoneCardDemo from './phone-card'
+import PhoneInputDemo from './phone-input'
 import PianoTypewriterDemo from './piano-typewriter'
 import PixelCanvasDemo from './pixel-canvas'
 import PixelImageDemo from './pixel-image'
@@ -588,6 +589,7 @@ export const demos: Record<string, ComponentType> = {
   'perspective-carousel': PerspectiveCarouselDemo,
   'perspective-grid': PerspectiveGridDemo,
   'phone-card': PhoneCardDemo,
+  'phone-input': PhoneInputDemo,
   'piano-typewriter': PianoTypewriterDemo,
   'pixel-canvas': PixelCanvasDemo,
   'pixel-image': PixelImageDemo,

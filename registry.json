@@ -6557,6 +6557,40 @@
       }
     },
     {
+      "name": "phone-input",
+      "type": "registry:component",
+      "title": "Phone Input",
+      "description": "국가를 고르면 국기와 국가번호가 함께 붙는 전화번호 입력(phone input, tel input, 국제 전화번호). 국가별 형식 검증과 자동 포매팅을 해주고, 검색 가능한 국가 목록을 팝오버로 띄운다. 회원가입·주문 폼에 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "react-phone-number-input",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "command",
+        "input",
+        "popover",
+        "scroll-area"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/phone-input.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/phone-input.tsx"
+        }
+      ],
+      "meta": {
+        "source": "shadcn-phone-input",
+        "sourceUrl": "https://shadcn-phone-input.vercel.app",
+        "author": "omeralpi",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "piano-typewriter",
       "type": "registry:component",
       "title": "Piano Typewriter",
