@@ -139,7 +139,6 @@ import ShimmerTextDemo from './shimmer-text'
 import ShineBorderDemo from './shine-border'
 import ShinyButtonDemo from './shiny-button'
 import ShowcaseCardDemo from './showcase-card'
-import SignatureDemo from './signature'
 import SilkAuroraDemo from './silk-aurora'
 import SlideUpTextDemo from './slide-up-text'
 import SmoothCursorDemo from './smooth-cursor'
@@ -314,7 +313,6 @@ export const demos: Record<string, ComponentType> = {
   'shine-border': ShineBorderDemo,
   'shiny-button': ShinyButtonDemo,
   'showcase-card': ShowcaseCardDemo,
-  'signature': SignatureDemo,
   'silk-aurora': SilkAuroraDemo,
   'slide-up-text': SlideUpTextDemo,
   'smooth-cursor': SmoothCursorDemo,

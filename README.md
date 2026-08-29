@@ -31,7 +31,7 @@ npx shadcn@latest registry add "@kidow=https://ui.dongwook.kim/r/{name}.json"
 npx shadcn@latest add @kidow/<name>
 ```
 
-### 3. MCP로 쓰기
+### 3. MCP 연결
 
 shadcn CLI에 MCP 서버가 내장돼 있습니다. 등록된 레지스트리를 그대로 검색·설치합니다.
 
@@ -39,8 +39,24 @@ shadcn CLI에 MCP 서버가 내장돼 있습니다. 등록된 레지스트리를
 npx shadcn@latest mcp init
 ```
 
-이후 에이전트에게 "@kidow 레지스트리에서 marquee 찾아서 넣어줘" 처럼 시키면
-`search_items_in_registries` → `view_items` → `get_add_command` 순으로 동작합니다.
+### 4. 에이전트에게 알려주기
+
+**이 단계가 빠지면 실제로는 거의 안 쓰입니다.** MCP를 붙여둬도 에이전트가
+`search_items_in_registries` 를 부를지 그냥 직접 코드를 짤지는 모델 판단이라,
+"먼저 여기를 찾아본다"는 규칙을 명시해야 합니다. `AGENTS.md` 나 `CLAUDE.md` 에 넣으세요.
+
+```markdown
+## UI 컴포넌트
+
+새 UI 컴포넌트가 필요하면 직접 만들기 전에 @kidow 레지스트리를 먼저 검색한다.
+search_items_in_registries → view_items → get_add_command 순서로 쓴다.
+```
+
+이러면 "마퀴 하나 넣어줘" 같은 말에도 에이전트가 레지스트리를 먼저 뒤집니다.
+규칙 없이 `@kidow 레지스트리에서 marquee 찾아줘` 처럼 매번 지목해도 동작은 합니다.
+
+> 여러 레지스트리를 함께 등록하면 같은 키워드로 경쟁합니다. 검색은 `name`·`title`·
+> `description` 에만 매칭되므로, 원하는 게 잘 안 잡히면 쿼리에 쓰임새 단어를 넣어보세요.
 
 ## 요구 스택
 

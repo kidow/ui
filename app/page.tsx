@@ -1,4 +1,5 @@
 import { ComponentCard } from '@/components/component-card'
+import { McpSetupSection } from '@/components/mcp-setup-section'
 import { RelatedRegistriesSection } from '@/components/related-registries-section'
 import { ShadcnBaseSection } from '@/components/shadcn-base-section'
 import { groupByCategory, items } from '@/lib/registry'
@@ -8,6 +9,8 @@ export default function Home() {
 
   return (
     <div className="flex flex-col gap-12">
+      <McpSetupSection />
+
       {items.length === 0 ? (
         <div className="flex min-h-60 flex-col items-center justify-center gap-3 rounded-xl border border-dashed text-center">
           <p className="font-heading text-lg font-semibold">아직 컴포넌트가 없습니다</p>
