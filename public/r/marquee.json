@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "marquee",
   "title": "Marquee",
-  "description": "콘텐츠를 무한히 흘려보내는 가로/세로 마퀴. hover 시 정지, 역방향, 반복 횟수 조절 가능.",
+  "description": "콘텐츠를 끊김 없이 흘려보내는 가로/세로 마퀴(marquee, ticker). 로고 월(logo wall), 고객 후기·리뷰(testimonial) 슬라이더, 파트너사 나열처럼 목록을 자동 스크롤(infinite scroll)로 무한 반복 노출할 때 쓴다. hover 시 정지, 역방향, 반복 횟수 조절 지원.",
   "files": [
     {
       "path": "registry/ui/marquee/marquee.tsx",

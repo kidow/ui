@@ -40,6 +40,8 @@ Vue·Svelte, CSS-in-JS 프레임워크 의존, 라이선스 불명, 유료 라�
 
 스키마와 필드별 규칙: [references/item-schema.md](references/item-schema.md)
 
+**description은 MCP 검색의 유일한 표면이다.** 검색은 `name`·`title`·`description` 에만 매칭하고 `meta`·`categories`·소스는 보지 않는다. "무엇 + 언제 쓰는가 + 영문 일반명" 을 반드시 담는다: [references/description.md](references/description.md)
+
 놓치기 쉬운 두 가지:
 - `meta` 5개 필드(source·sourceUrl·author·license·retrievedAt) 전부 필수. 날짜는 `date +%F` 로 확인한다 — 기억으로 쓰지 않는다.
 - `files[].target` 은 항상 `components/kidow/<파일명>`. 생략하면 소비자의 기존 컴포넌트와 충돌한다.
@@ -61,6 +63,7 @@ pnpm dlx shadcn@latest add ./public/r/<name>.json --dry-run
 - `pnpm build`: `public/r/<name>.json` 생성 + `next build` 통과.
 - `--dry-run`: 파일이 `components/kidow/<name>.tsx` 로 가는지, CSS 변수가 주입되는지 확인. 기존 파일을 덮어쓴다고 나오면 이름·target을 다시 잡는다.
 - 브라우저로 `/c/<name>` 을 열어 Preview·Code 탭을 눈으로 확인한다.
+- **검색 확인**: 영문 일반명과 쓰임새 단어로 각각 `search` 를 돌려 잡히는지 본다 ([references/description.md](references/description.md) 의 자가 점검).
 
 실패하면 고치고, 못 고치면 추가한 파일·항목을 되돌린 뒤 사용자에게 보고한다.
 
