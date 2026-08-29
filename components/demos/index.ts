@@ -1,6 +1,7 @@
 import type { ComponentType } from 'react'
 
 import MarqueeDemo from './marquee'
+import TerminalDemo from './terminal'
 
 /**
  * 사이트 전용 데모. 레지스트리(/r/*.json)에는 포함되지 않는다.
@@ -8,4 +9,5 @@ import MarqueeDemo from './marquee'
  */
 export const demos: Record<string, ComponentType> = {
   marquee: MarqueeDemo,
+  terminal: TerminalDemo,
 }

@@ -47,6 +47,28 @@
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
+    },
+    {
+      "name": "terminal",
+      "type": "registry:component",
+      "title": "Terminal",
+      "description": "CLI 실행 과정을 재현하는 터미널(terminal, console) 목업. 타이핑 애니메이션(typing animation)으로 설치 명령과 빌드 로그를 순차 재생해, 랜딩 히어로나 문서에서 제품 사용법을 시연할 때 쓴다. macOS 신호등 헤더, AnimatedSpan·TypingAnimation 조합, 화면에 들어올 때 시작.",
+      "categories": ["코드·터미널"],
+      "dependencies": ["motion"],
+      "files": [
+        {
+          "path": "registry/ui/terminal/terminal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/terminal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/terminal",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
     }
   ]
 }
