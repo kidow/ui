@@ -17,6 +17,13 @@ export interface RelatedRegistry {
 
 export const RELATED_REGISTRIES: RelatedRegistry[] = [
   {
+    name: 'Torph',
+    url: 'https://torph.lochie.me/',
+    summary: '의존성 없는 텍스트 모핑 컴포넌트. React·Svelte·Vue 를 함께 지원하는 npm 패키지.',
+    reason:
+      'npm 패키지라 배포 모델이 다르다. 소스를 복사해 담으면 저자가 버전으로 관리하는 것을 스냅샷으로 떠서 재배포하는 셈이고, 의존성만 걸어두는 래퍼는 npm i torph 와 다를 게 없다. 우리 컴포넌트가 이걸 의존하게 되면 그때 dependencies 로 들어온다.',
+  },
+  {
     name: 'Pixel Perfect',
     url: 'https://www.pixel-perfect.space/blocks',
     summary:
