@@ -65,6 +65,7 @@ export const CATEGORY_SLUGS: Record<string, string> = {
   '개발자 도구': 'devtools',
   '폼·입력': 'forms',
   '카드·테두리': 'cards',
+  '오디오·음성': 'audio',
   '코드·터미널': 'code',
   '디바이스 목업': 'devices',
   '마케팅 섹션': 'marketing',

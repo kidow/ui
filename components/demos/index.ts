@@ -3,6 +3,7 @@ import type { ComponentType } from 'react'
 import AgentBentoGridDemo from './agent-bento-grid'
 import AiCopyButtonDemo from './ai-copy-button'
 import AiPromptBoxDemo from './ai-prompt-box'
+import AiResponseDemo from './ai-response'
 import AndroidDemo from './android'
 import AnimatedBeamDemo from './animated-beam'
 import AnimatedButtonDemo from './animated-button'
@@ -34,6 +35,7 @@ import AvatarCirclesDemo from './avatar-circles'
 import AwwwardsNavDemo from './awwwards-nav'
 import BacklightDemo from './backlight'
 import BalancedTextDemo from './balanced-text'
+import BarVisualizerDemo from './bar-visualizer'
 import BarsSpinnerDemo from './bars-spinner'
 import BentoGridDemo from './bento-grid'
 import BlurFadeDemo from './blur-fade'
@@ -103,6 +105,7 @@ import CommandPaletteDemo from './command-palette'
 import CommitGraphDemo from './commit-graph'
 import ConcaveCarouselDemo from './concave-carousel'
 import ConfettiDemo from './confetti'
+import ConversationThreadDemo from './conversation-thread'
 import ConvexCarouselDemo from './convex-carousel'
 import CoolModeDemo from './cool-mode'
 import CopyButtonDemo from './copy-button'
@@ -240,6 +243,7 @@ import LiquidMercuryRevealDemo from './liquid-mercury-reveal'
 import LiquidMetalDemo from './liquid-metal'
 import LiquidMetalButtonDemo from './liquid-metal-button'
 import LiquidTextDemo from './liquid-text'
+import LiveWaveformDemo from './live-waveform'
 import LoaderButtonDemo from './loader-button'
 import LogViewerDemo from './log-viewer'
 import LogoCloudDemo from './logo-cloud'
@@ -259,6 +263,7 @@ import MaskedAvatarsDemo from './masked-avatars'
 import MaskedRevealDemo from './masked-reveal'
 import MasonryGridDemo from './masonry-grid'
 import MatrixRainDemo from './matrix-rain'
+import MatrixVisualizerDemo from './matrix-visualizer'
 import MediaMd04Demo from './media-md-04'
 import MediaSm05Demo from './media-sm-05'
 import MediaSm06Demo from './media-sm-06'
@@ -336,6 +341,7 @@ import ScrollProgressDemo from './scroll-progress'
 import ScrollSplitCardDemo from './scroll-split-card'
 import ScrollTextDemo from './scroll-text'
 import ScrollTiltedGridDemo from './scroll-tilted-grid'
+import ScrubBarDemo from './scrub-bar'
 import ScrubInputDemo from './scrub-input'
 import SearchModalDemo from './search-modal'
 import SegmentedButtonDemo from './segmented-button'
@@ -343,6 +349,7 @@ import SharedTooltipAvatarsDemo from './shared-tooltip-avatars'
 import ShimmerButtonDemo from './shimmer-button'
 import ShimmerButtonComponentryDemo from './shimmer-button-componentry'
 import ShimmerTextDemo from './shimmer-text'
+import ShimmeringTextDemo from './shimmering-text'
 import ShineBorderDemo from './shine-border'
 import ShinyButtonDemo from './shiny-button'
 import ShowcaseCardDemo from './showcase-card'
@@ -411,9 +418,11 @@ import VercelTabsDemo from './vercel-tabs'
 import VerseCardsDemo from './verse-cards'
 import VideoPlayerDemo from './video-player'
 import VideoTextDemo from './video-text'
+import VoiceMessageDemo from './voice-message'
 import WarpBackgroundDemo from './warp-background'
 import WaveCarouselDemo from './wave-carousel'
 import WaveGridBackgroundDemo from './wave-grid-background'
+import WaveformDemo from './waveform'
 import WeatherMd01Demo from './weather-md-01'
 import WeatherMd02Demo from './weather-md-02'
 import WeatherSm01Demo from './weather-sm-01'
@@ -445,6 +454,7 @@ export const demos: Record<string, ComponentType> = {
   'agent-bento-grid': AgentBentoGridDemo,
   'ai-copy-button': AiCopyButtonDemo,
   'ai-prompt-box': AiPromptBoxDemo,
+  'ai-response': AiResponseDemo,
   'android': AndroidDemo,
   'animated-beam': AnimatedBeamDemo,
   'animated-button': AnimatedButtonDemo,
@@ -476,6 +486,7 @@ export const demos: Record<string, ComponentType> = {
   'awwwards-nav': AwwwardsNavDemo,
   'backlight': BacklightDemo,
   'balanced-text': BalancedTextDemo,
+  'bar-visualizer': BarVisualizerDemo,
   'bars-spinner': BarsSpinnerDemo,
   'bento-grid': BentoGridDemo,
   'blur-fade': BlurFadeDemo,
@@ -545,6 +556,7 @@ export const demos: Record<string, ComponentType> = {
   'commit-graph': CommitGraphDemo,
   'concave-carousel': ConcaveCarouselDemo,
   'confetti': ConfettiDemo,
+  'conversation-thread': ConversationThreadDemo,
   'convex-carousel': ConvexCarouselDemo,
   'cool-mode': CoolModeDemo,
   'copy-button': CopyButtonDemo,
@@ -682,6 +694,7 @@ export const demos: Record<string, ComponentType> = {
   'liquid-metal': LiquidMetalDemo,
   'liquid-metal-button': LiquidMetalButtonDemo,
   'liquid-text': LiquidTextDemo,
+  'live-waveform': LiveWaveformDemo,
   'loader-button': LoaderButtonDemo,
   'log-viewer': LogViewerDemo,
   'logo-cloud': LogoCloudDemo,
@@ -701,6 +714,7 @@ export const demos: Record<string, ComponentType> = {
   'masked-reveal': MaskedRevealDemo,
   'masonry-grid': MasonryGridDemo,
   'matrix-rain': MatrixRainDemo,
+  'matrix-visualizer': MatrixVisualizerDemo,
   'media-md-04': MediaMd04Demo,
   'media-sm-05': MediaSm05Demo,
   'media-sm-06': MediaSm06Demo,
@@ -778,6 +792,7 @@ export const demos: Record<string, ComponentType> = {
   'scroll-split-card': ScrollSplitCardDemo,
   'scroll-text': ScrollTextDemo,
   'scroll-tilted-grid': ScrollTiltedGridDemo,
+  'scrub-bar': ScrubBarDemo,
   'scrub-input': ScrubInputDemo,
   'search-modal': SearchModalDemo,
   'segmented-button': SegmentedButtonDemo,
@@ -785,6 +800,7 @@ export const demos: Record<string, ComponentType> = {
   'shimmer-button': ShimmerButtonDemo,
   'shimmer-button-componentry': ShimmerButtonComponentryDemo,
   'shimmer-text': ShimmerTextDemo,
+  'shimmering-text': ShimmeringTextDemo,
   'shine-border': ShineBorderDemo,
   'shiny-button': ShinyButtonDemo,
   'showcase-card': ShowcaseCardDemo,
@@ -853,9 +869,11 @@ export const demos: Record<string, ComponentType> = {
   'verse-cards': VerseCardsDemo,
   'video-player': VideoPlayerDemo,
   'video-text': VideoTextDemo,
+  'voice-message': VoiceMessageDemo,
   'warp-background': WarpBackgroundDemo,
   'wave-carousel': WaveCarouselDemo,
   'wave-grid-background': WaveGridBackgroundDemo,
+  'waveform': WaveformDemo,
   'weather-md-01': WeatherMd01Demo,
   'weather-md-02': WeatherMd02Demo,
   'weather-sm-01': WeatherSm01Demo,

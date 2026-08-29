@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "ai-response",
+  "title": "Ai Response",
+  "description": "스트리밍 마크다운을 렌더하는 AI 응답 블록(ai response, streaming markdown). 토큰이 흘러 들어오는 중에도 안전하게 그린다.",
+  "dependencies": [
+    "streamdown"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/ai-response.tsx",
+      "content": "\"use client\"\n\nimport { memo, type ComponentProps } from \"react\"\nimport { Streamdown } from \"streamdown\"\n\nimport { cn } from \"@/lib/utils\"\n\ntype ResponseProps = ComponentProps<typeof Streamdown>\n\nexport const Response = memo(\n  ({ className, ...props }: ResponseProps) => (\n    <Streamdown\n      className={cn(\n        \"size-full [&>*:first-child]:mt-0 [&>*:last-child]:mb-0\",\n        className\n      )}\n      {...props}\n    />\n  ),\n  (prevProps, nextProps) => prevProps.children === nextProps.children\n)\n\nResponse.displayName = \"Response\"\n",
+      "type": "registry:component",
+      "target": "components/kidow/ai-response.tsx"
+    }
+  ],
+  "meta": {
+    "source": "ElevenLabs UI",
+    "sourceUrl": "https://ui.elevenlabs.io/docs/components/response",
+    "author": "ElevenLabs",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "오디오·음성"
+  ],
+  "type": "registry:component"
+}

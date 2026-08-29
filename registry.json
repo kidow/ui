@@ -119,6 +119,32 @@
       }
     },
     {
+      "name": "ai-response",
+      "type": "registry:component",
+      "title": "Ai Response",
+      "description": "스트리밍 마크다운을 렌더하는 AI 응답 블록(ai response, streaming markdown). 토큰이 흘러 들어오는 중에도 안전하게 그린다.",
+      "categories": [
+        "오디오·음성"
+      ],
+      "dependencies": [
+        "streamdown"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ai-response.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ai-response.tsx"
+        }
+      ],
+      "meta": {
+        "source": "ElevenLabs UI",
+        "sourceUrl": "https://ui.elevenlabs.io/docs/components/response",
+        "author": "ElevenLabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "android",
       "type": "registry:component",
       "title": "Android",
@@ -965,6 +991,29 @@
         "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "bar-visualizer",
+      "type": "registry:component",
+      "title": "Bar Visualizer",
+      "description": "음성 에이전트의 상태를 막대로 표현하는 시각화(voice visualizer, agent state). 듣는 중·말하는 중·생각 중을 애니메이션으로 구분한다.",
+      "categories": [
+        "오디오·음성"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bar-visualizer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bar-visualizer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "ElevenLabs UI",
+        "sourceUrl": "https://ui.elevenlabs.io/docs/components/bar-visualizer",
+        "author": "ElevenLabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -3016,6 +3065,36 @@
         "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "conversation-thread",
+      "type": "registry:component",
+      "title": "Conversation Thread",
+      "description": "새 메시지가 오면 자동으로 아래로 붙는 대화 스레드(conversation, chat thread, auto scroll). 채팅·에이전트 화면의 뼈대다.",
+      "categories": [
+        "오디오·음성"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "use-stick-to-bottom"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/conversation-thread.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/conversation-thread.tsx"
+        }
+      ],
+      "meta": {
+        "source": "ElevenLabs UI",
+        "sourceUrl": "https://ui.elevenlabs.io/docs/components/conversation",
+        "author": "ElevenLabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -6779,6 +6858,29 @@
       }
     },
     {
+      "name": "live-waveform",
+      "type": "registry:component",
+      "title": "Live Waveform",
+      "description": "마이크 입력을 실시간으로 그리는 파형(live waveform, mic visualizer). 녹음 중이라는 것을 보여줄 때 쓴다. 마이크 권한이 필요하다.",
+      "categories": [
+        "오디오·음성"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/live-waveform.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/live-waveform.tsx"
+        }
+      ],
+      "meta": {
+        "source": "ElevenLabs UI",
+        "sourceUrl": "https://ui.elevenlabs.io/docs/components/live-waveform",
+        "author": "ElevenLabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "loader-button",
       "type": "registry:component",
       "title": "Loader Button",
@@ -7292,6 +7394,29 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "matrix-visualizer",
+      "type": "registry:component",
+      "title": "Matrix Visualizer",
+      "description": "도트 매트릭스 디스플레이(dot matrix, LED matrix). 파형·물결·문자 프레임을 순서대로 재생해 레트로 장비 느낌을 낸다.",
+      "categories": [
+        "오디오·음성"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/matrix-visualizer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/matrix-visualizer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "ElevenLabs UI",
+        "sourceUrl": "https://ui.elevenlabs.io/docs/components/matrix",
+        "author": "ElevenLabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -9606,6 +9731,32 @@
       }
     },
     {
+      "name": "scrub-bar",
+      "type": "registry:component",
+      "title": "Scrub Bar",
+      "description": "오디오·영상 재생 위치를 끌어서 옮기는 스크럽 바(scrub bar, seek bar, 재생 바). 진행률과 시간 표시를 조합해 쓴다.",
+      "categories": [
+        "오디오·음성"
+      ],
+      "registryDependencies": [
+        "progress"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/scrub-bar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scrub-bar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "ElevenLabs UI",
+        "sourceUrl": "https://ui.elevenlabs.io/docs/components/scrub-bar",
+        "author": "ElevenLabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "scrub-input",
       "type": "registry:component",
       "title": "Scrub Input",
@@ -9804,6 +9955,32 @@
         "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "shimmering-text",
+      "type": "registry:component",
+      "title": "Shimmering Text",
+      "description": "광택이 훑고 지나가는 대기 상태 텍스트(shimmering text, loading text). AI 응답 생성 중처럼 기다리는 구간에 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/shimmering-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shimmering-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "ElevenLabs UI",
+        "sourceUrl": "https://ui.elevenlabs.io/docs/components/shimmering-text",
+        "author": "ElevenLabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -11740,6 +11917,35 @@
       }
     },
     {
+      "name": "voice-message",
+      "type": "registry:component",
+      "title": "Voice Message",
+      "description": "채팅 말풍선과 아바타(chat message, AI 대화). 사용자와 어시스턴트를 좌우로 구분해 대화 화면을 만든다.",
+      "categories": [
+        "오디오·음성"
+      ],
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/voice-message.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/voice-message.tsx"
+        }
+      ],
+      "meta": {
+        "source": "ElevenLabs UI",
+        "sourceUrl": "https://ui.elevenlabs.io/docs/components/message",
+        "author": "ElevenLabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "warp-background",
       "type": "registry:component",
       "title": "Warp Background",
@@ -11816,6 +12022,29 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "waveform",
+      "type": "registry:component",
+      "title": "Waveform",
+      "description": "오디오 파형을 막대로 그리는 시각화(waveform, audio waveform). 녹음본이나 트랙의 진폭 데이터를 넣으면 그려지고, 막대를 클릭해 특정 지점으로 이동할 수 있다.",
+      "categories": [
+        "오디오·음성"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/waveform.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/waveform.tsx"
+        }
+      ],
+      "meta": {
+        "source": "ElevenLabs UI",
+        "sourceUrl": "https://ui.elevenlabs.io/docs/components/waveform",
+        "author": "ElevenLabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
