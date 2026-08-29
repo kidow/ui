@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="데모용 이미지 4">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="55%" stop-color="#475569" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+    <radialGradient id="h3" cx="32%" cy="26%" r="62%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#g3)" />
+  <circle cx="210" cy="85" r="150" fill="url(#h3)" />
+  <circle cx="240" cy="330" r="100" fill="#0f172a" opacity="0.25" />
+</svg>

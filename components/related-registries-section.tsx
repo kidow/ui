@@ -1,5 +1,6 @@
 import { ExternalLink } from 'lucide-react'
 
+import { EXCLUDED_COMPONENTS } from '@/lib/excluded-components'
 import { RELATED_REGISTRIES } from '@/lib/related-registries'
 
 export function RelatedRegistriesSection() {
@@ -29,6 +30,38 @@ export function RelatedRegistriesSection() {
           </li>
         ))}
       </ul>
+
+      {EXCLUDED_COMPONENTS.length > 0 && (
+        <details className="rounded-xl border p-4">
+          <summary className="cursor-pointer text-sm font-medium">
+            검토 후 제외한 컴포넌트 {EXCLUDED_COMPONENTS.length}개
+          </summary>
+          <ul className="mt-3 flex flex-col gap-3">
+            {EXCLUDED_COMPONENTS.map((component) => (
+              <li key={`${component.source}-${component.name}`}>
+                <a
+                  href={component.sourceUrl}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="font-mono inline-flex items-center gap-1 text-sm underline underline-offset-4"
+                >
+                  {component.name}
+                  <ExternalLink className="size-3" />
+                </a>
+                <span className="text-muted-foreground ml-2 text-xs">
+                  {component.source}
+                </span>
+                <p className="text-muted-foreground mt-0.5 text-xs">{component.reason}</p>
+                {component.revisitWhen ? (
+                  <p className="text-muted-foreground/70 mt-0.5 text-xs">
+                    다시 검토: {component.revisitWhen}
+                  </p>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
     </section>
   )
 }

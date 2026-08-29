@@ -76,6 +76,34 @@
       }
     },
     {
+      "name": "animated-gradient",
+      "type": "registry:component",
+      "title": "Animated Gradient",
+      "description": "WebGL로 색이 천천히 흐르는 그라디언트 배경(animated gradient, mesh gradient). 히어로 섹션 바탕에 노이즈와 함께 깔 때 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-gradient/animated-gradient.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-gradient/animated-gradient.tsx"
+        },
+        {
+          "path": "registry/kidow/animated-gradient/webgl-error-boundary.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-gradient/webgl-error-boundary.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/animated-gradient",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "animated-gradient-text",
       "type": "registry:component",
       "title": "Animated Gradient Text",
@@ -233,6 +261,57 @@
       }
     },
     {
+      "name": "ascii-effect",
+      "type": "registry:component",
+      "title": "ASCII Effect",
+      "description": "이미지를 아스키 아트(ASCII art)로 바꿔 렌더한다. image·flow·glitch 세 변형이 있어 레트로 감성의 로고나 배경으로 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ascii-effect.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ascii-effect.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/ascii-effect",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "aurora-flow",
+      "type": "registry:component",
+      "title": "Aurora Flow",
+      "description": "오로라가 층층이 흐르는 WebGL 대기 배경(aurora background). 어두운 히어로 섹션 바탕에 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/aurora-flow/aurora-flow.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/aurora-flow/aurora-flow.tsx"
+        },
+        {
+          "path": "registry/kidow/aurora-flow/webgl-error-boundary.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/aurora-flow/webgl-error-boundary.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/aurora-flow",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "aurora-text",
       "type": "registry:component",
       "title": "Aurora Text",
@@ -280,6 +359,33 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/aurora-text",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "auth-modal",
+      "type": "registry:component",
+      "title": "auth-modal",
+      "description": "소셜 로그인 버튼이 들어간 인증 모달(auth modal, login dialog, sign in). 로그인·회원가입 진입점에 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/auth-modal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/auth-modal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/auth-modal",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -412,6 +518,84 @@
       }
     },
     {
+      "name": "border-beam-componentry",
+      "type": "registry:component",
+      "title": "border-beam-componentry",
+      "description": "테두리를 도는 그라디언트 빛줄기(border beam). MagicUI 버전보다 anchor·colorFrom/To 등 조절 옵션이 많다. 카드 강조에 쓴다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/border-beam-componentry.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/border-beam-componentry.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/border-beam",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "case-study-flip-stack",
+      "type": "registry:component",
+      "title": "Case Study Flip Stack",
+      "description": "스크롤에 따라 카드가 위로 접히며 다음 사례로 넘어가는 스택(flip stack, case study). 포트폴리오·사례 소개에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/case-study-flip-stack.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/case-study-flip-stack.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/case-study-flip-stack",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "circuit-board",
+      "type": "registry:component",
+      "title": "circuit-board",
+      "description": "노드 사이를 전기가 흐르는 회로도(circuit board, architecture diagram). 시스템 구성이나 데이터 흐름을 보여줄 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/circuit-board.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/circuit-board.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/circuit-board",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "client-tweet-card",
       "type": "registry:component",
       "title": "Client Tweet Card",
@@ -433,6 +617,29 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/client-tweet-card",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "closing-plasma",
+      "type": "registry:component",
+      "title": "closing-plasma",
+      "description": "플라즈마가 일렁이는 배경(plasma background). 색·움직임·상호작용을 조절할 수 있어 섹션 마무리 배경에 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/closing-plasma.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/closing-plasma.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/closing-plasma",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -467,6 +674,32 @@
       }
     },
     {
+      "name": "collection-surfer",
+      "type": "registry:component",
+      "title": "collection-surfer",
+      "description": "마우스에 반응해 카드가 확대되는 컬렉션 목록(magnetic list, collection). 작품·상품을 훑어보게 할 때 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/collection-surfer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/collection-surfer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/collection-surfer",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "comic-text",
       "type": "registry:component",
       "title": "Comic Text",
@@ -488,6 +721,35 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/comic-text",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "command-menu",
+      "type": "registry:component",
+      "title": "Command Menu",
+      "description": "커맨드 팔레트 UI(command palette, cmdk, ⌘K). macOS 스포트라이트처럼 검색과 빠른 이동을 한 곳에서 처리하는 커맨드 메뉴로, 키보드 내비게이션과 그룹 분류를 지원한다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "cmdk",
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/command-menu.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/command-menu.tsx"
+        }
+      ],
+      "cssVars": {},
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/command-menu",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -545,6 +807,29 @@
       }
     },
     {
+      "name": "cursor-driven-particle-typography",
+      "type": "registry:component",
+      "title": "cursor-driven-particle-typography",
+      "description": "커서를 따라 입자가 흩어졌다 모이는 글자(particle typography). 히어로 대형 타이포에 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/cursor-driven-particle-typography.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cursor-driven-particle-typography.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/cursor-driven-particle-typography",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "dia-text-reveal",
       "type": "registry:component",
       "title": "Dia Text Reveal",
@@ -566,6 +851,52 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/dia-text-reveal",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "dither-gradient",
+      "type": "registry:component",
+      "title": "dither-gradient",
+      "description": "베이어 디더링으로 거칠게 표현한 그라디언트 배경(dithered gradient, retro gradient).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dither-gradient.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dither-gradient.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/dither-gradient",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "dithered-logo",
+      "type": "registry:component",
+      "title": "Dithered Logo",
+      "description": "이미지를 디더링된 입자 필드로 바꿔 커서에 반응하게 만든다(dithered logo, particle image). 로고를 인터랙티브하게 보여줄 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dithered-logo.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dithered-logo.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/dithered-logo",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -650,6 +981,32 @@
       }
     },
     {
+      "name": "eye-tracking",
+      "type": "registry:component",
+      "title": "Eye Tracking",
+      "description": "커서를 따라 눈동자가 움직이는 요소(eye tracking, googly eyes). 404 페이지나 재미 요소에 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/eye-tracking.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/eye-tracking.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/eye-tracking",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "file-tree",
       "type": "registry:component",
       "title": "File Tree",
@@ -681,6 +1038,29 @@
       }
     },
     {
+      "name": "fisheye-infinite-grid",
+      "type": "registry:component",
+      "title": "Fisheye Infinite Grid",
+      "description": "드래그로 무한히 이어지는 이미지 벽을 어안 렌즈(fisheye)처럼 왜곡해 보여준다. 갤러리·무드보드에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/fisheye-infinite-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/fisheye-infinite-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/fisheye-infinite-grid",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "flickering-grid",
       "type": "registry:component",
       "title": "Flickering Grid",
@@ -699,6 +1079,85 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/flickering-grid",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "flight-status-card",
+      "type": "registry:component",
+      "title": "Flight Status Card",
+      "description": "도트 매트릭스 공항 코드와 진행률이 있는 항공편 상태 카드(flight status, boarding pass). 실시간 상태 위젯 예시로 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/flight-status-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/flight-status-card.tsx"
+        }
+      ],
+      "cssVars": {},
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/flight-status-card",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "flipping-word-swap",
+      "type": "registry:component",
+      "title": "Flipping Word Swap",
+      "description": "두 단어가 글자 단위로 뒤집히며 교체된다(word flip, text swap). 헤드라인 한 단어만 바꿔 보여줄 때 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "gsap"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/flipping-word-swap.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/flipping-word-swap.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/flipping-word-swap",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "github-calendar",
+      "type": "registry:component",
+      "title": "github-calendar",
+      "description": "깃허브 잔디(contribution graph, github calendar)를 그린다. 개인 사이트·이력서에서 활동량을 보여줄 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/github-calendar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/github-calendar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/github-calendar",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -772,6 +1231,29 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/glyph-matrix",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "gradient-hero-01",
+      "type": "registry:component",
+      "title": "Gradient Hero 01",
+      "description": "그라디언트 배경에 배지·문구·버튼 두 개가 있는 히어로 섹션(hero section, landing hero). 랜딩 첫 화면 통째로 쓴다.",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/gradient-hero-01.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gradient-hero-01.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/gradient-hero-01",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -877,6 +1359,29 @@
       }
     },
     {
+      "name": "hover-transition",
+      "type": "registry:component",
+      "title": "Hover Transition",
+      "description": "방향·효과를 고를 수 있는 hover 전환 8종(hover transition, hover effect). 카드·버튼에 결을 더할 때 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/hover-transition.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hover-transition.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/hover-transition",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "hyper-text",
       "type": "registry:component",
       "title": "Hyper Text",
@@ -898,6 +1403,30 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/hyper-text",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "hyper-text-componentry",
+      "type": "registry:component",
+      "title": "Hyper Text",
+      "description": "글자를 뒤섞었다가 제자리를 찾는 스크램블 텍스트(scramble text). MagicUI 버전과 달리 로드 시 자동 실행(animateOnLoad)을 켤 수 있다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/hyper-text-componentry.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hyper-text-componentry.tsx"
+        }
+      ],
+      "cssVars": {},
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/hyper-text",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -927,6 +1456,55 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/icon-cloud",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "image-trail",
+      "type": "registry:component",
+      "title": "Image Trail",
+      "description": "커서를 따라 이미지가 잔상처럼 따라붙는다(image trail, cursor trail). 포트폴리오 히어로에 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "gsap"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/image-trail.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/image-trail.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/image-trail",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "infinite-image-field",
+      "type": "registry:component",
+      "title": "Infinite Image Field",
+      "description": "사방으로 끝없이 이어지는 이미지 캔버스(infinite canvas, image field). 커서로 밀며 탐색하는 갤러리에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/infinite-image-field.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/infinite-image-field.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/infinite-image-field",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -981,6 +1559,32 @@
       }
     },
     {
+      "name": "interactive-hover-button-componentry",
+      "type": "registry:component",
+      "title": "interactive-hover-button-componentry",
+      "description": "hover 시 텍스트와 화살표가 드러나는 버튼(hover button, CTA). MagicUI 버전과 구조가 달라 나란히 둔다.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/interactive-hover-button-componentry.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/interactive-hover-button-componentry.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/interactive-hover-button",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "iphone",
       "type": "registry:component",
       "title": "iPhone",
@@ -1027,6 +1631,58 @@
       }
     },
     {
+      "name": "kinetic-text-reveal",
+      "type": "registry:component",
+      "title": "Kinetic Text Reveal",
+      "description": "블러와 함께 방향을 갖고 드러나는 텍스트(text reveal, kinetic typography). 단어·글자·줄 단위 지연을 고를 수 있다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/kinetic-text-reveal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/kinetic-text-reveal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/kinetic-text-reveal",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "layered-stack",
+      "type": "registry:component",
+      "title": "Layered Stack",
+      "description": "카드가 층층이 겹쳐 쌓인 스택(layered stack, card stack). 이미지나 카드 묶음을 압축해 보여줄 때 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "gsap"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/layered-stack.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/layered-stack.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/layered-stack",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "lens",
       "type": "registry:component",
       "title": "Lens",
@@ -1048,6 +1704,32 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/lens",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "letter-cascade",
+      "type": "registry:component",
+      "title": "letter-cascade",
+      "description": "글자가 폭포처럼 순차로 떨어지는 등장 애니메이션(letter cascade, staggered text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/letter-cascade.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/letter-cascade.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/letter-cascade",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1120,6 +1802,81 @@
       }
     },
     {
+      "name": "liquid-blob",
+      "type": "registry:component",
+      "title": "liquid-blob",
+      "description": "마우스에 반응해 형태가 녹아 변하는 블롭(liquid blob, organic shape). 섹션 뒤 장식에 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-blob.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-blob.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/liquid-blob",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "liquid-chrome",
+      "type": "registry:component",
+      "title": "Liquid Chrome",
+      "description": "금속이 흐르는 듯한 크롬 셰이더 배경(liquid chrome, metal shader).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-chrome.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-chrome.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/liquid-chrome",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "mac-keyboard",
+      "type": "registry:component",
+      "title": "Mac Keyboard",
+      "description": "맥 키보드 목업(keyboard mockup, mac keyboard). 단축키 안내나 입력 시연에 쓴다.",
+      "categories": [
+        "디바이스 목업"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/mac-keyboard.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/mac-keyboard.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/mac-keyboard",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "magic-card",
       "type": "registry:component",
       "title": "Magic Card",
@@ -1142,6 +1899,58 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/magic-card",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "magnet-lines",
+      "type": "registry:component",
+      "title": "magnet-lines",
+      "description": "커서를 향해 선들이 회전하는 자기장 격자(magnet lines, magnetic field). 배경 인터랙션에 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/magnet-lines.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/magnet-lines.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/magnet-lines",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "magnetic-dock",
+      "type": "registry:component",
+      "title": "magnetic-dock",
+      "description": "아이콘이 커서에 끌려 확대되는 macOS 스타일 독(magnetic dock, app dock). 스프링 물리와 라벨 표시를 지원한다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/magnetic-dock.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/magnetic-dock.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/magnetic-dock",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1189,6 +1998,29 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/marquee",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "matrix-rain",
+      "type": "registry:component",
+      "title": "matrix-rain",
+      "description": "매트릭스 코드 비 배경(matrix rain, digital rain). 해커·터미널 감성 섹션에 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/matrix-rain.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/matrix-rain.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/matrix-rain",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1260,6 +2092,32 @@
       }
     },
     {
+      "name": "music-player",
+      "type": "registry:component",
+      "title": "Music Player",
+      "description": "커버 아트와 재생 컨트롤이 있는 음악 플레이어(music player, audio player). 오디오·팟캐스트 소개에 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/music-player.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/music-player.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/music-player",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "neon-gradient-card",
       "type": "registry:component",
       "title": "Neon Gradient Card",
@@ -1321,6 +2179,29 @@
       }
     },
     {
+      "name": "noise-texture-componentry",
+      "type": "registry:component",
+      "title": "noise-texture-componentry",
+      "description": "움직이는 노이즈·그레인 오버레이(noise texture, film grain). MagicUI 버전과 달리 grain 크기와 blend 모드를 고를 수 있다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/noise-texture-componentry.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/noise-texture-componentry.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/noise-texture",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "number-ticker",
       "type": "registry:component",
       "title": "Number Ticker",
@@ -1342,6 +2223,33 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/number-ticker",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "orbit-card-stack",
+      "type": "registry:component",
+      "title": "Orbit Card Stack",
+      "description": "hover 하면 카드가 부채처럼 펼쳐지는 덱(card fan, orbit stack). 요금제·기능 카드 묶음에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/orbit-card-stack.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/orbit-card-stack.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/orbit-card-stack",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1385,6 +2293,37 @@
       }
     },
     {
+      "name": "particle-galaxy",
+      "type": "registry:component",
+      "title": "Particle Galaxy",
+      "description": "입자로 만든 은하 배경(particle galaxy, starfield). 어두운 히어로 뒤에 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "three"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/particle-galaxy/particle-galaxy.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/particle-galaxy/particle-galaxy.tsx"
+        },
+        {
+          "path": "registry/kidow/particle-galaxy/webgl-error-boundary.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/particle-galaxy/webgl-error-boundary.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/particle-galaxy",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "particles",
       "type": "registry:component",
       "title": "Particles",
@@ -1403,6 +2342,29 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/particles",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "pixel-canvas",
+      "type": "registry:component",
+      "title": "pixel-canvas",
+      "description": "hover 하면 픽셀이 켜졌다 서서히 꺼지는 격자(pixel canvas, pixel grid). 카드 배경 인터랙션에 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/pixel-canvas.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pixel-canvas.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/pixel-canvas",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1431,6 +2393,29 @@
       }
     },
     {
+      "name": "pixel-image-trail",
+      "type": "registry:component",
+      "title": "Pixel Image Trail",
+      "description": "커서가 지나간 자리에 픽셀 조각으로 이미지가 드러난다(pixel trail, reveal on hover).",
+      "categories": [
+        "인터랙션"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/pixel-image-trail.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pixel-image-trail.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/pixel-image-trail",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "pointer",
       "type": "registry:component",
       "title": "Pointer",
@@ -1452,6 +2437,84 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/pointer",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "pricing-01",
+      "type": "registry:component",
+      "title": "Pricing 01",
+      "description": "hover 시 설명이 드러나는 요금제 카드 3개(pricing table, pricing cards). 추천 플랜 강조 포함. 가격 페이지에 통째로 쓴다.",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/pricing-01.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pricing-01.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/pricing-01",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "pricing-02",
+      "type": "registry:component",
+      "title": "Pricing 02",
+      "description": "플랜 요약과 상세 기능표가 분리된 컴팩트 가격표(pricing table, feature comparison). 월/연 전환 애니메이션 포함.",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/pricing-02.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pricing-02.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/pricing-02",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "prism-gradient",
+      "type": "registry:component",
+      "title": "Prism Gradient",
+      "description": "프리즘 굴절이 일렁이는 WebGL 배경(prism gradient, refraction). 라이트·다크 테마를 인식한다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "next-themes"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/prism-gradient.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/prism-gradient.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/prism-gradient",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1522,6 +2585,29 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/pulsating-button",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "pulsating-button-componentry",
+      "type": "registry:component",
+      "title": "pulsating-button-componentry",
+      "description": "맥박처럼 빛나는 버튼(pulsating button, glow CTA). MagicUI 버전과 글로우 처리가 다르다.",
+      "categories": [
+        "버튼"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/pulsating-button-componentry.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pulsating-button-componentry.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/pulsating-button",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1683,6 +2769,37 @@
       }
     },
     {
+      "name": "ripple-transition",
+      "type": "registry:component",
+      "title": "Ripple Transition",
+      "description": "클릭하면 물결 굴절로 이미지가 전환되는 WebGL 전환(image transition, ripple). 갤러리 슬라이드에 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ripple-transition/ripple-transition.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ripple-transition/ripple-transition.tsx"
+        },
+        {
+          "path": "registry/kidow/ripple-transition/webgl-error-boundary.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ripple-transition/webgl-error-boundary.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/ripple-transition",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "safari",
       "type": "registry:component",
       "title": "Safari",
@@ -1732,6 +2849,58 @@
       }
     },
     {
+      "name": "scroll-based-velocity-componentry",
+      "type": "registry:component",
+      "title": "scroll-based-velocity-componentry",
+      "description": "스크롤 속도에 따라 기울고 빨라지는 흐르는 텍스트(scroll velocity). MagicUI 버전과 달리 containerRef로 특정 영역 스크롤에 묶을 수 있다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/scroll-based-velocity-componentry.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-based-velocity-componentry.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/scroll-based-velocity",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "scroll-choreography",
+      "type": "registry:component",
+      "title": "scroll-choreography",
+      "description": "스크롤에 맞춰 네 모서리 이미지가 짜맞춰지는 연출(scroll choreography, pinned scroll). 스토리텔링 섹션에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/scroll-choreography.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-choreography.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/scroll-choreography",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "scroll-progress",
       "type": "registry:component",
       "title": "Scroll Progress",
@@ -1753,6 +2922,83 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/scroll-progress",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "scroll-split-card",
+      "type": "registry:component",
+      "title": "Scroll Split Card",
+      "description": "스크롤하면 이미지와 카드가 좌우로 갈라지는 섹션(split scroll, sticky section). 단계 설명에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/scroll-split-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-split-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/scroll-split-card",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "scroll-tilted-grid",
+      "type": "registry:component",
+      "title": "Scroll Tilted Grid",
+      "description": "뷰포트를 지날 때 기울었다 바로 서는 이미지 그리드(tilted grid, scroll gallery).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "lenis"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/scroll-tilted-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-tilted-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/scroll-tilted-grid",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "scrub-input",
+      "type": "registry:component",
+      "title": "Scrub Input",
+      "description": "좌우로 드래그해 값을 바꾸는 슬라이더 입력(scrub input, drag slider). 알약 모양이며 디자인 툴처럼 수치를 미세 조정할 때 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/scrub-input.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scrub-input.tsx"
+        }
+      ],
+      "cssVars": {},
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/scrub-input",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1803,6 +3049,29 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/shimmer-button",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "shimmer-button-componentry",
+      "type": "registry:component",
+      "title": "shimmer-button-componentry",
+      "description": "광택이 도는 버튼(shimmer button). MagicUI 버전과 구현이 달라 나란히 둔다.",
+      "categories": [
+        "버튼"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/shimmer-button-componentry.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shimmer-button-componentry.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/shimmer-button",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1870,6 +3139,87 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/shiny-button",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "showcase-card",
+      "type": "registry:component",
+      "title": "showcase-card",
+      "description": "3D 기울기와 패럴랙스 이미지가 있는 쇼케이스 카드(showcase card, tilt card). 작품·제품 소개 카드로 쓴다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/showcase-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/showcase-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/showcase-card",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "signature",
+      "type": "registry:component",
+      "title": "Signature",
+      "description": "손글씨 서명이 그려지는 애니메이션(signature, handwriting). 소개 페이지 말미나 이메일 서명에 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion",
+        "opentype.js@^1.3.4"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/signature.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/signature.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/signature",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "silk-aurora",
+      "type": "registry:component",
+      "title": "Silk Aurora",
+      "description": "비단결 같은 오로라 셰이더 배경(silk aurora, flowing shader).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/silk-aurora/silk-aurora.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/silk-aurora/silk-aurora.tsx"
+        },
+        {
+          "path": "registry/kidow/silk-aurora/webgl-error-boundary.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/silk-aurora/webgl-error-boundary.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/silk-aurora",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1953,6 +3303,80 @@
       }
     },
     {
+      "name": "split-flap-display",
+      "type": "registry:component",
+      "title": "Split Flap Display",
+      "description": "공항 안내판처럼 글자가 넘어가는 스플릿 플랩(split flap, flip board). 카운터·상태 표시에 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/split-flap-display.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/split-flap-display.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/split-flap-display",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "spotlight-card",
+      "type": "registry:component",
+      "title": "Spotlight Card",
+      "description": "커서를 따라 조명이 움직이는 카드(spotlight card). 다중 스포트라이트·빔·3D 틸트 변형이 함께 들어 있다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/spotlight-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/spotlight-card.tsx"
+        }
+      ],
+      "cssVars": {},
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/spotlight-card",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "sticky-scroll-cards",
+      "type": "registry:component",
+      "title": "Sticky Scroll Cards",
+      "description": "스크롤하면 카드가 차곡차곡 고정되며 쌓이는 섹션(sticky scroll, stacking cards). 단계·기능 나열에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "lenis"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sticky-scroll-cards.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sticky-scroll-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/sticky-scroll-cards",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "striped-pattern",
       "type": "registry:component",
       "title": "Striped Pattern",
@@ -1997,6 +3421,29 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/terminal",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "testimonial-marquee",
+      "type": "registry:component",
+      "title": "testimonial-marquee",
+      "description": "후기·리뷰(testimonial)를 무한히 흘려보내는 마퀴. 아바타와 핸들이 포함된 카드 형태이고 stacked·dual 등 배치 변형이 있다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/testimonial-marquee.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/testimonial-marquee.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/testimonial-marquee",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -2049,6 +3496,81 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/text-animate",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "text-animate-componentry",
+      "type": "registry:component",
+      "title": "text-animate-componentry",
+      "description": "텍스트 등장 애니메이션(text animate). MagicUI 버전과 구현이 달라 나란히 둔다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/text-animate-componentry.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-animate-componentry.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/text-animate",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "text-morph",
+      "type": "registry:component",
+      "title": "Text Morph",
+      "description": "단어가 유체처럼 녹아 다음 단어로 바뀐다(text morph). 주변 타이포와 테마를 그대로 물려받는다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/text-morph.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-morph.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/text-morph",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "text-repel",
+      "type": "registry:component",
+      "title": "text-repel",
+      "description": "커서를 피해 글자가 밀려나는 텍스트(text repel, magnetic text). 히어로 문구 장난 요소로 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/text-repel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-repel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/text-repel",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -2191,6 +3713,61 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/warp-background",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "webgl-liquid",
+      "type": "registry:component",
+      "title": "Webgl Liquid",
+      "description": "액체가 흐르는 WebGL 히어로 배경(liquid background, fluid shader). 색·흐름·그레인을 조절한다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/webgl-liquid/webgl-liquid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/webgl-liquid/webgl-liquid.tsx"
+        },
+        {
+          "path": "registry/kidow/webgl-liquid/webgl-error-boundary.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/webgl-liquid/webgl-error-boundary.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/webgl-liquid",
+        "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "wheel-carousel",
+      "type": "registry:component",
+      "title": "Wheel Carousel",
+      "description": "휠처럼 회전하는 관성 드래그 캐러셀(wheel carousel, picker). 이미지와 라벨이 곡선을 따라 흐른다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "next-themes"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/wheel-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/wheel-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Componentry",
+        "sourceUrl": "https://componentry.dev/docs/components/wheel-carousel",
+        "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
