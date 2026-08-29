@@ -53,6 +53,32 @@
       }
     },
     {
+      "name": "animated-checkbox",
+      "type": "registry:component",
+      "title": "Animated Checkbox",
+      "description": "체크하면 스프링 애니메이션과 함께 취소선이 그어지는 체크박스(animated checkbox, todo checkbox). 할 일 목록·동의 항목에 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-checkbox.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-checkbox.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/animated-checkbox",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "animated-circular-progress-bar",
       "type": "registry:component",
       "title": "Animated Circular Progress Bar",
@@ -99,6 +125,32 @@
         "source": "Componentry",
         "sourceUrl": "https://componentry.dev/docs/components/animated-gradient",
         "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-gradient-spell",
+      "type": "registry:component",
+      "title": "Animated Gradient",
+      "description": "WebGL 소용돌이 그라디언트 배경(animated gradient, swirl background). 프리셋이 있어 바로 쓸 수 있다. Componentry 버전보다 프리셋 중심이라 설정이 간단하다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "next-themes"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-gradient-spell.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-gradient-spell.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/animated-gradient",
+        "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -437,6 +489,29 @@
       }
     },
     {
+      "name": "bars-spinner",
+      "type": "registry:component",
+      "title": "Bars Spinner",
+      "description": "막대가 순서대로 도는 로딩 스피너(bars spinner, loading indicator). 버튼 안이나 목록 로딩에 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bars-spinner.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bars-spinner.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/bars-spinner",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "bento-grid",
       "type": "registry:component",
       "title": "Bento Grid",
@@ -487,6 +562,32 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/blur-fade",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "blur-reveal",
+      "type": "registry:component",
+      "title": "Blur Reveal",
+      "description": "흐릿하던 텍스트가 또렷해지며 등장한다(blur reveal, blur in). 섹션 제목 등장에 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/blur-reveal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/blur-reveal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/blur-reveal",
+        "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -700,6 +801,56 @@
       }
     },
     {
+      "name": "color-badge",
+      "type": "registry:component",
+      "title": "Badge",
+      "description": "빨강·파랑·초록 등 색 변형이 있는 배지(colored badge, status badge). shadcn 기본 배지보다 색 팔레트가 넓어 상태·태그 표시에 쓴다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "@radix-ui/react-slot",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/color-badge.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/color-badge.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/badge",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "color-selector",
+      "type": "registry:component",
+      "title": "Color Selector",
+      "description": "색을 고르는 스와치 선택기(color picker, color selector, swatch). 테마 설정이나 라벨 색 지정에 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/color-selector.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/color-selector.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/color-selector",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "comic-text",
       "type": "registry:component",
       "title": "Comic Text",
@@ -802,6 +953,32 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/cool-mode",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "copy-button",
+      "type": "registry:component",
+      "title": "Copy Button",
+      "description": "클릭하면 블러 전환과 함께 복사 완료를 알리는 버튼(copy button, copy to clipboard). 코드 블록·설치 명령 옆에 쓴다.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/copy-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/copy-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/copy-button",
+        "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -981,6 +1158,29 @@
       }
     },
     {
+      "name": "exploding-input",
+      "type": "registry:component",
+      "title": "Exploding Input",
+      "description": "타이핑할 때 입자가 튀어오르는 입력창(exploding input, particle input). 가입 폼처럼 즐거움을 주고 싶은 곳에 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/exploding-input.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/exploding-input.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/exploding-input",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "eye-tracking",
       "type": "registry:component",
       "title": "Eye Tracking",
@@ -1002,6 +1202,29 @@
         "source": "Componentry",
         "sourceUrl": "https://componentry.dev/docs/components/eye-tracking",
         "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "fallback-avatar",
+      "type": "registry:component",
+      "title": "Fallback Avatar",
+      "description": "이름 문자열에서 색을 만들어내는 그라디언트 아바타(fallback avatar, default avatar, initials). 프로필 이미지가 없을 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/fallback-avatar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/fallback-avatar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/fallback-avatar",
+        "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1137,6 +1360,32 @@
       }
     },
     {
+      "name": "flow-button",
+      "type": "registry:component",
+      "title": "Flow Button",
+      "description": "hover 하면 점선 테두리가 흐르는 버튼(flow button, dashed border CTA).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "@radix-ui/react-slot"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/flow-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/flow-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/flow-button",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "github-calendar",
       "type": "registry:component",
       "title": "github-calendar",
@@ -1259,6 +1508,52 @@
       }
     },
     {
+      "name": "gradient-spinner",
+      "type": "registry:component",
+      "title": "Spinner",
+      "description": "그라디언트가 도는 SVG 로딩 스피너(gradient spinner, loading spinner). 크기·속도 변형이 있어 shadcn 기본 스피너보다 표현이 풍부하다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/gradient-spinner.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gradient-spinner.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/spinner",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "gradient-wave-text",
+      "type": "registry:component",
+      "title": "Gradient Wave Text",
+      "description": "애플 스타일로 물결치는 그라디언트 텍스트(gradient wave text, apple gradient). 대형 헤드라인에 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/gradient-wave-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gradient-wave-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/gradient-wave-text",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "grid-pattern",
       "type": "registry:component",
       "title": "Grid Pattern",
@@ -1327,6 +1622,32 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/hexagon-pattern",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "highlighted-text",
+      "type": "registry:component",
+      "title": "Highlighted Text",
+      "description": "mix-blend-mode로 배경 형광펜이 미끄러지듯 칠해지는 강조(highlighted text, sliding highlight). 본문 핵심 구절에 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/highlighted-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/highlighted-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/highlighted-text",
+        "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1585,6 +1906,29 @@
       }
     },
     {
+      "name": "interactive-line-chart",
+      "type": "registry:component",
+      "title": "Chart",
+      "description": "커서를 따라 툴팁이 붙고 점에 스냅되는 라인 차트(line chart, interactive chart, sparkline). 외부 차트 라이브러리 없이 지표 추이를 보여줄 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/interactive-line-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/interactive-line-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/chart",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "iphone",
       "type": "registry:component",
       "title": "iPhone",
@@ -1603,6 +1947,32 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/iphone",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "keyboard-shortcut",
+      "type": "registry:component",
+      "title": "Keyboard Shortcuts",
+      "description": "⌘·⇧ 같은 키 기호로 단축키를 표시하고 실제 핫키 바인딩까지 하는 키캡(keyboard shortcut, kbd, hotkey). 커맨드 메뉴 안내나 도움말에 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "react-hotkeys-hook"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/keyboard-shortcut.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/keyboard-shortcut.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/kbd",
+        "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1652,6 +2022,32 @@
         "source": "Componentry",
         "sourceUrl": "https://componentry.dev/docs/components/kinetic-text-reveal",
         "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "label-input",
+      "type": "registry:component",
+      "title": "Label Input",
+      "description": "라벨이 떠오르고 비밀번호 표시 토글이 붙은 입력창(floating label input, password toggle). 로그인·회원가입 폼에 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/label-input.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/label-input.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/label-input",
+        "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1761,6 +2157,32 @@
       }
     },
     {
+      "name": "light-rays-spell",
+      "type": "registry:component",
+      "title": "Light Rays",
+      "description": "WebGL 셰이더로 그린 광선 효과(light rays, god rays). MagicUI 버전과 달리 three.js 셰이더 기반이라 결이 더 부드럽다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "three"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/light-rays-spell.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/light-rays-spell.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/light-rays",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "line-shadow-text",
       "type": "registry:component",
       "title": "Line Shadow Text",
@@ -1846,6 +2268,29 @@
         "source": "Componentry",
         "sourceUrl": "https://componentry.dev/docs/components/liquid-chrome",
         "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "logos-carousel",
+      "type": "registry:component",
+      "title": "Logos Carousel",
+      "description": "로고 묶음이 순차 애니메이션으로 교체되는 캐러셀(logo carousel, logo cloud). \"이런 곳에서 씁니다\" 섹션에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/logos-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/logos-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/logos-carousel",
+        "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1998,6 +2443,32 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/marquee",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "marquee-spell",
+      "type": "registry:component",
+      "title": "Marquee",
+      "description": "속도·방향을 조절하는 무한 스크롤 마퀴(marquee, infinite scroll). MagicUI 버전보다 API가 단순해 가볍게 쓸 때 좋다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/marquee-spell.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/marquee-spell.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/marquee",
+        "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -2347,6 +2818,29 @@
       }
     },
     {
+      "name": "perspective-book",
+      "type": "registry:component",
+      "title": "Perspective Book",
+      "description": "hover 하면 표지가 열리는 3D 책 목업(3d book, book mockup). 전자책·문서·아티클 소개에 쓴다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/perspective-book.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/perspective-book.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/perspective-book",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "pixel-canvas",
       "type": "registry:component",
       "title": "pixel-canvas",
@@ -2437,6 +2931,32 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/pointer",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "pop-button",
+      "type": "registry:component",
+      "title": "Pop Button",
+      "description": "누르면 아래로 눌리는 입체 버튼(3d button, push button, pop). 게임적인 느낌의 CTA에 쓴다.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "@radix-ui/react-slot"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/pop-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pop-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/pop-button",
+        "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -2613,6 +3133,32 @@
       }
     },
     {
+      "name": "qr-code",
+      "type": "registry:component",
+      "title": "QR Code",
+      "description": "둥근 모서리와 점 형태로 그리는 QR 코드 생성기(qr code generator). 링크 공유나 명함 페이지에 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "qrcode"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/qr-code.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/qr-code.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/qr-code",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "rainbow-button",
       "type": "registry:component",
       "title": "Rainbow Button",
@@ -2669,6 +3215,32 @@
       }
     },
     {
+      "name": "randomized-text",
+      "type": "registry:component",
+      "title": "Randomized Text",
+      "description": "글자가 무작위로 하나씩 확정되며 드러나는 텍스트(randomized text, decode reveal).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/randomized-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/randomized-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/randomized-text",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "retro-grid",
       "type": "registry:component",
       "title": "Retro Grid",
@@ -2687,6 +3259,32 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/retro-grid",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "rich-button",
+      "type": "registry:component",
+      "title": "Rich Button",
+      "description": "색 변형이 풍부한 기본 버튼(rich button, colored button). emerald·blue 등 팔레트가 준비돼 있다.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "@radix-ui/react-slot"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/rich-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/rich-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/rich-button",
+        "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -3077,6 +3675,32 @@
       }
     },
     {
+      "name": "shimmer-text",
+      "type": "registry:component",
+      "title": "Shimmer Text",
+      "description": "광택이 훑고 지나가는 텍스트(shimmer text, loading text). \"생성 중\" 같은 대기 상태 문구에 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/shimmer-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shimmer-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/shimmer-text",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "shine-border",
       "type": "registry:component",
       "title": "Shine Border",
@@ -3197,6 +3821,33 @@
       }
     },
     {
+      "name": "signature-spell",
+      "type": "registry:component",
+      "title": "Signature",
+      "description": "폰트 경로를 따라 손글씨 서명이 그려진다(signature, handwriting). Componentry 버전과 폰트 처리 방식이 다르다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion",
+        "opentype.js"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/signature-spell.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/signature-spell.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/signature",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "silk-aurora",
       "type": "registry:component",
       "title": "Silk Aurora",
@@ -3220,6 +3871,32 @@
         "source": "Componentry",
         "sourceUrl": "https://componentry.dev/docs/components/silk-aurora",
         "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "slide-up-text",
+      "type": "registry:component",
+      "title": "Slide Up Text",
+      "description": "아래에서 위로 미끄러져 올라오는 텍스트 등장(slide up text, stagger). 섹션 제목에 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/slide-up-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/slide-up-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/slide-up-text",
+        "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -3277,6 +3954,32 @@
       }
     },
     {
+      "name": "special-text",
+      "type": "registry:component",
+      "title": "Special Text",
+      "description": "글자가 뒤섞였다 맞춰지는 스크램블 텍스트(scramble text, glitch text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/special-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/special-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/special-text",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "spinning-text",
       "type": "registry:component",
       "title": "Spinning Text",
@@ -3321,6 +4024,33 @@
         "source": "Componentry",
         "sourceUrl": "https://componentry.dev/docs/components/split-flap-display",
         "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "spotify-card",
+      "type": "registry:component",
+      "title": "Spotify Card",
+      "description": "Spotify 트랙 링크를 붙이면 앨범 아트와 흐린 배경으로 카드를 만든다(spotify card, now playing, music embed).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@icons-pack/react-simple-icons",
+        "spotify-url-info"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/spotify-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/spotify-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/spotify-card",
+        "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -3527,6 +4257,29 @@
       }
     },
     {
+      "name": "text-marquee",
+      "type": "registry:component",
+      "title": "Text Marquee",
+      "description": "세로로 흐르는 텍스트 마퀴(vertical marquee, ticker). 좁은 띠 영역에 문구를 순환시킬 때 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/text-marquee.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-marquee.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/text-marquee",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "text-morph",
       "type": "registry:component",
       "title": "Text Morph",
@@ -3597,6 +4350,57 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/text-reveal",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "tilt-card",
+      "type": "registry:component",
+      "title": "Tilt Card",
+      "description": "커서에 따라 기울고 스포트라이트가 도는 3D 카드(tilt card, 3d hover card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/tilt-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tilt-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/tilt-card",
+        "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "tweet",
+      "type": "registry:component",
+      "title": "Tweet",
+      "description": "X(트위터) 게시물을 커스텀 스타일로 임베드한다(tweet embed, x post). 후기·언급 인용에 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@icons-pack/react-simple-icons",
+        "lucide-react",
+        "react-tweet"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/tweet.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tweet.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/tweet",
+        "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -3794,6 +4598,32 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/word-rotate",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "words-stagger",
+      "type": "registry:component",
+      "title": "Words Stagger",
+      "description": "블러와 이동이 섞여 단어 단위로 등장하는 텍스트(words stagger, staggered reveal).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/words-stagger.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/words-stagger.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spell UI",
+        "sourceUrl": "https://spell.sh/docs/components/words-stagger",
+        "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
