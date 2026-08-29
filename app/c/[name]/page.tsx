@@ -1,12 +1,19 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { ExternalLink } from 'lucide-react'
+import { ChevronLeft, ExternalLink } from 'lucide-react'
 
 import { demos } from '@/components/demos'
 import { CopyCommand } from '@/components/copy-command'
 import { PreviewTabs } from '@/components/preview-tabs'
 import { Badge } from '@/components/ui/badge'
-import { addCommand, getItem, items, readItemSources } from '@/lib/registry'
+import {
+  addCommand,
+  categorySlug,
+  getItem,
+  items,
+  readItemSources,
+} from '@/lib/registry'
 import { isShadcnBase, shadcnDocUrl } from '@/lib/shadcn-base'
 
 export function generateStaticParams() {
@@ -32,9 +39,20 @@ export default async function ComponentPage({ params }: PageProps<'/c/[name]'>) 
 
   return (
     <div className="flex flex-col gap-6">
-      <div className="flex flex-col gap-1">
-        <h1 className="font-heading text-2xl font-semibold">{item.title}</h1>
-        <p className="text-muted-foreground text-sm">{item.description}</p>
+      <div className="flex flex-col gap-2">
+        {item.categories?.[0] ? (
+          <Link
+            href={`/category/${categorySlug(item.categories[0])}`}
+            className="text-muted-foreground hover:text-foreground inline-flex w-fit items-center gap-1 text-sm transition-colors"
+          >
+            <ChevronLeft className="size-4" />
+            {item.categories[0]}
+          </Link>
+        ) : null}
+        <div className="flex flex-col gap-1">
+          <h1 className="font-heading text-2xl font-semibold">{item.title}</h1>
+          <p className="text-muted-foreground text-sm">{item.description}</p>
+        </div>
       </div>
 
       <div className="flex flex-col gap-6 lg:flex-row">
