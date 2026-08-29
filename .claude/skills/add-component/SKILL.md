@@ -9,6 +9,13 @@ description: 다른 UI 프레임워크(MagicUI, Aceternity, OriginUI, Kibo 등)�
 
 아래를 순서대로 전부 수행한다. 판단이 필요한 지점(이름 충돌, 라이선스 불명, 정규화 애매)에서만 사용자에게 묻는다.
 
+## 0. 받을 수 있는 것인지 판단
+
+shadcn 레지스트리가 아니어도 된다. 기준은 **React + Tailwind로 이 사이트에서 렌더되는가**.
+받는 것 / 안 받는 것 목록: [references/scope.md](references/scope.md)
+
+Vue·Svelte, CSS-in-JS 프레임워크 의존, 라이선스 불명, 유료 라이선스는 추가하지 않는다.
+
 ## 1. 원본 수집
 
 1. 문서 URL을 fetch.
