@@ -1,0 +1,52 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "kidow",
+  "homepage": "https://ui.dongwook.kim",
+  "items": [
+    {
+      "name": "marquee",
+      "type": "registry:component",
+      "title": "Marquee",
+      "description": "콘텐츠를 무한히 흘려보내는 가로/세로 마퀴. hover 시 정지, 역방향, 반복 횟수 조절 가능.",
+      "categories": ["애니메이션"],
+      "files": [
+        {
+          "path": "registry/ui/marquee/marquee.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/marquee.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-marquee": "marquee var(--duration) infinite linear",
+          "animate-marquee-vertical": "marquee-vertical var(--duration) linear infinite"
+        }
+      },
+      "css": {
+        "@keyframes marquee": {
+          "from": {
+            "transform": "translateX(0)"
+          },
+          "to": {
+            "transform": "translateX(calc(-100% - var(--gap)))"
+          }
+        },
+        "@keyframes marquee-vertical": {
+          "from": {
+            "transform": "translateY(0)"
+          },
+          "to": {
+            "transform": "translateY(calc(-100% - var(--gap)))"
+          }
+        }
+      },
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/marquee",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    }
+  ]
+}
