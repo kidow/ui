@@ -1,4 +1,4 @@
-import { Marquee } from '@/registry/ui/marquee/marquee'
+import { Marquee } from '@/components/kidow/marquee'
 
 const reviews = [
   { name: '지민', body: '설치 한 줄로 끝났다. 출처까지 적혀 있어서 마음이 편함.' },

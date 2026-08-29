@@ -9,8 +9,9 @@
 | import alias | `@/lib/utils`, `@/components/ui/*` 로 맞춘다. 원본이 `~/`, `src/` 등을 쓰면 교체. |
 | Tailwind 버전 | v3 문법이면 v4로. `@layer` 래핑 제거, `theme(colors.x)` → `var(--color-x)`, config 의존 유틸은 CSS 변수로. arbitrary value는 그대로 둔다. |
 | 클라이언트 경계 | 훅·이벤트 핸들러·브라우저 API를 쓰면 최상단에 `'use client'`. |
-| 파일명 | kebab-case. `registry/ui/<name>/<name>.tsx`. |
+| 파일명 | kebab-case. `registry/kidow/<name>.tsx`. |
 | 로컬 유틸 | 원본이 자체 `cn` 을 파일 안에 정의했으면 `@/lib/utils` import로 교체. |
+| 컴포넌트 간 참조 | 원본이 자기 레지스트리 경로(`@/registry/magicui/x`)로 형제 컴포넌트를 부르면 `@/components/kidow/x` 로 바꾼다. 이 경로는 tsconfig 별칭 덕에 이 사이트에서도, 설치된 프로젝트에서도 똑같이 동작한다. |
 | 색 토큰 | 원본이 shadcn 토큰을 안 쓰면 아래 매핑표대로 치환한다. |
 
 ## 색 토큰 매핑

@@ -8,24 +8,31 @@ export function ComponentCard({ item }: { item: RegistryItem }) {
   const Demo = demos[item.name]
 
   return (
-    <Link
-      href={`/c/${item.name}`}
-      className="hover:border-foreground/20 group flex flex-col overflow-hidden rounded-xl border transition-colors"
-    >
-      <div className="bg-muted/40 flex min-h-40 items-center justify-center overflow-hidden p-6">
+    // 카드 전체를 <Link>로 감싸지 않는다 — 데모 안에 <a>가 있는 경우
+    // (dock, hero-video-dialog 등) 중첩 앵커가 되어 hydration이 깨진다.
+    // 제목 링크를 카드 전체로 늘리고(after:inset-0), 프리뷰는 클릭을 막는다.
+    <article className="group hover:border-foreground/20 relative flex flex-col overflow-hidden rounded-xl border transition-colors">
+      <div className="bg-muted/40 pointer-events-none flex h-52 items-center justify-center overflow-hidden">
         {Demo ? (
-          <Demo />
+          <div className="flex w-full origin-center scale-[0.6] items-center justify-center">
+            <Demo />
+          </div>
         ) : (
           <span className="text-muted-foreground text-xs">데모 없음</span>
         )}
       </div>
       <div className="flex items-center gap-2 border-t px-4 py-3">
-        <span className="text-sm font-medium">{item.title}</span>
+        <Link
+          href={`/c/${item.name}`}
+          className="text-sm font-medium after:absolute after:inset-0"
+        >
+          {item.title}
+        </Link>
         <div className="ml-auto flex items-center gap-1.5">
           <Badge variant="secondary">{item.meta.source}</Badge>
           <Badge variant="outline">{item.meta.license}</Badge>
         </div>
       </div>
-    </Link>
+    </article>
   )
 }

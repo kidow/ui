@@ -11,7 +11,7 @@
   "registryDependencies": ["button"],
   "files": [
     {
-      "path": "registry/ui/<name>/<name>.tsx",
+      "path": "registry/kidow/<name>.tsx",
       "type": "registry:component",
       "target": "components/kidow/<name>.tsx"
     }
@@ -39,7 +39,8 @@
 
 - **type** — 대부분 `registry:component`. UI 프리미티브면 `registry:ui`, 훅이면 `registry:hook`, 블록(여러 파일 조합)이면 `registry:block`.
 - **registryDependencies** — shadcn/ui 기본 컴포넌트는 **이름만** (`"button"`, `"dialog"`). CLI가 공식 shadcn에서 설치한다. 우리 레지스트리에 복제하지 않는다.
-- **dependencies** — npm 패키지명 배열. 버전은 원본이 고정하지 않는 한 안 적는다.
+- **dependencies** — npm 패키지명 배열. **원본이 버전을 고정했으면 그대로 옮긴다**(`"cobe@^0.6.4"`). 버전을 떼면 최신이 설치돼 API가 안 맞을 수 있다 — 실제로 cobe에서 타입 에러가 났다.
+  원본 JSON의 `dependencies` 를 믿지 말고 **소스의 import 문과 대조**한다. upstream이 자주 빠뜨린다(motion, lucide-react, class-variance-authority, @shikijs/transformers 등 실제 사례 다수).
 - **files[].path** — 항상 `registry/` 로 시작하는 저장소 기준 경로. 사이트가 이 경로로 소스를 읽는다.
 - **files[].target** — 항상 `components/kidow/<파일명>` 으로 명시한다. 생략하면 소비자의 `components/ui/` 나 `components/` 루트로 떨어져 기존 파일과 충돌한다. 이름 충돌 방어의 마지막 방벽이므로 빠뜨리지 않는다.
 - **categories** — 사이트 목록의 그룹 키. 한국어로 적어도 된다.

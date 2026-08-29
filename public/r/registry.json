@@ -4,14 +4,1159 @@
   "homepage": "https://ui.dongwook.kim",
   "items": [
     {
+      "name": "android",
+      "type": "registry:component",
+      "title": "Android",
+      "description": "안드로이드 폰 목업(Android mockup, device frame). 앱 스크린샷이나 데모 영상을 폰 화면 안에 넣어 랜딩·앱스토어 소개에서 보여줄 때 쓴다.",
+      "categories": [
+        "디바이스 목업"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/android.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/android.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/android",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-beam",
+      "type": "registry:component",
+      "title": "Animated Beam",
+      "description": "두 요소를 잇는 경로를 따라 빛줄기가 흐르는 연결선(animated beam, connection line). 통합·연동(integration) 다이어그램에서 서비스들이 어떻게 이어지는지 보여줄 때 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-beam.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-beam.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/animated-beam",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-circular-progress-bar",
+      "type": "registry:component",
+      "title": "Animated Circular Progress Bar",
+      "description": "퍼센트를 표시하는 원형 게이지(circular progress, gauge). 진행률·점수·사용량을 원형으로 보여줄 때 쓴다. 값이 바뀌면 애니메이션으로 채워진다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-circular-progress-bar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-circular-progress-bar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/animated-circular-progress-bar",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-gradient-text",
+      "type": "registry:component",
+      "title": "Animated Gradient Text",
+      "description": "색이 흐르는 그라디언트 텍스트(gradient text). 히어로 헤드라인이나 \"새 기능\" 배지 문구를 눈에 띄게 만들 때 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-gradient-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-gradient-text.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-gradient": "gradient 8s linear infinite"
+        }
+      },
+      "css": {
+        "@keyframes gradient": {
+          "to": {
+            "background-position": "var(--bg-size, 300%) 0"
+          }
+        }
+      },
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/animated-gradient-text",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-grid-pattern",
+      "type": "registry:component",
+      "title": "Animated Grid Pattern",
+      "description": "칸이 무작위로 켜졌다 꺼지는 격자 배경(animated grid pattern, SVG background). 섹션 배경에 은은한 움직임을 줄 때 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-grid-pattern.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-grid-pattern.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/animated-grid-pattern",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-list",
+      "type": "registry:component",
+      "title": "Animated List",
+      "description": "항목이 순차적으로 나타나는 리스트(animated list, notification feed). 알림·이벤트가 실시간으로 쌓이는 모습을 랜딩에서 시연할 때 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-list.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-list.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/animated-list",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-shiny-text",
+      "type": "registry:component",
+      "title": "Animated Shiny Text",
+      "description": "텍스트 위로 광택이 지나가는 효과(shiny text, shimmer). \"출시 안내\" 같은 작은 배지 문구를 반짝이게 할 때 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-shiny-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-shiny-text.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-shiny-text": "shiny-text 8s infinite"
+        }
+      },
+      "css": {
+        "@keyframes shiny-text": {
+          "0%, 90%, 100%": {
+            "background-position": "calc(-100% - var(--shiny-width)) 0"
+          },
+          "30%, 60%": {
+            "background-position": "calc(100% + var(--shiny-width)) 0"
+          }
+        }
+      },
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/animated-shiny-text",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-theme-toggler",
+      "type": "registry:component",
+      "title": "Theme Toggler",
+      "description": "View Transitions로 화면을 쓸어내며 바꾸는 다크모드 토글(theme toggle, dark mode switch). 원·별 등 clip-path 마스크 모양을 고를 수 있다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-theme-toggler.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-theme-toggler.tsx"
+        }
+      ],
+      "css": {
+        "::view-transition-old(root), ::view-transition-new(root)": {
+          "animation": "none",
+          "mix-blend-mode": "normal"
+        }
+      },
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/animated-theme-toggler",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "aurora-text",
+      "type": "registry:component",
+      "title": "Aurora Text",
+      "description": "오로라처럼 색이 일렁이는 텍스트(aurora text, gradient headline). 히어로 문구 강조에 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/aurora-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/aurora-text.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-aurora": "aurora 8s ease-in-out infinite alternate"
+        }
+      },
+      "css": {
+        "@keyframes aurora": {
+          "0%": {
+            "background-position": "0% 50%",
+            "transform": "rotate(-5deg) scale(0.9)"
+          },
+          "25%": {
+            "background-position": "50% 100%",
+            "transform": "rotate(5deg) scale(1.1)"
+          },
+          "50%": {
+            "background-position": "100% 50%",
+            "transform": "rotate(-3deg) scale(0.95)"
+          },
+          "75%": {
+            "background-position": "50% 0%",
+            "transform": "rotate(3deg) scale(1.05)"
+          },
+          "100%": {
+            "background-position": "0% 50%",
+            "transform": "rotate(-5deg) scale(0.9)"
+          }
+        }
+      },
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/aurora-text",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "avatar-circles",
+      "type": "registry:component",
+      "title": "Avatar Circles",
+      "description": "겹쳐 놓은 원형 아바타 묶음(avatar group, stacked avatars). \"이미 1,200명이 사용 중\" 같은 소셜 프루프를 보여줄 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/avatar-circles.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/avatar-circles.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/avatar-circles",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "backlight",
+      "type": "registry:component",
+      "title": "Backlight",
+      "description": "영상·이미지·SVG 뒤에서 번지는 백라이트 글로우(backlight glow, ambient light). 미디어를 화면에서 띄워 보이게 할 때 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/backlight.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/backlight.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/backlight",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "bento-grid",
+      "type": "registry:component",
+      "title": "Bento Grid",
+      "description": "크기가 제각각인 타일로 기능을 늘어놓는 벤토 그리드(bento grid, feature grid). 제품 기능 소개 섹션에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@radix-ui/react-icons"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bento-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bento-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/bento-grid",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "blur-fade",
+      "type": "registry:component",
+      "title": "Blur Fade",
+      "description": "블러와 함께 서서히 나타나는 등장 애니메이션(blur fade, fade in). 스크롤로 섹션이 들어올 때 부드럽게 띄울 때 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/blur-fade.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/blur-fade.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/blur-fade",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "border-beam",
+      "type": "registry:component",
+      "title": "Border Beam",
+      "description": "테두리를 따라 빛줄기가 도는 효과(border beam, animated border). 카드나 가격표에서 추천 항목을 강조할 때 쓴다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/border-beam.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/border-beam.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/border-beam",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "client-tweet-card",
+      "type": "registry:component",
+      "title": "Client Tweet Card",
+      "description": "클라이언트에서 트윗을 불러와 보여주는 카드(tweet card, X post embed). 서버 컴포넌트를 못 쓰는 환경에서 후기·언급을 붙일 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "react-tweet"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/client-tweet-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/client-tweet-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/client-tweet-card",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "code-comparison",
+      "type": "registry:component",
+      "title": "Code Comparison",
+      "description": "두 코드 스니펫을 좌우로 나란히 비교(code diff, before after). 마이그레이션 전후나 라이브러리 비교를 문서에서 보여줄 때 쓴다. Shiki 문법 강조.",
+      "categories": [
+        "코드·터미널"
+      ],
+      "dependencies": [
+        "@shikijs/transformers",
+        "lucide-react",
+        "next-themes",
+        "shiki"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/code-comparison.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/code-comparison.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/code-comparison",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "comic-text",
+      "type": "registry:component",
+      "title": "Comic Text",
+      "description": "만화 로고처럼 두꺼운 외곽선과 그림자를 넣은 텍스트(comic text, cartoon title).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/comic-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/comic-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/comic-text",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "confetti",
+      "type": "registry:component",
+      "title": "Confetti",
+      "description": "색종이가 터지는 축하 효과(confetti, celebration). 결제 완료·가입 완료처럼 기뻐할 순간에 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "canvas-confetti"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/confetti.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/confetti.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/confetti",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "cool-mode",
+      "type": "registry:component",
+      "title": "Cool Mode",
+      "description": "클릭할 때 입자가 튀어오르는 효과(particle click effect). 버튼·링크에 장난기를 더할 때 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/cool-mode.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cool-mode.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/cool-mode",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "dia-text-reveal",
+      "type": "registry:component",
+      "title": "Dia Text Reveal",
+      "description": "색 띠가 텍스트를 훑고 지나가며 드러내는 효과(text reveal, gradient sweep).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dia-text-reveal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dia-text-reveal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/dia-text-reveal",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "dock",
+      "type": "registry:component",
+      "title": "Dock",
+      "description": "macOS 독처럼 커서에 반응해 아이콘이 확대되는 바(macOS dock, app dock). 포트폴리오 내비게이션이나 툴바에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dock.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dock.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/dock",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "dot-pattern",
+      "type": "registry:component",
+      "title": "Dot Pattern",
+      "description": "점으로 이루어진 배경 패턴(dot pattern, polka background). 섹션 배경을 밋밋하지 않게 할 때 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dot-pattern.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dot-pattern.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/dot-pattern",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "dotted-map",
+      "type": "registry:component",
+      "title": "Dotted Map",
+      "description": "점으로 그린 세계 지도(dotted map, world map). 사용자 분포나 서비스 지역을 랜딩에서 보여줄 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "svg-dotted-map"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dotted-map.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dotted-map.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/dotted-map",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "file-tree",
+      "type": "registry:component",
+      "title": "File Tree",
+      "description": "폴더·파일 구조를 접었다 펴는 트리(file tree, directory structure). 문서에서 프로젝트 구조를 설명할 때 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@radix-ui/react-accordion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "scroll-area"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/file-tree.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/file-tree.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/file-tree",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "flickering-grid",
+      "type": "registry:component",
+      "title": "Flickering Grid",
+      "description": "칸이 깜빡이는 격자 배경(flickering grid). 히어로 뒤 배경에 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/flickering-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/flickering-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/flickering-grid",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "glare-hover",
+      "type": "registry:component",
+      "title": "Glare Hover",
+      "description": "hover 시 사선 광택이 스치는 효과(glare hover, shine on hover). 카드·이미지에 쓴다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glare-hover.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/glare-hover.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/glare-hover",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "globe",
+      "type": "registry:component",
+      "title": "Globe",
+      "description": "자동 회전하고 드래그로 돌릴 수 있는 WebGL 지구본(interactive globe, 3D earth). 글로벌 서비스임을 보여줄 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "cobe@^0.6.4",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/globe.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/globe.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/globe",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "glyph-matrix",
+      "type": "registry:component",
+      "title": "Glyph Matrix",
+      "description": "문자들이 미세하게 바뀌는 격자 애니메이션(glyph matrix, matrix text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glyph-matrix.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/glyph-matrix.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/glyph-matrix",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "grid-pattern",
+      "type": "registry:component",
+      "title": "Grid Pattern",
+      "description": "SVG 격자 배경 패턴(grid pattern, graph paper background).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/grid-pattern.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/grid-pattern.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/grid-pattern",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "hero-video-dialog",
+      "type": "registry:component",
+      "title": "Hero Video Dialog",
+      "description": "썸네일을 누르면 모달로 열리는 소개 영상(video modal, lightbox). 랜딩 히어로의 데모 영상에 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/hero-video-dialog.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hero-video-dialog.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/hero-video-dialog",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "hexagon-pattern",
+      "type": "registry:component",
+      "title": "Hexagon Pattern",
+      "description": "육각형 타일 배경 패턴(hexagon pattern, honeycomb).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/hexagon-pattern.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hexagon-pattern.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/hexagon-pattern",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "highlighter",
+      "type": "registry:component",
+      "title": "Highlighter",
+      "description": "손으로 그은 형광펜처럼 문장을 강조(marker highlight, hand drawn). 본문에서 핵심 문장을 짚을 때 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion",
+        "rough-notation"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/highlighter.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/highlighter.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/highlighter",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "hyper-text",
+      "type": "registry:component",
+      "title": "Hyper Text",
+      "description": "글자가 뒤섞였다가 제자리를 찾는 텍스트 애니메이션(scramble text, decode effect).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/hyper-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hyper-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/hyper-text",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "icon-cloud",
+      "type": "registry:component",
+      "title": "Icon Cloud",
+      "description": "아이콘이 3D 구체 위를 도는 태그 클라우드(icon cloud, tech stack). 지원 기술·연동 서비스를 나열할 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/icon-cloud.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/icon-cloud.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/icon-cloud",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "interactive-grid-pattern",
+      "type": "registry:component",
+      "title": "Interactive Grid Pattern",
+      "description": "칸에 마우스를 올리면 반응하는 격자 배경(interactive grid pattern).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/interactive-grid-pattern.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/interactive-grid-pattern.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/interactive-grid-pattern",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "interactive-hover-button",
+      "type": "registry:component",
+      "title": "interactive-hover-button",
+      "description": "hover 시 화살표와 색 원이 번지는 CTA 버튼(hover button, call to action).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/interactive-hover-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/interactive-hover-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/interactive-hover-button",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "iphone",
+      "type": "registry:component",
+      "title": "iPhone",
+      "description": "아이폰 목업(iPhone mockup, device frame). 앱 화면을 폰 프레임에 넣어 보여줄 때 쓴다.",
+      "categories": [
+        "디바이스 목업"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/iphone.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/iphone.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/iphone",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "kinetic-text",
+      "type": "registry:component",
+      "title": "Kinetic Text",
+      "description": "hover를 따라 글자 굵기가 변하는 텍스트(variable font, kinetic typography).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/kinetic-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/kinetic-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/kinetic-text",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "lens",
+      "type": "registry:component",
+      "title": "Lens",
+      "description": "이미지·영상 위를 돋보기로 확대해 보는 렌즈(zoom lens, magnifier). 제품 상세 이미지 확대에 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/lens.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/lens.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/lens",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "light-rays",
+      "type": "registry:component",
+      "title": "Light Rays",
+      "description": "위에서 내리쬐는 광선 효과(light rays, god rays). 히어로 배경 분위기를 만들 때 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/light-rays.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/light-rays.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/light-rays",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "line-shadow-text",
+      "type": "registry:component",
+      "title": "Line Shadow Text",
+      "description": "움직이는 선 그림자가 붙은 큰 제목(line shadow text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/line-shadow-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/line-shadow-text.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-line-shadow": "line-shadow 15s linear infinite"
+        }
+      },
+      "css": {
+        "@keyframes line-shadow": {
+          "0%": {
+            "background-position": "0 0"
+          },
+          "100%": {
+            "background-position": "100% -100%"
+          }
+        }
+      },
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/line-shadow-text",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "magic-card",
+      "type": "registry:component",
+      "title": "Magic Card",
+      "description": "커서를 따라 스포트라이트가 움직이고 테두리가 빛나는 카드(spotlight card, hover card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion",
+        "next-themes"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/magic-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/magic-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/magic-card",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "marquee",
       "type": "registry:component",
       "title": "Marquee",
       "description": "콘텐츠를 끊김 없이 흘려보내는 가로/세로 마퀴(marquee, ticker). 로고 월(logo wall), 고객 후기·리뷰(testimonial) 슬라이더, 파트너사 나열처럼 목록을 자동 스크롤(infinite scroll)로 무한 반복 노출할 때 쓴다. hover 시 정지, 역방향, 반복 횟수 조절 지원.",
-      "categories": ["애니메이션"],
+      "categories": [
+        "레이아웃·목록"
+      ],
       "files": [
         {
-          "path": "registry/ui/marquee/marquee.tsx",
+          "path": "registry/kidow/marquee.tsx",
           "type": "registry:component",
           "target": "components/kidow/marquee.tsx"
         }
@@ -49,15 +1194,801 @@
       }
     },
     {
+      "name": "meteors",
+      "type": "registry:component",
+      "title": "Meteors",
+      "description": "유성이 사선으로 흐르는 배경 효과(meteor shower, shooting stars).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/meteors.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/meteors.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-meteor": "meteor 5s linear infinite"
+        }
+      },
+      "css": {
+        "@keyframes meteor": {
+          "0%": {
+            "transform": "rotate(var(--angle)) translateX(0)",
+            "opacity": "1"
+          },
+          "70%": {
+            "opacity": "1"
+          },
+          "100%": {
+            "transform": "rotate(var(--angle)) translateX(-500px)",
+            "opacity": "0"
+          }
+        }
+      },
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/meteors",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "morphing-text",
+      "type": "registry:component",
+      "title": "Morphing Text",
+      "description": "단어가 다른 단어로 녹아 변하는 텍스트(morphing text, text transition). 여러 키워드를 번갈아 보여줄 때 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/morphing-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/morphing-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/morphing-text",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "neon-gradient-card",
+      "type": "registry:component",
+      "title": "Neon Gradient Card",
+      "description": "네온 그라디언트 테두리가 빛나는 카드(neon card, glow card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/neon-gradient-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/neon-gradient-card.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-background-position-spin": "background-position-spin 3000ms infinite alternate"
+        }
+      },
+      "css": {
+        "@keyframes background-position-spin": {
+          "0%": {
+            "background-position": "top center"
+          },
+          "100%": {
+            "background-position": "bottom center"
+          }
+        }
+      },
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/neon-gradient-card",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "noise-texture",
+      "type": "registry:component",
+      "title": "Noise Texture",
+      "description": "SVG 프랙탈 노이즈로 만든 질감 오버레이(noise texture, grain overlay). 밋밋한 면에 필름 그레인을 얹을 때 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/noise-texture.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/noise-texture.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/noise-texture",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "number-ticker",
+      "type": "registry:component",
+      "title": "Number Ticker",
+      "description": "숫자가 목표값까지 굴러 올라가는 카운터(number counter, count up). 지표·통계를 강조할 때 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/number-ticker.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/number-ticker.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/number-ticker",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "orbiting-circles",
+      "type": "registry:component",
+      "title": "Orbiting Circles",
+      "description": "중심 주위를 도는 아이콘 궤도(orbiting circles, orbit animation). 연동 서비스·생태계를 표현할 때 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/orbiting-circles.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/orbiting-circles.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-orbit": "orbit calc(var(--duration)*1s) linear infinite"
+        }
+      },
+      "css": {
+        "@keyframes orbit": {
+          "0%": {
+            "transform": "rotate(calc(var(--angle) * 1deg)) translateY(calc(var(--radius) * 1px)) rotate(calc(var(--angle) * -1deg))"
+          },
+          "100%": {
+            "transform": "rotate(calc(var(--angle) * 1deg + 360deg)) translateY(calc(var(--radius) * 1px)) rotate(calc((var(--angle) * -1deg) - 360deg))"
+          }
+        }
+      },
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/orbiting-circles",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "particles",
+      "type": "registry:component",
+      "title": "Particles",
+      "description": "마우스에 반응하는 입자 배경(particles background).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/particles.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/particles.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/particles",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "pixel-image",
+      "type": "registry:component",
+      "title": "Pixel Image",
+      "description": "픽셀이 조각조각 맞춰지며 드러나는 이미지(pixelated reveal, retro image).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/pixel-image.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pixel-image.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/pixel-image",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "pointer",
+      "type": "registry:component",
+      "title": "Pointer",
+      "description": "요소 위에서 커스텀 포인터로 바뀌는 효과(custom cursor, pointer).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/pointer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pointer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/pointer",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "progressive-blur",
+      "type": "registry:component",
+      "title": "Progressive Blur",
+      "description": "스크롤 영역 가장자리를 점점 흐리게 해 더 있음을 알리는 그라디언트 블러(progressive blur, fade edge).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/progressive-blur.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/progressive-blur.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/progressive-blur",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "pulsating-button",
+      "type": "registry:component",
+      "title": "Pulsating Button",
+      "description": "맥박처럼 파동이 번지는 버튼(pulsating button, pulse CTA). 반드시 눌러야 하는 행동을 유도할 때 쓴다.",
+      "categories": [
+        "버튼"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/pulsating-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pulsating-button.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-pulse": "pulse var(--duration) ease-out infinite",
+          "animate-pulse-ripple": "pulse-ripple var(--duration) cubic-bezier(0.16, 1, 0.3, 1) infinite"
+        }
+      },
+      "css": {
+        "@keyframes pulse": {
+          "0%, 100%": {
+            "boxShadow": "0 0 0 0 var(--pulse-color, oklch(from var(--bg) l c h / 0.5))"
+          },
+          "50%": {
+            "boxShadow": "0 0 0 var(--distance) var(--pulse-color, oklch(from var(--bg) l c h / 0.5))"
+          }
+        },
+        "@keyframes pulse-ripple": {
+          "0%": {
+            "boxShadow": "0 0 0 0 oklch(from var(--pulse-color, var(--bg)) l c h / 1)"
+          },
+          "100%": {
+            "boxShadow": "0 0 0 var(--distance) oklch(from var(--pulse-color, var(--bg)) l c h / 0)"
+          }
+        }
+      },
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/pulsating-button",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "rainbow-button",
+      "type": "registry:component",
+      "title": "Rainbow Button",
+      "description": "무지개 그라디언트 테두리가 흐르는 버튼(rainbow button, gradient CTA).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "@radix-ui/react-slot",
+        "class-variance-authority"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/rainbow-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/rainbow-button.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-rainbow": "rainbow var(--speed, 2s) infinite linear"
+        },
+        "light": {
+          "color-1": "oklch(66.2% 0.225 25.9)",
+          "color-2": "oklch(60.4% 0.26 302)",
+          "color-3": "oklch(69.6% 0.165 251)",
+          "color-4": "oklch(80.2% 0.134 225)",
+          "color-5": "oklch(90.7% 0.231 133)"
+        },
+        "dark": {
+          "color-1": "oklch(66.2% 0.225 25.9)",
+          "color-2": "oklch(60.4% 0.26 302)",
+          "color-3": "oklch(69.6% 0.165 251)",
+          "color-4": "oklch(80.2% 0.134 225)",
+          "color-5": "oklch(90.7% 0.231 133)"
+        }
+      },
+      "css": {
+        "@keyframes rainbow": {
+          "0%": {
+            "background-position": "0%"
+          },
+          "100%": {
+            "background-position": "200%"
+          }
+        }
+      },
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/rainbow-button",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "retro-grid",
+      "type": "registry:component",
+      "title": "Retro Grid",
+      "description": "지평선으로 흘러가는 레트로 그리드 배경(retro grid, synthwave).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/retro-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/retro-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/retro-grid",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "ripple",
+      "type": "registry:component",
+      "title": "Ripple",
+      "description": "동심원이 퍼지는 배경 효과(ripple, radar pulse). 중앙 요소를 강조할 때 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ripple.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ripple.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-ripple": "ripple var(--duration,2s) ease calc(var(--i, 0)*.2s) infinite"
+        }
+      },
+      "css": {
+        "@keyframes ripple": {
+          "0%, 100%": {
+            "transform": "translate(-50%, -50%) scale(1)"
+          },
+          "50%": {
+            "transform": "translate(-50%, -50%) scale(0.9)"
+          }
+        }
+      },
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/ripple",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "ripple-button",
+      "type": "registry:component",
+      "title": "Ripple Button",
+      "description": "클릭 지점에서 물결이 퍼지는 버튼(ripple button, material ripple).",
+      "categories": [
+        "버튼"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ripple-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ripple-button.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-rippling": "rippling var(--duration) ease-out"
+        }
+      },
+      "css": {
+        "@keyframes rippling": {
+          "0%": {
+            "opacity": "1"
+          },
+          "100%": {
+            "transform": "scale(2)",
+            "opacity": "0"
+          }
+        }
+      },
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/ripple-button",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "safari",
+      "type": "registry:component",
+      "title": "Safari",
+      "description": "사파리 브라우저 창 목업(browser mockup, safari frame). 웹사이트 스크린샷을 브라우저 프레임에 넣을 때 쓴다.",
+      "categories": [
+        "디바이스 목업"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/safari.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/safari.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/safari",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "scroll-based-velocity",
+      "type": "registry:component",
+      "title": "Scroll Based Velocity",
+      "description": "스크롤 속도에 따라 빨라지는 흐르는 텍스트(scroll velocity, parallax text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/scroll-based-velocity.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-based-velocity.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/scroll-based-velocity",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "scroll-progress",
+      "type": "registry:component",
+      "title": "Scroll Progress",
+      "description": "페이지 상단의 읽기 진행률 바(scroll progress bar, reading indicator). 긴 글·문서에 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/scroll-progress.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-progress.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/scroll-progress",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "shimmer-button",
+      "type": "registry:component",
+      "title": "Shimmer Button",
+      "description": "테두리를 도는 광택이 있는 버튼(shimmer button, shine CTA).",
+      "categories": [
+        "버튼"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/shimmer-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shimmer-button.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-shimmer-slide": "shimmer-slide var(--speed) ease-in-out infinite alternate",
+          "animate-spin-around": "spin-around calc(var(--speed) * 2) infinite linear"
+        }
+      },
+      "css": {
+        "@keyframes shimmer-slide": {
+          "to": {
+            "transform": "translate(calc(100cqw - 100%), 0)"
+          }
+        },
+        "@keyframes spin-around": {
+          "0%": {
+            "transform": "translateZ(0) rotate(0)"
+          },
+          "15%, 35%": {
+            "transform": "translateZ(0) rotate(90deg)"
+          },
+          "65%, 85%": {
+            "transform": "translateZ(0) rotate(270deg)"
+          },
+          "100%": {
+            "transform": "translateZ(0) rotate(360deg)"
+          }
+        }
+      },
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/shimmer-button",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "shine-border",
+      "type": "registry:component",
+      "title": "Shine Border",
+      "description": "테두리에 빛이 도는 보더 효과(shine border, animated border).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/shine-border.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shine-border.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-shine": "shine var(--duration) infinite linear"
+        }
+      },
+      "css": {
+        "@keyframes shine": {
+          "0%": {
+            "background-position": "0% 0%"
+          },
+          "50%": {
+            "background-position": "100% 100%"
+          },
+          "to": {
+            "background-position": "0% 0%"
+          }
+        }
+      },
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/shine-border",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "shiny-button",
+      "type": "registry:component",
+      "title": "Shiny Button",
+      "description": "라이트·다크 모드에 맞춰 광택이 바뀌는 버튼(shiny button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/shiny-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shiny-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/shiny-button",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "smooth-cursor",
+      "type": "registry:component",
+      "title": "smooth-cursor",
+      "description": "스프링 물리로 부드럽게 따라오는 커스텀 커서(smooth cursor, custom pointer).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/smooth-cursor.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/smooth-cursor.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/smooth-cursor",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "sparkles-text",
+      "type": "registry:component",
+      "title": "Sparkles Text",
+      "description": "반짝이가 계속 튀는 텍스트(sparkles text, glitter).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sparkles-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sparkles-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/sparkles-text",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "spinning-text",
+      "type": "registry:component",
+      "title": "Spinning Text",
+      "description": "원을 그리며 도는 텍스트(circular text, spinning badge). 도장·배지 문구에 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/spinning-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/spinning-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/spinning-text",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "striped-pattern",
+      "type": "registry:component",
+      "title": "Striped Pattern",
+      "description": "사선 줄무늬 배경 패턴(striped pattern, diagonal stripes).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/striped-pattern.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/striped-pattern.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/striped-pattern",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "terminal",
       "type": "registry:component",
       "title": "Terminal",
       "description": "CLI 실행 과정을 재현하는 터미널(terminal, console) 목업. 타이핑 애니메이션(typing animation)으로 설치 명령과 빌드 로그를 순차 재생해, 랜딩 히어로나 문서에서 제품 사용법을 시연할 때 쓴다. macOS 신호등 헤더, AnimatedSpan·TypingAnimation 조합, 화면에 들어올 때 시작.",
-      "categories": ["코드·터미널"],
-      "dependencies": ["motion"],
+      "categories": [
+        "코드·터미널"
+      ],
+      "dependencies": [
+        "motion"
+      ],
       "files": [
         {
-          "path": "registry/ui/terminal/terminal.tsx",
+          "path": "registry/kidow/terminal.tsx",
           "type": "registry:component",
           "target": "components/kidow/terminal.tsx"
         }
@@ -65,6 +1996,226 @@
       "meta": {
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/terminal",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "text-3d-flip",
+      "type": "registry:component",
+      "title": "Text 3D Flip",
+      "description": "글자가 3D로 뒤집히는 hover 효과(3d flip text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/text-3d-flip.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-3d-flip.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/text-3d-flip",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "text-animate",
+      "type": "registry:component",
+      "title": "Text Animate",
+      "description": "타입·블러·슬라이드 등 방식을 골라 쓰는 텍스트 등장 애니메이션(text animate, entrance animation).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/text-animate.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-animate.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/text-animate",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "text-reveal",
+      "type": "registry:component",
+      "title": "Text Reveal",
+      "description": "스크롤에 따라 단어가 하나씩 진해지는 문단(scroll text reveal). 브랜드 선언문이나 긴 문장을 강조할 때 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/text-reveal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-reveal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/text-reveal",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "tweet-card",
+      "type": "registry:component",
+      "title": "Tweet Card",
+      "description": "트윗을 서버에서 불러와 보여주는 카드(tweet embed, X post). 후기·언급을 모아 보여줄 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "react-tweet"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/tweet-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tweet-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/tweet-card",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "typing-animation",
+      "type": "registry:component",
+      "title": "Typing Animation",
+      "description": "글자가 하나씩 찍히는 타이핑 애니메이션(typing animation, typewriter).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/typing-animation.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/typing-animation.tsx"
+        }
+      ],
+      "cssVars": {
+        "theme": {
+          "animate-blink-cursor": "blink-cursor 1.2s step-end infinite"
+        }
+      },
+      "css": {
+        "@keyframes blink-cursor": {
+          "0%, 49%": {
+            "opacity": "1"
+          },
+          "50%, 100%": {
+            "opacity": "0"
+          }
+        }
+      },
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/typing-animation",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "video-text",
+      "type": "registry:component",
+      "title": "Video Text",
+      "description": "글자 안에서 영상이 재생되는 텍스트(video text, masked video). 히어로 대형 타이포에 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/video-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/video-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/video-text",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "warp-background",
+      "type": "registry:component",
+      "title": "Warp Background",
+      "description": "시간이 휘는 듯한 워프 배경 카드(warp background, hyperspace).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/warp-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/warp-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/warp-background",
+        "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "word-rotate",
+      "type": "registry:component",
+      "title": "Word Rotate",
+      "description": "단어가 세로로 갈아끼워지는 회전 텍스트(word rotate, rotating words). \"더 빠른 / 더 쉬운\" 식 헤드라인에 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/word-rotate.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/word-rotate.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MagicUI",
+        "sourceUrl": "https://magicui.design/docs/components/word-rotate",
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"

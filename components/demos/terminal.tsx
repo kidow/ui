@@ -2,7 +2,7 @@ import {
   AnimatedSpan,
   Terminal,
   TypingAnimation,
-} from '@/registry/ui/terminal/terminal'
+} from '@/components/kidow/terminal'
 
 export default function TerminalDemo() {
   return (

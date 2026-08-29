@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "scroll-progress",
+  "title": "Scroll Progress",
+  "description": "페이지 상단의 읽기 진행률 바(scroll progress bar, reading indicator). 긴 글·문서에 쓴다.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/scroll-progress.tsx",
+      "content": "\"use client\"\n\nimport { motion, useScroll, type MotionProps } from \"motion/react\"\n\nimport { cn } from \"@/lib/utils\"\n\ninterface ScrollProgressProps extends Omit<\n  React.HTMLAttributes<HTMLElement>,\n  keyof MotionProps\n> {\n  ref?: React.Ref<HTMLDivElement>\n}\n\nexport function ScrollProgress({\n  className,\n  ref,\n  ...props\n}: ScrollProgressProps) {\n  const { scrollYProgress } = useScroll()\n\n  return (\n    <motion.div\n      ref={ref}\n      className={cn(\n        \"fixed inset-x-0 top-0 z-50 h-px origin-left bg-linear-to-r from-[#A97CF8] via-[#F38CB8] to-[#FDCC92]\",\n        className\n      )}\n      style={{\n        scaleX: scrollYProgress,\n      }}\n      {...props}\n    />\n  )\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/scroll-progress.tsx"
+    }
+  ],
+  "meta": {
+    "source": "MagicUI",
+    "sourceUrl": "https://magicui.design/docs/components/scroll-progress",
+    "author": "magicuidesign",
+    "license": "MIT",
+    "retrievedAt": "2026-08-29"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

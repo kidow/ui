@@ -34,7 +34,7 @@ Vue·Svelte, CSS-in-JS 프레임워크 의존, 라이선스 불명, 유료 라�
 
 **최소만 손댄다.** 규칙과 예시: [references/normalization.md](references/normalization.md)
 
-저장 위치: `registry/ui/<name>/<name>.tsx`
+저장 위치: `registry/kidow/<name>.tsx`
 
 ## 4. registry.json 항목 추가
 
@@ -51,7 +51,8 @@ Vue·Svelte, CSS-in-JS 프레임워크 의존, 라이선스 불명, 유료 라�
 - `components/demos/<name>.tsx` 에 최소 데모 작성. 원본 예제 참고하되 짧게.
 - `components/demos/index.ts` 의 `demos` 맵에 등록.
 - 데모는 `registry.json` 의 `files` 에 **넣지 않는다.**
-- 아이템에 `cssVars`/`css` 가 있으면 **이 사이트의 `app/globals.css` 에도 같은 내용을 반영한다.** 소비자 프로젝트엔 CLI가 주입하지만 우리 사이트엔 아무도 안 넣어준다 — 안 하면 프리뷰가 움직이지 않는다. (`cssVars.theme` 의 `animate-x` → `@theme inline` 의 `--animate-x`)
+- 데모가 이미지·영상을 참조하면 원본 사이트 자산을 그대로 쓰지 말고 `public/` 의 우리 자산(`/demo-image.svg` 등)으로 바꾼다. 남의 CDN에 의존하거나 404를 남기지 않는다.
+- 아이템에 `cssVars`/`css` 가 있으면 `pnpm registry:css` 로 `app/globals.css` 생성 블록을 갱신한다 (`pnpm build` 에도 포함돼 있다). 소비자 프로젝트엔 CLI가 주입하지만 우리 사이트엔 아무도 안 넣어준다 — 안 하면 프리뷰가 움직이지 않는다.
 
 ## 6. 검증
 
