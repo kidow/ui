@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "description-list",
+  "title": "Description List",
+  "description": "항목 이름과 값을 짝지어 보여주는 정의 목록(description list, dl, key value list). 주문 상세나 설정 요약처럼 라벨과 내용을 나란히 늘어놓을 때 쓴다.",
+  "files": [
+    {
+      "path": "registry/kidow/description-list.tsx",
+      "content": "import * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nfunction DescriptionList({ className, ...props }: React.ComponentProps<\"dl\">) {\n  return (\n    <dl\n      data-slot=\"description-list\"\n      className={cn(\"grid gap-6\", className)}\n      {...props}\n    />\n  );\n}\n\nfunction DescriptionTerm({ className, ...props }: React.ComponentProps<\"dt\">) {\n  return (\n    <dt\n      data-slot=\"description-term\"\n      className={cn(\n        \"text-sm leading-none font-medium tracking-tight\",\n        className,\n      )}\n      {...props}\n    />\n  );\n}\n\nfunction DescriptionDetail({\n  className,\n  ...props\n}: React.ComponentProps<\"dd\">) {\n  return (\n    <dd\n      data-slot=\"description-detail\"\n      className={cn(\"text-muted-foreground text-sm\", className)}\n      {...props}\n    />\n  );\n}\n\nfunction DescriptionGroup({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"description-group\"\n      className={cn(\"grid gap-1.5\", className)}\n      {...props}\n    />\n  );\n}\n\nexport {\n  DescriptionList,\n  DescriptionTerm,\n  DescriptionDetail,\n  DescriptionGroup,\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/description-list.tsx"
+    }
+  ],
+  "meta": {
+    "source": "ui-x",
+    "sourceUrl": "https://ui-x.junwen-k.dev/docs/components/description-list",
+    "author": "junwen-k",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "confirmer",
+  "title": "Confirmer",
+  "description": "함수 호출 한 줄로 띄우는 확인 다이얼로그(confirm dialog, 확인창, imperative modal). `await confirm({...})` 로 결과를 기다릴 수 있어 삭제·전송처럼 되돌릴 수 없는 동작 앞에 쓴다. 상태 변수를 따로 두지 않아도 된다.",
+  "dependencies": [
+    "react-call"
+  ],
+  "registryDependencies": [
+    "alert-dialog",
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/confirmer.tsx",
+      "content": "\"use client\";\n\nimport { createCallable } from \"react-call\";\n\nimport {\n  AlertDialog,\n  AlertDialogAction,\n  AlertDialogCancel,\n  AlertDialogContent,\n  AlertDialogDescription,\n  AlertDialogFooter,\n  AlertDialogHeader,\n  AlertDialogTitle,\n} from \"@/components/ui/alert-dialog\";\n\ninterface ConfirmOptions {\n  title?: React.ReactNode;\n  description?: React.ReactNode;\n  cancelText?: React.ReactNode;\n  actionText?: React.ReactNode;\n  CancelProps?: React.ComponentProps<typeof AlertDialogCancel>;\n  ActionProps?: React.ComponentProps<typeof AlertDialogAction>;\n}\n\nconst defaultOptions = {\n  title: \"Are you sure?\",\n  cancelText: \"Cancel\",\n  actionText: \"Continue\",\n} as const satisfies ConfirmOptions;\n\nexport type ConfirmResponse = boolean;\n\nconst UNMOUNTING_DELAY = 200;\n\nconst CallableConfirm = createCallable<ConfirmOptions, ConfirmResponse>(\n  ({ call, ...payload }) => {\n    const options = { ...defaultOptions, ...payload };\n\n    return (\n      <AlertDialog\n        open={!call.ended}\n        onOpenChange={(open) => !open && call.end(false)}\n      >\n        <AlertDialogContent>\n          <AlertDialogHeader>\n            <AlertDialogTitle>{options.title}</AlertDialogTitle>\n            <AlertDialogDescription>\n              {options.description}\n            </AlertDialogDescription>\n          </AlertDialogHeader>\n          <AlertDialogFooter>\n            <AlertDialogCancel {...options.CancelProps}>\n              {options.cancelText}\n            </AlertDialogCancel>\n            <AlertDialogAction\n              {...options.ActionProps}\n              onClick={() => call.end(true)}\n            >\n              {options.actionText}\n            </AlertDialogAction>\n          </AlertDialogFooter>\n        </AlertDialogContent>\n      </AlertDialog>\n    );\n  },\n  UNMOUNTING_DELAY,\n);\n\nconst Confirmer = CallableConfirm.Root;\n\nconst confirm = CallableConfirm.call;\n\nexport { Confirmer, confirm };\n",
+      "type": "registry:component",
+      "target": "components/kidow/confirmer.tsx"
+    }
+  ],
+  "meta": {
+    "source": "ui-x",
+    "sourceUrl": "https://ui-x.junwen-k.dev/docs/components/confirmer",
+    "author": "junwen-k",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "폼·입력"
+  ],
+  "type": "registry:component"
+}

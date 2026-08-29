@@ -17,6 +17,23 @@ export interface RelatedRegistry {
 
 export const RELATED_REGISTRIES: RelatedRegistry[] = [
   {
+    name: 'ui-x',
+    url: 'https://ui-x.junwen-k.dev',
+    summary:
+      'shadcn/ui 를 보완하는 컴포넌트 26종. 날짜·시간 입력 계열이 특히 촘촘하다. 이 중 3개(confirmer, description-list, time)는 담았다.',
+    reason:
+      '나머지 21개가 @base-ui/react 에 직·간접으로 의존한다. 이 프로젝트는 radix-nova 프리셋이라 Radix 를 쓰는데, 담으면 프리미티브 런타임이 두 벌 공존하게 된다. Base UI 프로젝트라면 원본에서 그대로 설치하는 편이 낫다.',
+    revisitWhen: '이 레지스트리가 Base UI 가 아닌 구현도 제공하게 되면',
+  },
+  {
+    name: 'Reka UI',
+    url: 'https://reka-ui.com',
+    summary:
+      'Vue 3 를 위한 unstyled 접근성 프리미티브. Radix Vue 의 후신이고 shadcn/vue 의 기반이다.',
+    reason:
+      'Vue 컴포넌트라 React 인 이 사이트에서 프리뷰가 불가능하다. npm 패키지로 배포되는 점도 소스를 복사해 담는 우리 방식과 맞지 않는다. 애초에 스타일이 없는 프리미티브라 여기 모으는 완성 컴포넌트와는 층이 다르다.',
+  },
+  {
     name: 'Kaif UI',
     url: 'https://kaif-ui.vercel.app/components',
     summary:

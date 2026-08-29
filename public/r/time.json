@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "time",
+  "title": "Time",
+  "description": "시각을 사람이 읽기 좋게 표시하는 컴포넌트(time, datetime, 상대 시간). `<time>` 시맨틱 태그로 렌더하고 date-fns 로 형식을 맞춘다.",
+  "dependencies": [
+    "date-fns"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/time.tsx",
+      "content": "import { format } from \"date-fns\";\nimport * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport interface TimeProps extends Omit<\n  React.ComponentProps<\"time\">,\n  \"children\"\n> {\n  children: Parameters<typeof format>[0];\n  dateTimeFormatStr?: Parameters<typeof format>[1];\n  formatStr?: Parameters<typeof format>[1];\n}\n\nfunction Time({\n  children,\n  dateTimeFormatStr = \"yyyy-MM-dd\",\n  formatStr = \"PPP\",\n  className,\n  ...props\n}: TimeProps) {\n  return (\n    <time\n      data-slot=\"time\"\n      dateTime={format(children, dateTimeFormatStr)}\n      className={cn(\"whitespace-nowrap\", className)}\n      {...props}\n    >\n      {format(children, formatStr)}\n    </time>\n  );\n}\n\nexport { Time };\n",
+      "type": "registry:component",
+      "target": "components/kidow/time.tsx"
+    }
+  ],
+  "meta": {
+    "source": "ui-x",
+    "sourceUrl": "https://ui-x.junwen-k.dev/docs/components/time",
+    "author": "junwen-k",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "미디어·데이터"
+  ],
+  "type": "registry:component"
+}

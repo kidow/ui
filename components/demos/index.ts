@@ -105,6 +105,7 @@ import CommandPaletteDemo from './command-palette'
 import CommitGraphDemo from './commit-graph'
 import ConcaveCarouselDemo from './concave-carousel'
 import ConfettiDemo from './confetti'
+import ConfirmerDemo from './confirmer'
 import ConversationThreadDemo from './conversation-thread'
 import ConvexCarouselDemo from './convex-carousel'
 import CoolModeDemo from './cool-mode'
@@ -128,6 +129,7 @@ import DashboardSm05Demo from './dashboard-sm-05'
 import DashboardSm06Demo from './dashboard-sm-06'
 import DateWheelPickerDemo from './date-wheel-picker'
 import DepthTrailDemo from './depth-trail'
+import DescriptionListDemo from './description-list'
 import DiaTextRevealDemo from './dia-text-reveal'
 import DiagonalCarouselDemo from './diagonal-carousel'
 import DiffViewerDemo from './diff-viewer'
@@ -403,6 +405,7 @@ import TextMorphingDemo from './text-morphing'
 import TextRepelDemo from './text-repel'
 import TextRevealDemo from './text-reveal'
 import TiltCardDemo from './tilt-card'
+import TimeDemo from './time'
 import TipJarDemo from './tip-jar'
 import TumblerRollRevealDemo from './tumbler-roll-reveal'
 import TweetDemo from './tweet'
@@ -556,6 +559,7 @@ export const demos: Record<string, ComponentType> = {
   'commit-graph': CommitGraphDemo,
   'concave-carousel': ConcaveCarouselDemo,
   'confetti': ConfettiDemo,
+  'confirmer': ConfirmerDemo,
   'conversation-thread': ConversationThreadDemo,
   'convex-carousel': ConvexCarouselDemo,
   'cool-mode': CoolModeDemo,
@@ -579,6 +583,7 @@ export const demos: Record<string, ComponentType> = {
   'dashboard-sm-06': DashboardSm06Demo,
   'date-wheel-picker': DateWheelPickerDemo,
   'depth-trail': DepthTrailDemo,
+  'description-list': DescriptionListDemo,
   'dia-text-reveal': DiaTextRevealDemo,
   'diagonal-carousel': DiagonalCarouselDemo,
   'diff-viewer': DiffViewerDemo,
@@ -854,6 +859,7 @@ export const demos: Record<string, ComponentType> = {
   'text-repel': TextRepelDemo,
   'text-reveal': TextRevealDemo,
   'tilt-card': TiltCardDemo,
+  'time': TimeDemo,
   'tip-jar': TipJarDemo,
   'tumbler-roll-reveal': TumblerRollRevealDemo,
   'tweet': TweetDemo,
