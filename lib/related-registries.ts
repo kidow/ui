@@ -17,6 +17,15 @@ export interface RelatedRegistry {
 
 export const RELATED_REGISTRIES: RelatedRegistry[] = [
   {
+    name: 'terrae',
+    url: 'https://www.terrae.dev',
+    summary:
+      'Mapbox GL 위에 얹는 지도 레이어 41종. radar, choropleth, volcano 같은 기상·지형 효과를 props 로 다룬다.',
+    reason:
+      'mapbox-gl 의존이라 Mapbox 계정과 액세스 토큰이 있어야 동작한다. 여기 담은 것들은 설치하면 바로 보이는 컴포넌트인데 이건 전제가 다르고, 우리 사이트 프리뷰도 토큰 없이는 회색 화면이다. 41개 중 40개가 map 코어 하나에 묶여 있어 사실상 지도 패키지 한 벌이기도 하다.',
+    revisitWhen: 'MapLibre 와 무료 타일만으로 동작하는 경로가 기본이 되면',
+  },
+  {
     name: 'Liveline',
     url: 'https://benji.org/liveline',
     summary:
