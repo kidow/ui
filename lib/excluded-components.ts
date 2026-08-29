@@ -25,4 +25,30 @@ export const EXCLUDED_COMPONENTS: ExcludedComponent[] = [
         'R3F가 전역 확장 대신 모듈 스코프 JSX 타입을 쓰거나, React 19 타입과의 충돌이 해소되면',
     })
   ),
+  ...[
+    'ascent-carousel',
+    'concave-carousel',
+    'convex-carousel',
+    'cover-carousel',
+    'curved-carousel',
+    'depth-carousel',
+    'dimensional-carousel',
+    'dimensional-deck',
+    'elastic-carousel',
+    'flex-carousel',
+    'glass-slices',
+    'liquid-marble',
+    'panoramic-carousel',
+    'proximity-grid',
+    'velocity-grid',
+    'velocity-strips',
+  ].map((name) => ({
+    name,
+    source: 'Satisium UI',
+    sourceUrl: `https://ui.satisium.com/docs/components/${name}`,
+    reason:
+      '@react-three/fiber 의존. Componentry 때와 같은 이유로, R3F 타입이 이미 담은 컴포넌트들의 타입을 붕괴시킨다. glass-slices·liquid-marble·proximity-grid·velocity-grid·velocity-strips 는 -image/-video 변형도 함께 제외했다.',
+    revisitWhen:
+      'R3F가 전역 확장 대신 모듈 스코프 JSX 타입을 쓰거나, React 19 타입과의 충돌이 해소되면',
+  })),
 ]
