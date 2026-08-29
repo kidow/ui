@@ -1,4 +1,5 @@
 import { ComponentCard } from '@/components/component-card'
+import { RelatedRegistriesSection } from '@/components/related-registries-section'
 import { ShadcnBaseSection } from '@/components/shadcn-base-section'
 import { groupByCategory, items } from '@/lib/registry'
 
@@ -32,6 +33,7 @@ export default function Home() {
       )}
 
       <ShadcnBaseSection />
+      <RelatedRegistriesSection />
     </div>
   )
 }
