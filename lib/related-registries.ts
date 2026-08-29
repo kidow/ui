@@ -17,6 +17,14 @@ export interface RelatedRegistry {
 
 export const RELATED_REGISTRIES: RelatedRegistry[] = [
   {
+    name: 'Liveline',
+    url: 'https://benji.org/liveline',
+    summary:
+      '캔버스 하나로 그리는 React 실시간 라인·캔들 차트. React 외 의존성이 없다.',
+    reason:
+      'Torph 와 같은 이유로 npm 패키지다. 게다가 npm 에는 빌드 산출물만 올라와 있어 복사해 담을 소스가 배포물에 없다. 실시간 차트가 필요하면 npm install liveline 이 정답이다.',
+  },
+  {
     name: 'Torph',
     url: 'https://torph.lochie.me/',
     summary: '의존성 없는 텍스트 모핑 컴포넌트. React·Svelte·Vue 를 함께 지원하는 npm 패키지.',
