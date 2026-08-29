@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "emoji-nav",
+  "title": "Emoji Nav",
+  "description": "이모지 아이콘이 떠 있는 상단 고정 내비게이션 바(emoji nav, floating navbar). 개인 사이트의 가벼운 메뉴에 쓴다.",
+  "registryDependencies": [
+    "tooltip"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/emoji-nav.tsx",
+      "content": "/**\n * Copyright (c) 2024 Muhammad Kaif Nazeer\n * Source: Kaif UI — https://kaif-ui.vercel.app\n *\n * 이 컴포넌트의 라이선스는 저작권 표시를 그대로 유지할 것을 요구한다.\n * 파일을 수정하더라도 위 표시를 지우거나 다른 이름을 추가하지 않는다.\n */\n\n// get animated emogies from: https://googlefonts.github.io/noto-emoji-animation/\n// Visit https://kaif-ui.vercel.app/ for components like this\n\nimport {\n  Tooltip,\n  TooltipContent,\n  TooltipProvider,\n  TooltipTrigger,\n} from \"@/components/ui/tooltip\";\nimport Link from \"next/link\";\nimport Image from \"next/image\";\n\ntype NavItem = {\n  label: string;\n  href: string;\n  emogi: string;\n  alt: string;\n};\n\ntype EmogiNavProps = {\n  navItems: NavItem[];\n};\n\nconst EmogiNav: React.FC<EmogiNavProps> = ({ navItems }) => {\n  return (\n    <div className=\"fixed top-5 left-[50%] -translate-x-[50%] z-[10000] w-full sm:w-max\">\n      <div className=\"border px-5 py-2 rounded-full border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60\">\n        <nav>\n          <div className=\"flex items-center justify-center space-x-6\">\n            {navItems.map((item) => (\n              <div key={item.href}>\n                <TooltipProvider>\n                  <Tooltip delayDuration={0}>\n                    <TooltipTrigger asChild>\n                      <Link href={item.href}>\n                        <Image\n                          src={item.emogi}\n                          alt={item.alt}\n                          width={48}\n                          height={48}\n                        />\n                      </Link>\n                    </TooltipTrigger>\n                    <TooltipContent className=\"z-[11000]\">\n                      <p>{item.label}</p>\n                    </TooltipContent>\n                  </Tooltip>\n                </TooltipProvider>\n              </div>\n            ))}\n          </div>\n        </nav>\n      </div>\n    </div>\n  );\n};\n\nexport default EmogiNav;\n",
+      "type": "registry:component",
+      "target": "components/kidow/emoji-nav.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Kaif UI",
+    "sourceUrl": "https://kaif-ui.vercel.app/components/emogi-nav",
+    "author": "Muhammad Kaif Nazeer",
+    "license": "MIT (저작권 표시 유지 조건)",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

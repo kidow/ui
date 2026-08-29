@@ -17,6 +17,14 @@ export interface RelatedRegistry {
 
 export const RELATED_REGISTRIES: RelatedRegistry[] = [
   {
+    name: 'Kaif UI',
+    url: 'https://kaif-ui.vercel.app/components',
+    summary:
+      'Framer Motion 기반 컴포넌트 모음. 이 중 4개(circular-navigation, emoji-nav, loader-button, zoom-parallax)는 담았다.',
+    reason:
+      '나머지는 이미 가진 것과 겹친다 — floating-dock(dock 3종 보유), custom-cursor(2종), infinite-slider(마퀴 4종), scroll-velocity(2종), pendulum(2종), carousel(8종·예약어). shadcn 레지스트리가 없어 저장소에서 직접 가져와야 하는 점도 감안했다.',
+  },
+  {
     name: 'terrae',
     url: 'https://www.terrae.dev',
     summary:

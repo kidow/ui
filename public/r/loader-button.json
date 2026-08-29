@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "loader-button",
+  "title": "Loader Button",
+  "description": "누르면 스피너로 바뀌고 비활성화되는 로딩 버튼(loading button, submit button). 폼 제출이나 비동기 작업에 쓴다.",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/loader-button.tsx",
+      "content": "\"use client\";\n\n/**\n * Copyright (c) 2024 Muhammad Kaif Nazeer\n * Source: Kaif UI — https://kaif-ui.vercel.app\n *\n * 이 컴포넌트의 라이선스는 저작권 표시를 그대로 유지할 것을 요구한다.\n * 파일을 수정하더라도 위 표시를 지우거나 다른 이름을 추가하지 않는다.\n */\n\n// Visit https://kaif-ui.vercel.app/ for more components like this\n\nimport * as React from \"react\";\nimport { LoaderCircle } from \"lucide-react\";\nimport { Button } from \"@/components/ui/button\";\n\ntype LoaderButtonProps = {\n  isLoading: boolean;\n  className?: string;\n  buttonVariant?:\n    | \"default\"\n    | \"destructive\"\n    | \"outline\"\n    | \"secondary\"\n    | \"ghost\"\n    | \"link\"\n    | null\n    | undefined;\n  children: React.ReactNode;\n  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;\n};\n\nconst LoaderButton: React.FC<LoaderButtonProps> = ({\n  buttonVariant,\n  isLoading,\n  className,\n  children,\n  onClick,\n}) => {\n  return (\n    <Button\n      variant={buttonVariant}\n      className={className}\n      onClick={onClick}\n      disabled={isLoading}\n    >\n      {isLoading && <LoaderCircle className=\"mr-2 h-4 w-4 animate-spin\" />}\n      {children}\n    </Button>\n  );\n};\n\nexport default LoaderButton;\n",
+      "type": "registry:component",
+      "target": "components/kidow/loader-button.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Kaif UI",
+    "sourceUrl": "https://kaif-ui.vercel.app/components/loader-button",
+    "author": "Muhammad Kaif Nazeer",
+    "license": "MIT (저작권 표시 유지 조건)",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:component"
+}

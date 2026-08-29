@@ -1420,6 +1420,33 @@
       }
     },
     {
+      "name": "circular-navigation",
+      "type": "registry:component",
+      "title": "Circular Navigation",
+      "description": "버튼을 누르면 아이콘이 원형으로 펼쳐지는 전체 화면 내비게이션(circular navigation, radial menu). 모바일 메뉴나 포트폴리오 내비에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/circular-navigation.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/circular-navigation.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kaif UI",
+        "sourceUrl": "https://kaif-ui.vercel.app/components/circular-navigation",
+        "author": "Muhammad Kaif Nazeer",
+        "license": "MIT (저작권 표시 유지 조건)",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "client-tweet-card",
       "type": "registry:component",
       "title": "Client Tweet Card",
@@ -2602,6 +2629,32 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "emoji-nav",
+      "type": "registry:component",
+      "title": "Emoji Nav",
+      "description": "이모지 아이콘이 떠 있는 상단 고정 내비게이션 바(emoji nav, floating navbar). 개인 사이트의 가벼운 메뉴에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "registryDependencies": [
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/emoji-nav.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/emoji-nav.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kaif UI",
+        "sourceUrl": "https://kaif-ui.vercel.app/components/emogi-nav",
+        "author": "Muhammad Kaif Nazeer",
+        "license": "MIT (저작권 표시 유지 조건)",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -5269,6 +5322,35 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "loader-button",
+      "type": "registry:component",
+      "title": "Loader Button",
+      "description": "누르면 스피너로 바뀌고 비활성화되는 로딩 버튼(loading button, submit button). 폼 제출이나 비동기 작업에 쓴다.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/loader-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/loader-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kaif UI",
+        "sourceUrl": "https://kaif-ui.vercel.app/components/loader-button",
+        "author": "Muhammad Kaif Nazeer",
+        "license": "MIT (저작권 표시 유지 조건)",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -9550,6 +9632,32 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "zoom-parallax",
+      "type": "registry:component",
+      "title": "Zoom Parallax",
+      "description": "스크롤에 따라 이미지들이 각기 다른 배율로 확대되는 줌 패럴랙스(zoom parallax, scroll zoom). 랜딩 중간 전환 구간에 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/zoom-parallax.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/zoom-parallax.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kaif UI",
+        "sourceUrl": "https://kaif-ui.vercel.app/components/zoom-parallax",
+        "author": "Muhammad Kaif Nazeer",
+        "license": "MIT (저작권 표시 유지 조건)",
+        "retrievedAt": "2026-08-30"
       }
     }
   ]

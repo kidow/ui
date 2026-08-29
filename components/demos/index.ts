@@ -49,6 +49,7 @@ import CharacterMorphDemo from './character-morph'
 import ChatBubbleDemo from './chat-bubble'
 import CircuitBoardDemo from './circuit-board'
 import CircularGalleryDemo from './circular-gallery'
+import CircularNavigationDemo from './circular-navigation'
 import ClientTweetCardDemo from './client-tweet-card'
 import ClosingPlasmaDemo from './closing-plasma'
 import CodeBlockDemo from './code-block'
@@ -90,6 +91,7 @@ import ElasticPopRevealDemo from './elastic-pop-reveal'
 import ElasticStackDemo from './elastic-stack'
 import ElasticTypewriterDemo from './elastic-typewriter'
 import EmberBurnDemo from './ember-burn'
+import EmojiNavDemo from './emoji-nav'
 import EnvTableDemo from './env-table'
 import ExpandedMapDemo from './expanded-map'
 import ExplodingInputDemo from './exploding-input'
@@ -190,6 +192,7 @@ import LiquidMercuryRevealDemo from './liquid-mercury-reveal'
 import LiquidMetalDemo from './liquid-metal'
 import LiquidMetalButtonDemo from './liquid-metal-button'
 import LiquidTextDemo from './liquid-text'
+import LoaderButtonDemo from './loader-button'
 import LogViewerDemo from './log-viewer'
 import LogoCloudDemo from './logo-cloud'
 import LogoSliderDemo from './logo-slider'
@@ -341,6 +344,7 @@ import WindTrailDemo from './wind-trail'
 import WordRotateDemo from './word-rotate'
 import WordsStaggerDemo from './words-stagger'
 import ZAxisRevealDemo from './z-axis-reveal'
+import ZoomParallaxDemo from './zoom-parallax'
 
 /**
  * 사이트 전용 데모. 레지스트리(/r/*.json)에는 포함되지 않는다.
@@ -396,6 +400,7 @@ export const demos: Record<string, ComponentType> = {
   'chat-bubble': ChatBubbleDemo,
   'circuit-board': CircuitBoardDemo,
   'circular-gallery': CircularGalleryDemo,
+  'circular-navigation': CircularNavigationDemo,
   'client-tweet-card': ClientTweetCardDemo,
   'closing-plasma': ClosingPlasmaDemo,
   'code-block': CodeBlockDemo,
@@ -437,6 +442,7 @@ export const demos: Record<string, ComponentType> = {
   'elastic-stack': ElasticStackDemo,
   'elastic-typewriter': ElasticTypewriterDemo,
   'ember-burn': EmberBurnDemo,
+  'emoji-nav': EmojiNavDemo,
   'env-table': EnvTableDemo,
   'expanded-map': ExpandedMapDemo,
   'exploding-input': ExplodingInputDemo,
@@ -537,6 +543,7 @@ export const demos: Record<string, ComponentType> = {
   'liquid-metal': LiquidMetalDemo,
   'liquid-metal-button': LiquidMetalButtonDemo,
   'liquid-text': LiquidTextDemo,
+  'loader-button': LoaderButtonDemo,
   'log-viewer': LogViewerDemo,
   'logo-cloud': LogoCloudDemo,
   'logo-slider': LogoSliderDemo,
@@ -688,4 +695,5 @@ export const demos: Record<string, ComponentType> = {
   'word-rotate': WordRotateDemo,
   'words-stagger': WordsStaggerDemo,
   'z-axis-reveal': ZAxisRevealDemo,
+  'zoom-parallax': ZoomParallaxDemo,
 }

@@ -11,6 +11,9 @@ export const GLOBAL_EFFECT_DEMOS: ReadonlySet<string> = new Set([
   // lenis 로 전역 스크롤을 가로챈다
   'sticky-scroll-cards',
   'scroll-tilted-grid',
+  // position: fixed 에 z-index 9000 이상이라 목록 위를 덮는다
+  'circular-navigation',
+  'emoji-nav',
 ])
 
 export function hasGlobalEffect(name: string) {
