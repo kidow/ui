@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "stats-counter",
+  "title": "Stats Counter",
+  "description": "접두·접미와 소수 자릿수를 지정할 수 있는 지표 카운터(stats counter, metric). 랜딩의 숫자 자랑 섹션에 쓴다.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/stats-counter.tsx",
+      "content": "\"use client\";\n\nimport { useEffect, useRef, useState } from \"react\";\nimport { useInView, useMotionValue, useSpring } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\n\ninterface StatsCounterProps {\n  value: number;\n  duration?: number;\n  prefix?: string;\n  suffix?: string;\n  decimals?: number;\n  className?: string;\n}\n\nexport default function StatsCounter({\n  value,\n  duration = 1.5,\n  prefix = \"\",\n  suffix = \"\",\n  decimals = 0,\n  className,\n}: StatsCounterProps) {\n  const ref = useRef<HTMLSpanElement>(null);\n  const isInView = useInView(ref, { once: true, margin: \"-100px\" });\n  const motionValue = useMotionValue(0);\n  const springValue = useSpring(motionValue, { duration: duration * 1000, bounce: 0 });\n  const [displayValue, setDisplayValue] = useState(0);\n\n  useEffect(() => {\n    if (isInView) {\n      motionValue.set(value);\n    }\n  }, [isInView, value, motionValue]);\n\n  useEffect(() => {\n    const unsubscribe = springValue.on(\"change\", (latest) => {\n      setDisplayValue(latest);\n    });\n    return unsubscribe;\n  }, [springValue]);\n\n  return (\n    <span ref={ref} className={cn(\"tabular-nums\", className)}>\n      {prefix}\n      {displayValue.toFixed(decimals)}\n      {suffix}\n    </span>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/stats-counter.tsx"
+    }
+  ],
+  "meta": {
+    "source": "VengeanceUI",
+    "sourceUrl": "https://www.vengenceui.com/components/stats-counter",
+    "author": "Ashutoshx7",
+    "license": "MIT",
+    "retrievedAt": "2026-08-29"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

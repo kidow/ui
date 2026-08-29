@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "smooth-scroll",
+  "title": "Smooth Scroll",
+  "description": "Lenis 기반 부드러운 스크롤 래퍼(smooth scroll, lenis). 페이지 전체를 감싼다.",
+  "dependencies": [
+    "lenis"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/smooth-scroll.tsx",
+      "content": "'use client'\nimport { ReactNode, useEffect } from 'react'\nimport Lenis from 'lenis'\n\nexport interface SmoothScrollProps {\n    children: ReactNode\n}\n\nexport function SmoothScroll({ children }: SmoothScrollProps) {\n    useEffect(() => {\n        const lenis = new Lenis()\n\n        function raf(time: number) {\n            lenis.raf(time)\n            requestAnimationFrame(raf)\n        }\n\n        requestAnimationFrame(raf)\n\n        // Remove loading class\n        document.body.classList.remove('loading');\n\n        return () => {\n            lenis.destroy()\n        }\n    }, [])\n\n    return <>{children}</>\n}\n\nexport default SmoothScroll\n",
+      "type": "registry:component",
+      "target": "components/kidow/smooth-scroll.tsx"
+    }
+  ],
+  "meta": {
+    "source": "VengeanceUI",
+    "sourceUrl": "https://www.vengenceui.com/components/smooth-scroll",
+    "author": "Ashutoshx7",
+    "license": "MIT",
+    "retrievedAt": "2026-08-29"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

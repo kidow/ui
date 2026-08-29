@@ -35,6 +35,33 @@
       }
     },
     {
+      "name": "agent-bento-grid",
+      "type": "registry:component",
+      "title": "Agent Bento Grid",
+      "description": "AI 에이전트 소개용 벤토 그리드(bento grid, feature grid). 기능 카드가 크기별로 배치된다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/agent-bento-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/agent-bento-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/agent-bento-grid",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "ai-copy-button",
       "type": "registry:component",
       "title": "AI Copy Button",
@@ -112,6 +139,32 @@
       }
     },
     {
+      "name": "animated-button",
+      "type": "registry:component",
+      "title": "Animated Button",
+      "description": "hover 하면 배경이 차오르는 기본 애니메이션 버튼(animated button, hover fill CTA).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/animated-button",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "animated-checkbox",
       "type": "registry:component",
       "title": "Animated Checkbox",
@@ -156,6 +209,33 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/animated-circular-progress-bar",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-footer",
+      "type": "registry:component",
+      "title": "Animated Footer",
+      "description": "스크롤이 끝에 닿으면 드러나는 애니메이션 푸터(animated footer, reveal footer).",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [
+        "gsap",
+        "next-themes"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-footer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-footer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/animated-footer",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -302,6 +382,55 @@
       }
     },
     {
+      "name": "animated-number",
+      "type": "registry:component",
+      "title": "Animated Number",
+      "description": "목표 숫자까지 굴러 올라가는 카운터(animated number, count up).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-number.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-number.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/animated-number",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-rays",
+      "type": "registry:component",
+      "title": "Animated Rays",
+      "description": "방사형 광선이 회전하는 배경(animated rays, radial light).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-rays.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-rays.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/animated-rays",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "animated-shiny-text",
       "type": "registry:component",
       "title": "Animated Shiny Text",
@@ -367,6 +496,32 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/animated-theme-toggler",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-tooltip",
+      "type": "registry:component",
+      "title": "Animated Tooltip",
+      "description": "형태와 색을 고를 수 있는 애니메이션 툴팁(animated tooltip, hover hint).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-tooltip.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-tooltip.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/animated-tooltip",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -445,6 +600,29 @@
       }
     },
     {
+      "name": "ascii-glitch-ripple",
+      "type": "registry:component",
+      "title": "Ascii Glitch Ripple",
+      "description": "아스키 문자가 물결처럼 흔들리는 글리치 효과(ascii glitch, ripple). 터미널 감성 히어로에 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ascii-glitch-ripple.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ascii-glitch-ripple.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/ascii-glitch-ripple",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "aurora-flow",
       "type": "registry:component",
       "title": "Aurora Flow",
@@ -468,6 +646,29 @@
         "source": "Componentry",
         "sourceUrl": "https://componentry.dev/docs/components/aurora-flow",
         "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "aurora-hero",
+      "type": "registry:component",
+      "title": "Aurora Hero",
+      "description": "오로라가 흐르는 히어로 배경 섹션(aurora hero, gradient background).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/aurora-hero.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/aurora-hero.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/aurora-hero",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -570,6 +771,33 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/avatar-circles",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "awwwards-nav",
+      "type": "registry:component",
+      "title": "Awwwards Nav",
+      "description": "Awwwards 풍의 대형 내비게이션(fullscreen nav, menu overlay).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "gsap"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/awwwards-nav.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/awwwards-nav.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/awwwards-nav",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -810,6 +1038,29 @@
       }
     },
     {
+      "name": "border-beam-vengeance",
+      "type": "registry:component",
+      "title": "Border Beam Vengeance",
+      "description": "테두리를 도는 빛줄기(border beam). MagicUI·Componentry 버전과 나란히 두고 고른다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/border-beam-vengeance.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/border-beam-vengeance.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/border-beam",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "bottom-hinge-text-reveal",
       "type": "registry:component",
       "title": "Bottom Hinge Text Reveal",
@@ -832,6 +1083,29 @@
         "source": "Satisium UI",
         "sourceUrl": "https://ui.satisium.com/docs/components/bottom-hinge-text-reveal",
         "author": "satisium",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "candy-button",
+      "type": "registry:component",
+      "title": "Candy Button",
+      "description": "말랑한 사탕 질감의 입체 버튼(candy button, glossy 3d). 밝고 장난기 있는 화면에 쓴다.",
+      "categories": [
+        "버튼"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/candy-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/candy-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/candy-button",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -944,6 +1218,32 @@
         "source": "Componentry",
         "sourceUrl": "https://componentry.dev/docs/components/circuit-board",
         "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "circular-gallery",
+      "type": "registry:component",
+      "title": "Circular Gallery",
+      "description": "원형 궤도를 따라 도는 이미지 갤러리(circular gallery, orbit slider).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "gsap"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/circular-gallery.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/circular-gallery.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/circular-gallery",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1485,6 +1785,81 @@
       }
     },
     {
+      "name": "copy-button-vengeance",
+      "type": "registry:component",
+      "title": "Copy Button Vengeance",
+      "description": "코드를 클립보드로 복사하는 버튼(copy button, clipboard). Spell UI 버전과 피드백 연출이 다르다.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/copy-button-vengeance.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/copy-button-vengeance.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/copy-button",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "corner-button",
+      "type": "registry:component",
+      "title": "Corner Button",
+      "description": "모서리 장식선이 확장되며 반응하는 버튼(corner button, bracket accent).",
+      "categories": [
+        "버튼"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/corner-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/corner-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/corner-button",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "creepy-button",
+      "type": "registry:component",
+      "title": "Creepy Button",
+      "description": "hover 하면 형태가 기괴하게 일그러지는 버튼(creepy button, distort hover). 이벤트 페이지에 쓴다.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/creepy-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/creepy-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/creepy-button",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "cron-schedule",
       "type": "registry:component",
       "title": "Cron Schedule",
@@ -1508,6 +1883,32 @@
       }
     },
     {
+      "name": "cursor-card",
+      "type": "registry:component",
+      "title": "Cursor Card",
+      "description": "커서를 따라 이미지가 미끄러지는 카드(cursor card, hover image). 포트폴리오 목록에 쓴다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/cursor-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cursor-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/cursor-card",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "cursor-driven-particle-typography",
       "type": "registry:component",
       "title": "cursor-driven-particle-typography",
@@ -1526,6 +1927,32 @@
         "source": "Componentry",
         "sourceUrl": "https://componentry.dev/docs/components/cursor-driven-particle-typography",
         "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "cyber-glitch-text",
+      "type": "registry:component",
+      "title": "Cyber Glitch Text",
+      "description": "사이버펑크풍 글리치 텍스트(glitch text, cyberpunk). RGB 분리와 스캔라인이 섞인다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/cyber-glitch-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cyber-glitch-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/cyber-glitch-text",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1575,6 +2002,33 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/dia-text-reveal",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "diagonal-carousel",
+      "type": "registry:component",
+      "title": "Diagonal Carousel",
+      "description": "사선으로 흐르는 캐러셀(diagonal carousel, slanted slider).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/diagonal-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/diagonal-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/diagonal-carousel",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -1850,6 +2304,29 @@
       }
     },
     {
+      "name": "elastic-stack",
+      "type": "registry:component",
+      "title": "Elastic Stack",
+      "description": "끌면 탄성으로 밀려나는 카드 스택(elastic stack, draggable cards).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/elastic-stack.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/elastic-stack.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/elastic-stack",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "elastic-typewriter",
       "type": "registry:component",
       "title": "Elastic Typewriter",
@@ -1997,6 +2474,29 @@
         "source": "Spell UI",
         "sourceUrl": "https://spell.sh/docs/components/fallback-avatar",
         "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "faq-accordion",
+      "type": "registry:component",
+      "title": "Faq Accordion",
+      "description": "자주 묻는 질문 아코디언(faq accordion, collapsible list).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/faq-accordion.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/faq-accordion.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/faq-accordion",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -2183,6 +2683,55 @@
       }
     },
     {
+      "name": "flip-fade-text",
+      "type": "registry:component",
+      "title": "Flip Fade Text",
+      "description": "글자가 뒤집히며 사라졌다 나타나는 텍스트(flip fade, text transition).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/flip-fade-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/flip-fade-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/flip-fade-text",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "flip-text",
+      "type": "registry:component",
+      "title": "Flip Text",
+      "description": "hover 하면 글자가 위아래로 넘어가는 텍스트(flip text, hover swap).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/flip-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/flip-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/flip-text",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "flip-vertical-reveal",
       "type": "registry:component",
       "title": "Flip Vertical Reveal",
@@ -2316,6 +2865,32 @@
       }
     },
     {
+      "name": "fluid-morph-bg",
+      "type": "registry:component",
+      "title": "Fluid Morph Bg",
+      "description": "유체가 형태를 바꾸며 흐르는 배경(fluid morph, blob background).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/fluid-morph-bg.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/fluid-morph-bg.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/fluid-morph-bg",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "fluid-typewriter",
       "type": "registry:component",
       "title": "Fluid Typewriter",
@@ -2365,6 +2940,127 @@
         "source": "Satisium UI",
         "sourceUrl": "https://ui.satisium.com/docs/components/fold-reveal",
         "author": "satisium",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "folder-preview",
+      "type": "registry:component",
+      "title": "Folder Preview",
+      "description": "폴더를 열면 안의 내용이 튀어나오는 미리보기(folder preview, file stack).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/folder-preview.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/folder-preview.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/folder-preview",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "footer",
+      "type": "registry:component",
+      "title": "Footer",
+      "description": "링크와 소개가 정리된 기본 푸터(footer, site footer).",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/footer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/footer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/footer",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "fullscreen-preview",
+      "type": "registry:component",
+      "title": "Fullscreen Preview",
+      "description": "요소를 전체 화면으로 확대해 보여주는 래퍼(fullscreen preview, lightbox).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/fullscreen-preview.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/fullscreen-preview.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/fullscreen-preview",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "generate-button",
+      "type": "registry:component",
+      "title": "Generate Button",
+      "description": "AI 생성 중 상태를 표현하는 버튼(generate button, loading state). isGenerating 으로 진행 표시를 켠다.",
+      "categories": [
+        "버튼"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/generate-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/generate-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/generate-button",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "github-button",
+      "type": "registry:component",
+      "title": "Github Button",
+      "description": "깃허브 아이콘이 붙은 링크 버튼(github button, repo link). API 호출 없이 정적으로 동작한다.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "react-icons"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/github-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/github-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/github-button",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -2481,6 +3177,33 @@
       }
     },
     {
+      "name": "glass-dock",
+      "type": "registry:component",
+      "title": "Glass Dock",
+      "description": "유리 질감의 macOS 스타일 독(glass dock, app dock).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "gsap",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-dock.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/glass-dock.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/glass-dock",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "globe",
       "type": "registry:component",
       "title": "Globe",
@@ -2508,6 +3231,29 @@
       }
     },
     {
+      "name": "glow-border-card",
+      "type": "registry:component",
+      "title": "Glow Border Card",
+      "description": "테두리가 은은하게 빛나는 카드(glow border card, neon edge).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glow-border-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/glow-border-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/glow-border-card",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "glyph-matrix",
       "type": "registry:component",
       "title": "Glyph Matrix",
@@ -2526,6 +3272,59 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/glyph-matrix",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "gooey-search",
+      "type": "registry:component",
+      "title": "Gooey Search",
+      "description": "열릴 때 점성 있게 늘어나는 검색 입력(gooey search, morph input).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/gooey-search.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gooey-search.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/gooey-search",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "gooey-text-reveal",
+      "type": "registry:component",
+      "title": "Gooey Text Reveal",
+      "description": "점성 있는 액체처럼 뭉쳤다 풀리며 드러나는 텍스트(gooey text, blob reveal).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "@gsap/react",
+        "gsap"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/gooey-text-reveal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gooey-text-reveal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/gooey-text-reveal",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -2727,6 +3526,29 @@
       }
     },
     {
+      "name": "highlight-grid",
+      "type": "registry:component",
+      "title": "Highlight Grid",
+      "description": "hover 한 칸만 밝아지는 격자 목록(highlight grid, spotlight grid).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/highlight-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/highlight-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/highlight-grid",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "highlighted-text",
       "type": "registry:component",
       "title": "Highlighted Text",
@@ -2882,6 +3704,55 @@
       }
     },
     {
+      "name": "image-reveal-list",
+      "type": "registry:component",
+      "title": "Image Reveal List",
+      "description": "항목에 hover 하면 옆에 이미지가 뜨는 목록(image reveal list, hover preview). 작업 목록에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/image-reveal-list.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/image-reveal-list.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/image-reveal-list",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "image-scatter",
+      "type": "registry:component",
+      "title": "Image Scatter",
+      "description": "스크롤에 따라 이미지가 흩어졌다 모이는 구성(image scatter, scroll gallery).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "gsap"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/image-scatter.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/image-scatter.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/image-scatter",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "image-trail",
       "type": "registry:component",
       "title": "Image Trail",
@@ -2908,6 +3779,32 @@
       }
     },
     {
+      "name": "image-trail-vengeance",
+      "type": "registry:component",
+      "title": "Image Trail Vengeance",
+      "description": "커서를 따라 이미지가 남는 트레일(image trail). MagicUI 버전보다 잔상 수가 많다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/image-trail-vengeance.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/image-trail-vengeance.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/image-trail",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "infinite-image-field",
       "type": "registry:component",
       "title": "Infinite Image Field",
@@ -2926,6 +3823,33 @@
         "source": "Componentry",
         "sourceUrl": "https://componentry.dev/docs/components/infinite-image-field",
         "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "interactive-book",
+      "type": "registry:component",
+      "title": "Interactive Book",
+      "description": "표지를 넘겨 읽는 인터랙티브 책(interactive book, flip book). 소개 페이지에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/interactive-book.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/interactive-book.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/interactive-book",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -3006,6 +3930,55 @@
       }
     },
     {
+      "name": "interactive-hover-button-vengeance",
+      "type": "registry:component",
+      "title": "Interactive Hover Button Vengeance",
+      "description": "hover 시 내용이 교체되는 CTA 버튼(hover button). MagicUI·Componentry 버전과 구현이 다르다.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/interactive-hover-button-vengeance.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/interactive-hover-button-vengeance.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/interactive-hover-button",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "interactive-keyboard",
+      "type": "registry:component",
+      "title": "Interactive Keyboard",
+      "description": "키를 누르면 반응하는 가상 키보드(interactive keyboard, key press). 단축키 안내에 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/interactive-keyboard.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/interactive-keyboard.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/interactive-keyboard",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "interactive-line-chart",
       "type": "registry:component",
       "title": "Chart",
@@ -3024,6 +3997,33 @@
         "source": "Spell UI",
         "sourceUrl": "https://spell.sh/docs/components/chart",
         "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "interactive-particles",
+      "type": "registry:component",
+      "title": "Interactive Particles",
+      "description": "커서에 반응하는 입자 배경(interactive particles, canvas particles).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "gsap",
+        "three"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/interactive-particles.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/interactive-particles.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/interactive-particles",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -3176,6 +4176,29 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/kinetic-text",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "kinetic-text-loader",
+      "type": "registry:component",
+      "title": "Kinetic Text Loader",
+      "description": "로딩 중 문구가 계속 변형되는 키네틱 타이포 로더(kinetic loader, text loading).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/kinetic-text-loader.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/kinetic-text-loader.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/kinetic-text-loader",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -3342,6 +4365,29 @@
       }
     },
     {
+      "name": "light-lines",
+      "type": "registry:component",
+      "title": "Light Lines",
+      "description": "빛줄기가 스치듯 지나가는 선 배경(light lines, beam background).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/light-lines.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/light-lines.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/light-lines",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "light-rays",
       "type": "registry:component",
       "title": "Light Rays",
@@ -3389,6 +4435,29 @@
         "source": "Spell UI",
         "sourceUrl": "https://spell.sh/docs/components/light-rays",
         "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "line-hover-link",
+      "type": "registry:component",
+      "title": "Line Hover Link",
+      "description": "hover 하면 밑줄이 그려지는 링크(underline hover, link effect).",
+      "categories": [
+        "인터랙션"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/line-hover-link.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/line-hover-link.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/line-hover-link",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -3511,6 +4580,32 @@
       }
     },
     {
+      "name": "liquid-gradient",
+      "type": "registry:component",
+      "title": "Liquid Gradient",
+      "description": "SVG 필터로 색이 섞이는 액체 그라디언트(liquid gradient, svg blend). 버튼이나 카드 바탕에 깐다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-gradient.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-gradient.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/liquid-gradient",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "liquid-mercury-reveal",
       "type": "registry:component",
       "title": "Liquid Mercury Reveal",
@@ -3533,6 +4628,58 @@
         "source": "Satisium UI",
         "sourceUrl": "https://ui.satisium.com/docs/components/liquid-mercury-reveal",
         "author": "satisium",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "liquid-metal",
+      "type": "registry:component",
+      "title": "Liquid Metal",
+      "description": "수은 표면 같은 금속 질감 버튼(liquid metal, chrome button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "@paper-design/shaders-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-metal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-metal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/liquid-metal",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "liquid-text",
+      "type": "registry:component",
+      "title": "Liquid Text",
+      "description": "물결이 지나가듯 일렁이는 텍스트(liquid text, wave distortion).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "three"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/liquid-text",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -3587,6 +4734,29 @@
         "source": "jal-co/ui",
         "sourceUrl": "https://ui.justinlevine.me/docs/components/logo-cloud",
         "author": "jal-co",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "logo-slider",
+      "type": "registry:component",
+      "title": "Logo Slider",
+      "description": "로고가 무한히 흐르는 슬라이더(logo slider, marquee logos).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/logo-slider.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/logo-slider.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/logo-slider",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -3847,6 +5017,32 @@
       }
     },
     {
+      "name": "masked-avatars",
+      "type": "registry:component",
+      "title": "Masked Avatars",
+      "description": "겹쳐진 아바타를 마스크로 깔끔하게 잘라내는 묶음(avatar group, masked stack).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/masked-avatars.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/masked-avatars.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/masked-avatars",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "masked-reveal",
       "type": "registry:component",
       "title": "Masked Reveal",
@@ -3966,6 +5162,57 @@
       }
     },
     {
+      "name": "morph-text",
+      "type": "registry:component",
+      "title": "Morph Text",
+      "description": "단어가 다른 단어로 녹아 바뀌는 텍스트(morph text, word morph).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/morph-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/morph-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/morph-text",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "morphing-disclosure",
+      "type": "registry:component",
+      "title": "Morphing Disclosure",
+      "description": "열고 닫을 때 형태가 변형되는 디스클로저(disclosure, morph accordion).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "zod"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/morphing-disclosure.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/morphing-disclosure.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/morphing-disclosure",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "morphing-text",
       "type": "registry:component",
       "title": "Morphing Text",
@@ -4037,6 +5284,32 @@
         "source": "Componentry",
         "sourceUrl": "https://componentry.dev/docs/components/music-player",
         "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "music-player-vengeance",
+      "type": "registry:component",
+      "title": "Music Player Vengeance",
+      "description": "트랙 목록이 있는 음악 플레이어(music player, playlist). MagicUI 버전과 달리 여러 곡을 다룬다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/music-player-vengeance.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/music-player-vengeance.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/music-player",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -4402,6 +5675,56 @@
       }
     },
     {
+      "name": "perspective-carousel",
+      "type": "registry:component",
+      "title": "Perspective Carousel",
+      "description": "원근감을 주어 깊이가 느껴지는 캐러셀(perspective carousel, 3d slider).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/perspective-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/perspective-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/perspective-carousel",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "perspective-grid",
+      "type": "registry:component",
+      "title": "Perspective Grid",
+      "description": "원근으로 뻗어나가는 격자 배경(perspective grid, retro floor).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/perspective-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/perspective-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/perspective-grid",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "piano-typewriter",
       "type": "registry:component",
       "title": "Piano Typewriter",
@@ -4498,6 +5821,29 @@
       }
     },
     {
+      "name": "pixelated-image-trail",
+      "type": "registry:component",
+      "title": "Pixelated Image Trail",
+      "description": "커서 자리에 픽셀 조각으로 이미지가 남는 트레일(pixel trail, pixelated cursor).",
+      "categories": [
+        "인터랙션"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/pixelated-image-trail.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pixelated-image-trail.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/pixelated-image-trail",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "pointer",
       "type": "registry:component",
       "title": "Pointer",
@@ -4545,6 +5891,29 @@
         "source": "Spell UI",
         "sourceUrl": "https://spell.sh/docs/components/pop-button",
         "author": "xxtomm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "pop-button-vengeance",
+      "type": "registry:component",
+      "title": "Pop Button Vengeance",
+      "description": "누르면 튀어오르는 입체 버튼(pop button, 3d press). Spell UI 버전과 눌림 처리가 다르다.",
+      "categories": [
+        "버튼"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/pop-button-vengeance.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pop-button-vengeance.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/pop-button",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -4804,6 +6173,29 @@
       }
     },
     {
+      "name": "radial-glow-button",
+      "type": "registry:component",
+      "title": "Radial Glow Button",
+      "description": "커서 위치에서 빛이 번지는 버튼(radial glow, spotlight button).",
+      "categories": [
+        "버튼"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/radial-glow-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/radial-glow-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/radial-glow-button",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "rainbow-button",
       "type": "registry:component",
       "title": "Rainbow Button",
@@ -4974,6 +6366,33 @@
       }
     },
     {
+      "name": "research-bento-grid",
+      "type": "registry:component",
+      "title": "Research Bento Grid",
+      "description": "연구·제품 소개용 벤토 그리드(bento grid, showcase). 가격·기능 카드가 함께 들어간다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "react-icons"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/research-bento-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/research-bento-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/research-bento-grid",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "retro-grid",
       "type": "registry:component",
       "title": "Retro Grid",
@@ -4992,6 +6411,33 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/retro-grid",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "reveal-loader",
+      "type": "registry:component",
+      "title": "Reveal Loader",
+      "description": "페이지 진입 시 가림막이 걷히는 로더(page loader, reveal intro).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "@gsap/react",
+        "gsap"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/reveal-loader.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/reveal-loader.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/reveal-loader",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -5358,6 +6804,58 @@
       }
     },
     {
+      "name": "search-modal",
+      "type": "registry:component",
+      "title": "Search Modal",
+      "description": "전체 화면 검색 모달(search modal, command search). 목록 필터와 키보드 조작을 지원한다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/search-modal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/search-modal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/search-modal",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "shared-tooltip-avatars",
+      "type": "registry:component",
+      "title": "Shared Tooltip Avatars",
+      "description": "아바타에 hover 하면 툴팁 하나가 옮겨 다니는 묶음(avatar tooltip, shared tooltip).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/shared-tooltip-avatars.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shared-tooltip-avatars.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/shared-tooltip-avatars",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "shimmer-button",
       "type": "registry:component",
       "title": "Shimmer Button",
@@ -5707,6 +7205,59 @@
       }
     },
     {
+      "name": "smooth-scroll",
+      "type": "registry:component",
+      "title": "Smooth Scroll",
+      "description": "Lenis 기반 부드러운 스크롤 래퍼(smooth scroll, lenis). 페이지 전체를 감싼다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "lenis"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/smooth-scroll.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/smooth-scroll.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/smooth-scroll",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "social-flip-button",
+      "type": "registry:component",
+      "title": "Social Flip Button",
+      "description": "hover 하면 아이콘이 뒤집히는 소셜 링크 버튼(social flip, icon flip).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion",
+        "react-icons"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/social-flip-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/social-flip-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/social-flip-button",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "sparkles-text",
       "type": "registry:component",
       "title": "Sparkles Text",
@@ -5859,6 +7410,32 @@
       }
     },
     {
+      "name": "spotlight-navbar",
+      "type": "registry:component",
+      "title": "Spotlight Navbar",
+      "description": "활성 항목에 조명이 따라붙는 내비게이션 바(spotlight navbar, active indicator).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/spotlight-navbar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/spotlight-navbar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/spotlight-navbar",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "squircle-trail",
       "type": "registry:component",
       "title": "Squircle Trail",
@@ -5877,6 +7454,109 @@
         "source": "Satisium UI",
         "sourceUrl": "https://ui.satisium.com/docs/components/squircle-trail",
         "author": "satisium",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "stacked-logos",
+      "type": "registry:component",
+      "title": "Stacked Logos",
+      "description": "로고 묶음이 순서대로 교체되는 배치(stacked logos, rotating logos).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/stacked-logos.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stacked-logos.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/stacked-logos",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "stagger-text",
+      "type": "registry:component",
+      "title": "Stagger Text",
+      "description": "글자나 단어 단위로 시차를 두고 등장하는 텍스트(stagger text, staggered reveal).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/stagger-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stagger-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/stagger-text",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "staggered-grid",
+      "type": "registry:component",
+      "title": "Staggered Grid",
+      "description": "이미지와 벤토 카드가 시차를 두고 배치되는 그리드(staggered grid, editorial layout).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "gsap",
+        "imagesloaded",
+        "react-icons"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/staggered-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/staggered-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/staggered-grid",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "stats-counter",
+      "type": "registry:component",
+      "title": "Stats Counter",
+      "description": "접두·접미와 소수 자릿수를 지정할 수 있는 지표 카운터(stats counter, metric). 랜딩의 숫자 자랑 섹션에 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/stats-counter.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stats-counter.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/stats-counter",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -5981,6 +7661,29 @@
       }
     },
     {
+      "name": "team-reveal-grid",
+      "type": "registry:component",
+      "title": "Team Reveal Grid",
+      "description": "hover 하면 소개가 드러나는 팀 소개 그리드(team grid, member reveal).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/team-reveal-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/team-reveal-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/team-reveal-grid",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "terminal",
       "type": "registry:component",
       "title": "Terminal",
@@ -6048,6 +7751,59 @@
         "source": "Componentry",
         "sourceUrl": "https://componentry.dev/docs/components/testimonial-marquee",
         "author": "harshjdhv",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "testimonials-card",
+      "type": "registry:component",
+      "title": "Testimonials Card",
+      "description": "후기 카드를 겹쳐 넘기는 스택(testimonial card, review stack).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/testimonials-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/testimonials-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/testimonials-card",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "testinomial-card2",
+      "type": "registry:component",
+      "title": "Testinomial Card2",
+      "description": "회사명과 사진이 함께 붙는 후기 카드 변형(testimonial card, review grid).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "react-icons"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/testinomial-card2.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/testinomial-card2.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/testinomial-card2",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -6370,6 +8126,29 @@
       }
     },
     {
+      "name": "twisting-ribbon",
+      "type": "registry:component",
+      "title": "Twisting Ribbon",
+      "description": "리본이 꼬이며 회전하는 3D 배경 오브젝트(twisting ribbon, 3d shape).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/twisting-ribbon.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/twisting-ribbon.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/twisting-ribbon",
+        "author": "Ashutoshx7",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
       "name": "typing-animation",
       "type": "registry:component",
       "title": "Typing Animation",
@@ -6406,6 +8185,29 @@
         "source": "MagicUI",
         "sourceUrl": "https://magicui.design/docs/components/typing-animation",
         "author": "magicuidesign",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "typing-keyboard",
+      "type": "registry:component",
+      "title": "Typing Keyboard",
+      "description": "타이핑에 맞춰 키가 눌리는 키보드 시각화(typing keyboard, key animation).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/typing-keyboard.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/typing-keyboard.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/typing-keyboard",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -6456,6 +8258,33 @@
         "source": "Satisium UI",
         "sourceUrl": "https://ui.satisium.com/docs/components/velocity-trail",
         "author": "satisium",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "verse-cards",
+      "type": "registry:component",
+      "title": "Verse Cards",
+      "description": "문구 카드가 층층이 전환되는 구성(verse cards, quote stack).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "gsap",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/verse-cards.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/verse-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/verse-cards",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
@@ -6532,6 +8361,32 @@
         "source": "Satisium UI",
         "sourceUrl": "https://ui.satisium.com/docs/components/wave-carousel",
         "author": "satisium",
+        "license": "MIT",
+        "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "wave-grid-background",
+      "type": "registry:component",
+      "title": "Wave Grid Background",
+      "description": "셰이더로 물결치는 격자 배경(wave grid, shader background).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "three"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/wave-grid-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/wave-grid-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "VengeanceUI",
+        "sourceUrl": "https://www.vengenceui.com/components/wave-grid-background",
+        "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
       }
