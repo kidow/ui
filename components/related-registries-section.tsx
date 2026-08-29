@@ -27,6 +27,11 @@ export function RelatedRegistriesSection() {
             </a>
             <p className="text-muted-foreground mt-1 text-sm">{registry.summary}</p>
             <p className="text-muted-foreground/80 mt-1 text-xs">{registry.reason}</p>
+            {registry.revisitWhen ? (
+              <p className="text-muted-foreground/70 mt-0.5 text-xs">
+                다시 검토: {registry.revisitWhen}
+              </p>
+            ) : null}
           </li>
         ))}
       </ul>

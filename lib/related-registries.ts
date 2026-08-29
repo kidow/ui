@@ -11,9 +11,20 @@ export interface RelatedRegistry {
   summary: string
   /** 왜 여기에 없는가 */
   reason: string
+  /** 이 조건이 바뀌면 다시 검토할 수 있다 */
+  revisitWhen?: string
 }
 
 export const RELATED_REGISTRIES: RelatedRegistry[] = [
+  {
+    name: 'Pixel Perfect',
+    url: 'https://www.pixel-perfect.space/blocks',
+    summary:
+      'WebGL 셰이더 기반 이미지 효과와 인터랙션 블록 297개. React + Tailwind, shadcn 호환 레지스트리.',
+    reason:
+      '저장소에 LICENSE 파일이 없다. 라이선스를 밝히지 않은 공개 코드는 기본적으로 모든 권리가 유보되므로 재배포할 수 없다.',
+    revisitWhen: '저장소에 라이선스가 명시되면',
+  },
   {
     name: 'PDFx',
     url: 'https://pdfx.akashpise.dev/components',
