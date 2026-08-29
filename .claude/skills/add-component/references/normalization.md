@@ -8,7 +8,10 @@
 |---|---|
 | import alias | `@/lib/utils`, `@/components/ui/*` 로 맞춘다. 원본이 `~/`, `src/` 등을 쓰면 교체. |
 | Tailwind 버전 | v3 문법이면 v4로. `@layer` 래핑 제거, `theme(colors.x)` → `var(--color-x)`, config 의존 유틸은 CSS 변수로. arbitrary value는 그대로 둔다. |
-| 클라이언트 경계 | 훅·이벤트 핸들러·브라우저 API를 쓰면 최상단에 `'use client'`. |
+| 클라이언트 경계 | 훅·이벤트 핸들러·브라우저 API를 쓰면 최상단에 `'use client'`. **upstream 이 빠뜨린 경우가 흔하다**(JolyUI 15개, wigggle-ui 다수). 없으면 서버 컴포넌트로 빌드돼 실패하고, 설치하는 사람도 같은 문제를 겪는다. |
+| motion 런타임 | `framer-motion` → `motion/react`. 우리 레지스트리는 `motion` 하나로 통일한다. 두 벌이 들어가면 번들이 커지고 타입이 충돌한다. `dependencies` 도 `motion` 으로 바꾼다. |
+| 버전 고정 | 원본이 `cobe@^0.6.4` 처럼 버전을 박았으면 **그대로 옮긴다**. 떼면 최신이 깔려 API 가 안 맞는다(cobe, opentype.js 에서 실제로 겪었다). |
+| 비표준 유틸 경로 | `@/lib/cn`, `@workspace/ui/lib/utils`, `@/registry/default/...` 같은 자기 프로젝트 경로는 우리 기준으로 바꾼다. 저쪽 `utils` 가 `cn` 외의 것도 내보내면(wigggle 의 `truncate`) 그 함수를 `lib/utils.ts` 에 **원본 시그니처 그대로** 옮긴다. |
 | 파일명 | kebab-case. `registry/kidow/<name>.tsx`. |
 | 로컬 유틸 | 원본이 자체 `cn` 을 파일 안에 정의했으면 `@/lib/utils` import로 교체. |
 | 컴포넌트 간 참조 | 원본이 자기 레지스트리 경로(`@/registry/magicui/x`)로 형제 컴포넌트를 부르면 `@/components/kidow/x` 로 바꾼다. 이 경로는 tsconfig 별칭 덕에 이 사이트에서도, 설치된 프로젝트에서도 똑같이 동작한다. |
@@ -45,6 +48,22 @@ shadcn 레지스트리가 아닌 원본(21st.dev, 블로그 코드, Tailwind 스
 - 코드 스타일 (포매터 돌리지 않는다 — diff가 커져서 원본 대조가 불가능해진다)
 
 리팩터링하고 싶어지면 하지 않는다. 원본과 대조 가능한 상태가 유지보수의 전부다.
+
+## 원본에 없는 것을 채워야 할 때
+
+upstream 이 자체 확장한 것에 기대는 경우가 있다. 우리 기준으로 대체하고 무엇을 바꿨는지
+보고한다.
+
+- **shadcn 기본을 확장한 variant** — wigggle-ui 는 `button` 에 `success`·`productive` 를
+  추가해 뒀다. 우리 `button` 에는 없으므로 가장 가까운 것(`default`)으로 바꾼다.
+- **자기 유틸에만 있는 함수** — `lib/utils.ts` 에 원본 그대로 옮긴다. 기본값까지 정확히
+  베낀다. `truncate(text, maxLength = 15)` 에서 기본값을 빠뜨려 타입 에러를 냈다.
+
+## 라이선스가 저작권 표시를 요구하면
+
+기본적으로 소스에 주석을 남기지 않지만, 라이선스가 저작권 표시 유지를 조건으로 걸면
+**그 출처의 파일에만** 예외로 넣는다. Kaif UI 가 이 경우였다(MIT + 저작권 표시 변경 금지).
+`meta.license` 에도 조건을 적어 사이트에 드러낸다 — 예: `"MIT (저작권 표시 유지 조건)"`.
 
 ## 애매할 때
 

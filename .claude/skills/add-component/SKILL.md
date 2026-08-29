@@ -1,6 +1,6 @@
 ---
 name: add-component
-description: 다른 UI 프레임워크(MagicUI, Aceternity, OriginUI, Kibo 등)의 컴포넌트를 이 레지스트리에 추가한다. 사용자가 컴포넌트 문서 페이지 URL을 주면서 "추가해줘", "넣어줘", "가져와줘" 라고 하거나, URL만 던질 때 사용한다. 원본을 최소 정규화해 registry/ 에 넣고, 출처·라이선스 meta를 기록하고, 데모를 만들고, 빌드로 검증하는 전체 파이프라인.
+description: 다른 UI 프레임워크(MagicUI, Componentry, Spell UI, jal-co/ui, Satisium, VengeanceUI, JolyUI, wigggle-ui 등)의 컴포넌트를 이 레지스트리에 추가한다. 사용자가 컴포넌트 문서 페이지나 레지스트리 URL을 주면서 "추가해줘", "넣어줘", "살펴봐줘" 라고 하거나 URL만 던질 때 사용한다. 담을지 판단(라이선스·렌더 가능 여부)부터 최소 정규화, 출처·라이선스 meta 기록, 데모 작성, 빌드·설치 검증까지의 전체 파이프라인. 레지스트리를 통째로 담는 대량 수집도 포함한다.
 ---
 
 # 컴포넌트 추가
@@ -8,6 +8,9 @@ description: 다른 UI 프레임워크(MagicUI, Aceternity, OriginUI, Kibo 등)�
 입력: 원본 **문서 페이지 URL** 1개 (+ 선택적으로 카테고리).
 
 아래를 순서대로 전부 수행한다. 판단이 필요한 지점(이름 충돌, 라이선스 불명, 정규화 애매)에서만 사용자에게 묻는다.
+
+> **레지스트리를 통째로 담는 경우**(수십 개 이상)는 절차가 다르다. 전수 점검 → 범위 확인 →
+> 스크립트 일괄 처리 순서로 간다: [references/bulk-import.md](references/bulk-import.md)
 
 ## 0. 받을 수 있는 것인지 판단
 
@@ -29,6 +32,7 @@ Vue·Svelte, CSS-in-JS 프레임워크 의존, 라이선스 불명, 유료 라�
 - flat kebab-case, **특징 기반** 이름 (`shimmer-button`, `bento-grid`). 출처는 이름에 넣지 않는다.
 - shadcn/ui 기본 컴포넌트 이름(`button`, `card` 등)은 **예약어라 등록 금지**. 충돌 처리와 예약어 전체 목록: [references/naming.md](references/naming.md)
 - 카테고리는 인자로 받은 값 우선, 없으면 `registry.json` 의 기존 카테고리에서 고르거나 새로 제안한다. 새 카테고리 생성 허용.
+- **새 카테고리를 만들면 `lib/registry.ts` 의 `CATEGORY_SLUGS` 에 URL slug 를 추가한다.** 카테고리 이름이 한글이라 경로에 그대로 못 쓴다. 빠뜨리면 `/category/...` 가 한글 인코딩으로 나간다.
 
 ## 3. 정규화
 
@@ -49,19 +53,22 @@ Vue·Svelte, CSS-in-JS 프레임워크 의존, 라이선스 불명, 유료 라�
 ## 5. 데모 (사이트 전용)
 
 - `components/demos/<name>.tsx` 에 최소 데모 작성. 원본 예제 참고하되 짧게.
-- `components/demos/index.ts` 의 `demos` 맵에 등록.
+  원본 레지스트리에 `registry:example` 이 있으면 그걸 가져와 import 경로만 고친다.
+- `components/demos/index.ts` 는 **손으로 고치지 않는다.** `pnpm demos:sync` 가 폴더를 스캔해 생성한다(`pnpm build` 에 포함). 파일만 만들고 등록을 잊으면 빌드는 통과하는데 사이트에는 "데모 없음"으로 뜬다.
 - 데모는 `registry.json` 의 `files` 에 **넣지 않는다.**
+- **목록 전체를 망가뜨리는 데모는 `lib/demo-flags.ts` 에 등록한다.** 전역 커서·스크롤을 건드리거나 `position: fixed` 에 큰 z-index 를 쓰는 것들이다. 목록에서만 렌더를 건너뛰고 상세에서는 그대로 보여준다.
 - 데모가 이미지·영상을 참조하면 원본 사이트 자산을 그대로 쓰지 말고 `public/` 의 우리 자산(`/demo-image.svg` 등)으로 바꾼다. 남의 CDN에 의존하거나 404를 남기지 않는다.
 - 아이템에 `cssVars`/`css` 가 있으면 `pnpm registry:css` 로 `app/globals.css` 생성 블록을 갱신한다 (`pnpm build` 에도 포함돼 있다). 소비자 프로젝트엔 CLI가 주입하지만 우리 사이트엔 아무도 안 넣어준다 — 안 하면 프리뷰가 움직이지 않는다.
 
 ## 6. 검증
 
 ```bash
+pnpm exec tsc --noEmit    # 반드시 프로젝트 디렉토리에서 — 다른 곳에서 돌리면 0건이 나와 통과로 오인한다
 pnpm build
 pnpm dlx shadcn@latest add ./public/r/<name>.json --dry-run
 ```
 
-- `pnpm build`: `public/r/<name>.json` 생성 + `next build` 통과.
+- `pnpm build`: `public/r/<name>.json` 생성 + `next build` 통과. 프리렌더 실패는 여기서만 잡힌다.
 - `--dry-run`: 파일이 `components/kidow/<name>.tsx` 로 가는지, CSS 변수가 주입되는지 확인. 기존 파일을 덮어쓴다고 나오면 이름·target을 다시 잡는다.
 - 브라우저로 `/c/<name>` 을 열어 Preview·Code 탭을 눈으로 확인한다.
 - **검색 확인**: 영문 일반명과 쓰임새 단어로 각각 `search` 를 돌려 잡히는지 본다 ([references/description.md](references/description.md) 의 자가 점검).
