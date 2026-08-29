@@ -1256,6 +1256,41 @@
       }
     },
     {
+      "name": "cascader",
+      "type": "registry:component",
+      "title": "Cascader",
+      "description": "계층 데이터를 단계별로 좁혀 고르는 캐스케이더(cascader, cascading select, 다단계 선택). 시/도→시/군/구 같은 지역 선택이나 카테고리·조직도처럼 depth 가 있는 값을 고를 때 쓴다. 모바일에서는 드로어로 바뀐다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "popover",
+        "drawer"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/cascader/cascader.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cascader.tsx"
+        },
+        {
+          "path": "registry/kidow/cascader/use-mobile.tsx",
+          "type": "registry:component",
+          "target": "hooks/use-mobile.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cascader for shadcn/ui",
+        "sourceUrl": "https://cascader-shadcn.surge.sh",
+        "author": "Ademking",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "case-study-flip-stack",
       "type": "registry:component",
       "title": "Case Study Flip Stack",

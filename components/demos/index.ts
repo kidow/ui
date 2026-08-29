@@ -44,6 +44,7 @@ import BorderBeamComponentryDemo from './border-beam-componentry'
 import BorderBeamVengeanceDemo from './border-beam-vengeance'
 import BottomHingeTextRevealDemo from './bottom-hinge-text-reveal'
 import CandyButtonDemo from './candy-button'
+import CascaderDemo from './cascader'
 import CaseStudyFlipStackDemo from './case-study-flip-stack'
 import CharacterMorphDemo from './character-morph'
 import ChatBubbleDemo from './chat-bubble'
@@ -395,6 +396,7 @@ export const demos: Record<string, ComponentType> = {
   'border-beam-vengeance': BorderBeamVengeanceDemo,
   'bottom-hinge-text-reveal': BottomHingeTextRevealDemo,
   'candy-button': CandyButtonDemo,
+  'cascader': CascaderDemo,
   'case-study-flip-stack': CaseStudyFlipStackDemo,
   'character-morph': CharacterMorphDemo,
   'chat-bubble': ChatBubbleDemo,
