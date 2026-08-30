@@ -91,6 +91,15 @@ export const RELATED_REGISTRIES: RelatedRegistry[] = [
       '브라우저 DOM이 아니라 PDF 문서로 렌더된다. Tailwind를 쓰지 않고 shadcn 레지스트리도 아니며(자체 pdfx-cli), 라이선스 표기를 찾지 못했다.',
   },
   {
+    name: 'ScrollX UI',
+    url: 'https://scrollxui.dev/docs/components',
+    summary:
+      'shadcn 레지스트리(/registry/*.json)로 배포되는 컴포넌트 145종. 스크롤 인터랙션과 배경 효과가 두텁고 여기 없는 것들이 많다.',
+    reason:
+      'MIT 에 Commons Clause 제약이 붙어 있다. "컴포넌트 라이브러리·템플릿·UI 킷·패키지 제품의 일부로 재배포" 금지와 "ScrollX UI 와 경쟁하는 라이브러리 제작" 금지를 명시한다. 애플리케이션·SaaS 에 쓰는 것은 상업적 이용까지 허용하지만, 모아서 다시 배포하는 것은 정확히 금지 대상이다.',
+    revisitWhen: '원저자에게 명시적 허락(라이선스가 예외로 인정하는 절차)을 받으면',
+  },
+  {
     name: 'ForgeUI',
     url: 'https://forgeui.in',
     summary:
