@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "particle-text",
+  "title": "Particle Text",
+  "description": "입자가 모여 글자를 이루는 텍스트(particle text).",
+  "dependencies": [],
+  "registryDependencies": [
+    "amitgajare2/ariseui/utils"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/particle-text.tsx",
+      "content": "\"use client\";\n\nimport { useEffect, useRef } from \"react\";\nimport { cn } from \"@/lib/utils\";\n\ntype Particle = {\n  x: number;\n  y: number;\n  originX: number;\n  originY: number;\n  vx: number;\n  vy: number;\n};\n\nexport type ParticleTextProps = {\n  text?: string;\n  fontSize?: number;\n  particleSize?: number;\n  particleGap?: number;\n  repelRadius?: number;\n  repelStrength?: number;\n  returnSpeed?: number;\n  damping?: number;\n  color?: string;\n  className?: string;\n};\n\nexport default function ParticleText({\n  text = \"Hello\",\n  fontSize = 120,\n  particleSize = 3,\n  particleGap = 5,\n  repelRadius = 120,\n  repelStrength = 7,\n  returnSpeed = 0.1,\n  damping = 0.84,\n  color,\n  className,\n}: ParticleTextProps) {\n  const canvasRef = useRef<HTMLCanvasElement>(null);\n  const containerRef = useRef<HTMLDivElement>(null);\n  const stateRef = useRef<{\n    particles: Particle[];\n    color: string;\n    mouse: { x: number; y: number };\n    raf: number;\n  }>({\n    particles: [],\n    color: \"#ffffff\",\n    mouse: { x: -9999, y: -9999 },\n    raf: 0,\n  });\n\n  useEffect(() => {\n    const canvas = canvasRef.current;\n    const container = containerRef.current;\n    if (!canvas || !container) return;\n    const ctx = canvas.getContext(\"2d\");\n    if (!ctx) return;\n    const state = stateRef.current;\n\n    function resolveColor(): string {\n      if (color) return color;\n      // read the CSS foreground token and convert to a usable color\n      const raw = getComputedStyle(container!).color;\n      return raw || \"#ffffff\";\n    }\n\n    function buildParticles() {\n      if (!canvas || !ctx) return;\n      const w = container!.offsetWidth;\n      const h = container!.offsetHeight;\n      canvas.width = w;\n      canvas.height = h;\n\n      const particleColor = resolveColor();\n      state.color = particleColor;\n\n      // draw text off-screen first to sample pixels\n      ctx.clearRect(0, 0, w, h);\n      ctx.fillStyle = particleColor;\n      // scale font to fit width\n      let fs = fontSize;\n      ctx.font = `bold ${fs}px sans-serif`;\n      let measured = ctx.measureText(text).width;\n      if (measured > w * 0.9) {\n        fs = Math.floor(fs * (w * 0.9) / measured);\n        ctx.font = `bold ${fs}px sans-serif`;\n        measured = ctx.measureText(text).width;\n      }\n      ctx.textAlign = \"center\";\n      ctx.textBaseline = \"middle\";\n      ctx.fillText(text, w / 2, h / 2);\n\n      const { data } = ctx.getImageData(0, 0, w, h);\n      const particles: Particle[] = [];\n\n      for (let y = 0; y < h; y += particleGap) {\n        for (let x = 0; x < w; x += particleGap) {\n          if (data[(y * w + x) * 4 + 3] > 128) {\n            particles.push({\n              x: Math.random() * w,\n              y: Math.random() * h,\n              originX: x,\n              originY: y,\n              vx: 0,\n              vy: 0,\n            });\n          }\n        }\n      }\n      state.particles = particles;\n    }\n\n    function animate() {\n      if (!canvas || !ctx) return;\n      ctx.clearRect(0, 0, canvas.width, canvas.height);\n\n      const { mouse, particles, color: col } = state;\n      ctx.fillStyle = col;\n\n      for (const p of particles) {\n        const dx = mouse.x - p.x;\n        const dy = mouse.y - p.y;\n        const distSq = dx * dx + dy * dy;\n        const dist = Math.sqrt(distSq);\n\n        if (dist < repelRadius && dist > 0) {\n          const force = (repelRadius - dist) / repelRadius;\n          p.vx -= (dx / dist) * force * repelStrength;\n          p.vy -= (dy / dist) * force * repelStrength;\n        }\n\n        p.vx += (p.originX - p.x) * returnSpeed;\n        p.vy += (p.originY - p.y) * returnSpeed;\n        p.vx *= damping;\n        p.vy *= damping;\n        p.x += p.vx;\n        p.y += p.vy;\n\n        ctx.fillRect(p.x, p.y, particleSize, particleSize);\n      }\n\n      state.raf = requestAnimationFrame(animate);\n    }\n\n    buildParticles();\n    animate();\n\n    const ro = new ResizeObserver(buildParticles);\n    ro.observe(container);\n\n    function onMove(e: MouseEvent) {\n      const rect = canvas!.getBoundingClientRect();\n      state.mouse = { x: e.clientX - rect.left, y: e.clientY - rect.top };\n    }\n    function onLeave() {\n      state.mouse = { x: -9999, y: -9999 };\n    }\n\n    canvas.addEventListener(\"mousemove\", onMove);\n    canvas.addEventListener(\"mouseleave\", onLeave);\n\n    return () => {\n      cancelAnimationFrame(state.raf);\n      ro.disconnect();\n      canvas.removeEventListener(\"mousemove\", onMove);\n      canvas.removeEventListener(\"mouseleave\", onLeave);\n    };\n  }, [text, fontSize, particleSize, particleGap, repelRadius, repelStrength, returnSpeed, damping, color]);\n\n  return (\n    <div\n      ref={containerRef}\n      data-slot=\"particle-text\"\n      className={cn(\"relative h-full w-full\", className)}\n    >\n      <canvas ref={canvasRef} className=\"block h-full w-full cursor-none\" />\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/particle-text.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Arise UI",
+    "sourceUrl": "https://ariseui.vercel.app/components/particle-text",
+    "author": "amitgajare2",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

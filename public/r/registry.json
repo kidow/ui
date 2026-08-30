@@ -416,6 +416,150 @@
       }
     },
     {
+      "name": "achievement-badge",
+      "type": "registry:component",
+      "title": "Achievement Badge",
+      "description": "업적 배지(achievement badge, trophy). 잠김·해제 상태를 표현한다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/achievement-badge.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/achievement-badge.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Trophy UI",
+        "sourceUrl": "https://ui.trophy.so/docs/components/achievement-badge",
+        "author": "trophyso",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "achievement-card",
+      "type": "registry:component",
+      "title": "Achievement Card",
+      "description": "업적 하나를 설명과 함께 보여주는 카드(achievement card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@kidow/achievement-badge",
+        "@kidow/achievement-list",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/achievement-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/achievement-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Trophy UI",
+        "sourceUrl": "https://ui.trophy.so/docs/components/achievement-card",
+        "author": "trophyso",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "achievement-grid",
+      "type": "registry:component",
+      "title": "Achievement Grid",
+      "description": "업적을 격자로 나열한다(achievement grid).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/achievement-badge"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/achievement-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/achievement-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Trophy UI",
+        "sourceUrl": "https://ui.trophy.so/docs/components/achievement-grid",
+        "author": "trophyso",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "achievement-list",
+      "type": "registry:component",
+      "title": "Achievement List",
+      "description": "업적을 진행률과 함께 목록으로 보여준다(achievement list).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/achievement-list.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/achievement-list.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Trophy UI",
+        "sourceUrl": "https://ui.trophy.so/docs/components/achievement-list",
+        "author": "trophyso",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "achievement-unlocked",
+      "type": "registry:component",
+      "title": "Achievement Unlocked",
+      "description": "업적을 달성했을 때 띄우는 알림(achievement unlocked, toast).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/achievement-badge",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/achievement-unlocked.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/achievement-unlocked.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Trophy UI",
+        "sourceUrl": "https://ui.trophy.so/docs/components/achievement-unlocked",
+        "author": "trophyso",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "action-search-bar",
       "type": "registry:component",
       "title": "Action Search Bar",
@@ -8617,6 +8761,33 @@
       }
     },
     {
+      "name": "coverflow",
+      "type": "registry:component",
+      "title": "Coverflow",
+      "description": "iTunes 커버플로 식 3D 캐러셀(coverflow, cover carousel).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/coverflow.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/coverflow.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Coverflow",
+        "sourceUrl": "https://coverflow.ashishgogula.in",
+        "author": "ashishgogula",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "creative-clippath",
       "type": "registry:component",
       "title": "Creative Clippath",
@@ -16808,6 +16979,92 @@
       }
     },
     {
+      "name": "leaderboard-card",
+      "type": "registry:component",
+      "title": "Leaderboard Card",
+      "description": "순위표를 카드에 담아 보여준다(leaderboard card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@kidow/leaderboard-rankings",
+        "@kidow/leaderboard-podium"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/leaderboard-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/leaderboard-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Trophy UI",
+        "sourceUrl": "https://ui.trophy.so/docs/components/leaderboard-card",
+        "author": "trophyso",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "leaderboard-podium",
+      "type": "registry:component",
+      "title": "Leaderboard Podium",
+      "description": "상위 3인을 시상대로 보여준다(podium, top 3).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/leaderboard-podium.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/leaderboard-podium.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Trophy UI",
+        "sourceUrl": "https://ui.trophy.so/docs/components/leaderboard-podium",
+        "author": "trophyso",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "leaderboard-rankings",
+      "type": "registry:component",
+      "title": "Leaderboard Rankings",
+      "description": "순위표(leaderboard, 랭킹). 순위 변동을 표시한다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/leaderboard-rankings.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/leaderboard-rankings.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Trophy UI",
+        "sourceUrl": "https://ui.trophy.so/docs/components/leaderboard-rankings",
+        "author": "trophyso",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "legend",
       "type": "registry:component",
       "title": "Legend",
@@ -20114,6 +20371,35 @@
       }
     },
     {
+      "name": "motion-tabs",
+      "type": "registry:component",
+      "title": "Motion Tabs",
+      "description": "표시가 미끄러지는 탭(motion tabs, animated tabs).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "amitgajare2/ariseui/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/motion-tabs.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/motion-tabs.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Arise UI",
+        "sourceUrl": "https://ariseui.vercel.app/components/motion-tabs",
+        "author": "amitgajare2",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "mouse-effect-card",
       "type": "registry:component",
       "title": "Mouse Effect Card",
@@ -20839,6 +21125,35 @@
       }
     },
     {
+      "name": "option-wheel",
+      "type": "registry:component",
+      "title": "Option Wheel",
+      "description": "휠을 돌려 고르는 선택기(option wheel, picker).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "amitgajare2/ariseui/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/option-wheel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/option-wheel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Arise UI",
+        "sourceUrl": "https://ariseui.vercel.app/components/option-wheel",
+        "author": "amitgajare2",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "orbit-card",
       "type": "registry:component",
       "title": "Orbit Card",
@@ -21041,6 +21356,35 @@
       }
     },
     {
+      "name": "otp-input",
+      "type": "registry:component",
+      "title": "OTP Input",
+      "description": "인증 코드 입력(otp input, verification code).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "amitgajare2/ariseui/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/otp-input.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/otp-input.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Arise UI",
+        "sourceUrl": "https://ariseui.vercel.app/components/otp-input",
+        "author": "amitgajare2",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "parallax",
       "type": "registry:component",
       "title": "Parallax",
@@ -21181,6 +21525,33 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/particle-orbit-effect",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "particle-text",
+      "type": "registry:component",
+      "title": "Particle Text",
+      "description": "입자가 모여 글자를 이루는 텍스트(particle text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "amitgajare2/ariseui/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/particle-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/particle-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Arise UI",
+        "sourceUrl": "https://ariseui.vercel.app/components/particle-text",
+        "author": "amitgajare2",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -21944,6 +22315,172 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "points-awards",
+      "type": "registry:component",
+      "title": "Points Awards",
+      "description": "포인트를 준 활동 목록(points awards, reward log).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@radix-ui/react-tooltip",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/points-awards.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/points-awards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Trophy UI",
+        "sourceUrl": "https://ui.trophy.so/docs/components/points-awards",
+        "author": "trophyso",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "points-badge",
+      "type": "registry:component",
+      "title": "Points Badge",
+      "description": "포인트를 보여주는 배지(points badge, xp).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/points-badge.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/points-badge.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Trophy UI",
+        "sourceUrl": "https://ui.trophy.so/docs/components/points-badge",
+        "author": "trophyso",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "points-boost",
+      "type": "registry:component",
+      "title": "Points Boost",
+      "description": "포인트 부스트 상태를 알리는 표시(points boost, multiplier).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/points-boost.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/points-boost.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Trophy UI",
+        "sourceUrl": "https://ui.trophy.so/docs/components/points-boost",
+        "author": "trophyso",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "points-chart",
+      "type": "registry:component",
+      "title": "Points Chart",
+      "description": "포인트 획득 추이를 그린다(points chart, xp chart).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/points-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/points-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Trophy UI",
+        "sourceUrl": "https://ui.trophy.so/docs/components/points-chart",
+        "author": "trophyso",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "points-levels-list",
+      "type": "registry:component",
+      "title": "Points Levels List",
+      "description": "레벨과 필요 포인트를 목록으로 보여준다(levels list).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/points-levels-list.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/points-levels-list.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Trophy UI",
+        "sourceUrl": "https://ui.trophy.so/docs/components/points-levels-list",
+        "author": "trophyso",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "points-levels-timeline",
+      "type": "registry:component",
+      "title": "Points Levels Timeline",
+      "description": "레벨 구간을 타임라인으로 보여준다(levels timeline).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/points-levels-timeline.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/points-levels-timeline.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Trophy UI",
+        "sourceUrl": "https://ui.trophy.so/docs/components/points-levels-timeline",
+        "author": "trophyso",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -22949,6 +23486,64 @@
         "source": "Beautiful UI",
         "sourceUrl": "https://www.beautifului.dev/#prompt-bar",
         "author": "Shane Levine",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "prompt-card",
+      "type": "registry:component",
+      "title": "Prompt Card",
+      "description": "추천 프롬프트를 카드로 보여준다(prompt card, suggested prompts).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "amitgajare2/ariseui/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/prompt-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/prompt-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Arise UI",
+        "sourceUrl": "https://ariseui.vercel.app/components/prompt-card",
+        "author": "amitgajare2",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "proximity-sidebar",
+      "type": "registry:component",
+      "title": "Proximity Sidebar",
+      "description": "커서가 가까워지면 펼쳐지는 사이드바(proximity sidebar, hover reveal).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "amitgajare2/ariseui/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/proximity-sidebar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/proximity-sidebar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Arise UI",
+        "sourceUrl": "https://ariseui.vercel.app/components/proximity-sidebar",
+        "author": "amitgajare2",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -29351,6 +29946,91 @@
       }
     },
     {
+      "name": "streak-badge",
+      "type": "registry:component",
+      "title": "Streak Badge",
+      "description": "연속 달성 일수를 보여주는 배지(streak badge, 연속 기록).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/streak-badge.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/streak-badge.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Trophy UI",
+        "sourceUrl": "https://ui.trophy.so/docs/components/streak-badge",
+        "author": "trophyso",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "streak-calendar",
+      "type": "registry:component",
+      "title": "Streak Calendar",
+      "description": "날짜별 달성 여부를 달력으로 보여준다(streak calendar, habit tracker).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/streak-calendar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/streak-calendar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Trophy UI",
+        "sourceUrl": "https://ui.trophy.so/docs/components/streak-calendar",
+        "author": "trophyso",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "streak-card",
+      "type": "registry:component",
+      "title": "Streak Card",
+      "description": "연속 기록을 요약해 보여주는 카드(streak card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/streak-calendar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/streak-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/streak-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Trophy UI",
+        "sourceUrl": "https://ui.trophy.so/docs/components/streak-card",
+        "author": "trophyso",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "stream-text",
       "type": "registry:component",
       "title": "Stream Text",
@@ -30955,6 +31635,38 @@
       }
     },
     {
+      "name": "text-effects",
+      "type": "registry:component",
+      "title": "Text Effects",
+      "description": "여러 등장 효과를 고르는 텍스트(text effects, reveal presets).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "amitgajare2/ariseui/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/text-effects/particle-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-effects/particle-text.tsx"
+        },
+        {
+          "path": "registry/kidow/text-effects/text-pressure.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-effects/text-pressure.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Arise UI",
+        "sourceUrl": "https://ariseui.vercel.app/components/text-effects",
+        "author": "amitgajare2",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "text-flip",
       "type": "registry:component",
       "title": "Text Flip",
@@ -31149,6 +31861,33 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/text-particle-animation",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "text-pressure",
+      "type": "registry:component",
+      "title": "Text Pressure",
+      "description": "커서 압력에 따라 글자가 눌리는 텍스트(text pressure, variable font).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "amitgajare2/ariseui/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/text-pressure.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-pressure.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Arise UI",
+        "sourceUrl": "https://ariseui.vercel.app/components/text-pressure",
+        "author": "amitgajare2",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -34937,6 +35676,60 @@
         "source": "Bklit UI",
         "sourceUrl": "https://bklit.com/docs/components/y-axis",
         "author": "bklit",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "year-in-dots",
+      "type": "registry:component",
+      "title": "Year In Dots",
+      "description": "한 해를 점 365개로 보여준다(year in dots, life calendar).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "amitgajare2/ariseui/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/year-in-dots.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/year-in-dots.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Arise UI",
+        "sourceUrl": "https://ariseui.vercel.app/components/year-in-dots",
+        "author": "amitgajare2",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "youtube-embed",
+      "type": "registry:component",
+      "title": "Youtube Embed",
+      "description": "유튜브 영상 임베드(youtube embed, lazy video).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "amitgajare2/ariseui/utils"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/youtube-embed.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/youtube-embed.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Arise UI",
+        "sourceUrl": "https://ariseui.vercel.app/components/youtube-embed",
+        "author": "amitgajare2",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-pressure",
+  "title": "Text Pressure",
+  "description": "커서 압력에 따라 글자가 눌리는 텍스트(text pressure, variable font).",
+  "dependencies": [],
+  "registryDependencies": [
+    "amitgajare2/ariseui/utils"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/text-pressure.tsx",
+      "content": "\"use client\";\n\nimport { useCallback, useEffect, useRef } from \"react\";\nimport { cn } from \"@/lib/utils\";\n\nexport type TextPressureProps = {\n  text?: string;\n  fontFamily?: string;\n  fontUrl?: string;\n  minWeight?: number;\n  maxWeight?: number;\n  minScale?: number;\n  maxScale?: number;\n  minItalic?: number;\n  maxItalic?: number;\n  radius?: number;\n  className?: string;\n  textClassName?: string;\n};\n\nexport default function TextPressure({\n  text = \"Pressure\",\n  fontFamily,\n  fontUrl,\n  minWeight = 100,\n  maxWeight = 900,\n  minScale = 0.85,\n  maxScale = 1.2,\n  minItalic = 0,\n  maxItalic = 14,\n  radius = 250,\n  className,\n  textClassName,\n}: TextPressureProps) {\n  const containerRef = useRef<HTMLDivElement>(null);\n  const spansRef = useRef<(HTMLSpanElement | null)[]>([]);\n  const mouseRef = useRef({ x: -9999, y: -9999 });\n  const rafRef = useRef<number>(0);\n\n  const chars = text.split(\"\");\n\n  const setSpan = useCallback((i: number) => (el: HTMLSpanElement | null) => {\n    spansRef.current[i] = el;\n  }, []);\n\n  useEffect(() => {\n    if (!fontUrl) return;\n    const style = document.createElement(\"style\");\n    style.textContent = `@font-face { font-family: \"${fontFamily ?? \"TextPressureFont\"}\"; src: url(\"${fontUrl}\") format(\"woff2\"); font-weight: 100 900; }`;\n    document.head.appendChild(style);\n    return () => { document.head.removeChild(style); };\n  }, [fontUrl, fontFamily]);\n\n  useEffect(() => {\n    function lerp(a: number, b: number, t: number) {\n      return a + (b - a) * t;\n    }\n\n    function tick() {\n      const mx = mouseRef.current.x;\n      const my = mouseRef.current.y;\n\n      for (const span of spansRef.current) {\n        if (!span) continue;\n        const r = span.getBoundingClientRect();\n        const sx = r.left + r.width / 2;\n        const sy = r.top + r.height / 2;\n        const dx = mx - sx;\n        const dy = my - sy;\n        const dist = Math.sqrt(dx * dx + dy * dy);\n        const t = Math.max(0, 1 - dist / radius);\n\n        span.style.fontWeight = String(Math.round(lerp(minWeight, maxWeight, t)));\n        span.style.transform = `scale(${lerp(minScale, maxScale, t).toFixed(3)}) oblique(${lerp(minItalic, maxItalic, t).toFixed(1)}deg)`;\n      }\n      rafRef.current = requestAnimationFrame(tick);\n    }\n\n    tick();\n\n    function onMove(e: MouseEvent) {\n      mouseRef.current = { x: e.clientX, y: e.clientY };\n    }\n    function onLeave() {\n      mouseRef.current = { x: -9999, y: -9999 };\n    }\n\n    window.addEventListener(\"mousemove\", onMove);\n    window.addEventListener(\"mouseleave\", onLeave);\n\n    return () => {\n      cancelAnimationFrame(rafRef.current);\n      window.removeEventListener(\"mousemove\", onMove);\n      window.removeEventListener(\"mouseleave\", onLeave);\n    };\n  }, [radius, minWeight, maxWeight, minScale, maxScale, minItalic, maxItalic]);\n\n  return (\n    <div\n      ref={containerRef}\n      data-slot=\"text-pressure\"\n      className={cn(\"flex h-full w-full items-center justify-center\", className)}\n      style={fontFamily ? { fontFamily } : undefined}\n    >\n      <p\n        aria-label={text}\n        className={cn(\n          \"select-none whitespace-nowrap text-center text-[10vw] leading-none\",\n          textClassName,\n        )}\n      >\n        {chars.map((ch, i) => (\n          <span\n            key={i}\n            ref={setSpan(i)}\n            aria-hidden\n            style={{ display: \"inline-block\" }}\n          >\n            {ch === \" \" ? \"\\u00A0\" : ch}\n          </span>\n        ))}\n      </p>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/text-pressure.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Arise UI",
+    "sourceUrl": "https://ariseui.vercel.app/components/text-pressure",
+    "author": "amitgajare2",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

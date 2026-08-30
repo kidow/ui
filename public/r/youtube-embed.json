@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "youtube-embed",
+  "title": "Youtube Embed",
+  "description": "유튜브 영상 임베드(youtube embed, lazy video).",
+  "dependencies": [],
+  "registryDependencies": [
+    "amitgajare2/ariseui/utils"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/youtube-embed.tsx",
+      "content": "\"use client\";\n\nimport { ComponentProps } from \"react\";\nimport { cn } from \"@/lib/utils\";\n\nexport type YoutubeEmbedProps = Omit<\n  ComponentProps<\"div\">,\n  \"children\" | \"rel\"\n> & {\n  videoId: string;\n  autoPlay?: boolean;\n  mute?: boolean;\n  controls?: boolean;\n  loop?: boolean;\n  modestBranding?: boolean;\n  rel?: boolean;\n  aspectRatio?: string;\n  mask?: boolean;\n  iframeClassName?: string;\n};\n\nexport default function YoutubeEmbed({\n  videoId,\n  autoPlay = true,\n  mute = true,\n  controls = false,\n  loop = true,\n  modestBranding = true,\n  rel = false,\n  aspectRatio = \"16 / 9\",\n  mask = true,\n  className,\n  iframeClassName,\n  ...props\n}: YoutubeEmbedProps) {\n  const src = new URL(`https://www.youtube.com/embed/${videoId}`);\n\n  src.searchParams.set(\"autoplay\", autoPlay ? \"1\" : \"0\");\n  src.searchParams.set(\"mute\", mute ? \"1\" : \"0\");\n  src.searchParams.set(\"controls\", controls ? \"1\" : \"0\");\n  src.searchParams.set(\"modestbranding\", modestBranding ? \"1\" : \"0\");\n  src.searchParams.set(\"rel\", rel ? \"1\" : \"0\");\n\n  if (loop) {\n    src.searchParams.set(\"loop\", \"1\");\n    src.searchParams.set(\"playlist\", videoId);\n  }\n\n  return (\n    <div\n      data-slot=\"youtube-embed\"\n      className={cn(\n        \"relative w-full overflow-hidden rounded-xl border border-black/10 dark:border-white/10\",\n        className\n      )}\n      style={{\n        aspectRatio,\n        ...(mask && {\n          maskImage:\n            \"radial-gradient(ellipse 80% 50% at 80% 0%, #000 70%, transparent 110%)\",\n          WebkitMaskImage:\n            \"radial-gradient(ellipse 80% 80% at 50% 0%, #000 70%, transparent 110%)\",\n        }),\n      }}\n      {...props}\n    >\n      <iframe\n        data-slot=\"youtube-embed-frame\"\n        src={src.toString()}\n        title=\"YouTube video\"\n        className={cn(\n          \"absolute inset-0 h-full w-full pointer-events-none\",\n          iframeClassName\n        )}\n        allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\"\n        referrerPolicy=\"strict-origin-when-cross-origin\"\n        allowFullScreen\n      />\n    </div>\n  );\n}",
+      "type": "registry:component",
+      "target": "components/kidow/youtube-embed.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Arise UI",
+    "sourceUrl": "https://ariseui.vercel.app/components/youtube-embed",
+    "author": "amitgajare2",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "미디어·데이터"
+  ],
+  "type": "registry:component"
+}

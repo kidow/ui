@@ -12,6 +12,11 @@ import _3dScrollTriggerDemo from './3d-scroll-trigger'
 import _3dSmokeyFrameDemo from './3d-smokey-frame'
 import _3dWrapperDemo from './3d-wrapper'
 import AccordionLoaderDemo from './accordion-loader'
+import AchievementBadgeDemo from './achievement-badge'
+import AchievementCardDemo from './achievement-card'
+import AchievementGridDemo from './achievement-grid'
+import AchievementListDemo from './achievement-list'
+import AchievementUnlockedDemo from './achievement-unlocked'
 import ActionSearchBarDemo from './action-search-bar'
 import ActionSwapBlurDemo from './action-swap-blur'
 import ActionSwapCascadeDemo from './action-swap-cascade'
@@ -265,6 +270,7 @@ import CosmicButtonDemo from './cosmic-button'
 import CosmicDustDemo from './cosmic-dust'
 import CosmicSingularityDemo from './cosmic-singularity'
 import CountUpDemo from './count-up'
+import CoverflowDemo from './coverflow'
 import CreativeClippathDemo from './creative-clippath'
 import CreativeHoverCardDemo from './creative-hover-card'
 import CreativeImagemaskingDemo from './creative-imagemasking'
@@ -541,6 +547,9 @@ import KineticTextRevealDemo from './kinetic-text-reveal'
 import KnowledgeConvergenceDemo from './knowledge-convergence'
 import LabelInputDemo from './label-input'
 import LayeredStackDemo from './layered-stack'
+import LeaderboardCardDemo from './leaderboard-card'
+import LeaderboardPodiumDemo from './leaderboard-podium'
+import LeaderboardRankingsDemo from './leaderboard-rankings'
 import LensDemo from './lens'
 import Letter3dSwapDemo from './letter-3d-swap'
 import LetterCascadeDemo from './letter-cascade'
@@ -647,6 +656,7 @@ import MorphingPopoverDemo from './morphing-popover'
 import MorphingTextDemo from './morphing-text'
 import MotionDrawerDemo from './motion-drawer'
 import MotionNumberInputDemo from './motion-number-input'
+import MotionTabsDemo from './motion-tabs'
 import MouseEffectCardDemo from './mouse-effect-card'
 import MousetrailDemo from './mousetrail'
 import MultiColorTrailRevealDemo from './multi-color-trail-reveal'
@@ -672,6 +682,7 @@ import NumberCounterDemo from './number-counter'
 import NumberFlowTradingDemo from './number-flow-trading'
 import NumberTickerDemo from './number-ticker'
 import OnboardingDemo from './onboarding'
+import OptionWheelDemo from './option-wheel'
 import OrbitCardDemo from './orbit-card'
 import OrbitCardStackDemo from './orbit-card-stack'
 import OrbitRingDemo from './orbit-ring'
@@ -679,11 +690,13 @@ import OrbitRotationDemo from './orbit-rotation'
 import OrbitalLettersDemo from './orbital-letters'
 import OrbitingCirclesDemo from './orbiting-circles'
 import OrderBookDemo from './order-book'
+import OtpInputDemo from './otp-input'
 import ParallaxDemo from './parallax'
 import ParallaxFloatingDemo from './parallax-floating'
 import ParticleButtonDemo from './particle-button'
 import ParticleGalaxyDemo from './particle-galaxy'
 import ParticleOrbitEffectDemo from './particle-orbit-effect'
+import ParticleTextDemo from './particle-text'
 import ParticlesDemo from './particles'
 import ParticlesBackgroundDemo from './particles-background'
 import PassStrengthindicatorDemo from './pass-strengthindicator'
@@ -712,6 +725,12 @@ import PixelateSvgFilterDemo from './pixelate-svg-filter'
 import PixelatedImageTrailDemo from './pixelated-image-trail'
 import PlasmaGlobeDemo from './plasma-globe'
 import PointerDemo from './pointer'
+import PointsAwardsDemo from './points-awards'
+import PointsBadgeDemo from './points-badge'
+import PointsBoostDemo from './points-boost'
+import PointsChartDemo from './points-chart'
+import PointsLevelsListDemo from './points-levels-list'
+import PointsLevelsTimelineDemo from './points-levels-timeline'
 import PollWidgetDemo from './poll-widget'
 import PopButtonDemo from './pop-button'
 import PopButtonVengeanceDemo from './pop-button-vengeance'
@@ -739,6 +758,8 @@ import ProfileDropdownDemo from './profile-dropdown'
 import ProgressiveBlurDemo from './progressive-blur'
 import ProgressiveCarouselDemo from './progressive-carousel'
 import PromptBarDemo from './prompt-bar'
+import PromptCardDemo from './prompt-card'
+import ProximitySidebarDemo from './proximity-sidebar'
 import PullToRefreshDemo from './pull-to-refresh'
 import PulsatingButtonDemo from './pulsating-button'
 import PulsatingButtonComponentryDemo from './pulsating-button-componentry'
@@ -930,6 +951,9 @@ import StockSm04Demo from './stock-sm-04'
 import StockSm05Demo from './stock-sm-05'
 import StockSm06Demo from './stock-sm-06'
 import StoriesDemo from './stories'
+import StreakBadgeDemo from './streak-badge'
+import StreakCalendarDemo from './streak-calendar'
+import StreakCardDemo from './streak-card'
 import StreamTextDemo from './stream-text'
 import StreamingResponseDemo from './streaming-response'
 import StreamingTextDemo from './streaming-text'
@@ -977,6 +1001,7 @@ import TextCascadeDemo from './text-cascade'
 import TextCursorProximityDemo from './text-cursor-proximity'
 import TextDotsDemo from './text-dots'
 import TextEffectDemo from './text-effect'
+import TextEffectsDemo from './text-effects'
 import TextFlipDemo from './text-flip'
 import TextGifDemo from './text-gif'
 import TextHighlighterDemo from './text-highlighter'
@@ -985,6 +1010,7 @@ import TextMarqueeDemo from './text-marquee'
 import TextMorphDemo from './text-morph'
 import TextMorphingDemo from './text-morphing'
 import TextParticleAnimationDemo from './text-particle-animation'
+import TextPressureDemo from './text-pressure'
 import TextRepelDemo from './text-repel'
 import TextRevealDemo from './text-reveal'
 import TextRollDemo from './text-roll'
@@ -1097,6 +1123,8 @@ import WordRotateDemo from './word-rotate'
 import WordStaggerDemo from './word-stagger'
 import WordsStaggerDemo from './words-stagger'
 import WorldMapDemo from './world-map'
+import YearInDotsDemo from './year-in-dots'
+import YoutubeEmbedDemo from './youtube-embed'
 import YoutubeVideoPlayerDemo from './youtube-video-player'
 import ZAxisRevealDemo from './z-axis-reveal'
 import ZoomParallaxDemo from './zoom-parallax'
@@ -1118,6 +1146,11 @@ export const demos: Record<string, ComponentType> = {
   '3d-smokey-frame': _3dSmokeyFrameDemo,
   '3d-wrapper': _3dWrapperDemo,
   'accordion-loader': AccordionLoaderDemo,
+  'achievement-badge': AchievementBadgeDemo,
+  'achievement-card': AchievementCardDemo,
+  'achievement-grid': AchievementGridDemo,
+  'achievement-list': AchievementListDemo,
+  'achievement-unlocked': AchievementUnlockedDemo,
   'action-search-bar': ActionSearchBarDemo,
   'action-swap-blur': ActionSwapBlurDemo,
   'action-swap-cascade': ActionSwapCascadeDemo,
@@ -1371,6 +1404,7 @@ export const demos: Record<string, ComponentType> = {
   'cosmic-dust': CosmicDustDemo,
   'cosmic-singularity': CosmicSingularityDemo,
   'count-up': CountUpDemo,
+  'coverflow': CoverflowDemo,
   'creative-clippath': CreativeClippathDemo,
   'creative-hover-card': CreativeHoverCardDemo,
   'creative-imagemasking': CreativeImagemaskingDemo,
@@ -1647,6 +1681,9 @@ export const demos: Record<string, ComponentType> = {
   'knowledge-convergence': KnowledgeConvergenceDemo,
   'label-input': LabelInputDemo,
   'layered-stack': LayeredStackDemo,
+  'leaderboard-card': LeaderboardCardDemo,
+  'leaderboard-podium': LeaderboardPodiumDemo,
+  'leaderboard-rankings': LeaderboardRankingsDemo,
   'lens': LensDemo,
   'letter-3d-swap': Letter3dSwapDemo,
   'letter-cascade': LetterCascadeDemo,
@@ -1753,6 +1790,7 @@ export const demos: Record<string, ComponentType> = {
   'morphing-text': MorphingTextDemo,
   'motion-drawer': MotionDrawerDemo,
   'motion-number-input': MotionNumberInputDemo,
+  'motion-tabs': MotionTabsDemo,
   'mouse-effect-card': MouseEffectCardDemo,
   'mousetrail': MousetrailDemo,
   'multi-color-trail-reveal': MultiColorTrailRevealDemo,
@@ -1778,6 +1816,7 @@ export const demos: Record<string, ComponentType> = {
   'number-flow-trading': NumberFlowTradingDemo,
   'number-ticker': NumberTickerDemo,
   'onboarding': OnboardingDemo,
+  'option-wheel': OptionWheelDemo,
   'orbit-card': OrbitCardDemo,
   'orbit-card-stack': OrbitCardStackDemo,
   'orbit-ring': OrbitRingDemo,
@@ -1785,11 +1824,13 @@ export const demos: Record<string, ComponentType> = {
   'orbital-letters': OrbitalLettersDemo,
   'orbiting-circles': OrbitingCirclesDemo,
   'order-book': OrderBookDemo,
+  'otp-input': OtpInputDemo,
   'parallax': ParallaxDemo,
   'parallax-floating': ParallaxFloatingDemo,
   'particle-button': ParticleButtonDemo,
   'particle-galaxy': ParticleGalaxyDemo,
   'particle-orbit-effect': ParticleOrbitEffectDemo,
+  'particle-text': ParticleTextDemo,
   'particles': ParticlesDemo,
   'particles-background': ParticlesBackgroundDemo,
   'pass-strengthindicator': PassStrengthindicatorDemo,
@@ -1818,6 +1859,12 @@ export const demos: Record<string, ComponentType> = {
   'pixelated-image-trail': PixelatedImageTrailDemo,
   'plasma-globe': PlasmaGlobeDemo,
   'pointer': PointerDemo,
+  'points-awards': PointsAwardsDemo,
+  'points-badge': PointsBadgeDemo,
+  'points-boost': PointsBoostDemo,
+  'points-chart': PointsChartDemo,
+  'points-levels-list': PointsLevelsListDemo,
+  'points-levels-timeline': PointsLevelsTimelineDemo,
   'poll-widget': PollWidgetDemo,
   'pop-button': PopButtonDemo,
   'pop-button-vengeance': PopButtonVengeanceDemo,
@@ -1845,6 +1892,8 @@ export const demos: Record<string, ComponentType> = {
   'progressive-blur': ProgressiveBlurDemo,
   'progressive-carousel': ProgressiveCarouselDemo,
   'prompt-bar': PromptBarDemo,
+  'prompt-card': PromptCardDemo,
+  'proximity-sidebar': ProximitySidebarDemo,
   'pull-to-refresh': PullToRefreshDemo,
   'pulsating-button': PulsatingButtonDemo,
   'pulsating-button-componentry': PulsatingButtonComponentryDemo,
@@ -2036,6 +2085,9 @@ export const demos: Record<string, ComponentType> = {
   'stock-sm-05': StockSm05Demo,
   'stock-sm-06': StockSm06Demo,
   'stories': StoriesDemo,
+  'streak-badge': StreakBadgeDemo,
+  'streak-calendar': StreakCalendarDemo,
+  'streak-card': StreakCardDemo,
   'stream-text': StreamTextDemo,
   'streaming-response': StreamingResponseDemo,
   'streaming-text': StreamingTextDemo,
@@ -2083,6 +2135,7 @@ export const demos: Record<string, ComponentType> = {
   'text-cursor-proximity': TextCursorProximityDemo,
   'text-dots': TextDotsDemo,
   'text-effect': TextEffectDemo,
+  'text-effects': TextEffectsDemo,
   'text-flip': TextFlipDemo,
   'text-gif': TextGifDemo,
   'text-highlighter': TextHighlighterDemo,
@@ -2091,6 +2144,7 @@ export const demos: Record<string, ComponentType> = {
   'text-morph': TextMorphDemo,
   'text-morphing': TextMorphingDemo,
   'text-particle-animation': TextParticleAnimationDemo,
+  'text-pressure': TextPressureDemo,
   'text-repel': TextRepelDemo,
   'text-reveal': TextRevealDemo,
   'text-roll': TextRollDemo,
@@ -2203,6 +2257,8 @@ export const demos: Record<string, ComponentType> = {
   'word-stagger': WordStaggerDemo,
   'words-stagger': WordsStaggerDemo,
   'world-map': WorldMapDemo,
+  'year-in-dots': YearInDotsDemo,
+  'youtube-embed': YoutubeEmbedDemo,
   'youtube-video-player': YoutubeVideoPlayerDemo,
   'z-axis-reveal': ZAxisRevealDemo,
   'zoom-parallax': ZoomParallaxDemo,
