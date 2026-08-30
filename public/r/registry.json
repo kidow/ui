@@ -364,6 +364,41 @@
       }
     },
     {
+      "name": "action-search-bar",
+      "type": "registry:component",
+      "title": "Action Search Bar",
+      "description": "입력을 디바운스하며 명령을 추천하는 검색 바(search bar, command palette). 단축키 힌트와 결과 애니메이션이 있다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "input"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/action-search-bar/action-search-bar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/action-search-bar.tsx"
+        },
+        {
+          "path": "registry/kidow/action-search-bar/use-debounce.ts",
+          "type": "registry:component",
+          "target": "hooks/use-debounce.ts"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/action-search-bar",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "activity-graph",
       "type": "registry:component",
       "title": "Activity Graph",
@@ -502,6 +537,67 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/ai-gooey-blob",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "ai-input-search",
+      "type": "registry:component",
+      "title": "AI Input Search",
+      "description": "웹 검색 토글과 파일 첨부가 붙은 AI 채팅 입력창(ai search input, chat input). 내용에 맞춰 높이가 늘어난다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ai-input-search/ai-input-search.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ai-input-search.tsx"
+        },
+        {
+          "path": "registry/kidow/ai-input-search/use-auto-resize-textarea.ts",
+          "type": "registry:component",
+          "target": "hooks/use-auto-resize-textarea.ts"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/ai-input-search",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "ai-loading",
+      "type": "registry:component",
+      "title": "AI Loading",
+      "description": "작업 상태를 세로로 굴리며 보여주는 AI 로딩(ai loading, task status).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/ai-loading.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ai-loading.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/ai-loading",
+        "author": "kokonut-labs",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -677,6 +773,61 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/ai-sidebar",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "ai-text-loading",
+      "type": "registry:component",
+      "title": "AI Text Loading",
+      "description": "AI 가 생각하는 동안 상태 문구를 바꿔가며 보여주는 표시(ai thinking, loading text). 광택이 함께 흐른다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/ai-text-loading.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ai-text-loading.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/ai-text-loading",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "ai-voice",
+      "type": "registry:component",
+      "title": "AI Voice",
+      "description": "녹음 타이머와 파형 막대가 있는 음성 입력 버튼(voice input, ai voice, 음성 녹음).",
+      "categories": [
+        "오디오·음성"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/ai-voice.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ai-voice.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/ai-voice",
+        "author": "kokonut-labs",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -1437,6 +1588,33 @@
       }
     },
     {
+      "name": "apple-activity-card",
+      "type": "registry:component",
+      "title": "Apple Activity Card",
+      "description": "Apple 피트니스풍 활동 링 카드(activity rings, progress rings). 세 지표의 달성률을 원으로 보여준다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/apple-activity-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/apple-activity-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/apple-activity-card",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "ascent-carousel",
       "type": "registry:component",
       "title": "Ascent Carousel",
@@ -1531,6 +1709,36 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/ascii-wave",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "attract-button",
+      "type": "registry:component",
+      "title": "Attract Button",
+      "description": "커서를 대면 입자를 중심으로 끌어당기는 자석 버튼(magnetic button, particle attraction).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/attract-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/attract-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/attract-button",
+        "author": "kokonut-labs",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -1762,6 +1970,38 @@
       }
     },
     {
+      "name": "avatar-picker",
+      "type": "registry:component",
+      "title": "Avatar Picker",
+      "description": "SVG 아바타를 고르는 선택기(avatar picker, profile picture). 선택 링과 색 변경을 지원한다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "card",
+        "button",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/avatar-picker.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/avatar-picker.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/avatar-picker",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "awwwards-nav",
       "type": "registry:component",
       "title": "Awwwards Nav",
@@ -1786,6 +2026,33 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "background-paths",
+      "type": "registry:component",
+      "title": "Background Paths",
+      "description": "SVG 선이 흘러가며 그려지는 배경(flowing paths, animated lines). 히어로 뒤에 깐다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/background-paths.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/background-paths.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/background-paths",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -1933,6 +2200,33 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/beam-grid-background",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "beams-background",
+      "type": "registry:component",
+      "title": "Beams Background",
+      "description": "빛줄기가 캔버스 위를 흘러가는 배경(light beams, canvas background).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/beams-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/beams-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/beams-background",
+        "author": "kokonut-labs",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -2863,6 +3157,91 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "card-flip",
+      "type": "registry:component",
+      "title": "Card Flip",
+      "description": "hover 하면 3D 로 뒤집혀 뒷면을 보여주는 카드(card flip, 3d flip card). 앞면은 요약, 뒷면은 기능 목록과 CTA 에 쓴다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/card-flip.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/card-flip.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/card-flip",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "card-stack",
+      "type": "registry:component",
+      "title": "Card Stack",
+      "description": "겹쳐 쌓인 카드가 클릭하면 펼쳐지는 스택(card stack, expanding cards).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/card-stack.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/card-stack.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/card-stack",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "carousel-cards",
+      "type": "registry:component",
+      "title": "Carousel Cards",
+      "description": "가로로 스크롤하는 카드 캐러셀(carousel, card slider). 별점·배지·좌우 버튼을 갖췄다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "card",
+        "badge",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/carousel-cards.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/carousel-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/carousel-cards",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -3870,6 +4249,35 @@
       }
     },
     {
+      "name": "command-button",
+      "type": "registry:component",
+      "title": "Command Button",
+      "description": "⌘ 아이콘과 단축키를 함께 보여주는 버튼(command button, keyboard shortcut). hover 하면 광택이 훑고 지나간다.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/command-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/command-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/command-button",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "command-menu",
       "type": "registry:component",
       "title": "Command Menu",
@@ -4412,6 +4820,37 @@
         "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "currency-transfer",
+      "type": "registry:component",
+      "title": "Currency Transfer",
+      "description": "단계별로 진행되는 환전·송금 카드(currency transfer, money exchange). 진행 애니메이션과 완료 체크를 보여준다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "card",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/currency-transfer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/currency-transfer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/currency-transfer",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -5226,6 +5665,33 @@
       }
     },
     {
+      "name": "dynamic-text",
+      "type": "registry:component",
+      "title": "Dynamic Text",
+      "description": "여러 언어의 인사말을 돌아가며 보여주는 텍스트(rotating text, multilingual greeting).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/dynamic-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dynamic-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/dynamic-text",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "editorial-reveal",
       "type": "registry:component",
       "title": "Editorial Reveal",
@@ -5799,6 +6265,34 @@
       }
     },
     {
+      "name": "file-upload",
+      "type": "registry:component",
+      "title": "File Upload",
+      "description": "끌어다 놓는 파일 업로드(file upload, drag and drop). 진행률 애니메이션과 파일 검증, 목록 관리를 지원한다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/file-upload.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/file-upload.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/file-upload",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "fisheye-infinite-grid",
       "type": "registry:component",
       "title": "Fisheye Infinite Grid",
@@ -6024,6 +6518,33 @@
         "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "flow-field",
+      "type": "registry:component",
+      "title": "Flow Field",
+      "description": "노이즈를 따라 입자가 흐르는 플로우 필드 배경(flow field, particle stream).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/flow-field.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/flow-field.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/flow-field",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -7320,6 +7841,36 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "hold-button",
+      "type": "registry:component",
+      "title": "Hold Button",
+      "description": "길게 눌러 확정하는 버튼(hold to confirm, press and hold). 되돌릴 수 없는 동작 앞에 쓴다.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/hold-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hold-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/hold-button",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -9413,6 +9964,33 @@
       }
     },
     {
+      "name": "loader",
+      "type": "registry:component",
+      "title": "Loader",
+      "description": "그라디언트 고리가 도는 로딩 표시(loader, spinner). 크기 변형이 있다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/loader.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/loader.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/loader",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "loader-button",
       "type": "registry:component",
       "title": "Loader Button",
@@ -10064,6 +10642,33 @@
       }
     },
     {
+      "name": "matrix-text",
+      "type": "registry:component",
+      "title": "Matrix Text",
+      "description": "글자가 0과 1로 흩어졌다 제자리를 찾는 매트릭스 효과(matrix text, scramble text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/matrix-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/matrix-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/matrix-text",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "matrix-visualizer",
       "type": "registry:component",
       "title": "Matrix Visualizer",
@@ -10335,6 +10940,33 @@
       }
     },
     {
+      "name": "morphic-navbar",
+      "type": "registry:component",
+      "title": "Morphic Navbar",
+      "description": "활성 링크가 알약 모양으로 변형되는 내비게이션 바(navbar, morphing pill nav).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "clsx"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/morphic-navbar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/morphic-navbar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/morphic-navbar",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "morphing-cursor",
       "type": "registry:component",
       "title": "Morphing Cursor",
@@ -10433,6 +11065,36 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "mouse-effect-card",
+      "type": "registry:component",
+      "title": "Mouse Effect Card",
+      "description": "커서를 피해 점 패턴이 밀려나는 카드(mouse effect, interactive dots).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "card",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/mouse-effect-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/mouse-effect-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/mouse-effect-card",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -10882,6 +11544,36 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "particle-button",
+      "type": "registry:component",
+      "title": "Particle Button",
+      "description": "누르면 입자가 터져 나오는 버튼(particle burst, confetti button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/particle-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/particle-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/particle-button",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -11855,6 +12547,40 @@
         "source": "wigggle-ui",
         "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/productivity-sm-07",
         "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "profile-dropdown",
+      "type": "registry:component",
+      "title": "Profile Dropdown",
+      "description": "아바타·구독 등급·모델 정보를 담은 프로필 드롭다운(profile menu, user dropdown).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/profile-dropdown/profile-dropdown.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/profile-dropdown.tsx"
+        },
+        {
+          "path": "registry/kidow/profile-dropdown/gemini.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gemini.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/profile-dropdown",
+        "author": "kokonut-labs",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -13540,6 +14266,33 @@
       }
     },
     {
+      "name": "shape-hero",
+      "type": "registry:component",
+      "title": "Shape Hero",
+      "description": "반투명 도형이 떨어져 떠다니는 히어로 섹션(hero section, landing hero).",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/shape-hero.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shape-hero.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/shape-hero",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "shared-tooltip-avatars",
       "type": "registry:component",
       "title": "Shared Tooltip Avatars",
@@ -13942,6 +14695,62 @@
       }
     },
     {
+      "name": "sliced-text",
+      "type": "registry:component",
+      "title": "Sliced Text",
+      "description": "글자가 위아래로 갈라졌다 합쳐지는 텍스트(sliced text, split text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/sliced-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sliced-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/sliced-text",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "slide-text-button",
+      "type": "registry:component",
+      "title": "Slide Text Button",
+      "description": "hover 하면 글자가 위로 밀려 올라가며 바뀌는 링크 버튼(slide text, hover link).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/slide-text-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/slide-text-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/slide-text-button",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "slide-to-confirm",
       "type": "registry:component",
       "title": "Slide To Confirm",
@@ -14140,6 +14949,36 @@
       }
     },
     {
+      "name": "smooth-drawer",
+      "type": "registry:component",
+      "title": "Smooth Drawer",
+      "description": "아래에서 스프링으로 올라오는 드로어(drawer, bottom sheet). 내용이 차례로 나타난다. 모바일 결제·확인 흐름에 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "drawer",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/smooth-drawer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/smooth-drawer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/smooth-drawer",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "smooth-scroll",
       "type": "registry:component",
       "title": "Smooth Scroll",
@@ -14163,6 +15002,64 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "smooth-tab",
+      "type": "registry:component",
+      "title": "Smooth Tab",
+      "description": "활성 표시가 미끄러지는 탭 전환(tabs, sliding indicator). 카드 내용도 부드럽게 바뀐다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/smooth-tab.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/smooth-tab.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/smooth-tab",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "social-button",
+      "type": "registry:component",
+      "title": "Social Button",
+      "description": "누르면 소셜 아이콘 버튼들이 차례로 펼쳐지는 공유 버튼(share button, social icons).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/social-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/social-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/social-button",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -14614,6 +15511,34 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "spotlight-cards",
+      "type": "registry:component",
+      "title": "Spotlight Cards",
+      "description": "오로라 글로우와 3D 기울임이 있는 기능 카드 격자(spotlight cards, feature grid).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/spotlight-cards.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/spotlight-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/spotlight-cards",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -15149,6 +16074,62 @@
       }
     },
     {
+      "name": "switch-button",
+      "type": "registry:component",
+      "title": "Switch Button",
+      "description": "해 아이콘이 돌아가는 다크모드 토글 버튼(theme toggle, dark mode switch). next-themes 를 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/switch-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/switch-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/switch-button",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "swoosh-text",
+      "type": "registry:component",
+      "title": "Swoosh Text",
+      "description": "hover 하면 색색의 그림자가 겹쳤다 납작해지는 텍스트(hover text effect, layered shadow).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/swoosh-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/swoosh-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/swoosh-text",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "team-carousel",
       "type": "registry:component",
       "title": "Team Carousel",
@@ -15197,6 +16178,34 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "team-selector",
+      "type": "registry:component",
+      "title": "Team Selector",
+      "description": "아바타를 겹쳐 보여주며 팀 규모를 고르는 선택기(team size selector, avatar stack). 가격 페이지에 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/team-selector.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/team-selector.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/team-selector",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -15748,6 +16757,34 @@
       }
     },
     {
+      "name": "toolbar",
+      "type": "registry:component",
+      "title": "Toolbar",
+      "description": "Figma 풍 툴바(toolbar, tool palette). 고른 도구가 펼쳐지며 하위 옵션을 보여준다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/toolbar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/toolbar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/toolbar",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "top-loader",
       "type": "registry:component",
       "title": "Top Loader",
@@ -15951,6 +16988,33 @@
       }
     },
     {
+      "name": "type-writer",
+      "type": "registry:component",
+      "title": "Type Writer",
+      "description": "문장을 쳤다 지웠다 반복하는 타자기 효과(typewriter, typing animation).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/type-writer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/type-writer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/type-writer",
+        "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "typewritter-text",
       "type": "registry:component",
       "title": "Typewritter Text",
@@ -16109,6 +17173,33 @@
         "source": "wigggle-ui",
         "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/use-weather",
         "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "v0-button",
+      "type": "registry:component",
+      "title": "v0 Button",
+      "description": "컴포넌트 레지스트리 JSON 을 v0.dev 로 보내 여는 버튼(open in v0). 문서 사이트에 붙인다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/v0-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/v0-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "KokonutUI",
+        "sourceUrl": "https://kokonutui.com/docs/components/v0-button",
+        "author": "kokonut-labs",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
