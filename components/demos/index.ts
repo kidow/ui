@@ -434,6 +434,7 @@ import DropzoneDemo from './dropzone'
 import DualArcDemo from './dual-arc'
 import DualRangeSliderDemo from './dual-range-slider'
 import DuolingoDemo from './duolingo'
+import DurationPickerDemo from './duration-picker'
 import DynamicIslandDemo from './dynamic-island'
 import DynamicTextDemo from './dynamic-text'
 import EdgeBlurDemo from './edge-blur'
@@ -451,6 +452,7 @@ import ElevenDemo from './eleven'
 import EmailFeatureCardDemo from './email-feature-card'
 import EmberBurnDemo from './ember-burn'
 import EmojiNavDemo from './emoji-nav'
+import EmojiReactionDemo from './emoji-reaction'
 import EntityChipDemo from './entity-chip'
 import EnvTableDemo from './env-table'
 import EtherWavesDemo from './ether-waves'
@@ -535,11 +537,13 @@ import FluidDisintegrationDemo from './fluid-disintegration'
 import FluidDotOrbitDemo from './fluid-dot-orbit'
 import FluidInkRevealDemo from './fluid-ink-reveal'
 import FluidMorphBgDemo from './fluid-morph-bg'
+import FluidOrbDemo from './fluid-orb'
 import FluidSkeletonDemo from './fluid-skeleton'
 import FluidTabsDemo from './fluid-tabs'
 import FluidTypewriterDemo from './fluid-typewriter'
 import FocusBlurResolveDemo from './focus-blur-resolve'
 import FoldRevealDemo from './fold-reveal'
+import FolderComponentDemo from './folder-component'
 import FolderPreviewDemo from './folder-preview'
 import FollowButtonDemo from './follow-button'
 import FontWeightTextDemo from './font-weight-text'
@@ -554,6 +558,7 @@ import GearsDemo from './gears'
 import GenerateButtonDemo from './generate-button'
 import GetStartedButtonDemo from './get-started-button'
 import GibberishTextDemo from './gibberish-text'
+import GithubActivityDemo from './github-activity'
 import GithubButtonDemo from './github-button'
 import GithubButtonGroupDemo from './github-button-group'
 import GithubCalendarDemo from './github-calendar'
@@ -602,12 +607,14 @@ import GrainCursorDemo from './grain-cursor'
 import GranularDustRevealDemo from './granular-dust-reveal'
 import GravityDemo from './gravity'
 import GravityBoxDemo from './gravity-box'
+import GravityLettersDemo from './gravity-letters'
 import GridDemo from './grid'
 import GridBarChartDemo from './grid-bar-chart'
 import GridBeamDemo from './grid-beam'
 import GridDotBackgroundsDemo from './grid-dot-backgrounds'
 import GridDotsDemo from './grid-dots'
 import GridPatternDemo from './grid-pattern'
+import GridRevealDemo from './grid-reveal'
 import HackerBackgroundDemo from './hacker-background'
 import HamburgerMenuOverlayDemo from './hamburger-menu-overlay'
 import HangingIdCardDemo from './hanging-id-card'
@@ -1257,6 +1264,7 @@ import StatusDemo from './status'
 import StatusBadgeDemo from './status-badge'
 import StatusButtonDemo from './status-button'
 import StatusIndicatorDemo from './status-indicator'
+import StepPlayerDemo from './step-player'
 import StepperDemo from './stepper'
 import StepsDemo from './steps'
 import StickyGalleryDemo from './sticky-gallery'
@@ -1941,6 +1949,7 @@ export const demos: Record<string, ComponentType> = {
   'dual-arc': DualArcDemo,
   'dual-range-slider': DualRangeSliderDemo,
   'duolingo': DuolingoDemo,
+  'duration-picker': DurationPickerDemo,
   'dynamic-island': DynamicIslandDemo,
   'dynamic-text': DynamicTextDemo,
   'edge-blur': EdgeBlurDemo,
@@ -1958,6 +1967,7 @@ export const demos: Record<string, ComponentType> = {
   'email-feature-card': EmailFeatureCardDemo,
   'ember-burn': EmberBurnDemo,
   'emoji-nav': EmojiNavDemo,
+  'emoji-reaction': EmojiReactionDemo,
   'entity-chip': EntityChipDemo,
   'env-table': EnvTableDemo,
   'ether-waves': EtherWavesDemo,
@@ -2042,11 +2052,13 @@ export const demos: Record<string, ComponentType> = {
   'fluid-dot-orbit': FluidDotOrbitDemo,
   'fluid-ink-reveal': FluidInkRevealDemo,
   'fluid-morph-bg': FluidMorphBgDemo,
+  'fluid-orb': FluidOrbDemo,
   'fluid-skeleton': FluidSkeletonDemo,
   'fluid-tabs': FluidTabsDemo,
   'fluid-typewriter': FluidTypewriterDemo,
   'focus-blur-resolve': FocusBlurResolveDemo,
   'fold-reveal': FoldRevealDemo,
+  'folder-component': FolderComponentDemo,
   'folder-preview': FolderPreviewDemo,
   'follow-button': FollowButtonDemo,
   'font-weight-text': FontWeightTextDemo,
@@ -2061,6 +2073,7 @@ export const demos: Record<string, ComponentType> = {
   'generate-button': GenerateButtonDemo,
   'get-started-button': GetStartedButtonDemo,
   'gibberish-text': GibberishTextDemo,
+  'github-activity': GithubActivityDemo,
   'github-button': GithubButtonDemo,
   'github-button-group': GithubButtonGroupDemo,
   'github-calendar': GithubCalendarDemo,
@@ -2109,12 +2122,14 @@ export const demos: Record<string, ComponentType> = {
   'granular-dust-reveal': GranularDustRevealDemo,
   'gravity': GravityDemo,
   'gravity-box': GravityBoxDemo,
+  'gravity-letters': GravityLettersDemo,
   'grid': GridDemo,
   'grid-bar-chart': GridBarChartDemo,
   'grid-beam': GridBeamDemo,
   'grid-dot-backgrounds': GridDotBackgroundsDemo,
   'grid-dots': GridDotsDemo,
   'grid-pattern': GridPatternDemo,
+  'grid-reveal': GridRevealDemo,
   'hacker-background': HackerBackgroundDemo,
   'hamburger-menu-overlay': HamburgerMenuOverlayDemo,
   'hanging-id-card': HangingIdCardDemo,
@@ -2764,6 +2779,7 @@ export const demos: Record<string, ComponentType> = {
   'status-badge': StatusBadgeDemo,
   'status-button': StatusButtonDemo,
   'status-indicator': StatusIndicatorDemo,
+  'step-player': StepPlayerDemo,
   'stepper': StepperDemo,
   'steps': StepsDemo,
   'sticky-gallery': StickyGalleryDemo,

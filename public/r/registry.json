@@ -12877,6 +12877,37 @@
       }
     },
     {
+      "name": "duration-picker",
+      "type": "registry:component",
+      "title": "Duration Picker",
+      "description": "끌어서 시간 길이를 고르는 선택기(duration picker, 시간 선택). 손잡이가 도형을 바꾸며 따라온다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion",
+        "figma-squircle",
+        "flubber",
+        "react-use-measure",
+        "@radix-ui/react-slot"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/duration-picker.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/duration-picker.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Rare UI",
+        "sourceUrl": "https://www.rareui.com/components/durationpicker",
+        "author": "swamimalode07",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "dynamic-island",
       "type": "registry:component",
       "title": "Dynamic Island",
@@ -13325,6 +13356,36 @@
         "sourceUrl": "https://kaif-ui.vercel.app/components/emogi-nav",
         "author": "Muhammad Kaif Nazeer",
         "license": "MIT (저작권 표시 유지 조건)",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "emoji-reaction",
+      "type": "registry:component",
+      "title": "Emoji Reaction",
+      "description": "이모지로 반응을 남기는 버튼(emoji reaction, reactions). Apple 이모지를 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "motion",
+        "react-apple-emojis",
+        "lucide-react",
+        "@radix-ui/react-slot"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/emoji-reaction.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/emoji-reaction.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Rare UI",
+        "sourceUrl": "https://www.rareui.com/components/emojireaction",
+        "author": "swamimalode07",
+        "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -15616,6 +15677,31 @@
       }
     },
     {
+      "name": "fluid-orb",
+      "type": "registry:component",
+      "title": "Fluid Orb",
+      "description": "유체처럼 일렁이는 구체(fluid orb, blob). AI 응답 상태 표시나 히어로 장식에 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/fluid-orb.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/fluid-orb.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Rare UI",
+        "sourceUrl": "https://www.rareui.com/components/fluidorb",
+        "author": "swamimalode07",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "fluid-skeleton",
       "type": "registry:component",
       "title": "Fluid Skeleton",
@@ -15750,6 +15836,33 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "folder-component",
+      "type": "registry:component",
+      "title": "Folder Component",
+      "description": "hover 하면 열리며 안의 파일이 보이는 폴더(folder, file stack). 자료를 묶어 보여줄 때 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/folder-component.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/folder-component.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Rare UI",
+        "sourceUrl": "https://www.rareui.com/components/foldercomponent",
+        "author": "swamimalode07",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -16155,6 +16268,33 @@
         "source": "Animata",
         "sourceUrl": "https://animata.design/docs/text/gibberish-text",
         "author": "codse",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "github-activity",
+      "type": "registry:component",
+      "title": "Github Activity",
+      "description": "GitHub 활동을 잔디로 보여주는 격자(github activity, contribution graph).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/github-activity.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/github-activity.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Rare UI",
+        "sourceUrl": "https://www.rareui.com/components/githubactivity",
+        "author": "swamimalode07",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -17424,6 +17564,31 @@
       }
     },
     {
+      "name": "gravity-letters",
+      "type": "registry:component",
+      "title": "Gravity Letters",
+      "description": "글자가 중력을 받아 떨어지고 쌓이는 텍스트(gravity letters, falling text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/gravity-letters.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gravity-letters.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Rare UI",
+        "sourceUrl": "https://www.rareui.com/components/gravityletters",
+        "author": "swamimalode07",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "grid",
       "type": "registry:component",
       "title": "Grid",
@@ -17573,6 +17738,33 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "grid-reveal",
+      "type": "registry:component",
+      "title": "Grid Reveal",
+      "description": "격자 칸이 차례로 걷히며 내용이 드러나는 효과(grid reveal).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/grid-reveal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/grid-reveal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Rare UI",
+        "sourceUrl": "https://www.rareui.com/components/gridreveal",
+        "author": "swamimalode07",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -36492,6 +36684,34 @@
         "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "step-player",
+      "type": "registry:component",
+      "title": "Step Player",
+      "description": "단계를 재생하듯 넘겨 보여주는 플레이어(step player, walkthrough). 도형이 이어지며 변형된다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "flubber"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/step-player.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/step-player.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Rare UI",
+        "sourceUrl": "https://www.rareui.com/components/stepplayer",
+        "author": "swamimalode07",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
