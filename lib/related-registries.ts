@@ -149,6 +149,108 @@ export const RELATED_REGISTRIES: RelatedRegistry[] = [
     revisitWhen: '원저자가 재배포를 허용하는 라이선스로 바꾸거나 개별 허락을 주면',
   },
   {
+    name: 'React Bits',
+    url: 'https://www.reactbits.dev',
+    summary:
+      '컴포넌트 680개. 하나를 JS/TS × CSS/Tailwind 네 벌로 배포한다. 46,000개가 넘는 별을 받은 이 바닥에서 가장 큰 모음 중 하나이고, ogl·gsap·three 로 만든 효과가 특히 많다.',
+    reason:
+      'MIT 에 Commons Clause 가 붙어 있다. "you do not sell, sublicense, or redistribute the components themselves—whether alone, in a bundle, or as a ported version." 모아서 다시 배포하는 것이 정확히 금지 대상이다.',
+    revisitWhen: '원저자가 재배포를 허용하는 라이선스로 바꾸면',
+  },
+  {
+    name: 'Canvas UI',
+    url: 'https://canvasui.dev',
+    summary:
+      'ASCII·셰이더 계열 캔버스 효과 210개. React·Vue·Svelte·Solid·Preact·바닐라 여섯 벌로 배포한다. React Bits 와 같은 저자다.',
+    reason: 'React Bits 와 같은 MIT + Commons Clause 조항을 쓴다. 재배포가 금지된다.',
+    revisitWhen: '원저자가 재배포를 허용하는 라이선스로 바꾸면',
+  },
+  {
+    name: 'Sora Labs UI',
+    url: 'https://ui.soralabs.studio',
+    summary: 'motion·gsap 기반 컴포넌트 127종.',
+    reason:
+      'MIT + Commons Clause. "you do not sell or redistribute the components themselves in their original form—whether alone or in a bundle."',
+    revisitWhen: '원저자가 재배포를 허용하는 라이선스로 바꾸면',
+  },
+  {
+    name: 'Klarden UI',
+    url: 'https://klarden.vercel.app',
+    summary: 'shadcn 레지스트리로 배포되는 컴포넌트 26종.',
+    reason: '저장소에 LICENSE 파일이 없다. 라이선스를 밝히지 않은 공개 코드는 모든 권리가 유보된다.',
+    revisitWhen: '저장소에 라이선스가 명시되면',
+  },
+  {
+    name: 'Tripled UI',
+    url: 'https://ui.tripled.work/components',
+    summary:
+      'shadcn 레지스트리(/r/registry.json)로 배포되는 282개. 같은 컴포넌트를 -shadcnui 와 -baseui 두 벌로 낸다.',
+    reason:
+      '라이선스를 찾을 수 없다. 공개 저장소도, 라이선스 페이지도, 약관도 없다. 저자(Moumen Soliman) 연락처만 있다.',
+    revisitWhen: '사이트나 저장소에 라이선스가 명시되면',
+  },
+  {
+    name: 'chartcn',
+    url: 'https://chartcn.dev',
+    summary: '스프링 애니메이션이 들어간 차트 프리미티브 15종.',
+    reason:
+      '사이트는 "Open source" 라고 하는데 가리키는 저장소 둘(chartcn/charts, ellsphillips/chartlib)이 모두 404 이고 라이선스 전문이 어디에도 없다.',
+    revisitWhen: '저장소가 공개되거나 라이선스가 명시되면',
+  },
+  {
+    name: 'shadcn-labs 계열',
+    url: 'https://www.emailcn.run',
+    summary:
+      '한 팀이 도메인마다 하나씩 낸 레지스트리 묶음 — emailcn(이메일 338), pdfcn(PDF 79), framecn(영상 101), rtecn(에디터 2), mcpcn(MCP 33), agentcn(에이전트 76), ogimagecn(OG 이미지 22).',
+    reason:
+      '각각 특정 런타임 전용이다. react-email·mjml, takumi-pdf, remotion, tiptap, @base-ui/react 위에서만 동작해서 브라우저에 그대로 렌더되는 이 사이트의 컴포넌트와 층이 다르다.',
+  },
+  {
+    name: 'flagcn',
+    url: 'https://flagcn.dev',
+    summary: 'MIT 로 공개된 국기 컴포넌트 307개.',
+    reason:
+      '나라마다 하나씩인 SVG 에셋이다. 컴포넌트라기보다 아이콘 세트에 가깝고, ad·ae·af 같은 두 글자 이름은 MCP 검색 표면으로 쓸 수 없다.',
+  },
+  {
+    name: 'LocalMode',
+    url: 'https://localmode.ai',
+    summary: '브라우저에서 도는 로컬 AI 를 위한 컴포넌트 106종.',
+    reason:
+      '@localmode/core·react·transformers 라는 자체 SDK 위에서만 동작한다. 그 SDK 를 쓰지 않으면 설치해도 그릴 것이 없다.',
+  },
+  {
+    name: 'Groot Studio',
+    url: 'https://grootstudio.dev/components',
+    summary: 'MIT 로 공개된 블록 26개.',
+    reason: '전부 registry:block 이다. 컴포넌트가 하나도 없어 이 레지스트리의 범위 밖이다.',
+  },
+  {
+    name: 'NumberFlow',
+    url: 'https://number-flow.barvian.me',
+    summary: '숫자가 굴러가며 바뀌는 애니메이션 컴포넌트.',
+    reason:
+      '레지스트리가 아니라 npm 패키지(@number-flow/react)다. 소스를 복사해 담는 방식이 맞지 않고, 이 사이트도 이미 의존성으로 쓰고 있다.',
+  },
+  {
+    name: 'shieldcn',
+    url: 'https://shieldcn.dev',
+    summary: 'shadcn 스타일의 GitHub README 배지·차트 생성기.',
+    reason: '결과물이 SVG·PNG 이미지다. React 컴포넌트가 아니다.',
+  },
+  {
+    name: 'TanCN',
+    url: 'https://tancn.dev',
+    summary: 'TanStack Form·Table 을 빠르게 얹어 주는 스캐폴딩 도구.',
+    reason: '컴포넌트가 아니라 코드 생성 도구다.',
+  },
+  {
+    name: 'dialectcn',
+    url: 'https://dialectcn.xyz',
+    summary: '브랜드에서 따온 shadcn 테마 프리셋 모음.',
+    reason: '컴포넌트가 아니라 색·반경 같은 테마 변수 묶음이다.',
+  },
+  {
     name: 'termcn',
     url: 'https://www.termcn.dev/docs/components',
     summary: 'CLI 앱을 위한 터미널 UI 컴포넌트. Ink와 OpenTUI 렌더러용 121종.',
