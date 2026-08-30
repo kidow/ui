@@ -1,4 +1,5 @@
 allowBuilds:
+  '@central-icons-react/round-outlined-radius-2-stroke-2': false
   '@tsparticles/engine': false
   sharp: false
   unrs-resolver: false

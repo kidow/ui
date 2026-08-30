@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "shimmer",
+  "title": "Shimmer",
+  "description": "내용을 기다리는 동안 흐르는 광택(shimmer, skeleton).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/shimmer.tsx",
+      "content": "\"use client\";\n\n/** Shimmering label — signals the agent is processing. */\nexport function Shimmer({\n  children,\n  className = \"\",\n}: {\n  children: React.ReactNode;\n  className?: string;\n}) {\n  return (\n    <span\n      className={`inline-block bg-clip-text text-transparent ${className}`}\n      style={{\n        backgroundImage:\n          \"linear-gradient(90deg, var(--ink-3) 35%, var(--ink) 50%, var(--ink-3) 65%)\",\n        backgroundSize: \"200% 100%\",\n        animation: \"shimmer-text 1.8s linear infinite\",\n      }}\n    >\n      {children}\n    </span>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/shimmer.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Beautiful UI",
+    "sourceUrl": "https://www.beautifului.dev/#shimmer",
+    "author": "Shane Levine",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

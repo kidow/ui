@@ -2649,6 +2649,34 @@
       }
     },
     {
+      "name": "approval-card",
+      "type": "registry:component",
+      "title": "Approval Card",
+      "description": "AI 의 작업을 승인·거절하는 카드(approval card, human in the loop).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@kidow/glide-menu",
+        "@kidow/beautiful-button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/approval-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/approval-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#approval-card",
+        "author": "Shane Levine",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "arc",
       "type": "registry:component",
       "title": "Arc",
@@ -3524,6 +3552,33 @@
         "source": "KokonutUI",
         "sourceUrl": "https://kokonutui.com/docs/components/beams-background",
         "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "beautiful-button",
+      "type": "registry:component",
+      "title": "Beautiful Button",
+      "description": "Beautiful UI 의 기본 버튼(button). 다른 컴포넌트가 함께 설치한다.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/beautiful-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/beautiful-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#button",
+        "author": "Shane Levine",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -6388,6 +6443,31 @@
       }
     },
     {
+      "name": "chat-composer",
+      "type": "registry:component",
+      "title": "Chat Composer",
+      "description": "첨부와 도구를 갖춘 채팅 입력창(chat composer, message input).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/chat-composer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/chat-composer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#chat-composer",
+        "author": "Shane Levine",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "chat-widget",
       "type": "registry:component",
       "title": "Chat Widget",
@@ -8107,6 +8187,31 @@
       }
     },
     {
+      "name": "context-cards",
+      "type": "registry:component",
+      "title": "Context Cards",
+      "description": "AI 가 참고한 맥락을 카드로 나열한다(context cards, sources).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/context-cards.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/context-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#context-cards",
+        "author": "Shane Levine",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "contribution-graph",
       "type": "registry:component",
       "title": "Contribution Graph",
@@ -9637,6 +9742,33 @@
       }
     },
     {
+      "name": "diff-table",
+      "type": "registry:component",
+      "title": "Diff Table",
+      "description": "변경 전후를 표로 비교한다(diff table, change review).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@kidow/beautiful-button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/diff-table.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/diff-table.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#diff-table",
+        "author": "Shane Levine",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "diff-viewer",
       "type": "registry:component",
       "title": "Diff Viewer",
@@ -10617,6 +10749,31 @@
       }
     },
     {
+      "name": "entity-chip",
+      "type": "registry:component",
+      "title": "Entity Chip",
+      "description": "사람·파일 같은 개체를 표시하는 칩(entity chip, mention chip).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/entity-chip.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/entity-chip.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#entity-chip",
+        "author": "Shane Levine",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "env-table",
       "type": "registry:component",
       "title": "Env Table",
@@ -11553,6 +11710,58 @@
       }
     },
     {
+      "name": "filter-table",
+      "type": "registry:component",
+      "title": "Filter Table",
+      "description": "조건을 걸어 걸러 보는 표(filter table, faceted filter).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/filter-table.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/filter-table.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#filter-table",
+        "author": "Shane Levine",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "fine-tune-card",
+      "type": "registry:component",
+      "title": "Fine Tune Card",
+      "description": "모델 미세조정 진행을 보여주는 카드(fine tune card, training progress).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@kidow/glide-menu"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/fine-tune-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/fine-tune-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#fine-tune-card",
+        "author": "Shane Levine",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "fisheye-infinite-grid",
       "type": "registry:component",
       "title": "Fisheye Infinite Grid",
@@ -12075,6 +12284,31 @@
         "source": "KokonutUI",
         "sourceUrl": "https://kokonutui.com/docs/components/flow-field",
         "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "flowchart",
+      "type": "registry:component",
+      "title": "Flowchart",
+      "description": "단계와 분기를 그리는 흐름도(flowchart, agent graph).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/flowchart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/flowchart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#flowchart",
+        "author": "Shane Levine",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -12837,6 +13071,31 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/glass-folder",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "glide-menu",
+      "type": "registry:component",
+      "title": "Glide Menu",
+      "description": "항목 사이를 미끄러지듯 옮겨 다니는 메뉴(glide menu, sliding menu). AI 인터페이스의 명령 목록에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/glide-menu.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/glide-menu.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#glide-menu",
+        "author": "Shane Levine",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -15664,6 +15923,33 @@
       }
     },
     {
+      "name": "insight-cards",
+      "type": "registry:component",
+      "title": "Insight Cards",
+      "description": "지표와 추세선을 함께 보여주는 인사이트 카드(insight cards, metric cards).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "liveline"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/insight-cards.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/insight-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#insight-cards",
+        "author": "Shane Levine",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "integrations",
       "type": "registry:component",
       "title": "Integrations",
@@ -17949,6 +18235,31 @@
         "source": "Cult UI",
         "sourceUrl": "https://www.cult-ui.com/docs/components/loading-carousel",
         "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "loading-state",
+      "type": "registry:component",
+      "title": "Loading State",
+      "description": "경과 시간과 광택을 함께 보여주는 로딩 상태(loading state, elapsed).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/loading-state.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/loading-state.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#loading-state",
+        "author": "Shane Levine",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -22616,6 +22927,33 @@
       }
     },
     {
+      "name": "prompt-bar",
+      "type": "registry:component",
+      "title": "Prompt Bar",
+      "description": "프롬프트 입력 바(prompt bar, ai input).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "glimm"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/prompt-bar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/prompt-bar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#prompt-bar",
+        "author": "Shane Levine",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "pull-to-refresh",
       "type": "registry:component",
       "title": "Pull To Refresh",
@@ -24034,6 +24372,67 @@
         "source": "EvilCharts",
         "sourceUrl": "https://evilcharts.com/docs",
         "author": "legions-developer",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "recommendation-card",
+      "type": "registry:component",
+      "title": "Recommendation Card",
+      "description": "AI 가 제안을 근거와 함께 보여주는 카드(recommendation card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@kidow/entity-chip",
+        "@kidow/value-pill",
+        "@kidow/beautiful-button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/recommendation-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/recommendation-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#recommendation-card",
+        "author": "Shane Levine",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "records-table",
+      "type": "registry:component",
+      "title": "Records Table",
+      "description": "레코드를 다루는 표(records table, data table).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@kidow/glide-menu"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/records-table/RecordsTable.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/records-table/RecordsTable.tsx"
+        },
+        {
+          "path": "registry/kidow/records-table/records-table.css",
+          "type": "registry:component",
+          "target": "components/kidow/records-table/records-table.css"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#records-table",
+        "author": "Shane Levine",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -25629,6 +26028,33 @@
       }
     },
     {
+      "name": "search",
+      "type": "registry:component",
+      "title": "Search",
+      "description": "결과를 즉시 보여주는 검색(search, instant search).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@kidow/glide-menu"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/search.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/search.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#search",
+        "author": "Shane Levine",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "search-modal",
       "type": "registry:component",
       "title": "Search Modal",
@@ -25734,6 +26160,37 @@
         "source": "beui",
         "sourceUrl": "https://beui.dev/components/select-morph",
         "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "selection-actions",
+      "type": "registry:component",
+      "title": "Selection Actions",
+      "description": "선택한 항목에 대한 동작 묶음(selection actions, bulk actions).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "iconoir-react"
+      ],
+      "registryDependencies": [
+        "@kidow/shimmer",
+        "@kidow/stream-text",
+        "@kidow/beautiful-button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/selection-actions.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/selection-actions.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#selection-actions",
+        "author": "Shane Levine",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -26009,6 +26466,31 @@
         "source": "Cult UI",
         "sourceUrl": "https://www.cult-ui.com/docs/components/shift-card",
         "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "shimmer",
+      "type": "registry:component",
+      "title": "Shimmer",
+      "description": "내용을 기다리는 동안 흐르는 광택(shimmer, skeleton).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/shimmer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shimmer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#shimmer",
+        "author": "Shane Levine",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -26407,6 +26889,40 @@
         "source": "Cult UI",
         "sourceUrl": "https://www.cult-ui.com/docs/components/side-panel",
         "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "sidebar-nav",
+      "type": "registry:component",
+      "title": "Sidebar Nav",
+      "description": "접었다 펴는 사이드바 내비게이션(sidebar nav).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@central-icons-react/round-outlined-radius-2-stroke-2"
+      ],
+      "registryDependencies": [
+        "@kidow/glide-menu"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sidebar-nav/SidebarNav.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sidebar-nav/SidebarNav.tsx"
+        },
+        {
+          "path": "registry/kidow/sidebar-nav/sidebar-nav.css",
+          "type": "registry:component",
+          "target": "components/kidow/sidebar-nav/sidebar-nav.css"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#sidebar-nav",
+        "author": "Shane Levine",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -28835,6 +29351,31 @@
       }
     },
     {
+      "name": "stream-text",
+      "type": "registry:component",
+      "title": "Stream Text",
+      "description": "한 글자씩 흘러나오는 스트리밍 텍스트(stream text, token streaming). LLM 응답 표시에 쓴다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/stream-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stream-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#stream-text",
+        "author": "Shane Levine",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "streaming-response",
       "type": "registry:component",
       "title": "Streaming Response",
@@ -28890,6 +29431,31 @@
         "source": "beui",
         "sourceUrl": "https://beui.dev/components/streaming-response",
         "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "streaming-text",
+      "type": "registry:component",
+      "title": "Streaming Text",
+      "description": "토큰이 도착하는 대로 이어 붙이는 텍스트(streaming text, llm output).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/streaming-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/streaming-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#streaming-text",
+        "author": "Shane Levine",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -29789,6 +30355,31 @@
         "sourceUrl": "https://ui.spectrumhq.in/docs/components/task-checkbox",
         "author": "arihantcodes",
         "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "task-rows",
+      "type": "registry:component",
+      "title": "Task Rows",
+      "description": "작업 진행 상태를 줄로 보여주는 목록(task rows, agent steps).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/task-rows.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/task-rows.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#task-rows",
+        "author": "Shane Levine",
+        "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -31133,6 +31724,31 @@
       }
     },
     {
+      "name": "thinking-state",
+      "type": "registry:component",
+      "title": "Thinking State",
+      "description": "AI 가 생각하는 동안의 상태 표시(thinking state, reasoning).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/thinking-state.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/thinking-state.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#thinking-state",
+        "author": "Shane Levine",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "three-d-carousel",
       "type": "registry:component",
       "title": "Three D Carousel",
@@ -31506,6 +32122,31 @@
         "source": "beui",
         "sourceUrl": "https://beui.dev/components/tool-approval",
         "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "tool-chips",
+      "type": "registry:component",
+      "title": "Tool Chips",
+      "description": "AI 가 쓴 도구를 칩으로 나열하는 표시(tool chips, tool calls).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/tool-chips.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tool-chips.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#tool-chips",
+        "author": "Shane Levine",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -32799,6 +33440,31 @@
         "source": "KokonutUI",
         "sourceUrl": "https://kokonutui.com/docs/components/v0-button",
         "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "value-pill",
+      "type": "registry:component",
+      "title": "Value Pill",
+      "description": "값을 알약 모양으로 보여주는 표시(value pill, metric pill).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/value-pill.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/value-pill.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Beautiful UI",
+        "sourceUrl": "https://www.beautifului.dev/#value-pill",
+        "author": "Shane Levine",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
