@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animation-variants",
+  "title": "Animation Variants",
+  "description": "Systaliko 텍스트 애니메이션이 공유하는 motion variants 모음(animation variants). 컴포넌트와 함께 설치된다.",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/animation-variants.tsx",
+      "content": "\"use client\";\n\n/**\n * @deprecated Use `AnimationVariantsT` instead.\n */\nexport type AnimationT =\n  | 'left'\n  | 'right'\n  | 'top'\n  | 'bottom'\n  | 'z'\n  | 'blur'\n  | 'default';\n\n/**\n * @deprecated Use `animation_variants` instead.\n */\nexport const ANIMATION_VARIANTS = {\n  left: {\n    hidden: { x: '-100%', opacity: 0 },\n    visible: { x: 0, opacity: 1 },\n  },\n  right: {\n    hidden: { x: '100%', opacity: 0 },\n    visible: { x: 0, opacity: 1 },\n  },\n  top: {\n    hidden: { y: '-100%', opacity: 0 },\n    visible: { y: 0, opacity: 1 },\n  },\n  bottom: {\n    hidden: { y: '100%', opacity: 0 },\n    visible: { y: 0, opacity: 1 },\n  },\n  z: {\n    hidden: { scale: 0, opacity: 0 },\n    visible: { scale: 1, opacity: 1 },\n  },\n  blur: {\n    hidden: { filter: 'blur(10px)', opacity: 0 },\n    visible: { filter: 'blur(0px)', opacity: 1 },\n  },\n  default: {\n    hidden: { opacity: 0 },\n    visible: { opacity: 1 },\n  },\n} as const;\n\nexport type AnimationVariantsT =\n  | 'left'\n  | 'right'\n  | 'top'\n  | 'bottom'\n  | 'z'\n  | 'blur'\n  | 'opacity'\n  | 'rotateX'\n  | 'rotateY'\n  | 'rotateZ';\n\nexport const animation_variants = {\n  left: {\n    hidden: { x: '-100%', opacity: 0 },\n    visible: { x: 0, opacity: 1 },\n  },\n  right: {\n    hidden: { x: '100%', opacity: 0 },\n    visible: { x: 0, opacity: 1 },\n  },\n  top: {\n    hidden: { y: '-100%', opacity: 0 },\n    visible: { y: 0, opacity: 1 },\n  },\n  bottom: {\n    hidden: { y: '100%', opacity: 0 },\n    visible: { y: 0, opacity: 1 },\n  },\n  z: {\n    hidden: { scale: 0, opacity: 0 },\n    visible: { scale: 1, opacity: 1 },\n  },\n  blur: {\n    hidden: { filter: 'blur(10px)', opacity: 0 },\n    visible: { filter: 'blur(0px)', opacity: 1 },\n  },\n  rotateX: {\n    hidden: { rotateX: '-180deg', opacity: 0 },\n    visible: { rotateX: '0deg', opacity: 1 },\n  },\n  rotateY: {\n    hidden: { rotateY: '-180deg', opacity: 0 },\n    visible: { rotateY: '0deg', opacity: 1 },\n  },\n  rotateZ: {\n    hidden: { rotateZ: '-180deg', opacity: 0 },\n    visible: { rotateZ: '0deg', opacity: 1 },\n  },\n  opacity: {\n    hidden: { opacity: 0 },\n    visible: { opacity: 1 },\n  },\n} as const;\n",
+      "type": "registry:component",
+      "target": "components/kidow/animation-variants.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Systaliko UI",
+    "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/animation-variants",
+    "author": "YoucefBnm",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "개발자 도구"
+  ],
+  "type": "registry:component"
+}

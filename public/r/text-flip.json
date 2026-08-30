@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-flip",
+  "title": "Text Flip",
+  "description": "글자가 뒤집히며 바뀌는 텍스트(text flip, flip words).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/text-flip.tsx",
+      "content": "\"use client\";\n\nimport { cn } from '@/lib/utils';\nimport * as React from 'react';\n\ninterface TextFlipProps extends React.HTMLAttributes<HTMLElement> {\n  as?: React.ElementType;\n}\n\nexport function TextFlip({\n  as: Component = 'span',\n  className,\n  style,\n  children,\n  ...props\n}: TextFlipProps) {\n  return (\n    <Component\n      className={cn(\n        'group hover:rotate-x-90 relative size-full py-0.5 px-1.5 text-nowrap inline-flex justify-center items-center transition-transform duration-700 ease-[cubic-bezier(0.75,0,0.24,1)] backface-hidden',\n        className,\n      )}\n      style={{\n        transformStyle: 'preserve-3d',\n        ...style,\n      }}\n      {...props}\n    >\n      <span className=\"group-hover:-translate-y-full group-hover:opacity-0 transition-transform duration-700 ease-[cubic-bezier(0.75,0,0.24,1)]\">\n        {children}\n      </span>\n      <span\n        className={cn(\n          'absolute inset-0 -rotate-x-90 opacity-0',\n          'group-hover:opacity-100 group-hover:translate-y-0',\n          'transition-transform duration-700 ease-[cubic-bezier(0.75,0,0.24,1)]',\n          'flex items-center justify-center',\n          'transform-[rotateX(-90deg)_translateY(50%)] origin-[center_bottom]',\n        )}\n      >\n        {children}\n      </span>\n    </Component>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/text-flip.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Systaliko UI",
+    "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/text-flip",
+    "author": "YoucefBnm",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

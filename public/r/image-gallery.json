@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "image-gallery",
+  "title": "Image Gallery",
+  "description": "격자로 펼치는 이미지 갤러리(image gallery, photo grid).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/image-gallery.tsx",
+      "content": "\"use client\";\n\nimport React, { useState } from \"react\";\nimport Image from \"next/image\";\nimport { motion } from \"motion/react\";\n\nexport interface ImageType {\n  id: number;\n  src: string;\n  alt: string;\n  description: string;\n}\n\nconst images: ImageType[] = [\n  {\n    id: 1,\n    src: \"https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2\",\n    alt: \"Mountains\",\n    description: \"19 July 2024\",\n  },\n  {\n    id: 2,\n    src: \"https://images.pexels.com/photos/459203/pexels-photo-459203.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2\",\n    alt: \"Bridge\",\n    description: \"11 Nov 2022\",\n  },\n  {\n    id: 3,\n    src: \"https://images.pexels.com/photos/1766838/pexels-photo-1766838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2\",\n    alt: \"River\",\n    description: \"18 Oct 2023\",\n  },\n];\n\nconst ImageGallery: React.FC = () => {\n  const [selectedImage, setSelectedImage] = useState<ImageType | null>(null);\n\n  const handleImageClick = (image: ImageType) => {\n    setSelectedImage(image);\n  };\n\n  const handleCloseModal = () => {\n    setSelectedImage(null);\n  };\n\n  return (\n    <div className={`relative w-full py-4 flex flex-col items-center `}>\n      <div className=\"absolute inset-0 opacity-5 mix-blend-overlay\"></div>\n      <div className=\"relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 w-full h-full\">\n        {images.map((image) => (\n          <motion.div\n            key={image.id}\n            className=\"relative w-full h-64 group overflow-hidden rounded-lg shadow-lg transition-opacity duration-300 cursor-pointer\"\n            transition={{ duration: 0.3 }}\n            onClick={() => handleImageClick(image)}\n          >\n            <Image\n              src={image.src}\n              alt={image.alt}\n              fill\n              style={{ objectFit: \"cover\" }}\n              quality={75}\n              className=\"transition-opacity duration-300\"\n            />\n            <div className=\"absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-70 transition-opacity duration-300\"></div>\n            <div className=\"absolute bottom-4 left-4 text-white text-lg group-hover:opacity-100 opacity-0 transition-opacity duration-300\">\n              <p className=\"font-semibold\">{image.alt}</p>\n              <p className=\"text-sm font-normal\">{image.description}</p>\n            </div>\n          </motion.div>\n        ))}\n      </div>\n\n      {selectedImage && (\n        <motion.div\n          className=\"fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50\"\n          initial={{ opacity: 0 }}\n          animate={{ opacity: 1 }}\n          exit={{ opacity: 0 }}\n          onClick={handleCloseModal}\n        >\n          <motion.div\n            className=\"relative max-w-3xl w-full h-auto max-h-[80vh]\"\n            initial={{ scale: 0.8 }}\n            animate={{ scale: 1 }}\n            exit={{ scale: 0.8 }}\n            onClick={(e) => e.stopPropagation()}\n          >\n            <Image\n              src={selectedImage.src}\n              alt={selectedImage.alt}\n              width={1200}\n              height={800}\n              quality={85}\n              className=\"rounded-lg w-full h-auto max-h-[80vh] object-contain\"\n            />\n          </motion.div>\n        </motion.div>\n      )}\n    </div>\n  );\n};\n\nexport default ImageGallery;\n",
+      "type": "registry:component",
+      "target": "components/kidow/image-gallery.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Serenity UI",
+    "sourceUrl": "https://serenity-ui.com",
+    "author": "ayushmxxn",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

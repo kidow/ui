@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-follow-mouse",
+  "title": "Use Follow Mouse",
+  "description": "마우스 위치를 스프링으로 따라가는 훅(use follow mouse).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/use-follow-mouse.ts",
+      "content": "\"use client\";\n\nimport { frame, SpringOptions, useMotionValue, useSpring } from 'motion/react';\nimport { useEffect, useRef } from 'react';\n\ninterface UseFollowMouseProps {\n  springConfig?: SpringOptions;\n}\nexport function useFollowMouse(props: UseFollowMouseProps) {\n  const { springConfig } = props;\n  const x = useMotionValue(0);\n  const y = useMotionValue(0);\n  const cursorRef = useRef<HTMLDivElement | null>(null);\n  const containerRef = useRef<HTMLDivElement | null>(null);\n\n  useEffect(() => {\n    const followMouse = (e: MouseEvent) => {\n      const cursor = cursorRef.current;\n      const container = containerRef.current;\n      if (!cursor || !container) return;\n\n      frame.read(() => {\n        const containerRect = container.getBoundingClientRect();\n        const relativeX =\n          e.clientX - containerRect.left - cursor.offsetWidth / 2;\n        const relativeY =\n          e.clientY - containerRect.top - cursor.offsetHeight / 2;\n\n        x.set(relativeX);\n        y.set(relativeY);\n      });\n    };\n    containerRef.current?.addEventListener('mousemove', followMouse);\n    return () =>\n      containerRef.current?.removeEventListener('mousemove', followMouse);\n  }, []);\n\n  const cursorXSpring = useSpring(x, springConfig);\n  const cursorYSpring = useSpring(y, springConfig);\n\n  return {\n    containerRef,\n    cursorRef,\n    cursorXSpring,\n    cursorYSpring,\n  };\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/use-follow-mouse.ts"
+    }
+  ],
+  "meta": {
+    "source": "Systaliko UI",
+    "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/use-follow-mouse",
+    "author": "YoucefBnm",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "개발자 도구"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pulse",
+  "title": "Pulse",
+  "description": "맥동하는 점 표시(pulse, ping indicator). 진행 중·라이브 상태를 알린다.",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/pulse.tsx",
+      "content": "\"use client\";\n\nimport { cn } from '@/lib/utils';\nimport React from 'react';\n\nexport function Pulse({\n  className,\n  ...props\n}: React.HTMLAttributes<HTMLDivElement>) {\n  return (\n    <div\n      className={cn(\n        'relative flex size-2 [&>*:first-child]:bg-primary/50 [&>*:last-child]:bg-primary/90',\n        className,\n      )}\n      {...props}\n    >\n      <span className=\"animate-ping absolute inline-flex size-full rounded-full\" />\n      <span className=\"relative inline-flex rounded-full size-full \" />\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/pulse.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Systaliko UI",
+    "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/pulse",
+    "author": "YoucefBnm",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

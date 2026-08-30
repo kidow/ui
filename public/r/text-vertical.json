@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-vertical",
+  "title": "Text Vertical",
+  "description": "세로로 흐르며 바뀌는 텍스트(vertical text, rolling words).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/text-vertical.tsx",
+      "content": "\"use client\";\n\nimport { cn } from '@/lib/utils';\nimport * as React from 'react';\n\ntype ElementType = React.ElementType;\n\ninterface TextVerticalProps extends React.HTMLAttributes<HTMLElement> {\n  as?: ElementType;\n}\n\nexport const textVerticalStyle = 'size-min -rotate-180 whitespace-nowrap';\n\nexport function TextVertical({\n  as: Component = 'div',\n  className,\n  style,\n  ...props\n}: TextVerticalProps) {\n  return (\n    <Component\n      className={cn(textVerticalStyle, className)}\n      style={{\n        writingMode: 'vertical-rl',\n        ...style,\n      }}\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/text-vertical.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Systaliko UI",
+    "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/text-vertical",
+    "author": "YoucefBnm",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

@@ -91,6 +91,37 @@ export const RELATED_REGISTRIES: RelatedRegistry[] = [
       '브라우저 DOM이 아니라 PDF 문서로 렌더된다. Tailwind를 쓰지 않고 shadcn 레지스트리도 아니며(자체 pdfx-cli), 라이선스 표기를 찾지 못했다.',
   },
   {
+    name: 'Skiper UI',
+    url: 'https://skiper-ui.com/components',
+    summary: 'shadcn/ui 를 위한 "흔치 않은" 컴포넌트. 무료·유료(Pro)를 나눠 판다.',
+    reason:
+      'Aceternity UI 와 같은 약관 문구를 쓴다. "All intellectual property rights are reserved" 아래 Republish · Reproduce, duplicate or copy · Redistribute 를 모두 금지한다. 오픈소스 라이선스도 공개 저장소도 없다.',
+    revisitWhen: '오픈소스 라이선스로 공개하면',
+  },
+  {
+    name: 'ReUI',
+    url: 'https://reui.io',
+    summary:
+      'MIT 로 공개된 레지스트리. 항목이 1,700개인데 1,621개가 페이지 블록(app-shell-1..21, auth-1..N 같은 번호 변형)이고 컴포넌트는 75개다.',
+    reason:
+      '컴포넌트 75개 중 28개가 @base-ui/react 에 의존한다. 그것도 autocomplete·data-grid·event-calendar·gantt·kanban·tree·sortable 처럼 이 레지스트리에 없어서 담을 만한 것들이 전부 그렇다. 이 프로젝트는 radix-nova 프리셋이라 담으면 프리미티브 런타임이 두 벌 공존한다. 나머지 블록 1,621개는 페이지 템플릿이라 컴포넌트 레지스트리의 범위 밖이다.',
+    revisitWhen: 'Base UI 가 아닌 구현을 제공하거나, 이 프로젝트가 Base UI 로 옮겨가면',
+  },
+  {
+    name: 'HextaUI',
+    url: 'https://www.hextaui.com',
+    summary: 'MIT 로 공개된 레지스트리, 139개.',
+    reason:
+      '139개 중 51개가 shadcn 기본 컴포넌트를 같은 이름으로 다시 만든 것이고(accordion·button·card…), 나머지 86개는 auth-login-form·billing-invoice-list·team-dashboard 처럼 화면 단위 블록이다. 컴포넌트로서 여기 없는 것은 사실상 없다.',
+  },
+  {
+    name: 'blocks.so',
+    url: 'https://blocks.so',
+    summary: 'MIT 로 공개된 블록 모음 77개.',
+    reason:
+      '전부 ai-01, dialog-03, file-upload-02 같은 번호가 붙은 화면 블록이다. 컴포넌트가 아니라 섹션 조합이고, 이름만으로는 MCP 가 무엇인지 알 수 없어 검색 표면으로도 쓸 수 없다.',
+  },
+  {
     name: 'Aceternity UI',
     url: 'https://ui.aceternity.com/components',
     summary:

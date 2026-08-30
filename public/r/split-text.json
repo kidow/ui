@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "split-text",
+  "title": "Split Text",
+  "description": "문장을 단어와 글자로 쪼개는 유틸(split text). 글자 단위 애니메이션의 기반이다.",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/split-text.ts",
+      "content": "\"use client\";\n\ninterface SplitTextResult {\n  words: string[];\n  characters: string[];\n  wordCount: number;\n  characterCount: number;\n}\n\n/**\n * Splits text into words and characters while preserving spaces\n * @param text - The text to split\n * @returns Object containing words array, characters array, and counts\n * @example\n * const result = splitText(\"Hello World\");\n * // result = {\n * //   words: [\"Hello \", \"World \"],\n * //   characters: [\"H\", \"e\", \"l\", \"l\", \"o\", \" \", \"W\", \"o\", \"r\", \"l\", \"d\", \" \"],\n * //   wordCount: 2,\n * //   characterCount: 12\n * // }\n */\nexport function splitText(text: string): SplitTextResult {\n  // Handle empty or whitespace-only strings\n  if (!text?.trim()) {\n    return {\n      words: [],\n      characters: [],\n      wordCount: 0,\n      characterCount: 0,\n    };\n  }\n\n  // Split into words and preserve spaces\n  const words = text.split(' ').map((word) => word.concat(' '));\n\n  // Split into characters\n  const characters = words.map((word) => word.split('')).flat(1);\n\n  return {\n    words,\n    characters,\n    wordCount: words.length,\n    characterCount: characters.length,\n  };\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/split-text.ts"
+    }
+  ],
+  "meta": {
+    "source": "Systaliko UI",
+    "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/split-text",
+    "author": "YoucefBnm",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "개발자 도구"
+  ],
+  "type": "registry:component"
+}

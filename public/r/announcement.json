@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "announcement",
+  "title": "Announcement",
+  "description": "새 소식을 알리는 알약 모양 배지(announcement, badge banner). \"새 기능 출시\" 처럼 링크와 함께 상단에 놓는다.",
+  "dependencies": [],
+  "registryDependencies": [
+    "badge"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/announcement/index.tsx",
+      "content": "\"use client\";\n\nimport type { ComponentProps, HTMLAttributes } from \"react\";\nimport { Badge } from \"@/components/ui/badge\";\nimport { cn } from \"@/lib/utils\";\n\nexport type AnnouncementProps = ComponentProps<typeof Badge> & {\n  themed?: boolean;\n};\n\nexport const Announcement = ({\n  variant = \"outline\",\n  themed = false,\n  className,\n  ...props\n}: AnnouncementProps) => (\n  <Badge\n    className={cn(\n      \"group max-w-full gap-2 rounded-full bg-background px-3 py-0.5 font-medium shadow-sm transition-all\",\n      \"hover:shadow-md\",\n      themed && \"announcement-themed border-foreground/5\",\n      className\n    )}\n    variant={variant}\n    {...props}\n  />\n);\n\nexport type AnnouncementTagProps = HTMLAttributes<HTMLDivElement>;\n\nexport const AnnouncementTag = ({\n  className,\n  ...props\n}: AnnouncementTagProps) => (\n  <div\n    className={cn(\n      \"-ml-2.5 shrink-0 truncate rounded-full bg-foreground/5 px-2.5 py-1 text-xs\",\n      \"group-[.announcement-themed]:bg-background/60\",\n      className\n    )}\n    {...props}\n  />\n);\n\nexport type AnnouncementTitleProps = HTMLAttributes<HTMLDivElement>;\n\nexport const AnnouncementTitle = ({\n  className,\n  ...props\n}: AnnouncementTitleProps) => (\n  <div\n    className={cn(\"flex items-center gap-1 truncate py-1\", className)}\n    {...props}\n  />\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/announcement/index.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Kibo UI",
+    "sourceUrl": "https://www.kibo-ui.com/components/announcement",
+    "author": "haydenbleasel",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "마케팅 섹션"
+  ],
+  "type": "registry:component"
+}

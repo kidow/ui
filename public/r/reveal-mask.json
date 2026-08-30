@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "reveal-mask",
+  "title": "Reveal Mask",
+  "description": "마스크가 열리며 내용이 드러나는 효과(reveal mask, clip path reveal).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/reveal-mask.tsx",
+      "content": "'use client';\nimport { HTMLMotionProps, motion, Transition, Variants } from 'motion/react';\nimport { cn } from '@/lib/utils';\nimport React from 'react';\n\nconst revealMaskVariants = {\n  hidden: {\n    maskImage: `linear-gradient(to bottom, black 100%, transparent 100%)`,\n    maskSize: `100% 4%`,\n    maskRepeat: 'repeat-y',\n  },\n  visible: {\n    maskImage: `linear-gradient(to bottom, black 0%, transparent 0%)`,\n  },\n} satisfies Variants;\nconst TRANSITION = {\n  duration: 1,\n  ease: [0.22, 1, 0.36, 1],\n} as Transition;\nexport function RevealMask({\n  className,\n  transition = TRANSITION,\n  ...props\n}: HTMLMotionProps<'div'>) {\n  return (\n    <motion.div\n      className={cn('pointer-events-none z-50 bg-background', className)}\n      variants={revealMaskVariants}\n      initial={'hidden'}\n      whileInView=\"visible\"\n      viewport={{ once: true, amount: 0.4 }}\n      transition={transition}\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/reveal-mask.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Systaliko UI",
+    "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/reveal-mask",
+    "author": "YoucefBnm",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

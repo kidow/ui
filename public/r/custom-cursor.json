@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "custom-cursor",
+  "title": "Custom Cursor",
+  "description": "마우스를 따라다니는 커스텀 커서(custom cursor, follow cursor). 스프링으로 부드럽게 따라온다.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/custom-cursor.tsx",
+      "content": "'use client';\nimport * as React from 'react';\nimport { cn } from '@/lib/utils';\nimport {\n  AnimatePresence,\n  HTMLMotionProps,\n  motion,\n  MotionStyle,\n  MotionValue,\n} from 'motion/react';\nimport { useFollowMouse } from '@/components/kidow/use-follow-mouse';\n\nconst springConfig = {\n  damping: 25,\n  stiffness: 250,\n  mass: 1,\n  restSpeed: 0.01,\n  restDelta: 0.01,\n  duration: 0.3,\n};\n\ninterface CustomCursorContextType {\n  cursorRef: React.RefObject<HTMLDivElement | null>;\n  containerRef: React.RefObject<HTMLDivElement | null>;\n  cursorXSpring: MotionValue<number>;\n  cursorYSpring: MotionValue<number>;\n  cursorStyle?: MotionStyle;\n  setCursorStyle: React.Dispatch<React.SetStateAction<MotionStyle | undefined>>;\n  cursorChildren?: React.ReactNode;\n  setCursorChildren: React.Dispatch<React.SetStateAction<React.ReactNode>>;\n}\n\nconst CustomCursorContext = React.createContext<CustomCursorContextType | null>(\n  null,\n);\n\nexport const CustomCursorProvider = ({\n  children,\n}: {\n  children:\n    | React.ReactNode\n    | ((context: CustomCursorContextType) => React.ReactNode);\n}) => {\n  const { cursorRef, containerRef, cursorXSpring, cursorYSpring } =\n    useFollowMouse({\n      springConfig,\n    });\n  const [cursorStyle, setCursorStyle] = React.useState<MotionStyle>();\n  const [cursorChildren, setCursorChildren] = React.useState<React.ReactNode>();\n  const value = {\n    cursorRef,\n    containerRef,\n    cursorXSpring,\n    cursorYSpring,\n    cursorStyle,\n    setCursorStyle,\n    cursorChildren,\n    setCursorChildren,\n  };\n  return (\n    <CustomCursorContext.Provider value={value}>\n      {typeof children === 'function' ? children(value) : children}\n    </CustomCursorContext.Provider>\n  );\n};\n\nexport const useCustomCursor = () => {\n  const context = React.useContext(CustomCursorContext);\n  if (!context) {\n    throw new Error(\n      'useCustomCursor must be used within a CustomCursorProvider',\n    );\n  }\n  return context;\n};\n\nexport function CustomCursor({\n  className,\n  style,\n  ...props\n}: HTMLMotionProps<'div'>) {\n  const {\n    cursorRef,\n    cursorXSpring,\n    cursorYSpring,\n    cursorChildren,\n    cursorStyle,\n  } = useCustomCursor();\n  return (\n    <motion.div\n      className={cn(\n        'pointer-events-none absolute top-0 left-0 z-[999] grid place-items-center',\n        className,\n      )}\n      ref={cursorRef}\n      layout\n      style={{\n        y: cursorYSpring,\n        x: cursorXSpring,\n        ...style,\n        ...cursorStyle,\n      }}\n      exit={{ transition: { duration: 0.3 } }}\n      {...props}\n    >\n      <AnimatePresence mode=\"sync\">{cursorChildren}</AnimatePresence>\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/custom-cursor.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Systaliko UI",
+    "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/custom-cursor",
+    "author": "YoucefBnm",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

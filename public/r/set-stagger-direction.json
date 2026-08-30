@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "set-stagger-direction",
+  "title": "Set Stagger Direction",
+  "description": "글자·단어의 시차 순서를 정하는 유틸(stagger direction). 앞에서부터·가운데부터·무작위 등을 고른다.",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/set-stagger-direction.ts",
+      "content": "\"use client\";\n\nexport type StaggerDirection = 'first' | 'center' | 'last' | 'random';\n\nexport interface StaggerOptions {\n  direction?: StaggerDirection;\n  staggerValue?: number;\n  totalItems: number;\n  index: number;\n}\n\nexport function setStaggerDirection({\n  direction = 'first',\n  staggerValue = 0.02,\n  totalItems,\n  index,\n}: StaggerOptions): number {\n  switch (direction) {\n    case 'first':\n      // Linear progression from start\n      return index * staggerValue;\n\n    case 'center':\n      // Stagger from the middle outward\n      const middleIndex = Math.floor(totalItems / 2);\n      return Math.abs(index - middleIndex) * staggerValue;\n\n    case 'last':\n      // Linear progression from end\n      return (totalItems - 1 - index) * staggerValue;\n\n    case 'random':\n      // Random stagger between index and totalItems\n      const min = Math.min(index, totalItems);\n      const max = Math.max(index, totalItems);\n      return Math.random() * (max - min) * staggerValue;\n\n    default:\n      return 0;\n  }\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/set-stagger-direction.ts"
+    }
+  ],
+  "meta": {
+    "source": "Systaliko UI",
+    "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/set-stagger-direction",
+    "author": "YoucefBnm",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "개발자 도구"
+  ],
+  "type": "registry:component"
+}

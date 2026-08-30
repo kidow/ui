@@ -990,6 +990,31 @@
       }
     },
     {
+      "name": "animated-border",
+      "type": "registry:component",
+      "title": "Animated Border",
+      "description": "테두리를 따라 빛이 도는 래퍼(animated border, gradient border). 카드나 버튼을 감싸 강조한다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/animated-border.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-border.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/animated-border",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "animated-bubble-particles",
       "type": "registry:component",
       "title": "Animated Bubble Particles",
@@ -1764,6 +1789,31 @@
       }
     },
     {
+      "name": "animation-variants",
+      "type": "registry:component",
+      "title": "Animation Variants",
+      "description": "Systaliko 텍스트 애니메이션이 공유하는 motion variants 모음(animation variants). 컴포넌트와 함께 설치된다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/animation-variants.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animation-variants.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/animation-variants",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "anime-navbar",
       "type": "registry:component",
       "title": "Anime Navbar",
@@ -1787,6 +1837,33 @@
         "source": "Voxlet UI",
         "sourceUrl": "https://ui.voxletstudio.com/components/anime-navbar",
         "author": "voxletlabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "announcement",
+      "type": "registry:component",
+      "title": "Announcement",
+      "description": "새 소식을 알리는 알약 모양 배지(announcement, badge banner). \"새 기능 출시\" 처럼 링크와 함께 상단에 놓는다.",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/announcement/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/announcement/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/announcement",
+        "author": "haydenbleasel",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -2229,6 +2306,31 @@
       }
     },
     {
+      "name": "avatar-stack",
+      "type": "registry:component",
+      "title": "Avatar Stack",
+      "description": "아바타를 겹쳐 보여주는 묶음(avatar stack, avatar group). 참여자·팀원 목록을 좁은 자리에 담는다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/avatar-stack/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/avatar-stack/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/avatar-stack",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "awwwards-nav",
       "type": "registry:component",
       "title": "Awwwards Nav",
@@ -2332,6 +2434,36 @@
         "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "banner",
+      "type": "registry:component",
+      "title": "Banner",
+      "description": "닫을 수 있는 상단 알림 배너(banner, announcement bar). 공지·경고·프로모션에 쓴다.",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/banner/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/banner/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/banner",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -2666,6 +2798,58 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "brand-section",
+      "type": "registry:component",
+      "title": "Brand Section",
+      "description": "로고를 나열해 보여주는 브랜드 섹션(brand section, logo cloud, trusted by).",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/brand-section.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/brand-section.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Serenity UI",
+        "sourceUrl": "https://serenity-ui.com",
+        "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "bubble-effect-button",
+      "type": "registry:component",
+      "title": "Bubble Effect Button",
+      "description": "누르면 거품이 퍼지는 버튼(bubble effect button, ripple bubbles).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "geist"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/bubble-effect-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bubble-effect-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Serenity UI",
+        "sourceUrl": "https://serenity-ui.com",
+        "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -3387,6 +3571,33 @@
       }
     },
     {
+      "name": "card-curtain-reveal",
+      "type": "registry:component",
+      "title": "Card Curtain Reveal",
+      "description": "커튼이 걷히듯 내용이 드러나는 카드(curtain reveal, hover card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/card-curtain-reveal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/card-curtain-reveal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/card-curtain-reveal",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "card-flip",
       "type": "registry:component",
       "title": "Card Flip",
@@ -3414,6 +3625,33 @@
       }
     },
     {
+      "name": "card-hover-reveal",
+      "type": "registry:component",
+      "title": "Card Hover Reveal",
+      "description": "hover 하면 숨어 있던 정보가 올라오는 카드(hover reveal card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/card-hover-reveal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/card-hover-reveal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/card-hover-reveal",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "card-stack",
       "type": "registry:component",
       "title": "Card Stack",
@@ -3436,6 +3674,59 @@
         "source": "KokonutUI",
         "sourceUrl": "https://kokonutui.com/docs/components/card-stack",
         "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "card-testimonial",
+      "type": "registry:component",
+      "title": "Card Testimonial",
+      "description": "아바타·별점과 함께 후기를 보여주는 카드(testimonial card, review card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar",
+        "card"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/card-testimonial.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/card-testimonial.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/card-testimonial",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "carousel-360",
+      "type": "registry:component",
+      "title": "Carousel 360",
+      "description": "원통을 따라 360도로 도는 캐러셀(360 carousel, circular carousel).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/carousel-360.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/carousel-360.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Serenity UI",
+        "sourceUrl": "https://serenity-ui.com",
+        "author": "ayushmxxn",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -3639,6 +3930,61 @@
         "source": "Voxlet UI",
         "sourceUrl": "https://ui.voxletstudio.com/components/chat-widget",
         "author": "voxletlabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "checkbox-field",
+      "type": "registry:component",
+      "title": "Checkbox Field",
+      "description": "제목과 설명이 붙은 체크박스 항목(checkbox field, settings toggle). 설정 목록에 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/checkbox-field.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/checkbox-field.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/checkbox-field",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "choicebox",
+      "type": "registry:component",
+      "title": "Choicebox",
+      "description": "설명이 붙은 큰 선택 카드(choicebox, radio card). 요금제나 옵션을 고를 때 라디오 대신 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "field"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/choicebox/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/choicebox/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/choicebox",
+        "author": "haydenbleasel",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -4482,6 +4828,39 @@
       }
     },
     {
+      "name": "color-picker",
+      "type": "registry:component",
+      "title": "Color Picker",
+      "description": "색을 고르는 피커(color picker, 색상 선택). 채도·명도 판, 색조 슬라이더, 투명도, HEX·RGB 입력을 갖췄다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "color",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "select"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/color-picker/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/color-picker/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/color-picker",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "color-selector",
       "type": "registry:component",
       "title": "Color Selector",
@@ -4642,6 +5021,34 @@
       }
     },
     {
+      "name": "comparison",
+      "type": "registry:component",
+      "title": "Comparison",
+      "description": "손잡이를 끌어 두 이미지를 비교하는 슬라이더(image comparison, before after).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/comparison/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/comparison/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/comparison",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "concave-carousel",
       "type": "registry:component",
       "title": "Concave Carousel",
@@ -4750,6 +5157,33 @@
         "source": "ui-x",
         "sourceUrl": "https://ui-x.junwen-k.dev/docs/components/confirmer",
         "author": "junwen-k",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "contribution-graph",
+      "type": "registry:component",
+      "title": "Contribution Graph",
+      "description": "GitHub 잔디 같은 기여도 격자(contribution graph, activity heatmap). 날짜별 활동량을 색으로 보여준다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "date-fns"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/contribution-graph/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/contribution-graph/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/contribution-graph",
+        "author": "haydenbleasel",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -5083,6 +5517,33 @@
       }
     },
     {
+      "name": "credit-card",
+      "type": "registry:component",
+      "title": "Credit Card",
+      "description": "카드 번호·유효기간·브랜드 아이콘이 있는 신용카드 표시(credit card, payment card).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "react-svg-credit-card-payment-icons"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/credit-card/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/credit-card/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/credit-card",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "creepy-button",
       "type": "registry:component",
       "title": "Creepy Button",
@@ -5163,6 +5624,31 @@
       }
     },
     {
+      "name": "cursor",
+      "type": "registry:component",
+      "title": "Cursor",
+      "description": "실시간 협업에서 다른 사람의 커서를 이름표와 함께 보여주는 표시(live cursor, multiplayer cursor).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/cursor/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cursor/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/cursor",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "cursor-card",
       "type": "registry:component",
       "title": "Cursor Card",
@@ -5236,6 +5722,33 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "custom-cursor",
+      "type": "registry:component",
+      "title": "Custom Cursor",
+      "description": "마우스를 따라다니는 커스텀 커서(custom cursor, follow cursor). 스프링으로 부드럽게 따라온다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/custom-cursor.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/custom-cursor.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/custom-cursor",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -5635,6 +6148,35 @@
       }
     },
     {
+      "name": "deck",
+      "type": "registry:component",
+      "title": "Deck",
+      "description": "카드를 넘겨 보는 덱(deck, swipe cards). Tinder 식 넘기기에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/deck/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/deck/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/deck",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "depth-trail",
       "type": "registry:component",
       "title": "Depth Trail",
@@ -5731,6 +6273,34 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "dialog-stack",
+      "type": "registry:component",
+      "title": "Dialog Stack",
+      "description": "모달을 여러 겹으로 쌓는 다이얼로그(dialog stack, nested modal). 단계별 확인 흐름에 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "radix-ui"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/dialog-stack/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dialog-stack/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/dialog-stack",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -6023,6 +6593,36 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/draggable-reorder-list",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "dropzone",
+      "type": "registry:component",
+      "title": "Dropzone",
+      "description": "끌어다 놓는 파일 영역(dropzone, drag and drop upload). 파일 형식·크기 검증을 지원한다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "react-dropzone"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dropzone/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dropzone/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/dropzone",
+        "author": "haydenbleasel",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -6447,6 +7047,33 @@
       }
     },
     {
+      "name": "fade-blur-input",
+      "type": "registry:component",
+      "title": "Fade Blur Input",
+      "description": "입력하면 안내 문구가 흐려지며 사라지는 입력창(fade blur input, animated placeholder).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "geist"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/fade-blur-input.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/fade-blur-input.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Serenity UI",
+        "sourceUrl": "https://serenity-ui.com",
+        "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "fade-up-word",
       "type": "registry:component",
       "title": "Fade Up Word",
@@ -6733,6 +7360,33 @@
       }
     },
     {
+      "name": "flame-button",
+      "type": "registry:component",
+      "title": "Flame Button",
+      "description": "불꽃이 이는 버튼(flame button, fire cta).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "geist"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/flame-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/flame-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Serenity UI",
+        "sourceUrl": "https://serenity-ui.com",
+        "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "flickering-grid",
       "type": "registry:component",
       "title": "Flickering Grid",
@@ -6807,6 +7461,31 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "flip-card-3d",
+      "type": "registry:component",
+      "title": "Flip Card 3D",
+      "description": "3D 로 뒤집히는 카드(3d flip card, flip card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/flip-card-3d.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/flip-card-3d.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Serenity UI",
+        "sourceUrl": "https://serenity-ui.com",
+        "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -7571,6 +8250,38 @@
       }
     },
     {
+      "name": "glimpse",
+      "type": "registry:component",
+      "title": "Glimpse",
+      "description": "링크에 hover 하면 미리보기 카드를 띄우는 컴포넌트(link preview, glimpse). 서버에서 OG 태그를 읽어 온다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "hover-card"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glimpse/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/glimpse/index.tsx"
+        },
+        {
+          "path": "registry/kidow/glimpse/server.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/glimpse/server.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/glimpse",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "glitch-button",
       "type": "registry:component",
       "title": "Glitch Button",
@@ -7667,6 +8378,31 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "glow-card",
+      "type": "registry:component",
+      "title": "Glow Card",
+      "description": "커서를 따라 빛이 도는 카드(glow card, glow border).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/glow-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/glow-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Serenity UI",
+        "sourceUrl": "https://serenity-ui.com",
+        "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -8675,6 +9411,33 @@
       }
     },
     {
+      "name": "image-carousel",
+      "type": "registry:component",
+      "title": "Image Carousel",
+      "description": "이미지 캐러셀(image carousel, photo slider).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/image-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/image-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Serenity UI",
+        "sourceUrl": "https://serenity-ui.com",
+        "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "image-comparison",
       "type": "registry:component",
       "title": "Image Comparison",
@@ -8697,6 +9460,62 @@
         "source": "JolyUI",
         "sourceUrl": "https://www.jolyui.dev/docs/components/image-comparison",
         "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "image-crop",
+      "type": "registry:component",
+      "title": "Image Crop",
+      "description": "이미지를 잘라내는 크롭 도구(image crop, 자르기). 비율 고정과 원형 크롭을 지원한다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "radix-ui",
+        "react-image-crop"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/image-crop/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/image-crop/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/image-crop",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "image-gallery",
+      "type": "registry:component",
+      "title": "Image Gallery",
+      "description": "격자로 펼치는 이미지 갤러리(image gallery, photo grid).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/image-gallery.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/image-gallery.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Serenity UI",
+        "sourceUrl": "https://serenity-ui.com",
+        "author": "ayushmxxn",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -8879,6 +9698,33 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "image-zoom",
+      "type": "registry:component",
+      "title": "Image Zoom",
+      "description": "클릭하면 확대되는 이미지(image zoom, lightbox).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "react-medium-image-zoom"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/image-zoom/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/image-zoom/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/image-zoom",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -11566,6 +12412,38 @@
       }
     },
     {
+      "name": "mini-calendar",
+      "type": "registry:component",
+      "title": "Mini Calendar",
+      "description": "한 줄로 날짜를 고르는 작은 달력(mini calendar, date strip). 좁은 자리에 날짜 선택을 넣을 때 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "date-fns",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/mini-calendar/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/mini-calendar/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/mini-calendar",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "mode-toggle",
       "type": "registry:component",
       "title": "Mode Toggle",
@@ -12623,6 +13501,37 @@
       }
     },
     {
+      "name": "pill",
+      "type": "registry:component",
+      "title": "Pill",
+      "description": "아이콘·아바타·표시등을 담을 수 있는 알약 배지(pill, chip, tag).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "badge",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/pill/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pill/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/pill",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "pixel-canvas",
       "type": "registry:component",
       "title": "pixel-canvas",
@@ -12712,6 +13621,33 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "placeholder-input",
+      "type": "registry:component",
+      "title": "Placeholder Input",
+      "description": "안내 문구가 차례로 바뀌는 입력창(animated placeholder input, rotating placeholder).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "geist"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/placeholder-input.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/placeholder-input.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Serenity UI",
+        "sourceUrl": "https://serenity-ui.com",
+        "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -13415,6 +14351,31 @@
       }
     },
     {
+      "name": "pulse",
+      "type": "registry:component",
+      "title": "Pulse",
+      "description": "맥동하는 점 표시(pulse, ping indicator). 진행 중·라이브 상태를 알린다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/pulse.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pulse.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/pulse",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "qr-code",
       "type": "registry:component",
       "title": "QR Code",
@@ -13570,6 +14531,59 @@
         "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "rating",
+      "type": "registry:component",
+      "title": "Rating",
+      "description": "별점 입력·표시(rating, star rating, 별점).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/rating/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/rating/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/rating",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "rating-stars",
+      "type": "registry:component",
+      "title": "Rating Stars",
+      "description": "별점 표시(rating stars, 별점). 반쪽 별과 크기 변형을 지원한다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/rating-stars.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/rating-stars.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/rating-stars",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -14035,6 +15049,43 @@
       }
     },
     {
+      "name": "reel",
+      "type": "registry:component",
+      "title": "Reel",
+      "description": "세로로 넘기는 짧은 영상 목록(reel, shorts feed). 틱톡·릴스 식 화면에 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "button",
+        "progress"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/reel/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/reel/index.tsx"
+        },
+        {
+          "path": "registry/kidow/reel/reel-controlled.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/reel/reel-controlled.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/reel",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "reflect-background",
       "type": "registry:component",
       "title": "Reflect Background",
@@ -14053,6 +15104,33 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/reflect-background",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "relative-time",
+      "type": "registry:component",
+      "title": "Relative Time",
+      "description": "\"3분 전\" 처럼 상대 시각을 보여주는 표시(relative time, time ago). 여러 시간대를 함께 보여줄 수 있다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/relative-time/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/relative-time/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/relative-time",
+        "author": "haydenbleasel",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -14223,6 +15301,33 @@
       }
     },
     {
+      "name": "reveal-mask",
+      "type": "registry:component",
+      "title": "Reveal Mask",
+      "description": "마스크가 열리며 내용이 드러나는 효과(reveal mask, clip path reveal).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/reveal-mask.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/reveal-mask.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/reveal-mask",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "rich-button",
       "type": "registry:component",
       "title": "Rich Button",
@@ -14323,6 +15428,33 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "ripple-input",
+      "type": "registry:component",
+      "title": "Ripple Input",
+      "description": "포커스하면 물결이 퍼지는 입력창(ripple input).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "geist"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/ripple-input.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ripple-input.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Serenity UI",
+        "sourceUrl": "https://serenity-ui.com",
+        "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -14953,6 +16085,31 @@
       }
     },
     {
+      "name": "set-stagger-direction",
+      "type": "registry:component",
+      "title": "Set Stagger Direction",
+      "description": "글자·단어의 시차 순서를 정하는 유틸(stagger direction). 앞에서부터·가운데부터·무작위 등을 고른다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/set-stagger-direction.ts",
+          "type": "registry:component",
+          "target": "components/kidow/set-stagger-direction.ts"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/set-stagger-direction",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "shader-background",
       "type": "registry:component",
       "title": "Shader Background",
@@ -15297,6 +16454,33 @@
       }
     },
     {
+      "name": "shortcut-modal",
+      "type": "registry:component",
+      "title": "Shortcut Modal",
+      "description": "단축키 목록을 보여주는 모달(shortcut modal, keyboard shortcuts). ⌘K 도움말에 쓴다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "geist"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/shortcut-modal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shortcut-modal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Serenity UI",
+        "sourceUrl": "https://serenity-ui.com",
+        "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "showcase-card",
       "type": "registry:component",
       "title": "showcase-card",
@@ -15615,6 +16799,33 @@
       }
     },
     {
+      "name": "sliding-number",
+      "type": "registry:component",
+      "title": "Sliding Number",
+      "description": "숫자가 자릿수마다 굴러 올라가며 바뀌는 카운터(sliding number, odometer, number flow).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/sliding-number.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sliding-number.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/sliding-number",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "slinky-trail",
       "type": "registry:component",
       "title": "Slinky Trail",
@@ -15635,6 +16846,33 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "smoke-input",
+      "type": "registry:component",
+      "title": "Smoke Input",
+      "description": "연기가 피어오르는 입력창(smoke input).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "geist"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/smoke-input.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/smoke-input.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Serenity UI",
+        "sourceUrl": "https://serenity-ui.com",
+        "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -15789,6 +17027,36 @@
         "source": "KokonutUI",
         "sourceUrl": "https://kokonutui.com/docs/components/smooth-tab",
         "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "snippet",
+      "type": "registry:component",
+      "title": "Snippet",
+      "description": "탭으로 나뉜 명령어 스니펫(snippet, command tabs). npm·pnpm·yarn 설치 명령을 나란히 보여줄 때 쓴다.",
+      "categories": [
+        "코드·터미널"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/snippet/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/snippet/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/snippet",
+        "author": "haydenbleasel",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -16083,6 +17351,31 @@
       }
     },
     {
+      "name": "split-text",
+      "type": "registry:component",
+      "title": "Split Text",
+      "description": "문장을 단어와 글자로 쪼개는 유틸(split text). 글자 단위 애니메이션의 기반이다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/split-text.ts",
+          "type": "registry:component",
+          "target": "components/kidow/split-text.ts"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/split-text",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "sports-sm-01",
       "type": "registry:component",
       "title": "Sports Sm 01",
@@ -16350,6 +17643,33 @@
         "source": "KokonutUI",
         "sourceUrl": "https://kokonutui.com/docs/components/spotlight-cards",
         "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "spotlight-list",
+      "type": "registry:component",
+      "title": "Spotlight List",
+      "description": "hover 한 항목만 밝아지고 나머지는 어두워지는 목록(spotlight list, focus list).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "class-variance-authority"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/spotlight-list.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/spotlight-list.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/spotlight-list",
+        "author": "YoucefBnm",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -16637,6 +17957,33 @@
       }
     },
     {
+      "name": "status",
+      "type": "registry:component",
+      "title": "Status",
+      "description": "온라인·점검 중 같은 상태를 점으로 보여주는 표시(status indicator, health badge).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/status/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/status/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/status",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "status-indicator",
       "type": "registry:component",
       "title": "Status Indicator",
@@ -16917,6 +18264,34 @@
       }
     },
     {
+      "name": "stories",
+      "type": "registry:component",
+      "title": "Stories",
+      "description": "인스타그램식 스토리 뷰어(stories, story viewer). 진행 막대와 자동 넘김을 갖췄다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar",
+        "carousel"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/stories/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stories/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/stories",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "stripe-animated-gradient",
       "type": "registry:component",
       "title": "Stripe Animated Gradient",
@@ -17050,6 +18425,33 @@
       }
     },
     {
+      "name": "swipe-card",
+      "type": "registry:component",
+      "title": "Swipe Card",
+      "description": "옆으로 밀어 넘기는 카드(swipe card, tinder cards).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/swipe-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/swipe-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Serenity UI",
+        "sourceUrl": "https://serenity-ui.com",
+        "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "switch-button",
       "type": "registry:component",
       "title": "Switch Button",
@@ -17101,6 +18503,38 @@
         "source": "KokonutUI",
         "sourceUrl": "https://kokonutui.com/docs/components/swoosh-text",
         "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "tags",
+      "type": "registry:component",
+      "title": "Tags",
+      "description": "태그를 고르고 새로 만드는 입력(tags input, multi select tags).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "command",
+        "popover"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/tags/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tags/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/tags",
+        "author": "haydenbleasel",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -17417,6 +18851,31 @@
       }
     },
     {
+      "name": "text-flip",
+      "type": "registry:component",
+      "title": "Text Flip",
+      "description": "글자가 뒤집히며 바뀌는 텍스트(text flip, flip words).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-flip.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-flip.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/text-flip",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "text-marquee",
       "type": "registry:component",
       "title": "Text Marquee",
@@ -17587,6 +19046,222 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/text-scroll-marquee",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "text-scroll-read",
+      "type": "registry:component",
+      "title": "Text Scroll Read",
+      "description": "스크롤에 따라 읽은 만큼 색이 채워지는 텍스트(scroll read, text highlight on scroll).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-scroll-read.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-scroll-read.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/text-scroll-read",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "text-stagger-hover",
+      "type": "registry:component",
+      "title": "Text Stagger Hover",
+      "description": "hover 하면 글자가 차례로 움직이는 텍스트(stagger hover, letter hover).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-stagger-hover.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-stagger-hover.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/text-stagger-hover",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "text-stagger-interval",
+      "type": "registry:component",
+      "title": "Text Stagger Interval",
+      "description": "일정 간격으로 글자가 차례로 애니메이션되는 텍스트(stagger interval, looping letters).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-stagger-interval.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-stagger-interval.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/text-stagger-interval",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "text-stagger-inview",
+      "type": "registry:component",
+      "title": "Text Stagger Inview",
+      "description": "화면에 들어오면 글자가 차례로 나타나는 텍스트(stagger in view, reveal on scroll).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-stagger-inview.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-stagger-inview.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/text-stagger-inview",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "text-vertical",
+      "type": "registry:component",
+      "title": "Text Vertical",
+      "description": "세로로 흐르며 바뀌는 텍스트(vertical text, rolling words).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-vertical.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-vertical.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/text-vertical",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "text-wavy",
+      "type": "registry:component",
+      "title": "Text Wavy",
+      "description": "글자가 물결치듯 오르내리는 텍스트(wavy text, wave animation).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-wavy.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-wavy.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/text-wavy",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "theme-switcher",
+      "type": "registry:component",
+      "title": "Theme Switcher",
+      "description": "라이트·다크·시스템을 고르는 세 갈래 테마 전환기(theme switcher, dark mode).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/theme-switcher/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/theme-switcher/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/theme-switcher",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "ticker",
+      "type": "registry:component",
+      "title": "Ticker",
+      "description": "주가처럼 심볼과 등락을 보여주는 티커(ticker, stock price).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ticker/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ticker/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/ticker",
+        "author": "haydenbleasel",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -17811,6 +19486,34 @@
       }
     },
     {
+      "name": "tree",
+      "type": "registry:component",
+      "title": "Tree",
+      "description": "접었다 펼치는 트리(tree view, file tree). 파일 탐색기·조직도에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/tree/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tree/index.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Kibo UI",
+        "sourceUrl": "https://www.kibo-ui.com/components/tree",
+        "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "trial-button",
       "type": "registry:component",
       "title": "Trial Button",
@@ -17991,6 +19694,33 @@
       }
     },
     {
+      "name": "typewriter-testimonial",
+      "type": "registry:component",
+      "title": "Typewriter Testimonial",
+      "description": "후기가 타자기처럼 쳐지는 후기 카드(typewriter testimonial, review).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/typewriter-testimonial.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/typewriter-testimonial.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Serenity UI",
+        "sourceUrl": "https://serenity-ui.com",
+        "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "typewritter-text",
       "type": "registry:component",
       "title": "Typewritter Text",
@@ -18103,6 +19833,33 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/typing-text",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "use-follow-mouse",
+      "type": "registry:component",
+      "title": "Use Follow Mouse",
+      "description": "마우스 위치를 스프링으로 따라가는 훅(use follow mouse).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/use-follow-mouse.ts",
+          "type": "registry:component",
+          "target": "components/kidow/use-follow-mouse.ts"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/use-follow-mouse",
+        "author": "YoucefBnm",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -18337,6 +20094,33 @@
       }
     },
     {
+      "name": "video-carousel",
+      "type": "registry:component",
+      "title": "Video Carousel",
+      "description": "영상 캐러셀(video carousel, video slider).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/video-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/video-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Serenity UI",
+        "sourceUrl": "https://serenity-ui.com",
+        "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "video-player",
       "type": "registry:component",
       "title": "Video Player",
@@ -18411,6 +20195,33 @@
         "source": "ElevenLabs UI",
         "sourceUrl": "https://ui.elevenlabs.io/docs/components/message",
         "author": "ElevenLabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "voice-testimonial",
+      "type": "registry:component",
+      "title": "Voice Testimonial",
+      "description": "음성으로 듣는 후기 카드(voice testimonial, audio review). 재생 버튼과 파형을 갖췄다.",
+      "categories": [
+        "오디오·음성"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/voice-testimonial.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/voice-testimonial.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Serenity UI",
+        "sourceUrl": "https://serenity-ui.com",
+        "author": "ayushmxxn",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -19188,6 +20999,33 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "word-stagger",
+      "type": "registry:component",
+      "title": "Word Stagger",
+      "description": "단어가 차례로 나타나는 텍스트(word stagger, staggered words).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/word-stagger.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/word-stagger.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Systaliko UI",
+        "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/word-stagger",
+        "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
