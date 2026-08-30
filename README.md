@@ -101,6 +101,11 @@ npx shadcn@latest search @kidow -q "단계구분도"  # choropleth-chart
 검토했지만 담지 않은 31곳은 사유와 재검토 조건을 [lib/related-registries.ts](lib/related-registries.ts)
 에 남기고 홈의 "여기에 없는 것" 섹션에 표시합니다.
 
+## 수집 기록
+
+38곳을 어떤 기준으로 담고 걸렀는지, 매번 걸린 문제가 무엇이었는지는
+[docs/collection-log.md](docs/collection-log.md) 에 정리해 뒀습니다.
+
 ## 요구 스택
 
 React 19 · Tailwind CSS v4 · shadcn CLI 4.x (`radix-nova` 프리셋 기준)
