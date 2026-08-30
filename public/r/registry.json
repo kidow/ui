@@ -2002,6 +2002,31 @@
       }
     },
     {
+      "name": "animated-shiny-button",
+      "type": "registry:component",
+      "title": "Animated Shiny Button",
+      "description": "광택이 흐르는 버튼(shiny button, shimmer cta).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/animated-shiny-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-shiny-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/animated-shiny-button",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "animated-shiny-text",
       "type": "registry:component",
       "title": "Animated Shiny Text",
@@ -3546,6 +3571,33 @@
       }
     },
     {
+      "name": "blur-in-text",
+      "type": "registry:component",
+      "title": "Blur In Text",
+      "description": "흐릿한 상태에서 또렷해지는 텍스트(blur in text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/blur-in-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/blur-in-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/blur-in-text",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "blur-reveal",
       "type": "registry:component",
       "title": "Blur Reveal",
@@ -3979,6 +4031,33 @@
         "source": "Fancy Components",
         "sourceUrl": "https://www.fancycomponents.dev/docs/components/breathing-text",
         "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "browser",
+      "type": "registry:component",
+      "title": "Browser",
+      "description": "일반 브라우저 창 목업(browser mockup, window frame). 주소창과 탭이 있다.",
+      "categories": [
+        "디바이스 목업"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/browser.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/browser.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/browser",
+        "author": "karthikmudunuri",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -5249,6 +5328,31 @@
       }
     },
     {
+      "name": "card-flip-hover",
+      "type": "registry:component",
+      "title": "Card Flip Hover",
+      "description": "hover 하면 뒤집히는 카드(card flip on hover).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/card-flip-hover.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/card-flip-hover.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/card-flip-hover",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "card-hover-reveal",
       "type": "registry:component",
       "title": "Card Hover Reveal",
@@ -6096,6 +6200,33 @@
       }
     },
     {
+      "name": "clerk-otp",
+      "type": "registry:component",
+      "title": "Clerk OTP",
+      "description": "Clerk 스타일 인증 코드 입력(otp input, verification code).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/clerk-otp.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/clerk-otp.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/clerk-otp",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "client-tweet-card",
       "type": "registry:component",
       "title": "Client Tweet Card",
@@ -6531,6 +6662,34 @@
         "source": "Badtz UI",
         "sourceUrl": "https://www.badtz-ui.com/docs/components/cloud-orbit",
         "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "cobe-globe",
+      "type": "registry:component",
+      "title": "Cobe Globe",
+      "description": "끌어서 돌리는 지구본(globe, cobe). 관성으로 계속 돈다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "react-spring",
+        "cobe"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/cobe-globe.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cobe-globe.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/cobe-globe",
+        "author": "karthikmudunuri",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -8922,6 +9081,33 @@
       }
     },
     {
+      "name": "dock-text",
+      "type": "registry:component",
+      "title": "Dock Text",
+      "description": "macOS 독처럼 커서 근처 글자가 커지는 텍스트(dock text, magnify).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/dock-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dock-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/dock-text",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "dot-grid-background",
       "type": "registry:component",
       "title": "Dot Grid Background",
@@ -9932,6 +10118,33 @@
         "source": "Serenity UI",
         "sourceUrl": "https://serenity-ui.com",
         "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "fade-text",
+      "type": "registry:component",
+      "title": "Fade Text",
+      "description": "방향을 정해 서서히 나타나는 텍스트(fade text, fade in).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/fade-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/fade-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/fade-text",
+        "author": "karthikmudunuri",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -11182,6 +11395,31 @@
       }
     },
     {
+      "name": "font-weight-text",
+      "type": "registry:component",
+      "title": "Font Weight Text",
+      "description": "커서에 따라 굵기가 변하는 텍스트(font weight text, variable weight).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/font-weight-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/font-weight-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/font-weight-text",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "footer",
       "type": "registry:component",
       "title": "Footer",
@@ -11394,6 +11632,33 @@
         "source": "JolyUI",
         "sourceUrl": "https://www.jolyui.dev/docs/components/github-contributors",
         "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "github-inline-comments",
+      "type": "registry:component",
+      "title": "Github Inline Comments",
+      "description": "GitHub 코드 리뷰의 인라인 코멘트 UI(inline comments, code review).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/github-inline-comments.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/github-inline-comments.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/github-inline-comments",
+        "author": "karthikmudunuri",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -12105,6 +12370,33 @@
       }
     },
     {
+      "name": "gradual-spacing-text",
+      "type": "registry:component",
+      "title": "Gradual Spacing Text",
+      "description": "자간이 벌어지며 나타나는 텍스트(gradual spacing, letter spacing).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/gradual-spacing-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gradual-spacing-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/gradual-spacing-text",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "grain-carousel",
       "type": "registry:component",
       "title": "Grain Carousel",
@@ -12243,6 +12535,31 @@
       }
     },
     {
+      "name": "grid",
+      "type": "registry:component",
+      "title": "Grid",
+      "description": "격자 배경(grid background, blueprint).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/grid",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "grid-bar-chart",
       "type": "registry:component",
       "title": "Grid Bar Chart",
@@ -12340,6 +12657,31 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "hacker-background",
+      "type": "registry:component",
+      "title": "Hacker Background",
+      "description": "매트릭스식 문자비 배경(hacker background, matrix rain).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/hacker-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hacker-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/hacker-background",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -12951,6 +13293,33 @@
         "sourceUrl": "https://ui.spectrumhq.in/docs/components/holographic",
         "author": "arihantcodes",
         "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "holographic-card",
+      "type": "registry:component",
+      "title": "Holographic Card",
+      "description": "각도에 따라 무지개빛이 도는 홀로그램 카드(holographic card, iridescent).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/holographic-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/holographic-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/holographic-card",
+        "author": "karthikmudunuri",
+        "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -14029,6 +14398,34 @@
       }
     },
     {
+      "name": "integrations",
+      "type": "registry:component",
+      "title": "Integrations",
+      "description": "연동 서비스 로고를 흘려 보여주는 섹션(integrations, logo marquee).",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/integrations.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/integrations.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/integrations",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "interactive-book",
       "type": "registry:component",
       "title": "Interactive Book",
@@ -14357,6 +14754,31 @@
       }
     },
     {
+      "name": "ipad",
+      "type": "registry:component",
+      "title": "Ipad",
+      "description": "아이패드 목업(ipad mockup, tablet frame).",
+      "categories": [
+        "디바이스 목업"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/ipad.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ipad.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/ipad",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "iphone",
       "type": "registry:component",
       "title": "iPhone",
@@ -14377,6 +14799,31 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "iphone-17-pro",
+      "type": "registry:component",
+      "title": "Iphone 17 Pro",
+      "description": "아이폰 17 Pro 목업(iphone mockup, phone frame).",
+      "categories": [
+        "디바이스 목업"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/iphone-17-pro.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/iphone-17-pro.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/iphone-17-pro",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -14885,6 +15332,33 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "letter-pull-up-text",
+      "type": "registry:component",
+      "title": "Letter Pull Up Text",
+      "description": "글자가 아래에서 하나씩 올라오는 텍스트(letter pull up).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/letter-pull-up-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/letter-pull-up-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/letter-pull-up-text",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -15930,6 +16404,31 @@
       }
     },
     {
+      "name": "live-button",
+      "type": "registry:component",
+      "title": "Live Button",
+      "description": "생방송을 알리는 맥동 버튼(live button, pulse cta).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/live-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/live-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/live-button",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "live-waveform",
       "type": "registry:component",
       "title": "Live Waveform",
@@ -16333,6 +16832,31 @@
         "source": "Voxlet UI",
         "sourceUrl": "https://ui.voxletstudio.com/components/macbook-keyboard",
         "author": "voxletlabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "macbook-pro",
+      "type": "registry:component",
+      "title": "Macbook Pro",
+      "description": "맥북 프로 목업(macbook mockup, laptop frame).",
+      "categories": [
+        "디바이스 목업"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/macbook-pro.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/macbook-pro.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/macbook-pro",
+        "author": "karthikmudunuri",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -17911,6 +18435,33 @@
       }
     },
     {
+      "name": "multi-direction-slide-text",
+      "type": "registry:component",
+      "title": "Multi Direction Slide Text",
+      "description": "여러 방향에서 미끄러져 들어오는 텍스트(multi direction slide).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/multi-direction-slide-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/multi-direction-slide-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/multi-direction-slide-text",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "multi-select",
       "type": "registry:component",
       "title": "Multi Select",
@@ -18362,6 +18913,33 @@
       }
     },
     {
+      "name": "novatrix-background",
+      "type": "registry:component",
+      "title": "Novatrix Background",
+      "description": "ogl 셰이더로 그린 유동 그라디언트 배경(novatrix, shader gradient).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "ogl"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/novatrix-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/novatrix-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/novatrix-background",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "npm-badge",
       "type": "registry:component",
       "title": "npm Badge",
@@ -18547,6 +19125,33 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "orbit-rotation",
+      "type": "registry:component",
+      "title": "Orbit Rotation",
+      "description": "아이콘이 궤도를 도는 배치(orbit rotation, orbiting icons).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "react-icons"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/orbit-rotation.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/orbit-rotation.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/orbit-rotation",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -19101,6 +19706,33 @@
         "source": "shadcn-phone-input",
         "sourceUrl": "https://shadcn-phone-input.vercel.app",
         "author": "omeralpi",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "photon-beam",
+      "type": "registry:component",
+      "title": "Photon Beam",
+      "description": "빛줄기가 번지는 three.js 배경(photon beam, bloom). UnrealBloomPass 를 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "three"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/photon-beam.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/photon-beam.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/photon-beam",
+        "author": "karthikmudunuri",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -22360,6 +22992,31 @@
       }
     },
     {
+      "name": "safari-browser",
+      "type": "registry:component",
+      "title": "Safari Browser",
+      "description": "Safari 창 목업(safari mockup, browser frame). 스크린샷을 감싸 보여줄 때 쓴다.",
+      "categories": [
+        "디바이스 목업"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/safari-browser.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/safari-browser.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/safari-browser",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "satin-flow",
       "type": "registry:component",
       "title": "Satin Flow",
@@ -22382,6 +23039,31 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/satin-flow",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "scale-letter-text",
+      "type": "registry:component",
+      "title": "Scale Letter Text",
+      "description": "hover 한 글자가 커지는 텍스트(scale letter, magnify text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/scale-letter-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scale-letter-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/scale-letter-text",
+        "author": "karthikmudunuri",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -23112,6 +23794,33 @@
         "source": "beui",
         "sourceUrl": "https://beui.dev/components/select-morph",
         "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "seperate-away-text",
+      "type": "registry:component",
+      "title": "Seperate Away Text",
+      "description": "위아래로 갈라지며 사라지는 텍스트(separate away text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/seperate-away-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/seperate-away-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/seperate-away-text",
+        "author": "karthikmudunuri",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -26329,6 +27038,33 @@
       }
     },
     {
+      "name": "svg-ripple-effect",
+      "type": "registry:component",
+      "title": "SVG Ripple Effect",
+      "description": "물결이 퍼지는 SVG 효과(svg ripple, water ripple).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/svg-ripple-effect.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/svg-ripple-effect.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/svg-ripple-effect",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "svg-shapes",
       "type": "registry:component",
       "title": "SVG Shapes",
@@ -27028,6 +27764,33 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/terminal-card",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "testimonal-slider",
+      "type": "registry:component",
+      "title": "Testimonal Slider",
+      "description": "후기를 넘겨 보는 슬라이더(testimonial slider, review carousel).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "@headlessui/react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/testimonal-slider.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/testimonal-slider.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/testimonal-slider",
+        "author": "karthikmudunuri",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -30337,6 +31100,33 @@
       }
     },
     {
+      "name": "wavy-text",
+      "type": "registry:component",
+      "title": "Wavy Text",
+      "description": "글자가 물결치는 텍스트(wavy text, wave animation).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/wavy-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/wavy-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/wavy-text",
+        "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "weather-md-01",
       "type": "registry:component",
       "title": "Weather Md 01",
@@ -30926,6 +31716,33 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/woofy-hover-image",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "word-pull-up-text",
+      "type": "registry:component",
+      "title": "Word Pull Up Text",
+      "description": "단어가 아래에서 올라오는 텍스트(word pull up).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/word-pull-up-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/word-pull-up-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Eldora UI",
+        "sourceUrl": "https://www.eldoraui.site/docs/word-pull-up-text",
+        "author": "karthikmudunuri",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
