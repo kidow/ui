@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-border-animation",
+  "title": "Text Border Animation",
+  "description": "글자 테두리가 그려지는 텍스트(text border animation, stroke).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/text-border-animation.tsx",
+      "content": "\"use client\";\n\nimport { useEffect, useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface TextProps {\n  /**\n   * Text to display\n   */\n  text: string;\n\n  className?: string;\n}\n\nexport default function TextBorderAnimation({ text = \"Programming\", className }: TextProps) {\n  const [isHoveredIn, setIsHoveredIn] = useState(false);\n  const [isHoveredOut, setIsHoveredOut] = useState(false);\n\n  const handleHover = () => {\n    setIsHoveredIn(true);\n  };\n\n  const handleHoverExit = () => {\n    setIsHoveredIn(false);\n    setIsHoveredOut(true);\n  };\n\n  useEffect(() => {\n    if (isHoveredOut) {\n      const timer = setTimeout(() => {\n        setIsHoveredOut(false);\n      }, 300);\n\n      return () => clearTimeout(timer);\n    }\n  }, [isHoveredOut]);\n\n  return (\n    <div\n      onMouseEnter={handleHover}\n      onMouseLeave={handleHoverExit}\n      className=\"overflow-hidden\"\n      aria-hidden\n    >\n      <span className={cn(\"text-xl xl:text-5xl font-medium text-foreground\", className)}>\n        {text}\n      </span>\n      <div className=\"relative mt-1 h-1 w-full\">\n        <div\n          className={cn(\n            \"absolute left-0 top-0 h-full w-full bg-yellow-500 transition-transform duration-300\",\n            isHoveredIn\n              ? \"translate-x-0 transform opacity-100\"\n              : \"-translate-x-full transform opacity-0\",\n          )}\n        ></div>\n        <div\n          className={cn(\n            \"absolute left-0 top-0 h-full w-full translate-x-0 transform bg-yellow-500 opacity-0 transition-transform duration-300\",\n            isHoveredOut && \"translate-x-full opacity-100\",\n          )}\n        ></div>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/text-border-animation.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/text-border-animation",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

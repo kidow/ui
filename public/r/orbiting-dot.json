@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "orbiting-dot",
+  "title": "Orbiting Dot",
+  "description": "점이 궤도를 도는 로딩(orbiting dot).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/orbiting-dot.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const OrbitingDot = () => {\n  return (\n    <div className=\"relative w-10 h-10 flex items-center justify-center\">\n      <div className=\"w-2 h-2 bg-zinc-300 dark:bg-zinc-700 rounded-full\" />\n      <motion.div\n        className=\"absolute w-full h-full border border-zinc-200 dark:border-zinc-800 rounded-full\"\n        animate={{ rotate: 360 }}\n        transition={{ duration: 2, repeat: Infinity, ease: \"linear\" }}\n      >\n        <div className=\"absolute top-0 left-1/2 -ml-1.5 -mt-1.5 w-3 h-3 bg-zinc-800 dark:bg-white rounded-full shadow-sm\" />\n      </motion.div>\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/orbiting-dot.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

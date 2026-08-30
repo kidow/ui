@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "wave-dots",
+  "title": "Wave Dots",
+  "description": "점이 파도치는 로딩(wave dots).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/wave-dots.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const WaveDots = () => {\n  return (\n    <div className=\"flex space-x-1.5 h-6 items-center\">\n      {[0, 1, 2, 3, 4].map((i) => (\n        <motion.div\n          key={i}\n          className=\"w-2 h-2 bg-zinc-800 dark:bg-white rounded-full\"\n          animate={{ y: [4, -4, 4] }}\n          transition={{ duration: 1, repeat: Infinity, delay: i * 0.15, ease: \"easeInOut\" }}\n        />\n      ))}\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/wave-dots.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

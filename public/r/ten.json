@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "ten",
+  "title": "Ten",
+  "description": "벤토 그리드 배치 10번(bento grid layout).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/ten.tsx",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst BentoCard = ({ children, className }: { children: React.ReactNode; className?: string }) => {\n  return (\n    <div className={cn(\"relative h-full w-full overflow-hidden rounded-2xl p-4\", className)}>\n      {children}\n    </div>\n  );\n};\n\nexport default function Ten() {\n  return (\n    <div className=\"p-4\">\n      <div className=\"grid grid-cols-1 gap-3 sm:grid-cols-4 sm:grid-rows-3\">\n        <BentoCard className=\"bg-amber-300\">\n          <div className=\"flex flex-col\">Add Widget</div>\n        </BentoCard>\n\n        <BentoCard className=\"bg-purple-300 sm:col-span-2 sm:row-span-2\">\n          <div className=\"flex flex-col\">Another Section</div>\n        </BentoCard>\n\n        <BentoCard className=\"s bg-violet-300\">\n          <div className=\"flex flex-col\">Another Section</div>\n        </BentoCard>\n\n        <BentoCard className=\"bg-green-300\">\n          <div className=\"flex flex-col\">Meal Planner</div>\n        </BentoCard>\n\n        <BentoCard className=\"bg-lime-300 sm:row-span-2\">\n          <div className=\"flex flex-col\">Something</div>\n        </BentoCard>\n\n        <BentoCard className=\"bg-yellow-300 sm:col-span-2\">\n          <div className=\"flex flex-col\">Grocery List</div>\n        </BentoCard>\n\n        <BentoCard className=\"bg-gray-300\">\n          <div className=\"flex flex-col\">Add Widget</div>\n        </BentoCard>\n\n        <BentoCard className=\"bg-lime-300\">\n          <div className=\"flex flex-col\">Add Widget</div>\n        </BentoCard>\n\n        <BentoCard className=\"bg-amber-300\">\n          <div className=\"flex flex-col\">Add Widget</div>\n        </BentoCard>\n\n        <BentoCard className=\"bg-zinc-300 sm:col-span-2\">\n          <div className=\"flex flex-col\">Add Widget</div>\n        </BentoCard>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/ten.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/bento-grid/ten",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

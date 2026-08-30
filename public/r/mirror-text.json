@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "mirror-text",
+  "title": "Mirror Text",
+  "description": "위아래로 거울처럼 비치는 텍스트(mirror text, reflection).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/mirror-text.tsx",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport default function MirrorText({\n  text = \"This is a text\",\n  className,\n  direction = \"up\",\n  containerClassName,\n}: {\n  text: string;\n  className?: string;\n  /**\n   * The direction of the animation\n   * @default \"up\"\n   */\n  direction?: \"up\" | \"down\" | \"left\" | \"right\";\n\n  containerClassName?: string;\n}) {\n  const animation = cn(\"transition-transform duration-500 ease-slow\", {\n    \"group-hover/mirror:-translate-y-4\": direction === \"up\",\n    \"group-hover/mirror:translate-y-4\": direction === \"down\",\n    \"group-hover/mirror:-translate-x-4\": direction === \"left\",\n    \"group-hover/mirror:translate-x-4\": direction === \"right\",\n  });\n\n  const content = (\n    <div className={cn(\"inline-block text-4xl font-light uppercase leading-none\", className)}>\n      {text}\n    </div>\n  );\n\n  return (\n    <div\n      className={cn(\n        \"group/mirror relative w-fit justify-end overflow-hidden p-6 text-foreground\",\n        containerClassName,\n      )}\n    >\n      <div className={cn(\"h-3 overflow-hidden delay-200\", animation)}>{content}</div>\n      <div className={cn(\"h-3 overflow-hidden delay-100\", animation)}>{content}</div>\n      <div className={cn(\"h-3 overflow-hidden delay-75\", animation)}>{content}</div>\n      <div className={animation}>{content}</div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/mirror-text.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/mirror-text",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

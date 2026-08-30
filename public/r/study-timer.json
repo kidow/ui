@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "study-timer",
+  "title": "Study Timer",
+  "description": "공부 시간 타이머 위젯(study timer, 뽀모도로).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/study-timer.tsx",
+      "content": "\"use client\";\n\nimport { GraduationCap, XCircle } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport type StudyTimerSegment = {\n  value: number;\n  color: string;\n};\n\nexport type StudyTimerProps = {\n  className?: string;\n  segments?: StudyTimerSegment[];\n  /** Shown in the focus badge (e.g. pomodoro count). */\n  sessionCount?: number;\n};\n\nconst DEFAULT_SEGMENTS: StudyTimerSegment[] = [\n  { value: 57, color: \"rgb(251 146 60)\" },\n  { value: 24, color: \"rgb(244 114 182)\" },\n  { value: 26, color: \"rgb(250 204 21)\" },\n];\n\nconst formatTime = (totalMinutes: number) => {\n  const hours = Math.floor(totalMinutes / 60);\n  const minutes = totalMinutes % 60;\n  return [hours, minutes].map((n) => String(n).padStart(2, \"0\")).join(\":\");\n};\n\nfunction SegmentBar({ segment, totalSum }: { segment: StudyTimerSegment; totalSum: number }) {\n  const widthPercent = totalSum > 0 ? (segment.value / totalSum) * 100 : 0;\n  return (\n    <div\n      className=\"h-full rounded-sm\"\n      style={{ width: `${widthPercent}%`, backgroundColor: segment.color }}\n    />\n  );\n}\n\nexport default function StudyTimer({\n  className,\n  segments = DEFAULT_SEGMENTS,\n  sessionCount = 21,\n}: StudyTimerProps) {\n  const totalMinutes = segments.reduce((acc, segment) => acc + segment.value, 0);\n  const time = formatTime(totalMinutes);\n\n  return (\n    <div\n      className={cn(\n        \"flex size-52 flex-col rounded-3xl bg-zinc-900 p-4 font-sans text-white shadow-md\",\n        className,\n      )}\n    >\n      <div className=\"flex shrink-0 items-start justify-between\">\n        <button\n          type=\"button\"\n          className={cn(\n            \"relative flex min-h-9 min-w-9 items-center justify-center rounded-full\",\n            \"before:absolute before:inset-0 before:animate-pulse before:rounded-full before:border-2 before:border-sky-500/80\",\n          )}\n          aria-label=\"Study session\"\n        >\n          <GraduationCap className=\"relative z-10 size-[18px]\" strokeWidth={2} aria-hidden />\n        </button>\n        <div className=\"inline-flex items-center gap-1 rounded-full bg-amber-400 px-2 py-1\">\n          <XCircle className=\"size-3 fill-zinc-900 text-amber-400\" aria-hidden />\n          <span className=\"text-[13px] font-medium tabular-nums leading-none text-zinc-900\">\n            {sessionCount}\n          </span>\n        </div>\n      </div>\n\n      <div className=\"mt-3 shrink-0\">\n        <p className=\"text-[22px] font-normal leading-none tabular-nums tracking-tight\">{time}</p>\n        <div className=\"mt-2 flex flex-wrap items-center gap-x-2 gap-y-1 text-[13px] font-medium leading-none\">\n          {segments.map((segment, index) => (\n            <span\n              key={index}\n              className=\"inline-flex items-center gap-2\"\n              style={{ color: segment.color }}\n            >\n              <span className=\"tabular-nums\">{segment.value}m</span>\n              {index !== segments.length - 1 ? (\n                <span className=\"size-1 rounded-full bg-zinc-600\" aria-hidden />\n              ) : null}\n            </span>\n          ))}\n        </div>\n      </div>\n\n      <div className=\"mt-3 flex min-h-0 flex-1 gap-0.5\">\n        {segments.map((segment, index) => (\n          <SegmentBar key={index} segment={segment} totalSum={totalMinutes} />\n        ))}\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/study-timer.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/study-timer",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

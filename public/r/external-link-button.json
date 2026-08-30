@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "external-link-button",
+  "title": "External Link Button",
+  "description": "외부 링크 버튼(external link button).",
+  "dependencies": [
+    "@radix-ui/react-icons"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/external-link-button.tsx",
+      "content": "\"use client\";\n\nimport { ArrowTopRightIcon } from \"@radix-ui/react-icons\";\n\ninterface ButtonTitleProps {\n  /**\n   * Button title\n   */\n  text: string;\n}\n\nexport default function ExternalLinkButton({ text = \"Open Link\" }: ButtonTitleProps) {\n  return (\n    <button\n      type=\"button\"\n      className=\"text-md group/link flex items-center justify-center gap-1 rounded-md bg-pink-600 px-6 py-3 text-white hover:cursor-pointer hover:text-yellow-300\"\n    >\n      <span>{text}</span>\n      <ArrowTopRightIcon\n        height={20}\n        width={20}\n        className=\"opacity-75 transition-all group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-hover/link:scale-110 group-hover/link:text-yellow-300 group-hover/link:opacity-100\"\n      />\n    </button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/external-link-button.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/button/external-link-button",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:component"
+}

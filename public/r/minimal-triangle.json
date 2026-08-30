@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "minimal-triangle",
+  "title": "Minimal Triangle",
+  "description": "삼각형 하나로 만든 간결한 로딩(minimal triangle).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/minimal-triangle.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const MinimalTriangle = () => (\n  <svg className=\"w-10 h-10 overflow-visible\" viewBox=\"0 0 50 50\">\n    <polygon points=\"25,5 45,40 5,40\" className=\"stroke-zinc-200 dark:stroke-zinc-800 fill-none\" strokeWidth=\"3\" />\n    <motion.polygon\n      points=\"25,5 45,40 5,40\"\n      className=\"stroke-zinc-800 dark:stroke-white fill-none\"\n      strokeWidth=\"3\"\n      strokeDasharray=\"120\"\n      animate={{ strokeDashoffset: [120, 0, -120] }}\n      transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n    />\n  </svg>\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/minimal-triangle.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

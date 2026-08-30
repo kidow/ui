@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "morph-dot-ring",
+  "title": "Morph Dot Ring",
+  "description": "점과 고리를 오가며 변하는 로딩(morph dot ring).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/morph-dot-ring.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const MorphDotRing = () => (\n  <motion.div\n    className=\"grid grid-cols-2 gap-1 w-6 h-6\"\n    animate={{ rotate: 180, gap: [\"4px\", \"0px\", \"4px\"] }}\n    transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n  >\n    {[0,1,2,3].map(i => <div key={i} className=\"w-full h-full bg-zinc-800 dark:bg-white rounded-full\" />)}\n  </motion.div>\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/morph-dot-ring.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

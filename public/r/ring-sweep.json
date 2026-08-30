@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "ring-sweep",
+  "title": "Ring Sweep",
+  "description": "고리를 빛이 훑는 로딩(ring sweep).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/ring-sweep.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const RingSweep = () => {\n  return (\n    <motion.div\n      className=\"w-10 h-10 border-[3px] border-zinc-200 dark:border-zinc-800 rounded-full border-t-zinc-800 dark:border-t-white\"\n      animate={{ rotate: 360 }}\n      transition={{ duration: 1, repeat: Infinity, ease: \"linear\" }}\n    />\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/ring-sweep.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

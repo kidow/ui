@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "flipping-cards",
+  "title": "Flipping Cards",
+  "description": "카드가 뒤집히며 넘어가는 목록(flipping cards).",
+  "dependencies": [],
+  "registryDependencies": [
+    "@kidow/flip-card"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/flipping-cards.tsx",
+      "content": "\"use client\";\n\nimport type { ComponentProps } from \"react\";\n\nimport FlipCard, { FlipCardBack, FlipCardFront } from \"@/components/kidow/flip-card\";\nimport { cn } from \"@/lib/utils\";\n\ntype FlippingCardsRootProps = ComponentProps<\"div\">;\n\nfunction FlippingCardsRoot({ className, ...props }: FlippingCardsRootProps) {\n  return <div className={cn(\"grid grid-cols-3 gap-5 max-sm:grid-cols-2\", className)} {...props} />;\n}\n\ntype FlippingCardsItemProps = ComponentProps<typeof FlipCard>;\n\nfunction FlippingCardsItem({ className, ...props }: FlippingCardsItemProps) {\n  return (\n    <FlipCard className={cn(\"h-60 w-48 [&>div]:rounded-none\", className)} rotate=\"y\" {...props} />\n  );\n}\n\nconst FlippingCardsItemWithFaces = Object.assign(FlippingCardsItem, {\n  Front: FlipCardFront,\n  Back: FlipCardBack,\n});\n\nconst FlippingCards = Object.assign(FlippingCardsRoot, {\n  Item: FlippingCardsItemWithFaces,\n}) as typeof FlippingCardsRoot & {\n  Item: typeof FlippingCardsItemWithFaces;\n};\n\nexport function getFlippingCardsAccent(_index: number) {\n  return \"hsl(var(--accent))\";\n}\n\nexport default FlippingCards;\nexport { FlippingCards, FlippingCardsItemWithFaces as FlippingCardsItem };\n",
+      "type": "registry:component",
+      "target": "components/kidow/flipping-cards.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/list/flipping-cards",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

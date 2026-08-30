@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "staggered-letter",
+  "title": "Staggered Letter",
+  "description": "글자가 차례로 등장하는 텍스트(staggered letter).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/staggered-letter.tsx",
+      "content": "\"use client\";\n\nimport { motion } from \"motion/react\";\nimport type { HTMLAttributes } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface DropLetterProps extends HTMLAttributes<HTMLDivElement> {\n  applyMask?: boolean;\n\n  text?: string;\n\n  delay?: number;\n\n  direction?: \"up\" | \"drop\";\n}\n\nexport default function StaggeredLetter({\n  applyMask = true,\n  text = \"Animata\",\n  delay = 0.09,\n  direction = \"drop\",\n  className,\n  ...props\n}: DropLetterProps) {\n  const common = \"text-7xl font-bold drop-shadow-lg\";\n  return (\n    <div\n      className={cn(\n        \"relative flex flex-col items-center justify-center text-foreground\",\n        className,\n      )}\n      {...props}\n    >\n      {applyMask && <div className={cn(common, \"absolute text-gray-400\")}>{text}</div>}\n      <div className=\"flex\">\n        {text.split(\"\").map((letter, index) => (\n          <motion.div\n            className={common}\n            initial={{ opacity: 0, y: direction === \"up\" ? 150 : -150 }}\n            animate={{ opacity: 1, y: 0 }}\n            transition={{\n              delay: index * delay,\n            }}\n            key={letter}\n          >\n            {letter === \" \" ? <span>&nbsp;</span> : letter}\n          </motion.div>\n        ))}\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/staggered-letter.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/staggered-letter",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

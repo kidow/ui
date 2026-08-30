@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "metis-text",
+  "title": "Metis Text",
+  "description": "글자가 겹쳐 흐르며 나타나는 텍스트(metis text).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/metis-text.tsx",
+      "content": "\"use client\";\n\nimport type React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport \"./metis-text.css\";\n\nexport interface MetisTextProps extends React.HTMLAttributes<HTMLElement> {\n  children: React.ReactNode;\n  as?: \"span\" | \"a\" | \"p\";\n  /**\n   * When true, the underline reacts to an ancestor with `.group` on\n   * `:hover` / `:focus-visible` — useful inside card links.\n   * @default false\n   */\n  groupHover?: boolean;\n  /** Classes for the inner label wrapper — put `truncate` / `line-clamp-*` here. */\n  labelClassName?: string;\n}\n\n/**\n * Codrops Metis underline — scaleX reveal with flipped transform-origin on enter/exit.\n * Keep truncation on `labelClassName`, not the root, so the line is not clipped.\n * @see https://github.com/codrops/LineHoverStyles/\n */\nexport default function MetisText({\n  children,\n  as: Tag = \"span\",\n  groupHover = false,\n  className,\n  labelClassName,\n  ...props\n}: MetisTextProps) {\n  return (\n    <Tag\n      className={cn(\n        \"metis-text relative inline-block max-w-full\",\n        groupHover && \"metis-text--group\",\n        className,\n      )}\n      {...props}\n    >\n      <span className={cn(\"block\", labelClassName)}>{children}</span>\n    </Tag>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/metis-text.tsx"
+    },
+    {
+      "path": "registry/kidow/metis-text.css",
+      "content": "@layer components {\n  .metis-text::after {\n    content: \"\";\n    position: absolute;\n    left: 0;\n    top: 100%;\n    width: 100%;\n    height: 1px;\n    background: currentcolor;\n    pointer-events: none;\n    transform-origin: 100% 50%;\n    transform: scale3d(0, 1, 1);\n    transition: transform 0.3s;\n  }\n\n  .metis-text:hover::after,\n  .metis-text:focus-visible::after {\n    transform-origin: 0% 50%;\n    transform: scale3d(1, 1, 1);\n  }\n\n  .group:hover .metis-text--group::after,\n  .group:focus-visible .metis-text--group::after {\n    transform-origin: 0% 50%;\n    transform: scale3d(1, 1, 1);\n  }\n\n  @media (prefers-reduced-motion: reduce) {\n    .metis-text::after {\n      transition: none;\n    }\n  }\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/metis-text.css"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/metis-text",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

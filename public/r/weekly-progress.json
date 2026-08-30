@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "weekly-progress",
+  "title": "Weekly Progress",
+  "description": "주간 달성률 위젯(weekly progress).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/weekly-progress.tsx",
+      "content": "\"use client\";\n\nimport { BookOpen } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport type WeeklyProgressProps = {\n  className?: string;\n  author?: string;\n  title?: string;\n  percent?: number;\n};\n\nconst DAYS = [\"M\", \"T\", \"W\", \"TH\", \"F\", \"S\", \"SU\"] as const;\n\nexport default function WeeklyProgress({\n  className,\n  author = \"Chris Dixon\",\n  title = \"Read Write Own\",\n  percent = 30,\n}: WeeklyProgressProps) {\n  return (\n    <div\n      className={cn(\n        \"flex size-52 flex-col rounded-3xl border border-border bg-amber-50 p-4 font-sans shadow-md dark:bg-amber-950/40\",\n        className,\n      )}\n    >\n      <div className=\"shrink-0\">\n        <p className=\"text-[13px] leading-none text-muted-foreground\">{author}</p>\n        <p className=\"mt-1 text-[15px] font-semibold leading-snug text-foreground\">{title}</p>\n      </div>\n\n      <div className=\"mt-2 inline-flex w-fit items-center gap-2 rounded-full border border-border bg-background/60 px-2.5 py-1.5\">\n        <BookOpen\n          className=\"size-4 text-amber-600 dark:text-amber-400\"\n          strokeWidth={2}\n          aria-hidden\n        />\n        <p className=\"text-[13px] font-medium tabular-nums leading-none text-foreground\">\n          {percent}%\n        </p>\n      </div>\n\n      <div className=\"mt-2 flex flex-wrap justify-start gap-0.5\">\n        {DAYS.map((day, index) => (\n          <svg\n            key={day}\n            width=\"40\"\n            height=\"40\"\n            viewBox=\"-25 -25 250 250\"\n            xmlns=\"http://www.w3.org/2000/svg\"\n            className=\"shrink-0\"\n            style={{ transform: \"rotate(-90deg)\" }}\n            aria-hidden\n          >\n            <circle\n              r=\"90\"\n              cx=\"100\"\n              cy=\"100\"\n              fill=\"transparent\"\n              className=\"stroke-border\"\n              strokeWidth=\"16px\"\n              strokeDasharray=\"565.48px\"\n              strokeDashoffset=\"0\"\n            />\n            <circle\n              r=\"90\"\n              cx=\"100\"\n              cy=\"100\"\n              className=\"stroke-amber-500\"\n              strokeWidth=\"16px\"\n              strokeLinecap=\"round\"\n              fill=\"transparent\"\n              strokeDasharray=\"565.48px\"\n              strokeDashoffset=\"565.48px\"\n            >\n              <animate\n                attributeName=\"stroke-dashoffset\"\n                from=\"565.48\"\n                to=\"118.692\"\n                dur={`${0.5 + index * 0.1}s`}\n                fill=\"freeze\"\n              />\n            </circle>\n            <text\n              className=\"fill-foreground text-[56px] font-medium\"\n              x=\"100px\"\n              y=\"105px\"\n              dominantBaseline=\"middle\"\n              textAnchor=\"middle\"\n              style={{ transform: \"rotate(90deg) translate(0px, -196px)\" }}\n            >\n              <animate\n                attributeName=\"opacity\"\n                from=\"0\"\n                to=\"1\"\n                dur={`${0.5 + index * 0.1}s`}\n                fill=\"freeze\"\n              />\n              {day}\n            </text>\n          </svg>\n        ))}\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/weekly-progress.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/weekly-progress",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

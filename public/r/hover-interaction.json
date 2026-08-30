@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hover-interaction",
+  "title": "Hover Interaction",
+  "description": "hover 에 반응하는 아이콘(icon hover interaction).",
+  "dependencies": [
+    "motion",
+    "@radix-ui/react-icons"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/hover-interaction.tsx",
+      "content": "\"use client\";\n\n// default imports\nimport {\n  FigmaLogoIcon,\n  FramerLogoIcon,\n  GitHubLogoIcon,\n  InstagramLogoIcon,\n  LinkedInLogoIcon,\n  SquareIcon,\n  TwitterLogoIcon,\n} from \"@radix-ui/react-icons\";\nimport { AnimatePresence, motion } from \"motion/react\";\nimport { type ElementType, useState } from \"react\";\n\ntype IconSize = \"1\" | \"2\" | \"3\" | \"4\"; // source: https://www.radix-ui.com/themes/docs/components/icon-button\n\ninterface IconHoverProps {\n  title: string; // default is Square\n  size?: IconSize; // default is 4\n}\n\nconst sizeClasses: Record<IconSize, string> = {\n  \"1\": \"w-6 h-6\",\n  \"2\": \"w-7 h-7\",\n  \"3\": \"w-8 h-8\",\n  \"4\": \"w-10 h-10\",\n};\n\nconst textSizeClasses: Record<IconSize, string> = {\n  \"1\": \"text-sm\",\n  \"2\": \"text-base\",\n  \"3\": \"text-lg\",\n  \"4\": \"text-xl\",\n};\n\nconst getIconForTitle = (title: string) => {\n  const lowercaseTitle = title.toLowerCase().trim();\n  const iconMap: { [key: string]: ElementType } = {\n    framer: FramerLogoIcon,\n    \"twitter/x\": TwitterLogoIcon,\n    instagram: InstagramLogoIcon,\n    linkedin: LinkedInLogoIcon,\n    github: GitHubLogoIcon,\n    figma: FigmaLogoIcon,\n  };\n\n  // SquareIcon as default\n  return (iconMap[lowercaseTitle] as ElementType) || SquareIcon;\n};\n\n// twitter -> Twitter, Twitter -> Twitter, twitter/x -> Twitter/X, Twitter/x -> Twitter/X\nconst capitalizeWithSlash = (str: string) => {\n  return str\n    .split(\"/\")\n    .map((part) => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())\n    .join(\"/\");\n};\n\nexport default function HoverInteraction({\n  // default values\n  title = \"Square\",\n  size = \"4\",\n}: IconHoverProps) {\n  const [isHovered, setIsHovered] = useState(false);\n  const DynamicIcon = getIconForTitle(title);\n\n  const sizeClass = sizeClasses[size];\n  const textSizeClass = textSizeClasses[size];\n\n  const formattedTitle = capitalizeWithSlash(title);\n\n  const logoVariants = {\n    hidden: {\n      opacity: 0,\n      y: 0,\n      scale: 0.5,\n      rotate: 100,\n    },\n    visible: {\n      opacity: 1,\n      y: 13,\n      scale: 1,\n      rotate: 0,\n      transition: {\n        type: \"spring\" as const,\n        stiffness: 100,\n        damping: 15,\n        duration: 0.3,\n      },\n    },\n    exit: {\n      opacity: 0,\n      y: 13,\n      scale: 0.5,\n      rotate: 100,\n      transition: { duration: 0.3 },\n    },\n  };\n\n  return (\n    <motion.div\n      className=\"storybook-fix group/icon relative flex min-h-[120px] w-full cursor-pointer items-center justify-center\"\n      onMouseEnter={() => setIsHovered(true)}\n      onMouseLeave={() => setIsHovered(false)}\n    >\n      <span\n        className={`relative text-center font-medium text-muted-foreground transition-colors duration-200 group-hover/icon:text-foreground ${textSizeClass}`}\n      >\n        {formattedTitle}\n      </span>\n      <AnimatePresence>\n        {isHovered && (\n          <motion.div\n            className=\"absolute bottom-full left-1/2\"\n            variants={logoVariants}\n            initial=\"hidden\"\n            animate=\"visible\"\n            exit=\"exit\"\n            style={{\n              x: \"-50%\",\n              originX: 0.5,\n              originY: 1,\n            }}\n          >\n            <DynamicIcon className={sizeClass} />\n          </motion.div>\n        )}\n      </AnimatePresence>\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/hover-interaction.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/icon/hover-interaction",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

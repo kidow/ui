@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "line-spinner",
+  "title": "Line Spinner",
+  "description": "선이 도는 로딩(line spinner).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/line-spinner.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const LineSpinner = () => {\n  return (\n    <div className=\"relative w-10 h-10 flex items-center justify-center\">\n      <div className=\"w-10 h-10 border-2 border-zinc-200 dark:border-zinc-800 rounded-full absolute\" />\n      <motion.div\n        className=\"w-8 h-1 bg-zinc-800 dark:bg-white rounded-full\"\n        animate={{ rotate: 360 }}\n        transition={{ duration: 1.2, repeat: Infinity, ease: \"linear\" }}\n      />\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/line-spinner.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "blurry-blob",
+  "title": "Blurry Blob",
+  "description": "흐릿한 블롭이 떠다니는 배경(blurry blob).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/blurry-blob.tsx",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface BlobProps extends React.HTMLAttributes<HTMLDivElement> {\n  firstBlobColor: string;\n  secondBlobColor: string;\n}\n\nexport default function BlurryBlob({ className, firstBlobColor, secondBlobColor }: BlobProps) {\n  return (\n    <div className=\"min-h-52 min-w-52 items-center justify-center\">\n      <div className=\"relative w-full max-w-lg\">\n        <div\n          className={cn(\n            \"absolute -right-24 -top-28 h-72 w-72 animate-pop-blob rounded-sm bg-blue-400 p-8 opacity-45 mix-blend-multiply blur-3xl filter\",\n            className,\n            firstBlobColor,\n          )}\n        ></div>\n        <div\n          className={cn(\n            \"absolute -left-40 -top-64 h-72 w-72 animate-pop-blob rounded-sm bg-purple-400 p-8 opacity-45 mix-blend-multiply blur-3xl filter\",\n            className,\n            secondBlobColor,\n          )}\n        ></div>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/blurry-blob.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/background/blurry-blob",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "배경·패턴"
+  ],
+  "type": "registry:component"
+}

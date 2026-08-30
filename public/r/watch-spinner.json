@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "watch-spinner",
+  "title": "Watch Spinner",
+  "description": "손목시계식 스피너(watch spinner).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/watch-spinner.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const WatchSpinner = () => (\n  <div className=\"relative w-12 h-12 flex items-center justify-center\">\n    {[0, 1, 2].map(i => (\n      <motion.div\n        key={i}\n        className=\"absolute rounded-full border-[3px] border-transparent border-t-zinc-800 dark:border-t-white\"\n        style={{ width: 44 - i * 12, height: 44 - i * 12 }}\n        animate={{ rotate: 360 }}\n        transition={{ duration: 1 + i * 0.5, repeat: Infinity, ease: \"easeInOut\" }}\n      />\n    ))}\n  </div>\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/watch-spinner.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

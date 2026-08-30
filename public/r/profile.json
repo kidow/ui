@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "profile",
+  "title": "Profile",
+  "description": "프로필 카드 위젯(profile card).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/profile.tsx",
+      "content": "\"use client\";\n\nimport { AtSign, Camera, Send, X } from \"lucide-react\";\n\nexport default function Profile() {\n  return (\n    <div className=\"group/profile flex h-52 w-52 flex-col items-center justify-center rounded-3xl bg-cyan-200 p-4 shadow-sm transition-shadow duration-300 hover:shadow-black/25 dark:bg-zinc-800\">\n      <img\n        alt=\"\"\n        src=\"https://sm.ign.com/ign_nordic/cover/a/avatar-gen/avatar-generations_prsz.jpg\"\n        className=\"h-16 w-16 rounded-full duration-300 ease-in-out hover:scale-125\"\n      />\n      <div className=\"mt-2 flex flex-col items-center justify-center\">\n        <h3 className=\"font-sans font-semibold text-foreground\">Avatar Aang</h3>\n        <p className=\"text-sm font-light text-muted-foreground\">The last air bender</p>\n      </div>\n      <div className=\"mt-2 flex w-full flex-row justify-evenly rounded-3xl bg-background/70 p-2 text-foreground dark:bg-background/25\">\n        <a href=\"https://x.com/?lang=en&mx=2\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <X size={18} className=\"transition-transform duration-300 hover:scale-110\" />\n        </a>\n        <a href=\"https://linkedin.com/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <AtSign size={16} className=\"transition-transform duration-300 hover:scale-110\" />\n        </a>\n        <a href=\"https://dribbble.com/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <Camera size={16} className=\"transition-transform duration-300 hover:scale-110\" />\n        </a>\n        <a href=\"https://facebook.com/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <Send size={16} className=\"duration-300 hover:scale-110\" />\n        </a>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/profile.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/profile",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

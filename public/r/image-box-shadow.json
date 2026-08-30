@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "image-box-shadow",
+  "title": "Image Box Shadow",
+  "description": "이미지에서 뽑은 색으로 그림자를 만드는 효과(image box shadow, color glow).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/image-box-shadow.tsx",
+      "content": "\"use client\";\n\nimport type { ImgHTMLAttributes } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface ZoomImageProps extends ImgHTMLAttributes<HTMLImageElement> {\n  shadowSize?: string;\n  shadowColor?: string;\n}\n\nexport default function ShadowImage({\n  className,\n  shadowSize = \"lg\",\n  shadowColor = \"green-400\",\n  ...props\n}: ZoomImageProps) {\n  return (\n    <div className=\"flex h-52 w-52 gap-7\">\n      <img\n        alt=\"\"\n        {...props}\n        className={cn(\n          \"mx-auto h-auto max-w-sm cursor-pointer rounded-md shadow-none transition-shadow duration-300\",\n          shadowSize,\n          shadowColor,\n          className,\n        )}\n      />\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/image-box-shadow.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/image/image-box-shadow",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "미디어·데이터"
+  ],
+  "type": "registry:component"
+}

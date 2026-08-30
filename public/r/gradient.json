@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "gradient",
+  "title": "Gradient",
+  "description": "그라디언트가 들어간 벤토 그리드(bento grid gradient).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@kidow/moving-gradient"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/gradient.tsx",
+      "content": "\"use client\";\n\nimport {\n  ArrowRight,\n  BarChart,\n  BookPlus,\n  GitBranch,\n  HeartPulse,\n  LineChart,\n  Sun,\n  TypeIcon,\n} from \"lucide-react\";\nimport type { ReactNode } from \"react\";\n\nimport MovingGradient from \"@/components/kidow/moving-gradient\";\nimport { cn } from \"@/lib/utils\";\n\nfunction BentoCard({\n  title,\n  icon,\n  description,\n  children,\n  gradient,\n  className,\n}: {\n  children?: ReactNode;\n  title: ReactNode;\n  icon: ReactNode;\n  gradient?: string;\n  description: ReactNode;\n  className?: string;\n}) {\n  return (\n    <MovingGradient\n      animated={false}\n      className={className}\n      gradientClassName={cn(\"opacity-10\", gradient)}\n    >\n      <section className=\"flex h-full flex-col gap-2 p-4\">\n        <header>\n          <div className=\"mb-2 flex items-center gap-2\">\n            {icon}\n            <p className=\"text-md line-clamp-1 font-bold\">{title}</p>\n          </div>\n        </header>\n        <div className=\"flex-1 text-sm font-medium text-black/75\">{description}</div>\n        {children}\n      </section>\n    </MovingGradient>\n  );\n}\n\nfunction GetGradient() {\n  return (\n    <BentoCard\n      title=\"Gradient\"\n      icon={<BarChart size={24} />}\n      description={<span>A gradient is a smooth transition from one color to another.</span>}\n      className=\"sm:col-span-1 sm:row-span-2\"\n      gradient=\"from-cyan-900 via-60% via-sky-600 to-indigo-600\"\n    >\n      <div className=\"group/grid relative flex cursor-pointer flex-col justify-end bg-zinc-950 p-2.5 text-2xl tracking-tight text-gray-100 md:text-4xl\">\n        <div className=\"font-light\">Get</div>\n        <div className=\"-mt-2 font-bold\">Gradients</div>\n        <div className=\"flex h-6 w-6 items-center justify-center rounded-full border bg-white transition-transform duration-700 group-hover/grid:rotate-[360deg] md:h-8 md:w-8\">\n          <ArrowRight size={16} className=\"text-blue-600\" />\n        </div>\n        <div className=\"absolute right-2 top-2 h-2 w-2 rounded-full bg-white opacity-50 transition-opacity duration-700 group-hover/grid:opacity-25\" />\n      </div>\n    </BentoCard>\n  );\n}\n\nfunction LinearGradient() {\n  return (\n    <BentoCard\n      title=\"Linear Gradient\"\n      icon={<GitBranch size={24} />}\n      description=\"A linear gradient is a gradient that goes in a straight line.\"\n      gradient=\"from-red-300 via-60% via-rose-300 to-red-200\"\n      className=\"group/grid sm:col-span-1\"\n    >\n      <div className=\"h-4 w-full rounded-sm bg-gray-100 group-hover/grid:animate-pulse group-hover/grid:bg-gray-300\" />\n      <div className=\"h-4 w-1/2 rounded-sm bg-gray-100 group-hover/grid:animate-pulse group-hover/grid:bg-gray-300\" />\n    </BentoCard>\n  );\n}\n\nfunction RadialGradient() {\n  return (\n    <BentoCard\n      title=\"Radial Gradient\"\n      icon={<LineChart size={24} />}\n      description=\"A radial gradient is a gradient that goes in a circular direction.\"\n      gradient=\"from-lime-300 via-60% via-green-200 to-lime-200\"\n      className=\"group/grid sm:col-span-1\"\n    >\n      <div className=\"flex w-full flex-row justify-end gap-2 rounded border-yellow-200 bg-yellow-100 p-2\">\n        <HeartPulse\n          size={16}\n          className=\"delay-150 duration-75 group-hover/grid:animate-in group-hover/grid:slide-in-from-right-full\"\n        />\n        <Sun\n          size={16}\n          className=\"delay-75 duration-75 group-hover/grid:animate-in group-hover/grid:slide-in-from-right-full\"\n        />\n        <BookPlus\n          size={16}\n          className=\"duration-75 group-hover/grid:animate-in group-hover/grid:slide-in-from-right-full\"\n        />\n      </div>\n    </BentoCard>\n  );\n}\n\nfunction ConicGradient() {\n  return (\n    <BentoCard\n      title=\"Conic Gradient\"\n      icon={<TypeIcon size={24} />}\n      description=\"A conic gradient is a gradient that goes in a circular direction.\"\n      gradient=\"from-cyan-900 via-60% via-sky-600 to-indigo-600\"\n      className=\"sm:col-span-2\"\n    />\n  );\n}\n\nexport default function Gradient() {\n  return (\n    <div className=\"bg-zinc-950 p-4\">\n      <div className=\"grid w-full min-w-0 grid-cols-1 gap-4 text-black sm:grid-cols-3\">\n        <GetGradient />\n        <LinearGradient />\n        <RadialGradient />\n        <ConicGradient />\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/gradient.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/bento-grid/gradient",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

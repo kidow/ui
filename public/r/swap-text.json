@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "swap-text",
+  "title": "Swap Text",
+  "description": "hover 하면 다른 문구로 바뀌는 텍스트(swap text).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/swap-text.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface SwapTextProps extends React.ComponentPropsWithoutRef<\"div\"> {\n  /**\n   * The initial text to display.\n   */\n  initialText: string;\n\n  /**\n   * The final text to display.\n   */\n  finalText: string;\n\n  /**\n   * Whether the component should toggle on hover as well as click.\n   */\n  supportsHover?: boolean;\n\n  /**\n   * The class name for the text.\n   */\n  textClassName?: string;\n\n  /**\n   * The class name for the initial text.\n   */\n  initialTextClassName?: string;\n\n  /**\n   * The class name for the final text.\n   */\n  finalTextClassName?: string;\n\n  /**\n   * Whether to disable the click interaction.\n   */\n  disableClick?: boolean;\n}\n\nexport default function SwapText({\n  initialText,\n  finalText,\n  className,\n  supportsHover = true,\n  textClassName,\n  initialTextClassName,\n  finalTextClassName,\n  disableClick,\n  // The rest of the props are passed to the container div.\n  ...props\n}: SwapTextProps) {\n  const [active, setActive] = useState(false);\n  const common = \"block transition-transform duration-1000 ease-slow\";\n\n  const longWord = finalText.length > initialText.length ? finalText : null;\n\n  return (\n    <div {...props} className={cn(\"relative overflow-hidden text-foreground\", className)}>\n      <button\n        type=\"button\"\n        disabled={disableClick}\n        className={cn(\n          \"group/swap w-full cursor-pointer select-none border-0 bg-transparent p-0 text-left text-3xl font-bold text-inherit\",\n          textClassName,\n        )}\n        onClick={() => !disableClick && setActive((current) => !current)}\n      >\n        <span\n          className={cn(common, initialTextClassName, {\n            \"flex flex-col\": true,\n            \"-translate-y-full\": active,\n            \"group-hover/swap:-translate-y-full\": supportsHover,\n          })}\n        >\n          {initialText}\n          {\n            /* Trick to make sure it can always fit all available words after transition as the second word is set to absolute*/\n            Boolean(longWord?.length) && <span className=\"invisible h-0\">{longWord}</span>\n          }\n        </span>\n        <span\n          className={cn(`${common} absolute top-full`, finalTextClassName, {\n            \"-translate-y-full\": active,\n            \"group-hover/swap:-translate-y-full\": supportsHover,\n          })}\n        >\n          {finalText}\n        </span>\n      </button>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/swap-text.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/swap-text",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

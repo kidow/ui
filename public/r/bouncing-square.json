@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "bouncing-square",
+  "title": "Bouncing Square",
+  "description": "사각형이 튀어오르는 로딩(bouncing square).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/bouncing-square.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const BouncingSquare = () => {\n  return (\n    <div className=\"relative w-10 h-12 flex items-end justify-center\">\n      <div className=\"absolute bottom-0 w-8 h-1 bg-zinc-200 dark:bg-zinc-800 rounded-full blur-sm\" />\n      <motion.div\n        className=\"w-6 h-6 bg-zinc-800 dark:bg-white rounded-sm origin-bottom\"\n        animate={{ y: [0, -24, 0], scaleY: [0.8, 1.1, 0.8], scaleX: [1.2, 0.9, 1.2] }}\n        transition={{ duration: 0.6, repeat: Infinity, ease: \"easeInOut\" }}\n      />\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/bouncing-square.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

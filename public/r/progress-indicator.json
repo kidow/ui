@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "progress-indicator",
+  "title": "Progress Indicator",
+  "description": "스크롤 진행률 표시(scroll progress indicator).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/progress-indicator.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion, useScroll, useSpring } from \"motion/react\";\n\ninterface ProgressIndicatorProps {\n  color?: string;\n  height?: number;\n  className?: string;\n}\n\nexport function ProgressIndicator({\n  color = 'bg-blue-500',\n  height = 4,\n  className = '',\n}: ProgressIndicatorProps) {\n  const { scrollYProgress } = useScroll();\n  const scaleX = useSpring(scrollYProgress, {\n    stiffness: 100,\n    damping: 30,\n    restDelta: 0.001,\n  });\n\n  return (\n    <motion.div\n      className={`fixed top-0 left-0 right-0 origin-left z-[9999] ${color} ${className}`}\n      style={{\n        scaleX,\n        height,\n        position: 'fixed',\n        top: 0,\n        left: 0,\n        right: 0,\n        originX: 0,\n        zIndex: 9999,\n      }}\n    />\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/progress-indicator.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

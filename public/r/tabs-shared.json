@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs-shared",
+  "title": "Tabs Shared",
+  "description": "fluid-tabs·gooey-tabs·shift-tabs 가 공유하는 탭 상태 유틸. 함께 설치된다.",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/tabs-shared.ts",
+      "content": "import { type FocusEvent, type KeyboardEvent, useCallback, useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\n/** Visible focus ring — use with a matching border-radius class. */\nexport function tabFocusClass(radiusClass: string) {\n  return cn(\n    radiusClass,\n    \"outline-none focus-visible:z-10\",\n    \"focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background\",\n  );\n}\n\nexport function useTabSelection({\n  defaultActiveIndex = 0,\n  activeIndex: activeIndexProp,\n  onActiveIndexChange,\n}: {\n  defaultActiveIndex?: number;\n  activeIndex?: number;\n  onActiveIndexChange?: (index: number) => void;\n}) {\n  const [uncontrolledIndex, setUncontrolledIndex] = useState(defaultActiveIndex);\n  const [keyboardFocusIndex, setKeyboardFocusIndex] = useState<number | null>(null);\n  const activeIndex = activeIndexProp ?? uncontrolledIndex;\n  const focusedIndex = keyboardFocusIndex ?? (activeIndex >= 0 ? activeIndex : 0);\n\n  const setActiveIndex = useCallback(\n    (index: number) => {\n      onActiveIndexChange?.(index);\n      if (activeIndexProp === undefined) {\n        setUncontrolledIndex(index);\n      }\n      setKeyboardFocusIndex(null);\n    },\n    [activeIndexProp, onActiveIndexChange],\n  );\n\n  const setFocusedIndex = useCallback((index: number) => {\n    setKeyboardFocusIndex(index);\n  }, []);\n\n  return { activeIndex, setActiveIndex, focusedIndex, setFocusedIndex };\n}\n\nexport function focusTabInList(tablist: HTMLElement, index: number) {\n  queueMicrotask(() => {\n    tablist.querySelectorAll<HTMLElement>('[role=\"tab\"]')[index]?.focus();\n  });\n}\n\nexport function handleTabListFocusCapture(\n  event: FocusEvent<HTMLElement>,\n  activeIndex: number,\n  setFocusedIndex: (index: number) => void,\n) {\n  const related = event.relatedTarget as Node | null;\n  if (related && event.currentTarget.contains(related)) {\n    return;\n  }\n  const index = activeIndex >= 0 ? activeIndex : 0;\n  setFocusedIndex(index);\n  focusTabInList(event.currentTarget, index);\n}\n\n/** Manual activation: arrows move focus; Enter / Space select the focused tab. */\nexport function handleTabListKeyDown(\n  event: KeyboardEvent<HTMLElement>,\n  count: number,\n  setActiveIndex: (index: number) => void,\n  setFocusedIndex: (index: number) => void,\n) {\n  if (count < 1) {\n    return;\n  }\n\n  const tablist = event.currentTarget;\n  const tabs = tablist.querySelectorAll<HTMLElement>('[role=\"tab\"]');\n  const target = event.target as HTMLElement;\n  const currentTab = target.closest<HTMLElement>('[role=\"tab\"]');\n\n  if (!currentTab || !tablist.contains(currentTab)) {\n    return;\n  }\n\n  const currentIndex = Array.from(tabs).indexOf(currentTab);\n  if (currentIndex === -1) {\n    return;\n  }\n\n  if (event.key === \"Enter\" || event.key === \" \") {\n    event.preventDefault();\n    setActiveIndex(currentIndex);\n    setFocusedIndex(currentIndex);\n    return;\n  }\n\n  if (count < 2) {\n    return;\n  }\n\n  let next: number | null = null;\n  switch (event.key) {\n    case \"ArrowRight\":\n    case \"ArrowDown\":\n      next = (currentIndex + 1) % count;\n      break;\n    case \"ArrowLeft\":\n    case \"ArrowUp\":\n      next = (currentIndex - 1 + count) % count;\n      break;\n    case \"Home\":\n      next = 0;\n      break;\n    case \"End\":\n      next = count - 1;\n      break;\n    default:\n      return;\n  }\n\n  event.preventDefault();\n  setFocusedIndex(next);\n  focusTabInList(tablist, next);\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/tabs-shared.ts"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "개발자 도구"
+  ],
+  "type": "registry:component"
+}

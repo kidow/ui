@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "bar-cascade",
+  "title": "Bar Cascade",
+  "description": "막대가 폭포처럼 이어 떨어지는 로딩(bar cascade).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/bar-cascade.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const BarCascade = () => {\n  return (\n    <div className=\"flex space-x-1 items-center h-8\">\n      {[0, 1, 2, 3, 4].map((i) => (\n        <motion.div\n          key={i}\n          className=\"w-1.5 bg-zinc-800 dark:bg-white rounded-full\"\n          animate={{ height: [\"8px\", \"24px\", \"8px\"] }}\n          transition={{ duration: 1, repeat: Infinity, delay: i * 0.1, ease: \"easeInOut\" }}\n        />\n      ))}\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/bar-cascade.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

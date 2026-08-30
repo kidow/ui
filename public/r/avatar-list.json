@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-list",
+  "title": "Avatar List",
+  "description": "아바타를 겹쳐 보여주는 목록(avatar list, avatar group).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/avatar-list.tsx",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst data = [\n  {\n    name: \"John Doe\",\n    position: \"Software Engineer\",\n    image:\n      \"https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n  },\n  {\n    name: \"Jane Smith\",\n    position: \"Product Manager\",\n    image:\n      \"https://images.unsplash.com/photo-1582610285985-a42d9193f2fd?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n  },\n  {\n    name: \"David Johnson\",\n    position: \"UX Designer\",\n    image:\n      \"https://images.unsplash.com/photo-1530268729831-4b0b9e170218?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n  },\n  {\n    name: \"Emily Davis\",\n    position: \"Frontend Developer\",\n    image:\n      \"https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n  },\n  {\n    name: \"Michael Wilson\",\n    position: \"Backend Developer\",\n    image:\n      \"https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n  },\n  {\n    name: \"Sarah Thompson\",\n    position: \"Data Scientist\",\n    image:\n      \"https://images.unsplash.com/photo-1573496799515-eebbb63814f2?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n  },\n];\n\ninterface AvatarData {\n  name: string;\n  position: string;\n  image: string;\n}\n\nexport default function AvatarList({\n  size = \"md\",\n  className,\n  items,\n}: {\n  size?: \"sm\" | \"md\" | \"lg\";\n  className?: string;\n  items?: AvatarData[];\n}) {\n  const avatars = items ?? data;\n  const sizes: Record<\"sm\" | \"md\" | \"lg\", string> = {\n    lg: \"m-3 size-6\",\n    md: \"m-2 size-12\",\n    sm: \"m-1 size-8\",\n  };\n\n  return (\n    <div className={cn(\"flex py-12\", className)}>\n      {avatars.map((item, index) => (\n        <div\n          key={`${item.name}-${index}`}\n          className={cn(\n            \"group/avatar relative z-0 flex scale-100 items-center transition-transform duration-200 ease-in-out hover:z-10 hover:scale-110\",\n            index > 0 && \"-ml-3\",\n          )}\n        >\n          <div className=\"relative overflow-hidden rounded-full bg-white\">\n            <div className=\"bg-size pointer-events-none absolute h-full w-full animate-bg-position from-violet-500 from-30% via-cyan-400 via-50% to-pink-500 to-80% bg-[length:300%_auto] opacity-15 group-hover/avatar:bg-linear-to-r\" />\n            <div className=\"z-1 blur-lg\" />\n            <img\n              src={item.image}\n              alt={item.name}\n              className={cn(\"rounded-full object-cover\", sizes[size] ?? sizes.md)}\n            />\n          </div>\n          <div className=\"absolute bottom-full left-1/2 -translate-x-1/2 translate-y-2 transform whitespace-nowrap rounded bg-slate-900 p-2 text-white opacity-0 transition-all duration-300 ease-in-out group-hover/avatar:-translate-y-2 group-hover/avatar:opacity-100 dark:bg-slate-100 dark:text-slate-900\">\n            <div className=\"text-sm font-semibold\">{item.name}</div>\n            <div className=\"text-sm\">{item.position}</div>\n          </div>\n        </div>\n      ))}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/avatar-list.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/list/avatar-list",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

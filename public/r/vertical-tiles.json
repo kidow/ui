@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "vertical-tiles",
+  "title": "Vertical Tiles",
+  "description": "세로 타일이 차례로 걷히는 프리로더(vertical tiles).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/vertical-tiles.tsx",
+      "content": "\"use client\";\n\nimport { motion, useInView } from \"motion/react\";\nimport type React from \"react\";\nimport { useCallback, useEffect, useRef, useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface Tile {\n  id: number;\n  width: number;\n  order: number;\n}\n\ninterface VerticalTilesProps {\n  tileClassName?: string;\n  minTileWidth?: number;\n  animationDuration?: number;\n  animationDelay?: number;\n  stagger?: number;\n  children?: React.ReactNode;\n}\n\nexport default function VerticalTiles({\n  tileClassName,\n  minTileWidth = 32,\n  animationDuration = 0.5,\n  animationDelay = 1,\n  stagger = 0.05,\n  children,\n}: VerticalTilesProps) {\n  const [tiles, setTiles] = useState<Tile[]>([]);\n  const containerRef = useRef<HTMLDivElement>(null);\n  const isInView = useInView(containerRef, { once: true, amount: 0.3 });\n\n  const calculateTiles = useCallback(() => {\n    if (containerRef.current) {\n      const { offsetWidth: width, offsetHeight: _ } = containerRef.current;\n      const tileCount = Math.max(3, Math.floor(width / minTileWidth));\n      const tileWidth = width / tileCount + 1;\n\n      const newTiles = Array.from({ length: tileCount }, (_, index) => ({\n        id: index,\n        width: tileWidth,\n        order: Math.abs(index - Math.floor((tileCount - 1) / 2)),\n      }));\n\n      setTiles(newTiles);\n    }\n  }, [minTileWidth]);\n\n  useEffect(() => {\n    calculateTiles();\n    const resizeObserver = new ResizeObserver(calculateTiles);\n    if (containerRef.current) {\n      resizeObserver.observe(containerRef.current);\n    }\n    return () => resizeObserver.disconnect();\n  }, [calculateTiles]);\n\n  return (\n    <div ref={containerRef} className=\"relative overflow-hidden\">\n      {children}\n\n      <div className=\"absolute inset-0 flex\">\n        {tiles.map((tile) => (\n          <motion.div\n            key={tile.id}\n            className={cn(\"bg-gray-800\", tileClassName)}\n            style={{\n              width: tile.width,\n              position: \"absolute\",\n              left: `${(tile.id * 100) / tiles.length}%`,\n              top: 0,\n              height: \"100%\",\n            }}\n            initial={{ y: 0 }}\n            animate={isInView ? { y: \"100%\" } : { y: 0 }}\n            transition={{\n              duration: animationDuration,\n              delay: animationDelay + tile.order * stagger,\n              ease: [0.45, 0, 0.55, 1],\n            }}\n          />\n        ))}\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/vertical-tiles.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/preloader/vertical-tiles",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

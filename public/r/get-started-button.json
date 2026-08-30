@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "get-started-button",
+  "title": "Get Started Button",
+  "description": "시작하기 유도 버튼(get started, cta).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/get-started-button.tsx",
+      "content": "\"use client\";\n\nimport { ArrowRight } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface IGetStartedButtonProps {\n  text: string;\n  className?: string;\n}\n\nexport default function GetStartedButton({\n  text = \"Get started\",\n  className,\n}: IGetStartedButtonProps) {\n  return (\n    <div className=\"min-h-12 w-48\">\n      <button\n        type=\"button\"\n        className={cn(\n          \"group/start flex h-12 w-40 items-center justify-center gap-3 rounded-lg bg-amber-100 p-2 font-bold transition-colors duration-100 ease-in-out hover:bg-orange-600\",\n          className,\n        )}\n      >\n        <span\n          className={cn(\n            \"text-orange-600 transition-colors duration-100 ease-in-out group-hover/start:text-amber-100\",\n          )}\n        >\n          {text}\n        </span>\n        <div\n          className={cn(\n            \"relative flex h-7 w-7 items-center justify-center overflow-hidden rounded-full transition-transform duration-100\",\n            \"bg-orange-600 group-hover/start:bg-amber-100\",\n          )}\n        >\n          <div className=\"absolute left-0 flex h-7 w-14 -translate-x-1/2 items-center justify-center transition-transform duration-200 ease-in-out group-hover/start:translate-x-0\">\n            <ArrowRight\n              size={16}\n              className={cn(\n                \"size-7 transform p-1 text-orange-600 opacity-0 group-hover/start:opacity-100\",\n              )}\n            />\n            <ArrowRight\n              size={16}\n              className={cn(\n                \"size-7 transform p-1 text-amber-100 opacity-100 transition-transform duration-300 ease-in-out group-hover/start:opacity-0\",\n              )}\n            />\n          </div>\n        </div>\n      </button>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/get-started-button.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/button/get-started-button",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:component"
+}

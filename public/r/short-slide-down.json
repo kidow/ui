@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "short-slide-down",
+  "title": "Short Slide Down",
+  "description": "살짝 아래로 미끄러지며 나타나는 텍스트(short slide down).",
+  "dependencies": [],
+  "registryDependencies": [
+    "@kidow/text-animator"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/short-slide-down.tsx",
+      "content": "\"use client\";\n\nimport { useMemo } from \"react\";\n\nimport TextAnimator, {\n  type TextAnimationBuildSpec,\n  type TextAnimationSpec,\n} from \"@/components/kidow/text-animator\";\n\nconst BASE_SPEC: TextAnimationSpec = {\n  id: \"short-slide-down\",\n  target: \"per-word\",\n  enter: {\n    durationMs: 520,\n    staggerMs: 0,\n    easing: \"cubic-bezier(0.2, 0.8, 0.2, 1)\",\n    from: {\n      opacity: 0,\n      yPx: -24,\n      blurPx: 2.4,\n      scale: 0.992,\n    },\n    to: {\n      opacity: 1,\n      yPx: 0,\n      blurPx: 0,\n      scale: 1,\n    },\n  },\n  exit: {\n    durationMs: 320,\n    staggerMs: 0,\n    easing: \"cubic-bezier(0.4, 0, 0.2, 1)\",\n    from: {\n      opacity: 1,\n      yPx: 0,\n      blurPx: 0,\n      scale: 1,\n    },\n    to: {\n      opacity: 0,\n      yPx: 10,\n      blurPx: 1.2,\n      scale: 1,\n    },\n  },\n  swap: {\n    mode: \"sequential\",\n    overlapMs: 0,\n    microDelayMs: 70,\n  },\n  customRenderer: \"kinetic-top-build\",\n  build: {\n    firstWordDurationMs: 360,\n    pushDurationMs: 500,\n    exitDurationMs: 320,\n    holdMs: 1100,\n    betweenPhrasesMs: 180,\n    entryOffsetYPx: -28,\n    lineGapPx: 12,\n    firstWordYPx: -14,\n    entryScale: 0.992,\n    entryBlurPx: 2.4,\n    reflowBlurPx: 0.7,\n    exitYPx: 10,\n    exitBlurPx: 1.2,\n    easing: \"cubic-bezier(0.2, 0.8, 0.2, 1)\",\n    exitEasing: \"cubic-bezier(0.4, 0, 0.2, 1)\",\n  },\n};\n\nconst DEFAULT_PHRASES: readonly (readonly string[])[] = [\n  [\"Lands\", \"top\", \"first\"],\n  [\"Stacks\", \"into\", \"place\"],\n  [\"Drops\", \"line\", \"gently\"],\n];\n\nexport interface ShortSlideDownProps {\n  /** Phrases to cycle through. Each phrase is an array of words. */\n  phrases?: string[][];\n  /** Override build params (gap, duration, blur, etc.). */\n  build?: Partial<TextAnimationBuildSpec>;\n  /** Global speed multiplier. Defaults to the runtime default (0.72) when omitted. */\n  speed?: number;\n  /** Hold time between enter and exit in ms. Defaults to the runtime default (550) when omitted. */\n  holdMs?: number;\n  /** Gap between cycles in ms. Defaults to the runtime default (320) when omitted. */\n  gapMs?: number;\n  /** Y-travel multiplier for all transforms. Defaults to the runtime default (0.58) when omitted. */\n  yTravel?: number;\n  className?: string;\n}\n\nexport default function ShortSlideDown({\n  phrases,\n  build,\n  speed,\n  holdMs,\n  gapMs,\n  yTravel,\n  className,\n}: ShortSlideDownProps = {}) {\n  const spec = useMemo<TextAnimationSpec>(\n    () => ({\n      ...BASE_SPEC,\n      build: { ...BASE_SPEC.build, ...build },\n    }),\n    [build],\n  );\n  const effectivePhrases = useMemo(() => phrases ?? DEFAULT_PHRASES.map((p) => [...p]), [phrases]);\n  return (\n    <TextAnimator\n      spec={spec}\n      phrases={effectivePhrases}\n      speed={speed}\n      holdMs={holdMs}\n      gapMs={gapMs}\n      yTravel={yTravel}\n      className={className}\n    />\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/short-slide-down.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/short-slide-down",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

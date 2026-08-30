@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "double-underline",
+  "title": "Double Underline",
+  "description": "두 줄 밑줄이 차례로 그어지는 텍스트(double underline).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/double-underline.tsx",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport default function DoubleUnderline({\n  className,\n  children,\n  ...props\n}: React.HTMLProps<HTMLSpanElement>) {\n  return (\n    <span\n      {...props}\n      className={cn(\n        \"group/underline relative inline-block cursor-pointer\",\n        \"font-medium tracking-tight text-zinc-900 dark:text-zinc-100\",\n        \"transition-[letter-spacing,color] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]\",\n        \"hover:tracking-[-0.01em]\",\n        className,\n      )}\n    >\n      {children}\n      {/* Bottom stroke — soft gradient, always present, fades a touch on hover */}\n      <span\n        aria-hidden\n        className={cn(\n          \"pointer-events-none absolute -bottom-[3px] left-0 h-px w-full\",\n          \"bg-gradient-to-r from-transparent via-current/70 to-transparent\",\n          \"transition-opacity duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]\",\n          \"group-hover/underline:opacity-50\",\n        )}\n      />\n      {/* Top stroke — lifts from below to above the glyph on hover */}\n      <span\n        aria-hidden\n        className={cn(\n          \"pointer-events-none absolute left-0 h-px w-full\",\n          \"bg-gradient-to-r from-transparent via-current to-transparent\",\n          \"top-[calc(100%-3px)] opacity-0\",\n          \"transition-[top,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]\",\n          \"group-hover/underline:-top-px group-hover/underline:opacity-100\",\n        )}\n      />\n    </span>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/double-underline.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/double-underline",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

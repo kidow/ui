@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "double-ring",
+  "title": "Double Ring",
+  "description": "고리 두 개가 반대로 도는 로딩(double ring).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/double-ring.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const DoubleRing = () => {\n  return (\n    <div className=\"relative w-10 h-10 flex items-center justify-center\">\n      <motion.div\n        className=\"absolute w-10 h-10 border-2 border-zinc-200 dark:border-zinc-800 rounded-full border-t-zinc-800 dark:border-t-white\"\n        animate={{ rotate: 360 }}\n        transition={{ duration: 1.5, repeat: Infinity, ease: \"linear\" }}\n      />\n      <motion.div\n        className=\"absolute w-6 h-6 border-2 border-zinc-200 dark:border-zinc-800 rounded-full border-b-zinc-800 dark:border-b-white\"\n        animate={{ rotate: -360 }}\n        transition={{ duration: 1, repeat: Infinity, ease: \"linear\" }}\n      />\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/double-ring.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

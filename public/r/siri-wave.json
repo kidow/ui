@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "siri-wave",
+  "title": "Siri Wave",
+  "description": "Siri 파형처럼 일렁이는 로딩(siri wave).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/siri-wave.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const SiriWave = () => (\n  <div className=\"flex space-x-1 items-center h-8\">\n    {[0,1,2,3,4].map(i => (\n      <motion.div\n        key={i}\n        className=\"w-1 bg-zinc-800 dark:bg-white rounded-full\"\n        animate={{ height: [4, 24, 4] }}\n        transition={{ duration: 1.2, repeat: Infinity, delay: i * 0.1, ease: \"easeInOut\" }}\n      />\n    ))}\n  </div>\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/siri-wave.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

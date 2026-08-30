@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "calendar-widget",
+  "title": "Calendar Widget",
+  "description": "달력 위젯(calendar widget, 월간 달력).",
+  "dependencies": [
+    "motion",
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/calendar-widget.tsx",
+      "content": "\"use client\";\n\nimport { Calendar as CalendarIcon, DotIcon } from \"lucide-react\";\nimport { AnimatePresence, motion } from \"motion/react\";\nimport { useRef, useState } from \"react\";\n\nconst monthArray = [\n  \"\",\n  \"January\",\n  \"February\",\n  \"March\",\n  \"April\",\n  \"May\",\n  \"June\",\n  \"July\",\n  \"August\",\n  \"September\",\n  \"October\",\n  \"November\",\n  \"December\",\n];\n\ninterface EventType {\n  date: number;\n  title: string;\n  time: string;\n}\n\nconst EMPTY_CALENDAR_EVENTS: EventType[] = [];\n\nexport default function CalendarWidget({\n  initialSelectedDate = 1,\n  initialShowEvents = true,\n  eventsData,\n  month = 1,\n  year = new Date().getFullYear(),\n}: {\n  initialSelectedDate?: number;\n  initialShowEvents?: boolean;\n  eventsData?: EventType[];\n  month?: number;\n  year?: number;\n}) {\n  const resolvedEvents = eventsData ?? EMPTY_CALENDAR_EVENTS;\n  const [selectedDate, setSelectedDate] = useState(initialSelectedDate);\n  const [showEvents, setShowEvents] = useState(initialShowEvents);\n  const scrollRef = useRef<HTMLDivElement>(null);\n\n  const dates = Array.from({ length: 30 }, (_, i) => i + 1);\n  const daySymbols = [\"S\", \"M\", \"T\", \"W\", \"T\", \"F\", \"S\"];\n\n  const filteredEvents = resolvedEvents.filter((event: EventType) => event.date === selectedDate);\n\n  const scrollToDate = (date: number) => {\n    const selectedElement = scrollRef.current?.querySelector(`[data-date=\"${date}\"]`);\n    selectedElement?.scrollIntoView({ behavior: \"smooth\", inline: \"center\", block: \"nearest\" });\n  };\n\n  return (\n    <motion.div\n      className=\"mx-auto max-w-sm rounded-3xl bg-slate-200 shadow-lg\"\n      initial={{ scale: 0.9, opacity: 0 }}\n      animate={{ scale: 1, opacity: 1 }}\n      transition={{ duration: 0.3 }}\n    >\n      <div className=\"mx-auto max-w-sm rounded-3xl px-6 py-2\">\n        <h2 className=\"mb-4 text-2xl font-bold\">{`${monthArray[month]} ${year}`}</h2>\n        <div\n          ref={scrollRef}\n          className=\"scrollbar-hide flex items-start space-x-2 overflow-x-auto py-2\"\n          style={{ scrollbarWidth: \"none\", msOverflowStyle: \"none\" }}\n        >\n          {dates.map((date, index) => (\n            <motion.button\n              key={date}\n              data-date={date}\n              className=\"flex w-10 shrink-0 flex-col items-center justify-center gap-y-2 rounded-lg\"\n              onClick={() => {\n                setSelectedDate(date);\n                scrollToDate(date);\n                setShowEvents(true);\n              }}\n              whileHover={{ scale: 1.05 }}\n              whileTap={{ scale: 0.95 }}\n            >\n              <span className=\"mb-1 text-xs\">{daySymbols[(index + 4) % 7]}</span>\n              <AnimatePresence>\n                {selectedDate === date ? (\n                  <motion.span\n                    layoutId=\"highlighted-date\"\n                    className=\"flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-black shadow-lg\"\n                    transition={{\n                      type: \"spring\",\n                      stiffness: 300,\n                      damping: 20,\n                    }}\n                  >\n                    {date}\n                  </motion.span>\n                ) : (\n                  <span className=\"flex h-8 w-8 items-center justify-center\">{date}</span>\n                )}\n              </AnimatePresence>\n              <span>\n                {eventsData?.find((alldates: EventType) => alldates.date === date) ? (\n                  <DotIcon />\n                ) : (\n                  \"\"\n                )}\n              </span>\n            </motion.button>\n          ))}\n        </div>\n      </div>\n\n      <div className=\"w-full rounded-3xl bg-[#fefefe] px-6 shadow-lg\">\n        <AnimatePresence mode=\"wait\">\n          {showEvents && (\n            <motion.div\n              key=\"events\"\n              className=\"scrollbar-hide mt-2 h-[150px] overflow-scroll border-t pt-4\"\n              initial={{ opacity: 0, y: 20 }}\n              animate={{ opacity: 1, y: 0 }}\n              exit={{ opacity: 0, y: -20 }}\n              transition={{ duration: 0.2 }}\n            >\n              {filteredEvents.length > 0 ? (\n                filteredEvents.map((event: EventType, index: number) => (\n                  <motion.div\n                    key={index}\n                    className=\"mb-2 border-b-2 border-slate-200\"\n                    initial={{ opacity: 0, x: -20 }}\n                    animate={{ opacity: 1, x: 0 }}\n                    transition={{ delay: index * 0.1 }}\n                  >\n                    <h4 className=\"font-medium\">{event.title}</h4>\n                    <p className=\"text-sm text-gray-500\">{event.time}</p>\n                  </motion.div>\n                ))\n              ) : (\n                <motion.div\n                  className=\"flex flex-col items-center text-gray-500\"\n                  initial={{ opacity: 0 }}\n                  animate={{ opacity: 1 }}\n                >\n                  <CalendarIcon className=\"mb-2 h-8 w-8\" />\n                  <p>No Events</p>\n                </motion.div>\n              )}\n            </motion.div>\n          )}\n        </AnimatePresence>\n      </div>\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/calendar-widget.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/calendar-widget",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

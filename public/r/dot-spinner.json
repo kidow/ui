@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dot-spinner",
+  "title": "Dot Spinner",
+  "description": "점이 원을 그리며 도는 로딩(dot spinner).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/dot-spinner.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const DotSpinner = () => {\n  return (\n    <div className=\"relative w-10 h-10\">\n      {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (\n        <motion.div\n          key={i}\n          className=\"absolute top-0 left-1/2 w-2 h-2 bg-zinc-800 dark:bg-white rounded-full -ml-1 origin-[4px_20px]\"\n          style={{ rotate: i * 45 }}\n          animate={{ opacity: [1, 0.2] }}\n          transition={{ duration: 1, repeat: Infinity, delay: i * 0.125, ease: \"linear\" }}\n        />\n      ))}\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/dot-spinner.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

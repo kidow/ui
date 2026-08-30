@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "apple-text-reveal",
+  "title": "Apple Text Reveal",
+  "description": "글자가 차례로 드러나는 로딩 문구(text reveal).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/apple-text-reveal.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const AppleTextReveal = () => (\n  <div className=\"font-medium text-lg text-zinc-900 dark:text-white overflow-hidden h-6 relative\">\n    <motion.div\n      animate={{ y: [\"100%\", \"0%\", \"-100%\"] }}\n      transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n    >\n      Loading\n    </motion.div>\n  </div>\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/apple-text-reveal.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

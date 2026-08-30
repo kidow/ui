@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "zoom-image",
+  "title": "Zoom Image",
+  "description": "hover 하면 확대되는 이미지(zoom image).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/zoom-image.tsx",
+      "content": "\"use client\";\n\nimport type { ImgHTMLAttributes } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface ZoomImageProps extends ImgHTMLAttributes<HTMLImageElement> {\n  zoom: \"zoomIn\" | \"zoomOut\";\n}\n\nexport default function ZoomImage({ className, zoom, ...props }: ZoomImageProps) {\n  const zoomClass = cn({\n    \"scale-125\": !zoom,\n    \"hover:scale-110\": zoom === \"zoomIn\",\n    \"hover:scale-90\": zoom === \"zoomOut\",\n  });\n\n  return (\n    <div className=\"flex h-52 w-52 gap-7\">\n      <img\n        alt=\"\"\n        {...props}\n        className={cn(\n          \"delay-150 h-full w-full object-contain transition-transform duration-300\",\n          zoomClass,\n          className,\n        )}\n      />\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/zoom-image.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/image/zoom-image",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "미디어·데이터"
+  ],
+  "type": "registry:component"
+}

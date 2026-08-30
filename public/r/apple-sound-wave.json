@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "apple-sound-wave",
+  "title": "Apple Sound Wave",
+  "description": "음파처럼 번지는 로딩(sound wave).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/apple-sound-wave.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const AppleSoundWave = () => (\n  <div className=\"flex space-x-1 h-8 items-center\">\n    {[1, 2, 3, 2, 1].map((val, i) => (\n      <motion.div\n        key={i}\n        className=\"w-1 bg-zinc-800 dark:bg-white rounded-full\"\n        animate={{ height: [4, val * 8, 4] }}\n        transition={{ duration: 1, repeat: Infinity, delay: i * 0.1, ease: \"easeInOut\" }}\n      />\n    ))}\n  </div>\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/apple-sound-wave.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

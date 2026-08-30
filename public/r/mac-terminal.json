@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "mac-terminal",
+  "title": "Mac Terminal",
+  "description": "맥 터미널 창 모양 로딩(mac terminal).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/mac-terminal.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const MacTerminal = () => (\n  <div className=\"flex items-center text-zinc-900 dark:text-white font-mono text-sm\">\n    <span>~ %</span>\n    <motion.span\n      className=\"ml-1.5 w-2 h-4 bg-zinc-900 dark:bg-white inline-block\"\n      animate={{ opacity: [1, 0, 1] }}\n      transition={{ duration: 1, repeat: Infinity, ease: \"linear\" }}\n    />\n  </div>\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/mac-terminal.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

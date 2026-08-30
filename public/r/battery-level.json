@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "battery-level",
+  "title": "Battery Level",
+  "description": "배터리 잔량을 막대로 보여주는 위젯(battery level).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@kidow/donut-chart"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/battery-level.tsx",
+      "content": "\"use client\";\n\nimport { AppleIcon, Laptop, Phone, Watch } from \"lucide-react\";\n\nimport DonutChart from \"@/components/kidow/donut-chart\";\n\nconst items = [\n  {\n    level: 100,\n    icon: AppleIcon,\n  },\n  {\n    level: 40,\n    icon: Phone,\n  },\n  {\n    level: 80,\n    icon: Laptop,\n  },\n  {\n    level: 20,\n    icon: Watch,\n  },\n];\n\nexport default function BatteryLevel() {\n  return (\n    <div className=\"grid size-52 grid-cols-2 grid-rows-2 justify-evenly rounded-3xl bg-foreground p-4 text-background\">\n      {items.map((item, index) => {\n        return (\n          <DonutChart\n            progress={item.level}\n            circleWidth={10}\n            progressWidth={10}\n            size={76}\n            className=\"relative flex items-center justify-center\"\n            key={`item_${index}`}\n            trackClassName=\"text-green-500/50 text-green-100/30\"\n          >\n            <item.icon className=\"absolute\" size={24} />\n          </DonutChart>\n        );\n      })}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/battery-level.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/battery-level",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

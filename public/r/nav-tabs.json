@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "nav-tabs",
+  "title": "Nav Tabs",
+  "description": "내비게이션 탭(nav tabs).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/nav-tabs.tsx",
+      "content": "\"use client\";\n\nimport { motion } from \"motion/react\";\nimport { useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface TabProps {\n  text: string;\n  selected: boolean;\n  setSelected: React.Dispatch<React.SetStateAction<string>>;\n}\n\nexport default function NavTabs({ tabs }: { tabs: string[] }) {\n  const [selected, setSelected] = useState<string>(tabs[0]);\n\n  return (\n    <div className=\"flex flex-wrap items-center justify-center gap-4 rounded-md bg-violet-950 p-6\">\n      {tabs.map((tab) => (\n        <Tab text={tab} selected={selected === tab} setSelected={setSelected} key={tab} />\n      ))}\n    </div>\n  );\n}\n\nconst Tab = ({ text, selected, setSelected }: TabProps) => {\n  return (\n    <button\n      type=\"button\"\n      onClick={() => setSelected(text)}\n      className={cn(\n        \"relative rounded-md p-2 text-sm transition-colors\",\n        selected ? \"text-white\" : \"text-slate-300 hover:font-black\",\n      )}\n    >\n      <p className=\"relative z-50 min-w-20\">{text}</p>\n      {selected && (\n        <motion.span\n          layoutId=\"tabs\"\n          transition={{ type: \"spring\", duration: 0.5 }}\n          className=\"absolute inset-0 rounded-sm bg-linear-to-r from-indigo-600 to-pink-600\"\n        />\n      )}\n    </button>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/nav-tabs.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/container/nav-tabs",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

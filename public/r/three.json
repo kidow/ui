@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "three",
+  "title": "Three",
+  "description": "벤토 그리드 배치 3번(bento grid layout).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@kidow/expense-tracker"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/three.tsx",
+      "content": "\"use client\";\n\nimport { CarFront, Utensils } from \"lucide-react\";\n\nimport ExpenseTracker, { spendingTrackerProps } from \"@/components/kidow/expense-tracker\";\nimport { cn } from \"@/lib/utils\";\n\nfunction BentoCard({ children, className }: { children: React.ReactNode; className?: string }) {\n  return (\n    <div className={cn(\"relative h-full w-full overflow-hidden rounded-3xl p-4\", className)}>\n      {children}\n    </div>\n  );\n}\n\nfunction FeatureOne() {\n  return (\n    <BentoCard className=\"p-0 sm:row-span-2\">\n      <ExpenseTracker {...spendingTrackerProps} />\n    </BentoCard>\n  );\n}\n\nfunction FeatureTwo() {\n  return (\n    <BentoCard className=\"flex flex-col gap-2 border bg-background dark:border-zinc-700\">\n      <span className=\"text-xs font-semibold uppercase text-muted-foreground\">Total income</span>\n      <div className=\"text-3xl font-black text-green-600\">$7,000</div>\n    </BentoCard>\n  );\n}\n\nfunction FeatureThree() {\n  return (\n    <BentoCard className=\"flex flex-col gap-2 border bg-background dark:border-zinc-700\">\n      <span className=\"text-xs font-semibold uppercase text-muted-foreground\">Top categories</span>\n      <div className=\"flex w-full gap-2\">\n        <Utensils size={16} className=\"text-foreground\" />\n        <span className=\"text-xs text-foreground\">Food</span>\n        <span className=\"ml-auto text-xs font-black text-red-600 dark:text-red-400\">$2,000</span>\n      </div>\n      <div className=\"flex w-full gap-2\">\n        <CarFront size={16} className=\"text-foreground\" />\n        <span className=\"text-xs text-foreground\">Transport</span>\n        <span className=\"ml-auto text-xs font-black text-red-600 dark:text-red-400\">$1,000</span>\n      </div>\n    </BentoCard>\n  );\n}\n\nexport default function Three() {\n  return (\n    <div className=\"grid w-fit min-w-0 grid-cols-1 grid-rows-1 gap-3 sm:grid-cols-2 sm:grid-rows-2\">\n      <FeatureOne />\n      <FeatureTwo />\n      <FeatureThree />\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/three.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/bento-grid/three",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

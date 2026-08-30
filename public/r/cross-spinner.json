@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cross-spinner",
+  "title": "Cross Spinner",
+  "description": "십자가 도는 로딩(cross spinner).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/cross-spinner.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const CrossSpinner = () => {\n  return (\n    <motion.div\n      className=\"relative w-8 h-8 flex items-center justify-center\"\n      animate={{ rotate: [0, 90, 180, 270, 360] }}\n      transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n    >\n      <div className=\"absolute w-full h-1.5 bg-zinc-800 dark:bg-white rounded-full\" />\n      <div className=\"absolute h-full w-1.5 bg-zinc-800 dark:bg-white rounded-full\" />\n    </motion.div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/cross-spinner.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

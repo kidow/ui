@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "fluid-skeleton",
+  "title": "Fluid Skeleton",
+  "description": "유체처럼 흐르는 스켈레톤(fluid skeleton).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/fluid-skeleton.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const FluidSkeleton = () => (\n  <div className=\"w-24 h-10 bg-zinc-200 dark:bg-zinc-800 rounded-xl overflow-hidden relative\">\n    <motion.div\n      className=\"absolute inset-0 bg-gradient-to-r from-transparent via-white/60 to-transparent\"\n      animate={{ x: [\"-100%\", \"200%\"] }}\n      transition={{ duration: 1.5, repeat: Infinity, ease: \"linear\" }}\n    />\n  </div>\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/fluid-skeleton.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

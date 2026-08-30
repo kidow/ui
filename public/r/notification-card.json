@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "notification-card",
+  "title": "Notification Card",
+  "description": "알림 카드(notification card).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/notification-card.tsx",
+      "content": "\"use client\";\n\nimport { motion } from \"motion/react\";\nimport type React from \"react\";\n\ninterface UserInfoProps {\n  name: string;\n  title: string;\n  avatar: string;\n}\n\ninterface NotificationCardProps {\n  title: string;\n  message: string;\n  userInfo: UserInfoProps;\n  RosettaLogo: React.FC;\n}\n\nconst NotificationCard: React.FC<NotificationCardProps> = ({\n  title,\n  message,\n  userInfo,\n  RosettaLogo,\n}) => {\n  return (\n    <div className=\"p-s relative mx-auto mb-28 w-[70%]\">\n      {/* Notification Section */}\n      <motion.div\n        initial={{ y: -50, opacity: 0 }}\n        animate={{ y: 0, opacity: 1 }}\n        transition={{ duration: 0.5, ease: \"easeOut\" }}\n        className=\"rounded-lg bg-white p-4 shadow-lg\"\n      >\n        <div className=\"flex items-center gap-3\">\n          <RosettaLogo />\n          <h4 className=\"text-lg font-semibold text-gray-400\">{title}</h4>\n        </div>\n        <div className=\"mt-3\">\n          <p className=\"ml-12 text-base font-bold leading-relaxed text-black\">{message}</p>\n        </div>\n      </motion.div>\n\n      {/* User Info Section */}\n      <div className=\"flex justify-center\">\n        <motion.div\n          initial={{ y: 0, opacity: 0 }}\n          animate={{ y: 80, opacity: 1 }}\n          transition={{ delay: 0.5, duration: 0.6, ease: \"easeOut\" }}\n          className=\"absolute -bottom-8 w-[60%] rounded-full bg-green-600 px-2 py-2 shadow-lg\"\n        >\n          <div className=\"flex items-center gap-3\">\n            <img\n              src={userInfo.avatar}\n              alt={userInfo.name}\n              className=\"h-14 w-14 rounded-full border-2 border-white\"\n            />\n            <div>\n              <h4 className=\"text-sm font-semibold text-white\">{userInfo.name}</h4>\n              <p className=\"text-xs text-green-100\">{userInfo.title}</p>\n            </div>\n          </div>\n        </motion.div>\n      </div>\n    </div>\n  );\n};\n\nexport default NotificationCard;\n",
+      "type": "registry:component",
+      "target": "components/kidow/notification-card.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/card/notification-card",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "카드·테두리"
+  ],
+  "type": "registry:component"
+}

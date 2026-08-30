@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "arrow-button",
+  "title": "Arrow Button",
+  "description": "화살표가 움직이는 버튼(arrow button).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/arrow-button.tsx",
+      "content": "\"use client\";\nimport { MoveRight } from \"lucide-react\";\nimport type React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface ArrowButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {\n  text: string;\n  textColor?: string;\n  buttonOverlayColor?: string;\n  borderColor?: string;\n  iconColor?: string;\n  className?: string;\n}\n\nexport default function ArrowButton({\n  text = \"Open\",\n  textColor = \"#bf49ff\",\n  buttonOverlayColor = \"#bf49ff\",\n  borderColor = \"#c284f9\",\n  iconColor = \"white\",\n  className,\n  ...props\n}: ArrowButtonProps) {\n  return (\n    <button\n      type=\"button\"\n      style={{ borderColor: borderColor }}\n      {...props}\n      className={cn(\n        \"group relative inline-flex items-center justify-center overflow-hidden rounded-full border-2 border-purple-400 bg-background px-6 py-3 font-medium shadow-md transition-transform duration-300 ease-out\",\n        className,\n      )}\n    >\n      <span\n        style={{ background: buttonOverlayColor }}\n        className={cn(\n          \"ease absolute inset-0 flex h-full w-full -translate-x-full items-center justify-center bg-purple-400 text-white duration-300 group-hover:translate-x-0\",\n        )}\n      >\n        <MoveRight style={{ color: iconColor }} />\n      </span>\n      <span\n        style={{ color: textColor }}\n        className={cn(\n          \"absolute flex h-full w-full transform items-center justify-center font-bold transition-transform duration-300 ease-in-out group-hover:translate-x-full\",\n        )}\n      >\n        {text}\n      </span>\n      <span className=\"invisible relative\">Button</span>\n    </button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/arrow-button.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/button/arrow-button",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:component"
+}

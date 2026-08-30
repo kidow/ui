@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "circular-bars",
+  "title": "Circular Bars",
+  "description": "막대가 원을 이뤄 도는 로딩(circular bars).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/circular-bars.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const CircularBars = () => {\n  return (\n    <div className=\"relative w-10 h-10\">\n      {Array.from({ length: 8 }).map((_, i) => (\n        <motion.div\n          key={i}\n          className=\"absolute top-0 left-[18px] w-1 h-3 bg-zinc-800 dark:bg-white rounded-full origin-[2px_20px]\"\n          style={{ rotate: i * 45 }}\n          animate={{ scaleY: [0.5, 1.5, 0.5] }}\n          transition={{ duration: 1.2, repeat: Infinity, delay: i * 0.15, ease: \"easeInOut\" }}\n        />\n      ))}\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/circular-bars.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

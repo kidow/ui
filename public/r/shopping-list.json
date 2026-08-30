@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "shopping-list",
+  "title": "Shopping List",
+  "description": "장보기 목록 위젯(shopping list).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/shopping-list.tsx",
+      "content": "\"use client\";\n\nimport { useRef, useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport type ShoppingListItem = {\n  id: string;\n  title: string;\n  checked?: boolean;\n};\n\nexport type ShoppingListProps = {\n  className?: string;\n  title?: string;\n  items?: ShoppingListItem[];\n};\n\nconst DEFAULT_ITEMS: ShoppingListItem[] = [\n  { id: \"milk\", title: \"Milk\" },\n  { id: \"eggs\", title: \"Eggs\", checked: true },\n  { id: \"pepper\", title: \"Ground pepper\", checked: true },\n  { id: \"spaghetti\", title: \"Spaghetti\" },\n  { id: \"butter\", title: \"Butter\" },\n];\n\nfunction CheckIcon({ className }: { className?: string }) {\n  return (\n    <svg\n      className={className}\n      width=\"14\"\n      height=\"14\"\n      viewBox=\"0 0 15 15\"\n      fill=\"none\"\n      xmlns=\"http://www.w3.org/2000/svg\"\n      aria-hidden\n    >\n      <path\n        d=\"M11.4669 3.72684C11.7558 3.91574 11.8369 4.30308 11.648 4.59198L7.39799 11.092C7.29783 11.2452 7.13556 11.3467 6.95402 11.3699C6.77247 11.3931 6.58989 11.3355 6.45446 11.2124L3.70446 8.71241C3.44905 8.48022 3.43023 8.08494 3.66242 7.82953C3.89461 7.57412 4.28989 7.55529 4.5453 7.78749L6.75292 9.79441L10.6018 3.90792C10.7907 3.61902 11.178 3.53795 11.4669 3.72684Z\"\n        fill=\"currentColor\"\n        fillRule=\"evenodd\"\n        clipRule=\"evenodd\"\n      />\n    </svg>\n  );\n}\n\nexport default function ShoppingList({\n  className,\n  title = \"Shopping list\",\n  items = DEFAULT_ITEMS,\n}: ShoppingListProps) {\n  const itemsRef = useRef<ShoppingListItem[] | null>(null);\n  const [rows, setRows] = useState<ShoppingListItem[]>([]);\n\n  if (items !== itemsRef.current) {\n    itemsRef.current = items;\n    setRows(items);\n  }\n\n  const toggle = (id: string) => {\n    setRows((prev) =>\n      prev.map((item) => (item.id === id ? { ...item, checked: !item.checked } : item)),\n    );\n  };\n\n  return (\n    <div\n      className={cn(\n        \"flex h-64 w-48 flex-col relative overflow-hidden rounded-3xl border border-border bg-background font-sans shadow-md\",\n        className,\n      )}\n    >\n      <p className=\"shrink-0 p-4 pb-2 text-[15px] font-semibold leading-snug text-foreground\">\n        {title}\n      </p>\n\n      <ul className=\"px-4 pb-4 flex min-h-0 flex-1 flex-col gap-0.5 overflow-y-auto\">\n        {rows.map((item) => (\n          <li key={item.id}>\n            <button\n              type=\"button\"\n              role=\"checkbox\"\n              aria-checked={item.checked ?? false}\n              onClick={() => toggle(item.id)}\n              className=\"touch-manipulation flex min-h-11 w-full items-center gap-2.5 rounded-md py-0.5 text-left\"\n            >\n              <span\n                className={cn(\n                  \"flex size-5 shrink-0 items-center justify-center rounded-md border-2 transition-colors\",\n                  item.checked\n                    ? \"border-foreground bg-foreground text-background\"\n                    : \"border-muted-foreground/35 bg-transparent text-transparent\",\n                )}\n                aria-hidden\n              >\n                <CheckIcon />\n              </span>\n              <span\n                className={cn(\n                  \"min-w-0 flex-1 text-[15px] leading-snug\",\n                  item.checked ? \"text-muted-foreground line-through\" : \"text-foreground\",\n                )}\n              >\n                {item.title}\n              </span>\n            </button>\n          </li>\n        ))}\n      </ul>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/shopping-list.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/shopping-list",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

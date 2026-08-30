@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "slide-arrow-button",
+  "title": "Slide Arrow Button",
+  "description": "화살표가 미끄러지는 버튼(slide arrow button).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/slide-arrow-button.tsx",
+      "content": "\"use client\";\n\nimport { ArrowRight } from \"lucide-react\";\nimport type React from \"react\";\n\ninterface SlideArrowButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {\n  text?: string;\n  primaryColor?: string;\n}\n\nexport default function SlideArrowButton({\n  text = \"Get Started\",\n  primaryColor = \"#6f3cff\",\n  className = \"\",\n  ...props\n}: SlideArrowButtonProps) {\n  return (\n    <button\n      type=\"button\"\n      className={`group/slide relative rounded-full border border-white bg-white p-2 text-xl font-semibold ${className}`}\n      {...props}\n    >\n      <div\n        className=\"absolute left-0 top-0 flex h-full w-11 items-center justify-end rounded-full transition-all duration-200 ease-in-out group-hover/slide:w-full\"\n        style={{ backgroundColor: primaryColor }}\n      >\n        <span className=\"mr-3 text-white transition-all duration-200 ease-in-out\">\n          <ArrowRight size={20} />\n        </span>\n      </div>\n      <span className=\"relative left-4 z-10 whitespace-nowrap px-8 font-semibold text-black transition-all duration-200 ease-in-out group-hover/slide:-left-3 group-hover/slide:text-white\">\n        {text}\n      </span>\n    </button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/slide-arrow-button.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/button/slide-arrow-button",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:component"
+}

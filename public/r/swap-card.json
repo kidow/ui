@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "swap-card",
+  "title": "Swap Card",
+  "description": "앞뒤가 바뀌는 카드(swap card).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@kidow/flip-card",
+    "@kidow/wave-reveal"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/swap-card.tsx",
+      "content": "\"use client\";\nimport { LaptopMinimal, LocateOff } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport FlipCard from \"@/components/kidow/flip-card\";\nimport WaveReveal from \"@/components/kidow/wave-reveal\";\nimport { cn } from \"@/lib/utils\";\n\ninterface SwapCardProps {\n  firstImage?: string;\n  secondImage?: string;\n  firstImageClass?: string;\n  secondImageClass?: string;\n  firstTitle?: string;\n  secondTitle?: string;\n  firstDescription?: string;\n  secondDescription?: string;\n  story?: string;\n}\n\nexport default function SwapCard({\n  firstImage = \"\",\n  secondImage = \"\",\n  firstImageClass,\n  secondImageClass,\n  firstDescription = \"first description\",\n  secondDescription = \"second description\",\n  firstTitle = \"first title\",\n  secondTitle = \"second title\",\n  story = \"Story\",\n}: SwapCardProps) {\n  const [isFirstBoxVisible, setIsFirstBoxVisible] = useState(true);\n\n  const handleSwap = () => {\n    setIsFirstBoxVisible(!isFirstBoxVisible);\n  };\n\n  return (\n    <div className=\"h-[50%] w-96 rounded-md bg-gray-100 p-4\">\n      <div className=\"flex h-full w-full gap-4 overflow-hidden\">\n        <button onClick={handleSwap} type=\"button\" className=\"m-auto h-12 w-14 border-2 p-3\">\n          {isFirstBoxVisible ? <LaptopMinimal color=\"black\" /> : <LocateOff color=\"black\" />}\n        </button>\n        <div className=\"relative h-80 w-80 overflow-hidden bg-none transition-transform duration-700 ease-in-out\">\n          <div\n            className={cn(\n              \"absolute flex h-full w-full items-center justify-center transition-transform duration-700 ease-in-out\",\n              isFirstBoxVisible ? \"translate-y-0 transform\" : \"-translate-y-full transform\",\n              firstImageClass,\n            )}\n          >\n            <FlipCard className=\"h-72\">\n              <FlipCard.Front>\n                <img\n                  src={firstImage}\n                  alt={firstTitle}\n                  className=\"h-full w-full rounded-2xl object-cover shadow-2xl shadow-black/40\"\n                />\n                <div className=\"absolute bottom-4 left-4 text-xl font-bold text-white\">\n                  {firstTitle}\n                </div>\n              </FlipCard.Front>\n              <FlipCard.Back className=\"rounded-2xl bg-black/80 p-4 text-slate-200\">\n                <p className=\"mt-1 border-t border-t-gray-200 py-4 text-base font-medium leading-normal text-gray-100\">\n                  {firstDescription}\n                </p>\n              </FlipCard.Back>\n            </FlipCard>\n          </div>\n          <div\n            className={cn(\n              \"bg-unset absolute flex h-full w-full items-center justify-center transition-transform duration-700 ease-in-out\",\n              isFirstBoxVisible ? \"translate-y-full transform\" : \"translate-y-0 transform\",\n              secondImageClass,\n            )}\n          >\n            <FlipCard className=\"h-72\">\n              <FlipCard.Front>\n                <img\n                  src={secondImage}\n                  alt={secondTitle}\n                  className=\"h-full w-full rounded-2xl object-cover shadow-2xl shadow-black/40\"\n                />\n                <div className=\"absolute bottom-4 left-4 text-xl font-bold text-white\">\n                  {secondTitle}\n                </div>\n              </FlipCard.Front>\n              <FlipCard.Back className=\"rounded-2xl bg-black/80 p-4 text-slate-200\">\n                <p className=\"mt-1 border-t border-t-gray-200 py-4 text-base font-medium leading-normal text-gray-100\">\n                  {secondDescription}\n                </p>\n              </FlipCard.Back>\n            </FlipCard>\n          </div>\n        </div>\n      </div>\n      <div className=\"mt-4 font-bold text-black\">\n        <WaveReveal\n          mode=\"word\"\n          duration=\"300ms\"\n          text={story}\n          className=\"md:text-md text-md font-medium\"\n        />\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/swap-card.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/card/swap-card",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "카드·테두리"
+  ],
+  "type": "registry:component"
+}

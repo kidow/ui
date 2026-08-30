@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toggle-switch",
+  "title": "Toggle Switch",
+  "description": "켜고 끄는 스위치(toggle switch).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/toggle-switch.tsx",
+      "content": "\"use client\";\nimport { useId, useState } from \"react\";\n\ninterface IToggleSwitchProps {\n  onChange?: (value: boolean) => void;\n  defaultChecked?: boolean;\n}\n\nconst ToggleSwitch = ({ onChange, defaultChecked }: IToggleSwitchProps) => {\n  const id = useId();\n  const [isChecked, setIsChecked] = useState<boolean>(defaultChecked ?? false);\n  const handleCheckboxChange = () => {\n    const newCheckedState = !isChecked;\n    setIsChecked(newCheckedState);\n    onChange?.(newCheckedState);\n  };\n\n  return (\n    <label htmlFor={id} className=\"flex cursor-pointer select-none items-center\">\n      <div className=\"relative\">\n        <input\n          id={id}\n          type=\"checkbox\"\n          checked={isChecked}\n          onChange={handleCheckboxChange}\n          aria-label=\"Toggle switch\"\n          className=\"sr-only\"\n        />\n        <div className={`box block h-8 w-14 rounded-full ${isChecked ? \"bg-muted\" : \"bg-muted\"}`} />\n        <div\n          className={`absolute left-1 top-1 flex h-6 w-6 items-center justify-center rounded-full transition-all ${\n            isChecked ? \"translate-x-full bg-foreground/75\" : \"bg-foreground/50\"\n          }`}\n        />\n      </div>\n    </label>\n  );\n};\n\nexport default ToggleSwitch;\n",
+      "type": "registry:component",
+      "target": "components/kidow/toggle-switch.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/button/toggle-switch",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "focus-blur-resolve",
+  "title": "Focus Blur Resolve",
+  "description": "흐릿하던 글자가 초점을 찾아가는 텍스트(focus blur resolve).",
+  "dependencies": [],
+  "registryDependencies": [
+    "@kidow/text-animator"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/focus-blur-resolve.tsx",
+      "content": "\"use client\";\n\nimport { useMemo } from \"react\";\n\nimport TextAnimator, {\n  type TextAnimationPhaseSpec,\n  type TextAnimationSpec,\n} from \"@/components/kidow/text-animator\";\n\nconst BASE_SPEC: TextAnimationSpec = {\n  id: \"focus-blur-resolve\",\n  target: \"whole\",\n  enter: {\n    durationMs: 760,\n    staggerMs: 0,\n    easing: \"cubic-bezier(0.22, 1, 0.36, 1)\",\n    from: {\n      opacity: 0,\n      yPx: 14,\n      blurPx: 14,\n      scale: 1.01,\n    },\n    to: {\n      opacity: 1,\n      yPx: 0,\n      blurPx: 0,\n      scale: 1,\n    },\n  },\n  exit: {\n    durationMs: 520,\n    staggerMs: 0,\n    easing: \"cubic-bezier(0.64, 0, 0.78, 0)\",\n    from: {\n      opacity: 1,\n      yPx: 0,\n      blurPx: 0,\n      scale: 1,\n    },\n    to: {\n      opacity: 0,\n      yPx: -10,\n      blurPx: 10,\n      scale: 1,\n    },\n  },\n  swap: {\n    mode: \"sequential\",\n    microDelayMs: 35,\n  },\n};\n\nconst DEFAULT_SAMPLES: readonly string[] = [\n  \"Pulls into focus.\",\n  \"A camera-style resolve.\",\n  \"Then a quiet defocus.\",\n];\n\nexport interface FocusBlurResolveProps {\n  /** Text(s) to animate. String = single, array = cycle through. */\n  text?: string | string[];\n  /** Override enter phase (merged with default). */\n  enter?: Partial<TextAnimationPhaseSpec>;\n  /** Override exit phase (merged with default). */\n  exit?: Partial<TextAnimationPhaseSpec>;\n  /** Global speed multiplier. Defaults to the runtime default (0.72) when omitted. */\n  speed?: number;\n  /** Hold time between enter and exit in ms. Defaults to the runtime default (550) when omitted. */\n  holdMs?: number;\n  /** Gap between cycles in ms. Defaults to the runtime default (320) when omitted. */\n  gapMs?: number;\n  /** Y-travel multiplier for all transforms. Defaults to the runtime default (0.58) when omitted. */\n  yTravel?: number;\n  /** Outer wrapper — overrides default `aspect-video` centering when embedding in layouts. */\n  className?: string;\n  /** Passed to the inner `.text-animation-stage` grid. */\n  stageClassName?: string;\n  /** Merged onto the animated title node — use `text-xl!` to override preset sizing. */\n  titleClassName?: string;\n}\n\nexport default function FocusBlurResolve({\n  text,\n  enter,\n  exit,\n  speed,\n  holdMs,\n  gapMs,\n  yTravel,\n  className,\n  stageClassName,\n  titleClassName,\n}: FocusBlurResolveProps = {}) {\n  const spec = useMemo<TextAnimationSpec>(\n    () => ({\n      ...BASE_SPEC,\n      enter: {\n        ...BASE_SPEC.enter,\n        ...enter,\n        from: { ...BASE_SPEC.enter.from, ...enter?.from },\n        to: { ...BASE_SPEC.enter.to, ...enter?.to },\n      },\n      exit: {\n        ...BASE_SPEC.exit,\n        ...exit,\n        from: { ...BASE_SPEC.exit.from, ...exit?.from },\n        to: { ...BASE_SPEC.exit.to, ...exit?.to },\n      },\n    }),\n    [enter, exit],\n  );\n  const samples = useMemo(() => {\n    if (text == null) return [...DEFAULT_SAMPLES];\n    return Array.isArray(text) ? text : [text];\n  }, [text]);\n  return (\n    <TextAnimator\n      spec={spec}\n      samples={samples}\n      speed={speed}\n      holdMs={holdMs}\n      gapMs={gapMs}\n      yTravel={yTravel}\n      className={className}\n      stageClassName={stageClassName}\n      titleClassName={titleClassName}\n    />\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/focus-blur-resolve.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/focus-blur-resolve",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

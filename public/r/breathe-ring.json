@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "breathe-ring",
+  "title": "Breathe Ring",
+  "description": "고리가 숨쉬듯 두꺼워지는 로딩(breathe ring).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/breathe-ring.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const BreatheRing = () => (\n  <motion.div\n    className=\"w-10 h-10 rounded-full border-4 border-zinc-800 dark:border-zinc-700\"\n    animate={{ scale: [0.8, 1.1, 0.8], borderWidth: [6, 2, 6] }}\n    transition={{ duration: 3, repeat: Infinity, ease: \"easeInOut\" }}\n  />\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/breathe-ring.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

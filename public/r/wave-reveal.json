@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "wave-reveal",
+  "title": "Wave Reveal",
+  "description": "물결처럼 번지며 드러나는 텍스트(wave reveal).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/wave-reveal.tsx",
+      "content": "\"use client\";\n\nimport type { ReactNode } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface WaveRevealProps {\n  /**\n   * The text to animate\n   */\n  text: string;\n\n  /**\n   * Additional classes for the container\n   */\n  className?: string;\n\n  /**\n   * The direction of the animation\n   * @default \"down\"\n   */\n  direction?: \"up\" | \"down\";\n\n  /**\n   * The mode of the animation\n   * @default \"letter\"\n   */\n  mode?: \"letter\" | \"word\";\n\n  /**\n   * Duration of the animation\n   * E.g. 2000ms\n   */\n  duration?: string;\n\n  /**\n   * If true, the text will apply a blur effect as seen in WWDC.\n   */\n  blur?: boolean;\n\n  letterClassName?: string;\n\n  /**\n   * Delay for each letter/word in ms\n   */\n  delay?: number;\n}\n\ninterface ReducedValue extends Pick<WaveRevealProps, \"direction\" | \"mode\"> {\n  nodes: ReactNode[];\n  offset: number;\n  duration: number | string;\n  delay: number;\n  blur?: boolean;\n  className?: string;\n  wordsLength: number;\n  textLength: number;\n}\n\nconst Word = ({\n  isWordMode,\n  word,\n  index,\n  offset,\n  delay,\n  duration,\n  className,\n}: Pick<ReducedValue, \"delay\" | \"duration\" | \"offset\"> & {\n  index: number;\n  className: string;\n  isWordMode: boolean;\n  word: string;\n  length: number;\n}) => {\n  if (isWordMode) {\n    return word;\n  }\n\n  return (\n    <>\n      {word.split(\"\").map((letter, letterIndex) => {\n        return (\n          <span\n            key={`${letter}_${letterIndex}_${index}`}\n            className={cn({\n              [className]: !isWordMode,\n            })}\n            style={{\n              animationDuration: `${duration}`,\n              animationDelay: createDelay({\n                index: letterIndex,\n                offset,\n                delay,\n              }),\n            }}\n          >\n            {letter === \" \" ? \"\\u00A0\" : letter}\n          </span>\n        );\n      })}\n    </>\n  );\n};\n\nconst createDelay = ({\n  offset,\n  index,\n  delay,\n}: Pick<ReducedValue, \"offset\" | \"delay\"> & {\n  index: number;\n}) => {\n  return `${delay + (index + offset) * 50}ms`;\n};\n\nconst createAnimatedNodes = (args: ReducedValue, word: string, index: number): ReducedValue => {\n  const { nodes, offset, wordsLength, textLength, mode, direction, duration, delay, blur } = args;\n\n  const isWordMode = mode === \"word\";\n  const isUp = direction === \"up\";\n  const length = isWordMode ? wordsLength : textLength;\n  const isLast = index === length - 1;\n\n  const className = cn(\n    \"inline-block opacity-0 transition-opacity ease-in-out fill-mode-forwards\",\n    {\n      // Determine the animation direction\n      \"animate-[reveal-down]\": !isUp && !blur,\n      \"animate-[reveal-up]\": isUp && !blur,\n      \"animate-[reveal-down,content-blur]\": !isUp && blur,\n      \"animate-[reveal-up,content-blur]\": isUp && blur,\n    },\n    args.className,\n  );\n  const node = (\n    <span\n      key={`word_${index}`}\n      className={cn(\"contents\", {\n        [className]: isWordMode,\n      })}\n      style={\n        isWordMode\n          ? {\n              animationDuration: `${duration}`,\n              animationDelay: createDelay({\n                index,\n                offset,\n                delay,\n              }),\n            }\n          : undefined\n      }\n    >\n      <Word\n        isWordMode={isWordMode}\n        word={word}\n        index={index}\n        offset={offset}\n        duration={duration}\n        className={className}\n        length={length}\n        delay={delay}\n      />\n      {!isLast && \"\\u00A0\"}\n    </span>\n  );\n\n  return {\n    ...args,\n    nodes: [...nodes, node],\n    offset: offset + (isWordMode ? 1 : word.length + 1),\n  };\n};\n\nexport default function WaveReveal({\n  text,\n  direction = \"down\",\n  mode = \"letter\",\n  className,\n  duration = \"2000ms\",\n  delay = 0,\n  blur = true,\n  letterClassName,\n}: WaveRevealProps) {\n  if (!text) {\n    return null;\n  }\n\n  const words = text.trim().split(/\\s/);\n\n  const { nodes } = words.reduce<ReducedValue>(createAnimatedNodes, {\n    nodes: [],\n    offset: 0,\n    wordsLength: words.length,\n    textLength: text.length,\n    direction,\n    mode,\n    duration: duration ?? 60,\n    delay: delay ?? 0,\n    blur,\n    className: letterClassName,\n  });\n\n  return (\n    <div\n      className={cn(\n        \"relative flex flex-wrap justify-center whitespace-pre px-2 text-4xl font-medium md:px-6 md:text-7xl\",\n        className,\n      )}\n    >\n      {nodes}\n      <div className=\"sr-only\">{text}</div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/wave-reveal.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/wave-reveal",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

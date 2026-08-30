@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "WebHooks-card",
+  "title": "WebHooks Card",
+  "description": "웹훅 연동 상태를 보여주는 카드(webhooks card).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/WebHooks-card.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\n\ninterface webHooksCardCommentProps {\n  leftBoxElem: string;\n  rightBoxElem: string;\n}\n\nexport const WebHooks = ({ leftBoxElem, rightBoxElem }: webHooksCardCommentProps) => {\n  const [isHovered, setIsHovered] = useState(false);\n\n  return (\n    <div className=\"flex items-center justify-center\">\n      <div className=\"relative\">\n        {/* Left Box */}\n        <div\n          className={`z-10 flex h-24 w-48 items-center justify-center rounded-lg border-4 bg-white text-xl font-bold transition-colors duration-500 ${\n            isHovered ? \"border-lime-500\" : \"border-gray-300\"\n          } bg-white`}\n          onMouseEnter={() => setIsHovered(true)}\n          onMouseLeave={() => setIsHovered(false)}\n        >\n          <span>{leftBoxElem}</span>\n        </div>\n\n        {/* Connecting Line */}\n        <div\n          className={`absolute left-[192px] top-1/2 w-[105px] -translate-y-1/2 transform border-t-4 ${\n            isHovered\n              ? \"border-solid border-lime-500 bg-lime-500\"\n              : \"border-dotted border-gray-300 hover:border-solid\"\n          } transition-colors duration-500`}\n        />\n\n        {/* Animated Ball */}\n        <div\n          className={`absolute left-[180px] top-1/2 -z-10 h-6 w-6 -translate-y-1/2 transform rounded-full bg-gray-300 transition-transform duration-500 ${\n            isHovered ? \"translate-x-[106px] bg-lime-500\" : \"\"\n          }`}\n        />\n\n        {/* Right Box */}\n        <div\n          className={`absolute left-[295px] top-0 z-10 flex h-24 w-48 items-center justify-center rounded-lg border-4 bg-white text-xl font-bold transition-colors duration-500 ${\n            isHovered ? \"border-lime-500\" : \"border-gray-300\"\n          } bg-white`}\n        >\n          <span>{rightBoxElem}</span>\n        </div>\n      </div>\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/WebHooks-card.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/card/WebHooks-card",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "카드·테두리"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "slide-right",
+  "title": "Slide Right",
+  "description": "오른쪽에서 미끄러져 들어오는 진입 효과(slide right).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/slide-right.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\ninterface SlideRightProps {\n  children: React.ReactNode;\n  duration?: number;\n  delay?: number;\n  xOffset?: number;\n  className?: string;\n}\n\nexport function SlideRight({\n  children,\n  duration = 0.6,\n  delay = 0,\n  xOffset = -40,\n  className = '',\n}: SlideRightProps) {\n  return (\n    <motion.div\n      initial={{ opacity: 0, x: xOffset }}\n      animate={{ opacity: 1, x: 0 }}\n      transition={{\n        duration,\n        delay,\n        ease: [0.16, 1, 0.3, 1], // easeOutExpo\n      }}\n      className={className}\n    >\n      {children}\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/slide-right.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

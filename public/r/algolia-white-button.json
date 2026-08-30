@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "algolia-white-button",
+  "title": "Algolia White Button",
+  "description": "Algolia 스타일 흰 버튼(algolia button).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/algolia-white-button.tsx",
+      "content": "\"use client\";\n\nimport \"./algolia-white-button.css\";\n\nexport default function AlgoliaWhiteButton() {\n  return (\n    <button\n      type=\"button\"\n      className=\"algolia-white-btn inline-flex h-12 cursor-pointer touch-manipulation items-center justify-center overflow-hidden whitespace-nowrap rounded border-0 bg-[#FCFCFD] px-4 font-mono leading-none text-slate-800 no-underline transition-transform duration-150 ease-in-out hover:-translate-y-0.5 active:translate-y-0.5\"\n    >\n      Algolia White\n    </button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/algolia-white-button.tsx"
+    },
+    {
+      "path": "registry/kidow/algolia-white-button.css",
+      "content": "@layer components {\n  .algolia-white-btn {\n    box-shadow:\n      rgba(45, 35, 66, 0.4) 0 2px 4px,\n      rgba(45, 35, 66, 0.3) 0 7px 13px -3px,\n      #d6d6e7 0 -3px 0 inset;\n  }\n\n  .algolia-white-btn:hover {\n    box-shadow:\n      rgba(45, 35, 66, 0.4) 0 4px 8px,\n      rgba(45, 35, 66, 0.3) 0 7px 13px -3px,\n      #d6d6e7 0 -3px 0 inset;\n  }\n\n  .algolia-white-btn:focus {\n    box-shadow:\n      #d6d6e7 0 0 0 1.5px inset,\n      rgba(45, 35, 66, 0.4) 0 2px 4px,\n      rgba(45, 35, 66, 0.3) 0 7px 13px -3px,\n      #d6d6e7 0 -3px 0 inset;\n  }\n\n  .algolia-white-btn:active {\n    box-shadow: #d6d6e7 0 3px 7px inset;\n  }\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/algolia-white-button.css"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/button/algolia-white-button",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:component"
+}

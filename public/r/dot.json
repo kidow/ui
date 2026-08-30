@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dot",
+  "title": "Dot",
+  "description": "점 격자 배경(dot background).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/dot.tsx",
+      "content": "\"use client\";\n\ninterface DotProps {\n  /**\n   * Color of the dot\n   */\n  color?: string;\n\n  /**\n   * Size of the dot in pixels\n   */\n  size?: number;\n\n  /**\n   * Spacing between dots\n   */\n  spacing?: number;\n\n  /**\n   * Content of the component\n   */\n  children?: React.ReactNode;\n\n  /**\n   * Class name\n   */\n  className?: string;\n\n  style?: React.CSSProperties;\n}\n\nfunction Placeholder() {\n  return (\n    <div className=\"flex h-full min-h-64 w-full min-w-72 items-center justify-center\">\n      <div className=\"rounded bg-foreground text-background px-4 py-2\">This has dot background</div>\n    </div>\n  );\n}\n\nexport default function Dot({\n  color = \"#cacaca\",\n  size = 1,\n  spacing = 10,\n  children,\n  className,\n  style = {\n    backgroundColor: \"white\",\n  },\n}: DotProps) {\n  return (\n    <div\n      style={{\n        ...style,\n        backgroundImage: `radial-gradient(${color} ${size}px, transparent ${size}px)`,\n        backgroundSize: `calc(${spacing} * ${size}px) calc(${spacing} * ${size}px)`,\n      }}\n      className={className}\n    >\n      {children ?? <Placeholder />}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/dot.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/background/dot",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "배경·패턴"
+  ],
+  "type": "registry:component"
+}

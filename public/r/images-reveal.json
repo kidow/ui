@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "images-reveal",
+  "title": "Images Reveal",
+  "description": "이미지가 차례로 드러나는 효과(images reveal).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/images-reveal.tsx",
+      "content": "\"use client\";\n\nimport { motion } from \"motion/react\";\n\nconst cards = [\n  {\n    src: \"https://images.unsplash.com/photo-1727717768632-f4241a128f50?q=80&w=2889&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    angle: \"8deg\",\n  },\n  {\n    src: \"https://images.unsplash.com/photo-1727400068319-565c56633dc3?q=80&w=1911&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    angle: \"-15deg\",\n  },\n  {\n    src: \"https://images.unsplash.com/photo-1726551195764-f98a8e8a57c3?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    angle: \"-5deg\",\n  },\n  {\n    src: \"https://images.unsplash.com/photo-1727775805114-a87c6bcaf9db?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    angle: \"10deg\",\n  },\n  {\n    src: \"https://images.unsplash.com/photo-1614680108604-c23b65f7e7dc?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D\",\n    angle: \"-5deg\",\n  },\n];\n\ninterface CustomProps {\n  index: number;\n  angle: string;\n}\n\nconst cardVariants = {\n  hidden: { opacity: 0, scale: 0.2 },\n  visible: (custom: CustomProps) => ({\n    opacity: 1,\n    scale: 1,\n    rotate: custom.angle,\n    transition: {\n      delay: custom.index * 0.1,\n      duration: 0.3,\n      type: \"spring\" as const,\n      stiffness: 150,\n      damping: 20,\n      mass: 0.5,\n    },\n  }),\n};\n\nexport default function ImagesReveal() {\n  return (\n    <div>\n      <h1 className=\"text-center text-2xl font-semibold dark:text-white\">Airbnb Image Reveal</h1>\n      <div className=\"relative my-10 ml-10 flex flex-row justify-center md:ml-20\">\n        {cards.map((card, i) => (\n          <motion.img\n            key={i}\n            className=\"relative -ml-10 size-24 rounded-2xl border-[6px] border-white object-cover shadow-xl md:-ml-20 md:size-36\"\n            src={card.src}\n            custom={{ index: i, angle: card.angle }}\n            initial=\"hidden\"\n            animate=\"visible\"\n            variants={cardVariants}\n            whileHover={{\n              scale: 1,\n              rotate: \"0deg\",\n              zIndex: 10,\n              transition: { duration: 0.3, type: \"spring\", stiffness: 150, damping: 20 },\n            }}\n          />\n        ))}\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/images-reveal.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/image/images-reveal",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "미디어·데이터"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "rotating-cross",
+  "title": "Rotating Cross",
+  "description": "십자가 회전하는 로딩(rotating cross).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/rotating-cross.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const RotatingCross = () => {\n  return (\n    <motion.div\n      className=\"relative w-8 h-8 flex items-center justify-center\"\n      animate={{ rotate: 180 }}\n      transition={{ duration: 0.8, repeat: Infinity, ease: \"easeInOut\" }}\n    >\n      <div className=\"absolute w-full h-1.5 bg-zinc-800 dark:bg-white rounded-sm\" />\n      <div className=\"absolute h-full w-1.5 bg-zinc-800 dark:bg-white rounded-sm\" />\n    </motion.div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/rotating-cross.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

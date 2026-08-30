@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "hourglass",
+  "title": "Hourglass",
+  "description": "모래시계가 뒤집히는 로딩(hourglass).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/hourglass.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const Hourglass = () => {\n  return (\n    <motion.div\n      className=\"w-8 h-10 flex flex-col items-center justify-between\"\n      animate={{ rotate: [0, 180, 180, 360, 360] }}\n      transition={{ duration: 3, repeat: Infinity, ease: \"easeInOut\" }}\n    >\n      <div className=\"w-8 h-0 border-t-[16px] border-t-zinc-800 dark:border-t-white border-l-[16px] border-l-transparent border-r-[16px] border-r-transparent origin-bottom\" />\n      <div className=\"w-8 h-0 border-b-[16px] border-b-zinc-800 dark:border-b-white border-l-[16px] border-l-transparent border-r-[16px] border-r-transparent origin-top\" />\n    </motion.div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/hourglass.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

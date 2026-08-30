@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "menu-animation",
+  "title": "Menu Animation",
+  "description": "항목이 차례로 펼쳐지는 메뉴(menu animation).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/menu-animation.tsx",
+      "content": "\"use client\";\n\nimport { ArrowRight } from \"lucide-react\";\n\ninterface MenuAnimationProps {\n  menuItems: string[];\n}\n\nexport default function MenuAnimation({ menuItems }: MenuAnimationProps) {\n  return (\n    <div className=\"flex min-w-fit flex-col gap-2 overflow-hidden px-10\">\n      {menuItems.map((item, index) => (\n        <div key={index} className=\"group/menu flex items-center gap-2\">\n          <ArrowRight className=\"size-5 -translate-x-full text-black opacity-0 transition-all duration-300 ease-out hover:z-20 group-hover/menu:translate-x-0 group-hover/menu:text-blue-500 group-hover/menu:opacity-100 md:size-10\" />\n\n          <h1 className=\"z-10 -translate-x-6 cursor-pointer font-mono font-semibold text-black transition-transform duration-300 ease-out group-hover/menu:translate-x-0 group-hover/menu:text-blue-500 dark:text-white md:-translate-x-12 md:text-4xl md:group-hover/menu:translate-x-0\">\n            {item}\n          </h1>\n        </div>\n      ))}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/menu-animation.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/list/menu-animation",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

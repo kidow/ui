@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "bar-sweep",
+  "title": "Bar Sweep",
+  "description": "막대를 빛이 훑고 지나가는 로딩(bar sweep).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/bar-sweep.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const BarSweep = () => {\n  return (\n    <div className=\"w-12 h-6 border-2 border-zinc-800 dark:border-zinc-700 rounded-full p-1 relative flex items-center overflow-hidden\">\n      <motion.div\n        className=\"w-4 h-4 bg-zinc-800 dark:bg-white rounded-full absolute\"\n        animate={{ x: [0, 24, 0] }}\n        transition={{ duration: 1.5, repeat: Infinity, ease: \"easeInOut\" }}\n      />\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/bar-sweep.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

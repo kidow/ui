@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "code",
+  "title": "Code",
+  "description": "코드 블록 스켈레톤(code skeleton).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/code.tsx",
+      "content": "\"use client\";\n\nimport { CodeIcon } from \"lucide-react\";\n\nexport default function Code() {\n  return (\n    <div className=\"flex min-h-52 w-52 flex-col gap-3 rounded-md border bg-background p-3 shadow-xl transition-shadow hover:shadow-sm dark:border-zinc-700\">\n      <CodeIcon className=\"w-6 text-blue-500\" />\n      <div className=\"flex flex-1 flex-col justify-center gap-2\">\n        <div className=\"h-2 w-1/2 rounded-md bg-muted\" />\n        <div className=\"h-2 w-3/4 rounded-md bg-muted-foreground/25\" />\n        <div className=\"h-2 w-3/5 rounded-md bg-muted\" />\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/code.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/skeleton/code",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "receipt",
+  "title": "Receipt",
+  "description": "영수증 모양 스켈레톤(receipt skeleton).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/receipt.tsx",
+      "content": "\"use client\";\n\nimport { Building, DollarSign } from \"lucide-react\";\n\nexport default function Receipt() {\n  return (\n    <div className=\"flex min-h-52 w-52 flex-col gap-3 rounded-md border bg-background p-3 shadow-xl transition-shadow hover:shadow-sm dark:border-zinc-700\">\n      <div className=\"flex justify-between border-b pb-3 dark:border-zinc-700\">\n        <Building className=\"w-6 text-muted-foreground\" />\n        <DollarSign className=\"w-6 text-blue-600\" />\n      </div>\n\n      <div className=\"flex w-full justify-between gap-2\">\n        <div className=\"h-2 w-1/2 rounded-md bg-muted\" />\n        <div className=\"h-2 w-4 rounded-md bg-muted\" />\n      </div>\n\n      <div className=\"flex w-full justify-between gap-2\">\n        <div className=\"h-2 w-3/4 rounded-md bg-muted\" />\n        <div className=\"h-2 w-5 rounded-md bg-muted\" />\n      </div>\n\n      <div className=\"flex w-full justify-between gap-2\">\n        <div className=\"h-2 w-1/2 rounded-md bg-muted\" />\n        <div className=\"h-2 w-4 rounded-md bg-muted\" />\n      </div>\n\n      <div className=\"flex w-full justify-between gap-2\">\n        <div className=\"h-2 w-3/4 rounded-md bg-muted\" />\n        <div className=\"h-2 w-5 rounded-md bg-muted\" />\n      </div>\n\n      <div className=\"flex w-full justify-between gap-2\">\n        <div className=\"h-2 w-3/5 rounded-md bg-muted\" />\n        <div className=\"h-2 w-8 rounded-md bg-muted\" />\n      </div>\n\n      <span className=\"mt-auto inline-block w-fit rounded-md bg-blue-600 px-2 py-1 text-center text-xs font-semibold text-white\">\n        Receipt\n      </span>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/receipt.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/skeleton/receipt",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

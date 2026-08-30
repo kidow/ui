@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spring-text-pop",
+  "title": "Spring Text Pop",
+  "description": "글자가 스프링으로 튀어오르는 로딩 문구(spring text pop).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/spring-text-pop.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const SpringTextPop = () => {\n  const text = \"Loading...\";\n  return (\n    <div className=\"flex font-medium text-sm tracking-widest text-zinc-800 dark:text-white\">\n      {text.split(\"\").map((char, i) => (\n        <motion.span\n          key={i}\n          className=\"origin-bottom inline-block\"\n          animate={{ y: [0, -6, 0] }}\n          transition={{\n            duration: 1.2,\n            repeat: Infinity,\n            ease: \"easeInOut\",\n            delay: i * 0.08,\n          }}\n        >\n          {char === \" \" ? \"\\u00A0\" : char}\n        </motion.span>\n      ))}\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/spring-text-pop.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

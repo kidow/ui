@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "floating-diamonds",
+  "title": "Floating Diamonds",
+  "description": "마름모가 떠다니는 로딩(floating diamonds).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/floating-diamonds.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const FloatingDiamonds = () => {\n  return (\n    <div className=\"flex space-x-2\">\n      {[0, 1, 2].map((i) => (\n        <motion.div\n          key={i}\n          className=\"w-3 h-3 bg-zinc-800 dark:bg-white rounded-sm rotate-45\"\n          animate={{ y: [0, -10, 0] }}\n          transition={{ duration: 1, repeat: Infinity, delay: i * 0.2, ease: \"easeInOut\" }}\n        />\n      ))}\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/floating-diamonds.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

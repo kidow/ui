@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "modal",
+  "title": "Modal",
+  "description": "오버레이 모달(modal, dialog).",
+  "dependencies": [
+    "motion",
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/modal.tsx",
+      "content": "\"use client\";\n\nimport { CircleAlert } from \"lucide-react\";\nimport { AnimatePresence, motion } from \"motion/react\";\nimport { useState } from \"react\";\nimport { cn } from \"@/lib/utils\";\n\nexport default function Modal({ modalSize = \"lg\" }: { modalSize?: \"sm\" | \"lg\" }) {\n  const [isOpen, setIsOpen] = useState(false);\n  return (\n    <div>\n      <button\n        type=\"button\"\n        onClick={() => setIsOpen(true)}\n        className=\"rounded bg-indigo-800 p-2 font-medium text-white transition-opacity hover:opacity-90\"\n      >\n        Open Modal\n      </button>\n\n      <AnimatePresence>\n        {isOpen && (\n          <div className=\"fixed inset-0 z-50 flex items-center justify-center overflow-y-scroll p-8\">\n            <button\n              type=\"button\"\n              aria-label=\"Close modal\"\n              className=\"absolute inset-0 cursor-pointer border-0 bg-slate-900/20 backdrop-blur\"\n              onClick={() => setIsOpen(false)}\n            />\n            <motion.div\n              role=\"dialog\"\n              aria-modal=\"true\"\n              aria-labelledby=\"modal-title\"\n              initial={{ scale: 0.95, opacity: 0, rotate: \"180deg\" }}\n              animate={{\n                scale: 1,\n                opacity: 1,\n                rotate: \"0deg\",\n                transition: {\n                  type: \"spring\",\n                  bounce: 0.25,\n                },\n              }}\n              exit={{ scale: 0.95, opacity: 0, rotate: \"180deg\" }}\n              className={cn(\n                \"relative z-10 w-full max-w-lg cursor-default overflow-hidden rounded-xl bg-linear-to-r from-indigo-500 via-purple-500 to-indigo-500 p-6 text-white shadow-2xl\",\n                {\n                  \"max-w-sm\": modalSize === \"sm\",\n                },\n              )}\n            >\n              <div className=\"flex flex-col gap-3\">\n                <CircleAlert className=\"mx-auto text-white\" size={48} />\n                <h3\n                  id=\"modal-title\"\n                  className={cn(\"text-center text-3xl font-bold\", {\n                    \"text-2xl\": modalSize === \"sm\",\n                  })}\n                >\n                  Welcome to the modal!\n                </h3>\n                <p className=\"mb-1 text-center\">\n                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\n                  incididunt ut labore et dolore magna.\n                </p>\n                <div className=\"flex gap-2\">\n                  <button\n                    type=\"button\"\n                    onClick={() => setIsOpen(false)}\n                    className=\"w-full rounded bg-transparent py-2 font-semibold text-white transition-colors hover:bg-white/30\"\n                  >\n                    Close!\n                  </button>\n                  <button\n                    type=\"button\"\n                    onClick={() => setIsOpen(false)}\n                    className=\"w-full rounded bg-white py-2 font-semibold text-indigo-600 transition-opacity hover:opacity-80\"\n                  >\n                    Understood!\n                  </button>\n                </div>\n              </div>\n            </motion.div>\n          </div>\n        )}\n      </AnimatePresence>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/modal.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/overlay/modal",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "폼·입력"
+  ],
+  "type": "registry:component"
+}

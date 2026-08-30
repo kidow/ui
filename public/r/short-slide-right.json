@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "short-slide-right",
+  "title": "Short Slide Right",
+  "description": "살짝 오른쪽으로 미끄러지며 나타나는 텍스트(short slide right).",
+  "dependencies": [],
+  "registryDependencies": [
+    "@kidow/text-animator"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/short-slide-right.tsx",
+      "content": "\"use client\";\n\nimport { useMemo } from \"react\";\n\nimport TextAnimator, {\n  type TextAnimationPhaseSpec,\n  type TextAnimationSpec,\n} from \"@/components/kidow/text-animator\";\n\nconst BASE_SPEC: TextAnimationSpec = {\n  id: \"short-slide-right\",\n  target: \"per-word\",\n  enter: {\n    durationMs: 520,\n    staggerMs: 92,\n    easing: \"cubic-bezier(0.2, 0.8, 0.2, 1)\",\n    from: {\n      opacity: 1,\n      xPx: -24,\n      blurPx: 1.2,\n    },\n    to: {\n      opacity: 1,\n      xPx: 0,\n      blurPx: 0,\n    },\n  },\n  exit: {\n    durationMs: 320,\n    staggerMs: 0,\n    easing: \"cubic-bezier(0.4, 0, 0.2, 1)\",\n    from: {\n      opacity: 1,\n      xPx: 0,\n      blurPx: 0,\n    },\n    to: {\n      opacity: 0,\n      xPx: 12,\n      blurPx: 1,\n    },\n  },\n  swap: {\n    mode: \"sequential\",\n    overlapMs: 0,\n    microDelayMs: 70,\n  },\n  customRenderer: \"shared-slide-opacity-stage\",\n  build: {\n    wordOpacityDurationMs: 210,\n    wordOpacityFrom: 0,\n    wordOpacityTo: 1,\n  },\n};\n\nconst DEFAULT_SAMPLES: readonly string[] = [\n  \"Slides in as one piece.\",\n  \"Reveals together, in turn.\",\n  \"One motion, three words.\",\n];\n\nexport interface ShortSlideRightProps {\n  /** Text(s) to animate. String = single, array = cycle through. */\n  text?: string | string[];\n  /** Override enter phase (merged with default). */\n  enter?: Partial<TextAnimationPhaseSpec>;\n  /** Override exit phase (merged with default). */\n  exit?: Partial<TextAnimationPhaseSpec>;\n  /** Global speed multiplier. Defaults to the runtime default (0.72) when omitted. */\n  speed?: number;\n  /** Hold time between enter and exit in ms. Defaults to the runtime default (550) when omitted. */\n  holdMs?: number;\n  /** Gap between cycles in ms. Defaults to the runtime default (320) when omitted. */\n  gapMs?: number;\n  /** Y-travel multiplier for all transforms. Defaults to the runtime default (0.58) when omitted. */\n  yTravel?: number;\n  className?: string;\n}\n\nexport default function ShortSlideRight({\n  text,\n  enter,\n  exit,\n  speed,\n  holdMs,\n  gapMs,\n  yTravel,\n  className,\n}: ShortSlideRightProps = {}) {\n  const spec = useMemo<TextAnimationSpec>(\n    () => ({\n      ...BASE_SPEC,\n      enter: {\n        ...BASE_SPEC.enter,\n        ...enter,\n        from: { ...BASE_SPEC.enter.from, ...enter?.from },\n        to: { ...BASE_SPEC.enter.to, ...enter?.to },\n      },\n      exit: {\n        ...BASE_SPEC.exit,\n        ...exit,\n        from: { ...BASE_SPEC.exit.from, ...exit?.from },\n        to: { ...BASE_SPEC.exit.to, ...exit?.to },\n      },\n    }),\n    [enter, exit],\n  );\n  const samples = useMemo(() => {\n    if (text == null) return [...DEFAULT_SAMPLES];\n    return Array.isArray(text) ? text : [text];\n  }, [text]);\n  return (\n    <TextAnimator\n      spec={spec}\n      samples={samples}\n      speed={speed}\n      holdMs={holdMs}\n      gapMs={gapMs}\n      yTravel={yTravel}\n      className={className}\n    />\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/short-slide-right.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/short-slide-right",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

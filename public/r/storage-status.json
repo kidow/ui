@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "storage-status",
+  "title": "Storage Status",
+  "description": "저장 공간 사용량 위젯(storage status).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/storage-status.tsx",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface SectionItem {\n  label: string;\n  value: number;\n  color: string;\n  stretch?: boolean;\n}\n\nfunction Section({ label, value, color, total, stretch }: SectionItem & { total: number }) {\n  return (\n    <div\n      className={cn(\"relative w-full rounded-md transition-all\", color, {\n        \"flex-1 text-gray-500\": stretch,\n      })}\n      style={{ height: `${(value / total) * 100}%` }}\n    >\n      <div\n        className={cn(\n          \"absolute left-full top-1/2 size-4 -translate-y-1/2 translate-x-1 rotate-45\",\n          color,\n        )}\n      ></div>\n      <div\n        className={cn(\n          \"absolute left-full top-1/2 flex w-20 -translate-y-1/2 translate-x-3 justify-center rounded-md\",\n          color,\n        )}\n      >\n        <div className=\"relative px-3 py-2 font-bold\">{value} GB</div>\n      </div>\n      <div className=\"flex h-full w-full items-center justify-center text-lg font-bold\">\n        {label}\n      </div>\n    </div>\n  );\n}\n\nconst total = 512;\n\nconst items = [\n  {\n    stretch: true,\n    label: \"Free\",\n    value: 0,\n    color: \"bg-gray-300\",\n  },\n  {\n    label: \"System\",\n    value: 50,\n    color: \"bg-slate-500\",\n  },\n  {\n    label: \"Audio\",\n    value: 80,\n    color: \"bg-purple-500\",\n  },\n  {\n    label: \"Video\",\n    value: 150,\n    color: \"bg-orange-500\",\n  },\n];\n\n// Calculate free space\nitems[0].value = Math.max(0, total - items.slice(1).reduce((acc, item) => acc + item.value, 0));\n\nexport default function StorageStatus() {\n  return (\n    <div className=\"group/storage flex h-96 w-32 flex-col gap-1 rounded-md bg-black p-1 text-white\">\n      {items.map((item, index) => (\n        <Section key={index} {...item} total={total} />\n      ))}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/storage-status.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/storage-status",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

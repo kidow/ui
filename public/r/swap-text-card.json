@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "swap-text-card",
+  "title": "Swap Text Card",
+  "description": "문구가 바뀌는 카드(swap text card).",
+  "dependencies": [],
+  "registryDependencies": [
+    "@kidow/swap-text"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/swap-text-card.tsx",
+      "content": "\"use client\";\n\nimport SwapText from \"@/components/kidow/swap-text\";\n\ninterface FlipTextCardProps {\n  initialText: string;\n  finalText: string;\n}\n\nexport default function SwapTextCard({ initialText, finalText }: FlipTextCardProps) {\n  return (\n    <div className=\"group/swap flex min-h-64 w-full flex-col justify-between rounded-3xl bg-gray-100 p-6 md:max-w-[500px]\">\n      <h5 className=\"mb-2 text-sm font-medium uppercase tracking-wide text-gray-500\">Animata</h5>\n      <div className=\"flex flex-col justify-between md:min-w-72\">\n        <div className=\"md:hidden\">\n          <div className=\"text-lg font-semibold text-black\">{initialText}</div>\n          <div className=\"text-sm font-medium text-gray-500\">{finalText}</div>\n        </div>\n        <SwapText\n          initialText={initialText}\n          finalText={finalText}\n          disableClick\n          // Set min height so that all the text content fits\n          // use -mb-7 to hide the extra space when not active\n          className=\"-mb-7 hidden min-h-20 w-3/4 transition-all duration-200 group-hover/swap:mb-0 md:flex md:flex-col\"\n          initialTextClassName=\"text-lg group-hover/swap:opacity-0 h-full duration-200 font-semibold text-black\"\n          finalTextClassName=\"text-sm h-full duration-200 font-medium text-gray-500\"\n        />\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/swap-text-card.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/card/swap-text-card",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "카드·테두리"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "counter",
+  "title": "Counter",
+  "description": "숫자가 목표까지 올라가는 카운터(counter, count up).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/counter.tsx",
+      "content": "\"use client\";\n\nimport { useInView, useMotionValue, useMotionValueEvent, useSpring } from \"motion/react\";\nimport { useEffect, useRef } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface CounterProps {\n  /**\n   * A function to format the counter value. By default, it will format the\n   * number with commas.\n   */\n  format?: (value: number) => string;\n\n  /**\n   * The target value of the counter.\n   */\n  targetValue: number;\n\n  /**\n   * The direction of the counter. If \"up\", the counter will start from 0 and\n   * go up to the target value. If \"down\", the counter will start from the target\n   * value and go down to 0.\n   */\n  direction?: \"up\" | \"down\";\n\n  /**\n   * The delay in milliseconds before the counter starts counting.\n   */\n  delay?: number;\n\n  /**\n   * Additional classes for the counter.\n   */\n  className?: string;\n}\n\nexport const Formatter = {\n  number: (value: number) => Intl.NumberFormat(\"en-US\").format(+value.toFixed(0)),\n  currency: (value: number) =>\n    Intl.NumberFormat(\"en-US\", { style: \"currency\", currency: \"USD\" }).format(+value.toFixed(0)),\n};\n\nexport default function Counter({\n  format = Formatter.number,\n  targetValue = 1000,\n  direction = \"up\",\n  delay = 0,\n  className,\n}: CounterProps) {\n  const ref = useRef<HTMLSpanElement>(null);\n  const isGoingUp = direction === \"up\";\n  const motionValue = useMotionValue(isGoingUp ? 0 : targetValue);\n\n  const springValue = useSpring(motionValue, {\n    damping: 60,\n    stiffness: 80,\n  });\n  const isInView = useInView(ref, { margin: \"0px\", once: true });\n\n  useEffect(() => {\n    if (!isInView) {\n      return;\n    }\n\n    const timer = setTimeout(() => {\n      motionValue.set(isGoingUp ? targetValue : 0);\n    }, delay);\n\n    return () => clearTimeout(timer);\n  }, [isInView, delay, isGoingUp, targetValue, motionValue]);\n\n  useMotionValueEvent(springValue, \"change\", (value) => {\n    if (ref.current) {\n      ref.current.textContent = format ? format(value) : String(value);\n    }\n  });\n\n  const initialDisplay = format\n    ? format(isGoingUp ? 0 : targetValue)\n    : String(isGoingUp ? 0 : targetValue);\n\n  return (\n    <span ref={ref} className={cn(\"text-4xl font-bold text-foreground\", className)}>\n      {initialDisplay}\n    </span>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/counter.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/counter",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

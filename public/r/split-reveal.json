@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "split-reveal",
+  "title": "Split Reveal",
+  "description": "화면이 갈라지며 열리는 프리로더(split reveal, page transition).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/split-reveal.tsx",
+      "content": "\"use client\";\n\nexport * from \"./split-reveal/index\";\nexport { default } from \"./split-reveal/index\";\n",
+      "type": "registry:component",
+      "target": "components/kidow/split-reveal.tsx"
+    },
+    {
+      "path": "registry/kidow/split-reveal.css",
+      "content": "@layer components {\n  @keyframes split-reveal-shutter-top {\n    from {\n      transform: translate3d(0, 0, 0);\n    }\n\n    to {\n      transform: translate3d(0, -100%, 0);\n    }\n  }\n\n  @keyframes split-reveal-shutter-bottom {\n    from {\n      transform: translate3d(0, 0, 0);\n    }\n\n    to {\n      transform: translate3d(0, 100%, 0);\n    }\n  }\n\n  [data-split-reveal-overlay] [data-split-reveal-progress] {\n    opacity: 1;\n    transition: opacity var(--split-reveal-progress-fade) ease-out;\n  }\n\n  [data-split-reveal-overlay][data-phase=\"fade-ui\"] [data-split-reveal-progress],\n  [data-split-reveal-overlay][data-phase=\"reveal\"] [data-split-reveal-progress] {\n    opacity: 0;\n  }\n\n  [data-split-reveal-overlay][data-phase=\"reveal\"] [data-split-reveal-shutter=\"top\"] {\n    animation: split-reveal-shutter-top var(--split-reveal-duration) cubic-bezier(0.76, 0, 0.24, 1)\n      forwards;\n  }\n\n  [data-split-reveal-overlay][data-phase=\"reveal\"] [data-split-reveal-shutter=\"bottom\"] {\n    animation: split-reveal-shutter-bottom var(--split-reveal-duration)\n      cubic-bezier(0.76, 0, 0.24, 1) forwards;\n  }\n\n  @media (prefers-reduced-motion: reduce) {\n    [data-split-reveal-overlay][data-phase=\"reveal\"] [data-split-reveal-shutter] {\n      animation: none;\n      opacity: 0;\n    }\n\n    [data-split-reveal-overlay] [data-split-reveal-progress] {\n      transition: none;\n    }\n  }\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/split-reveal.css"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/preloader/split-reveal",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

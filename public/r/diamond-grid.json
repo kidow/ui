@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "diamond-grid",
+  "title": "Diamond Grid",
+  "description": "마름모 격자가 차례로 빛나는 로딩(diamond grid).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/diamond-grid.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const DiamondGrid = () => {\n  return (\n    <div className=\"grid grid-cols-2 gap-2 rotate-45\">\n      {[0, 1, 2, 3].map((i) => (\n        <motion.div\n          key={i}\n          className=\"w-3 h-3 bg-zinc-800 dark:bg-white rounded-sm\"\n          animate={{ scale: [1, 0.5, 1], opacity: [1, 0.3, 1] }}\n          transition={{ duration: 1.5, repeat: Infinity, delay: i * 0.2, ease: \"easeInOut\" }}\n        />\n      ))}\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/diamond-grid.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

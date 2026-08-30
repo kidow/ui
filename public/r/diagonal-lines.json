@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "diagonal-lines",
+  "title": "Diagonal Lines",
+  "description": "사선 줄무늬 배경(diagonal lines).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/diagonal-lines.tsx",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface DiagonalLinesProps {\n  /**\n   * Color of the line\n   */\n  color?: string;\n\n  /**\n   * Spacing between lines\n   */\n  spacing?: number;\n\n  /**\n   * Content of the component\n   */\n  children?: React.ReactNode;\n\n  /**\n   * Additional classes\n   */\n  className?: string;\n}\n\nfunction Placeholder() {\n  return (\n    <div className=\"flex max-h-full min-h-64 min-w-72 max-w-full items-center justify-center\">\n      <div className=\"rounded bg-foreground text-background px-4 py-2\">\n        This has diagonal line background\n      </div>\n    </div>\n  );\n}\n\nexport default function DiagonalLines({\n  color = \"#cacaca\",\n  spacing = 10,\n  children,\n  className,\n}: DiagonalLinesProps) {\n  return (\n    <div className={cn(\"bg-background\", className)}>\n      <div\n        style={{\n          backgroundImage: `repeating-linear-gradient(45deg,\n                  ${color} 0,\n                  ${color} 1px,\n                  transparent 0,\n                  transparent 50%)`,\n          backgroundSize: `${spacing}px ${spacing}px`,\n        }}\n      >\n        {children ?? <Placeholder />}\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/diagonal-lines.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/background/diagonal-lines",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "배경·패턴"
+  ],
+  "type": "registry:component"
+}

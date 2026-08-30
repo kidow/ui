@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "calendar-event",
+  "title": "Calendar Event",
+  "description": "다가오는 일정을 보여주는 카드(calendar event, 일정).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/calendar-event.tsx",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport type CalendarEventVariant = \"violet\" | \"cyan\" | \"emerald\" | \"amber\" | \"rose\";\n\nexport type CalendarEventItem = {\n  title: string;\n  time: string;\n  variant?: CalendarEventVariant;\n};\n\nexport type CalendarEventProps = {\n  className?: string;\n  /** Defaults to today. */\n  date?: Date;\n  events?: CalendarEventItem[];\n  maxVisible?: number;\n};\n\nexport const DEFAULT_CALENDAR_EVENTS: CalendarEventItem[] = [\n  { title: \"Design critique\", time: \"10:00 – 10:45\", variant: \"violet\" },\n  { title: \"Lunch with Alex\", time: \"12:30 – 1:15\", variant: \"cyan\" },\n  { title: \"Ship review\", time: \"3:00 – 4:00\", variant: \"emerald\" },\n];\n\nconst VARIANT_STYLES: Record<\n  CalendarEventVariant,\n  { chip: string; dot: string; title: string; time: string }\n> = {\n  violet: {\n    chip: \"bg-violet-500/15 dark:bg-violet-500/25\",\n    dot: \"bg-violet-600\",\n    title: \"text-foreground\",\n    time: \"text-muted-foreground\",\n  },\n  cyan: {\n    chip: \"bg-cyan-500/15 dark:bg-cyan-500/25\",\n    dot: \"bg-cyan-600\",\n    title: \"text-foreground\",\n    time: \"text-muted-foreground\",\n  },\n  emerald: {\n    chip: \"bg-emerald-500/15 dark:bg-emerald-500/25\",\n    dot: \"bg-emerald-600\",\n    title: \"text-foreground\",\n    time: \"text-muted-foreground\",\n  },\n  amber: {\n    chip: \"bg-amber-500/15 dark:bg-amber-500/25\",\n    dot: \"bg-amber-600\",\n    title: \"text-foreground\",\n    time: \"text-muted-foreground\",\n  },\n  rose: {\n    chip: \"bg-rose-500/15 dark:bg-rose-500/25\",\n    dot: \"bg-rose-600\",\n    title: \"text-foreground\",\n    time: \"text-muted-foreground\",\n  },\n};\n\nfunction eventTimeStart(time: string) {\n  const parts = time.split(/\\s[–-]\\s/);\n  return parts[0]?.trim() ?? time;\n}\n\nfunction EventRow({ event }: { event: CalendarEventItem }) {\n  const variant = VARIANT_STYLES[event.variant ?? \"violet\"];\n  return (\n    <li className={cn(\"flex shrink-0 gap-2 rounded-md px-2 py-1\", variant.chip)}>\n      <span className={cn(\"mt-1.5 size-2 shrink-0 rounded-full\", variant.dot)} aria-hidden />\n      <div className=\"flex min-w-0 flex-1 flex-col gap-0.5\">\n        <p className={cn(\"truncate text-[15px] font-semibold leading-snug\", variant.title)}>\n          {event.title}\n        </p>\n        <p className={cn(\"truncate text-[13px] leading-snug tabular-nums\", variant.time)}>\n          {event.time}\n        </p>\n      </div>\n    </li>\n  );\n}\n\nexport default function CalendarEvent({\n  className,\n  date = new Date(),\n  events = DEFAULT_CALENDAR_EVENTS,\n  maxVisible = 2,\n}: CalendarEventProps) {\n  const list = events;\n  const visible = list.slice(0, maxVisible);\n  const extra = list.length - maxVisible;\n  const nextEvent = list[maxVisible];\n\n  return (\n    <div\n      className={cn(\n        \"flex size-52 flex-col rounded-3xl border border-border bg-background p-3.5 font-sans shadow-md\",\n        className,\n      )}\n    >\n      <div className=\"flex shrink-0 items-baseline gap-1.5\">\n        <p className=\"text-[15px] font-semibold leading-snug text-rose-500\">\n          {date.toLocaleString(\"default\", { weekday: \"short\" })}\n        </p>\n        <p className=\"text-[22px] font-normal leading-snug tabular-nums tracking-tight text-foreground\">\n          {date.getDate()}\n        </p>\n      </div>\n\n      {visible.length > 0 ? (\n        <ul className=\"mt-2 flex shrink-0 flex-col gap-1\">\n          {visible.map((event, index) => (\n            <EventRow key={`${event.title}-${index}`} event={event} />\n          ))}\n        </ul>\n      ) : (\n        <p className=\"mt-2 shrink-0 text-[13px] leading-snug text-muted-foreground\">\n          No events today\n        </p>\n      )}\n\n      {extra > 0 ? (\n        <div className=\"mt-1.5 flex h-8 shrink-0 items-center justify-between gap-2 rounded-md bg-muted/60 px-2.5\">\n          <p className=\"shrink-0 text-[13px] font-medium leading-snug text-foreground\">\n            +{extra} more\n          </p>\n          <p className=\"min-w-0 truncate text-right text-[13px] leading-snug tabular-nums text-muted-foreground\">\n            {nextEvent ? eventTimeStart(nextEvent.time) : \"\"}\n          </p>\n        </div>\n      ) : null}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/calendar-event.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/calendar-event",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

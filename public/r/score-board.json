@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "score-board",
+  "title": "Score Board",
+  "description": "점수판 위젯(score board).",
+  "dependencies": [],
+  "registryDependencies": [
+    "@kidow/animata-bar-chart"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/score-board.tsx",
+      "content": "\"use client\";\n\nimport BarChart from \"@/components/kidow/animata-bar-chart\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport type ScoreBoardItem = {\n  progress: number;\n  label: string;\n  className?: string;\n  containerClassName?: string;\n};\n\nexport type ScoreBoardProps = {\n  className?: string;\n  items?: ScoreBoardItem[];\n  statusLabel?: string;\n  statusTone?: \"good\" | \"warning\" | \"neutral\";\n  overallPercent?: number;\n  overallCaption?: string;\n};\n\nconst DEFAULT_ITEMS: ScoreBoardItem[] = [\n  { label: \"A\", progress: 34, className: \"rounded-md bg-green-500\" },\n  { label: \"B\", progress: 14, className: \"rounded-md bg-red-500\" },\n  { label: \"C\", progress: 34, className: \"rounded-md bg-green-500\" },\n  { label: \"D\", progress: 70, className: \"rounded-md bg-green-500\" },\n  { label: \"E\", progress: 52, className: \"rounded-md bg-green-500\" },\n  { label: \"F\", progress: 30, className: \"rounded-md bg-green-500\" },\n  { label: \"G\", progress: 37, className: \"rounded-md bg-green-500\" },\n  { label: \"H\", progress: 72, className: \"rounded-md bg-green-500\" },\n  { label: \"I\", progress: 42, className: \"rounded-md bg-green-500\" },\n];\n\nconst STATUS_TONE_CLASS = {\n  good: \"text-emerald-600 dark:text-emerald-400\",\n  warning: \"text-amber-600 dark:text-amber-400\",\n  neutral: \"text-foreground\",\n} as const;\n\nexport default function ScoreBoard({\n  className,\n  items = DEFAULT_ITEMS,\n  statusLabel = \"Good\",\n  statusTone = \"good\",\n  overallPercent = 80,\n  overallCaption = \"score, progress\",\n}: ScoreBoardProps) {\n  return (\n    <div\n      className={cn(\n        \"flex size-52 flex-col rounded-3xl border border-border bg-background p-4 font-sans shadow-md\",\n        className,\n      )}\n    >\n      <p className=\"shrink-0 text-[15px] font-semibold leading-none text-foreground\">\n        Status{\" \"}\n        <span className={cn(\"font-semibold\", STATUS_TONE_CLASS[statusTone])}>{statusLabel}</span>\n      </p>\n\n      <div className=\"mt-2 min-h-0 w-full flex-1\">\n        <BarChart height={90} items={items} />\n      </div>\n\n      <div className=\"mt-3 shrink-0\">\n        <p className=\"text-[13px] leading-none text-muted-foreground\">Overall progress</p>\n        <p className=\"mt-1 text-[22px] font-normal leading-none tabular-nums tracking-tight text-foreground\">\n          {overallPercent}%\n          <span className=\"ml-1 text-[13px] font-normal text-muted-foreground\">\n            ({overallCaption})\n          </span>\n        </p>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/score-board.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/score-board",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

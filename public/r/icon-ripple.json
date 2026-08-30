@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-ripple",
+  "title": "Icon Ripple",
+  "description": "아이콘에서 물결이 퍼지는 효과(icon ripple).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/icon-ripple.tsx",
+      "content": "\"use client\";\n\nimport { Mic } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface IconRippleProps extends React.HTMLAttributes<HTMLDivElement> {\n  /**\n   * Icon we want to have.\n   */\n  icon: React.ElementType;\n  /**\n   * Size of Icon\n   */\n  iconSize?: number;\n  /**\n   * Color of the Icon\n   */\n  iconColor?: string;\n  /**\n   * Border color that will have ripple animation\n   */\n  borderColor?: string;\n  /**\n   * Padding around the icon\n   */\n  inset?: string;\n}\n\nexport default function IconRipple({\n  icon: Icon = Mic,\n  iconSize = 24,\n  iconColor = \"#ddd\",\n  borderColor = \"#ddd\",\n  inset = \"10px\",\n}: IconRippleProps) {\n  const customBorderStyle = {\n    borderColor,\n  };\n  const insetStyle = {\n    top: `-${inset}`,\n    bottom: `-${inset}`,\n    left: `-${inset}`,\n    right: `-${inset}`,\n  };\n\n  return (\n    <div className={cn(\"group relative flex items-center justify-center\")}>\n      <Icon size={iconSize} color={iconColor} />\n      <div\n        className={cn(\"absolute -inset-4 animate-ping rounded-full border-2\")}\n        style={{ ...customBorderStyle, ...insetStyle }}\n      />\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/icon-ripple.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/icon/icon-ripple",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

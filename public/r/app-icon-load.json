@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "app-icon-load",
+  "title": "App Icon Load",
+  "description": "앱 아이콘이 채워지며 뜨는 로딩(app icon load).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/app-icon-load.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const AppIconLoad = () => (\n  <div className=\"relative w-12 h-12 bg-zinc-200 dark:bg-zinc-800 rounded-[12px] flex items-center justify-center overflow-hidden\">\n    <svg className=\"w-8 h-8 absolute\" viewBox=\"0 0 50 50\">\n      <circle\n        cx=\"25\" cy=\"25\" r=\"20\"\n        className=\"stroke-zinc-300 dark:stroke-zinc-700 fill-none\"\n        strokeWidth=\"4\"\n      />\n      <motion.circle\n        cx=\"25\" cy=\"25\" r=\"20\"\n        className=\"stroke-zinc-800 dark:stroke-white fill-none\"\n        strokeWidth=\"4\"\n        strokeDasharray=\"125\"\n        animate={{ strokeDashoffset: [125, 0] }}\n        transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n        style={{ rotate: -90, transformOrigin: 'center' }}\n      />\n    </svg>\n  </div>\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/app-icon-load.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

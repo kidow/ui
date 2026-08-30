@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "mouse-follow",
+  "title": "Mouse Follow",
+  "description": "커서를 따라다니는 표시(mouse follow).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/mouse-follow.tsx",
+      "content": "\"use client\";\n\nimport React, { useEffect, useState } from 'react';\nimport { motion, useSpring } from \"motion/react\";\n\ninterface MouseFollowProps {\n  children?: React.ReactNode;\n  stiffness?: number;\n  damping?: number;\n  className?: string;\n}\n\nexport function MouseFollow({\n  children,\n  stiffness = 180,\n  damping = 20,\n  className = '',\n}: MouseFollowProps) {\n  const [isVisible, setIsVisible] = useState(false);\n  const x = useSpring(0, { stiffness, damping });\n  const y = useSpring(0, { stiffness, damping });\n\n  useEffect(() => {\n    const handleMouseMove = (e: MouseEvent) => {\n      x.set(e.clientX);\n      y.set(e.clientY);\n      if (!isVisible) setIsVisible(true);\n    };\n\n    const handleMouseLeave = () => {\n      setIsVisible(false);\n    };\n\n    window.addEventListener('mousemove', handleMouseMove, { passive: true });\n    document.addEventListener('mouseleave', handleMouseLeave);\n    \n    return () => {\n      window.removeEventListener('mousemove', handleMouseMove);\n      document.removeEventListener('mouseleave', handleMouseLeave);\n    };\n  }, [x, y, isVisible]);\n\n  if (!isVisible) return null;\n\n  return (\n    <motion.div\n      style={{\n        x,\n        y,\n        translateX: '-50%',\n        translateY: '-50%',\n      }}\n      className={`fixed top-0 left-0 pointer-events-none z-[9998] ${className}`}\n    >\n      {children || (\n        <div className=\"w-6 h-6 rounded-full border border-blue-500/50 bg-blue-500/10\" />\n      )}\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/mouse-follow.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

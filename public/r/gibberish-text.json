@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "gibberish-text",
+  "title": "Gibberish Text",
+  "description": "뜻 모를 글자가 뒤섞였다 제자리를 찾는 텍스트(gibberish, scramble).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/gibberish-text.tsx",
+      "content": "\"use client\";\n\nimport { useEffect, useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface GibberishTextProps {\n  /**\n   * The text to animate.\n   */\n  text: string;\n\n  /**\n   * The class name to apply to each letter.\n   */\n  className?: string;\n}\n\nconst Letter = ({ letter, className }: { letter: string; className?: string }) => {\n  const [code, setCode] = useState(() => letter.toUpperCase().charCodeAt(0));\n\n  useEffect(() => {\n    let count = Math.floor(Math.random() * 10) + 5;\n    const interval = setInterval(() => {\n      setCode(() => Math.floor(Math.random() * 26) + 65);\n      count--;\n      if (count === 0) {\n        setCode(letter.toUpperCase().charCodeAt(0));\n        clearInterval(interval);\n      }\n    }, 24);\n\n    return () => clearInterval(interval);\n  }, [letter]);\n\n  const char = String.fromCharCode(code);\n\n  return (\n    <span\n      className={cn(\"inline-block min-w-[1ch] font-mono text-center text-foreground\", className)}\n    >\n      {char === \" \" ? \"\\u00A0\" : char}\n    </span>\n  );\n};\n\nexport default function GibberishText({ text, className }: GibberishTextProps) {\n  return (\n    <>\n      {text.split(\"\").map((letter, index) => {\n        return <Letter className={className} letter={letter} key={`${index}-${letter}`} />;\n      })}\n    </>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/gibberish-text.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/gibberish-text",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dashed-spiral",
+  "title": "Dashed Spiral",
+  "description": "점선 나선이 도는 로딩(dashed spiral).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/dashed-spiral.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const DashedSpiral = () => (\n  <motion.div\n    className=\"w-10 h-10 border-[3px] border-zinc-800 dark:border-zinc-700 rounded-full border-dashed\"\n    animate={{ rotate: 360, scale: [1, 1.1, 1] }}\n    transition={{ duration: 4, repeat: Infinity, ease: \"linear\" }}\n  />\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/dashed-spiral.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

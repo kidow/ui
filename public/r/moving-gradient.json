@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "moving-gradient",
+  "title": "Moving Gradient",
+  "description": "색이 흐르는 그라디언트 배경(moving gradient).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/moving-gradient.tsx",
+      "content": "\"use client\";\n\nimport type { ComponentPropsWithoutRef } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface MovingGradientProps extends ComponentPropsWithoutRef<\"div\"> {\n  animated?: boolean;\n  gradientClassName?: string;\n}\n\nexport default function MovingGradient({\n  children,\n  className,\n  animated = true,\n  gradientClassName,\n  ...props\n}: MovingGradientProps) {\n  const backgroundClassName = \"pointer-events-none absolute h-full w-full\";\n  return (\n    <div {...props} className={cn(\"relative overflow-hidden bg-white\", className)}>\n      <div\n        className={cn(\n          \"bg-size bg-linear-to-r from-yellow-500 from-30% via-yellow-700 via-50% to-pink-500 to-80% opacity-15\",\n          {\n            [backgroundClassName]: true,\n            \"animate-bg-position bg-[length:300%_auto]\": animated,\n          },\n          gradientClassName,\n        )}\n      />\n      <div className={cn(backgroundClassName, \"z-1 blur-lg\")} />\n      {children}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/moving-gradient.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/background/moving-gradient",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "배경·패턴"
+  ],
+  "type": "registry:component"
+}

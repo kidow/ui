@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "work-button",
+  "title": "Work Button",
+  "description": "작업 진행을 보여주는 버튼(work button).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/work-button.tsx",
+      "content": "\"use client\";\n\nexport default function WorkButton() {\n  return (\n    <button\n      type=\"button\"\n      className=\"group/work relative overflow-hidden rounded-full bg-purple-950 px-14 py-4 text-lg transition-colors\"\n    >\n      <span className=\"absolute bottom-0 left-0 h-48 w-full origin-bottom translate-y-full transform overflow-hidden rounded-full bg-white/15 transition-transform duration-300 ease-out group-hover/work:translate-y-14\"></span>\n      <span className=\"font-semibold text-purple-200\">Work with us</span>\n    </button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/work-button.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/button/work-button",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:component"
+}

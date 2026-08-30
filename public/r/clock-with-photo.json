@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "clock-with-photo",
+  "title": "Clock With Photo",
+  "description": "사진 위에 시각을 얹은 위젯(clock with photo).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/clock-with-photo.tsx",
+      "content": "\"use client\";\n/* eslint-disable @next/next/no-img-element */\nimport { useEffect, useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst getTime = () => {\n  const now = new Date();\n  const hours = now.getHours();\n  const minutes = now.getMinutes();\n\n  return {\n    hoursTens: Math.floor(hours / 10),\n    hoursOnes: hours % 10,\n    minutesTens: Math.floor(minutes / 10),\n    minutesOnes: minutes % 10,\n  };\n};\n\nexport default function ClockWithPhoto() {\n  const [time, setTime] = useState(getTime);\n\n  useEffect(() => {\n    let timeout: NodeJS.Timeout;\n    const updateTime = () => {\n      const now = new Date();\n      const secondsUntilNextMinute = 60 - now.getSeconds();\n      setTime(getTime());\n      timeout = setTimeout(updateTime, secondsUntilNextMinute * 1000);\n    };\n\n    timeout = setTimeout(updateTime, 0);\n\n    return () => clearTimeout(timeout);\n  }, []);\n\n  return (\n    <div className=\"group/clock relative h-52 w-52 gap-2 overflow-hidden rounded-3xl\">\n      <div className=\"relative flex h-full w-full items-center\">\n        <img\n          src=\"https://images.unsplash.com/photo-1592205644721-2fe5214762ae?q=80&w=600&auto=format&fit=crop&ixlib=rb-4.0.3\"\n          alt=\"Background\"\n          className=\"h-full w-full rounded-3xl object-cover transition-all group-hover/clock:scale-105 group-hover/clock:blur-[1px]\"\n        />\n        <img\n          src={\"/jumping-man.png\"}\n          alt=\"Portrait\"\n          className=\"absolute left-0 top-0 z-20 mt-2 h-48 w-44 p-2 transition-all duration-500 group-hover/clock:translate-x-full group-hover/clock:opacity-0\"\n        />\n      </div>\n      <div\n        className={cn(\n          \"absolute right-0 top-0 z-10 flex h-full w-fit flex-col items-center justify-center text-8xl font-black tabular-nums tracking-tighter text-white transition-all duration-500 group-hover/clock:right-1/4\",\n        )}\n      >\n        <div className=\"flex\">\n          <div>{time.hoursTens}</div>\n          <div>{time.hoursOnes}</div>\n        </div>\n        <div className=\"flex\">\n          <div>{time.minutesTens}</div>\n          <div>{time.minutesOnes}</div>\n        </div>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/clock-with-photo.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/clock-with-photo",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

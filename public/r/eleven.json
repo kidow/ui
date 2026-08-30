@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "eleven",
+  "title": "Eleven",
+  "description": "벤토 그리드 배치 11번(bento grid layout).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/eleven.tsx",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\n\nfunction BentoCard({ children, className }: { children: React.ReactNode; className?: string }) {\n  return (\n    <div className={cn(\"relative h-full w-full overflow-hidden rounded-2xl p-4\", className)}>\n      {children}\n    </div>\n  );\n}\n\nexport default function Modern() {\n  return (\n    <div className=\"box-border w-full max-w-full p-4\">\n      <div className=\"grid grid-cols-1 grid-rows-1 gap-2 sm:grid-cols-5 sm:grid-rows-5\">\n        <div className=\"sm:col-span-2 sm:row-span-2\">\n          <BentoCard className=\"bg-blue-300\">\n            <div className=\"flex flex-col\">Grocery List</div>\n          </BentoCard>\n        </div>\n        <div className=\"sm:col-span-1 sm:row-span-2\">\n          <BentoCard className=\"bg-green-300\">\n            <div className=\"flex flex-col\">Meal Planner</div>\n          </BentoCard>\n        </div>\n        <div className=\"sm:col-span-2 sm:row-span-1\">\n          <BentoCard className=\"bg-red-300\">\n            <div className=\"flex flex-col\">Hydration Reminder</div>\n          </BentoCard>\n        </div>\n        <div className=\"sm:col-span-2 sm:row-span-1\">\n          <BentoCard className=\"bg-amber-300\">\n            <div className=\"flex flex-col\">Travel Journal</div>\n          </BentoCard>\n        </div>\n        <div className=\"sm:col-span-2 sm:row-span-1\">\n          <BentoCard className=\"bg-zinc-300\">\n            <div className=\"flex flex-col\">Fitness Tracker</div>\n          </BentoCard>\n        </div>\n        <div className=\"sm:col-span-2 sm:row-span-2\">\n          <BentoCard className=\"bg-purple-300\">\n            <div className=\"flex flex-col\">\n              <h4 className=\"sm:text-4xl\">healthOS</h4>\n            </div>\n          </BentoCard>\n        </div>\n        <div className=\"sm:col-span-1 sm:row-span-2\">\n          <BentoCard className=\"bg-lime-300\">\n            <div className=\"flex flex-col\">Snack suggestions</div>\n          </BentoCard>\n        </div>\n        <div className=\"sm:col-span-1 sm:row-span-2\">\n          <BentoCard className=\"bg-yellow-300\">\n            <div className=\"flex flex-col\">Nutrition Tracker</div>\n          </BentoCard>\n        </div>\n        <div className=\"sm:col-span-1 sm:row-span-1\">\n          <BentoCard className=\"bg-orange-300\">\n            <div className=\"flex flex-col\">Task Manager</div>\n          </BentoCard>\n        </div>\n        <div className=\"sm:col-span-2 sm:row-span-1\">\n          <BentoCard className=\"bg-pink-300\">\n            <div className=\"flex flex-col\">Progress dashboard</div>\n            <small>Track goals with charts</small>\n          </BentoCard>\n        </div>\n        <div className=\"sm:col-span-2 sm:row-span-1\">\n          <BentoCard className=\"bg-orange-300\">\n            <div className=\"flex flex-col\">Find recipes</div>\n          </BentoCard>\n        </div>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/eleven.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/bento-grid/eleven",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

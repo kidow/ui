@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "infinity-path",
+  "title": "Infinity Path",
+  "description": "무한대 경로를 도는 로딩(infinity path).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/infinity-path.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const InfinityPath = () => {\n  return (\n    <svg className=\"w-12 h-6 overflow-visible\" viewBox=\"0 0 60 30\">\n      <path\n        d=\"M 15 15 C 15 5, 25 5, 30 15 C 35 25, 45 25, 45 15 C 45 5, 35 5, 30 15 C 25 25, 15 25, 15 15\"\n        className=\"stroke-zinc-200 dark:stroke-zinc-800 fill-none\"\n        strokeWidth=\"4\"\n        strokeLinecap=\"round\"\n      />\n      <motion.path\n        d=\"M 15 15 C 15 5, 25 5, 30 15 C 35 25, 45 25, 45 15 C 45 5, 35 5, 30 15 C 25 25, 15 25, 15 15\"\n        className=\"stroke-zinc-800 dark:stroke-white fill-none\"\n        strokeWidth=\"4\"\n        strokeLinecap=\"round\"\n        strokeDasharray=\"100\"\n        animate={{ strokeDashoffset: [100, -100] }}\n        transition={{ duration: 2, repeat: Infinity, ease: \"linear\" }}\n      />\n    </svg>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/infinity-path.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

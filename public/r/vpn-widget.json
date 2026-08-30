@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "vpn-widget",
+  "title": "VPN Widget",
+  "description": "VPN 연결 상태 위젯(vpn widget).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/vpn-widget.tsx",
+      "content": "\"use client\";\n\nimport { FlagIcon, ShieldBan, ShieldCheck } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ntype SlidingButtonProps = {\n  connected: boolean;\n  onConnectedChange: (connected: boolean) => void;\n  className?: string;\n};\n\nfunction SlidingButton({ connected, onConnectedChange, className }: SlidingButtonProps) {\n  return (\n    <button\n      type=\"button\"\n      role=\"switch\"\n      aria-checked={connected}\n      className={cn(\n        \"touch-manipulation relative flex min-h-11 w-full items-center justify-between overflow-hidden rounded-2xl bg-muted transition-colors\",\n        className,\n      )}\n      onClick={() => onConnectedChange(!connected)}\n    >\n      <span className=\"flex h-11 w-8 items-center justify-center\" aria-hidden>\n        <span\n          className={cn(\"size-2.5 rounded-full bg-red-500 transition-opacity\", {\n            \"opacity-0\": connected,\n            \"opacity-100\": !connected,\n          })}\n        />\n      </span>\n      <span\n        className={cn(\n          \"absolute z-10 flex h-10 w-[8.75rem] flex-col items-center justify-center rounded-[14px] bg-background py-1 shadow-sm transition-[left] duration-200 ease-out\",\n          connected ? \"left-0.5\" : \"left-[34px]\",\n        )}\n      >\n        <span className=\"text-sm font-semibold text-foreground\">\n          {connected ? \"Connected\" : \"Disconnected\"}\n        </span>\n        <span\n          className={cn(\"inline-flex items-center gap-1 text-xs font-medium\", {\n            \"text-sky-700 dark:text-sky-400\": connected,\n            \"text-red-700 dark:text-red-400\": !connected,\n          })}\n        >\n          {connected ? <ShieldCheck size={12} aria-hidden /> : <ShieldBan size={12} aria-hidden />}\n          {connected ? \"Secured\" : \"Not secured\"}\n        </span>\n      </span>\n      <span className=\"flex h-11 w-8 items-center justify-center\" aria-hidden>\n        <span\n          className={cn(\"size-2.5 rounded-full bg-emerald-500 transition-opacity\", {\n            \"opacity-0\": !connected,\n            \"opacity-100\": connected,\n          })}\n        />\n      </span>\n    </button>\n  );\n}\n\nexport type VpnConnectionProps = {\n  className?: string;\n  serverName?: string;\n  latency?: string;\n  downloadMbps?: string;\n  defaultConnected?: boolean;\n  connected?: boolean;\n  onConnectedChange?: (connected: boolean) => void;\n};\n\nexport default function VpnConnection({\n  className,\n  serverName = \"Tokyo\",\n  latency = \"53 ms\",\n  downloadMbps = \"57.4\",\n  defaultConnected = false,\n  connected: controlledConnected,\n  onConnectedChange,\n}: VpnConnectionProps) {\n  const [internalConnected, setInternalConnected] = useState(defaultConnected);\n  const connected = controlledConnected ?? internalConnected;\n\n  const setConnected = (next: boolean) => {\n    if (controlledConnected === undefined) {\n      setInternalConnected(next);\n    }\n    onConnectedChange?.(next);\n  };\n\n  return (\n    <div className={className}>\n      <div className=\"flex size-52 flex-col rounded-3xl border border-sky-900/30 bg-sky-950 p-0.5 shadow-md\">\n        <div className=\"flex items-center gap-2 px-3 pb-1.5 pt-3\">\n          <FlagIcon className=\"size-5 fill-amber-400 text-amber-400\" aria-hidden />\n          <p className=\"truncate text-sm font-semibold tracking-tight text-amber-400\">\n            {serverName}\n          </p>\n        </div>\n        <div className=\"flex min-h-0 flex-1 flex-col gap-2 rounded-[22px] bg-background p-3\">\n          <div className=\"inline-flex max-w-fit items-center gap-1.5 rounded-lg bg-emerald-500/15 px-2 py-0.5\">\n            <span className=\"size-2 animate-pulse rounded-full bg-emerald-500\" aria-hidden />\n            <span className=\"text-xs font-medium tabular-nums text-emerald-700 dark:text-emerald-400\">\n              {latency}\n            </span>\n          </div>\n          <p className=\"text-3xl font-semibold tabular-nums tracking-tight text-foreground\">\n            {downloadMbps}\n            <span className=\"ml-0.5 text-sm font-medium text-muted-foreground\">Mbps</span>\n          </p>\n          <div className=\"mt-auto\">\n            <SlidingButton connected={connected} onConnectedChange={setConnected} />\n          </div>\n        </div>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/vpn-widget.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/vpn-widget",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

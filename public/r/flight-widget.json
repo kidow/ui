@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "flight-widget",
+  "title": "Flight Widget",
+  "description": "항공편 정보 위젯(flight widget, 탑승권).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/flight-widget.tsx",
+      "content": "\"use client\";\n\nimport { Armchair } from \"lucide-react\";\nimport { useEffect, useState } from \"react\";\n\nconst getTime = () => {\n  const now = new Date();\n\n  const options: Intl.DateTimeFormatOptions = {\n    day: \"2-digit\",\n    month: \"short\",\n    hour: \"2-digit\",\n    minute: \"2-digit\",\n    hour12: false,\n  };\n  return now.toLocaleString(\"en-GB\", options);\n};\n\nexport default function FlightWidget() {\n  const [formattedTime, setFormattedTime] = useState(() => getTime());\n\n  useEffect(() => {\n    const now = new Date();\n    const secondsUntilNextMinute = 60 - now.getSeconds();\n    const timeout = setTimeout(() => {\n      setFormattedTime(getTime());\n    }, secondsUntilNextMinute * 1000);\n    return () => clearTimeout(timeout);\n  }, []);\n\n  return (\n    <div className=\"relative flex h-52 w-52 overflow-hidden rounded-3xl text-black\">\n      <div className=\"relative w-16 items-center justify-evenly overflow-hidden bg-linear-to-b from-blue-100 to-blue-300\">\n        <div className=\"full absolute bottom-0 left-full flex h-16 w-52 origin-bottom-left -rotate-90 items-center justify-center gap-3 bg-pink-100\">\n          <div className=\"text-lg font-semibold tracking-widest text-red-700\">AIR CANADA</div>\n          <img\n            src=\"https://seeklogo.com/images/A/air-canada-logo-A0180CCDB8-seeklogo.com.png\"\n            className=\"h-6 w-6 mix-blend-multiply\"\n            alt=\"Air Canada logo\"\n          />\n        </div>\n      </div>\n      <div className=\"relative h-full w-36 bg-linear-to-b from-blue-100 to-teal-100 p-4 text-sm\">\n        {/* The background should match the container's background */}\n        <div className=\"absolute -left-2 -top-2 z-10 h-4 w-4 rounded-full bg-white dark:bg-zinc-800\" />\n        <div className=\"flex justify-around pb-2\">\n          <div className=\"flex flex-col text-2xl font-bold\">\n            <p>TOR</p>\n            <p>NYC</p>\n          </div>\n          <div>\n            <div className=\"mt-1.5 rounded-2xl bg-yellow-400 px-2 font-mono font-bold text-black/75\">\n              A50\n            </div>\n          </div>\n        </div>\n        <div className=\"mt-2 font-bold tracking-tight text-teal-500\">Flight</div>\n        <div className=\"flex items-center justify-between font-bold\">\n          <p>AC951</p>\n          <p className=\"flex pr-2\">\n            <Armchair fill=\"black\" /> 1A\n          </p>\n        </div>\n        <div className=\"mt-2 font-bold tracking-tight text-teal-500\">Date & time</div>\n        <div className=\"flex font-bold\">\n          <p>{formattedTime}</p>\n        </div>\n        {/* The background should match the container's background */}\n        <div className=\"absolute -bottom-2 -left-2 z-10 h-4 w-4 rounded-full bg-white dark:bg-zinc-800\" />\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/flight-widget.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/flight-widget",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animated-border-trail",
+  "title": "Animated Border Trail",
+  "description": "테두리를 따라 빛이 도는 컨테이너(border trail).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/animated-border-trail.tsx",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport \"./animated-border-trail.css\";\n\ninterface AnimatedTrailProps extends React.HTMLAttributes<HTMLDivElement> {\n  /**\n   * The duration of the animation.\n   * @default \"10s\"\n   */\n  duration?: string;\n\n  contentClassName?: string;\n\n  trailColor?: string;\n  trailSize?: \"sm\" | \"md\" | \"lg\";\n}\n\nconst sizes = {\n  sm: 5,\n  md: 10,\n  lg: 20,\n};\n\nexport default function AnimatedBorderTrail({\n  children,\n  className,\n  duration = \"10s\",\n  trailColor = \"purple\",\n  trailSize = \"md\",\n  contentClassName,\n  ...props\n}: AnimatedTrailProps) {\n  return (\n    <div\n      {...props}\n      className={cn(\"relative h-fit w-fit overflow-hidden rounded-2xl bg-gray-200 p-px\", className)}\n    >\n      <div\n        className=\"absolute inset-0 h-full w-full\"\n        style={{\n          animation: `border-trail ${duration ?? \"10s\"} linear infinite`,\n          background: `conic-gradient(from var(--border-trail-angle) at 50% 50%, transparent ${100 - sizes[trailSize]}%, ${trailColor})`,\n        }}\n      />\n      <div\n        className={cn(\n          \"relative h-full w-full overflow-hidden rounded-[15px] bg-white\",\n          contentClassName,\n        )}\n      >\n        {children}\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/animated-border-trail.tsx"
+    },
+    {
+      "path": "registry/kidow/animated-border-trail.css",
+      "content": "@layer components {\n  @property --border-trail-angle {\n    syntax: \"<angle>\";\n    initial-value: 0deg;\n    inherits: false;\n  }\n\n  @keyframes border-trail {\n    0% {\n      --border-trail-angle: 0deg;\n    }\n\n    100% {\n      --border-trail-angle: 360deg;\n    }\n  }\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/animated-border-trail.css"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/container/animated-border-trail",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "transition-list",
+  "title": "Transition List",
+  "description": "항목이 부드럽게 드나드는 목록(transition list).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/transition-list.tsx",
+      "content": "\"use client\";\n\nimport { AnimatePresence, motion } from \"motion/react\";\nimport { type ReactNode, useEffect, useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst Icon = ({ children, className }: { children: string; className?: string }) => (\n  <div className={cn(\"font-mono text-xl font-bold\", className)}>{children}</div>\n);\n\ninterface Item {\n  id: string;\n  icon: ReactNode;\n  name: string;\n  type: string;\n  amount: number;\n}\n\nconst itemListDefault: Item[] = [\n  {\n    id: \"Item-001\",\n    icon: <Icon className=\"text-red-500\">N</Icon>,\n    name: \"Netflix\",\n    type: \"Entertainment\",\n    amount: 13.2,\n  },\n  {\n    id: \"Item-002\",\n    icon: <Icon className=\"text-blue-500\">G</Icon>,\n    name: \"Google\",\n    type: \"Advertising\",\n    amount: 18.9,\n  },\n  {\n    id: \"Item-003\",\n    icon: <Icon className=\"text-red-500\">Y</Icon>,\n    name: \"YouTube\",\n    type: \"Entertainment\",\n    amount: 23.5,\n  },\n  {\n    id: \"Item-004\",\n    icon: <Icon className=\"text-green-500\">S</Icon>,\n    name: \"Shopify\",\n    type: \"Advertising\",\n    amount: 162.0,\n  },\n  {\n    id: \"Item-005\",\n    icon: <Icon className=\"text-white\">A</Icon>,\n    name: \"Apple\",\n    type: \"Devices\",\n    amount: 14.87,\n  },\n];\n\nconst TransitionList = ({ itemList }: { itemList?: Item[] }) => {\n  const [list, setList] = useState<Item[]>(itemList || itemListDefault);\n\n  useEffect(() => {\n    if (!list.length) {\n      return;\n    }\n\n    const timeouts = setTimeout(() => {\n      setList((prev) => prev.slice(1));\n    }, 2500);\n\n    return () => {\n      clearTimeout(timeouts);\n    };\n  }, [list]);\n\n  return (\n    <div className=\"h-36 w-full min-w-96 overflow-hidden rounded-lg bg-secondary\">\n      <AnimatePresence>\n        {list.map((item) => (\n          <motion.div\n            key={item.id}\n            animate={{ height: \"3rem\", scale: 1 }}\n            exit={{ height: 0, scale: 0, margin: 0 }}\n            transition={{ duration: 0.5 }}\n            className=\"m-2 flex h-12 items-center rounded-lg border border-gray-400 bg-primary/5 text-secondary-foreground\"\n          >\n            <div className=\"ml-4 w-8\">{item.icon}</div>\n            <div className=\"flex flex-1 justify-between px-4\">\n              <div>{item.name}</div>\n              <div>{item.type}</div>\n              <div>{item.amount}</div>\n            </div>\n          </motion.div>\n        ))}\n      </AnimatePresence>\n    </div>\n  );\n};\n\nexport default TransitionList;\n",
+      "type": "registry:component",
+      "target": "components/kidow/transition-list.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/list/transition-list",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

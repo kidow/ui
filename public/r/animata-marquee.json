@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animata-marquee",
+  "title": "Animata Marquee",
+  "description": "animata 판 마퀴(marquee). 이 레지스트리의 다른 marquee 와 API 가 달라 이름을 나눴다.",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/animata-marquee.tsx",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\n\nimport \"./marquee.css\";\n\ninterface MarqueeProps extends React.HTMLAttributes<HTMLDivElement> {\n  /**\n   * Should the marquee scroll horizontally or vertically.\n   * If set to `true`, the marquee will scroll vertically.\n   *\n   * @default false\n   */\n  vertical?: boolean;\n\n  /**\n   * The number of times to repeat the children. Set this value so that the repeated children overflow the container.\n   * @default 5\n   */\n  repeat?: number;\n\n  /**\n   * Reverse the marquee direction.\n   */\n  reverse?: boolean;\n\n  /**\n   * Pause the marquee animation on hover.\n   */\n  pauseOnHover?: boolean;\n\n  /**\n   * Apply a gradient mask to the marquee.\n   * @default true\n   */\n  applyMask?: boolean;\n}\n\nexport default function Marquee({\n  children,\n  vertical = false,\n  repeat = 5,\n  pauseOnHover = false,\n  reverse = false,\n  className,\n  applyMask = true,\n  ...props\n}: MarqueeProps) {\n  return (\n    <div\n      {...props}\n      className={cn(\n        \"group/marquee relative flex h-full w-full p-2 [--duration:10s] [--gap:12px] [gap:var(--gap)]\",\n        {\n          \"flex-col\": vertical,\n          \"flex-row\": !vertical,\n        },\n        className,\n      )}\n    >\n      {Array.from({ length: repeat }).map((_, index) => (\n        <div\n          key={`item-${index}`}\n          className={cn(\"flex shrink-0 [gap:var(--gap)]\", {\n            \"marquee-pause-on-hover\": pauseOnHover,\n            \"marquee-horizontal flex-row\": !vertical,\n            \"marquee-vertical flex-col\": vertical,\n          })}\n          style={reverse ? { animationDirection: \"reverse\" } : undefined}\n        >\n          {children}\n        </div>\n      ))}\n      {applyMask && (\n        <div\n          className={cn(\n            \"pointer-events-none absolute inset-0 z-10 h-full w-full from-white/50 from-5% via-transparent via-50% to-white/50 to-95% dark:from-gray-800/50 dark:via-transparent dark:to-gray-800/50\",\n            {\n              \"bg-linear-to-b\": vertical,\n              \"bg-linear-to-r\": !vertical,\n            },\n          )}\n        />\n      )}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/animata-marquee.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

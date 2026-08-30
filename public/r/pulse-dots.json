@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pulse-dots",
+  "title": "Pulse Dots",
+  "description": "점이 맥동하는 로딩(pulse dots).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/pulse-dots.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const PulseDots = () => {\n  return (\n    <div className=\"flex space-x-1.5\">\n      {[0, 1, 2].map((i) => (\n        <motion.div\n          key={i}\n          className=\"w-2.5 h-2.5 bg-zinc-800 dark:bg-white rounded-full\"\n          animate={{ opacity: [0.2, 1, 0.2] }}\n          transition={{ duration: 1.4, repeat: Infinity, delay: i * 0.2 }}\n        />\n      ))}\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/pulse-dots.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "jitter-text",
+  "title": "Jitter Text",
+  "description": "글자가 미세하게 떨리는 텍스트(jitter text, shake).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/jitter-text.tsx",
+      "content": "\"use client\";\n\nimport { motion } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\n\ninterface JitteryTextProps {\n  text: string;\n  duration?: number;\n  className?: string;\n}\n\nexport default function JitterText({ text, duration, className }: JitteryTextProps) {\n  const animationDuration = duration || 0.6;\n  return (\n    <div>\n      <motion.span\n        className={cn(\"inline-block\", className)}\n        animate={{\n          y: [1.5, 1, -1, 1.5, -1.5, 1, -0.5, 0],\n          x: [0, -1, 1.5, -1.5, 1, -1, 0.5, 0],\n          rotate: [0.5, -1.5, 1, -1.5, 1, -1, 1, 0],\n        }}\n        transition={{\n          repeat: Infinity,\n          repeatDelay: 0.5,\n          repeatType: \"reverse\",\n          ease: \"easeInOut\",\n          duration: animationDuration,\n        }}\n      >\n        {text}\n      </motion.span>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/jitter-text.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/jitter-text",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

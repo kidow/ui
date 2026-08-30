@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "fluid-diamond",
+  "title": "Fluid Diamond",
+  "description": "마름모가 유체처럼 변형되는 로딩(fluid diamond).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/fluid-diamond.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const FluidDiamond = () => (\n  <motion.div\n    className=\"w-6 h-6 bg-zinc-800 dark:bg-white rounded-sm\"\n    style={{ rotate: 45 }}\n    animate={{ scaleX: [1, 1.5, 1], scaleY: [1, 0.5, 1] }}\n    transition={{ duration: 1.5, repeat: Infinity, ease: \"easeInOut\" }}\n  />\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/fluid-diamond.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

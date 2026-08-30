@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "blur-stack-card",
+  "title": "Blur Stack Card",
+  "description": "뒤 카드가 흐릿하게 겹쳐 쌓인 카드(blur stack card).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/blur-stack-card.tsx",
+      "content": "\"use client\";\n\nimport { motion } from \"motion/react\";\nimport { useState } from \"react\";\nimport { cn } from \"@/lib/utils\";\n\ninterface RowProps {\n  color: string;\n  title: string;\n  value: string;\n}\n\nconst initialCards = [\n  {\n    id: 11,\n    title: \"Colors\",\n    color: \"bg-slate-200\",\n  },\n  {\n    id: 22,\n    title: \"System Design\",\n    color: \"bg-blue-100\",\n  },\n  {\n    id: 33,\n    title: \"Theming\",\n    color: \"bg-indigo-100\",\n  },\n];\n\nconst Row = ({ color, title, value }: RowProps) => {\n  return (\n    <div className=\"flex h-14 w-full items-center justify-between rounded-md bg-white/75 p-2\">\n      <div className=\"text-lg\">\n        <span className={cn(\"mx-2 size-8 rounded px-3\", color)} />\n        {title}\n      </div>\n      <span className=\"mx-2 text-slate-500\">{value}</span>\n    </div>\n  );\n};\nexport default function BlueStackCards() {\n  const [cards, setCards] = useState(initialCards);\n\n  const handleCardClick = (index: number) => {\n    setCards((prevCards) => {\n      const updatedCards = [...prevCards];\n      const [clickedCard] = updatedCards.splice(index, 1);\n      updatedCards.push(clickedCard);\n      return updatedCards;\n    });\n  };\n  return (\n    <div className=\"h-[40rem]\">\n      <div className=\"relative flex h-full w-full items-center justify-center\">\n        {cards.map((card, index) => (\n          <button\n            type=\"button\"\n            key={`blur_card_${card.id}`}\n            aria-label={`Select ${card.title} card`}\n            className={cn(\"absolute mx-auto border-0 bg-transparent p-0 text-left\", {\n              \"blur-[2px]\": index !== 0,\n            })}\n            style={{\n              transform: `translateY(${index}px) translateX(-${index * 50}px)`,\n              zIndex: cards.length - index,\n              height: 380 - index * 50,\n              width: 400 - index * 50,\n            }}\n            onClick={() => {\n              handleCardClick(index);\n            }}\n          >\n            <motion.div\n              whileTap={{\n                y: -550,\n                transition: {\n                  duration: 0.6,\n                },\n              }}\n              className={cn(\n                \"h-full w-full cursor-pointer overflow-y-scroll rounded-md p-4\",\n                card.color,\n              )}\n            >\n              <div className=\"group/blur h-full backdrop-blur-sm\">\n                <h2 className=\"text-xl font-bold\">{card.title}</h2>\n                <p className=\"text-base font-light\">System of colors built out of brand.</p>\n                <div className=\"my-3 flex flex-col gap-4\">\n                  <Row color=\"bg-red-600\" title=\"Red\" value=\"Value: #C80036\" />\n                  <Row color=\"bg-pink-600\" title=\"Pink\" value=\"Value: #FF0080\" />\n                  <Row color=\"bg-green-600\" title=\"Green\" value=\"Value: #o01212\" />\n\n                  <Row color=\"bg-green-600\" title=\"Orange\" value=\"Value: #FF7F3E\" />\n                </div>\n              </div>\n            </motion.div>\n          </button>\n        ))}\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/blur-stack-card.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/card/blur-stack-card",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "카드·테두리"
+  ],
+  "type": "registry:component"
+}

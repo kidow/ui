@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "circular-text",
+  "title": "Circular Text",
+  "description": "원을 따라 도는 텍스트(circular text, curved text).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/circular-text.tsx",
+      "content": "\"use client\";\n\nimport { motion } from \"motion/react\";\nimport { useMemo } from \"react\";\nimport { cn } from \"@/lib/utils\";\n\nexport default function CircularText({\n  text,\n  spinDuration = 30,\n  radius = 5,\n  className = \"\",\n}: {\n  text: string;\n  spinDuration?: number;\n  radius?: number;\n  className?: string;\n}) {\n  const characters = useMemo(() => [...text], [text]);\n  return (\n    <motion.div\n      key={spinDuration}\n      className={cn(\n        \"relative mx-auto flex h-48 aspect-square origin-center cursor-pointer items-center justify-center rounded-full text-center font-bold text-foreground\",\n        className,\n      )}\n      initial={{ rotate: 0 }}\n      animate={{ rotate: 360 }}\n      transition={{\n        ease: \"linear\",\n        duration: spinDuration,\n        repeat: Infinity,\n      }}\n    >\n      {characters.map((char, index) => {\n        const angle = (360 / characters.length) * index;\n        const transform = `rotate(${angle}deg) translateY(-${radius}px)`;\n        return (\n          <span\n            key={`${char}-${index}`}\n            style={{ transform, WebkitTransform: transform }}\n            className=\"absolute inset-0 inline-block font-medium\"\n          >\n            {char}\n          </span>\n        );\n      })}\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/circular-text.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/circular-text",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

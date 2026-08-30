@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-lock-body",
+  "title": "Use Lock Body",
+  "description": "모달이 열린 동안 문서 스크롤을 잠그는 훅(use lock body). 함께 설치된다.",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/use-lock-body.ts",
+      "content": "\"use client\";\n\nimport { useEffect } from \"react\";\n\nexport function useLockBody(active = true) {\n  useEffect(() => {\n    if (!active) {\n      return;\n    }\n\n    const html = document.documentElement;\n    const body = document.body;\n    const scrollY = window.scrollY;\n\n    const previous = {\n      htmlOverflow: html.style.overflow,\n      bodyOverflow: body.style.overflow,\n      bodyPosition: body.style.position,\n      bodyTop: body.style.top,\n      bodyLeft: body.style.left,\n      bodyRight: body.style.right,\n      bodyWidth: body.style.width,\n      bodyTouchAction: body.style.touchAction,\n    };\n\n    html.style.overflow = \"hidden\";\n    body.style.overflow = \"hidden\";\n    body.style.position = \"fixed\";\n    body.style.top = `-${scrollY}px`;\n    body.style.left = \"0\";\n    body.style.right = \"0\";\n    body.style.width = \"100%\";\n    body.style.touchAction = \"none\";\n\n    return () => {\n      html.style.overflow = previous.htmlOverflow;\n      body.style.overflow = previous.bodyOverflow;\n      body.style.position = previous.bodyPosition;\n      body.style.top = previous.bodyTop;\n      body.style.left = previous.bodyLeft;\n      body.style.right = previous.bodyRight;\n      body.style.width = previous.bodyWidth;\n      body.style.touchAction = previous.bodyTouchAction;\n      window.scrollTo(0, scrollY);\n    };\n  }, [active]);\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/use-lock-body.ts"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "개발자 도구"
+  ],
+  "type": "registry:component"
+}

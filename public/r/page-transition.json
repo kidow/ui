@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "page-transition",
+  "title": "Page Transition",
+  "description": "페이지 전환 효과(page transition).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/page-transition.tsx",
+      "content": "\"use client\";\n\nimport React, { useEffect, useRef } from 'react';\nimport { motion, Variants } from \"motion/react\";\n\nexport type TransitionType =\n  | 'double-stairs'\n  | 'shutter-stairs'\n  | 'split-stairs'\n  | 'horizontal-split'\n  | 'vertical-split'\n  | 'slash'\n  | 'lattice'\n  | 'curtain-shred'\n  | 'pixel'\n  | 'pixel-wave'\n  | 'pixel-spiral'\n  | 'vortex'\n  | 'cross-fade'\n  | 'expand-grow'\n  | 'push-slide'\n  | 'pop-over'\n  | 'depth-forward'\n  | 'liquid-wave';\n\nexport interface PageTransitionProps {\n  type?: TransitionType;\n  isVisible: boolean;\n  onComplete?: () => void;\n  className?: string;\n}\n\nexport const PageTransition: React.FC<PageTransitionProps> = ({\n  type = 'double-stairs',\n  isVisible,\n  onComplete,\n  className = '',\n}) => {\n  const pathRefs = useRef<(SVGPathElement | null)[]>([]);\n\n  useEffect(() => {\n    if (type !== 'liquid-wave' || !isVisible) return;\n    let animId: number;\n    const numPoints = 12;\n    const numPaths = 3;\n    const startTime = performance.now();\n\n    const delays = Array.from({ length: numPaths }, (_, i) =>\n      Array.from({ length: numPoints }, () => i * 0.08 + Math.random() * 0.15)\n    );\n\n    const animateFrame = (now: number) => {\n      const elapsedSec = (now - startTime) / 1000;\n      pathRefs.current.forEach((path, i) => {\n        if (!path) return;\n        const stepX = 100 / (numPoints - 1);\n        const pointsY = delays[i].map((delay) => {\n          const rawProgress = Math.max(0, Math.min(1, (elapsedSec - delay) / 0.65));\n          const easeProgress =\n            rawProgress < 0.5\n              ? 2 * rawProgress * rawProgress\n              : 1 - Math.pow(-2 * rawProgress + 2, 2) / 2;\n          return 100 - easeProgress * 110;\n        });\n\n        let d = `M 0 100 V ${pointsY[0]}`;\n        for (let j = 0; j < numPoints - 1; j++) {\n          const currentX = j * stepX;\n          const nextX = (j + 1) * stepX;\n          const cpX = currentX + stepX * 0.5;\n          d += ` C ${cpX} ${pointsY[j]} ${cpX} ${pointsY[j + 1]} ${nextX} ${pointsY[j + 1]}`;\n        }\n        d += ` V 100 H 0 Z`;\n        path.setAttribute('d', d);\n      });\n\n      if (now - startTime < 1300) {\n        animId = requestAnimationFrame(animateFrame);\n      } else if (onComplete) {\n        onComplete();\n      }\n    };\n\n    animId = requestAnimationFrame(animateFrame);\n    return () => cancelAnimationFrame(animId);\n  }, [isVisible, type, onComplete]);\n\n  if (!isVisible && type !== 'liquid-wave') return null;\n\n  if (type === 'double-stairs') {\n    const COLUMNS = 5;\n    const variants: Variants = {\n      initial: (i: number) => ({ y: i % 2 === 0 ? '-100%' : '100%' }),\n      enter: (i: number) => ({\n        y: '0%',\n        transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: i * 0.05 },\n      }),\n      exit: (i: number) => ({\n        y: i % 2 === 0 ? '100%' : '-100%',\n        transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: i * 0.05 },\n      }),\n    };\n\n    return (\n      <motion.div\n        className={`fixed inset-0 z-50 flex h-screen w-screen pointer-events-none ${className}`}\n        initial=\"initial\"\n        animate={isVisible ? 'enter' : 'exit'}\n        onAnimationComplete={() => {\n          if (onComplete) onComplete();\n        }}\n      >\n        {[...Array(COLUMNS)].map((_, i) => (\n          <motion.div\n            key={i}\n            variants={variants}\n            custom={i}\n            className=\"relative h-full flex-1 bg-neutral-900 border-r border-neutral-800 last:border-r-0\"\n          />\n        ))}\n      </motion.div>\n    );\n  }\n\n  if (type === 'liquid-wave') {\n    return (\n      <svg\n        className={`fixed inset-0 w-full h-full pointer-events-none z-50 ${className}`}\n        viewBox=\"0 0 100 100\"\n        preserveAspectRatio=\"none\"\n      >\n        <path ref={(el) => { pathRefs.current[0] = el; }} fill=\"#3f3f46\" style={{ opacity: 0.4 }} />\n        <path ref={(el) => { pathRefs.current[1] = el; }} fill=\"#27272a\" style={{ opacity: 0.75 }} />\n        <path ref={(el) => { pathRefs.current[2] = el; }} fill=\"#09090b\" />\n      </svg>\n    );\n  }\n\n  return (\n    <motion.div\n      className={`fixed inset-0 z-50 bg-neutral-900 pointer-events-none ${className}`}\n      initial={{ opacity: 0 }}\n      animate={isVisible ? { opacity: 1 } : { opacity: 0 }}\n      transition={{ duration: 0.4 }}\n    />\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/page-transition.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

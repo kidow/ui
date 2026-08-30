@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "report",
+  "title": "Report",
+  "description": "리포트 스켈레톤(report skeleton).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/report.tsx",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport default function Report({ className }: { className?: string }) {\n  return (\n    <div\n      className={cn(\n        \"flex min-h-52 w-52 flex-col gap-3 rounded-md border bg-background p-3 shadow-xl transition-shadow hover:shadow-sm dark:border-zinc-700\",\n        className,\n      )}\n    >\n      <div className=\"flex items-center justify-between border-b pb-3 dark:border-zinc-700\">\n        <span className=\"font-semibold text-foreground\">Report</span>\n\n        <span className=\"inline-block w-fit rounded-md bg-blue-600 px-2 py-1 text-center text-xs font-semibold text-white\">\n          CSV\n        </span>\n      </div>\n\n      {Array.from({ length: 6 }).map((_, i) => (\n        <div className=\"h-2 w-full rounded-md bg-muted\" key={`item-${i}`} />\n      ))}\n      <div className=\"h-2 w-1/2 rounded-md bg-muted\" />\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/report.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/skeleton/report",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

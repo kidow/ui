@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "jumping-text-instagram",
+  "title": "Jumping Text Instagram",
+  "description": "인스타그램식으로 글자가 튀어오르는 텍스트(jumping text).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/jumping-text-instagram.tsx",
+      "content": "\"use client\";\n\nimport { motion } from \"motion/react\";\n\nconst splitText = (text: string, word = false) => {\n  if (word) {\n    return String(text).split(/(?:\\b)/u);\n  }\n  return String(text).split(/(?:)/u);\n};\n\nexport default function JumpingTextInstagram({\n  text = \"This is a jumping text effect\",\n  mode = \"word\",\n  className,\n}: {\n  text: string;\n  className?: string;\n  mode?: \"word\" | \"character\";\n}) {\n  const isWordMode = mode === \"word\";\n  const nodes = splitText(text, isWordMode);\n  return (\n    <div className={className} key={text}>\n      {nodes.map((node, index) => (\n        <motion.span\n          key={index}\n          initial={{\n            y: 30,\n            rotate: -30,\n            opacity: 0,\n          }}\n          animate={{\n            opacity: 1,\n            y: 0,\n            rotate: 0,\n          }}\n          transition={{\n            type: \"spring\",\n            damping: 10,\n            mass: 2,\n            delay: (isWordMode ? 0.05 : 0.01) * index,\n          }}\n          className=\"inline-block origin-center\"\n        >\n          {node === \" \" ? \"\\u00A0\" : node}\n        </motion.span>\n      ))}\n      <span className=\"sr-only\">{text}</span>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/jumping-text-instagram.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/jumping-text-instagram",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

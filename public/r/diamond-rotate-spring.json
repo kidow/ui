@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "diamond-rotate-spring",
+  "title": "Diamond Rotate Spring",
+  "description": "마름모가 스프링으로 회전하는 로딩(diamond rotate).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/diamond-rotate-spring.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const DiamondRotateSpring = () => (\n  <motion.div\n    className=\"w-8 h-8 bg-zinc-800 dark:bg-white rounded-sm origin-center\"\n    style={{ rotate: 45 }}\n    animate={{ rotate: [45, 135, 225, 315] }}\n    transition={{ duration: 2, repeat: Infinity, type: \"spring\", bounce: 0.4 }}\n  />\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/diamond-rotate-spring.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

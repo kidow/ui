@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "survey-card",
+  "title": "Survey Card",
+  "description": "설문 카드(survey card).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/survey-card.tsx",
+      "content": "\"use client\";\n\nimport { useLayoutEffect, useMemo, useRef, useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface SurveyCardProps {\n  /**\n   * The items to display in the Survey.\n   * Each item should have a vote and itemName.\n   */\n  items: {\n    vote: number;\n    itemName?: string;\n  }[];\n  /**\n   * The width of the Survey. recommended to use with more than 250px\n   */\n  width?: number;\n  /**\n   * The title of the Survey.\n   */\n  surveyTitle?: string;\n}\n\nexport default function SurveyCard({ items, width: providedWidth, surveyTitle }: SurveyCardProps) {\n  const totalVotes = useMemo(() => items.reduce((acc, item) => acc + item.vote, 0), [items]);\n  const maxVote = useMemo(() => Math.max(...items.map((item) => item.vote)), [items]);\n\n  const containerRef = useRef<HTMLDivElement>(null);\n  const [measuredWidth, setMeasuredWidth] = useState<number | undefined>();\n  const width = providedWidth ?? measuredWidth ?? 250;\n\n  useLayoutEffect(() => {\n    if (providedWidth !== undefined || !containerRef.current) return;\n    const node = containerRef.current;\n    const updateWidth = () => setMeasuredWidth(node.offsetWidth);\n    updateWidth();\n    const observer = new ResizeObserver(updateWidth);\n    observer.observe(node);\n    return () => observer.disconnect();\n  }, [providedWidth]);\n\n  const [isParentHovered, setIsParentHovered] = useState(false);\n\n  const handleParentMouseOver = () => {\n    setIsParentHovered(true);\n  };\n\n  const handleParentMouseOut = () => {\n    setIsParentHovered(false);\n  };\n\n  return (\n    <div\n      ref={containerRef}\n      className={cn(\n        \"relative box-border flex w-full flex-col items-start gap-4 overflow-hidden p-2\",\n      )}\n      style={{ width }}\n      onMouseOver={handleParentMouseOver}\n      onMouseOut={handleParentMouseOut}\n      onFocus={handleParentMouseOver}\n      onBlur={handleParentMouseOut}\n    >\n      <div className=\"flex w-full justify-start\">\n        <h1 className=\"text-2xl font-bold\">{surveyTitle}</h1>\n      </div>\n      {items.map((item, index) => {\n        const clampedProgress = Math.max(0, item.vote);\n        // saving overflow over itemName using 8/12\n        const barWidth = isParentHovered ? (clampedProgress / totalVotes) * 100 * (8 / 12) : 30;\n        return (\n          <div\n            key={`survey-item-${index}`}\n            className={cn(\"flex w-full items-center justify-between\")}\n          >\n            <div\n              className={cn(\"duration-600 flex h-6 justify-start rounded-full transition-all\", {\n                \"animate-pulse bg-slate-300\": !isParentHovered,\n                \"bg-green-600\": isParentHovered && maxVote === item.vote,\n                \"bg-slate-400\": isParentHovered && maxVote !== item.vote,\n              })}\n              style={{ width: `${barWidth}%` }}\n            />\n            <div className=\"flex h-6 w-3/12 justify-end\">\n              <span className=\"text-xl text-black\">{item.itemName}</span>\n            </div>\n          </div>\n        );\n      })}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/survey-card.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/card/survey-card",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "카드·테두리"
+  ],
+  "type": "registry:component"
+}

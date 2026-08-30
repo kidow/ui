@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "music-stack-interaction",
+  "title": "Music Stack Interaction",
+  "description": "앨범이 겹쳐 쌓인 음악 위젯(music stack).",
+  "dependencies": [
+    "motion",
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/music-stack-interaction.tsx",
+      "content": "\"use client\";\n\nimport { Layers, LayoutGrid } from \"lucide-react\";\nimport { motion } from \"motion/react\";\nimport type React from \"react\";\nimport { useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst carouselStyles = {\n  perspective: \"1000px\",\n  overflow: \"hidden\",\n};\n\nconst carouselInnerStyles: React.CSSProperties = {\n  display: \"flex\",\n  transformStyle: \"preserve-3d\",\n  transition: \"transform 2s\",\n  justifyContent: \"center\",\n  alignItems: \"center\",\n  height: \"100%\",\n};\n\nconst carouselItemStyles: React.CSSProperties = {\n  minWidth: \"200px\",\n  marginLeft: \"-180px\",\n  transform: \"rotateY(15deg) translateZ(300px) translateX(-50px)\",\n  backfaceVisibility: \"hidden\",\n  boxShadow: \"0 4px 8px rgba(0, 0, 0, 0.2)\",\n  transition: \"transform 2s, box-shadow 2s\",\n};\n\nconst carouselItemFirstChildStyles: React.CSSProperties = {\n  minWidth: \"200px\",\n  marginLeft: \"20px\",\n  transform: \"rotateY(5deg) translateZ(300px) translateX(0)\",\n  backfaceVisibility: \"hidden\",\n  boxShadow: \"0 4px 8px rgba(0, 0, 0, 0.2)\",\n  transition: \"transform 2s, box-shadow 2s\",\n};\n\ninterface albumsProps {\n  /*\n   * Array of album objects\n   */\n  albums: {\n    id: number;\n    title: string;\n    artist: string;\n    cover: string;\n  }[];\n}\n\nexport default function MusicStackInteraction({ albums }: albumsProps) {\n  const [isGridView, setIsGridView] = useState(true);\n\n  const handleToggleView = () => {\n    setIsGridView(!isGridView);\n  };\n\n  return (\n    <div className=\"relative mx-auto h-[33rem] w-80 rounded bg-gray-900 p-2 text-white\">\n      <motion.div\n        className={cn(\"h-96 w-full\", { \"mt-24\": !isGridView })}\n        style={isGridView ? undefined : carouselStyles}\n        layout\n      >\n        <motion.div\n          className={cn(\"\", { \"mb-4 grid grid-cols-2 gap-6\": isGridView })}\n          style={isGridView ? undefined : carouselInnerStyles}\n          layout\n        >\n          {albums.map((album, index) => (\n            <div\n              key={album.id}\n              className={cn(\"relative w-full shadow-lg\")}\n              style={\n                isGridView\n                  ? undefined\n                  : index === 0\n                    ? carouselItemFirstChildStyles\n                    : carouselItemStyles\n              }\n            >\n              <motion.img\n                layout\n                src={`${album.cover}?w=200&h=200`}\n                alt={album.title}\n                className=\"h-auto rounded-xl shadow-md\"\n              />\n              <motion.div\n                layout\n                className=\"absolute bottom-0 left-0 w-full bg-linear-to-b from-transparent to-gray-800/50 px-4 py-2 text-white\"\n              >\n                <motion.h3 layout className=\"font-semibold leading-tight\">\n                  {album.title}\n                </motion.h3>\n                <motion.p layout className=\"text-sm leading-snug\">\n                  {album.artist}\n                </motion.p>\n              </motion.div>\n            </div>\n          ))}\n        </motion.div>\n      </motion.div>\n\n      <motion.div className=\"duration-2000 absolute bottom-4 left-0 right-0 -mb-4 flex w-auto items-center justify-center rounded-xl bg-gray-800 p-4 text-white shadow-2xl transition-all\">\n        <div className=\"flex w-32 items-center space-x-2 rounded-full bg-gray-900 p-2\">\n          <button\n            type=\"button\"\n            aria-label={isGridView ? \"Grid view selected\" : \"Switch to grid view\"}\n            aria-pressed={isGridView}\n            className={cn(\n              \"flex h-8 w-16 cursor-pointer items-center justify-center rounded-full border-0 bg-transparent p-0 text-inherit\",\n              {\n                \"bg-gray-700\": isGridView,\n              },\n            )}\n            onClick={handleToggleView}\n          >\n            <LayoutGrid />\n          </button>\n          <button\n            type=\"button\"\n            aria-label={!isGridView ? \"Stack view selected\" : \"Switch to stack view\"}\n            aria-pressed={!isGridView}\n            className={cn(\n              \"flex h-8 w-16 cursor-pointer items-center justify-center rounded-full border-0 bg-transparent p-0 text-inherit\",\n              {\n                \"bg-gray-700\": !isGridView,\n              },\n            )}\n            onClick={handleToggleView}\n          >\n            <Layers />\n          </button>\n        </div>\n      </motion.div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/music-stack-interaction.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/music-stack-interaction",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

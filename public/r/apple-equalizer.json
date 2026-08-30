@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "apple-equalizer",
+  "title": "Apple Equalizer",
+  "description": "음악 이퀄라이저처럼 막대가 오르내리는 로딩(equalizer bars).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/apple-equalizer.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const AppleEqualizer = () => (\n  <div className=\"flex space-x-1 h-8 items-end\">\n    {[0,1,2,3].map(i => (\n      <motion.div\n        key={i}\n        className=\"w-1.5 bg-zinc-800 dark:bg-white rounded-t-sm\"\n        animate={{ height: ['20%', '100%', '20%'] }}\n        transition={{ duration: 0.8, repeat: Infinity, delay: Math.random() * 0.5, ease: \"circInOut\" }}\n      />\n    ))}\n  </div>\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/apple-equalizer.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "confirmation-message",
+  "title": "Confirmation Message",
+  "description": "완료를 알리는 확인 메시지(confirmation message).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/confirmation-message.tsx",
+      "content": "\"use client\";\n\nimport { motion } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\n\ninterface ConfirmationMessageProps {\n  /**\n   * The message to appear in green box when the process will be successfully completed.\n   */\n  successMessage: string;\n\n  /**\n   * The name of the organization/bot who performs the operations.\n   */\n  labelName: string;\n\n  /**\n   * The brief about the process/text/output.\n   */\n  labelMessage: string;\n\n  /**\n   * Class name for the background element.\n   */\n  backgroundClassName?: string;\n\n  /**\n   * Class name for the container element.\n   */\n  containerClassName?: string;\n}\n\nexport default function ConfirmationMessage({\n  successMessage = \"Process Successful\",\n  labelName = \"Animata\",\n  labelMessage,\n  backgroundClassName,\n  containerClassName,\n}: ConfirmationMessageProps) {\n  return (\n    <div\n      className={cn(\n        \"storybook-fix group flex items-center justify-center py-24\",\n        containerClassName,\n      )}\n    >\n      <div\n        className={cn(\n          \"absolute inset-0 -z-10 h-full w-full items-center bg-linear-to-r from-teal-100 to-green-300\",\n          backgroundClassName,\n        )}\n      />\n\n      {/* Parent Container for message */}\n      <div className=\"flex h-64 max-w-lg flex-col items-center justify-center\">\n        <div className=\"flex h-20 items-center justify-center overflow-hidden rounded-full bg-green-800\">\n          {/* Checkmark */}\n          <div className=\"z-10 flex h-20 w-20 flex-col content-center items-center justify-center rounded-full bg-green-800 text-3xl text-white\">\n            {\" \"}\n            {/* Adjusted size */}\n            &#10003;\n          </div>\n\n          {/* Expanding green box with sliding text */}\n          <motion.div\n            className=\"z-0 flex h-20 overflow-hidden rounded-full bg-green-800\"\n            initial={{ width: \"0rem\" }}\n            animate={{ width: \"12rem\" }}\n            transition={{ delay: 0.5, duration: 0.8 }}\n          >\n            <motion.div\n              className=\"flex items-center text-nowrap pr-6 text-lg text-white\"\n              initial={{ x: -1000, zIndex: -10 }}\n              animate={{ x: 0, zIndex: 1 }}\n              transition={{ duration: 1.0, delay: 0.3 }}\n            >\n              {successMessage}\n            </motion.div>\n          </motion.div>\n        </div>\n\n        {/* Container to control height animation */}\n        <motion.div\n          className=\"relative flex h-fit w-[600px] max-w-lg overflow-hidden\"\n          initial={{ y: 100, opacity: 0 }}\n          animate={{ y: 0, opacity: 1 }}\n          transition={{ delay: 1.2, duration: 0.5 }}\n        >\n          {/* Message box */}\n          <div className=\"my-4 flex h-fit w-full rounded-lg border border-white/40 bg-white/90 p-6 py-4 shadow-lg backdrop-blur-md\">\n            <div className=\"mr-4 flex h-12 min-w-12 items-center justify-center rounded-full bg-green-800 text-white\">\n              {labelName[0]}\n            </div>\n            <div className=\"text-gray-800\">\n              <p className=\"text-xl font-bold text-slate-500\">{labelName}</p>\n              <motion.p\n                className=\"max-w-[390px] truncate text-wrap font-semibold\"\n                initial={{ opacity: 0 }}\n                animate={{ opacity: 1 }}\n                transition={{ delay: 2, duration: 0.9 }}\n              >\n                {labelMessage.length > 200 ? `${labelMessage.slice(0, 199)}...` : labelMessage}\n              </motion.p>\n            </div>\n          </div>\n        </motion.div>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/confirmation-message.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/feature-cards/confirmation-message",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "카드·테두리"
+  ],
+  "type": "registry:component"
+}

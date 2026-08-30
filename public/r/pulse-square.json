@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pulse-square",
+  "title": "Pulse Square",
+  "description": "사각형이 맥동하는 로딩(pulse square).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/pulse-square.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const PulseSquare = () => {\n  return (\n    <motion.div\n      className=\"w-8 h-8 border-4 border-zinc-800 dark:border-zinc-700 rounded-md\"\n      animate={{ scale: [1, 1.2, 1], opacity: [1, 0.3, 1], borderRadius: [\"20%\", \"50%\", \"20%\"] }}\n      transition={{ duration: 1.5, repeat: Infinity, ease: \"easeInOut\" }}\n    />\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/pulse-square.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

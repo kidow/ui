@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "clock-spinner",
+  "title": "Clock Spinner",
+  "description": "시곗바늘이 도는 로딩(clock spinner).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/clock-spinner.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const ClockSpinner = () => {\n  return (\n    <div className=\"relative w-10 h-10 border-2 border-zinc-800 dark:border-zinc-700 rounded-full flex items-center justify-center\">\n      <motion.div\n        className=\"absolute w-0.5 h-3.5 bg-zinc-800 dark:bg-white rounded-full origin-bottom\"\n        style={{ bottom: \"50%\" }}\n        animate={{ rotate: 360 }}\n        transition={{ duration: 2, repeat: Infinity, ease: \"linear\" }}\n      />\n      <motion.div\n        className=\"absolute w-0.5 h-2.5 bg-zinc-800 dark:bg-white rounded-full origin-bottom\"\n        style={{ bottom: \"50%\" }}\n        animate={{ rotate: 360 }}\n        transition={{ duration: 12, repeat: Infinity, ease: \"linear\" }}\n      />\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/clock-spinner.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

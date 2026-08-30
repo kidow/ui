@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "stacked-bar-pulse",
+  "title": "Stacked Bar Pulse",
+  "description": "쌓인 막대가 차례로 맥동하는 로딩(stacked bar pulse).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/stacked-bar-pulse.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const StackedBarPulse = () => (\n  <div className=\"flex flex-col space-y-1 w-8 items-center\">\n    {[0,1,2].map(i => (\n      <motion.div\n        key={i}\n        className=\"w-full h-1 bg-zinc-800 dark:bg-white rounded-full\"\n        animate={{ opacity: [0.2, 1, 0.2], width: ['50%', '100%', '50%'] }}\n        transition={{ duration: 1.5, repeat: Infinity, delay: i * 0.2, ease: \"easeInOut\" }}\n      />\n    ))}\n  </div>\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/stacked-bar-pulse.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

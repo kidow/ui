@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "wave-physics-loader",
+  "title": "Wave Physics Loader",
+  "description": "물리로 계산한 파도 로딩(wave physics).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/wave-physics-loader.tsx",
+      "content": "\"use client\";\n\nimport { motion } from \"motion/react\";\nimport { useMemo } from 'react';\n\nexport function WavePhysicsLoader({ theme = 'light' }: { theme?: 'light' | 'dark' }) {\n  const numBars = 15;\n  const barWidth = 12; \n  const barGap = 8; \n  const barTotalWidth = barWidth + barGap;\n  \n  const numFrames = 201;\n  const B = 4; \n  const maxBounce = 60; \n  const baseBarH = 16;\n  const wavePeakH = 48; \n\n  const { bars, ballX, ballY, ballScaleX, ballScaleY, times } = useMemo(() => {\n    const barsData = Array.from({ length: numBars }).map(() => ({ \n      heights: [] as string[],\n      colors: [] as string[],\n    }));\n    const bX: string[] = [];\n    const bY: string[] = [];\n    const bScaleX: number[] = [];\n    const bScaleY: number[] = [];\n    const tArr: number[] = [];\n    \n    for (let k = 0; k < numFrames; k++) {\n      const t = k / (numFrames - 1);\n      tArr.push(t);\n      \n      const x_frac = t < 0.5 ? t / 0.5 : (1 - t) / 0.5;\n      const ball_idx = x_frac * (numBars - 1);\n      \n      bX.push(`${ball_idx * barTotalWidth}px`);\n      \n      let bounce_f = (x_frac * B) % 1.0;\n      if (x_frac === 1 || x_frac === 0) bounce_f = 0;\n      \n      const bounce_h = 4 * bounce_f * (1 - bounce_f);\n      const height_factor = Math.max(0, 1 - bounce_h * 2);\n      \n      const ball_indent = height_factor * 20; \n      const ball_y = (baseBarH + wavePeakH - ball_indent) + bounce_h * maxBounce;\n      bY.push(`-${ball_y}px`);\n      \n      const squish = height_factor; \n      bScaleY.push(1 - squish * 0.3);\n      bScaleX.push(1 + squish * 0.25);\n      \n      for (let i = 0; i < numBars; i++) {\n        const dist = Math.abs(i - ball_idx);\n        \n        let wave_val = 0;\n        if (dist < 3) {\n          wave_val = Math.cos((dist / 3) * (Math.PI / 2));\n        }\n        \n        let indent = 0;\n        if (dist < 1.5) {\n          const indent_dist = Math.cos((dist / 1.5) * (Math.PI / 2));\n          indent = indent_dist * height_factor * 20;\n        }\n        \n        const bar_h = baseBarH + wave_val * wavePeakH - indent;\n        barsData[i].heights.push(`${Math.max(4, bar_h)}px`); \n        \n        // Colors for Light Theme: zinc-200 to zinc-800\n        const isDark = theme === 'dark';\n        let r, g, b;\n        if (isDark) {\n          r = Math.round(39 + wave_val * (228 - 39));\n          g = Math.round(39 + wave_val * (228 - 39));\n          b = Math.round(42 + wave_val * (231 - 42));\n        } else {\n          r = Math.round(228 - wave_val * (228 - 39));\n          g = Math.round(228 - wave_val * (228 - 39));\n          b = Math.round(231 - wave_val * (231 - 42));\n        }\n        barsData[i].colors.push(`rgb(${r}, ${g}, ${b})`);\n      }\n    }\n    \n    return { bars: barsData, ballX: bX, ballY: bY, ballScaleX: bScaleX, ballScaleY: bScaleY, times: tArr };\n  }, [theme]);\n\n  return (\n    <div className=\"relative flex flex-col items-center justify-center w-full scale-[0.6] sm:scale-75 md:scale-100\">\n      <div className=\"relative flex items-end justify-start h-48 space-x-2 w-[292px]\">\n        {bars.map((bar, i) => (\n          <motion.div\n            key={i}\n            className=\"w-3 rounded-full origin-bottom\"\n            style={{ height: '16px', backgroundColor: theme === 'dark' ? 'rgb(39, 39, 42)' : 'rgb(228, 228, 231)' }}\n            animate={{\n              height: bar.heights,\n              backgroundColor: bar.colors,\n            }}\n            transition={{\n              duration: 4,\n              repeat: Infinity,\n              times: times,\n              ease: 'linear',\n            }}\n          />\n        ))}\n        \n        <motion.div\n          className=\"absolute w-3 h-3 bg-zinc-900 dark:bg-white rounded-full z-10 shadow-sm\"\n          style={{ bottom: 0, left: 0, transformOrigin: 'bottom center' }}\n          animate={{\n            x: ballX,\n            y: ballY,\n            scaleX: ballScaleX,\n            scaleY: ballScaleY,\n          }}\n          transition={{\n            duration: 4,\n            repeat: Infinity,\n            times: times,\n            ease: 'linear',\n          }}\n        />\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/wave-physics-loader.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

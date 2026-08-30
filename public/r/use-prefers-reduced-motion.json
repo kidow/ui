@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-prefers-reduced-motion",
+  "title": "Use Prefers Reduced Motion",
+  "description": "사용자가 애니메이션 줄이기를 켰는지 알려주는 훅(prefers reduced motion). 함께 설치된다.",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/use-prefers-reduced-motion.ts",
+      "content": "\"use client\";\n\nimport { useSyncExternalStore } from \"react\";\n\nfunction subscribeReducedMotion(callback: () => void) {\n  const mq = window.matchMedia(\"(prefers-reduced-motion: reduce)\");\n  if (typeof mq.addEventListener === \"function\") {\n    mq.addEventListener(\"change\", callback);\n    return () => mq.removeEventListener(\"change\", callback);\n  }\n\n  const legacyMq = mq as MediaQueryList & {\n    addListener: (listener: () => void) => void;\n    removeListener: (listener: () => void) => void;\n  };\n  legacyMq.addListener(callback);\n  return () => legacyMq.removeListener(callback);\n}\n\nfunction getReducedMotionSnapshot() {\n  return window.matchMedia(\"(prefers-reduced-motion: reduce)\").matches;\n}\n\nexport function usePrefersReducedMotion() {\n  return useSyncExternalStore(subscribeReducedMotion, getReducedMotionSnapshot, () => false);\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/use-prefers-reduced-motion.ts"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "개발자 도구"
+  ],
+  "type": "registry:component"
+}

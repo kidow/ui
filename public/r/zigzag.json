@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "zigzag",
+  "title": "Zigzag",
+  "description": "지그재그 무늬 배경(zigzag).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/zigzag.tsx",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface ZigZagProps {\n  /**\n   * Color of the pattern\n   */\n  color?: string;\n\n  /**\n   * Size of the pattern in pixels\n   */\n  size?: number;\n\n  /**\n   * Content of the component\n   */\n  children?: React.ReactNode;\n\n  /**\n   * Additional classes\n   */\n  className?: string;\n}\n\nfunction Placeholder() {\n  return (\n    <div className=\"flex max-h-full min-h-64 min-w-72 max-w-full items-center justify-center\">\n      <div className=\"rounded bg-foreground text-background px-4 py-2\">\n        This has zigzag background\n      </div>\n    </div>\n  );\n}\n\nexport default function ZigZag({ color = \"#cacaca\", size = 10, children, className }: ZigZagProps) {\n  return (\n    <div className={cn(\"bg-background\", className)}>\n      <div\n        key={`zigzag-${color}-${size}`}\n        style={{\n          background: `linear-gradient(135deg, ${color} 25%, transparent 25%) -${size}px 0,\n        linear-gradient(225deg, ${color} 25%, transparent 25%) -${size}px 0,\n        linear-gradient(315deg, ${color} 25%, transparent 25%),\n        linear-gradient(45deg, ${color} 25%, transparent 25%)`,\n          backgroundSize: `calc(2 * ${size}px) calc(2 * ${size}px)`,\n        }}\n      >\n        {children ?? <Placeholder />}\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/zigzag.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/background/zigzag",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "배경·패턴"
+  ],
+  "type": "registry:component"
+}

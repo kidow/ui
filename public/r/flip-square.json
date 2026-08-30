@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "flip-square",
+  "title": "Flip Square",
+  "description": "사각형이 뒤집히는 로딩(flip square).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/flip-square.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const FlipSquare = () => {\n  return (\n    <motion.div\n      className=\"w-8 h-8 bg-zinc-800 dark:bg-white rounded-md shadow-sm\"\n      animate={{ rotateX: [0, 180, 180, 0], rotateY: [0, 0, 180, 180] }}\n      transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n    />\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/flip-square.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

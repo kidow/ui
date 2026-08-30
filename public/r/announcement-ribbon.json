@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "announcement-ribbon",
+  "title": "Announcement Ribbon",
+  "description": "상단에 두르는 공지 리본(announcement ribbon).",
+  "dependencies": [],
+  "registryDependencies": [
+    "@kidow/animata-marquee"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/announcement-ribbon.tsx",
+      "content": "\"use client\";\n\nimport Link from \"next/link\";\n\nimport Marquee from \"@/components/kidow/animata-marquee\";\nimport { cn } from \"@/lib/utils\";\n\ninterface AnnouncementRibbonProps extends React.HTMLAttributes<HTMLDivElement> {\n  /**\n   * Content to scroll in the ribbon. Accepts any React node.\n   * Defaults to the May 2026 changelog announcement.\n   */\n  message?: React.ReactNode;\n\n  /**\n   * Label shown in the static left badge. Pass `null` to hide it.\n   * @default \"NEW\"\n   */\n  badge?: string | null;\n\n  /**\n   * Text for the right-side CTA link. Pass `null` to hide it.\n   * @default \"Learn more\"\n   */\n  ctaText?: string | null;\n\n  /**\n   * URL for the CTA link.\n   * @default \"/docs/changelog/2026-05\"\n   */\n  ctaHref?: string;\n\n  /**\n   * Number of times the message is repeated to fill the track.\n   * @default 5\n   */\n  repeat?: number;\n\n  /**\n   * Pause scrolling when the user hovers over the ribbon.\n   * @default true\n   */\n  pauseOnHover?: boolean;\n}\n\nfunction DefaultMessage() {\n  return (\n    <span>\n      <span className=\"whitespace-nowrap px-12 font-(family-name:--font-display) font-light text-neutral-900\">\n        New components and live demos\n      </span>\n      <span className=\"text-neutral-900\">&middot;</span>\n    </span>\n  );\n}\n\nexport default function AnnouncementRibbon({\n  message,\n  badge = \"NEW\",\n  ctaText = \"Learn more\",\n  ctaHref = \"/docs/changelog/2026-05\",\n  repeat = 5,\n  pauseOnHover = true,\n  className,\n  ...props\n}: AnnouncementRibbonProps) {\n  const content = message ?? <DefaultMessage />;\n\n  return (\n    <div\n      className={cn(\n        \"relative flex h-11 w-full items-center overflow-hidden\",\n        \"bg-[#ffcc00]\",\n        \"border-b border-black/8\",\n        className,\n      )}\n      {...props}\n    >\n      {/* Badge */}\n      {badge && (\n        <div className=\"relative z-30 flex bg-[#ffcc00] shrink-0 items-center self-stretch border-r border-black/8 px-4\">\n          <span className=\"rounded-full bg-black/10 px-2.5 py-px font-mono text-[10px] font-semibold uppercase tracking-widest text-neutral-900\">\n            {badge}\n          </span>\n        </div>\n      )}\n\n      <div className=\"flex-1 overflow-hidden\">\n        <Marquee repeat={repeat} pauseOnHover={pauseOnHover} applyMask={false}>\n          {content}\n        </Marquee>\n      </div>\n\n      {/* CTA */}\n      {ctaText && ctaHref && (\n        <Link\n          href={ctaHref}\n          className=\"group/cta relative bg-[#ffcc00] z-30 flex shrink-0 items-center gap-1.5 self-stretch border-l border-black/8 px-4 font-mono text-[10px] font-semibold uppercase tracking-widest text-neutral-800/60 transition-colors hover:text-neutral-900\"\n        >\n          {ctaText}\n          <svg\n            className=\"h-3 w-3 transition-transform group-hover/cta:translate-x-0.5\"\n            fill=\"none\"\n            viewBox=\"0 0 24 24\"\n            stroke=\"currentColor\"\n            strokeWidth={2}\n            aria-hidden\n            role=\"presentation\"\n          >\n            <path strokeLinecap=\"round\" strokeLinejoin=\"round\" d=\"M9 5l7 7-7 7\" />\n          </svg>\n        </Link>\n      )}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/announcement-ribbon.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/container/announcement-ribbon",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "notes",
+  "title": "Notes",
+  "description": "메모 위젯(notes, 스티커 메모).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/notes.tsx",
+      "content": "\"use client\";\n\nimport type { ReactNode } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport type NotesCardProps = {\n  className?: string;\n  title?: string;\n  children?: ReactNode;\n};\n\nexport function NotesCard({ className, title = \"Note\", children }: NotesCardProps) {\n  return (\n    <div\n      className={cn(\n        \"flex h-64 w-48 flex-col rounded-3xl border border-amber-200/80 bg-[#fced99] p-4 font-sans shadow-md dark:border-amber-900/40 dark:bg-amber-100/90\",\n        className,\n      )}\n    >\n      <p className=\"shrink-0 text-[15px] font-semibold leading-snug text-zinc-950\">{title}</p>\n      <div className=\"mt-2 flex min-h-0 flex-1 flex-col gap-2 overflow-y-auto text-[13px] leading-snug text-zinc-800\">\n        {children}\n      </div>\n    </div>\n  );\n}\n\nexport type NotesProps = {\n  className?: string;\n  title?: string;\n  lines?: string[];\n};\n\nconst DEFAULT_LINES = [\n  \"Has worked with ABC for the last 10 years\",\n  \"Built two dozen web apps\",\n  \"Latest work is live in stores\",\n  \"A cool guy\",\n];\n\nexport default function Notes({\n  className,\n  title = \"About John\",\n  lines = DEFAULT_LINES,\n}: NotesProps) {\n  return (\n    <NotesCard className={className} title={title}>\n      {lines.map((line) => (\n        <p key={line}>{line}</p>\n      ))}\n    </NotesCard>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/notes.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/notes",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spring-dot-matrix",
+  "title": "Spring Dot Matrix",
+  "description": "점 행렬이 스프링으로 움직이는 로딩(spring dot matrix).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/spring-dot-matrix.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const SpringDotMatrix = () => {\n  return (\n    <div className=\"grid grid-cols-3 gap-2.5\">\n      {Array.from({ length: 9 }).map((_, i) => (\n        <motion.div\n          key={i}\n          className=\"w-2 h-2 bg-zinc-800 dark:bg-white rounded-full\"\n          animate={{ scale: [1, 0.4, 1] }}\n          transition={{\n            duration: 1.5,\n            repeat: Infinity,\n            ease: \"easeInOut\",\n            delay: (Math.floor(i / 3) + (i % 3)) * 0.15\n          }}\n        />\n      ))}\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/spring-dot-matrix.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

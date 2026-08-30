@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "category-skeleton",
+  "title": "Category Skeleton",
+  "description": "카테고리 목록 스켈레톤(category skeleton).",
+  "dependencies": [],
+  "registryDependencies": [
+    "@kidow/category-glyphs"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/category-skeleton.tsx",
+      "content": "\"use client\";\n\nimport { CategoryGlyph } from \"@/components/kidow/category-glyphs\";\nimport { cn } from \"@/lib/utils\";\n\nexport type CategorySkeletonVariant = string;\n\ntype CategorySkeletonProps = {\n  variant: CategorySkeletonVariant;\n  className?: string;\n};\n\nconst CARD_W = 358;\nconst CARD_H = 201;\n/** Glyph viewBox is 64×64; scale so art fills ~78% of card height */\nconst GLYPH_SCALE = 2.35;\n\nexport default function CategorySkeleton({ variant, className }: CategorySkeletonProps) {\n  return (\n    <svg\n      viewBox={`0 0 ${CARD_W} ${CARD_H}`}\n      className={cn(\n        \"[--cg-darkest:#76756f] [--cg-lightest:#e3e3e3] [--cg-ink:var(--ink,var(--cg-darkest))] [--cg-faint:var(--ink-faint,var(--cg-lightest))] [--cg-soft:color-mix(in_oklab,var(--cg-ink)_50%,transparent)] dark:[--cg-ink:var(--ink,var(--cg-lightest))] dark:[--cg-faint:var(--ink-faint,var(--cg-darkest))]\",\n        \"w-full overflow-visible rounded-2xl text-foreground motion-safe:transition-[scale,transform] motion-safe:duration-300 motion-safe:ease-out\",\n        className,\n      )}\n      aria-hidden=\"true\"\n    >\n      <rect\n        width={CARD_W}\n        height={CARD_H}\n        rx=\"16\"\n        fill=\"currentColor\"\n        fillOpacity=\"0.04\"\n        stroke=\"currentColor\"\n        strokeOpacity=\"0.1\"\n        strokeWidth=\"1\"\n      />\n\n      <g\n        transform={`translate(${CARD_W / 2} ${CARD_H / 2}) scale(${GLYPH_SCALE}) translate(-32 -32)`}\n      >\n        <CategoryGlyph variant={variant} />\n      </g>\n    </svg>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/category-skeleton.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/skeleton/category-skeleton",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "smooth-rounded-square",
+  "title": "Smooth Rounded Square",
+  "description": "둥근 사각형이 부드럽게 도는 로딩(smooth rounded square).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/smooth-rounded-square.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const SmoothRoundedSquare = () => (\n  <motion.div\n    className=\"w-10 h-10 border-[3px] border-zinc-800 dark:border-zinc-700\"\n    animate={{ borderRadius: [\"10%\", \"50%\", \"10%\"] }}\n    transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n  />\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/smooth-rounded-square.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

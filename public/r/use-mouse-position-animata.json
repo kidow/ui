@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-mouse-position-animata",
+  "title": "Use Mouse Position Animata",
+  "description": "요소 안에서의 마우스 위치를 알려주는 훅(use mouse position). 이 레지스트리의 다른 use-mouse-position 과 인자가 달라 이름을 나눴다. 함께 설치된다.",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/use-mouse-position-animata.ts",
+      "content": "import { useEffect, useRef } from \"react\";\n\ntype Point = {\n  x: number;\n  y: number;\n};\n\nexport function useMousePosition(\n  ref: React.RefObject<HTMLElement | null>,\n  callback?: (point: Point) => void,\n) {\n  const callbackRef = useRef(callback);\n  const rectRef = useRef<DOMRect | null>(null);\n  const frameRef = useRef<number | null>(null);\n  const latestPointRef = useRef<Point | null>(null);\n\n  callbackRef.current = callback;\n\n  useEffect(() => {\n    const node = ref.current;\n    if (!node) return;\n\n    const updateRect = () => {\n      rectRef.current = node.getBoundingClientRect();\n    };\n\n    const flush = () => {\n      frameRef.current = null;\n\n      if (latestPointRef.current) {\n        callbackRef.current?.(latestPointRef.current);\n      }\n    };\n\n    const handlePointerMove = (event: PointerEvent) => {\n      if (!rectRef.current) {\n        updateRect();\n      }\n\n      const currentRect = rectRef.current;\n      if (!currentRect) return;\n\n      latestPointRef.current = {\n        x: event.clientX - currentRect.left,\n        y: event.clientY - currentRect.top,\n      };\n\n      if (frameRef.current === null) {\n        frameRef.current = requestAnimationFrame(flush);\n      }\n    };\n\n    updateRect();\n\n    node.addEventListener(\"pointerenter\", updateRect);\n    node.addEventListener(\"pointermove\", handlePointerMove, {\n      passive: true,\n    });\n\n    window.addEventListener(\"resize\", updateRect);\n    window.addEventListener(\"scroll\", updateRect, {\n      passive: true,\n      capture: true,\n    });\n\n    return () => {\n      node.removeEventListener(\"pointerenter\", updateRect);\n      node.removeEventListener(\"pointermove\", handlePointerMove);\n\n      window.removeEventListener(\"resize\", updateRect);\n      window.removeEventListener(\"scroll\", updateRect, true);\n\n      if (frameRef.current !== null) {\n        cancelAnimationFrame(frameRef.current);\n      }\n    };\n  }, [ref]);\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/use-mouse-position-animata.ts"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "개발자 도구"
+  ],
+  "type": "registry:component"
+}

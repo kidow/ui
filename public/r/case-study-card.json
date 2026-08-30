@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "case-study-card",
+  "title": "Case Study Card",
+  "description": "사례 소개 카드(case study card).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/case-study-card.tsx",
+      "content": "\"use client\";\n\nimport type React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface CaseStudyCardProps extends React.HTMLAttributes<HTMLDivElement> {\n  title?: string;\n  category?: string;\n  image?: string;\n  logo?: string;\n  link?: string;\n  type?: \"content\" | \"simple-image\"; // Decides between text or image\n}\n\n// ContentCard Component for rendering text + image\nconst ContentCard: React.FC<CaseStudyCardProps> = ({ title, category, image, logo }) => {\n  return (\n    <div\n      className=\"relative flex h-full flex-col items-start justify-between rounded-lg p-4\"\n      style={{\n        backgroundImage: `url(${image})`,\n        backgroundSize: \"cover\",\n        backgroundPosition: \"center\",\n      }}\n    >\n      {image && <div className=\"opacity-70 rounded-lg absolute inset-0 bg-black\" />}\n\n      <div className=\"relative z-10\">\n        {category && <div className=\"text-xs text-gray-200\">{category}</div>}\n\n        {title && (\n          <div className=\"mr-2 text-lg font-bold leading-tight tracking-wide text-red-300\">\n            {title}\n          </div>\n        )}\n      </div>\n      {logo && ( // Check if image exists\n        <img src={logo} alt={title} className=\"z-10 h-9 rounded-lg\" />\n      )}\n    </div>\n  );\n};\n\n// SimpleImageCard component for rendering only image\nconst SimpleImageCard: React.FC<CaseStudyCardProps> = ({ image }) => {\n  return (\n    <div\n      className=\"relative flex w-full flex-col items-start justify-between rounded-lg p-4\"\n      style={{\n        backgroundImage: `url(${image})`,\n        backgroundSize: \"cover\",\n        backgroundPosition: \"center\",\n      }}\n    />\n  );\n};\n\nconst HoverRevealSlip = ({ show }: { show: React.ReactNode }) => {\n  const common = \"absolute flex w-full h-full [backface-visibility:hidden]\";\n\n  return (\n    <div className={cn(\"group/study relative h-60 w-52 perspective-[1000px]\")}>\n      {/* Back cover - static */}\n      <div className={cn(\"absolute inset-0 h-full w-48 rounded-lg bg-gray-50 shadow-md\")}></div>\n\n      {/* Card container with slight book opening effect on hover */}\n      <div\n        className={cn(\n          \"relative z-50 h-full w-48 origin-left transition-transform duration-500 ease-out transform-3d group-hover/study:transform-[rotateY(-30deg)]\",\n        )}\n      >\n        {/* Front side of the card */}\n        <div className={cn(\"h-full w-full rounded-lg bg-white shadow-md\", common)}>{show}</div>\n      </div>\n\n      {/* Sliding link/tab coming out from behind */}\n      <div\n        className={cn(\n          \"z-1 absolute bottom-0 right-0 flex h-48 w-14 -translate-x-10 transform items-start justify-start rounded-r-lg bg-green-600 pl-2 pt-2 text-xs font-bold text-white transition-transform duration-300 ease-in-out backface-hidden group-hover/study:translate-x-0 group-hover/study:rotate-[5deg]\",\n        )}\n      >\n        <div className=\"-rotate-90 whitespace-nowrap pb-16 pr-9\">CLICK TO READ</div>\n      </div>\n    </div>\n  );\n};\n\n// Main CaseStudyCard Component\nexport default function CaseStudyCard({\n  title,\n  category,\n  link,\n  image,\n  logo,\n  type,\n}: CaseStudyCardProps) {\n  return (\n    <div className=\"flex gap-8\">\n      <a href={link} className=\"block\">\n        <HoverRevealSlip\n          show={\n            type === \"content\" ? (\n              <ContentCard title={title} category={category} image={image} logo={logo} />\n            ) : (\n              <SimpleImageCard image={image} title={title} />\n            )\n          }\n        />\n      </a>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/case-study-card.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/card/case-study-card",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "카드·테두리"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "water-tracker",
+  "title": "Water Tracker",
+  "description": "물 섭취량 위젯(water tracker, 수분 섭취).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/water-tracker.tsx",
+      "content": "\"use client\";\n\nimport { Droplet } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport type WaterTrackerProps = {\n  className?: string;\n  dailyGoal?: number;\n  sipMl?: number;\n  defaultIntake?: number;\n  intake?: number;\n  onIntakeChange?: (ml: number) => void;\n};\n\nexport default function WaterTracker({\n  className,\n  dailyGoal = 2000,\n  sipMl = 250,\n  defaultIntake = 750,\n  intake: controlledIntake,\n  onIntakeChange,\n}: WaterTrackerProps) {\n  const [internalIntake, setInternalIntake] = useState(defaultIntake);\n  const intake = controlledIntake ?? internalIntake;\n  const atGoal = intake >= dailyGoal;\n  const progress = Math.min(100, (intake / dailyGoal) * 100);\n\n  const addWater = () => {\n    if (atGoal) return;\n    const next = Math.min(dailyGoal, intake + sipMl);\n    if (controlledIntake === undefined) {\n      setInternalIntake(next);\n    }\n    onIntakeChange?.(next);\n  };\n\n  return (\n    <div\n      className={cn(\n        \"relative flex size-52 overflow-hidden rounded-3xl border border-border bg-card font-sans shadow-md\",\n        className,\n      )}\n    >\n      <div className=\"flex min-w-0 flex-1 flex-col p-4\">\n        <div className=\"flex shrink-0 items-center gap-1.5\">\n          <Droplet className=\"size-[15px] fill-sky-500 text-sky-500\" aria-hidden />\n          <p className=\"text-[15px] font-semibold leading-none text-foreground\">Water</p>\n        </div>\n\n        <div className=\"mt-3 flex flex-col gap-1\">\n          <p className=\"text-[22px] font-normal leading-none tabular-nums tracking-tight text-foreground\">\n            {intake.toLocaleString()}\n            <span className=\"text-[13px] font-medium text-muted-foreground\"> ml</span>\n          </p>\n          <p className=\"text-[13px] leading-none text-muted-foreground\">\n            of {dailyGoal.toLocaleString()} ml today\n          </p>\n        </div>\n\n        <button\n          type=\"button\"\n          onClick={addWater}\n          disabled={atGoal}\n          className={cn(\n            \"touch-manipulation mt-auto min-h-11 w-full rounded-full text-[15px] font-medium leading-none transition-transform\",\n            atGoal\n              ? \"cursor-not-allowed bg-muted text-muted-foreground\"\n              : \"bg-sky-600 text-white hover:scale-[1.02] active:scale-[0.98]\",\n          )}\n        >\n          +{sipMl} ml\n        </button>\n      </div>\n\n      <div className=\"relative w-10 shrink-0 border-l border-border bg-muted/30\" aria-hidden>\n        <div\n          className=\"absolute inset-x-0 bottom-0 bg-linear-to-t from-sky-600 to-sky-400 transition-[height] duration-300 ease-out\"\n          style={{ height: `${progress}%` }}\n        />\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/water-tracker.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/water-tracker",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

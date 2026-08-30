@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "gears",
+  "title": "Gears",
+  "description": "톱니바퀴가 맞물려 도는 로딩(gears).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/gears.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const Gears = () => {\n  return (\n    <div className=\"flex space-x-[-4px]\">\n      <motion.div\n        className=\"w-8 h-8 border-4 border-dashed border-zinc-800 dark:border-zinc-700 rounded-full\"\n        animate={{ rotate: 360 }}\n        transition={{ duration: 4, repeat: Infinity, ease: \"linear\" }}\n      />\n      <motion.div\n        className=\"w-6 h-6 border-[3px] border-dashed border-zinc-500 rounded-full mt-3\"\n        animate={{ rotate: -360 }}\n        transition={{ duration: 3, repeat: Infinity, ease: \"linear\" }}\n      />\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/gears.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

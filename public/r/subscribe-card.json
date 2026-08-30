@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "subscribe-card",
+  "title": "Subscribe Card",
+  "description": "구독 신청 카드(subscribe card, newsletter).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/subscribe-card.tsx",
+      "content": "\"use client\";\n\nimport { Check } from \"lucide-react\";\n\nimport { Button } from \"@/components/ui/button\";\nimport { Input } from \"@/components/ui/input\";\n\ninterface SubscribeCardProps {\n  title?: string;\n  placeholder?: string;\n  buttonText?: string;\n}\n\nexport default function SubscribeCard({\n  title = \"Want to read the rest?\",\n  placeholder = \"justin@buttondown.email\",\n  buttonText = \"Subscribe for $5/mo\",\n}: SubscribeCardProps) {\n  return (\n    <div className=\"mx-auto flex w-full max-w-lg -skew-x-3 skew-y-2 flex-col gap-2 rounded-lg bg-white py-6 transition-transform duration-300 hover:skew-x-0 hover:skew-y-0\">\n      <h3 className=\"px-8 font-sans font-bold text-black\">{title}</h3>\n      <div className=\"flex flex-col gap-2 px-4\">\n        <Input placeholder={placeholder} className=\"rounded-none bg-gray-100\" />\n        <Button\n          className=\"group/subscribe relative cursor-pointer bg-gray-500 text-white transition-colors duration-300 hover:bg-green-600\"\n          aria-label={buttonText}\n        >\n          <Check className=\"absolute left-3 opacity-0 transition-opacity duration-300 group-hover/subscribe:opacity-100\" />\n          <p className=\"pl-4 hover:font-bold\">{buttonText}</p>\n        </Button>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/subscribe-card.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/card/subscribe-card",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "카드·테두리"
+  ],
+  "type": "registry:component"
+}

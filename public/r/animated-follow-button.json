@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animated-follow-button",
+  "title": "Animated Follow Button",
+  "description": "팔로우 상태가 바뀌는 버튼(follow button).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/animated-follow-button.tsx",
+      "content": "\"use client\";\n\nimport { AnimatePresence, motion } from \"motion/react\";\nimport type React from \"react\";\nimport { useState } from \"react\";\n\nexport interface AnimatedFollowButtonProps {\n  initialText: React.ReactElement | string; // Text or element displayed initially\n  changeText: React.ReactElement | string; // Text or element displayed after the button is clicked\n  className?: string; // ClassName prop for custom button styling\n  changeTextClassName?: string; // ClassName prop for custom styling of changeText\n  animationType?:\n    | \"up-to-down\"\n    | \"down-to-up\"\n    | \"left-to-right\"\n    | \"right-to-left\"\n    | \"zoom-in\"\n    | \"zoom-out\"; // Prop to define animation type\n}\n\nconst AnimatedFollowButton: React.FC<AnimatedFollowButtonProps> = ({\n  initialText,\n  changeText,\n  className,\n  changeTextClassName,\n  animationType = \"up-to-down\", // Set default animation to \"up-to-down\"\n}) => {\n  const [isClicked, setIsClicked] = useState<boolean>(false); // Track button click state\n\n  // Determine animation settings based on animationType prop\n  const getAnimation = () => {\n    switch (animationType) {\n      case \"down-to-up\":\n        return { initial: { y: 20 }, animate: { y: 0 }, exit: { y: 20 } }; // Down to up animation\n      case \"left-to-right\":\n        return { initial: { x: -20 }, animate: { x: 0 }, exit: { x: -20 } }; // Left to right animation\n      case \"right-to-left\":\n        return { initial: { x: 20 }, animate: { x: 0 }, exit: { x: 20 } }; // Right to left animation\n      case \"zoom-in\":\n        return { initial: { scale: 0.8 }, animate: { scale: 1 }, exit: { scale: 0.8 } }; // Zoom in animation\n      case \"zoom-out\":\n        return { initial: { scale: 1.2 }, animate: { scale: 1 }, exit: { scale: 1.2 } }; // Zoom out animation\n      default:\n        return { initial: { y: -20 }, animate: { y: 0 }, exit: { y: -20 } }; // Default: Up to down animation\n    }\n  };\n\n  const animation = getAnimation(); // Get animation settings based on the selected type\n\n  return (\n    <AnimatePresence mode=\"wait\">\n      {isClicked ? (\n        // Button after being clicked\n        <motion.button\n          className={`relative flex items-center justify-center w-[200px] h-16 overflow-hidden ${className}`} // Apply custom styling\n          onClick={() => setIsClicked(false)} // On click, toggle button state\n          initial={{ opacity: 0 }} // Initial animation for opacity\n          animate={{ opacity: 1 }} // Animate to full opacity\n          exit={{ opacity: 0 }} // Exit animation for opacity\n        >\n          {/* Change text with defined animation */}\n          <motion.span\n            key=\"clicked\"\n            className={`relative h-full w-full font-semibold flex items-center justify-center ${changeTextClassName}`} // Apply changeText className\n            {...animation} // Apply selected animation\n          >\n            {changeText} {/* Display the changeText */}\n          </motion.span>\n        </motion.button>\n      ) : (\n        // Button before being clicked\n        <motion.button\n          className={`relative flex items-center justify-center w-[200px] h-16 cursor-pointer ${className}`} // Apply custom styling\n          onClick={() => setIsClicked(true)} // On click, toggle button state\n          initial={{ opacity: 0 }} // Initial animation for opacity\n          animate={{ opacity: 1 }} // Animate to full opacity\n          exit={{ opacity: 0 }} // Exit animation for opacity\n        >\n          {/* Initial text with defined animation */}\n          <motion.span\n            key=\"not-clicked\"\n            className=\"relative font-semibold flex items-center justify-center\" // Flexbox for centering text\n            {...animation} // Apply selected animation\n          >\n            {initialText} {/* Display the initialText */}\n          </motion.span>\n        </motion.button>\n      )}\n    </AnimatePresence>\n  );\n};\n\nexport default AnimatedFollowButton;\n",
+      "type": "registry:component",
+      "target": "components/kidow/animated-follow-button.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/button/animated-follow-button",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:component"
+}

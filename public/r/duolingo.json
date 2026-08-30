@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "duolingo",
+  "title": "Duolingo",
+  "description": "듀오링고식 입체 버튼(duolingo button, 3d press).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/duolingo.tsx",
+      "content": "\"use client\";\n\nexport default function Duolingo() {\n  return (\n    <button\n      type=\"button\"\n      className=\"box-border inline-block h-11 cursor-pointer touch-manipulation whitespace-nowrap rounded-lg border-b-4 border-solid border-transparent bg-sky-600 px-4 py-3 text-center text-sm font-bold uppercase leading-5 tracking-wider text-white outline-hidden transition-all duration-200 hover:brightness-110 active:border-b-0 active:border-t-4 active:bg-none disabled:cursor-auto\"\n    >\n      Duolingo\n      <span className=\"absolute inset-0 -z-10 rounded-lg border-b-4 border-solid border-transparent bg-sky-500\" />\n    </button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/duolingo.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/button/duolingo",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:component"
+}

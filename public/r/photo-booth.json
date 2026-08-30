@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "photo-booth",
+  "title": "Photo Booth",
+  "description": "즉석 사진관식 이미지 묶음(photo booth).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/photo-booth.tsx",
+      "content": "\"use client\";\n\nimport type { HtmlHTMLAttributes } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface PhotoBoothProps extends HtmlHTMLAttributes<HTMLDivElement> {\n  collections: string[];\n}\nconst PhotoBooth = ({ collections, className, ...props }: PhotoBoothProps) => {\n  return (\n    <div\n      className=\"group/booth flex w-full max-w-3xl justify-center rounded-lg bg-gray-100 p-3\"\n      {...props}\n    >\n      <div className=\"grid min-w-full grid-cols-2 place-content-center place-items-center gap-5 p-3 sm:grid-cols-4\">\n        {collections.map((image, index) => (\n          <div\n            key={`alt_${index}`}\n            className=\"relative h-[110px] w-[110px] transition-transform duration-700\"\n          >\n            <img\n              src={image}\n              alt=\"\"\n              aria-hidden\n              className={cn(\n                \"absolute inset-0 h-full w-full max-w-full rounded-lg object-cover transition-transform duration-500 hover:scale-125\",\n                className,\n              )}\n            />\n          </div>\n        ))}\n      </div>\n    </div>\n  );\n};\n\nexport default PhotoBooth;\n",
+      "type": "registry:component",
+      "target": "components/kidow/photo-booth.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/image/photo-booth",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "미디어·데이터"
+  ],
+  "type": "registry:component"
+}

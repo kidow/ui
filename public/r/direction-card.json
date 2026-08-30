@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "direction-card",
+  "title": "Direction Card",
+  "description": "길 안내 카드(direction card, navigation).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/direction-card.tsx",
+      "content": "\"use client\";\nimport { ArrowUp, CornerUpLeft, CornerUpRight } from \"lucide-react\";\nimport { type ElementType, useEffect, useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface Direction {\n  distance: number;\n  direction: string;\n  to: string;\n  iconType: ElementType;\n}\n\ninterface IDirectionCardProps {\n  directionValues: Direction[];\n  duration?: number;\n}\n\nexport const testDirectionProps: IDirectionCardProps = {\n  directionValues: [\n    {\n      distance: 350,\n      direction: \"right\",\n      to: \"Gurkha St.\",\n      iconType: CornerUpRight,\n    },\n    {\n      distance: 700,\n      direction: \"left\",\n      to: \"Rounding St.\",\n      iconType: CornerUpLeft,\n    },\n    {\n      distance: 100,\n      direction: \"left\",\n      to: \"Fulbari marga\",\n      iconType: CornerUpLeft,\n    },\n    {\n      distance: 1000,\n      direction: \"straight\",\n      to: \"hwy 16\",\n      iconType: ArrowUp,\n    },\n  ],\n};\n\nfunction DirectionCard({\n  directionValues = testDirectionProps.directionValues,\n  duration = 5000,\n}: IDirectionCardProps) {\n  const [directionState, setDirectionState] = useState({ currentIndex: 0, progress: 0 });\n  const { currentIndex, progress } = directionState;\n  const directionCount = directionValues.length;\n\n  const prevIconType =\n    directionValues[(currentIndex - 1 + directionCount) % directionCount].iconType;\n  const currentIconType = directionValues[currentIndex].iconType;\n  const nextIconType = directionValues[(currentIndex + 1) % directionCount].iconType;\n\n  useEffect(() => {\n    const changeDirectionInterval = setInterval(() => {\n      setDirectionState((state) => ({\n        currentIndex: (state.currentIndex + 1) % directionCount,\n        progress: 0,\n      }));\n    }, duration ?? 5000);\n\n    const progressIncrement = 100 / ((duration ?? 5000) / 100);\n    const progressInterval = setInterval(() => {\n      setDirectionState((state) => ({\n        ...state,\n        progress: state.progress >= 100 ? 100 : state.progress + progressIncrement,\n      }));\n    }, 100);\n\n    return () => {\n      clearInterval(changeDirectionInterval);\n      clearInterval(progressInterval);\n    };\n  }, [duration, directionCount]);\n\n  const currentDirection = directionValues[currentIndex];\n\n  const renderIcon = (IconComponent: ElementType, size = 52, color = \"text-gray-300\") => (\n    <IconComponent size={size} className={cn(\"text-white\", color)} />\n  );\n  return (\n    <div className=\"direction-card flex size-52 items-start justify-between rounded-3xl bg-black p-4\">\n      <div className=\"direction-container flex h-full w-[80%] flex-col items-center justify-center gap-3\">\n        <p className=\"text-3xl font-bold text-white\">\n          {currentDirection.distance}\n          <span className=\"text-black/50\">m</span>\n        </p>\n        <p className=\"animate-pulse\">{renderIcon(currentIconType, 52, \"text-white\")}</p>\n        <p className=\"text-md h-8 w-20 text-ellipsis break-all text-center text-gray-400\">\n          {currentDirection.to}\n        </p>\n      </div>\n      <div className=\"progress-icon-container flex h-full w-[100px] flex-row-reverse justify-around\">\n        <div className=\"relative flex flex-col justify-evenly\">\n          <div\n            style={{ boxShadow: \"inset 0px -30px 20px 0px black\" }}\n            className=\"absolute inset-0 shadow\"\n          />\n          {renderIcon(prevIconType, 32)}\n          {renderIcon(currentIconType, 32, \"text-green-300\")}\n          {renderIcon(nextIconType, 32)}\n        </div>\n        <div\n          style={{ height: \"100%\" }}\n          className=\"progress-bar flex h-full w-[6px] items-end rounded-xl bg-gray-400\"\n        >\n          <div\n            style={{ height: `${progress}%` }}\n            className=\"progress-bar h-full w-[6px] rounded-xl bg-green-300 shadow-glow2\"\n          />\n        </div>\n      </div>\n    </div>\n  );\n}\n\nexport default DirectionCard;\n",
+      "type": "registry:component",
+      "target": "components/kidow/direction-card.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/direction-card",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "status-button",
+  "title": "Status Button",
+  "description": "상태에 따라 모양이 바뀌는 버튼(status button).",
+  "dependencies": [
+    "motion",
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/status-button.tsx",
+      "content": "\"use client\";\n\nimport { CheckCircle2, CircleDashed } from \"lucide-react\";\nimport { AnimatePresence, motion } from \"motion/react\";\nimport { useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst wait = async (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));\n\nexport default function StatusButton() {\n  const [status, setStatus] = useState<\"loading\" | \"Add to cart\" | \"Added to cart\">();\n  const isEnabled = !status || status === \"Add to cart\";\n\n  const changeStatus = async () => {\n    if (!isEnabled) {\n      return;\n    }\n\n    setStatus(\"loading\");\n    await wait(1500);\n    setStatus(\"Added to cart\");\n    await wait(1500);\n    setStatus(\"Add to cart\");\n  };\n\n  return (\n    <button\n      type=\"button\"\n      onClick={changeStatus}\n      disabled={!isEnabled}\n      className=\"group/status relative h-10 min-w-40 overflow-hidden rounded-md bg-teal-500 px-6 text-sm font-semibold text-white transition-colors duration-300 hover:bg-teal-600\"\n    >\n      <AnimatePresence mode=\"wait\" initial={false}>\n        <motion.span\n          // Remount the component so that the animation can be restarted\n          key={status}\n          initial={{ opacity: 0, y: -15 }}\n          animate={{ opacity: 1, y: 0 }}\n          exit={{ opacity: 0, y: 15 }}\n          transition={{ duration: 0.075 }}\n          className={cn(\"flex items-center justify-center gap-1\")}\n        >\n          {status === \"Added to cart\" && (\n            <motion.span\n              className=\"h-fit w-fit\"\n              initial={{ scale: 0 }}\n              animate={{ scale: 1 }}\n              transition={{ delay: 0.075, type: \"spring\" }}\n            >\n              <CheckCircle2 className=\"h-4 w-4 fill-white stroke-teal-500 group-hover/status:stroke-teal-600\" />\n            </motion.span>\n          )}\n\n          {status === \"loading\" ? (\n            <CircleDashed className=\"h-4 w-4 animate-spin\" />\n          ) : (\n            (status ?? \"Add to cart\")\n          )}\n        </motion.span>\n      </AnimatePresence>\n    </button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/status-button.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/button/status-button",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:component"
+}

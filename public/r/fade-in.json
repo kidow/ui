@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "fade-in",
+  "title": "Fade In",
+  "description": "서서히 나타나는 진입 효과(fade in).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/fade-in.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\ninterface FadeInProps {\n  children: React.ReactNode;\n  duration?: number;\n  delay?: number;\n  className?: string;\n}\n\nexport function FadeIn({\n  children,\n  duration = 0.5,\n  delay = 0,\n  className = '',\n}: FadeInProps) {\n  return (\n    <motion.div\n      initial={{ opacity: 0 }}\n      animate={{ opacity: 1 }}\n      transition={{\n        duration,\n        delay,\n        ease: [0.215, 0.61, 0.355, 1], // easeOutCubic\n      }}\n      className={className}\n    >\n      {children}\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/fade-in.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

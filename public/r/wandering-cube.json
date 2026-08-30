@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "wandering-cube",
+  "title": "Wandering Cube",
+  "description": "정육면체가 칸을 옮겨 다니는 로딩(wandering cube).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/wandering-cube.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const WanderingCube = () => {\n  return (\n    <div className=\"relative w-10 h-10\">\n      <motion.div\n        className=\"absolute top-0 left-0 w-4 h-4 bg-zinc-800 dark:bg-white rounded-sm\"\n        animate={{ \n          x: [0, 24, 24, 0, 0],\n          y: [0, 0, 24, 24, 0],\n          rotate: [0, -90, -180, -270, -360]\n        }}\n        transition={{ duration: 2.5, repeat: Infinity, ease: \"easeInOut\" }}\n      />\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/wandering-cube.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

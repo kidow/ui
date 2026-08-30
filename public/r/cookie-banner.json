@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "cookie-banner",
+  "title": "Cookie Banner",
+  "description": "쿠키 동의 배너(cookie banner, consent).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/cookie-banner.tsx",
+      "content": "\"use client\";\n\nexport default function CookieBanner() {\n  return (\n    <div className=\"flex min-h-52 w-52 flex-col gap-3 rounded-md border bg-background p-3 shadow-xl transition-shadow hover:shadow-sm dark:border-zinc-700\">\n      <div className=\"flex flex-1 flex-col justify-center gap-2\">\n        <div className=\"h-2 w-1/2 rounded-md bg-muted-foreground/25\" />\n        <div className=\"h-2 w-3/4 rounded-md bg-muted\" />\n        <div className=\"h-2 w-3/5 rounded-md bg-muted\" />\n      </div>\n      <button\n        type=\"button\"\n        aria-label=\"Accept cookies\"\n        className=\"w-full rounded-sm bg-blue-400 p-2\"\n      >\n        <span className=\"block h-1.5 rounded-sm bg-muted\" />\n      </button>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/cookie-banner.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/skeleton/cookie-banner",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

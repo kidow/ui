@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "expense-tracker",
+  "title": "Expense Tracker",
+  "description": "지출 내역을 정리해 보여주는 위젯(expense tracker, 가계부).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/expense-tracker.tsx",
+      "content": "\"use client\";\nimport { useMemo } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface SpendingItem {\n  day: string;\n  amount: number;\n}\n\ninterface SpendingDetailsProps {\n  spending: SpendingItem[];\n}\nexport const spendingTrackerProps: SpendingDetailsProps = {\n  spending: [\n    { day: \"M\", amount: 700 },\n    { day: \"T\", amount: 160 },\n    { day: \"W\", amount: 500 },\n    { day: \"T\", amount: 300 },\n    { day: \"F\", amount: 1280 },\n    { day: \"Sa\", amount: 200 },\n    { day: \"Su\", amount: 600 },\n  ],\n};\n\nexport default function ExpenseTracker({\n  spending = spendingTrackerProps.spending,\n}: SpendingDetailsProps) {\n  const totalSpending = spending.reduce((acc, item) => acc + item.amount, 0);\n  const periodLabel = useMemo(() => {\n    const now = new Date();\n    return `${now.toLocaleString(\"default\", { month: \"long\" }).toUpperCase()} ${now.getFullYear()}`;\n  }, []);\n\n  return (\n    <div\n      className={cn(\n        \"flex h-52 w-52 flex-col rounded-3xl border bg-background p-4 dark:border-zinc-700\",\n      )}\n    >\n      <h4 className=\"mb-1 text-sm font-semibold text-muted-foreground\">{periodLabel}</h4>\n      <div className=\"group/expense flex flex-1 items-end justify-between\">\n        {spending.map((item, index) => (\n          <div\n            key={index}\n            className=\"flex cursor-pointer flex-col items-center transition-opacity hover:!opacity-100 group-hover/expense:opacity-50\"\n          >\n            <div className=\"mb-1 text-xs text-foreground\">{item.day}</div>\n            <div\n              className=\"h-20 w-3 rounded-full bg-gray-300 dark:bg-gray-600\"\n              style={{\n                position: \"relative\",\n                overflow: \"hidden\",\n              }}\n            >\n              <div\n                className=\"fill absolute bottom-0 left-0 bg-blue-500 transition-all\"\n                style={{\n                  height: `${(item.amount / totalSpending) * 100}%`,\n                  width: \"100%\",\n                }}\n              />\n            </div>\n          </div>\n        ))}\n      </div>\n      <div className=\"mt-3\">\n        <p className=\"text-xs tracking-wide text-muted-foreground\">THIS WEEK SPENDING</p>\n        <p className=\"text-xl font-black text-foreground\">\n          ${Intl.NumberFormat().format(totalSpending)}\n        </p>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/expense-tracker.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/expense-tracker",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

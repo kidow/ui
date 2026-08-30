@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "music-widget",
+  "title": "Music Widget",
+  "description": "음악 재생 위젯(music widget, 플레이어).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/music-widget.tsx",
+      "content": "\"use client\";\n\nimport { Music, Music2, Music3, Pause, Play, SkipBack, SkipForward } from \"lucide-react\";\nimport { useState } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport type MusicTrack = {\n  title: string;\n  artist: string;\n};\n\nexport type MusicWidgetProps = {\n  className?: string;\n  tracks?: MusicTrack[];\n  coverUrl?: string;\n  defaultPlaying?: boolean;\n};\n\nconst DEFAULT_TRACKS: MusicTrack[] = [\n  { title: \"Never Gonna Give You Up\", artist: \"Rick Astley\" },\n  { title: \"It Must Have Been Love\", artist: \"Roxette\" },\n  { title: \"Take On Me\", artist: \"A-ha\" },\n];\n\nexport default function MusicWidget({\n  className,\n  tracks = DEFAULT_TRACKS,\n  coverUrl = \"/widget/music.jpg\",\n  defaultPlaying = false,\n}: MusicWidgetProps) {\n  const [index, setIndex] = useState(0);\n  const [playing, setPlaying] = useState(defaultPlaying);\n  const safeTracks = tracks.length > 0 ? tracks : DEFAULT_TRACKS;\n  const track = safeTracks[index % safeTracks.length];\n\n  return (\n    <div\n      className={cn(\n        \"flex size-52 flex-col rounded-3xl bg-linear-to-bl from-indigo-200 to-indigo-700 p-4 text-white shadow-md dark:from-indigo-900 dark:to-indigo-950\",\n        className,\n      )}\n    >\n      <div className=\"relative flex min-h-0 flex-1 flex-col justify-between\">\n        <div className=\"flex gap-2\">\n          <img src={coverUrl} alt=\"\" className=\"size-20 shrink-0 rounded-2xl object-cover\" />\n          <div className=\"flex ms-auto h-fit flex-wrap justify-end gap-0.5\" aria-hidden>\n            <Music2\n              size={16}\n              className={cn(\"transition-all\", {\n                hidden: !playing,\n                \"animate-in zoom-in repeat-infinite direction-alternate-reverse duration-1000 delay-500\":\n                  playing,\n              })}\n            />\n            <Music3\n              size={14}\n              className={cn(\"transition-all\", {\n                hidden: !playing,\n                \"animate-in zoom-in repeat-infinite direction-alternate-reverse duration-1000\":\n                  playing,\n              })}\n            />\n            <Music\n              size={18}\n              className={cn(\"transition-all\", {\n                hidden: !playing,\n                \"animate-in zoom-in repeat-infinite direction-alternate-reverse duration-1000 delay-300\":\n                  playing,\n              })}\n            />\n          </div>\n        </div>\n        <div className=\"space-y-0.5\">\n          <p className=\"line-clamp-1 text-sm font-semibold leading-tight\">{track.title}</p>\n          <p className=\"line-clamp-1 text-xs font-medium text-indigo-200\">{track.artist}</p>\n        </div>\n      </div>\n\n      <div className=\"mt-2 flex items-center justify-evenly\">\n        <button\n          type=\"button\"\n          aria-label=\"Previous track\"\n          className=\"touch-manipulation flex min-h-11 min-w-11 items-center justify-center rounded-full\"\n          onClick={() => setIndex((i) => (i - 1 + safeTracks.length) % safeTracks.length)}\n        >\n          <SkipBack className=\"size-5 fill-current\" />\n        </button>\n        <button\n          type=\"button\"\n          aria-label={playing ? \"Pause\" : \"Play\"}\n          className=\"touch-manipulation flex min-h-11 min-w-11 items-center justify-center rounded-full\"\n          onClick={() => setPlaying((p) => !p)}\n        >\n          {playing ? (\n            <Pause className=\"size-6 fill-current\" />\n          ) : (\n            <Play className=\"size-6 fill-current\" />\n          )}\n        </button>\n        <button\n          type=\"button\"\n          aria-label=\"Next track\"\n          className=\"touch-manipulation flex min-h-11 min-w-11 items-center justify-center rounded-full\"\n          onClick={() => setIndex((i) => (i + 1) % safeTracks.length)}\n        >\n          <SkipForward className=\"size-5 fill-current\" />\n        </button>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/music-widget.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/music-widget",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

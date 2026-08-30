@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "reminder",
+  "title": "Reminder",
+  "description": "알림 하나를 보여주는 위젯(reminder).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/reminder.tsx",
+      "content": "\"use client\";\n\nimport { ArrowRight } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport type ReminderBucket = {\n  label: string;\n  count: number;\n  /** Tailwind classes for the bucket chip (e.g. `bg-violet-200 dark:bg-violet-500/35`). */\n  className?: string;\n};\n\nexport type ReminderProps = {\n  className?: string;\n  title?: string;\n  buckets?: ReminderBucket[];\n  /** Next commitment — the primary glance line. */\n  nextLabel?: string;\n};\n\nconst DEFAULT_BUCKETS: ReminderBucket[] = [\n  { label: \"Work\", count: 2, className: \"bg-violet-200 dark:bg-violet-500/35\" },\n  { label: \"Home\", count: 3, className: \"bg-emerald-200 dark:bg-emerald-500/35\" },\n];\n\nexport default function Reminder({\n  className,\n  title = \"Today\",\n  buckets = DEFAULT_BUCKETS,\n  nextLabel = \"Meeting in 30 min\",\n}: ReminderProps) {\n  return (\n    <div\n      className={cn(\n        \"flex size-52 flex-col justify-between rounded-3xl border border-border bg-background p-4 shadow-md\",\n        className,\n      )}\n    >\n      <p className=\"text-center text-xs font-medium uppercase tracking-wide text-muted-foreground\">\n        {title}\n      </p>\n\n      <div className=\"flex items-stretch justify-between gap-2\">\n        {buckets.slice(0, 2).map((bucket) => (\n          <div\n            key={bucket.label}\n            className={cn(\n              \"flex min-w-0 flex-1 flex-col items-center justify-center gap-1 rounded-xl px-2 py-3\",\n              bucket.className,\n            )}\n          >\n            <span className=\"text-2xl font-semibold tabular-nums leading-none text-foreground\">\n              {bucket.count}\n            </span>\n            <span className=\"w-full border-t border-border/60 pt-1.5 text-center text-xs font-medium text-muted-foreground\">\n              {bucket.label}\n            </span>\n          </div>\n        ))}\n      </div>\n\n      <div className=\"flex items-start gap-1.5 text-foreground\">\n        <ArrowRight size={16} className=\"mt-0.5 shrink-0 text-muted-foreground\" aria-hidden />\n        <p className=\"line-clamp-2 text-sm font-medium leading-snug\">{nextLabel}</p>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/reminder.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/reminder",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "mask-text",
+  "title": "Mask Text",
+  "description": "커서 위치에 따라 마스크가 움직이는 텍스트(mask text, cursor mask).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [
+    "@kidow/use-mouse-position"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/mask-text.tsx",
+      "content": "\"use client\";\n\nimport { motion } from \"motion/react\";\nimport { useRef, useState } from \"react\";\n\nimport { useMousePosition } from \"@/components/kidow/use-mouse-position-animata\";\nimport { cn } from \"@/lib/utils\";\n\ninterface MaskTextProps extends React.HTMLAttributes<HTMLDivElement> {\n  revealText: string;\n  originalText: React.ReactNode | string;\n}\nexport default function MaskText({\n  revealText = \"Hello World!\",\n  originalText = \"Bye World!\",\n  className,\n}: MaskTextProps) {\n  const [isHovered, setIsHovered] = useState(false);\n  const containerRef = useRef<HTMLDivElement>(null);\n  const [{ x, y }, setMousePosition] = useState({ x: 0, y: 0 });\n  useMousePosition(containerRef, setMousePosition);\n  const size = isHovered ? 500 : 50;\n\n  const common =\n    \"flex h-full w-full items-center justify-center text-5xl font-bold leading-snug text-foreground\";\n\n  return (\n    <div className={cn(\"relative h-screen\", className)} ref={containerRef}>\n      <motion.div\n        className={cn(common, \"absolute bg-black\")}\n        style={{\n          maskImage: \"url(/circle.svg)\",\n          maskRepeat: \"no-repeat\",\n          maskSize: \"50px\",\n        }}\n        animate={\n          {\n            WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,\n            WebkitMaskSize: `${size}px`,\n          } as Record<string, string>\n        }\n        transition={{ type: \"tween\", ease: \"backOut\", duration: 0.5 }}\n      >\n        <p\n          onMouseEnter={() => {\n            setIsHovered(true);\n          }}\n          onMouseLeave={() => {\n            setIsHovered(false);\n          }}\n        >\n          {revealText}\n        </p>\n      </motion.div>\n\n      <div className={common}>{originalText}</div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/mask-text.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/mask-text",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

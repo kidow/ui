@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "shining-button",
+  "title": "Shining Button",
+  "description": "광택이 흐르는 버튼(shining button).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/shining-button.tsx",
+      "content": "\"use client\";\n\nimport { ArrowRight } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport default function ShiningButton() {\n  const label = \"See Calendar\";\n  return (\n    <button\n      type=\"button\"\n      className=\"group/shine cursor-pointer rounded-xl border-4 border-violet-800/0 bg-transparent p-1 transition-colors duration-500 hover:border-violet-800/100\"\n    >\n      <div className=\"relative flex items-center justify-center gap-4 overflow-hidden rounded-lg bg-violet-800 px-6 py-4 font-bold text-white\">\n        {label}\n        <ArrowRight className=\"transition-all duration-700 ease-in-out group-hover/shine:translate-x-2 group-hover/shine:scale-125\" />\n        <div\n          className={cn(\n            \"absolute -left-16 top-0 h-full w-12 rotate-[30deg] scale-y-150 bg-white/10 transition-all duration-700 ease-in-out group-hover/shine:left-[calc(100%+1rem)]\",\n          )}\n        />\n      </div>\n    </button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/shining-button.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/button/shining-button",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:component"
+}

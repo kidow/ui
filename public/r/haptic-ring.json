@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "haptic-ring",
+  "title": "Haptic Ring",
+  "description": "진동이 퍼지듯 번지는 고리 로딩(haptic ring).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/haptic-ring.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const HapticRing = () => (\n  <motion.div\n    className=\"w-10 h-10 border-[3px] border-zinc-200 dark:border-zinc-800 rounded-full border-t-zinc-800 dark:border-t-white\"\n    animate={{ rotate: [0, 90, 180, 270, 360] }}\n    transition={{ duration: 2, repeat: Infinity, type: \"spring\", bounce: 0.4 }}\n  />\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/haptic-ring.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

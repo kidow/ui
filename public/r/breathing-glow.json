@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "breathing-glow",
+  "title": "Breathing Glow",
+  "description": "빛이 숨쉬듯 밝아졌다 어두워지는 로딩(breathing glow).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/breathing-glow.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const BreathingGlow = () => {\n  return (\n    <div className=\"relative flex items-center justify-center w-12 h-12\">\n      <motion.div\n        className=\"absolute w-8 h-8 bg-blue-500 rounded-full blur-md\"\n        animate={{ scale: [1, 1.5, 1], opacity: [0.5, 0.8, 0.5] }}\n        transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n      />\n      <div className=\"relative w-6 h-6 bg-white rounded-full shadow-sm\" />\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/breathing-glow.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

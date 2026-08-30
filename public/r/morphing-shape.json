@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "morphing-shape",
+  "title": "Morphing Shape",
+  "description": "도형이 다른 도형으로 변하는 로딩(morphing shape).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/morphing-shape.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const MorphingShape = () => {\n  return (\n    <motion.div\n      className=\"w-10 h-10 bg-zinc-800 dark:bg-white shadow-sm\"\n      animate={{\n        borderRadius: [\"10%\", \"50%\", \"10%\"],\n        rotate: [0, 90, 180],\n        scale: [1, 0.8, 1],\n      }}\n      transition={{ duration: 2, repeat: Infinity, ease: \"easeInOut\" }}\n    />\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/morphing-shape.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

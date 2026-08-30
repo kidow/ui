@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "bold-copy",
+  "title": "Bold Copy",
+  "description": "커서를 따라 글자가 굵어지는 헤드라인(bold copy, hover weight).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/bold-copy.tsx",
+      "content": "\"use client\";\n\nimport { Tourney } from \"next/font/google\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst tourney = Tourney({\n  subsets: [\"latin\"],\n});\n\nconst sizePresets = {\n  sm: {\n    title: \"text-sm group-hover/bold:text-xl md:text-lg group-hover/bold:md:text-2xl\",\n    background: \"text-xl md:text-2xl\",\n  },\n  md: {\n    title: \"text-base group-hover/bold:text-2xl md:text-xl group-hover/bold:md:text-4xl\",\n    background: \"text-2xl md:text-4xl\",\n  },\n  xl: {\n    title: \"text-lg group-hover/bold:text-4xl md:text-3xl group-hover/bold:md:text-8xl\",\n    background: \"text-4xl md:text-8xl\",\n  },\n} as const;\n\nexport default function BoldCopy({\n  text = \"animata\",\n  size = \"xl\",\n  className,\n  textClassName,\n  backgroundTextClassName,\n}: {\n  text: string;\n  size?: keyof typeof sizePresets;\n  className?: string;\n  textClassName?: string;\n  backgroundTextClassName?: string;\n}) {\n  if (!text?.length) {\n    return null;\n  }\n\n  const preset = size && size in sizePresets ? sizePresets[size] : sizePresets.xl;\n\n  return (\n    <div\n      className={cn(\n        \"group/bold relative flex items-center justify-center bg-background px-2 py-2 md:px-6 md:py-4\",\n        tourney.className,\n        className,\n      )}\n    >\n      <div\n        className={cn(\n          \"font-bold uppercase text-foreground/15 transition-all group-hover/bold:opacity-50 select-none\",\n          preset.background,\n          backgroundTextClassName,\n        )}\n      >\n        {text}\n      </div>\n      <div\n        className={cn(\n          \"absolute font-bold uppercase text-foreground transition-all duration-300\",\n          preset.title,\n          textClassName,\n        )}\n      >\n        {text}\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/bold-copy.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/bold-copy",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

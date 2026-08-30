@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sliding-bars",
+  "title": "Sliding Bars",
+  "description": "막대가 미끄러지는 로딩(sliding bars).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/sliding-bars.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const SlidingBars = () => (\n  <div className=\"relative w-8 h-8\">\n    <motion.div\n      className=\"absolute top-0 left-0 w-8 h-1.5 bg-zinc-800 dark:bg-white rounded-full\"\n      animate={{ y: [0, 24, 0] }}\n      transition={{ duration: 1.5, repeat: Infinity, ease: \"easeInOut\" }}\n    />\n    <motion.div\n      className=\"absolute bottom-0 left-0 w-8 h-1.5 bg-zinc-400 dark:bg-zinc-200 rounded-full\"\n      animate={{ y: [0, -24, 0] }}\n      transition={{ duration: 1.5, repeat: Infinity, ease: \"easeInOut\" }}\n    />\n  </div>\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/sliding-bars.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "underline-hover-text",
+  "title": "Underline Hover Text",
+  "description": "hover 하면 밑줄이 그어지는 텍스트(underline hover).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/underline-hover-text.tsx",
+      "content": "\"use client\";\nimport type React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport interface UnderlineHoverTextProps {\n  text: string;\n  /**\n   * Resting text color. Tailwind class string.\n   */\n  textColor?: string;\n  /**\n   * Text color applied on hover. Pass `hover:text-foo` style class, or leave\n   * empty to keep the resting color.\n   */\n  hoverTextColor?: string;\n  /**\n   * Background color class applied to the underline stroke. Pass a plain\n   * class like `bg-zinc-900` (or any `bg-*`). The component drives visibility\n   * itself via the parent's `:hover` — if you pass a `hover:`-prefixed class\n   * here it'll never apply (the stroke element is not the hovered element)\n   * and the stroke will appear colorless on hover.\n   */\n  hoverColor?: string;\n  fontSize?: string;\n  fontWeight?: string;\n  className?: string;\n}\n\nconst UnderlineHoverText: React.FC<UnderlineHoverTextProps> = ({\n  text,\n  textColor = \"text-zinc-900 dark:text-zinc-100\",\n  hoverTextColor = \"\",\n  hoverColor = \"bg-zinc-900 dark:bg-zinc-100\",\n  fontSize = \"text-2xl\",\n  fontWeight = \"font-medium\",\n  className,\n}) => {\n  return (\n    <span\n      className={cn(\n        \"group/underline relative inline-block cursor-pointer px-1 pb-1.5\",\n        \"tracking-tight\",\n        \"transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]\",\n        \"will-change-transform hover:-translate-y-[2px]\",\n        fontSize,\n        textColor,\n        fontWeight,\n        hoverTextColor,\n        className,\n      )}\n    >\n      <span className=\"relative z-10\">{text}</span>\n      {/* Soft baseline — always present, muted */}\n      <span\n        aria-hidden\n        className=\"pointer-events-none absolute bottom-0 left-0 h-px w-full bg-current opacity-25\"\n      />\n      {/* Hover stroke — sweeps outward from the center */}\n      <span\n        aria-hidden\n        className={cn(\n          \"pointer-events-none absolute -bottom-px left-1/2 h-[3px] w-0 -translate-x-1/2 rounded-full\",\n          \"transition-[width] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]\",\n          \"group-hover/underline:w-full\",\n          hoverColor,\n        )}\n      />\n    </span>\n  );\n};\n\nexport default UnderlineHoverText;\n",
+      "type": "registry:component",
+      "target": "components/kidow/underline-hover-text.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/text/underline-hover-text",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

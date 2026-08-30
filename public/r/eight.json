@@ -1,0 +1,37 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "eight",
+  "title": "Eight",
+  "description": "벤토 그리드 배치 8번(bento grid layout).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@kidow/animata-bar-chart",
+    "@kidow/avatar-list",
+    "@kidow/report",
+    "@kidow/wide-card",
+    "@kidow/counter",
+    "@kidow/animata-ticker",
+    "@kidow/animata-typing-text"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/eight.tsx",
+      "content": "\"use client\";\n\nimport { Bot } from \"lucide-react\";\n\nimport BarChart from \"@/components/kidow/animata-bar-chart\";\nimport AvatarList from \"@/components/kidow/avatar-list\";\nimport Report from \"@/components/kidow/report\";\nimport WideCard from \"@/components/kidow/wide-card\";\nimport Counter from \"@/components/kidow/counter\";\nimport Ticker from \"@/components/kidow/animata-ticker\";\nimport TypingText from \"@/components/kidow/animata-typing-text\";\nimport { cn } from \"@/lib/utils\";\n\n// #region placeholder\nfunction BoldCopy({\n  text = \"animata\",\n  className,\n  textClassName,\n  backgroundTextClassName,\n}: {\n  text: string;\n  className?: string;\n  textClassName?: string;\n  backgroundTextClassName?: string;\n}) {\n  if (!text?.length) {\n    return null;\n  }\n\n  return (\n    <div\n      className={cn(\n        \"group/bento relative flex items-center justify-center bg-background px-2 py-2 md:px-6 md:py-4\",\n        className,\n      )}\n    >\n      <div\n        className={cn(\n          \"text-4xl font-black uppercase text-foreground/15 transition-all group-hover/bento:opacity-50 md:text-8xl\",\n          backgroundTextClassName,\n        )}\n      >\n        {text}\n      </div>\n      <div\n        className={cn(\n          \"text-md absolute font-black uppercase text-foreground transition-all group-hover/bento:text-4xl md:text-3xl group-hover/bento:md:text-8xl\",\n          textClassName,\n        )}\n      >\n        {text}\n      </div>\n    </div>\n  );\n}\n\nfunction BentoCard({ children, className }: { children: React.ReactNode; className?: string }) {\n  return (\n    <div className={cn(\"relative h-full w-full overflow-hidden rounded-2xl p-4\", className)}>\n      {children}\n    </div>\n  );\n}\n\nfunction FeatureOne() {\n  return (\n    <BentoCard className=\"flex flex-col bg-yellow-300\">\n      <div className=\"font-bold text-yellow-700\">Highly rated</div>\n      <div className=\"mt-auto flex justify-end\">\n        <div className=\"text-4xl font-black text-black/60 md:text-7xl\">\n          <Ticker value=\"4.8\" />\n        </div>{\" \"}\n        <sup className=\"text-xl text-yellow-700\">★</sup>\n      </div>\n    </BentoCard>\n  );\n}\n\nfunction FeatureTwo() {\n  return (\n    <BentoCard className=\"relative flex flex-col overflow-visible bg-violet-500 sm:col-span-2\">\n      <strong className=\"text-2xl font-semibold text-white\">\n        <Counter targetValue={179} format={(v) => `${+Math.ceil(v)}k+ students`} />\n      </strong>\n      <div className=\"ml-4 mt-auto\">\n        <AvatarList size=\"sm\" className=\"py-0\" />\n      </div>\n    </BentoCard>\n  );\n}\n\nfunction FeatureThree() {\n  return (\n    <BentoCard className=\"flex flex-col bg-orange-300\">\n      <Bot className=\"size-8 md:size-12\" />\n      <strong className=\"mt-1 inline-block text-sm\">Integrated AI</strong>\n\n      <div className=\"mt-auto\">\n        <div className=\"text-sm font-medium\">What is 4 times 4?</div>\n        <div className=\"font-semibold\">\n          <TypingText text=\"4 times 4 is 16\" waitTime={2000} alwaysVisibleCount={0} />\n        </div>\n      </div>\n    </BentoCard>\n  );\n}\n\nfunction FeatureFour() {\n  return (\n    <BentoCard className=\"flex items-center gap-4 bg-lime-300 sm:col-span-2 md:flex-row-reverse\">\n      <div className=\"text-2xl font-black text-lime-800\">Generate progress report</div>\n      <div className=\"relative max-h-32 shrink-0 overflow-hidden\">\n        <Report className=\"w-40 overflow-hidden border-none shadow-none hover:shadow-none\" />\n      </div>\n    </BentoCard>\n  );\n}\n\nfunction FeatureFive() {\n  return (\n    <BentoCard className=\"flex flex-col items-center justify-center bg-zinc-300 sm:col-span-2\">\n      <BoldCopy text=\"EDU\" className=\"bg-transparent\" textClassName=\"text-zinc-800\" />\n    </BentoCard>\n  );\n}\n\nfunction FeatureSix() {\n  return (\n    <BentoCard className=\"bg-green-200\">\n      <BarChart\n        items={[\n          {\n            progress: 30,\n            label: \"Jan\",\n            className: \"rounded-xl bg-green-400\",\n          },\n          { progress: 70, label: \"S\", className: \"rounded-xl bg-green-400\" },\n          { progress: 60, label: \"M\", className: \"rounded-xl bg-green-400\" },\n          { progress: 90, label: \"T\", className: \"rounded-xl bg-green-400\" },\n          { progress: 10, label: \"W\", className: \"rounded-xl bg-green-400\" },\n          { progress: 20, label: \"Th\", className: \"rounded-xl bg-green-400\" },\n          { progress: 30, label: \"F\", className: \"rounded-xl bg-green-400\" },\n          { progress: 90, label: \"Sa\", className: \"rounded-xl bg-green-400\" },\n        ]}\n        height={100}\n      />\n      <div className=\"mt-2 text-center font-bold\">Weekly review</div>\n    </BentoCard>\n  );\n}\n\nfunction FeatureSeven() {\n  return (\n    <BentoCard className=\"flex flex-col gap-2 bg-rose-300\">\n      <div className=\"w-full -rotate-1 rounded-full border-rose-400 bg-rose-400 py-2 text-center font-semibold text-white md:-rotate-3\">\n        Javascript\n      </div>\n      <div className=\"w-full rotate-1 rounded-full border-rose-400 bg-rose-400 py-2 text-center font-semibold text-white md:rotate-3\">\n        ReactJS\n      </div>\n      <div className=\"w-full rounded-full border-rose-400 bg-rose-400 py-2 text-center font-semibold text-white\">\n        NextJS\n      </div>\n    </BentoCard>\n  );\n}\n\nfunction FeatureEight() {\n  return (\n    <BentoCard className=\"relative flex flex-col bg-blue-200 sm:col-span-2\">\n      <WideCard />\n      <div className=\"mt-4\">\n        <div className=\"text-lg font-black text-blue-800\">Daily reminders</div>\n        <p className=\"text-sm\">Our daily reminder helps you keep focused on your goals.</p>\n      </div>\n    </BentoCard>\n  );\n}\n\n// #endregion\n\nexport default function Eight() {\n  return (\n    <div className=\"full-content w-full min-w-0\">\n      <div className=\"grid w-full min-w-0 grid-cols-1 gap-3 sm:grid-cols-4 sm:grid-rows-3\">\n        <FeatureOne />\n        <FeatureTwo />\n        <FeatureThree />\n        <FeatureFour />\n        <FeatureFive />\n        <FeatureSix />\n        <FeatureSeven />\n        <FeatureEight />\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/eight.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/bento-grid/eight",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

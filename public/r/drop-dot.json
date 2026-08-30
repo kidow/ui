@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "drop-dot",
+  "title": "Drop Dot",
+  "description": "점이 떨어졌다 튀는 로딩(drop dot).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/drop-dot.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const DropDot = () => (\n  <div className=\"relative w-6 h-12 flex flex-col items-center\">\n    <motion.div\n      className=\"w-2.5 h-2.5 bg-zinc-800 dark:bg-white rounded-full absolute top-0 z-10\"\n      animate={{ y: [0, 24, 0], scaleY: [1, 1.2, 1], scaleX: [1, 0.8, 1] }}\n      transition={{ duration: 1, repeat: Infinity, ease: \"circIn\" }}\n    />\n    <div className=\"w-4 h-1 bg-zinc-300 dark:bg-zinc-700 rounded-full absolute bottom-2 blur-[1px]\" />\n  </div>\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/drop-dot.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

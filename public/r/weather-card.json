@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "weather-card",
+  "title": "Weather Card",
+  "description": "날씨 카드(weather card, 날씨).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/weather-card.tsx",
+      "content": "\"use client\";\n\nimport { CircleArrowUp, CloudSunRain } from \"lucide-react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport type WeatherCardProps = {\n  className?: string;\n  city?: string;\n  temperature?: number;\n  feelsLike?: number;\n  high?: number;\n  low?: number;\n};\n\nexport default function WeatherCard({\n  className,\n  city = \"Tokyo\",\n  temperature = 19,\n  feelsLike = 21,\n  high = 24,\n  low = 9,\n}: WeatherCardProps) {\n  return (\n    <div\n      className={cn(\n        \"flex size-52 flex-col rounded-3xl border border-border bg-linear-to-br from-muted/80 to-muted p-4 font-sans shadow-md\",\n        className,\n      )}\n    >\n      <div className=\"flex min-h-0 flex-1 flex-col justify-start gap-2\">\n        <p className=\"text-[15px] font-semibold leading-none text-foreground\">{city}</p>\n        <div className=\"flex items-start gap-2\">\n          <CloudSunRain\n            className=\"mt-1 size-8 shrink-0 text-foreground/75\"\n            strokeWidth={1.75}\n            aria-hidden\n          />\n          <p className=\"text-[34px] font-normal leading-none tabular-nums tracking-tight text-foreground\">\n            {temperature}&deg;\n          </p>\n        </div>\n        <p className=\"text-[13px] leading-none text-muted-foreground\">\n          Feels like <span className=\"tabular-nums\">{feelsLike}&deg;</span>\n        </p>\n      </div>\n      <div className=\"flex shrink-0 justify-between rounded-xl border border-border/60 bg-background/50 px-2.5 py-2 text-[13px] font-medium tabular-nums leading-none backdrop-blur-sm\">\n        <div className=\"flex items-center gap-1 text-orange-600 dark:text-orange-300\">\n          <CircleArrowUp className=\"size-3.5\" strokeWidth={2} aria-hidden />\n          {high}&deg;\n        </div>\n        <span className=\"text-border/80\" aria-hidden>\n          |\n        </span>\n        <div className=\"flex items-center gap-1 text-sky-700 dark:text-sky-300\">\n          <CircleArrowUp className=\"size-3.5 rotate-180\" strokeWidth={2} aria-hidden />\n          {low}&deg;\n        </div>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/weather-card.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/weather-card",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

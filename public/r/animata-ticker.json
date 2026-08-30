@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animata-ticker",
+  "title": "Animata Ticker",
+  "description": "숫자가 자릿수마다 굴러가는 티커(ticker, odometer).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/animata-ticker.tsx",
+      "content": "\"use client\";\n\nimport { motion, useInView, useMotionValue, useSpring } from \"motion/react\";\n\nimport { useCallback, useEffect, useRef } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nfunction Number({\n  value,\n  index,\n  total,\n  delay,\n  className,\n  getHeight,\n  isInView,\n}: {\n  value: string;\n  index: number;\n  getHeight: () => number;\n  className?: string;\n  total: number;\n  delay?: number;\n  isInView: boolean;\n}) {\n  const numberRef = useRef<HTMLDivElement>(null);\n  const motionValue = useMotionValue(0);\n  const springValue = useSpring(motionValue, {\n    stiffness: 150 - index * 2,\n    damping: 15,\n  });\n\n  const isRaw = String(+value) !== value;\n\n  useEffect(() => {\n    if (!isInView || isRaw || !numberRef.current) {\n      return;\n    }\n\n    const update = () => {\n      const height = getHeight();\n      springValue.set(-height * +value);\n      // Add a delay to prevent the spring from firing too early.\n    };\n\n    if (!delay) {\n      update();\n      return;\n    }\n\n    const timer = setTimeout(update, (total - index) * Math.floor(Math.random() * delay));\n\n    return () => clearTimeout(timer);\n  }, [value, isRaw, isInView, springValue, getHeight, index, total, delay]);\n\n  if (isRaw) {\n    return <span>{value}</span>;\n  }\n\n  return (\n    <motion.div\n      ref={numberRef}\n      style={{\n        translateY: springValue,\n      }}\n    >\n      {Array.from({ length: 10 }).map((_, i) => (\n        <motion.div className={className} key={i}>\n          {i}\n        </motion.div>\n      ))}\n    </motion.div>\n  );\n}\n\nexport default function Ticker({\n  value,\n  delay,\n  className,\n  numberClassName,\n}: {\n  value: string;\n  className?: string;\n  numberClassName?: string;\n  delay?: number;\n}) {\n  const parts = String(value).trim().split(\"\");\n  const divRef = useRef<HTMLDivElement>(null);\n  const isInView = useInView(divRef, { once: true });\n  const getHeight = useCallback(() => divRef.current?.getBoundingClientRect().height ?? 0, []);\n\n  return (\n    <div\n      className={cn(\n        \"relative overflow-hidden whitespace-pre tabular-nums text-foreground\",\n        className,\n      )}\n    >\n      <div className=\"absolute inset-0 flex min-w-fit\">\n        {parts.map((part, index) => (\n          <Number\n            getHeight={getHeight}\n            index={index}\n            key={index}\n            value={part}\n            total={parts.length}\n            className={numberClassName}\n            delay={delay}\n            isInView={isInView}\n          />\n        ))}\n      </div>\n      <div ref={divRef} className=\"invisible min-w-fit\">\n        {value}\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/animata-ticker.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

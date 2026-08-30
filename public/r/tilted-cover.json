@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tilted-cover",
+  "title": "Tilted Cover",
+  "description": "기울어진 앨범 커버(tilted cover).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/tilted-cover.tsx",
+      "content": "\"use client\";\n\nimport type { ReactNode } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface TiltedCoverProps extends React.HTMLAttributes<HTMLDivElement> {\n  direction?: \"left\" | \"right\";\n\n  /**\n   * The content to be displayed on the cover\n   */\n  cover?: ReactNode;\n\n  /**\n   * Determines if the cover should tilt with the background\n   */\n  tiltCover?: boolean;\n\n  /**\n   * The content to be displayed on the background\n   */\n  children?: ReactNode;\n\n  /**\n   * The image to be displayed on the cover. Takes precedence over `children`.\n   */\n  image?: React.ComponentPropsWithoutRef<\"img\">;\n}\n\nexport default function TiltedCover({\n  children,\n  direction = \"left\",\n  tiltCover = true,\n  cover,\n  image,\n}: TiltedCoverProps) {\n  const tiltLeft = direction === \"left\";\n  const factor = tiltLeft ? 1 : -1;\n\n  return (\n    // The container has height and width set to the size of the content + padding.\n    <div className=\"flex h-64 w-52 items-center justify-center overflow-hidden\">\n      <div className=\"group/tilt relative h-52 w-40\">\n        {/* Background content */}\n        <div\n          className=\"border-box pointer-events-none relative h-full w-full overflow-hidden rounded-xl border bg-background transition-all duration-500 ease-slow group-hover/tilt:transform-none! dark:border-zinc-700\"\n          style={{\n            transform: `perspective(400px) rotateY(${factor * 20}deg) scale(0.85) translateX(${-factor * 20}%)`,\n          }}\n        >\n          {children}\n          <div className=\"absolute inset-0 h-full w-full bg-gray-400/10 transition-all group-hover/tilt:bg-transparent\" />\n        </div>\n\n        {/* Cover Content */}\n        <div\n          className={cn(\n            \"border-box pointer-events-none absolute inset-0 h-full w-full rounded-xl border-[6px] bg-white transition-all delay-75 duration-500 ease-slow group-hover/tilt:transform-none! group-hover/tilt:opacity-0 dark:bg-gray-800\",\n            {\n              \"group-hover/tilt:left-[200%]\": tiltLeft,\n              \"group-hover/tilt:-left-[200%]\": !tiltLeft,\n            },\n          )}\n          style={{\n            transform: tiltCover ? `perspective(400px) rotateY(${factor * 20}deg)` : undefined,\n          }}\n        >\n          <div className=\"h-full w-full rounded-md object-cover\">\n            {image ? (\n              /* Use `next/image` and remove the line below. */\n              /* eslint-disable-next-line @next/next/no-img-element */\n              <img\n                src=\"\"\n                alt=\"\"\n                {...image}\n                className={cn(\"h-full w-full rounded-md object-cover\", image?.className)}\n              />\n            ) : (\n              cover\n            )}\n          </div>\n        </div>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/tilted-cover.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/image/tilted-cover",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "미디어·데이터"
+  ],
+  "type": "registry:component"
+}

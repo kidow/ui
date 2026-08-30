@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "fluid-bars",
+  "title": "Fluid Bars",
+  "description": "막대가 유체처럼 흐르는 로딩(fluid bars).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/fluid-bars.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const FluidBars = () => (\n  <div className=\"flex space-x-1\">\n    {[0,1,2,3].map(i => (\n      <motion.div\n        key={i}\n        className=\"w-1.5 h-8 bg-zinc-800 dark:bg-white rounded-full origin-bottom\"\n        animate={{ rotate: [-15, 15, -15], scaleY: [0.8, 1, 0.8] }}\n        transition={{ duration: 1.5, repeat: Infinity, delay: i * 0.1, ease: \"easeInOut\" }}\n      />\n    ))}\n  </div>\n);\n",
+      "type": "registry:component",
+      "target": "components/kidow/fluid-bars.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

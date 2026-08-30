@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "heartbeat",
+  "title": "Heartbeat",
+  "description": "심박처럼 두 번씩 뛰는 로딩(heartbeat).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/heartbeat.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const Heartbeat = () => {\n  return (\n    <svg className=\"w-16 h-8 overflow-visible\" viewBox=\"0 0 64 32\">\n      <motion.polyline\n        points=\"0,16 16,16 24,4 32,28 40,16 64,16\"\n        className=\"stroke-zinc-800 dark:stroke-white fill-none\"\n        strokeWidth=\"2\"\n        strokeLinejoin=\"round\"\n        strokeLinecap=\"round\"\n        strokeDasharray=\"100\"\n        animate={{ strokeDashoffset: [100, -100] }}\n        transition={{ duration: 2, repeat: Infinity, ease: \"linear\" }}\n      />\n    </svg>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/heartbeat.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

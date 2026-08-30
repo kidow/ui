@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "integration-pills",
+  "title": "Integration Pills",
+  "description": "연동 서비스를 알약 배지로 보여주는 카드(integration pills).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/integration-pills.tsx",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\n\nconst brands = [\n  {\n    name: \"Shopify\",\n    className: \"bg-gray-200\",\n    hoverClass: \"group-hover/pills:scale-75 group-hover/pills:text-gray-500\",\n  },\n  {\n    name: \"RSS\",\n    className: \"bg-gray-200 font-bold\",\n    hoverClass:\n      \"group-hover/pills:border-blue-500 group-hover/pills:text-blue-500 group-hover/pills:bg-white group-hover/pills:border-2\",\n  },\n  {\n    name: \"Zapier\",\n    className: \"bg-gray-200\",\n    hoverClass: \"group-hover/pills:scale-75 group-hover/pills:text-gray-500\",\n  },\n  {\n    name: \"Slack\",\n    className: \"bg-gray-200\",\n    hoverClass: \"group-hover/pills:scale-75 group-hover/pills:text-gray-500\",\n  },\n  {\n    name: \"Webflow\",\n    className: \"bg-gray-200\",\n    hoverClass: \"group-hover/pills:scale-75 group-hover/pills:text-gray-500\",\n  },\n  {\n    name: \"Squarespace\",\n    className: \"bg-gray-200\",\n    hoverClass: \"group-hover/pills:scale-75 group-hover/pills:text-gray-500\",\n  },\n  {\n    name: \"Twitter\",\n    className: \"bg-gray-200 font-bold\",\n    hoverClass:\n      \"group-hover/pills:border-green-500 group-hover/pills:text-green-500 group-hover/pills:bg-white group-hover/pills:border-2\",\n  },\n  {\n    name: \"TikTok\",\n    className: \"bg-gray-200\",\n    hoverClass: \"group-hover/pills:scale-75 group-hover/pills:text-gray-500\",\n  },\n  {\n    name: \"n8n\",\n    className: \"bg-gray-200\",\n    hoverClass: \"group-hover/pills:scale-75 group-hover/pills:text-gray-500\",\n  },\n  {\n    name: \"BuySellAds\",\n    className: \"bg-gray-200\",\n    hoverClass: \"group-hover/pills:scale-75 group-hover/pills:text-gray-500\",\n  },\n  {\n    name: \"Mastodon\",\n    className: \"bg-gray-200 font-bold\",\n    hoverClass:\n      \"group-hover/pills:border-purple-500 group-hover/pills:text-purple-500 group-hover/pills:bg-white group-hover/pills:border-2\",\n  },\n  {\n    name: \"Gumroad\",\n    className: \"bg-gray-200\",\n    hoverClass: \"group-hover/pills:scale-75 group-hover/pills:text-gray-500\",\n  },\n];\n\nexport default function IntegrationPills() {\n  return (\n    <div className=\"flex justify-center py-10\">\n      {/* Rectangular box around all cards */}\n      <div className=\"group/pills flex w-full max-w-lg flex-wrap justify-center rounded-xl border-2 border-gray-400 bg-gray-50 px-2 py-6 shadow-2xl transition-all duration-300 ease-in-out hover:bg-white hover:shadow-2xl\">\n        {brands.map((brand, index) => (\n          <div\n            key={index}\n            className={cn(\n              \"m-1 transform cursor-pointer rounded-full border-2 border-gray-400 bg-white px-6 py-2 text-xl text-black transition-transform duration-300 ease-in-out\",\n              brand.className,\n              brand.hoverClass,\n            )}\n          >\n            {brand.name}\n          </div>\n        ))}\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/integration-pills.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/card/integration-pills",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "카드·테두리"
+  ],
+  "type": "registry:component"
+}

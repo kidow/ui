@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "battery",
+  "title": "Battery",
+  "description": "배터리 상태 위젯(battery, 충전 표시).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/battery.tsx",
+      "content": "\"use client\";\n\nimport { BatteryMediumIcon } from \"lucide-react\";\nimport { useEffect, useRef } from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nexport type BatteryProps = {\n  className?: string;\n  /** 0–100 */\n  level?: number;\n};\n\nexport default function Battery({ className, level = 50 }: BatteryProps) {\n  const circumference = 2 * Math.PI * 40;\n  const gap = ((100 - level) / 100) * circumference;\n  const circleRef = useRef<SVGCircleElement>(null);\n\n  useEffect(() => {\n    if (circleRef.current) {\n      circleRef.current.style.transition = \"stroke-dashoffset 0.3s linear\";\n      circleRef.current.style.strokeDashoffset = String(gap);\n    }\n  }, [gap]);\n\n  return (\n    <div\n      className={cn(\n        \"relative flex size-52 flex-col rounded-3xl bg-linear-to-br from-sky-600/90 to-sky-400/80 p-4 font-sans shadow-md\",\n        className,\n      )}\n    >\n      <div className=\"relative size-14 shrink-0\">\n        <svg viewBox=\"0 0 100 100\" className=\"size-full\" aria-hidden>\n          <circle cx={50} cy={50} r={40} className=\"stroke-white/25\" strokeWidth={8} fill=\"none\" />\n          <circle\n            ref={circleRef}\n            cx={50}\n            cy={50}\n            r={40}\n            className=\"stroke-white\"\n            strokeWidth={8}\n            fill=\"none\"\n            strokeDashoffset={circumference}\n            strokeDasharray={circumference}\n            strokeLinecap=\"round\"\n            transform=\"rotate(-90 50 50)\"\n          />\n        </svg>\n        <div className=\"absolute inset-0 flex items-center justify-center\">\n          <BatteryMediumIcon className=\"text-white/90\" size={22} strokeWidth={1.75} />\n        </div>\n      </div>\n\n      <div className=\"mt-auto flex items-baseline gap-0.5 text-white\">\n        <span className=\"text-[34px] font-normal leading-none tabular-nums tracking-tight\">\n          {level}\n        </span>\n        <span className=\"pb-1 text-[15px] font-medium leading-none\">%</span>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/battery.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Animata",
+    "sourceUrl": "https://animata.design/docs/widget/battery",
+    "author": "codse",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "위젯"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "square-spinner",
+  "title": "Square Spinner",
+  "description": "사각형이 도는 로딩(square spinner).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/square-spinner.tsx",
+      "content": "\"use client\";\n\nimport React from 'react';\nimport { motion } from \"motion/react\";\n\nexport const SquareSpinner = () => {\n  return (\n    <motion.div\n      className=\"w-8 h-8 border-2 border-zinc-800 dark:border-zinc-700 flex items-center justify-center\"\n      animate={{ rotate: 90 }}\n      transition={{ duration: 0.6, repeat: Infinity, ease: \"easeInOut\" }}\n    >\n      <div className=\"w-2 h-2 bg-zinc-800 dark:bg-white\" />\n    </motion.div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/square-spinner.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Amicro",
+    "sourceUrl": "https://amicro.vercel.app",
+    "author": "Subhan-code",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}
