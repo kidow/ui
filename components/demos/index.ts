@@ -355,6 +355,7 @@ import MorphingCursorDemo from './morphing-cursor'
 import MorphingDisclosureDemo from './morphing-disclosure'
 import MorphingTextDemo from './morphing-text'
 import MultiColorTrailRevealDemo from './multi-color-trail-reveal'
+import MultiSelectDemo from './multi-select'
 import MusicPlayerDemo from './music-player'
 import MusicPlayerVengeanceDemo from './music-player-vengeance'
 import MyceliumNetworkDemo from './mycelium-network'
@@ -921,6 +922,7 @@ export const demos: Record<string, ComponentType> = {
   'morphing-disclosure': MorphingDisclosureDemo,
   'morphing-text': MorphingTextDemo,
   'multi-color-trail-reveal': MultiColorTrailRevealDemo,
+  'multi-select': MultiSelectDemo,
   'music-player': MusicPlayerDemo,
   'music-player-vengeance': MusicPlayerVengeanceDemo,
   'mycelium-network': MyceliumNetworkDemo,

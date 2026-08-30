@@ -10343,6 +10343,40 @@
       }
     },
     {
+      "name": "multi-select",
+      "type": "registry:component",
+      "title": "Multi Select",
+      "description": "여러 값을 한 번에 고르는 멀티 셀렉트(multi select, multiple select, 다중 선택). 고른 값이 배지로 쌓이고 검색·전체 선택·개별 해제를 지원한다. 태그 고르기, 필터, 권한·역할 지정, 관심사 선택처럼 select 하나로는 부족할 때 쓴다. 그룹 옵션과 배지 최대 개수 제한, react-hook-form 연동을 지원한다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button",
+        "command",
+        "popover",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/multi-select.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/multi-select.tsx"
+        }
+      ],
+      "meta": {
+        "source": "shadcn Multi Select",
+        "sourceUrl": "https://shadcn-multi-select-component.vercel.app",
+        "author": "sersavan",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "music-player",
       "type": "registry:component",
       "title": "Music Player",

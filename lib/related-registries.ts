@@ -91,6 +91,15 @@ export const RELATED_REGISTRIES: RelatedRegistry[] = [
       '브라우저 DOM이 아니라 PDF 문서로 렌더된다. Tailwind를 쓰지 않고 shadcn 레지스트리도 아니며(자체 pdfx-cli), 라이선스 표기를 찾지 못했다.',
   },
   {
+    name: 'ForgeUI',
+    url: 'https://forgeui.in',
+    summary:
+      'shadcn 레지스트리로 배포되는 컴포넌트 24종. 라이브러리 없이 순수 WebGL 로 그리는 배경 7종(auralis, cloudscape, cosmicrift 등)과 Clerk 랜딩에서 따온 보안·인증 블록이 있다. 품질과 구현 방식은 여기 기준에 잘 맞는다 — motion/react 를 쓰고 three.js 에 의존하지 않는다.',
+    reason:
+      '라이선스가 재배포를 명시적으로 금지한다. 사용·수정은 허용하지만 "컴포넌트 모음(component collection)으로 재포장·재배포"와 "배포를 목적으로 하는 다른 저장소·플랫폼에 업로드"를 금지한다. 이 레지스트리가 하는 일이 정확히 그것이다.',
+    revisitWhen: '원저자가 재배포를 허용하는 라이선스로 바꾸거나 개별 허락을 주면',
+  },
+  {
     name: 'termcn',
     url: 'https://www.termcn.dev/docs/components',
     summary: 'CLI 앱을 위한 터미널 UI 컴포넌트. Ink와 OpenTUI 렌더러용 121종.',
