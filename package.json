@@ -37,6 +37,7 @@
     "@radix-ui/react-use-controllable-state": "^1.2.6",
     "@react-hook/media-query": "^1.1.1",
     "@shikijs/transformers": "^4.4.3",
+    "@tanstack/react-virtual": "^3.14.10",
     "@tsparticles/engine": "^4.3.2",
     "@tsparticles/react": "^4.3.2",
     "@tsparticles/slim": "^4.3.2",

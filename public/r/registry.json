@@ -426,6 +426,138 @@
       }
     },
     {
+      "name": "action-swap-blur",
+      "type": "registry:component",
+      "title": "Action Swap Blur",
+      "description": "Copy-button style swap with blur, opacity and scale.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/action-swap-blur/components/motion/action-swap-blur.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/action-swap-blur/components/motion/action-swap-blur.tsx"
+        },
+        {
+          "path": "registry/kidow/action-swap-blur/components/motion/action-swap.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/action-swap-blur/components/motion/action-swap.tsx"
+        },
+        {
+          "path": "registry/kidow/action-swap-blur/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/action-swap-blur/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/action-swap-blur/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/action-swap-blur/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/action-swap-blur",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "action-swap-cascade",
+      "type": "registry:component",
+      "title": "Action Swap Cascade",
+      "description": "Letter-by-letter slot roll — the old label's letters drop away as the new ones land, left to right.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/action-swap-cascade/components/motion/action-swap-cascade.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/action-swap-cascade/components/motion/action-swap-cascade.tsx"
+        },
+        {
+          "path": "registry/kidow/action-swap-cascade/components/motion/action-swap.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/action-swap-cascade/components/motion/action-swap.tsx"
+        },
+        {
+          "path": "registry/kidow/action-swap-cascade/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/action-swap-cascade/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/action-swap-cascade/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/action-swap-cascade/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/action-swap-cascade",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "action-swap-roll",
+      "type": "registry:component",
+      "title": "Action Swap Roll",
+      "description": "The next text or icon rolls in from below with blur.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/action-swap-roll/components/motion/action-swap-roll.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/action-swap-roll/components/motion/action-swap-roll.tsx"
+        },
+        {
+          "path": "registry/kidow/action-swap-roll/components/motion/action-swap.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/action-swap-roll/components/motion/action-swap.tsx"
+        },
+        {
+          "path": "registry/kidow/action-swap-roll/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/action-swap-roll/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/action-swap-roll/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/action-swap-roll/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/action-swap-roll",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "activity-graph",
       "type": "registry:component",
       "title": "Activity Graph",
@@ -457,6 +589,76 @@
       }
     },
     {
+      "name": "agent-activity",
+      "type": "registry:component",
+      "title": "Agent Activity",
+      "description": "One adaptive activity stream for reasoning, searches, tool calls, structured execution traces, or a chronological mix.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/agent-activity/components/agents/agent-activity/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/agent-activity/components/agents/agent-activity/index.tsx"
+        },
+        {
+          "path": "registry/kidow/agent-activity/components/agents/agent-activity/activity-row.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/agent-activity/components/agents/agent-activity/activity-row.tsx"
+        },
+        {
+          "path": "registry/kidow/agent-activity/components/agents/agent-activity/types.ts",
+          "type": "registry:component",
+          "target": "components/kidow/agent-activity/components/agents/agent-activity/types.ts"
+        },
+        {
+          "path": "registry/kidow/agent-activity/components/agents/agent-disclosure.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/agent-activity/components/agents/agent-disclosure.tsx"
+        },
+        {
+          "path": "registry/kidow/agent-activity/components/agents/loading-states/thinking-shimmer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/agent-activity/components/agents/loading-states/thinking-shimmer.tsx"
+        },
+        {
+          "path": "registry/kidow/agent-activity/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/agent-activity/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/agent-activity/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/agent-activity/lib/utils.ts"
+        },
+        {
+          "path": "registry/kidow/agent-activity/components/motion/text-shimmer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/agent-activity/components/motion/text-shimmer.tsx"
+        },
+        {
+          "path": "registry/kidow/agent-activity/lib/text-shimmer.ts",
+          "type": "registry:component",
+          "target": "components/kidow/agent-activity/lib/text-shimmer.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/agent-activity",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "agent-bento-grid",
       "type": "registry:component",
       "title": "Agent Bento Grid",
@@ -481,6 +683,45 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "agent-progress",
+      "type": "registry:component",
+      "title": "Agent Progress",
+      "description": "A compact activity glyph, action verb, and live tabular timer for longer-running agent work.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/agent-progress/components/agents/loading-states/agent-progress.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/agent-progress/components/agents/loading-states/agent-progress.tsx"
+        },
+        {
+          "path": "registry/kidow/agent-progress/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/agent-progress/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/agent-progress/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/agent-progress/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/agent-progress",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -987,6 +1228,46 @@
         "source": "Voxlet UI",
         "sourceUrl": "https://ui.voxletstudio.com/components/animated-background",
         "author": "voxletlabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "animated-badge",
+      "type": "registry:component",
+      "title": "Animated Badge",
+      "description": "Status badge with animated state icons, pulse feedback and compact size variants.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/animated-badge/components/motion/animated-badge.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-badge/components/motion/animated-badge.tsx"
+        },
+        {
+          "path": "registry/kidow/animated-badge/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/animated-badge/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/animated-badge/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/animated-badge/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/animated-badge",
+        "author": "starc007",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -1734,6 +2015,51 @@
       }
     },
     {
+      "name": "animated-sidebar",
+      "type": "registry:component",
+      "title": "Animated Sidebar",
+      "description": "접었다 펴지는 사이드바(animated sidebar). A composable application sidebar with morphing nested navigation that folds into an animated icon rail on desktop and becomes a focus-managed sheet on mobile.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/animated-sidebar/components/motion/animated-sidebar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-sidebar/components/motion/animated-sidebar.tsx"
+        },
+        {
+          "path": "registry/kidow/animated-sidebar/components/motion/shared-layout-bg.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-sidebar/components/motion/shared-layout-bg.tsx"
+        },
+        {
+          "path": "registry/kidow/animated-sidebar/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/animated-sidebar/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/animated-sidebar/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/animated-sidebar/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/animated-sidebar",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "animated-svg-chart",
       "type": "registry:component",
       "title": "Animated Svg Chart",
@@ -1962,6 +2288,46 @@
         "source": "JolyUI",
         "sourceUrl": "https://www.jolyui.dev/docs/components/animated-toast",
         "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "animated-toast-stack",
+      "type": "registry:component",
+      "title": "Animated Toast Stack",
+      "description": "Stacked toasts with status morphs, swipe dismissal, actions and layout-aware motion.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/animated-toast-stack/components/motion/animated-toast-stack.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-toast-stack/components/motion/animated-toast-stack.tsx"
+        },
+        {
+          "path": "registry/kidow/animated-toast-stack/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/animated-toast-stack/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/animated-toast-stack/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/animated-toast-stack/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/animated-toast-stack",
+        "author": "starc007",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -3364,6 +3730,129 @@
       }
     },
     {
+      "name": "bottom-sheet",
+      "type": "registry:component",
+      "title": "Bottom Sheet",
+      "description": "Vaul-inspired draggable bottom sheet with snap points, inertia and glass surface.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/bottom-sheet/components/motion/bottom-sheet.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bottom-sheet/components/motion/bottom-sheet.tsx"
+        },
+        {
+          "path": "registry/kidow/bottom-sheet/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bottom-sheet/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/bottom-sheet/lib/presence-gate.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bottom-sheet/lib/presence-gate.tsx"
+        },
+        {
+          "path": "registry/kidow/bottom-sheet/lib/touch.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bottom-sheet/lib/touch.ts"
+        },
+        {
+          "path": "registry/kidow/bottom-sheet/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bottom-sheet/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/bottom-sheet",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "bounce-sidebar",
+      "type": "registry:component",
+      "title": "Bounce Sidebar",
+      "description": "A vertical sidebar whose active dot jumps between destinations on a curved, spring-loaded path.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/bounce-sidebar/components/motion/bounce-sidebar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bounce-sidebar/components/motion/bounce-sidebar.tsx"
+        },
+        {
+          "path": "registry/kidow/bounce-sidebar/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bounce-sidebar/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/bounce-sidebar",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "bouncy-accordion",
+      "type": "registry:component",
+      "title": "Bouncy Accordion",
+      "description": "Single-open accordion with weighted spring layout, icon rows and reduced-motion-safe content reveals.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/bouncy-accordion/components/motion/bouncy-accordion.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bouncy-accordion/components/motion/bouncy-accordion.tsx"
+        },
+        {
+          "path": "registry/kidow/bouncy-accordion/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bouncy-accordion/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/bouncy-accordion/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bouncy-accordion/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/bouncy-accordion",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "brand-section",
       "type": "registry:component",
       "title": "Brand Section",
@@ -3538,6 +4027,203 @@
         "source": "Serenity UI",
         "sourceUrl": "https://serenity-ui.com",
         "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "button-base",
+      "type": "registry:component",
+      "title": "Button Base",
+      "description": "beui 버튼의 기반(button base). 다른 버튼 변형이 이 위에 올라간다. Press scale, hover lift, variants and sizes.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/button-base/components/motion/button/base.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/button-base/components/motion/button/base.tsx"
+        },
+        {
+          "path": "registry/kidow/button-base/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/button-base/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/button-base/lib/hooks/use-hover-capable.ts",
+          "type": "registry:component",
+          "target": "components/kidow/button-base/lib/hooks/use-hover-capable.ts"
+        },
+        {
+          "path": "registry/kidow/button-base/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/button-base/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/button-base",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "button-magnetic",
+      "type": "registry:component",
+      "title": "Button Magnetic",
+      "description": "커서에 끌려오는 자석 버튼(magnetic button). Button composed with the Magnetic wrapper for cursor-attracted pull.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/button-magnetic/components/motion/button/magnetic.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/button-magnetic/components/motion/button/magnetic.tsx"
+        },
+        {
+          "path": "registry/kidow/button-magnetic/components/motion/magnetic.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/button-magnetic/components/motion/magnetic.tsx"
+        },
+        {
+          "path": "registry/kidow/button-magnetic/components/motion/button/base.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/button-magnetic/components/motion/button/base.tsx"
+        },
+        {
+          "path": "registry/kidow/button-magnetic/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/button-magnetic/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/button-magnetic/lib/hooks/use-hover-capable.ts",
+          "type": "registry:component",
+          "target": "components/kidow/button-magnetic/lib/hooks/use-hover-capable.ts"
+        },
+        {
+          "path": "registry/kidow/button-magnetic/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/button-magnetic/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/button-magnetic",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "button-metallic",
+      "type": "registry:component",
+      "title": "Button Metallic",
+      "description": "금속 질감 버튼(metallic button, chrome cta). A neutral button surface framed by a pronounced chrome rim with a straight traveling reflection.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/button-metallic/components/motion/button/metallic.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/button-metallic/components/motion/button/metallic.tsx"
+        },
+        {
+          "path": "registry/kidow/button-metallic/components/motion/button/base.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/button-metallic/components/motion/button/base.tsx"
+        },
+        {
+          "path": "registry/kidow/button-metallic/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/button-metallic/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/button-metallic/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/button-metallic/lib/utils.ts"
+        },
+        {
+          "path": "registry/kidow/button-metallic/lib/hooks/use-hover-capable.ts",
+          "type": "registry:component",
+          "target": "components/kidow/button-metallic/lib/hooks/use-hover-capable.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/button-metallic",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "button-stateful",
+      "type": "registry:component",
+      "title": "Button Stateful",
+      "description": "누르면 로딩·완료로 상태가 바뀌는 버튼(stateful button, async button). Idle → loading → success / error with blur-swap slots and morphing width.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/button-stateful/components/motion/button/stateful.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/button-stateful/components/motion/button/stateful.tsx"
+        },
+        {
+          "path": "registry/kidow/button-stateful/components/motion/button/base.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/button-stateful/components/motion/button/base.tsx"
+        },
+        {
+          "path": "registry/kidow/button-stateful/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/button-stateful/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/button-stateful/lib/hooks/use-hover-capable.ts",
+          "type": "registry:component",
+          "target": "components/kidow/button-stateful/lib/hooks/use-hover-capable.ts"
+        },
+        {
+          "path": "registry/kidow/button-stateful/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/button-stateful/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/button-stateful",
+        "author": "starc007",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -4631,6 +5317,51 @@
       }
     },
     {
+      "name": "center-morph-modal",
+      "type": "registry:component",
+      "title": "Center Morph Modal",
+      "description": "A composable modal whose full-size surface unfolds from its exact center toward every edge, then folds back the same way with an inset close control.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/center-morph-modal/components/motion/center-morph-modal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/center-morph-modal/components/motion/center-morph-modal.tsx"
+        },
+        {
+          "path": "registry/kidow/center-morph-modal/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/center-morph-modal/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/center-morph-modal/lib/presence-gate.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/center-morph-modal/lib/presence-gate.tsx"
+        },
+        {
+          "path": "registry/kidow/center-morph-modal/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/center-morph-modal/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/center-morph-modal",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "chain-carousel",
       "type": "registry:component",
       "title": "Chain Carousel",
@@ -4923,6 +5654,45 @@
       }
     },
     {
+      "name": "chromatic-text-reveal",
+      "type": "registry:component",
+      "title": "Chromatic Text Reveal",
+      "description": "A Dia-inspired text effect with a fixed sentence prefix and a cycling final word revealed by a colorful sweep.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/chromatic-text-reveal/components/motion/chromatic-text-reveal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/chromatic-text-reveal/components/motion/chromatic-text-reveal.tsx"
+        },
+        {
+          "path": "registry/kidow/chromatic-text-reveal/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/chromatic-text-reveal/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/chromatic-text-reveal/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/chromatic-text-reveal/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/chromatic-text-reveal",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "ci-badge",
       "type": "registry:component",
       "title": "CI Badge",
@@ -5108,6 +5878,61 @@
         "source": "wigggle-ui",
         "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/circular-progress",
         "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "citations",
+      "type": "registry:component",
+      "title": "Citations",
+      "description": "AI 답변의 출처를 다는 인용 표시(citations, sources). Inline citation markers paired with a collapsible, progressively rendered reference collection for grounded agent responses.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/citations/components/agents/citations.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/citations/components/agents/citations.tsx"
+        },
+        {
+          "path": "registry/kidow/citations/components/agents/agent-disclosure.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/citations/components/agents/agent-disclosure.tsx"
+        },
+        {
+          "path": "registry/kidow/citations/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/citations/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/citations/lib/hooks/use-favicon.ts",
+          "type": "registry:component",
+          "target": "components/kidow/citations/lib/hooks/use-favicon.ts"
+        },
+        {
+          "path": "registry/kidow/citations/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/citations/lib/utils.ts"
+        },
+        {
+          "path": "registry/kidow/citations/lib/favicon.ts",
+          "type": "registry:component",
+          "target": "components/kidow/citations/lib/favicon.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/citations",
+        "author": "starc007",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -6993,6 +7818,45 @@
       }
     },
     {
+      "name": "cylinder-carousel",
+      "type": "registry:component",
+      "title": "Cylinder Carousel",
+      "description": "A carousel whose items line the inside of a cylinder, receding into the center and growing toward the edges. Drag, scroll or arrow-key to roll it, with a springy glide and snap. Reduced-motion drops the glide.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/cylinder-carousel/components/motion/cylinder-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cylinder-carousel/components/motion/cylinder-carousel.tsx"
+        },
+        {
+          "path": "registry/kidow/cylinder-carousel/lib/touch.ts",
+          "type": "registry:component",
+          "target": "components/kidow/cylinder-carousel/lib/touch.ts"
+        },
+        {
+          "path": "registry/kidow/cylinder-carousel/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/cylinder-carousel/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/cylinder-carousel",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "dashboard-lg-01",
       "type": "registry:component",
       "title": "Dashboard Lg 01",
@@ -8460,6 +9324,40 @@
       }
     },
     {
+      "name": "expandable-control",
+      "type": "registry:component",
+      "title": "Expandable Control",
+      "description": "펼쳐지며 옵션이 나오는 컨트롤(expandable control). Click-to-expand button and chip controls that reveal a label or trailing action through spring layout continuity.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/expandable-control/components/motion/expandable-control.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/expandable-control/components/motion/expandable-control.tsx"
+        },
+        {
+          "path": "registry/kidow/expandable-control/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/expandable-control/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/expandable-control",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "expandable-screen",
       "type": "registry:component",
       "title": "Expandable Screen",
@@ -8565,6 +9463,50 @@
         "source": "JolyUI",
         "sourceUrl": "https://www.jolyui.dev/docs/components/expanded-map",
         "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "expanding-arrow-button",
+      "type": "registry:component",
+      "title": "Expanding Arrow Button",
+      "description": "hover 하면 화살표가 늘어나는 버튼(expanding arrow button). An accent tile that expands into a dotted-arrow trail on hover or focus.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/expanding-arrow-button/components/motion/expanding-arrow-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/expanding-arrow-button/components/motion/expanding-arrow-button.tsx"
+        },
+        {
+          "path": "registry/kidow/expanding-arrow-button/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/expanding-arrow-button/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/expanding-arrow-button/lib/hooks/use-hover-capable.ts",
+          "type": "registry:component",
+          "target": "components/kidow/expanding-arrow-button/lib/hooks/use-hover-capable.ts"
+        },
+        {
+          "path": "registry/kidow/expanding-arrow-button/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/expanding-arrow-button/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/expanding-arrow-button",
+        "author": "starc007",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -8988,6 +9930,57 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "file-diff",
+      "type": "registry:component",
+      "title": "File Diff",
+      "description": "A syntax-highlighted file change disclosure with progressive rows, line numbers, live change counts, smooth following, and completion collapse.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "shiki",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/file-diff/components/agents/file-diff.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/file-diff/components/agents/file-diff.tsx"
+        },
+        {
+          "path": "registry/kidow/file-diff/components/agents/agent-code.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/file-diff/components/agents/agent-code.tsx"
+        },
+        {
+          "path": "registry/kidow/file-diff/components/agents/agent-disclosure.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/file-diff/components/agents/agent-disclosure.tsx"
+        },
+        {
+          "path": "registry/kidow/file-diff/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/file-diff/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/file-diff/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/file-diff/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/file-diff",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -11404,6 +12397,50 @@
       }
     },
     {
+      "name": "hold-action-button",
+      "type": "registry:component",
+      "title": "Hold Action Button",
+      "description": "길게 눌러 확정하는 버튼(hold to confirm). Hold to complete with a vertical or horizontal liquid fill; release early to cancel.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/hold-action-button/components/motion/hold-action-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hold-action-button/components/motion/hold-action-button.tsx"
+        },
+        {
+          "path": "registry/kidow/hold-action-button/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/hold-action-button/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/hold-action-button/lib/touch.ts",
+          "type": "registry:component",
+          "target": "components/kidow/hold-action-button/lib/touch.ts"
+        },
+        {
+          "path": "registry/kidow/hold-action-button/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/hold-action-button/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/hold-action-button",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "hold-button",
       "type": "registry:component",
       "title": "Hold Button",
@@ -11958,6 +12995,51 @@
         "source": "Serenity UI",
         "sourceUrl": "https://serenity-ui.com",
         "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "image-generation",
+      "type": "registry:component",
+      "title": "Image Generation",
+      "description": "A stable generated-image surface that moves from queued work through progressive refinement to a completed result without layout shift.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/image-generation/components/agents/image-generation.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/image-generation/components/agents/image-generation.tsx"
+        },
+        {
+          "path": "registry/kidow/image-generation/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/image-generation/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/image-generation/lib/hooks/use-hover-capable.ts",
+          "type": "registry:component",
+          "target": "components/kidow/image-generation/lib/hooks/use-hover-capable.ts"
+        },
+        {
+          "path": "registry/kidow/image-generation/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/image-generation/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/image-generation",
+        "author": "starc007",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -15585,6 +16667,51 @@
       }
     },
     {
+      "name": "message-bubble",
+      "type": "registry:component",
+      "title": "Message Bubble",
+      "description": "채팅 말풍선(message bubble, chat bubble). A focused conversational surface with visual tones, independent alignment, grouped messages, expandable content, and interactive link or button support.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/message-bubble/components/agents/message-bubble.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/message-bubble/components/agents/message-bubble.tsx"
+        },
+        {
+          "path": "registry/kidow/message-bubble/components/agents/message-context.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/message-bubble/components/agents/message-context.tsx"
+        },
+        {
+          "path": "registry/kidow/message-bubble/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/message-bubble/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/message-bubble/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/message-bubble/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/message-bubble",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "metal-button",
       "type": "registry:component",
       "title": "Metal Button",
@@ -15982,6 +17109,50 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "morphing-modal",
+      "type": "registry:component",
+      "title": "Morphing Modal",
+      "description": "Family-app-style modal. A single panel that morphs its height as you navigate between inner views, with blur cross-fade on content.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/morphing-modal/components/motion/morphing-modal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/morphing-modal/components/motion/morphing-modal.tsx"
+        },
+        {
+          "path": "registry/kidow/morphing-modal/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/morphing-modal/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/morphing-modal/lib/presence-gate.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/morphing-modal/lib/presence-gate.tsx"
+        },
+        {
+          "path": "registry/kidow/morphing-modal/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/morphing-modal/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/morphing-modal",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -16938,6 +18109,40 @@
       }
     },
     {
+      "name": "parallax",
+      "type": "registry:component",
+      "title": "Parallax",
+      "description": "Wrapper that drifts its children at a speed factor as they cross the viewport, on either axis. Reduced-motion safe.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/parallax/components/motion/parallax.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/parallax/components/motion/parallax.tsx"
+        },
+        {
+          "path": "registry/kidow/parallax/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/parallax/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/parallax",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "particle-button",
       "type": "registry:component",
       "title": "Particle Button",
@@ -17809,6 +19014,50 @@
       }
     },
     {
+      "name": "popover-morph",
+      "type": "registry:component",
+      "title": "Popover Morph",
+      "description": "트리거에서 늘어나며 열리는 팝오버(morphing popover). Composable MorphPopover, MorphPopoverTrigger, MorphPopoverContent; the panel is laid out full size but clipped to the corner nearest the trigger, then unclips as one piece — a single-surface morph with a drop-shadow that hugs the shape. Side/align aware, controlled or uncontrolled.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/popover-morph/components/motion/popover-morph.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/popover-morph/components/motion/popover-morph.tsx"
+        },
+        {
+          "path": "registry/kidow/popover-morph/components/motion/popover-position.ts",
+          "type": "registry:component",
+          "target": "components/kidow/popover-morph/components/motion/popover-position.ts"
+        },
+        {
+          "path": "registry/kidow/popover-morph/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/popover-morph/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/popover-morph/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/popover-morph/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/popover-morph",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "portfolio-chart",
       "type": "registry:component",
       "title": "Portfolio Chart",
@@ -17862,6 +19111,65 @@
         "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "preview-rail",
+      "type": "registry:component",
+      "title": "Preview Rail",
+      "description": "가로로 훑어보는 미리보기 레일(preview rail, thumbnail strip). Codex app-inspired navigation rail with compact ticks that form a hover pyramid and reveal a floating destination preview.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/preview-rail/components/motion/preview-rail.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/preview-rail/components/motion/preview-rail.tsx"
+        },
+        {
+          "path": "registry/kidow/preview-rail/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/preview-rail/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/preview-rail/lib/hooks/use-dismiss.ts",
+          "type": "registry:component",
+          "target": "components/kidow/preview-rail/lib/hooks/use-dismiss.ts"
+        },
+        {
+          "path": "registry/kidow/preview-rail/lib/hooks/use-hover-gesture.ts",
+          "type": "registry:component",
+          "target": "components/kidow/preview-rail/lib/hooks/use-hover-gesture.ts"
+        },
+        {
+          "path": "registry/kidow/preview-rail/lib/hooks/use-tap-gesture.ts",
+          "type": "registry:component",
+          "target": "components/kidow/preview-rail/lib/hooks/use-tap-gesture.ts"
+        },
+        {
+          "path": "registry/kidow/preview-rail/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/preview-rail/lib/utils.ts"
+        },
+        {
+          "path": "registry/kidow/preview-rail/lib/touch.ts",
+          "type": "registry:component",
+          "target": "components/kidow/preview-rail/lib/touch.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/preview-rail",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -18487,6 +19795,50 @@
       }
     },
     {
+      "name": "pull-to-refresh",
+      "type": "registry:component",
+      "title": "Pull To Refresh",
+      "description": "Native-feeling pull-to-refresh container with drag resistance, threshold feedback and async refresh handling.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/pull-to-refresh/components/motion/pull-to-refresh.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pull-to-refresh/components/motion/pull-to-refresh.tsx"
+        },
+        {
+          "path": "registry/kidow/pull-to-refresh/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/pull-to-refresh/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/pull-to-refresh/lib/touch.ts",
+          "type": "registry:component",
+          "target": "components/kidow/pull-to-refresh/lib/touch.ts"
+        },
+        {
+          "path": "registry/kidow/pull-to-refresh/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/pull-to-refresh/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/pull-to-refresh",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "pulsating-button",
       "type": "registry:component",
       "title": "Pulsating Button",
@@ -18752,6 +20104,45 @@
       }
     },
     {
+      "name": "radio",
+      "type": "registry:component",
+      "title": "Radio",
+      "description": "Single-select choice control with a gliding layoutId indicator dot and spring press feedback.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/radio/components/motion/radio.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/radio/components/motion/radio.tsx"
+        },
+        {
+          "path": "registry/kidow/radio/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/radio/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/radio/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/radio/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/radio",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "rainbow-button",
       "type": "registry:component",
       "title": "Rainbow Button",
@@ -18862,6 +20253,241 @@
       }
     },
     {
+      "name": "range-slider",
+      "type": "registry:component",
+      "title": "Range Slider",
+      "description": "Tick dots, and a vertical-bar thumb that bounces as it lands on each step.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/range-slider/components/motion/range-slider.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider/components/motion/range-slider.tsx"
+        },
+        {
+          "path": "registry/kidow/range-slider/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/range-slider/lib/hooks/use-slider.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider/lib/hooks/use-slider.ts"
+        },
+        {
+          "path": "registry/kidow/range-slider/lib/touch.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider/lib/touch.ts"
+        },
+        {
+          "path": "registry/kidow/range-slider/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/range-slider",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "range-slider-bubble",
+      "type": "registry:component",
+      "title": "Range Slider Bubble",
+      "description": "Grab the thumb and a value bubble pops out of it. The bubble tilts and squashes with how fast you drag, then settles upright.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/range-slider-bubble/components/motion/range-slider-bubble.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-bubble/components/motion/range-slider-bubble.tsx"
+        },
+        {
+          "path": "registry/kidow/range-slider-bubble/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-bubble/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/range-slider-bubble/lib/hooks/use-slider.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-bubble/lib/hooks/use-slider.ts"
+        },
+        {
+          "path": "registry/kidow/range-slider-bubble/lib/touch.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-bubble/lib/touch.ts"
+        },
+        {
+          "path": "registry/kidow/range-slider-bubble/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-bubble/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/range-slider-bubble",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "range-slider-fluid",
+      "type": "registry:component",
+      "title": "Range Slider Fluid",
+      "description": "No thumb. The fill slides behind a rounded liquid cap, and the label flips color wherever the fill covers it.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/range-slider-fluid/components/motion/range-slider-fluid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-fluid/components/motion/range-slider-fluid.tsx"
+        },
+        {
+          "path": "registry/kidow/range-slider-fluid/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-fluid/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/range-slider-fluid/lib/hooks/use-slider.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-fluid/lib/hooks/use-slider.ts"
+        },
+        {
+          "path": "registry/kidow/range-slider-fluid/lib/touch.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-fluid/lib/touch.ts"
+        },
+        {
+          "path": "registry/kidow/range-slider-fluid/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-fluid/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/range-slider-fluid",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "range-slider-ruler",
+      "type": "registry:component",
+      "title": "Range Slider Ruler",
+      "description": "The needle stays put and the scale scrolls under it. A flick keeps going and settles on the nearest tick. Fractional steps read at the step's own precision.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/range-slider-ruler/components/motion/range-slider-ruler.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-ruler/components/motion/range-slider-ruler.tsx"
+        },
+        {
+          "path": "registry/kidow/range-slider-ruler/lib/hooks/use-slider.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-ruler/lib/hooks/use-slider.ts"
+        },
+        {
+          "path": "registry/kidow/range-slider-ruler/lib/touch.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-ruler/lib/touch.ts"
+        },
+        {
+          "path": "registry/kidow/range-slider-ruler/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-ruler/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/range-slider-ruler",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "range-slider-wave",
+      "type": "registry:component",
+      "title": "Range Slider Wave",
+      "description": "Equalizer bars peak around the handle and drop back once it passes, so the value moves down the track as a wave.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/range-slider-wave/components/motion/range-slider-wave.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-wave/components/motion/range-slider-wave.tsx"
+        },
+        {
+          "path": "registry/kidow/range-slider-wave/lib/hooks/use-slider.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-wave/lib/hooks/use-slider.ts"
+        },
+        {
+          "path": "registry/kidow/range-slider-wave/lib/touch.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-wave/lib/touch.ts"
+        },
+        {
+          "path": "registry/kidow/range-slider-wave/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/range-slider-wave/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/range-slider-wave",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "rating",
       "type": "registry:component",
       "title": "Rating",
@@ -18966,6 +20592,60 @@
         "sourceUrl": "https://ui.spectrumhq.in/docs/components/reaction-bar",
         "author": "arihantcodes",
         "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "reasoning-text",
+      "type": "registry:component",
+      "title": "Reasoning Text",
+      "description": "Shimmering reasoning copy with an ASCII loader and cascade, phrase-swap, or per-letter scramble transitions.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/reasoning-text/components/agents/loading-states/reasoning-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/reasoning-text/components/agents/loading-states/reasoning-text.tsx"
+        },
+        {
+          "path": "registry/kidow/reasoning-text/components/motion/loader.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/reasoning-text/components/motion/loader.tsx"
+        },
+        {
+          "path": "registry/kidow/reasoning-text/components/motion/text-scramble.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/reasoning-text/components/motion/text-scramble.tsx"
+        },
+        {
+          "path": "registry/kidow/reasoning-text/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/reasoning-text/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/reasoning-text/lib/text-shimmer.ts",
+          "type": "registry:component",
+          "target": "components/kidow/reasoning-text/lib/text-shimmer.ts"
+        },
+        {
+          "path": "registry/kidow/reasoning-text/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/reasoning-text/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/reasoning-text",
+        "author": "starc007",
+        "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -20454,6 +22134,46 @@
       }
     },
     {
+      "name": "scroll-to",
+      "type": "registry:component",
+      "title": "Scroll To",
+      "description": "Button that smooth-scrolls to a target (offset, selector or element) via the active SmoothScroll provider; reduced-motion jumps instantly.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "lenis",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/scroll-to/components/motion/scroll-to.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-to/components/motion/scroll-to.tsx"
+        },
+        {
+          "path": "registry/kidow/scroll-to/components/motion/smooth-scroll.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-to/components/motion/smooth-scroll.tsx"
+        },
+        {
+          "path": "registry/kidow/scroll-to/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-to/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/scroll-to",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "scrub-bar",
       "type": "registry:component",
       "title": "Scrub Bar",
@@ -20574,6 +22294,41 @@
         "source": "JolyUI",
         "sourceUrl": "https://www.jolyui.dev/docs/components/segmented-button",
         "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "select-morph",
+      "type": "registry:component",
+      "title": "Select Morph",
+      "description": "Composable primitives (MorphSelect, MorphSelectTrigger, MorphSelectValue, MorphSelectContent, MorphSelectItem) where the trigger morphs into the panel via a shared layoutId — one continuous surface that grows open and shrinks back, never detaching.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/select-morph/components/motion/select-morph.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/select-morph/components/motion/select-morph.tsx"
+        },
+        {
+          "path": "registry/kidow/select-morph/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/select-morph/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/select-morph",
+        "author": "starc007",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -20733,6 +22488,45 @@
         "sourceUrl": "https://ui.spectrumhq.in/docs/components/share-button",
         "author": "arihantcodes",
         "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "shared-layout-bg",
+      "type": "registry:component",
+      "title": "Shared Layout Bg",
+      "description": "활성 항목을 따라 배경이 미끄러지는 레이아웃(shared layout background). A pill that glides between hovered items via motion's shared layout, with blur enter/exit.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/shared-layout-bg/components/motion/shared-layout-bg.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shared-layout-bg/components/motion/shared-layout-bg.tsx"
+        },
+        {
+          "path": "registry/kidow/shared-layout-bg/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/shared-layout-bg/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/shared-layout-bg/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/shared-layout-bg/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/shared-layout-bg",
+        "author": "starc007",
+        "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -21348,6 +23142,50 @@
         "source": "KokonutUI",
         "sourceUrl": "https://kokonutui.com/docs/components/sliced-text",
         "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "slide-action-button",
+      "type": "registry:component",
+      "title": "Slide Action Button",
+      "description": "밀어서 확정하는 버튼(slide to confirm, swipe action). Drag the thumb to the end to confirm an action; release early to spring back.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/slide-action-button/components/motion/slide-action-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/slide-action-button/components/motion/slide-action-button.tsx"
+        },
+        {
+          "path": "registry/kidow/slide-action-button/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/slide-action-button/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/slide-action-button/lib/touch.ts",
+          "type": "registry:component",
+          "target": "components/kidow/slide-action-button/lib/touch.ts"
+        },
+        {
+          "path": "registry/kidow/slide-action-button/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/slide-action-button/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/slide-action-button",
+        "author": "starc007",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -23357,6 +25195,66 @@
       }
     },
     {
+      "name": "streaming-response",
+      "type": "registry:component",
+      "title": "Streaming Response",
+      "description": "A stable response surface with completion actions, rendered content, and an expandable source summary.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/streaming-response/components/agents/streaming-response.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/streaming-response/components/agents/streaming-response.tsx"
+        },
+        {
+          "path": "registry/kidow/streaming-response/components/agents/agent-disclosure.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/streaming-response/components/agents/agent-disclosure.tsx"
+        },
+        {
+          "path": "registry/kidow/streaming-response/components/agents/citations.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/streaming-response/components/agents/citations.tsx"
+        },
+        {
+          "path": "registry/kidow/streaming-response/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/streaming-response/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/streaming-response/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/streaming-response/lib/utils.ts"
+        },
+        {
+          "path": "registry/kidow/streaming-response/lib/hooks/use-favicon.ts",
+          "type": "registry:component",
+          "target": "components/kidow/streaming-response/lib/hooks/use-favicon.ts"
+        },
+        {
+          "path": "registry/kidow/streaming-response/lib/favicon.ts",
+          "type": "registry:component",
+          "target": "components/kidow/streaming-response/lib/favicon.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/streaming-response",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "stripe-animated-gradient",
       "type": "registry:component",
       "title": "Stripe Animated Gradient",
@@ -23781,6 +25679,218 @@
         "source": "UI Layouts",
         "sourceUrl": "https://www.ui-layouts.com/components/tabs",
         "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "table-async",
+      "type": "registry:component",
+      "title": "Table Async",
+      "description": "Loads pages on demand — skeleton rows on first load, then infinite scroll via onEndReached as the virtualized list nears the bottom.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@tanstack/react-virtual",
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/table-async/components/motion/table/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/table-async/components/motion/table/index.tsx"
+        },
+        {
+          "path": "registry/kidow/table-async/components/motion/table/editable-cell.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/table-async/components/motion/table/editable-cell.tsx"
+        },
+        {
+          "path": "registry/kidow/table-async/components/motion/table/row-handle.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/table-async/components/motion/table/row-handle.tsx"
+        },
+        {
+          "path": "registry/kidow/table-async/components/motion/table/skeleton-rows.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/table-async/components/motion/table/skeleton-rows.tsx"
+        },
+        {
+          "path": "registry/kidow/table-async/components/motion/table/table-header.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/table-async/components/motion/table/table-header.tsx"
+        },
+        {
+          "path": "registry/kidow/table-async/components/motion/table/types.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-async/components/motion/table/types.ts"
+        },
+        {
+          "path": "registry/kidow/table-async/components/motion/table/use-column-reorder.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-async/components/motion/table/use-column-reorder.ts"
+        },
+        {
+          "path": "registry/kidow/table-async/components/motion/table/use-column-resize.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-async/components/motion/table/use-column-resize.ts"
+        },
+        {
+          "path": "registry/kidow/table-async/components/motion/table/use-column-sort.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-async/components/motion/table/use-column-sort.ts"
+        },
+        {
+          "path": "registry/kidow/table-async/components/motion/table/use-row-selection.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-async/components/motion/table/use-row-selection.ts"
+        },
+        {
+          "path": "registry/kidow/table-async/components/motion/table/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-async/components/motion/table/utils.ts"
+        },
+        {
+          "path": "registry/kidow/table-async/components/motion/checkbox.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/table-async/components/motion/checkbox.tsx"
+        },
+        {
+          "path": "registry/kidow/table-async/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-async/lib/utils.ts"
+        },
+        {
+          "path": "registry/kidow/table-async/components/motion/table/table-menu.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/table-async/components/motion/table/table-menu.tsx"
+        },
+        {
+          "path": "registry/kidow/table-async/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-async/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/table-async/lib/touch.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-async/lib/touch.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/table-async",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "table-editable",
+      "type": "registry:component",
+      "title": "Table Editable",
+      "description": "Edit cells inline and insert or delete rows and columns via border handles; the table re-renders from the updated data and column defs.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@tanstack/react-virtual",
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/table-editable/components/motion/table/index.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/table-editable/components/motion/table/index.tsx"
+        },
+        {
+          "path": "registry/kidow/table-editable/components/motion/table/editable-cell.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/table-editable/components/motion/table/editable-cell.tsx"
+        },
+        {
+          "path": "registry/kidow/table-editable/components/motion/table/row-handle.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/table-editable/components/motion/table/row-handle.tsx"
+        },
+        {
+          "path": "registry/kidow/table-editable/components/motion/table/skeleton-rows.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/table-editable/components/motion/table/skeleton-rows.tsx"
+        },
+        {
+          "path": "registry/kidow/table-editable/components/motion/table/table-header.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/table-editable/components/motion/table/table-header.tsx"
+        },
+        {
+          "path": "registry/kidow/table-editable/components/motion/table/types.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-editable/components/motion/table/types.ts"
+        },
+        {
+          "path": "registry/kidow/table-editable/components/motion/table/use-column-reorder.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-editable/components/motion/table/use-column-reorder.ts"
+        },
+        {
+          "path": "registry/kidow/table-editable/components/motion/table/use-column-resize.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-editable/components/motion/table/use-column-resize.ts"
+        },
+        {
+          "path": "registry/kidow/table-editable/components/motion/table/use-column-sort.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-editable/components/motion/table/use-column-sort.ts"
+        },
+        {
+          "path": "registry/kidow/table-editable/components/motion/table/use-row-selection.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-editable/components/motion/table/use-row-selection.ts"
+        },
+        {
+          "path": "registry/kidow/table-editable/components/motion/table/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-editable/components/motion/table/utils.ts"
+        },
+        {
+          "path": "registry/kidow/table-editable/components/motion/checkbox.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/table-editable/components/motion/checkbox.tsx"
+        },
+        {
+          "path": "registry/kidow/table-editable/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-editable/lib/utils.ts"
+        },
+        {
+          "path": "registry/kidow/table-editable/components/motion/table/table-menu.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/table-editable/components/motion/table/table-menu.tsx"
+        },
+        {
+          "path": "registry/kidow/table-editable/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-editable/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/table-editable/lib/touch.ts",
+          "type": "registry:component",
+          "target": "components/kidow/table-editable/lib/touch.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/table-editable",
+        "author": "starc007",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -24236,6 +26346,50 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "text-cascade",
+      "type": "registry:component",
+      "title": "Text Cascade",
+      "description": "Letter-by-letter slot roll for standalone text — old letters drop away as new ones land, left to right.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-cascade/components/motion/text-cascade.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-cascade/components/motion/text-cascade.tsx"
+        },
+        {
+          "path": "registry/kidow/text-cascade/components/motion/action-swap.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-cascade/components/motion/action-swap.tsx"
+        },
+        {
+          "path": "registry/kidow/text-cascade/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/text-cascade/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/text-cascade/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/text-cascade/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/text-cascade",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -24892,6 +27046,95 @@
       }
     },
     {
+      "name": "theme-toggle",
+      "type": "registry:component",
+      "title": "Theme Toggle",
+      "description": "Theme toggle button that repaints the whole page through the View Transition API — a rectangle or circle clip-path reveal, or slats that open across the screen like a shutter.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "next-themes",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/theme-toggle/components/motion/theme-toggle.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/theme-toggle/components/motion/theme-toggle.tsx"
+        },
+        {
+          "path": "registry/kidow/theme-toggle/components/motion/action-swap.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/theme-toggle/components/motion/action-swap.tsx"
+        },
+        {
+          "path": "registry/kidow/theme-toggle/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/theme-toggle/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/theme-toggle/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/theme-toggle/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/theme-toggle",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "thinking-shimmer",
+      "type": "registry:component",
+      "title": "Thinking Shimmer",
+      "description": "AI 가 생각하는 동안의 광택 표시(thinking shimmer, ai loading). A quiet shimmer that keeps the agent's current status readable while work continues.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/thinking-shimmer/components/agents/loading-states/thinking-shimmer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/thinking-shimmer/components/agents/loading-states/thinking-shimmer.tsx"
+        },
+        {
+          "path": "registry/kidow/thinking-shimmer/components/motion/text-shimmer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/thinking-shimmer/components/motion/text-shimmer.tsx"
+        },
+        {
+          "path": "registry/kidow/thinking-shimmer/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/thinking-shimmer/lib/utils.ts"
+        },
+        {
+          "path": "registry/kidow/thinking-shimmer/lib/text-shimmer.ts",
+          "type": "registry:component",
+          "target": "components/kidow/thinking-shimmer/lib/text-shimmer.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/thinking-shimmer",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "three-d-carousel",
       "type": "registry:component",
       "title": "Three D Carousel",
@@ -25138,6 +27381,61 @@
       }
     },
     {
+      "name": "todo-list",
+      "type": "registry:component",
+      "title": "Todo List",
+      "description": "A collapsible agent task plan with morphing status marks, a completion count, compact metadata, and smooth list updates.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/todo-list/components/agents/todo-list.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/todo-list/components/agents/todo-list.tsx"
+        },
+        {
+          "path": "registry/kidow/todo-list/components/agents/agent-disclosure.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/todo-list/components/agents/agent-disclosure.tsx"
+        },
+        {
+          "path": "registry/kidow/todo-list/components/motion/action-swap-roll.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/todo-list/components/motion/action-swap-roll.tsx"
+        },
+        {
+          "path": "registry/kidow/todo-list/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/todo-list/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/todo-list/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/todo-list/lib/utils.ts"
+        },
+        {
+          "path": "registry/kidow/todo-list/components/motion/action-swap.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/todo-list/components/motion/action-swap.tsx"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/todo-list",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "toggle-theme",
       "type": "registry:component",
       "title": "Toggle Theme",
@@ -25159,6 +27457,118 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/toggle-theme",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "tool-approval",
+      "type": "registry:component",
+      "title": "Tool Approval",
+      "description": "A human-in-the-loop permission card for reviewing tool details, allowing once, remembering access, or denying execution.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "shiki",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/tool-approval/components/agents/tool-approval.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tool-approval/components/agents/tool-approval.tsx"
+        },
+        {
+          "path": "registry/kidow/tool-approval/components/agents/agent-code.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tool-approval/components/agents/agent-code.tsx"
+        },
+        {
+          "path": "registry/kidow/tool-approval/components/agents/agent-disclosure.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tool-approval/components/agents/agent-disclosure.tsx"
+        },
+        {
+          "path": "registry/kidow/tool-approval/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/tool-approval/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/tool-approval/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/tool-approval/lib/utils.ts"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/tool-approval",
+        "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "tool-result",
+      "type": "registry:component",
+      "title": "Tool Result",
+      "description": "A lightweight execution disclosure for syntax-highlighted terminal output and request responses that collapses into a compact completed state.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "clsx",
+        "lucide-react",
+        "motion",
+        "shiki",
+        "tailwind-merge"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/tool-result/components/agents/tool-result.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tool-result/components/agents/tool-result.tsx"
+        },
+        {
+          "path": "registry/kidow/tool-result/components/agents/agent-code.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tool-result/components/agents/agent-code.tsx"
+        },
+        {
+          "path": "registry/kidow/tool-result/components/agents/agent-disclosure.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tool-result/components/agents/agent-disclosure.tsx"
+        },
+        {
+          "path": "registry/kidow/tool-result/components/motion/action-swap-roll.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tool-result/components/motion/action-swap-roll.tsx"
+        },
+        {
+          "path": "registry/kidow/tool-result/lib/ease.ts",
+          "type": "registry:component",
+          "target": "components/kidow/tool-result/lib/ease.ts"
+        },
+        {
+          "path": "registry/kidow/tool-result/lib/utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/tool-result/lib/utils.ts"
+        },
+        {
+          "path": "registry/kidow/tool-result/components/motion/action-swap.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tool-result/components/motion/action-swap.tsx"
+        }
+      ],
+      "meta": {
+        "source": "beui",
+        "sourceUrl": "https://beui.dev/components/tool-result",
+        "author": "starc007",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
