@@ -364,6 +364,33 @@
       }
     },
     {
+      "name": "3d-wrapper",
+      "type": "registry:component",
+      "title": "3D Wrapper",
+      "description": "자식 요소를 커서에 따라 3D 로 기울이는 래퍼(3d wrapper, tilt effect). 카드나 이미지를 감싸 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/3d-wrapper.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/3d-wrapper.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/3d-wrapper",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "action-search-bar",
       "type": "registry:component",
       "title": "Action Search Bar",
@@ -958,6 +985,96 @@
       }
     },
     {
+      "name": "animated-card-1",
+      "type": "registry:component",
+      "title": "Animated Card 1",
+      "description": "hover 하면 상단 그래픽이 살아나는 기능 카드(animated card, feature card). 막대가 차오르는 시각화가 붙는다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/animated-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-card.tsx"
+        },
+        {
+          "path": "registry/kidow/visual-1.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/visual-1.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/animated-card-1",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "animated-card-2",
+      "type": "registry:component",
+      "title": "Animated Card 2",
+      "description": "hover 하면 상단 그래픽이 살아나는 기능 카드(animated card, feature card). 원형 지표가 도는 시각화가 붙는다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/animated-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-card.tsx"
+        },
+        {
+          "path": "registry/kidow/visual-2.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/visual-2.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/animated-card-2",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "animated-card-3",
+      "type": "registry:component",
+      "title": "Animated Card 3",
+      "description": "hover 하면 상단 그래픽이 살아나는 기능 카드(animated card, feature card). 목록이 차례로 나타나는 시각화가 붙는다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/animated-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-card.tsx"
+        },
+        {
+          "path": "registry/kidow/visual-3.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/visual-3.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/animated-card-3",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "animated-checkbox",
       "type": "registry:component",
       "title": "Animated Checkbox",
@@ -1226,6 +1343,34 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-keyboard",
+      "type": "registry:component",
+      "title": "Animated Keyboard",
+      "description": "키가 눌리는 3D 키보드 목업(keyboard mockup, animated keyboard). RGB 백라이트 변형이 있다.",
+      "categories": [
+        "디바이스 목업"
+      ],
+      "dependencies": [
+        "motion",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/animated-keyboard.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-keyboard.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/animated-keyboard",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -3962,6 +4107,33 @@
       }
     },
     {
+      "name": "cloud-orbit",
+      "type": "registry:component",
+      "title": "Cloud Orbit",
+      "description": "구름 덩어리가 궤도를 도는 배경(cloud orbit, floating clouds).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/cloud-orbit.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cloud-orbit.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/cloud-orbit",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "code-block",
       "type": "registry:component",
       "title": "Code Block",
@@ -4413,6 +4585,33 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "confetti-button",
+      "type": "registry:component",
+      "title": "Confetti Button",
+      "description": "누르면 색종이가 터지는 버튼(confetti button, celebration). 구독·완료 확인에 쓴다.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "canvas-confetti"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/confetti-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/confetti-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/confetti-button",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -4877,6 +5076,33 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "cursor-cards",
+      "type": "registry:component",
+      "title": "Cursor Cards",
+      "description": "커서를 따라 테두리 빛이 이동하는 카드 격자(cursor cards, spotlight border).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/cursor-cards.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cursor-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/cursor-cards",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -5926,6 +6152,33 @@
       }
     },
     {
+      "name": "expandable-card",
+      "type": "registry:component",
+      "title": "Expandable Card",
+      "description": "클릭하면 펼쳐져 내용을 보여주는 카드(expandable card, accordion card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/expandable-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/expandable-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/expandable-card",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "expandable-search-bar",
       "type": "registry:component",
       "title": "Expandable Search Bar",
@@ -6054,6 +6307,33 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "fade-up-word",
+      "type": "registry:component",
+      "title": "Fade Up Word",
+      "description": "단어가 아래에서 하나씩 떠오르는 텍스트(fade up words, staggered text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/fade-up-word.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/fade-up-word.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/fade-up-word",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -6466,6 +6746,31 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "flipping-card",
+      "type": "registry:component",
+      "title": "Flipping Card",
+      "description": "hover 하면 뒤집혀 뒷면을 보여주는 카드(flipping card, 3d flip).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/flipping-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/flipping-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/flipping-card",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -7201,6 +7506,33 @@
       }
     },
     {
+      "name": "glowing-button",
+      "type": "registry:component",
+      "title": "Glowing Button",
+      "description": "테두리가 은은하게 빛나는 버튼(glowing button, glow cta).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glowing-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/glowing-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/glowing-button",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "glowing-cards",
       "type": "registry:component",
       "title": "Glowing Cards",
@@ -7389,6 +7721,31 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "gradient-slide-button",
+      "type": "registry:component",
+      "title": "Gradient Slide Button",
+      "description": "hover 하면 그라디언트가 밀려 들어오는 버튼(gradient slide button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/gradient-slide-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gradient-slide-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/gradient-slide-button",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -8050,6 +8407,31 @@
       }
     },
     {
+      "name": "hyperspace-background",
+      "type": "registry:component",
+      "title": "Hyperspace Background",
+      "description": "별이 빨려 들어가는 하이퍼스페이스 배경(hyperspace, warp stars).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/hyperspace-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hyperspace-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/hyperspace-background",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "icon-cloud",
       "type": "registry:component",
       "title": "Icon Cloud",
@@ -8227,6 +8609,31 @@
         "source": "JolyUI",
         "sourceUrl": "https://www.jolyui.dev/docs/components/image-sphere",
         "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "image-split",
+      "type": "registry:component",
+      "title": "Image Split",
+      "description": "이미지가 조각으로 갈라졌다 합쳐지는 효과(image split, sliced image).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/image-split.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/image-split.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/image-split",
+        "author": "badtzx0",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -9197,6 +9604,33 @@
         "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "like-button",
+      "type": "registry:component",
+      "title": "Like Button",
+      "description": "누르면 하트가 채워지며 튀는 좋아요 버튼(like button, heart button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/like-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/like-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/like-button",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -10884,6 +11318,36 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "mode-toggle",
+      "type": "registry:component",
+      "title": "Mode Toggle",
+      "description": "라이트·다크·시스템을 고르는 테마 토글(mode toggle, theme switcher). next-themes 를 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "next-themes"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/mode-toggle.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/mode-toggle.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/mode-toggle",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -14587,6 +15051,31 @@
       }
     },
     {
+      "name": "shuffle-button",
+      "type": "registry:component",
+      "title": "Shuffle Button",
+      "description": "글자가 뒤섞였다 제자리를 찾는 버튼(shuffle button, scramble text).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/shuffle-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shuffle-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/shuffle-button",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "shutter-text",
       "type": "registry:component",
       "title": "Shutter Text",
@@ -15087,6 +15576,31 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "social-proof-avatars",
+      "type": "registry:component",
+      "title": "Social Proof Avatars",
+      "description": "사용자 아바타를 겹쳐 보여주는 소셜 프루프(social proof, avatar group). \"N명이 쓰는 중\" 문구와 함께 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/social-proof-avatars.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/social-proof-avatars.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/social-proof-avatars",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -15642,6 +16156,60 @@
       }
     },
     {
+      "name": "stagger-blur-effect",
+      "type": "registry:component",
+      "title": "Stagger Blur Effect",
+      "description": "글자가 흐릿한 상태에서 차례로 또렷해지는 텍스트(blur in, staggered blur).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/stagger-blur-effect.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stagger-blur-effect.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/stagger-blur-effect",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "stagger-button",
+      "type": "registry:component",
+      "title": "Stagger Button",
+      "description": "hover 하면 글자가 하나씩 시차를 두고 올라가는 버튼(stagger button, letter hover).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/stagger-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stagger-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/stagger-button",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "stagger-text",
       "type": "registry:component",
       "title": "Stagger Text",
@@ -15693,6 +16261,31 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "star-button",
+      "type": "registry:component",
+      "title": "Star Button",
+      "description": "반짝이가 도는 별 버튼(star button, sparkle cta). GitHub 별 유도에 쓴다.",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/star-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/star-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/star-button",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -16000,6 +16593,36 @@
       }
     },
     {
+      "name": "stripe-animated-gradient",
+      "type": "registry:component",
+      "title": "Stripe Animated Gradient",
+      "description": "Stripe 랜딩의 그 그라디언트(stripe gradient, mesh gradient). WebGL 셰이더로 색이 흐른다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/stripe-animated-gradient.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stripe-animated-gradient.tsx"
+        },
+        {
+          "path": "registry/kidow/stripe-shader.js",
+          "type": "registry:component",
+          "target": "components/kidow/stripe-shader.js"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/stripe-animated-gradient",
+        "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "striped-pattern",
       "type": "registry:component",
       "title": "Striped Pattern",
@@ -16069,6 +16692,35 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/stylish-carousel",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "swipe-button",
+      "type": "registry:component",
+      "title": "Swipe Button",
+      "description": "밀어서 확정하는 버튼(swipe to confirm, slide to unlock). 완료하면 색종이가 터진다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "canvas-confetti"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/swipe-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/swipe-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Badtz UI",
+        "sourceUrl": "https://www.badtz-ui.com/docs/components/swipe-button",
+        "author": "badtzx0",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
