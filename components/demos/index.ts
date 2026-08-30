@@ -240,6 +240,7 @@ import GradientWaveTextDemo from './gradient-wave-text'
 import GrainCarouselDemo from './grain-carousel'
 import GrainCursorDemo from './grain-cursor'
 import GranularDustRevealDemo from './granular-dust-reveal'
+import GridBarChartDemo from './grid-bar-chart'
 import GridPatternDemo from './grid-pattern'
 import HeatMirageRevealDemo from './heat-mirage-reveal'
 import HellBackgroundDemo from './hell-background'
@@ -252,6 +253,7 @@ import HighlighterDemo from './highlighter'
 import HoloButtonDemo from './holo-button'
 import HolographicWaveDemo from './holographic-wave'
 import HoverPreviewDemo from './hover-preview'
+import HoverTraceBarChartDemo from './hover-trace-bar-chart'
 import HoverTransitionDemo from './hover-transition'
 import HyperTextDemo from './hyper-text'
 import HyperTextComponentryDemo from './hyper-text-componentry'
@@ -278,6 +280,7 @@ import InteractiveLineChartDemo from './interactive-line-chart'
 import InteractiveParticlesDemo from './interactive-particles'
 import IphoneDemo from './iphone'
 import Iphone16ProDemo from './iphone16-pro'
+import IsometricBarChartDemo from './isometric-bar-chart'
 import ItemDemo from './item'
 import JsonViewerDemo from './json-viewer'
 import KaleidoscopeTrailDemo from './kaleidoscope-trail'
@@ -350,6 +353,7 @@ import MediaSm06Demo from './media-sm-06'
 import MediaSm07Demo from './media-sm-07'
 import MediaSm08Demo from './media-sm-08'
 import MeteorsDemo from './meteors'
+import MonospaceBarChartDemo from './monospace-bar-chart'
 import MorphTextDemo from './morph-text'
 import MorphingCursorDemo from './morphing-cursor'
 import MorphingDisclosureDemo from './morphing-disclosure'
@@ -412,6 +416,14 @@ import RadialGlowButtonDemo from './radial-glow-button'
 import RainbowButtonDemo from './rainbow-button'
 import RandomizedTextDemo from './randomized-text'
 import RaysBackgroundDemo from './rays-background'
+import RechartsAreaChartDemo from './recharts-area-chart'
+import RechartsBarChartDemo from './recharts-bar-chart'
+import RechartsComposedChartDemo from './recharts-composed-chart'
+import RechartsLineChartDemo from './recharts-line-chart'
+import RechartsPieChartDemo from './recharts-pie-chart'
+import RechartsRadarChartDemo from './recharts-radar-chart'
+import RechartsRadialChartDemo from './recharts-radial-chart'
+import RechartsSankeyChartDemo from './recharts-sankey-chart'
 import ReflectBackgroundDemo from './reflect-background'
 import RequestViewerDemo from './request-viewer'
 import ResearchBentoGridDemo from './research-bento-grid'
@@ -807,6 +819,7 @@ export const demos: Record<string, ComponentType> = {
   'grain-carousel': GrainCarouselDemo,
   'grain-cursor': GrainCursorDemo,
   'granular-dust-reveal': GranularDustRevealDemo,
+  'grid-bar-chart': GridBarChartDemo,
   'grid-pattern': GridPatternDemo,
   'heat-mirage-reveal': HeatMirageRevealDemo,
   'hell-background': HellBackgroundDemo,
@@ -819,6 +832,7 @@ export const demos: Record<string, ComponentType> = {
   'holo-button': HoloButtonDemo,
   'holographic-wave': HolographicWaveDemo,
   'hover-preview': HoverPreviewDemo,
+  'hover-trace-bar-chart': HoverTraceBarChartDemo,
   'hover-transition': HoverTransitionDemo,
   'hyper-text': HyperTextDemo,
   'hyper-text-componentry': HyperTextComponentryDemo,
@@ -845,6 +859,7 @@ export const demos: Record<string, ComponentType> = {
   'interactive-particles': InteractiveParticlesDemo,
   'iphone': IphoneDemo,
   'iphone16-pro': Iphone16ProDemo,
+  'isometric-bar-chart': IsometricBarChartDemo,
   'item': ItemDemo,
   'json-viewer': JsonViewerDemo,
   'kaleidoscope-trail': KaleidoscopeTrailDemo,
@@ -917,6 +932,7 @@ export const demos: Record<string, ComponentType> = {
   'media-sm-07': MediaSm07Demo,
   'media-sm-08': MediaSm08Demo,
   'meteors': MeteorsDemo,
+  'monospace-bar-chart': MonospaceBarChartDemo,
   'morph-text': MorphTextDemo,
   'morphing-cursor': MorphingCursorDemo,
   'morphing-disclosure': MorphingDisclosureDemo,
@@ -979,6 +995,14 @@ export const demos: Record<string, ComponentType> = {
   'rainbow-button': RainbowButtonDemo,
   'randomized-text': RandomizedTextDemo,
   'rays-background': RaysBackgroundDemo,
+  'recharts-area-chart': RechartsAreaChartDemo,
+  'recharts-bar-chart': RechartsBarChartDemo,
+  'recharts-composed-chart': RechartsComposedChartDemo,
+  'recharts-line-chart': RechartsLineChartDemo,
+  'recharts-pie-chart': RechartsPieChartDemo,
+  'recharts-radar-chart': RechartsRadarChartDemo,
+  'recharts-radial-chart': RechartsRadialChartDemo,
+  'recharts-sankey-chart': RechartsSankeyChartDemo,
   'reflect-background': ReflectBackgroundDemo,
   'request-viewer': RequestViewerDemo,
   'research-bento-grid': ResearchBentoGridDemo,

@@ -6997,6 +6997,35 @@
       }
     },
     {
+      "name": "grid-bar-chart",
+      "type": "registry:component",
+      "title": "Grid Bar Chart",
+      "description": "격자 배경 위에 그리는 막대 차트(grid bar chart, blueprint chart).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@kidow/recharts-chart"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/grid-bar-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/grid-bar-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "grid-dot-backgrounds",
       "type": "registry:component",
       "title": "Grid Dot Backgrounds",
@@ -7361,6 +7390,37 @@
         "source": "JolyUI",
         "sourceUrl": "https://www.jolyui.dev/docs/components/hover-preview",
         "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "hover-trace-bar-chart",
+      "type": "registry:component",
+      "title": "Hover Trace Bar Chart",
+      "description": "hover 한 막대의 값을 숫자가 굴러가며(number flow) 보여주는 막대 차트(hover trace bar chart). 값을 정확히 읽어야 하는 대시보드에 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion",
+        "@number-flow/react"
+      ],
+      "registryDependencies": [
+        "@kidow/recharts-chart"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/hover-trace-bar-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hover-trace-bar-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -8086,6 +8146,36 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/iphone16-pro",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "isometric-bar-chart",
+      "type": "registry:component",
+      "title": "Isometric Bar Chart",
+      "description": "입체로 기울인 아이소메트릭 막대 차트(isometric bar chart, 3d bar chart).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/recharts-chart"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/isometric-bar-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/isometric-bar-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -10192,6 +10282,36 @@
       }
     },
     {
+      "name": "monospace-bar-chart",
+      "type": "registry:component",
+      "title": "Monospace Bar Chart",
+      "description": "고정폭 글꼴과 눈금으로 터미널 느낌을 낸 막대 차트(monospace bar chart, terminal chart). 개발자 대시보드에 어울린다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/recharts-chart"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/monospace-bar-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/monospace-bar-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "morph-text",
       "type": "registry:component",
       "title": "Morph Text",
@@ -12013,6 +12133,441 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/rays-background",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "recharts-area-chart",
+      "type": "registry:component",
+      "title": "Recharts Area Chart",
+      "description": "영역 차트(area chart). 그라디언트·해치·점선 채움과 bump·step 곡선, 누적(stacked)·비율(expanded) 타입, 로딩 상태를 지원한다. 추이와 누적량을 함께 보여줄 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/recharts-chart",
+        "@kidow/recharts-tooltip",
+        "@kidow/recharts-legend",
+        "@kidow/recharts-dot",
+        "@kidow/recharts-brush",
+        "@kidow/recharts-background"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/recharts-area-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/recharts-area-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "recharts-background",
+      "type": "registry:component",
+      "title": "Recharts Background",
+      "description": "차트 뒤에 까는 패턴 배경(chart background, grid pattern). 점·격자·사선·체커·물결 등 11종.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/recharts-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/recharts-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "recharts-bar-chart",
+      "type": "registry:component",
+      "title": "Recharts Bar Chart",
+      "description": "막대 차트(bar chart). 해치·듀오톤·그라디언트·줄무늬 채움과 누적·비율 타입, 가로 배치, hover 강조를 지원한다. 항목별 크기를 비교할 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/recharts-chart",
+        "@kidow/recharts-tooltip",
+        "@kidow/recharts-legend",
+        "@kidow/recharts-brush",
+        "@kidow/recharts-background"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/recharts-bar-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/recharts-bar-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "recharts-brush",
+      "type": "registry:component",
+      "title": "Recharts Brush",
+      "description": "기간을 끌어서 좁히는 브러시(chart brush, range selector). 시계열에서 구간을 확대해 볼 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts"
+      ],
+      "registryDependencies": [
+        "@kidow/recharts-chart"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/recharts-brush.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/recharts-brush.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "recharts-chart",
+      "type": "registry:component",
+      "title": "Recharts Chart",
+      "description": "차트 컨테이너와 색·범례 설정을 담는 프리미티브(chart container, chart config). EvilCharts 의 recharts 차트들이 공유하는 기반이라 단독으로 쓰기보다 차트와 함께 설치된다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/recharts-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/recharts-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "recharts-composed-chart",
+      "type": "registry:component",
+      "title": "Recharts Composed Chart",
+      "description": "막대와 선을 한 그래프에 겹쳐 그리는 복합 차트(composed chart, combo chart). 매출과 성장률처럼 단위가 다른 두 지표를 함께 볼 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/recharts-chart",
+        "@kidow/recharts-tooltip",
+        "@kidow/recharts-legend",
+        "@kidow/recharts-dot",
+        "@kidow/recharts-brush",
+        "@kidow/recharts-background"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/recharts-composed-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/recharts-composed-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "recharts-dot",
+      "type": "registry:component",
+      "title": "Recharts Dot",
+      "description": "선·영역 차트의 데이터 점(chart dot, data point marker). 테두리·색 지정과 핑(ping) 애니메이션 변형이 있다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/recharts-dot.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/recharts-dot.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "recharts-legend",
+      "type": "registry:component",
+      "title": "Recharts Legend",
+      "description": "차트 범례(chart legend). 사각·원·둥근 사각·세로 막대 등 마커 모양을 고를 수 있다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/recharts-legend.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/recharts-legend.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "recharts-line-chart",
+      "type": "registry:component",
+      "title": "Recharts Line Chart",
+      "description": "선 차트(line chart). 발광(glow) 선, 움직이는 점선, 데이터 점 변형, 범례 마커, 로딩 상태를 지원한다. 시간에 따른 추이를 볼 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/recharts-chart",
+        "@kidow/recharts-tooltip",
+        "@kidow/recharts-legend",
+        "@kidow/recharts-dot",
+        "@kidow/recharts-brush",
+        "@kidow/recharts-background"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/recharts-line-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/recharts-line-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "recharts-pie-chart",
+      "type": "registry:component",
+      "title": "Recharts Pie Chart",
+      "description": "원형 차트(pie chart, donut chart). 도넛·간격·라벨 변형이 있다. 구성 비율을 보여줄 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/recharts-chart",
+        "@kidow/recharts-tooltip",
+        "@kidow/recharts-legend",
+        "@kidow/recharts-background"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/recharts-pie-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/recharts-pie-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "recharts-radar-chart",
+      "type": "registry:component",
+      "title": "Recharts Radar Chart",
+      "description": "레이더 차트(radar chart, spider chart). 원형 격자 변형이 있다. 여러 항목의 역량을 한눈에 비교할 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/recharts-chart",
+        "@kidow/recharts-tooltip",
+        "@kidow/recharts-legend",
+        "@kidow/recharts-dot",
+        "@kidow/recharts-background"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/recharts-radar-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/recharts-radar-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "recharts-radial-chart",
+      "type": "registry:component",
+      "title": "Recharts Radial Chart",
+      "description": "방사형 게이지 차트(radial chart, gauge chart). 반원 변형이 있다. 목표 달성률·사용량 게이지에 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/recharts-chart",
+        "@kidow/recharts-tooltip",
+        "@kidow/recharts-legend",
+        "@kidow/recharts-background"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/recharts-radial-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/recharts-radial-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "recharts-sankey-chart",
+      "type": "registry:component",
+      "title": "Recharts Sankey Chart",
+      "description": "흐름의 양을 폭으로 보여주는 생키 다이어그램(sankey chart, flow diagram). 예산 배분, 유입 경로, 전환 퍼널처럼 무엇이 어디로 얼마나 흘렀는지 보여줄 때 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/recharts-chart",
+        "@kidow/recharts-tooltip",
+        "@kidow/recharts-background"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/recharts-sankey-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/recharts-sankey-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "recharts-tooltip",
+      "type": "registry:component",
+      "title": "Recharts Tooltip",
+      "description": "차트 툴팁(chart tooltip). 기본형과 서리 낀 유리(frosted glass) 변형이 있고 값 포맷을 지정할 수 있다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/recharts-tooltip.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/recharts-tooltip.tsx"
+        }
+      ],
+      "meta": {
+        "source": "EvilCharts",
+        "sourceUrl": "https://evilcharts.com/docs",
+        "author": "legions-developer",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }

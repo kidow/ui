@@ -18,6 +18,7 @@
     "@icons-pack/react-simple-icons": "^13.15.1",
     "@motionone/utils": "^10.18.0",
     "@ncdai/react-wheel-picker": "^1.2.3",
+    "@number-flow/react": "^0.6.2",
     "@paper-design/shaders": "^0.0.80",
     "@paper-design/shaders-react": "^0.0.80",
     "@phosphor-icons/react": "^2.1.10",
