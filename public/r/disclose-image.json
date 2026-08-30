@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "disclose-image",
+  "title": "Disclose Image",
+  "description": "hover 하면 가려진 이미지가 드러나는 효과(disclose image, reveal on hover).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/disclose-image.tsx",
+      "content": "\"use client\";\n\n/**\n * Copyright (c) Spectrum UI — https://ui.spectrumhq.in\n * Licensed under the Apache License, Version 2.0.\n * https://www.apache.org/licenses/LICENSE-2.0\n *\n * 변경: import 경로를 이 레지스트리에 맞게 고쳤고, framer-motion 을\n * motion/react 로 통일했다. 그 밖의 내용은 원본과 같다.\n */\n\n/* eslint-disable @next/next/no-img-element */\n\"use client\";\nimport { ImgHTMLAttributes, useState } from \"react\";\nimport { cn } from \"@/lib/utils\";\n\nexport default function DiscloseImage({\n  className,\n  doorClassName,\n  vertical = false,\n  ...props\n}: ImgHTMLAttributes<HTMLImageElement> & {\n  doorClassName?: string;\n  vertical?: boolean;\n}) {\n  const [imageLoaded, setImageLoaded] = useState(false);\n  const baseClassName =\n    \"ease-slow duration-mid absolute bg-sky-500 transition-all animate-out fill-mode-forwards\";\n\n  const { alt, ...imgProps } = props;\n  return (\n    <div className=\"relative h-64 w-52 overflow-hidden rounded-md bg-yellow-100\">\n      <img\n        alt={alt || \"Disclose image\"}\n        onLoad={() => setImageLoaded(true)}\n        {...imgProps}\n        className={cn(\"h-full w-full object-cover\", className)}\n      />\n\n      {imageLoaded && (\n        <>\n          <div\n            className={cn(baseClassName, doorClassName, {\n              \"top-0 h-1/2 w-full slide-out-to-top-full\": vertical,\n              \"bottom-0 left-0 top-0 w-1/2 slide-out-to-left-full\": !vertical,\n            })}\n          />\n          <div\n            className={cn(baseClassName, doorClassName, {\n              \"bottom-0 h-1/2 w-full slide-out-to-bottom-full\": vertical,\n              \"bottom-0 right-0 top-0 w-1/2 slide-out-to-right-full\": !vertical,\n            })}\n          />\n        </>\n      )}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/disclose-image.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Spectrum UI",
+    "sourceUrl": "https://ui.spectrumhq.in/docs/components/disclose-image",
+    "author": "arihantcodes",
+    "license": "Apache-2.0",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "미디어·데이터"
+  ],
+  "type": "registry:component"
+}

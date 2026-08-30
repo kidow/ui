@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "dual-range-slider",
+  "title": "Dual Range Slider",
+  "description": "손잡이 두 개로 범위를 고르는 슬라이더(dual range slider, 범위 선택). 라벨 위치를 지정할 수 있다.",
+  "dependencies": [
+    "@radix-ui/react-slider"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/dual-range-slider.tsx",
+      "content": "\"use client\";\n\n/**\n * Copyright (c) Spectrum UI — https://ui.spectrumhq.in\n * Licensed under the Apache License, Version 2.0.\n * https://www.apache.org/licenses/LICENSE-2.0\n *\n * 변경: import 경로를 이 레지스트리에 맞게 고쳤고, framer-motion 을\n * motion/react 로 통일했다. 그 밖의 내용은 원본과 같다.\n */\n\nimport * as React from \"react\";\nimport * as SliderPrimitive from \"@radix-ui/react-slider\";\n\nimport { cn } from \"@/lib/utils\";\n\ninterface DualRangeSliderProps\n  extends React.ComponentProps<typeof SliderPrimitive.Root> {\n  labelPosition?: \"top\" | \"bottom\";\n  label?: (value: number | undefined) => React.ReactNode;\n}\n\nconst DualRangeSlider = React.forwardRef<\n  React.ElementRef<typeof SliderPrimitive.Root>,\n  DualRangeSliderProps\n>(({ className, label, labelPosition = \"top\", ...props }, ref) => {\n  const initialValue = Array.isArray(props.value)\n    ? props.value\n    : [props.min, props.max];\n\n  return (\n    <SliderPrimitive.Root\n      ref={ref}\n      className={cn(\n        \"relative flex w-full touch-none select-none items-center\",\n        className,\n      )}\n      {...props}\n    >\n      <SliderPrimitive.Track className=\"relative h-2 w-full grow overflow-hidden rounded-full bg-secondary\">\n        <SliderPrimitive.Range className=\"absolute h-full bg-primary\" />\n      </SliderPrimitive.Track>\n      {initialValue.map((value, index) => (\n        <React.Fragment key={index}>\n          <SliderPrimitive.Thumb className=\"relative block h-4 w-4 rounded-full border-2 border-primary bg-background ring-offset-background transition-colors focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50\">\n            {label && (\n              <span\n                className={cn(\n                  \"absolute flex w-full justify-center\",\n                  labelPosition === \"top\" && \"-top-7\",\n                  labelPosition === \"bottom\" && \"top-4\",\n                )}\n              >\n                {label(value)}\n              </span>\n            )}\n          </SliderPrimitive.Thumb>\n        </React.Fragment>\n      ))}\n    </SliderPrimitive.Root>\n  );\n});\nDualRangeSlider.displayName = \"DualRangeSlider\";\n\nexport { DualRangeSlider };\n",
+      "type": "registry:component",
+      "target": "components/kidow/dual-range-slider.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Spectrum UI",
+    "sourceUrl": "https://ui.spectrumhq.in/docs/components/dual-range-slider-dependecies",
+    "author": "arihantcodes",
+    "license": "Apache-2.0",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "폼·입력"
+  ],
+  "type": "registry:component"
+}

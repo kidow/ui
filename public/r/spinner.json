@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "spinner",
+  "title": "Spinner",
+  "description": "로딩 스피너(spinner, loading indicator). 크기 변형이 있다.",
+  "dependencies": [
+    "class-variance-authority",
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/spinner.tsx",
+      "content": "\"use client\";\n\n/**\n * Copyright (c) Spectrum UI — https://ui.spectrumhq.in\n * Licensed under the Apache License, Version 2.0.\n * https://www.apache.org/licenses/LICENSE-2.0\n *\n * 변경: import 경로를 이 레지스트리에 맞게 고쳤고, framer-motion 을\n * motion/react 로 통일했다. 그 밖의 내용은 원본과 같다.\n */\n\nimport React from \"react\";\nimport { cn } from \"@/lib/utils\";\nimport { VariantProps, cva } from \"class-variance-authority\";\nimport { Loader2 } from \"lucide-react\";\n\nconst spinnerVariants = cva(\"flex-col items-center justify-center\", {\n  variants: {\n    show: {\n      true: \"flex\",\n      false: \"hidden\",\n    },\n  },\n  defaultVariants: {\n    show: true,\n  },\n});\n\nconst loaderVariants = cva(\"animate-spin text-primary\", {\n  variants: {\n    size: {\n      small: \"size-6\",\n      medium: \"size-8\",\n      large: \"size-12\",\n    },\n  },\n  defaultVariants: {\n    size: \"medium\",\n  },\n});\n\ninterface SpinnerContentProps\n  extends VariantProps<typeof spinnerVariants>,\n    VariantProps<typeof loaderVariants> {\n  className?: string;\n  children?: React.ReactNode;\n}\n\nexport function Spinner({\n  size,\n  show,\n  children,\n  className,\n}: SpinnerContentProps) {\n  return (\n    <span className={spinnerVariants({ show })}>\n      <Loader2 className={cn(loaderVariants({ size }), className)} />\n      {children}\n    </span>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/spinner.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Spectrum UI",
+    "sourceUrl": "https://ui.spectrumhq.in/docs/components/spinner-dependencies",
+    "author": "arihantcodes",
+    "license": "Apache-2.0",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

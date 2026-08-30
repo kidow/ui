@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "floating-label-input",
+  "title": "Floating Label Input",
+  "description": "포커스하면 라벨이 위로 떠오르는 입력창(floating label input).",
+  "dependencies": [],
+  "registryDependencies": [
+    "input",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/floating-label-input.tsx",
+      "content": "\"use client\";\n\n/**\n * Copyright (c) Spectrum UI — https://ui.spectrumhq.in\n * Licensed under the Apache License, Version 2.0.\n * https://www.apache.org/licenses/LICENSE-2.0\n *\n * 변경: import 경로를 이 레지스트리에 맞게 고쳤고, framer-motion 을\n * motion/react 로 통일했다. 그 밖의 내용은 원본과 같다.\n */\n\nimport * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\nimport { Input } from \"@/components/ui/input\";\nimport { Label } from \"@/components/ui/label\";\n\nexport interface InputProps\n  extends React.InputHTMLAttributes<HTMLInputElement> {}\n\nconst FloatingInput = React.forwardRef<HTMLInputElement, InputProps>(\n  ({ className, ...props }, ref) => {\n    return (\n      <Input\n        placeholder=\" \"\n        className={cn(\"peer\", className)}\n        ref={ref}\n        {...props}\n      />\n    );\n  },\n);\nFloatingInput.displayName = \"FloatingInput\";\n\nconst FloatingLabel = React.forwardRef<\n  React.ElementRef<typeof Label>,\n  React.ComponentPropsWithoutRef<typeof Label>\n>(({ className, ...props }, ref) => {\n  return (\n    <Label\n      className={cn(\n        \"peer-focus:secondary peer-focus:dark:secondary absolute inset-s-2 top-2 z-10 origin-left -translate-y-4 scale-75 transform bg-background px-2 text-sm text-gray-500 duration-300 peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:scale-100 peer-focus:top-2 peer-focus:-translate-y-4 peer-focus:scale-75 peer-focus:px-2 dark:bg-background peer-focus:rtl:left-auto peer-focus:rtl:translate-x-1/4 cursor-text\",\n        className,\n      )}\n      ref={ref}\n      {...props}\n    />\n  );\n});\nFloatingLabel.displayName = \"FloatingLabel\";\n\ntype FloatingLabelInputProps = InputProps & { label?: string };\n\nconst FloatingLabelInput = React.forwardRef<\n  React.ElementRef<typeof FloatingInput>,\n  React.PropsWithoutRef<FloatingLabelInputProps>\n>(({ id, label, ...props }, ref) => {\n  return (\n    <div className=\"relative\">\n      <FloatingInput ref={ref} id={id} {...props} />\n      <FloatingLabel htmlFor={id}>{label}</FloatingLabel>\n    </div>\n  );\n});\nFloatingLabelInput.displayName = \"FloatingLabelInput\";\n\nexport { FloatingInput, FloatingLabel, FloatingLabelInput };\n",
+      "type": "registry:component",
+      "target": "components/kidow/floating-label-input.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Spectrum UI",
+    "sourceUrl": "https://ui.spectrumhq.in/docs/components/floating-label-input",
+    "author": "arihantcodes",
+    "license": "Apache-2.0",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "폼·입력"
+  ],
+  "type": "registry:component"
+}

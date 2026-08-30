@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "status-badge",
+  "title": "Status Badge",
+  "description": "상태를 색으로 알리는 배지(status badge).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/status-badge.tsx",
+      "content": "\"use client\";\n\n/**\n * Copyright (c) Spectrum UI — https://ui.spectrumhq.in\n * Licensed under the Apache License, Version 2.0.\n * https://www.apache.org/licenses/LICENSE-2.0\n *\n * 변경: import 경로를 이 레지스트리에 맞게 고쳤고, framer-motion 을\n * motion/react 로 통일했다. 그 밖의 내용은 원본과 같다.\n */\n\nimport {\n  CircleCheck,\n  CircleDashed,\n  CircleX,\n  Clock5,\n  ScanSearch,\n  TriangleAlert,\n} from \"lucide-react\";\nimport React from \"react\";\n\nconst StatusDemo = () => {\n  return (\n    <div className=\"flex flex-col items-center justify-center gap-6\">\n      <div className=\"grid grid-cols-1 md:grid-cols-2 gap-4 \">\n        <div className=\"w-40 h-[35px] flex items-center justify-center bg-orange-50 rounded-xl \">\n          <span className=\"flex items-center  text-[#EAA65D] font-semibold\">\n            <TriangleAlert className=\"w-4 h-4 mr-2\" strokeWidth={3} />\n            Pending\n          </span>\n        </div>\n        <div className=\"w-40 h-[35px] flex items-center justify-center bg-rose-50 rounded-xl \">\n          <span className=\"flex items-center  text-[#D57463] font-semibold\">\n            <CircleX className=\"w-4 h-4 mr-2\" strokeWidth={3} />\n            Failed\n          </span>\n        </div>\n      </div>\n      <div className=\"grid grid-cols-1 md:grid-cols-3 gap-4 \">\n        <div className=\"w-40 h-[35px] flex items-center justify-center bg-emerald-50 rounded-xl \">\n          <span className=\"flex items-center  text-[#57BC6C] font-semibold\">\n            <CircleCheck className=\"w-4 h-4 mr-2\" strokeWidth={3} />\n            Success\n          </span>\n        </div>\n        <div className=\"w-40 h-[35px] flex items-center justify-center bg-sky-100 rounded-xl \">\n          <span className=\"flex items-center  text-[#008AF5] font-semibold\">\n            <CircleDashed className=\"w-4 h-4 mr-2\" strokeWidth={3} />\n            In progress\n          </span>\n        </div>{\" \"}\n        <div className=\"w-40 h-[35px] flex items-center justify-center bg-yellow-50 rounded-xl \">\n          <span className=\"flex items-center  text-[#F0B13D] font-semibold\">\n            <ScanSearch className=\"w-4 h-4 mr-2\" strokeWidth={3} />\n            In review\n          </span>\n        </div>{\" \"}\n      </div>\n      <div className=\"grid grid-cols-1 md:grid-cols-2 gap-4\">\n        <div className=\"w-40 h-[35px] flex items-center justify-center bg-zinc-100 rounded-xl \">\n          <span className=\"flex items-center  text-[#777777] font-semibold\">\n            <Clock5 className=\"w-4 h-4 mr-2\" strokeWidth={3} />\n            Expired\n          </span>\n        </div>\n        <div className=\"w-40 h-[35px] flex items-center justify-center bg-violet-50 rounded-xl \">\n          <span className=\"flex items-center  text-[#6C3CF0] font-semibold\">\n            <Clock5 className=\"w-4 h-4 mr-2\" strokeWidth={3} />\n            Submited\n          </span>\n        </div>\n      </div>\n    </div>\n  );\n};\n\nexport default StatusDemo;\n",
+      "type": "registry:component",
+      "target": "components/kidow/status-badge.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Spectrum UI",
+    "sourceUrl": "https://ui.spectrumhq.in/docs/components/status-badge",
+    "author": "arihantcodes",
+    "license": "Apache-2.0",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "미디어·데이터"
+  ],
+  "type": "registry:component"
+}

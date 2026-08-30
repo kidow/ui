@@ -888,6 +888,33 @@
       }
     },
     {
+      "name": "alert-3",
+      "type": "registry:component",
+      "title": "Alert 3",
+      "description": "아이콘과 설명을 담은 알림 배너(alert, notice banner).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/alert-3.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/alert-3.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/alert-3",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "android",
       "type": "registry:component",
       "title": "Android",
@@ -1089,6 +1116,38 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-card",
+      "type": "registry:component",
+      "title": "Animated Card",
+      "description": "테두리와 배경이 함께 움직이는 카드(animated card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/animated-card/animatedcard.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-card/animatedcard.tsx"
+        },
+        {
+          "path": "registry/kidow/animated-card/animatedcarddemo.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-card/animatedcarddemo.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/animated-card",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -1675,6 +1734,60 @@
       }
     },
     {
+      "name": "animated-svg-chart",
+      "type": "registry:component",
+      "title": "Animated Svg Chart",
+      "description": "SVG 선이 그려지며 나타나는 차트(animated svg chart, line draw).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/animated-svg-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-svg-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/animated-SVG-chart",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "animated-switch",
+      "type": "registry:component",
+      "title": "Animated Switch",
+      "description": "켜고 끌 때 부드럽게 움직이는 스위치(animated switch, toggle).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/animated-switch.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-switch.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/animated-switch",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "animated-table",
       "type": "registry:component",
       "title": "Animated Table",
@@ -1732,6 +1845,35 @@
         "sourceUrl": "https://www.ui-layouts.com/components/animated-tabs",
         "author": "ui-layouts",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "animated-testimonials",
+      "type": "registry:component",
+      "title": "Animated Testimonials",
+      "description": "후기가 넘어가며 바뀌는 후기 슬라이더(animated testimonials, review carousel).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-testimonials.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-testimonials.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/animated-testimonials",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -1878,6 +2020,37 @@
       }
     },
     {
+      "name": "animated-wave-footer",
+      "type": "registry:component",
+      "title": "Animated Wave Footer",
+      "description": "물결이 일렁이는 푸터(wave footer).",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-wave-footer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-wave-footer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/animated-wave-footer",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "animation-variants",
       "type": "registry:component",
       "title": "Animation Variants",
@@ -2004,6 +2177,39 @@
         "sourceUrl": "https://kokonutui.com/docs/components/apple-activity-card",
         "author": "kokonut-labs",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "area-chart",
+      "type": "registry:component",
+      "title": "Area Chart",
+      "description": "영역 차트(area chart).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/area-chart/chart-kit.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/area-chart/chart-kit.tsx"
+        },
+        {
+          "path": "registry/kidow/area-chart/area-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/area-chart/area-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/area-chart",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -2340,6 +2546,31 @@
       }
     },
     {
+      "name": "autosize-textarea",
+      "type": "registry:component",
+      "title": "Autosize Textarea",
+      "description": "내용에 맞춰 높이가 자라는 텍스트 영역(autosize textarea, auto grow).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/autosize-textarea.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/autosize-textarea.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/autosize-textarea-dependecies",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "avatar-circles",
       "type": "registry:component",
       "title": "Avatar Circles",
@@ -2552,6 +2783,39 @@
         "sourceUrl": "https://www.kibo-ui.com/components/banner",
         "author": "haydenbleasel",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "bar-chart",
+      "type": "registry:component",
+      "title": "Bar Chart",
+      "description": "막대 차트(bar chart). recharts 기반이다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/bar-chart/chart-kit.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bar-chart/chart-kit.tsx"
+        },
+        {
+          "path": "registry/kidow/bar-chart/bar-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bar-chart/bar-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/bar-chart",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -3306,6 +3570,36 @@
       }
     },
     {
+      "name": "calendar-heatmap",
+      "type": "registry:component",
+      "title": "Calendar Heatmap",
+      "description": "날짜별 값을 색으로 보여주는 달력 히트맵(calendar heatmap, contribution graph).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/calendar-heatmap/chart-engine.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-heatmap/chart-engine.tsx"
+        },
+        {
+          "path": "registry/kidow/calendar-heatmap/calendar-heatmap.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/calendar-heatmap/calendar-heatmap.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/calendar-heatmap",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "calendar-lg-01",
       "type": "registry:component",
       "title": "Calendar Lg 01",
@@ -4001,6 +4295,39 @@
       }
     },
     {
+      "name": "candlestick-chart",
+      "type": "registry:component",
+      "title": "Candlestick Chart",
+      "description": "캔들 차트(candlestick chart, ohlc).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/candlestick-chart/chart-kit.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/candlestick-chart/chart-kit.tsx"
+        },
+        {
+          "path": "registry/kidow/candlestick-chart/candlestick-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/candlestick-chart/candlestick-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/candlestick-chart",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "candy-button",
       "type": "registry:component",
       "title": "Candy Button",
@@ -4358,6 +4685,104 @@
       }
     },
     {
+      "name": "chart-data",
+      "type": "registry:component",
+      "title": "Chart Data",
+      "description": "차트 예시 데이터 묶음(chart data). 차트와 함께 설치된다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/chart-data/chart-engine.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/chart-data/chart-engine.tsx"
+        },
+        {
+          "path": "registry/kidow/chart-data/market-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/chart-data/market-chart.tsx"
+        },
+        {
+          "path": "registry/kidow/chart-data/chart-data.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/chart-data/chart-data.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/chart-data",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "chart-kit",
+      "type": "registry:component",
+      "title": "Chart Kit",
+      "description": "Spectrum 차트들이 공유하는 기반 묶음(chart kit). 차트와 함께 설치된다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/chart-kit.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/chart-kit.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/chart-kit",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "chart-states",
+      "type": "registry:component",
+      "title": "Chart States",
+      "description": "로딩·빈 상태 등 차트 상태 표시(chart states, empty state).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/chart-states/chart-engine.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/chart-states/chart-engine.tsx"
+        },
+        {
+          "path": "registry/kidow/chart-states/cohort-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/chart-states/cohort-chart.tsx"
+        },
+        {
+          "path": "registry/kidow/chart-states/chart-states.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/chart-states/chart-states.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/chart-states",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "chat-bubble",
       "type": "registry:component",
       "title": "Pretext Chat Bubble",
@@ -4605,6 +5030,36 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "circular-navbar",
+      "type": "registry:component",
+      "title": "Circular Navbar",
+      "description": "원형으로 펼쳐지는 내비게이션(circular navbar, radial menu).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/circular-navbar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/circular-navbar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/circular-navbar",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -5257,6 +5712,36 @@
       }
     },
     {
+      "name": "cohort-chart",
+      "type": "registry:component",
+      "title": "Cohort Chart",
+      "description": "코호트 유지율 표(cohort chart, retention).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/cohort-chart/chart-engine.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cohort-chart/chart-engine.tsx"
+        },
+        {
+          "path": "registry/kidow/cohort-chart/cohort-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cohort-chart/cohort-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/cohort-chart",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "collection-surfer",
       "type": "registry:component",
       "title": "collection-surfer",
@@ -5553,6 +6038,39 @@
         "sourceUrl": "https://www.kibo-ui.com/components/comparison",
         "author": "haydenbleasel",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "composed-chart",
+      "type": "registry:component",
+      "title": "Composed Chart",
+      "description": "막대와 선을 겹친 복합 차트(composed chart, combo chart).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/composed-chart/chart-kit.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/composed-chart/chart-kit.tsx"
+        },
+        {
+          "path": "registry/kidow/composed-chart/composed-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/composed-chart/composed-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/composed-chart",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -6846,6 +7364,36 @@
       }
     },
     {
+      "name": "depth-chart",
+      "type": "registry:component",
+      "title": "Depth Chart",
+      "description": "호가 깊이 차트(depth chart, order book depth).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/depth-chart/chart-engine.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/depth-chart/chart-engine.tsx"
+        },
+        {
+          "path": "registry/kidow/depth-chart/depth-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/depth-chart/depth-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/depth-chart",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "depth-trail",
       "type": "registry:component",
       "title": "Depth Trail",
@@ -7057,6 +7605,31 @@
         "sourceUrl": "https://www.ui-layouts.com/components/directional-drawer",
         "author": "ui-layouts",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "disclose-image",
+      "type": "registry:component",
+      "title": "Disclose Image",
+      "description": "hover 하면 가려진 이미지가 드러나는 효과(disclose image, reveal on hover).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/disclose-image.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/disclose-image.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/disclose-image",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -7459,6 +8032,33 @@
       }
     },
     {
+      "name": "dual-range-slider",
+      "type": "registry:component",
+      "title": "Dual Range Slider",
+      "description": "손잡이 두 개로 범위를 고르는 슬라이더(dual range slider, 범위 선택). 라벨 위치를 지정할 수 있다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@radix-ui/react-slider"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/dual-range-slider.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dual-range-slider.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/dual-range-slider-dependecies",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "dynamic-island",
       "type": "registry:component",
       "title": "Dynamic Island",
@@ -7772,6 +8372,40 @@
       }
     },
     {
+      "name": "event-calendar",
+      "type": "registry:component",
+      "title": "Event Calendar",
+      "description": "일정이 표시되는 달력(event calendar, schedule). 월·주 보기를 지원한다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react",
+        "date-fns"
+      ],
+      "registryDependencies": [
+        "button",
+        "dialog",
+        "input",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/event-calendar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/event-calendar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/event-calendar",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "expandable",
       "type": "registry:component",
       "title": "Expandable",
@@ -7982,6 +8616,33 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "face-rating",
+      "type": "registry:component",
+      "title": "Face Rating",
+      "description": "표정으로 만족도를 고르는 평가(face rating, emoji survey).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/face-rating.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/face-rating.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/face-rating",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -8743,6 +9404,64 @@
       }
     },
     {
+      "name": "floating-label-input",
+      "type": "registry:component",
+      "title": "Floating Label Input",
+      "description": "포커스하면 라벨이 위로 떠오르는 입력창(floating label input).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "input",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/floating-label-input.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/floating-label-input.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/floating-label-input",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "floating-navbar",
+      "type": "registry:component",
+      "title": "Floating Navbar",
+      "description": "스크롤에 따라 떠오르는 내비게이션 바(floating navbar, sticky nav).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/floating-navbar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/floating-navbar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/floating-navbar",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "floating-panel",
       "type": "registry:component",
       "title": "Floating Panel",
@@ -8766,6 +9485,37 @@
         "sourceUrl": "https://www.cult-ui.com/docs/components/floating-panel",
         "author": "nolly-studio",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "floatingparticle-footer",
+      "type": "registry:component",
+      "title": "Floatingparticle Footer",
+      "description": "입자가 떠다니는 푸터(particle footer).",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "input",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/floatingparticle-footer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/floatingparticle-footer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/floatingparticle-footer",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -9059,6 +9809,34 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "follow-button",
+      "type": "registry:component",
+      "title": "Follow Button",
+      "description": "팔로우 상태가 바뀌는 버튼(follow button, subscribe).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/follow-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/follow-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/follow-button",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -10216,6 +10994,34 @@
       }
     },
     {
+      "name": "heading-with-anchor",
+      "type": "registry:component",
+      "title": "Heading With Anchor",
+      "description": "앵커 링크가 붙는 제목(heading with anchor, permalink). 문서 사이트에 쓴다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "@radix-ui/react-slot",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/heading-with-anchor.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/heading-with-anchor.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/heading-with-anchor",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "heat-mirage-reveal",
       "type": "registry:component",
       "title": "Heat Mirage Reveal",
@@ -10568,6 +11374,36 @@
       }
     },
     {
+      "name": "histogram-chart",
+      "type": "registry:component",
+      "title": "Histogram Chart",
+      "description": "분포를 보여주는 히스토그램(histogram).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/histogram-chart/chart-engine.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/histogram-chart/chart-engine.tsx"
+        },
+        {
+          "path": "registry/kidow/histogram-chart/histogram-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/histogram-chart/histogram-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/histogram-chart",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "hold-button",
       "type": "registry:component",
       "title": "Hold Button",
@@ -10598,6 +11434,34 @@
       }
     },
     {
+      "name": "hold-to-confirm",
+      "type": "registry:component",
+      "title": "Hold To Confirm",
+      "description": "길게 눌러 확정하는 버튼(hold to confirm, press and hold).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/hold-to-confirm.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hold-to-confirm.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/hold-to-confirm",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "holo-button",
       "type": "registry:component",
       "title": "Holo Button",
@@ -10617,6 +11481,34 @@
         "sourceUrl": "https://lightswind.com/components/holo-button",
         "author": "codewithMUHILAN",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "holographic",
+      "type": "registry:component",
+      "title": "Holographic",
+      "description": "홀로그램처럼 각도에 따라 색이 변하는 표면(holographic card, iridescent).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "next-themes",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/holographic.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/holographic.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/holographic",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -10799,6 +11691,37 @@
         "sourceUrl": "https://www.ui-layouts.com/components/hovercard1",
         "author": "ui-layouts",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "http-status-code",
+      "type": "registry:component",
+      "title": "Http Status Code",
+      "description": "HTTP 상태 코드를 설명과 함께 보여주는 표(http status code, 상태 코드).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "card",
+        "input",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/http-status-code.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/http-status-code.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/http-status-code",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -11065,6 +11988,34 @@
       }
     },
     {
+      "name": "image-preview",
+      "type": "registry:component",
+      "title": "Image Preview",
+      "description": "이미지를 확대해 보는 미리보기(image preview, lightbox). 확대·이동을 지원한다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "@radix-ui/react-dialog"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/image-preview.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/image-preview.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/image-preview-dependencies",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "image-reveal",
       "type": "registry:component",
       "title": "Image Reveal",
@@ -11326,6 +12277,36 @@
       }
     },
     {
+      "name": "indicator-chart",
+      "type": "registry:component",
+      "title": "Indicator Chart",
+      "description": "보조지표를 겹쳐 그리는 차트(indicator chart, technical indicator).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/indicator-chart/chart-engine.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/indicator-chart/chart-engine.tsx"
+        },
+        {
+          "path": "registry/kidow/indicator-chart/indicator-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/indicator-chart/indicator-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/indicator-chart",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "infinite-drift",
       "type": "registry:component",
       "title": "Infinite Drift",
@@ -11398,6 +12379,31 @@
       }
     },
     {
+      "name": "infinite-scroll",
+      "type": "registry:component",
+      "title": "Infinite Scroll",
+      "description": "끝에 닿으면 다음을 불러오는 무한 스크롤(infinite scroll, load more).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/infinite-scroll.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/infinite-scroll.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/infinite-scroll-dependecies",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "infinite-slider",
       "type": "registry:component",
       "title": "Infinite Slider",
@@ -11447,6 +12453,91 @@
         "sourceUrl": "https://www.ui-layouts.com/components/infintyband",
         "author": "ui-layouts",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "ink",
+      "type": "registry:component",
+      "title": "Ink",
+      "description": "잉크가 번지듯 나타나는 텍스트(ink text, bleed effect).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/ink.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ink.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/ink",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "inline-code",
+      "type": "registry:component",
+      "title": "Inline Code",
+      "description": "문장 안에 넣는 코드 조각(inline code).",
+      "categories": [
+        "코드·터미널"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/inline-code.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/inline-code.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/inline-code",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "input-model",
+      "type": "registry:component",
+      "title": "Input Model",
+      "description": "AI 모델을 고르며 입력하는 프롬프트 창(model input, ai prompt).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "input",
+        "label",
+        "select",
+        "button",
+        "tab",
+        "avatar",
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/input-model.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/input-model.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/input-model",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -11942,6 +13033,69 @@
       }
     },
     {
+      "name": "kanbanboard",
+      "type": "registry:component",
+      "title": "Kanbanboard",
+      "description": "끌어서 옮기는 칸반 보드(kanban board, task board).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "next-themes",
+        "motion"
+      ],
+      "registryDependencies": [
+        "card",
+        "button",
+        "select",
+        "input",
+        "label",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/kanbanboard.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/kanbanboard.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/kanbanboard",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "kbd-key",
+      "type": "registry:component",
+      "title": "Kbd Key",
+      "description": "키보드 키 모양 표시(kbd, keyboard key).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/kbd-key.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/kbd-key.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/kbd-key",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "keyboard-shortcut",
       "type": "registry:component",
       "title": "Keyboard Shortcuts",
@@ -12374,6 +13528,39 @@
         "sourceUrl": "https://www.badtz-ui.com/docs/components/like-button",
         "author": "badtzx0",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "line-chart",
+      "type": "registry:component",
+      "title": "Line Chart",
+      "description": "선 차트(line chart).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/line-chart/chart-kit.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/line-chart/chart-kit.tsx"
+        },
+        {
+          "path": "registry/kidow/line-chart/line-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/line-chart/line-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/line-chart",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -13253,6 +14440,35 @@
       }
     },
     {
+      "name": "loading-button",
+      "type": "registry:component",
+      "title": "Loading Button",
+      "description": "누르면 스피너로 바뀌는 로딩 버튼(loading button, submit button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "@radix-ui/react-slot",
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/loading-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/loading-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/loading-button-dependencies",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "loading-carousel",
       "type": "registry:component",
       "title": "Loading Carousel",
@@ -13312,6 +14528,35 @@
         "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "login-card",
+      "type": "registry:component",
+      "title": "Login Card",
+      "description": "로그인 카드(login card, sign in form).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "next-themes",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/login-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/login-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/login-card",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -13842,6 +15087,66 @@
         "sourceUrl": "https://mapcn.vercel.app/docs/components/map",
         "author": "AnmolSaini16",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "market-chart",
+      "type": "registry:component",
+      "title": "Market Chart",
+      "description": "시세 차트(market chart, stock chart).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/market-chart/chart-engine.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/market-chart/chart-engine.tsx"
+        },
+        {
+          "path": "registry/kidow/market-chart/market-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/market-chart/market-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/market-chart",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "market-heatmap",
+      "type": "registry:component",
+      "title": "Market Heatmap",
+      "description": "등락을 색으로 보여주는 시장 히트맵(market heatmap).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/market-heatmap/chart-engine.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/market-heatmap/chart-engine.tsx"
+        },
+        {
+          "path": "registry/kidow/market-heatmap/market-heatmap.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/market-heatmap/market-heatmap.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/market-heatmap",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -14496,6 +15801,33 @@
       }
     },
     {
+      "name": "morph-button",
+      "type": "registry:component",
+      "title": "Morph Button",
+      "description": "누르면 형태가 변하는 버튼(morph button, shape shift).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/morph-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/morph-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/morph-button",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "morph-surface",
       "type": "registry:component",
       "title": "Morph Surface",
@@ -14943,6 +16275,37 @@
       }
     },
     {
+      "name": "multiple-selector",
+      "type": "registry:component",
+      "title": "Multiple Selector",
+      "description": "검색하며 여러 값을 고르는 선택기(multiple selector, multi select, 다중 선택).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "cmdk",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "command"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/multiple-selector.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/multiple-selector.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/multiple-selector-dependencies",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "music-player",
       "type": "registry:component",
       "title": "Music Player",
@@ -15260,6 +16623,33 @@
       }
     },
     {
+      "name": "notification-bell",
+      "type": "registry:component",
+      "title": "Notification Bell",
+      "description": "읽지 않은 수를 보여주는 알림 종(notification bell, badge count).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/notification-bell.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/notification-bell.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/notification-bell",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "npm-badge",
       "type": "registry:component",
       "title": "npm Badge",
@@ -15448,6 +16838,38 @@
       }
     },
     {
+      "name": "orbital-letters",
+      "type": "registry:component",
+      "title": "Orbital Letters",
+      "description": "글자가 궤도를 도는 텍스트(orbital letters, circular text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/orbital-letters/orbital-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/orbital-letters/orbital-text.tsx"
+        },
+        {
+          "path": "registry/kidow/orbital-letters/orbital-char.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/orbital-letters/orbital-char.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/orbital-letters",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "orbiting-circles",
       "type": "registry:component",
       "title": "Orbiting Circles",
@@ -15483,6 +16905,36 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "order-book",
+      "type": "registry:component",
+      "title": "Order Book",
+      "description": "매수·매도 호가창(order book, 호가).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/order-book/chart-engine.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/order-book/chart-engine.tsx"
+        },
+        {
+          "path": "registry/kidow/order-book/order-book.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/order-book/order-book.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/order-book",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -15639,6 +17091,34 @@
         "sourceUrl": "https://www.ui-layouts.com/components/pass-strengthindicator",
         "author": "ui-layouts",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "password-strength",
+      "type": "registry:component",
+      "title": "Password Strength",
+      "description": "비밀번호 강도를 보여주는 입력(password strength meter).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/password-strength.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/password-strength.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/password-strength",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -15877,6 +17357,39 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "pie-chart",
+      "type": "registry:component",
+      "title": "Pie Chart",
+      "description": "원형 차트(pie chart, donut).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/pie-chart/chart-kit.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pie-chart/chart-kit.tsx"
+        },
+        {
+          "path": "registry/kidow/pie-chart/pie-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pie-chart/pie-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/pie-chart",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -16296,6 +17809,36 @@
       }
     },
     {
+      "name": "portfolio-chart",
+      "type": "registry:component",
+      "title": "Portfolio Chart",
+      "description": "포트폴리오 구성 차트(portfolio chart, allocation).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/portfolio-chart/chart-engine.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/portfolio-chart/chart-engine.tsx"
+        },
+        {
+          "path": "registry/kidow/portfolio-chart/portfolio-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/portfolio-chart/portfolio-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/portfolio-chart",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "pretext",
       "type": "registry:component",
       "title": "Pretext Hooks",
@@ -16319,6 +17862,39 @@
         "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "price-chart",
+      "type": "registry:component",
+      "title": "Price Chart",
+      "description": "가격 추이 차트(price chart).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/price-chart/chart-kit.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/price-chart/chart-kit.tsx"
+        },
+        {
+          "path": "registry/kidow/price-chart/price-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/price-chart/price-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/price-chart",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -16397,6 +17973,38 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "product-card",
+      "type": "registry:component",
+      "title": "Product Card",
+      "description": "상품 카드(product card, ecommerce card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "next-themes"
+      ],
+      "registryDependencies": [
+        "button",
+        "select",
+        "card"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/product-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/product-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/product-card",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -16802,6 +18410,33 @@
       }
     },
     {
+      "name": "progress-with-value",
+      "type": "registry:component",
+      "title": "Progress With Value",
+      "description": "값을 함께 보여주는 진행 막대(progress with value, progress bar).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@radix-ui/react-progress"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/progress-with-value.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/progress-with-value.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/progress-with-value-dependencies",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "progressive-blur",
       "type": "registry:component",
       "title": "Progressive Blur",
@@ -16973,6 +18608,34 @@
       }
     },
     {
+      "name": "quantity-stepper",
+      "type": "registry:component",
+      "title": "Quantity Stepper",
+      "description": "수량을 더하고 빼는 스테퍼(quantity stepper, number stepper).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/quantity-stepper.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/quantity-stepper.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/quantity-stepper",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "quantum-field",
       "type": "registry:component",
       "title": "Quantum Field",
@@ -16996,6 +18659,72 @@
         "sourceUrl": "https://lightswind.com/components/quantum-field",
         "author": "codewithMUHILAN",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "radar-chart",
+      "type": "registry:component",
+      "title": "Radar Chart",
+      "description": "레이더 차트(radar chart, spider chart).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/radar-chart/chart-kit.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/radar-chart/chart-kit.tsx"
+        },
+        {
+          "path": "registry/kidow/radar-chart/radar-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/radar-chart/radar-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/radar-chart",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "radial-chart",
+      "type": "registry:component",
+      "title": "Radial Chart",
+      "description": "방사형 게이지 차트(radial chart, gauge).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/radial-chart/chart-kit.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/radial-chart/chart-kit.tsx"
+        },
+        {
+          "path": "registry/kidow/radial-chart/radial-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/radial-chart/radial-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/radial-chart",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -17209,6 +18938,34 @@
         "sourceUrl": "https://lightswind.com/components/rays-background",
         "author": "codewithMUHILAN",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "reaction-bar",
+      "type": "registry:component",
+      "title": "Reaction Bar",
+      "description": "이모지로 반응을 남기는 바(reaction bar, emoji reactions).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/reaction-bar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/reaction-bar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/reaction-bar",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -18296,6 +20053,33 @@
       }
     },
     {
+      "name": "scratch-card",
+      "type": "registry:component",
+      "title": "Scratch Card",
+      "description": "긁어서 내용을 드러내는 스크래치 카드(scratch card, scratch to reveal).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/scratch-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scratch-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/scratch-card",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "scroll-animation",
       "type": "registry:component",
       "title": "Scroll Animation",
@@ -18925,6 +20709,34 @@
       }
     },
     {
+      "name": "share-button",
+      "type": "registry:component",
+      "title": "Share Button",
+      "description": "공유 옵션이 펼쳐지는 버튼(share button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/share-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/share-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/share-button",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "shared-tooltip-avatars",
       "type": "registry:component",
       "title": "Shared Tooltip Avatars",
@@ -19374,6 +21186,37 @@
       }
     },
     {
+      "name": "sidebar-navbar",
+      "type": "registry:component",
+      "title": "Sidebar Navbar",
+      "description": "접었다 펴는 사이드바 내비게이션(sidebar navbar, collapsible sidebar).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "button",
+        "collapsible",
+        "scroll-area"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sidebar-navbar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sidebar-navbar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/sidebar-navbar",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "signature",
       "type": "registry:component",
       "title": "Signature",
@@ -19453,6 +21296,33 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "skeleton-card",
+      "type": "registry:component",
+      "title": "Skeleton Card",
+      "description": "카드 모양 스켈레톤(skeleton card, loading placeholder).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "skeleton"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/skeleton-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/skeleton-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/skeleton-card",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -20093,6 +21963,39 @@
       }
     },
     {
+      "name": "sparkline-chart",
+      "type": "registry:component",
+      "title": "Sparkline Chart",
+      "description": "문장 옆에 넣는 작은 추세선(sparkline).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "recharts",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/sparkline-chart/chart-kit.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sparkline-chart/chart-kit.tsx"
+        },
+        {
+          "path": "registry/kidow/sparkline-chart/sparkline-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sparkline-chart/sparkline-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/sparkline-chart",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "special-offer",
       "type": "registry:component",
       "title": "Special Offer",
@@ -20167,6 +22070,63 @@
         "sourceUrl": "https://lightswind.com/components/SpectrumLoader",
         "author": "codewithMUHILAN",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "spectrum-responsive-modal",
+      "type": "registry:component",
+      "title": "Spectrum Responsive Modal",
+      "description": "데스크톱은 다이얼로그, 모바일은 드로어로 바뀌는 대화상자(responsive modal, adaptive dialog).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/spectrum-responsive-modal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/spectrum-responsive-modal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/responsive-modal-dependencies",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "spinner",
+      "type": "registry:component",
+      "title": "Spinner",
+      "description": "로딩 스피너(spinner, loading indicator). 크기 변형이 있다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/spinner.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/spinner.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/spinner-dependencies",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -20854,6 +22814,33 @@
       }
     },
     {
+      "name": "star-rating",
+      "type": "registry:component",
+      "title": "Star Rating",
+      "description": "별점 입력(star rating, 별점).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/star-rating.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/star-rating.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/star-rating",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "stardust-button",
       "type": "registry:component",
       "title": "Stardust Button",
@@ -20873,6 +22860,36 @@
         "sourceUrl": "https://lightswind.com/components/stardust-button",
         "author": "codewithMUHILAN",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "stat-cards",
+      "type": "registry:component",
+      "title": "Stat Cards",
+      "description": "지표를 카드로 나열한 통계 묶음(stat cards, kpi cards).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/stat-cards/chart-engine.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stat-cards/chart-engine.tsx"
+        },
+        {
+          "path": "registry/kidow/stat-cards/stat-cards.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stat-cards/stat-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/stat-cards",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -20926,6 +22943,33 @@
         "sourceUrl": "https://www.kibo-ui.com/components/status",
         "author": "haydenbleasel",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "status-badge",
+      "type": "registry:component",
+      "title": "Status Badge",
+      "description": "상태를 색으로 알리는 배지(status badge).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/status-badge.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/status-badge.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/status-badge",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -21631,6 +23675,34 @@
       }
     },
     {
+      "name": "swipe-to-delete",
+      "type": "registry:component",
+      "title": "Swipe To Delete",
+      "description": "밀어서 지우는 목록 항목(swipe to delete, swipe action).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/swipe-to-delete.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/swipe-to-delete.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/swipe-to-delete",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "switch-button",
       "type": "registry:component",
       "title": "Switch Button",
@@ -21767,6 +23839,33 @@
         "sourceUrl": "https://www.ui-layouts.com/components/tags-input",
         "author": "ui-layouts",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "task-checkbox",
+      "type": "registry:component",
+      "title": "Task Checkbox",
+      "description": "체크하면 줄이 그어지는 할 일 체크박스(task checkbox, todo).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/task-checkbox.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/task-checkbox.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/task-checkbox",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -21976,6 +24075,36 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "testimonials",
+      "type": "registry:component",
+      "title": "Testimonials",
+      "description": "후기 목록(testimonials, reviews).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "card"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/testimonials.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/testimonials.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/testimonials",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -23626,6 +25755,33 @@
         "sourceUrl": "https://lightswind.com/components/typing-text",
         "author": "codewithMUHILAN",
         "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "undo-pill",
+      "type": "registry:component",
+      "title": "Undo Pill",
+      "description": "되돌리기를 제안하는 알약 알림(undo pill, undo toast).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/undo-pill.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/undo-pill.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Spectrum UI",
+        "sourceUrl": "https://ui.spectrumhq.in/docs/components/undo-pill",
+        "author": "arihantcodes",
+        "license": "Apache-2.0",
         "retrievedAt": "2026-08-30"
       }
     },

@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "sidebar-navbar",
+  "title": "Sidebar Navbar",
+  "description": "접었다 펴는 사이드바 내비게이션(sidebar navbar, collapsible sidebar).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button",
+    "collapsible",
+    "scroll-area"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/sidebar-navbar.tsx",
+      "content": "\"use client\";\n\n/**\n * Copyright (c) Spectrum UI — https://ui.spectrumhq.in\n * Licensed under the Apache License, Version 2.0.\n * https://www.apache.org/licenses/LICENSE-2.0\n *\n * 변경: import 경로를 이 레지스트리에 맞게 고쳤고, framer-motion 을\n * motion/react 로 통일했다. 그 밖의 내용은 원본과 같다.\n */\n\nimport React, { useState } from \"react\";\nimport { Button } from \"@/components/ui/button\";\nimport {\n  Collapsible,\n  CollapsibleContent,\n  CollapsibleTrigger,\n} from \"@/components/ui/collapsible\";\nimport { ScrollArea } from \"@/components/ui/scroll-area\";\nimport {\n  ChevronRight,\n  Home,\n  Menu,\n  Package,\n  Settings,\n  Users,\n} from \"lucide-react\";\n\nexport default function Sidenavbar() {\n  const [isOpen, setIsOpen] = useState(false);\n\n  return (\n    //add h-screen to the div class name to make the sidebar full height\n    <div className=\"flex \">\n      <aside\n        className={`${\n          isOpen ? \"w-64\" : \"w-16\"\n        } flex flex-col border-r transition-all duration-300 ease-in-out`}\n      >\n        <div className=\"flex h-16 items-center justify-between border-b px-4\">\n          <span\n            className={`${isOpen ? \"block\" : \"hidden\"} text-lg font-semibold`}\n          >\n            Menu\n          </span>\n          <Button\n            variant=\"ghost\"\n            size=\"icon\"\n            onClick={() => setIsOpen(!isOpen)}\n          >\n            <Menu className=\"h-6 w-6\" />\n          </Button>\n        </div>\n        <ScrollArea className=\"flex-1\">\n          <nav className=\"p-2\">\n            <Button variant=\"ghost\" className=\"w-full justify-start\">\n              <Home className=\"mr-2 h-4 w-4\" />\n              {isOpen && \"Home\"}\n            </Button>\n            <Collapsible>\n              <CollapsibleTrigger asChild>\n                <Button variant=\"ghost\" className=\"w-full justify-start\">\n                  <Package className=\"mr-2 h-4 w-4\" />\n                  {isOpen && (\n                    <>\n                      Products\n                      <ChevronRight className=\"ml-auto h-4 w-4\" />\n                    </>\n                  )}\n                </Button>\n              </CollapsibleTrigger>\n              <CollapsibleContent className=\"ml-4 space-y-1\">\n                <Button\n                  variant=\"ghost\"\n                  size=\"sm\"\n                  className=\"w-full justify-start\"\n                >\n                  Category 1\n                </Button>\n                <Button\n                  variant=\"ghost\"\n                  size=\"sm\"\n                  className=\"w-full justify-start\"\n                >\n                  Category 2\n                </Button>\n                <Button\n                  variant=\"ghost\"\n                  size=\"sm\"\n                  className=\"w-full justify-start\"\n                >\n                  Category 3\n                </Button>\n              </CollapsibleContent>\n            </Collapsible>\n            <Button variant=\"ghost\" className=\"w-full justify-start\">\n              <Users className=\"mr-2 h-4 w-4\" />\n              {isOpen && \"Users\"}\n            </Button>\n            <Button variant=\"ghost\" className=\"w-full justify-start\">\n              <Settings className=\"mr-2 h-4 w-4\" />\n              {isOpen && \"Settings\"}\n            </Button>\n          </nav>\n        </ScrollArea>\n      </aside>\n      <main className=\"flex-1 p-6\">\n        <h1 className=\"text-2xl font-bold\">Main Content Area</h1>\n      </main>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/sidebar-navbar.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Spectrum UI",
+    "sourceUrl": "https://ui.spectrumhq.in/docs/components/sidebar-navbar",
+    "author": "arihantcodes",
+    "license": "Apache-2.0",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

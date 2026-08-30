@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "alert-3",
+  "title": "Alert 3",
+  "description": "아이콘과 설명을 담은 알림 배너(alert, notice banner).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/alert-3.tsx",
+      "content": "\"use client\";\n\n/**\n * Copyright (c) Spectrum UI — https://ui.spectrumhq.in\n * Licensed under the Apache License, Version 2.0.\n * https://www.apache.org/licenses/LICENSE-2.0\n *\n * 변경: import 경로를 이 레지스트리에 맞게 고쳤고, framer-motion 을\n * motion/react 로 통일했다. 그 밖의 내용은 원본과 같다.\n */\n\nimport { CheckCircle2 } from \"lucide-react\";\nimport { motion } from \"motion/react\";\n\nexport default function Alert03() {\n  return (\n    <motion.div\n      initial={{ opacity: 0, y: -8 }}\n      animate={{ opacity: 1, y: 0 }}\n      className=\"w-full max-w-sm mx-auto\"\n    >\n      <div className=\"relative overflow-hidden rounded-lg border border-emerald-200/30 bg-emerald-50/50 dark:bg-emerald-950/20 dark:border-emerald-800/30 p-4 shadow-xs\">\n        <div className=\"flex items-center gap-3\">\n          <motion.div\n            initial={{ scale: 0.5 }}\n            animate={{ scale: 1 }}\n            transition={{\n              type: \"spring\",\n              stiffness: 300,\n              damping: 20,\n            }}\n          >\n            <div className=\"rounded-full bg-emerald-100 dark:bg-emerald-900/50 p-1\">\n              <CheckCircle2 className=\"h-4 w-4 text-emerald-600 dark:text-emerald-400\" />\n            </div>\n          </motion.div>\n          <motion.p\n            initial={{ opacity: 0, x: 10 }}\n            animate={{ opacity: 1, x: 0 }}\n            transition={{ delay: 0.1 }}\n            className=\"text-sm font-medium text-emerald-800 dark:text-emerald-200\"\n          >\n            Saved to database\n          </motion.p>\n        </div>\n\n        <motion.div\n          initial={{ x: \"-100%\" }}\n          animate={{ x: \"100%\" }}\n          transition={{ duration: 1, delay: 0.2 }}\n          className=\"absolute inset-0 z-10 pointer-events-none bg-linear-to-r from-transparent via-white/20 to-transparent\"\n        />\n      </div>\n    </motion.div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/alert-3.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Spectrum UI",
+    "sourceUrl": "https://ui.spectrumhq.in/docs/components/alert-3",
+    "author": "arihantcodes",
+    "license": "Apache-2.0",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "미디어·데이터"
+  ],
+  "type": "registry:component"
+}

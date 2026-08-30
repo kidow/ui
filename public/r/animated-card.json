@@ -1,0 +1,35 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animated-card",
+  "title": "Animated Card",
+  "description": "테두리와 배경이 함께 움직이는 카드(animated card).",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/animated-card/animatedcard.tsx",
+      "content": "\"use client\";\n\n/**\n * Copyright (c) Spectrum UI — https://ui.spectrumhq.in\n * Licensed under the Apache License, Version 2.0.\n * https://www.apache.org/licenses/LICENSE-2.0\n *\n * 변경: import 경로를 이 레지스트리에 맞게 고쳤고, framer-motion 을\n * motion/react 로 통일했다. 그 밖의 내용은 원본과 같다.\n */\n\nimport Image, { StaticImageData } from \"next/image\";\n\nconst AnimatedCard = ({\n  imgSrc,\n  title,\n\n  aboutProduct,\n}: {\n  imgSrc: StaticImageData | string;\n  title: string;\n\n  aboutProduct: string;\n}) => {\n  return (\n    <div className=\"md:w-80 border rounded-2xl shadow-lg border-white dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900 overflow-hidden transition-transform duration-300 hover:scale-105\">\n      <div className=\"p-5 flex flex-col items-center\">\n        <Image\n          className=\"w-32 h-32 object-contain mb-4\"\n          src={imgSrc}\n          alt={`${title} logo`}\n          width={128}\n          height={128}\n        />\n        <div className=\"text-center space-y-1\">\n          <div className=\"text-2xl font-bold tracking-tight text-foreground\">{title}</div>\n\n          <p className=\"text-sm text-muted-foreground mt-2\">{aboutProduct}</p>\n        </div>\n      </div>\n    </div>\n  );\n};\n\nexport default AnimatedCard;\n",
+      "type": "registry:component",
+      "target": "components/kidow/animated-card/animatedcard.tsx"
+    },
+    {
+      "path": "registry/kidow/animated-card/animatedcarddemo.tsx",
+      "content": "\"use client\";\n\n/**\n * Copyright (c) Spectrum UI — https://ui.spectrumhq.in\n * Licensed under the Apache License, Version 2.0.\n * https://www.apache.org/licenses/LICENSE-2.0\n *\n * 변경: import 경로를 이 레지스트리에 맞게 고쳤고, framer-motion 을\n * motion/react 로 통일했다. 그 밖의 내용은 원본과 같다.\n */\n\nimport AnimatedCard from './animatedcard';\nimport { easeInOut, motion } from \"motion/react\";\nimport { useState } from 'react';\n\n\nconst tools = [\n  {\n    imgSrc: '/tailwind.svg',\n    title: 'Tailwind CSS',\n\n    aboutProduct: 'A utility-first CSS framework for rapidly building custom UIs.',\n  },\n  {\n    imgSrc: '/nextjs.svg',\n    title: 'Next.js',\n\n    aboutProduct:\n      'A React framework for production with server-side rendering and static site generation.',\n  },\n  {\n    imgSrc: '/shadcn.svg',\n    title: 'Shadcn UI',\n\n    aboutProduct: 'Beautiful, accessible components built using Radix UI and Tailwind CSS.',\n  },\n  {\n    imgSrc: 'aceternity.svg',\n    title: 'Aceternity UI',\n\n    aboutProduct: 'Beautiful, accessible components built using Shadcn UI and Tailwind CSS.',\n  },\n];\n\nexport default function AnimatedCardDemo() {\n  const [touchComponent, setTouchComponent] = useState(false);\n\n  const rotateDegree = [-20, -10, 0, 20];\n  const xAxis = [-300, -50, 240, 330];\n  const yAxis = [-60, -120, -140, -100];\n  const initialRotation = [0, 6, 12, 17];\n  const zIndex = [40, 30, 20, 10];\n\n  return (\n    <div\n      className=\"hidden md:flex justify-center min-h-screen items-center\"\n      onClick={() => setTouchComponent(!touchComponent)}\n    >\n      {tools.map((tool, ind) => (\n        <motion.div\n          key={ind}\n          initial={{ x: 0, y: 0 }}\n          animate={\n            touchComponent\n              ? { x: xAxis[ind], y: yAxis[ind], rotate: rotateDegree[ind] }\n              : { x: 0, y: 0 }\n          }\n          transition={{ ease: easeInOut }}\n          style={{\n            zIndex: zIndex[ind],\n            rotate: initialRotation[ind],\n          }}\n          className=\"absolute flex justify-center items-center \"\n        >\n          <AnimatedCard imgSrc={tool.imgSrc} title={tool.title} aboutProduct={tool.aboutProduct} />\n        </motion.div>\n      ))}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/animated-card/animatedcarddemo.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Spectrum UI",
+    "sourceUrl": "https://ui.spectrumhq.in/docs/components/animated-card",
+    "author": "arihantcodes",
+    "license": "Apache-2.0",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "카드·테두리"
+  ],
+  "type": "registry:component"
+}

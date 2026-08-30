@@ -1,0 +1,33 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "floatingparticle-footer",
+  "title": "Floatingparticle Footer",
+  "description": "입자가 떠다니는 푸터(particle footer).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "button",
+    "input",
+    "label"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/floatingparticle-footer.tsx",
+      "content": "\"use client\";\n\n/**\n * Copyright (c) Spectrum UI — https://ui.spectrumhq.in\n * Licensed under the Apache License, Version 2.0.\n * https://www.apache.org/licenses/LICENSE-2.0\n *\n * 변경: import 경로를 이 레지스트리에 맞게 고쳤고, framer-motion 을\n * motion/react 로 통일했다. 그 밖의 내용은 원본과 같다.\n */\n\nimport React from \"react\";\nimport { Button } from \"@/components/ui/button\";\nimport { Input } from \"@/components/ui/input\";\nimport { Label } from \"@/components/ui/label\";\nimport { AtSign, Camera, Send, Share2 } from \"lucide-react\";\n\nexport default function GradientFooter() {\n  return (\n    <footer className=\"relative py-12 overflow-hidden border-t bg-background text-foreground\">\n      <div\n        aria-hidden\n        className=\"pointer-events-none absolute top-0 left-1/2 -translate-x-1/2\n          w-[600px] h-[300px] rounded-full blur-3xl\n          bg-linear-to-b from-primary/6 to-transparent\"\n      />\n      <div className=\"container relative z-10 mx-auto px-4 md:px-6\">\n        <div className=\"grid gap-8 sm:grid-cols-2 lg:grid-cols-4\">\n          <div className=\"space-y-4\">\n            <h2 className=\"text-2xl font-bold\">Stay Connected</h2>\n            <form className=\"space-y-2\">\n              <div className=\"space-y-1\">\n                <Label htmlFor=\"email\">Email</Label>\n                <Input\n                  id=\"email\"\n                  placeholder=\"Enter your email\"\n                  type=\"email\"\n                />\n              </div>\n              <Button type=\"submit\" className=\"w-full\">\n                Subscribe\n              </Button>\n            </form>\n          </div>\n          <div>\n            <h3 className=\"mb-4 text-lg font-semibold\">Quick Links</h3>\n            <nav className=\"space-y-2 text-muted-foreground\">\n              <a href=\"#\" className=\"block transition-colors hover:text-foreground\">\n                Home\n              </a>\n              <a href=\"#\" className=\"block transition-colors hover:text-foreground\">\n                About Us\n              </a>\n              <a href=\"#\" className=\"block transition-colors hover:text-foreground\">\n                Services\n              </a>\n              <a href=\"#\" className=\"block transition-colors hover:text-foreground\">\n                Products\n              </a>\n              <a href=\"#\" className=\"block transition-colors hover:text-foreground\">\n                Contact\n              </a>\n            </nav>\n          </div>\n          <div>\n            <h3 className=\"mb-4 text-lg font-semibold\">Contact Us</h3>\n            <address className=\"space-y-2 not-italic text-muted-foreground\">\n              <p>123 Innovation Street</p>\n              <p>Tech City, TC 12345</p>\n              <p>Phone: (123) 456-7890</p>\n              <p>Email: hello@example.com</p>\n            </address>\n          </div>\n          <div>\n            <h3 className=\"mb-4 text-lg font-semibold\">Follow Us</h3>\n            <div className=\"flex space-x-4\">\n              <Button\n                variant=\"ghost\"\n                size=\"icon\"\n                className=\"rounded-full text-muted-foreground hover:text-foreground\"\n              >\n                <Send className=\"h-4 w-4\" />\n                <span className=\"sr-only\">Facebook</span>\n              </Button>\n              <Button\n                variant=\"ghost\"\n                size=\"icon\"\n                className=\"rounded-full text-muted-foreground hover:text-foreground\"\n              >\n                <Share2 className=\"h-4 w-4\" />\n                <span className=\"sr-only\">Twitter</span>\n              </Button>\n              <Button\n                variant=\"ghost\"\n                size=\"icon\"\n                className=\"rounded-full text-muted-foreground hover:text-foreground\"\n              >\n                <Camera className=\"h-4 w-4\" />\n                <span className=\"sr-only\">Instagram</span>\n              </Button>\n              <Button\n                variant=\"ghost\"\n                size=\"icon\"\n                className=\"rounded-full text-muted-foreground hover:text-foreground\"\n              >\n                <AtSign className=\"h-4 w-4\" />\n                <span className=\"sr-only\">LinkedIn</span>\n              </Button>\n            </div>\n          </div>\n        </div>\n        <div className=\"mt-12 border-t pt-8 text-center\">\n          <p className=\"text-sm text-muted-foreground\">\n            &copy; 2024 Your Company. All rights reserved.\n          </p>\n        </div>\n      </div>\n    </footer>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/floatingparticle-footer.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Spectrum UI",
+    "sourceUrl": "https://ui.spectrumhq.in/docs/components/floatingparticle-footer",
+    "author": "arihantcodes",
+    "license": "Apache-2.0",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "마케팅 섹션"
+  ],
+  "type": "registry:component"
+}
