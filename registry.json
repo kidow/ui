@@ -391,6 +391,31 @@
       }
     },
     {
+      "name": "accordion-loader",
+      "type": "registry:component",
+      "title": "Accordion Loader",
+      "description": "막대가 아코디언처럼 접혔다 펴지는 로더(accordion loader).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/accordion-loader.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/accordion-loader.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/accordion-loader",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "action-search-bar",
       "type": "registry:component",
       "title": "Action Search Bar",
@@ -1152,6 +1177,33 @@
         "sourceUrl": "https://ui.spectrumhq.in/docs/components/alert-3",
         "author": "arihantcodes",
         "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "analyzing-image",
+      "type": "registry:component",
+      "title": "Analyzing Image",
+      "description": "이미지를 훑어 분석하는 듯한 표시(analyzing image, ai scan).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/analyzing-image.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/analyzing-image.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/analyzing-image",
+        "author": "turbostarter",
+        "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -2597,6 +2649,31 @@
       }
     },
     {
+      "name": "arc",
+      "type": "registry:component",
+      "title": "Arc",
+      "description": "호 하나가 도는 스피너(arc spinner).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/arc.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/arc.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/arc",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "area-chart",
       "type": "registry:component",
       "title": "Area Chart",
@@ -3259,6 +3336,31 @@
       }
     },
     {
+      "name": "bars",
+      "type": "registry:component",
+      "title": "Bars",
+      "description": "막대가 차례로 오르내리는 로더(bars loader, equalizer).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/bars.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bars.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/bars",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "bars-spinner",
       "type": "registry:component",
       "title": "Bars Spinner",
@@ -3676,6 +3778,33 @@
       }
     },
     {
+      "name": "bobbing-dots",
+      "type": "registry:component",
+      "title": "Bobbing Dots",
+      "description": "점이 위아래로 까딱이는 표시(bobbing dots).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/bobbing-dots.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bobbing-dots.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/bobbing-dots",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "border-beam",
       "type": "registry:component",
       "title": "Border Beam",
@@ -3912,6 +4041,31 @@
         "source": "beui",
         "sourceUrl": "https://beui.dev/components/bounce-sidebar",
         "author": "starc007",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "bouncing-dots",
+      "type": "registry:component",
+      "title": "Bouncing Dots",
+      "description": "점이 튀어오르는 표시(bouncing dots).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/bouncing-dots.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bouncing-dots.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/bouncing-dots",
+        "author": "turbostarter",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -6200,6 +6354,31 @@
       }
     },
     {
+      "name": "classic",
+      "type": "registry:component",
+      "title": "Classic",
+      "description": "고전적인 막대 12개 스피너(classic spinner, throbber).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/classic.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/classic.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/classic",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "clerk-otp",
       "type": "registry:component",
       "title": "Clerk OTP",
@@ -6250,6 +6429,31 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "clock-ring",
+      "type": "registry:component",
+      "title": "Clock Ring",
+      "description": "시곗바늘처럼 채워지는 고리(clock ring, progress ring).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/clock-ring.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/clock-ring.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/clock-ring",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -7019,6 +7223,31 @@
       }
     },
     {
+      "name": "comet-spinner",
+      "type": "registry:component",
+      "title": "Comet Spinner",
+      "description": "꼬리를 끌며 도는 혜성 스피너(comet spinner, tail spinner).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/comet-spinner.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/comet-spinner.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/comet-spinner",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "comic-text",
       "type": "registry:component",
       "title": "Comic Text",
@@ -7244,6 +7473,31 @@
       }
     },
     {
+      "name": "concentric-ring",
+      "type": "registry:component",
+      "title": "Concentric Ring",
+      "description": "동심원 고리가 서로 다른 속도로 도는 스피너(concentric rings).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/concentric-ring.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/concentric-ring.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/concentric-ring",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "confetti",
       "type": "registry:component",
       "title": "Confetti",
@@ -7450,6 +7704,31 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "conveyor-loop",
+      "type": "registry:component",
+      "title": "Conveyor Loop",
+      "description": "컨베이어처럼 흘러가는 로더(conveyor loop).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/conveyor-loop.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/conveyor-loop.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/conveyor-loop",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -8232,6 +8511,31 @@
       }
     },
     {
+      "name": "dash-ring",
+      "type": "registry:component",
+      "title": "Dash Ring",
+      "description": "점선 고리가 도는 스피너(dashed ring).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/dash-ring.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dash-ring.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/dash-ring",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "dashboard-lg-01",
       "type": "registry:component",
       "title": "Dashboard Lg 01",
@@ -8785,6 +9089,31 @@
       }
     },
     {
+      "name": "diamond",
+      "type": "registry:component",
+      "title": "Diamond",
+      "description": "마름모가 회전하는 로더(diamond loader).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/diamond.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/diamond.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/diamond",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "diff-viewer",
       "type": "registry:component",
       "title": "Diff Viewer",
@@ -9157,6 +9486,56 @@
       }
     },
     {
+      "name": "dots",
+      "type": "registry:component",
+      "title": "Dots",
+      "description": "점 세 개가 차례로 깜빡이는 표시(three dots, loading dots).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/dots.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dots.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/dots",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "dots-ring",
+      "type": "registry:component",
+      "title": "Dots Ring",
+      "description": "점들이 고리를 이뤄 도는 스피너(dots ring).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/dots-ring.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dots-ring.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/dots-ring",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "dotted-map",
       "type": "registry:component",
       "title": "Dotted Map",
@@ -9345,6 +9724,31 @@
         "source": "Kibo UI",
         "sourceUrl": "https://www.kibo-ui.com/components/dropzone",
         "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "dual-arc",
+      "type": "registry:component",
+      "title": "Dual Arc",
+      "description": "호 두 개가 반대로 도는 스피너(dual arc spinner).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/dual-arc.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dual-arc.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/dual-arc",
+        "author": "turbostarter",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -10092,6 +10496,31 @@
         "sourceUrl": "https://ui.spectrumhq.in/docs/components/face-rating",
         "author": "arihantcodes",
         "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "fade-arc",
+      "type": "registry:component",
+      "title": "Fade Arc",
+      "description": "호가 옅어졌다 진해지며 도는 스피너(fade arc).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/fade-arc.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/fade-arc.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/fade-arc",
+        "author": "turbostarter",
+        "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -14288,6 +14717,81 @@
       }
     },
     {
+      "name": "infinity",
+      "type": "registry:component",
+      "title": "Infinity",
+      "description": "무한대(∞) 모양을 그리는 로더(infinity loader).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/infinity.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/infinity.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/infinity",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "infinity-square-snake",
+      "type": "registry:component",
+      "title": "Infinity Square Snake",
+      "description": "무한대 경로를 도는 뱀 모양 로더(infinity square snake).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/infinity-square-snake.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/infinity-square-snake.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/infinity-square-snake",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "infinity-track",
+      "type": "registry:component",
+      "title": "Infinity Track",
+      "description": "무한대 트랙을 도는 로더(infinity track).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/infinity-track.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/infinity-track.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/infinity-track",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "infintyband",
       "type": "registry:component",
       "title": "Infintyband",
@@ -18177,6 +18681,33 @@
       }
     },
     {
+      "name": "morphing-infinity",
+      "type": "registry:component",
+      "title": "Morphing Infinity",
+      "description": "형태가 변하며 무한대를 그리는 표시(morphing infinity).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/morphing-infinity.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/morphing-infinity.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/morphing-infinity",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "morphing-modal",
       "type": "registry:component",
       "title": "Morphing Modal",
@@ -19125,6 +19656,31 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "orbit-ring",
+      "type": "registry:component",
+      "title": "Orbit Ring",
+      "description": "고리를 따라 점 하나가 도는 스피너(orbit ring).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/orbit-ring.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/orbit-ring.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/orbit-ring",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -21162,6 +21718,33 @@
       }
     },
     {
+      "name": "pulsating-dots",
+      "type": "registry:component",
+      "title": "Pulsating Dots",
+      "description": "점들이 커졌다 작아지는 표시(pulsating dots).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/pulsating-dots.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pulsating-dots.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/pulsating-dots",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "pulse",
       "type": "registry:component",
       "title": "Pulse",
@@ -21182,6 +21765,31 @@
         "source": "Systaliko UI",
         "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/pulse",
         "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "pulse-dot",
+      "type": "registry:component",
+      "title": "Pulse Dot",
+      "description": "점 하나가 맥동하는 표시(pulse dot, 라이브 표시).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/pulse-dot.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pulse-dot.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/pulse-dot",
+        "author": "turbostarter",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -21263,6 +21871,31 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/quantum-field",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "quarter-ring",
+      "type": "registry:component",
+      "title": "Quarter Ring",
+      "description": "사분원이 도는 스피너(quarter ring).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/quarter-ring.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/quarter-ring.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/quarter-ring",
+        "author": "turbostarter",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -22755,6 +23388,31 @@
       }
     },
     {
+      "name": "ring",
+      "type": "registry:component",
+      "title": "Ring",
+      "description": "한 바퀴 도는 고리 스피너(ring spinner, 로딩). 가장 기본이 되는 형태다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/ring.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ring.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/ring",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "ripple",
       "type": "registry:component",
       "title": "Ripple",
@@ -23012,6 +23670,31 @@
         "source": "Eldora UI",
         "sourceUrl": "https://www.eldoraui.site/docs/safari-browser",
         "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "satellite-ring",
+      "type": "registry:component",
+      "title": "Satellite Ring",
+      "description": "위성처럼 점이 고리 밖을 도는 스피너(satellite ring).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/satellite-ring.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/satellite-ring.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/satellite-ring",
+        "author": "turbostarter",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -25541,6 +26224,33 @@
       }
     },
     {
+      "name": "spiral",
+      "type": "registry:component",
+      "title": "Spiral",
+      "description": "나선을 그리며 도는 스피너(spiral spinner).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/spiral.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/spiral.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/spiral",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "split-flap-display",
       "type": "registry:component",
       "title": "Split Flap Display",
@@ -25584,6 +26294,31 @@
         "source": "Systaliko UI",
         "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/split-text",
         "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "spokes",
+      "type": "registry:component",
+      "title": "Spokes",
+      "description": "바큇살이 차례로 옅어지는 스피너(spokes spinner, ios style).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/spokes.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/spokes.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/spokes",
+        "author": "turbostarter",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -25938,6 +26673,81 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "square-accordion",
+      "type": "registry:component",
+      "title": "Square Accordion",
+      "description": "사각형이 접혔다 펴지는 로더(square accordion).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/square-accordion.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/square-accordion.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/square-accordion",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "square-grid",
+      "type": "registry:component",
+      "title": "Square Grid",
+      "description": "사각형 격자가 차례로 깜빡이는 로더(square grid).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/square-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/square-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/square-grid",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "square-snake",
+      "type": "registry:component",
+      "title": "Square Snake",
+      "description": "사각형을 따라 도는 뱀 모양 로더(square snake).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/square-snake.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/square-snake.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/square-snake",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -27228,6 +28038,31 @@
       }
     },
     {
+      "name": "swirling",
+      "type": "registry:component",
+      "title": "Swirling",
+      "description": "소용돌이치듯 감기는 스피너(swirling spinner).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/swirling.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/swirling.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/swirling",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "switch-button",
       "type": "registry:component",
       "title": "Switch Button",
@@ -27279,6 +28114,31 @@
         "source": "KokonutUI",
         "sourceUrl": "https://kokonutui.com/docs/components/swoosh-text",
         "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "symmetric-wave",
+      "type": "registry:component",
+      "title": "Symmetric Wave",
+      "description": "막대가 좌우 대칭으로 물결치는 로더(symmetric wave).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/symmetric-wave.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/symmetric-wave.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/symmetric-wave",
+        "author": "turbostarter",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -28030,6 +28890,31 @@
       }
     },
     {
+      "name": "text-blink",
+      "type": "registry:component",
+      "title": "Text Blink",
+      "description": "글자가 옅어졌다 진해지는 로딩 문구(text blink, loading text).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-blink.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-blink.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/text-blink",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "text-cascade",
       "type": "registry:component",
       "title": "Text Cascade",
@@ -28096,6 +28981,31 @@
         "source": "Fancy Components",
         "sourceUrl": "https://www.fancycomponents.dev/docs/components/text-cursor-proximity",
         "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "text-dots",
+      "type": "registry:component",
+      "title": "Text Dots",
+      "description": "문구 뒤에 점이 하나씩 늘어나는 표시(text with dots, \"불러오는 중...\").",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-dots.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-dots.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/text-dots",
+        "author": "turbostarter",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -29578,6 +30488,31 @@
       }
     },
     {
+      "name": "triple-dot-spinner",
+      "type": "registry:component",
+      "title": "Triple Dot Spinner",
+      "description": "점 세 개가 원을 그리며 도는 표시(triple dot spinner).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/triple-dot-spinner.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/triple-dot-spinner.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/triple-dot-spinner",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "trusted-users",
       "type": "registry:component",
       "title": "Trusted Users",
@@ -29710,6 +30645,31 @@
       }
     },
     {
+      "name": "twin-orbit",
+      "type": "registry:component",
+      "title": "Twin Orbit",
+      "description": "점 두 개가 서로를 도는 표시(twin orbit).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/twin-orbit.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/twin-orbit.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/twin-orbit",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "twisting-ribbon",
       "type": "registry:component",
       "title": "Twisting Ribbon",
@@ -29835,6 +30795,31 @@
         "source": "JolyUI",
         "sourceUrl": "https://www.jolyui.dev/docs/components/typewritter-text",
         "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "typing",
+      "type": "registry:component",
+      "title": "Typing",
+      "description": "채팅에서 상대가 입력 중임을 알리는 표시(typing indicator, 입력 중).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/typing.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/typing.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/typing",
+        "author": "turbostarter",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -30945,6 +31930,31 @@
       }
     },
     {
+      "name": "wandering-eyes",
+      "type": "registry:component",
+      "title": "Wandering Eyes",
+      "description": "눈동자가 두리번거리는 표시(wandering eyes, 귀여운 로딩).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/wandering-eyes.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/wandering-eyes.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/wandering-eyes",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "warp-background",
       "type": "registry:component",
       "title": "Warp Background",
@@ -30968,6 +31978,31 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "wave",
+      "type": "registry:component",
+      "title": "Wave",
+      "description": "막대가 파도치는 로더(wave loader, audio bars).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/wave.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/wave.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Loading UI",
+        "sourceUrl": "https://loading-ui.com/components/wave",
+        "author": "turbostarter",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {

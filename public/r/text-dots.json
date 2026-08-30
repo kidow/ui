@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-dots",
+  "title": "Text Dots",
+  "description": "문구 뒤에 점이 하나씩 늘어나는 표시(text with dots, \"불러오는 중...\").",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/text-dots.tsx",
+      "content": "import { cn } from \"@/lib/utils\";\n\ntype TextDotsProps = React.ComponentProps<\"span\"> & {\n  dots?: number;\n};\n\nfunction TextDots({\n  className,\n  children,\n  dots = 3,\n  style,\n  ...props\n}: TextDotsProps) {\n  const dotCount = Number.isFinite(dots) ? Math.max(1, Math.floor(dots)) : 3;\n\n  return (\n    <>\n      <style>{`\n        @keyframes loading-ui-text-dots {\n          0%,\n          100% {\n            opacity: 0;\n          }\n\n          50% {\n            opacity: 1;\n          }\n        }\n      `}</style>\n      <span\n        role=\"status\"\n        className={cn(\"inline-flex items-center\", className)}\n        style={style}\n        {...props}\n      >\n        <span>{children}</span>\n        <span aria-hidden=\"true\" className=\"inline-flex\">\n          {Array.from({ length: dotCount }, (_, index) => (\n            <span\n              key={index}\n              style={{\n                animation:\n                  \"loading-ui-text-dots var(--duration, 1.4s) infinite\",\n                animationDelay: `calc(var(--delay, 0.2s) * ${index + 1})`,\n              }}\n            >\n              .\n            </span>\n          ))}\n        </span>\n      </span>\n    </>\n  );\n}\n\nexport { TextDots };\n",
+      "type": "registry:component",
+      "target": "components/kidow/text-dots.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Loading UI",
+    "sourceUrl": "https://loading-ui.com/components/text-dots",
+    "author": "turbostarter",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

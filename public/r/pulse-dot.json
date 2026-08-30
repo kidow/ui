@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pulse-dot",
+  "title": "Pulse Dot",
+  "description": "점 하나가 맥동하는 표시(pulse dot, 라이브 표시).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/pulse-dot.tsx",
+      "content": "import { cn } from \"@/lib/utils\";\n\nfunction PulseDot({ className, ...props }: React.ComponentProps<\"span\">) {\n  return (\n    <>\n      <style>{`\n        @keyframes loading-ui-pulse-dot {\n          0%,\n          100% {\n            transform: scale(1);\n            opacity: 0.8;\n          }\n\n          50% {\n            transform: scale(1.5);\n            opacity: 1;\n          }\n        }\n      `}</style>\n      <span\n        role=\"status\"\n        className={cn(\"inline-block rounded-full bg-current\", className)}\n        style={{\n          animation:\n            \"loading-ui-pulse-dot var(--duration, 1.2s) ease-in-out infinite\",\n        }}\n        {...props}\n      >\n        <span className=\"sr-only\">Loading</span>\n      </span>\n    </>\n  );\n}\n\nexport { PulseDot };\n",
+      "type": "registry:component",
+      "target": "components/kidow/pulse-dot.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Loading UI",
+    "sourceUrl": "https://loading-ui.com/components/pulse-dot",
+    "author": "turbostarter",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}
