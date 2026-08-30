@@ -397,6 +397,8 @@ import FontWeightTextDemo from './font-weight-text'
 import FooterDemo from './footer'
 import FramerNormalCarouselDemo from './framer-normal-carousel'
 import FullscreenPreviewDemo from './fullscreen-preview'
+import FunnelChartDemo from './funnel-chart'
+import GaugeChartDemo from './gauge-chart'
 import GenerateButtonDemo from './generate-button'
 import GithubButtonDemo from './github-button'
 import GithubContributorsDemo from './github-contributors'
@@ -439,6 +441,7 @@ import GridBeamDemo from './grid-beam'
 import GridPatternDemo from './grid-pattern'
 import HackerBackgroundDemo from './hacker-background'
 import HeatMirageRevealDemo from './heat-mirage-reveal'
+import HeatmapChartDemo from './heatmap-chart'
 import HellBackgroundDemo from './hell-background'
 import HeroDitheringDemo from './hero-dithering'
 import HeroHeatmapDemo from './hero-heatmap'
@@ -566,6 +569,7 @@ import LiquidMetalButtonDemo from './liquid-metal-button'
 import LiquidSurfaceDemo from './liquid-surface'
 import LiquidTextDemo from './liquid-text'
 import LiveButtonDemo from './live-button'
+import LiveLineChartDemo from './live-line-chart'
 import LiveWaveformDemo from './live-waveform'
 import LoaderDemo from './loader'
 import LoaderButtonDemo from './loader-button'
@@ -771,6 +775,7 @@ import RevealLoaderDemo from './reveal-loader'
 import RevealMaskDemo from './reveal-mask'
 import RichButtonDemo from './rich-button'
 import RingDemo from './ring'
+import RingChartDemo from './ring-chart'
 import RippleDemo from './ripple'
 import RippleButtonDemo from './ripple-button'
 import RippleLoaderDemo from './ripple-loader'
@@ -779,9 +784,11 @@ import RollingText3dDemo from './rolling-text-3d'
 import RotateTextDemo from './rotate-text'
 import SafariDemo from './safari'
 import SafariBrowserDemo from './safari-browser'
+import SankeyChartDemo from './sankey-chart'
 import SatelliteRingDemo from './satellite-ring'
 import SatinFlowDemo from './satin-flow'
 import ScaleLetterTextDemo from './scale-letter-text'
+import ScatterChartDemo from './scatter-chart'
 import ScatterTrailDemo from './scatter-trail'
 import ScrambleHoverDemo from './scramble-hover'
 import ScrambleInDemo from './scramble-in'
@@ -910,6 +917,7 @@ import StripeBgGuidesDemo from './stripe-bg-guides'
 import StripecardDemo from './stripecard'
 import StripedPatternDemo from './striped-pattern'
 import StripesBackgroundDemo from './stripes-background'
+import SunburstChartDemo from './sunburst-chart'
 import SvgBandsDemo from './svg-bands'
 import SvgRippleEffectDemo from './svg-ripple-effect'
 import SvgShapesDemo from './svg-shapes'
@@ -1470,6 +1478,8 @@ export const demos: Record<string, ComponentType> = {
   'footer': FooterDemo,
   'framer-normal-carousel': FramerNormalCarouselDemo,
   'fullscreen-preview': FullscreenPreviewDemo,
+  'funnel-chart': FunnelChartDemo,
+  'gauge-chart': GaugeChartDemo,
   'generate-button': GenerateButtonDemo,
   'github-button': GithubButtonDemo,
   'github-contributors': GithubContributorsDemo,
@@ -1512,6 +1522,7 @@ export const demos: Record<string, ComponentType> = {
   'grid-pattern': GridPatternDemo,
   'hacker-background': HackerBackgroundDemo,
   'heat-mirage-reveal': HeatMirageRevealDemo,
+  'heatmap-chart': HeatmapChartDemo,
   'hell-background': HellBackgroundDemo,
   'hero-dithering': HeroDitheringDemo,
   'hero-heatmap': HeroHeatmapDemo,
@@ -1639,6 +1650,7 @@ export const demos: Record<string, ComponentType> = {
   'liquid-surface': LiquidSurfaceDemo,
   'liquid-text': LiquidTextDemo,
   'live-button': LiveButtonDemo,
+  'live-line-chart': LiveLineChartDemo,
   'live-waveform': LiveWaveformDemo,
   'loader': LoaderDemo,
   'loader-button': LoaderButtonDemo,
@@ -1844,6 +1856,7 @@ export const demos: Record<string, ComponentType> = {
   'reveal-mask': RevealMaskDemo,
   'rich-button': RichButtonDemo,
   'ring': RingDemo,
+  'ring-chart': RingChartDemo,
   'ripple': RippleDemo,
   'ripple-button': RippleButtonDemo,
   'ripple-loader': RippleLoaderDemo,
@@ -1852,9 +1865,11 @@ export const demos: Record<string, ComponentType> = {
   'rotate-text': RotateTextDemo,
   'safari': SafariDemo,
   'safari-browser': SafariBrowserDemo,
+  'sankey-chart': SankeyChartDemo,
   'satellite-ring': SatelliteRingDemo,
   'satin-flow': SatinFlowDemo,
   'scale-letter-text': ScaleLetterTextDemo,
+  'scatter-chart': ScatterChartDemo,
   'scatter-trail': ScatterTrailDemo,
   'scramble-hover': ScrambleHoverDemo,
   'scramble-in': ScrambleInDemo,
@@ -1983,6 +1998,7 @@ export const demos: Record<string, ComponentType> = {
   'stripecard': StripecardDemo,
   'striped-pattern': StripedPatternDemo,
   'stripes-background': StripesBackgroundDemo,
+  'sunburst-chart': SunburstChartDemo,
   'svg-bands': SvgBandsDemo,
   'svg-ripple-effect': SvgRippleEffectDemo,
   'svg-shapes': SvgShapesDemo,

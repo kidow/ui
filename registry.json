@@ -3171,6 +3171,46 @@
       }
     },
     {
+      "name": "background",
+      "type": "registry:component",
+      "title": "Background",
+      "description": "차트 배경 격자와 패턴(chart background, grid).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@visx/pattern@4.0.1-alpha.0",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/chart-context"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/background.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/pattern-preset.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/pattern-preset.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/visx-pattern.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/visx-pattern.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/background",
+        "author": "bklit",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "background-paths",
       "type": "registry:component",
       "title": "Background Paths",
@@ -3642,6 +3682,40 @@
         "source": "Cult UI",
         "sourceUrl": "https://www.cult-ui.com/docs/components/bg-media",
         "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "bklit-grid",
+      "type": "registry:component",
+      "title": "Bklit Grid",
+      "description": "bklit 차트의 배경 격자(chart grid). 축과 함께 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@visx/grid"
+      ],
+      "registryDependencies": [
+        "@kidow/chart-context"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/grid.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/use-grid-shimmer.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/use-grid-shimmer.ts"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/grid",
+        "author": "bklit",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -5805,6 +5879,151 @@
       }
     },
     {
+      "name": "chart-animation",
+      "type": "registry:component",
+      "title": "Chart Animation",
+      "description": "차트 등장 애니메이션을 맞추는 조율기(chart animation, enter transition).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/animation.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/animation.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/motion-utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/motion-utils.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/use-mount-progress.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/use-mount-progress.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/use-enter-complete.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/use-enter-complete.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/chart-reveal-clip.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-reveal-clip.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/static-chart-preview-context.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/static-chart-preview-context.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/chart-defs.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-defs.ts"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/chart-animation",
+        "author": "bklit",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "chart-context",
+      "type": "registry:component",
+      "title": "Chart Context",
+      "description": "차트 상태를 공유하는 컨텍스트(chart context). bklit 차트의 기반이다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@visx/event@4.0.1-alpha.0",
+        "@visx/responsive@4.0.1-alpha.0",
+        "@visx/scale@4.0.1-alpha.0",
+        "d3-array",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/chart-utils"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/chart-context.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-context.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/reference-area-config.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/reference-area-config.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/use-chart-interaction.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/use-chart-interaction.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/y-axis-scales.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/y-axis-scales.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/y-axis-ticks.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/y-axis-ticks.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/chart-phase.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-phase.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/y-domain-utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/y-domain-utils.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/filter-data-by-x-domain.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/filter-data-by-x-domain.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/generate-chart-skeleton-data.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/generate-chart-skeleton-data.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/use-animated-y-domains.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/use-animated-y-domains.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/use-chart-phase-orchestrator.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/use-chart-phase-orchestrator.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/line-loading-timing.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/line-loading-timing.ts"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/chart-context",
+        "author": "bklit",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "chart-data",
       "type": "registry:component",
       "title": "Chart Data",
@@ -5868,6 +6087,137 @@
       }
     },
     {
+      "name": "chart-series",
+      "type": "registry:component",
+      "title": "Chart Series",
+      "description": "선·영역 계열을 그리는 프리미티브(chart series, line area).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@visx/shape@4.0.1-alpha.0",
+        "d3-shape",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/chart-context",
+        "@kidow/chart-animation",
+        "@kidow/chart-tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/path-stroke-utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/path-stroke-utils.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/series-path-utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/series-path-utils.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/use-animated-series-path.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/use-animated-series-path.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/highlight-segment-bounds.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/highlight-segment-bounds.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/highlight-segment.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/highlight-segment.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/dash-tail-stroke.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/dash-tail-stroke.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/series-dash-tail-overlay.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/series-dash-tail-overlay.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/series-highlight-layer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/series-highlight-layer.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/chart-legend-hover.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-legend-hover.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/series-hover-dim.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/series-hover-dim.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/series-point-marker.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/series-point-marker.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/series-markers.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/series-markers.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/use-highlight-segment.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/use-highlight-segment.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/area-gradient-defs.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/area-gradient-defs.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/fade-edges.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/fade-edges.ts"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/chart-series",
+        "author": "bklit",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "chart-stat-flow",
+      "type": "registry:component",
+      "title": "Chart Stat Flow",
+      "description": "지표 변화를 흐름으로 보여주는 통계 카드(stat flow).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@number-flow/react",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/chart-stat-flow.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-stat-flow.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/chart-stat-flow",
+        "author": "bklit",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "chart-states",
       "type": "registry:component",
       "title": "Chart States",
@@ -5899,6 +6249,112 @@
         "sourceUrl": "https://ui.spectrumhq.in/docs/components/chart-states",
         "author": "arihantcodes",
         "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "chart-tooltip",
+      "type": "registry:component",
+      "title": "Chart Tooltip",
+      "description": "차트 툴팁(chart tooltip). 커서를 따라오며 값을 보여준다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@number-flow/react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/chart-context",
+        "@kidow/chart-utils"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/chart-config-context.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-config-context.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/indicator-fade.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/indicator-fade.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/tooltip/chart-tooltip.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/tooltip/chart-tooltip.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/tooltip/tooltip-box.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/tooltip/tooltip-box.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/tooltip/tooltip-content.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/tooltip/tooltip-content.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/tooltip/tooltip-dot.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/tooltip/tooltip-dot.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/tooltip/tooltip-indicator.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/tooltip/tooltip-indicator.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/tooltip/date-ticker.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/tooltip/date-ticker.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/tooltip/index.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/tooltip/index.ts"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/chart-tooltip",
+        "author": "bklit",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "chart-utils",
+      "type": "registry:component",
+      "title": "Chart Utils",
+      "description": "bklit 차트들이 공유하는 계산 유틸(chart utils). 차트와 함께 설치된다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/chart-formatters.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-formatters.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/decimate-time-series.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/decimate-time-series.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/use-scheduled-tooltip.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/use-scheduled-tooltip.ts"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/chart-utils",
+        "author": "bklit",
+        "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -6038,6 +6494,73 @@
         "source": "Kibo UI",
         "sourceUrl": "https://www.kibo-ui.com/components/choicebox",
         "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "choropleth-chart",
+      "type": "registry:component",
+      "title": "Choropleth Chart",
+      "description": "지역별 값을 색으로 칠하는 지도(choropleth map, 단계구분도). d3-geo 를 쓴다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@types/geojson",
+        "@visx/geo@4.0.1-alpha.0",
+        "@visx/responsive@4.0.1-alpha.0",
+        "@visx/zoom@4.0.1-alpha.0",
+        "d3-geo",
+        "topojson-client",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/chart-animation",
+        "@kidow/chart-utils",
+        "@kidow/chart-tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/choropleth/choropleth-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/choropleth/choropleth-chart.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/choropleth/choropleth-context.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/choropleth/choropleth-context.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/chart-scale.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-scale.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/choropleth/choropleth-feature.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/choropleth/choropleth-feature.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/choropleth/choropleth-graticule.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/choropleth/choropleth-graticule.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/choropleth/choropleth-tooltip.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/choropleth/choropleth-tooltip.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/choropleth/index.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/choropleth/index.ts"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/choropleth-chart",
+        "author": "bklit",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -11927,6 +12450,102 @@
       }
     },
     {
+      "name": "funnel-chart",
+      "type": "registry:component",
+      "title": "Funnel Chart",
+      "description": "단계별 전환을 보여주는 퍼널 차트(funnel chart, 깔때기).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/chart-animation",
+        "@kidow/chart-utils"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/funnel-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/funnel-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/funnel-chart",
+        "author": "bklit",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "gauge-chart",
+      "type": "registry:component",
+      "title": "Gauge Chart",
+      "description": "게이지 차트(gauge chart, 계기판).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@visx/responsive@4.0.1-alpha.0",
+        "@visx/pattern@4.0.1-alpha.0",
+        "@number-flow/react",
+        "motion",
+        "d3-shape"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/chart-stat-flow.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-stat-flow.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/pie-context.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/pie-context.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/pie-center-shell.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/pie-center-shell.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/pie-center.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/pie-center.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/gauge.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/gauge.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/notch-gauge-shared.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/notch-gauge-shared.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/gauge-label-layout.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/gauge-label-layout.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/chart-center-typography.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-center-typography.ts"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/gauge-chart",
+        "author": "bklit",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "generate-button",
       "type": "registry:component",
       "title": "Generate Button",
@@ -13215,6 +13834,149 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "heatmap-chart",
+      "type": "registry:component",
+      "title": "Heatmap Chart",
+      "description": "히트맵(heatmap chart, 열지도).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@visx/group@4.0.1-alpha.0",
+        "@visx/heatmap@4.0.1-alpha.0",
+        "@visx/pattern@4.0.1-alpha.0",
+        "@visx/responsive@4.0.1-alpha.0",
+        "@visx/scale@4.0.1-alpha.0",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/chart-context",
+        "@kidow/chart-animation",
+        "@kidow/background",
+        "@kidow/chart-tooltip",
+        "@kidow/shimmering-text"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/heatmap-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/heatmap-chart.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/heatmap-context.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/heatmap-context.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/heatmap-cells.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/heatmap-cells.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/heatmap-x-axis.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/heatmap-x-axis.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/heatmap-y-axis.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/heatmap-y-axis.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/heatmap-legend.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/heatmap-legend.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/heatmap-legend-swatch.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/heatmap-legend-swatch.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/heatmap-legend-gradient.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/heatmap-legend-gradient.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/heatmap-tooltip.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/heatmap-tooltip.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/use-delayed-tooltip-data.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/use-delayed-tooltip-data.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/heatmap-separator.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/heatmap-separator.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/heatmap-resolve-separator.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/heatmap-resolve-separator.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/heatmap-colors.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/heatmap-colors.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/chart-scale.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-scale.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/heatmap-utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/heatmap-utils.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/heatmap-animation.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/heatmap-animation.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/heatmap-pattern-defs.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/heatmap-pattern-defs.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/heatmap-chart-loading.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/heatmap-chart-loading.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/generate-heatmap-skeleton-data.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/generate-heatmap-skeleton-data.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/heatmap/index.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/heatmap/index.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/chart-loading-label.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-loading-label.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/chart-child-passthrough.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-child-passthrough.ts"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/heatmap-chart",
+        "author": "bklit",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -15760,6 +16522,70 @@
       }
     },
     {
+      "name": "legend",
+      "type": "registry:component",
+      "title": "Legend",
+      "description": "차트 범례(chart legend). 항목별 값과 진행 막대를 함께 보여준다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@number-flow/react"
+      ],
+      "registryDependencies": [
+        "@kidow/chart-utils"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/legend/legend.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/legend/legend.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/legend/legend-context.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/legend/legend-context.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/legend/legend-item.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/legend/legend-item.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/legend/legend-label.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/legend/legend-label.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/legend/legend-marker.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/legend/legend-marker.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/legend/legend-progress.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/legend/legend-progress.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/legend/legend-value.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/legend/legend-value.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/legend/index.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/legend/index.ts"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/legend",
+        "author": "bklit",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "lens",
       "type": "registry:component",
       "title": "Lens",
@@ -16933,6 +17759,62 @@
       }
     },
     {
+      "name": "live-line-chart",
+      "type": "registry:component",
+      "title": "Live Line Chart",
+      "description": "실시간으로 흘러가는 선 차트(live line chart, realtime chart).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@visx/curve@4.0.1-alpha.0",
+        "@visx/scale@4.0.1-alpha.0",
+        "@visx/shape@4.0.1-alpha.0",
+        "@visx/responsive@4.0.1-alpha.0",
+        "@visx/event@4.0.1-alpha.0",
+        "d3-array",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/chart-context",
+        "@kidow/chart-utils"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/live-line-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/live-line-chart.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/chart-child-passthrough.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-child-passthrough.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/live-line.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/live-line.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/live-x-axis.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/live-x-axis.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/live-y-axis.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/live-y-axis.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/live-line-chart",
+        "author": "bklit",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "live-waveform",
       "type": "registry:component",
       "title": "Live Waveform",
@@ -17683,6 +18565,43 @@
         "source": "mapcn",
         "sourceUrl": "https://mapcn.vercel.app/docs/components/map",
         "author": "AnmolSaini16",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "markers",
+      "type": "registry:component",
+      "title": "Markers",
+      "description": "차트 위 특정 지점을 표시하는 마커(chart markers, annotations).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@kidow/chart-context"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/markers/chart-markers.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/markers/chart-markers.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/markers/marker-group.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/markers/marker-group.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/markers/index.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/markers/index.ts"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/markers",
+        "author": "bklit",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -21527,6 +22446,53 @@
       }
     },
     {
+      "name": "profit-loss-line",
+      "type": "registry:component",
+      "title": "Profit Loss Line",
+      "description": "손익에 따라 색이 갈리는 선 차트(profit loss chart, 손익 그래프).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@visx/curve@4.0.1-alpha.0",
+        "@visx/shape@4.0.1-alpha.0"
+      ],
+      "registryDependencies": [
+        "@kidow/chart-context",
+        "@kidow/chart-series",
+        "@kidow/legend"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/profit-loss-line.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/profit-loss-line.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/profit-loss-segments.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/profit-loss-segments.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/profit-loss-legend-hover.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/profit-loss-legend-hover.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/profit-loss-legend.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/profit-loss-legend.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/profit-loss-line",
+        "author": "bklit",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "progress-with-value",
       "type": "registry:component",
       "title": "Progress With Value",
@@ -21599,6 +22565,52 @@
         "source": "UI Layouts",
         "sourceUrl": "https://www.ui-layouts.com/components/progressive-carousel",
         "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "projection-line",
+      "type": "registry:component",
+      "title": "Projection Line",
+      "description": "예측 구간을 점선으로 잇는 선(projection line, forecast).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@visx/shape@4.0.1-alpha.0",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/chart-context",
+        "@kidow/chart-series"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/projection-line.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/projection-line.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/projection-line-end-marker.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/projection-line-end-marker.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/projection-utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/projection-utils.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/line-series-terminal-marker.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/line-series-terminal-marker.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/projection-line",
+        "author": "bklit",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -23064,6 +24076,46 @@
       }
     },
     {
+      "name": "reference-area",
+      "type": "registry:component",
+      "title": "Reference Area",
+      "description": "차트에 구간을 음영으로 표시하는 참조 영역(reference area, highlight band).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/chart-context",
+        "@kidow/background"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/reference-area.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/reference-area.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/reference-area-geometry.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/reference-area-geometry.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/reference-area-registration-context.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/reference-area-registration-context.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/reference-area",
+        "author": "bklit",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "reflect-background",
       "type": "registry:component",
       "title": "Reflect Background",
@@ -23413,6 +24465,64 @@
       }
     },
     {
+      "name": "ring-chart",
+      "type": "registry:component",
+      "title": "Ring Chart",
+      "description": "고리형 진행 차트(ring chart, progress ring).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@visx/group@4.0.1-alpha.0",
+        "@visx/responsive@4.0.1-alpha.0",
+        "@visx/shape@4.0.1-alpha.0",
+        "@number-flow/react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/chart-animation"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/ring-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/ring-chart.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/ring-context.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/ring-context.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/ring.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/ring.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/chart-stat-flow.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-stat-flow.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/ring-center.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/ring-center.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/chart-center-typography.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-center-typography.ts"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/ring-chart",
+        "author": "bklit",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "ripple",
       "type": "registry:component",
       "title": "Ripple",
@@ -23675,6 +24785,68 @@
       }
     },
     {
+      "name": "sankey-chart",
+      "type": "registry:component",
+      "title": "Sankey Chart",
+      "description": "흐름의 양을 폭으로 보여주는 생키 다이어그램(sankey diagram, flow).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@visx/event@4.0.1-alpha.0",
+        "@visx/gradient@4.0.1-alpha.0",
+        "@visx/pattern@4.0.1-alpha.0",
+        "@visx/responsive@4.0.1-alpha.0",
+        "@visx/sankey@4.0.1-alpha.0",
+        "d3-sankey",
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/chart-utils",
+        "@kidow/chart-animation",
+        "@kidow/chart-tooltip"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/sankey/sankey-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/sankey/sankey-chart.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/sankey/sankey-context.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/sankey/sankey-context.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/sankey/sankey-node.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/sankey/sankey-node.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/sankey/sankey-link.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/sankey/sankey-link.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/sankey/sankey-tooltip.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/sankey/sankey-tooltip.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/sankey/index.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/sankey/index.ts"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/sankey-chart",
+        "author": "bklit",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "satellite-ring",
       "type": "registry:component",
       "title": "Satellite Ring",
@@ -23747,6 +24919,91 @@
         "source": "Eldora UI",
         "sourceUrl": "https://www.eldoraui.site/docs/scale-letter-text",
         "author": "karthikmudunuri",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "scatter-chart",
+      "type": "registry:component",
+      "title": "Scatter Chart",
+      "description": "산점도(scatter chart, 산포도).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "d3-array",
+        "d3-scale",
+        "motion",
+        "react-use-measure"
+      ],
+      "registryDependencies": [
+        "@kidow/chart-animation",
+        "@kidow/chart-context",
+        "@kidow/chart-utils",
+        "@kidow/chart-series"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/scatter-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/scatter-chart.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/scatter-chart-shell.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/scatter-chart-shell.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/time-series-chart-shell.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/time-series-chart-shell.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/reference-area-registration-context.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/reference-area-registration-context.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/projection-config.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/projection-config.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/projection-utils.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/projection-utils.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/chart-child-passthrough.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/chart-child-passthrough.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/series-bar-layout.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/series-bar-layout.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/scatter.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/scatter.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/use-scatter-chart-interaction.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/use-scatter-chart-interaction.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/scatter-svg.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/scatter-svg.ts"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/scatter-chart",
+        "author": "bklit",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -27791,6 +29048,75 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/stylish-carousel",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "sunburst-chart",
+      "type": "registry:component",
+      "title": "Sunburst Chart",
+      "description": "계층을 동심원으로 보여주는 선버스트 차트(sunburst chart, 계층 원형).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/chart-animation"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/sunburst-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/sunburst-chart.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/sunburst-context.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/sunburst-context.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/sunburst-segment.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/sunburst-segment.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/sunburst-center.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/sunburst-center.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/sunburst-breadcrumb.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/sunburst-breadcrumb.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/sunburst-hint.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/sunburst-hint.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/sunburst-labels.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/sunburst-labels.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/sunburst.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/sunburst.ts"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/sunburst-data.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/sunburst-data.ts"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/sunburst-chart",
+        "author": "bklit",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -32885,6 +34211,66 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/world-map",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "x-axis",
+      "type": "registry:component",
+      "title": "X Axis",
+      "description": "차트 가로축(x axis). 날짜 눈금 포맷을 지원한다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@kidow/chart-context",
+        "@kidow/chart-utils"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/x-axis.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/x-axis.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/x-axis",
+        "author": "bklit",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "y-axis",
+      "type": "registry:component",
+      "title": "Y Axis",
+      "description": "차트 세로축(y axis). 값 범위를 애니메이션으로 따라간다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@kidow/chart-context"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bklit/charts/y-axis.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/y-axis.tsx"
+        },
+        {
+          "path": "registry/kidow/bklit/charts/reference-area-geometry.ts",
+          "type": "registry:component",
+          "target": "components/kidow/bklit/charts/reference-area-geometry.ts"
+        }
+      ],
+      "meta": {
+        "source": "Bklit UI",
+        "sourceUrl": "https://bklit.com/docs/components/y-axis",
+        "author": "bklit",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
