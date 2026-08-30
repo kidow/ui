@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-mounted",
+  "title": "Use Mounted",
+  "description": "마운트 여부를 알려주는 훅(use mounted, is client).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/use-mounted.ts",
+      "content": "import * as React from \"react\"\n\nexport function useMounted() {\n  const [mounted, setMounted] = React.useState(false)\n\n  React.useEffect(() => {\n    setMounted(true)\n  }, [])\n\n  return mounted\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/use-mounted.ts"
+    }
+  ],
+  "meta": {
+    "source": "Fancy Components",
+    "sourceUrl": "https://www.fancycomponents.dev/docs/components/use-mounted",
+    "author": "danielpetho",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "개발자 도구"
+  ],
+  "type": "registry:component"
+}

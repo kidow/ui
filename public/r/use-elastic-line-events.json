@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-elastic-line-events",
+  "title": "Use Elastic Line Events",
+  "description": "탄성 선에 필요한 포인터 이벤트를 다루는 훅(use elastic line events).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/use-elastic-line-events.ts",
+      "content": "import { useEffect, useState } from \"react\"\n\nimport { useDimensions } from \"@/components/kidow/use-dimensions\"\nimport { useMousePosition } from \"@/components/kidow/use-mouse-position\"\n\ninterface ElasticLineEvents {\n  isGrabbed: boolean\n  controlPoint: { x: number; y: number }\n}\n\nexport function useElasticLineEvents(\n  containerRef: React.RefObject<SVGSVGElement | null>,\n  isVertical: boolean,\n  grabThreshold: number,\n  releaseThreshold: number\n): ElasticLineEvents {\n  const mousePosition = useMousePosition(containerRef)\n  const dimensions = useDimensions(containerRef)\n  const [isGrabbed, setIsGrabbed] = useState(false)\n  const [controlPoint, setControlPoint] = useState({\n    x: dimensions.width / 2,\n    y: dimensions.height / 2,\n  })\n\n  useEffect(() => {\n    if (containerRef.current) {\n      const { width, height } = dimensions\n      const x = mousePosition.x\n      const y = mousePosition.y\n\n      // Check if mouse is outside container bounds\n      const isOutsideBounds = x < 0 || x > width || y < 0 || y > height\n\n      if (isOutsideBounds) {\n        setIsGrabbed(false)\n        return\n      }\n\n      let distance: number\n      let newControlPoint: { x: number; y: number }\n\n      if (isVertical) {\n        const midX = width / 2\n        distance = Math.abs(x - midX)\n        newControlPoint = {\n          x: midX + 2.2 * (x - midX),\n          y: y,\n        }\n      } else {\n        const midY = height / 2\n        distance = Math.abs(y - midY)\n        newControlPoint = {\n          x: x,\n          y: midY + 2.2 * (y - midY),\n        }\n      }\n\n      setControlPoint(newControlPoint)\n\n      if (!isGrabbed && distance < grabThreshold) {\n        setIsGrabbed(true)\n      } else if (isGrabbed && distance > releaseThreshold) {\n        setIsGrabbed(false)\n      }\n    }\n  }, [mousePosition, isVertical, isGrabbed, grabThreshold, releaseThreshold])\n\n  return { isGrabbed, controlPoint }\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/use-elastic-line-events.ts"
+    }
+  ],
+  "meta": {
+    "source": "Fancy Components",
+    "sourceUrl": "https://www.fancycomponents.dev/docs/components/use-elastic-line-events",
+    "author": "danielpetho",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "개발자 도구"
+  ],
+  "type": "registry:component"
+}

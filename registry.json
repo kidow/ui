@@ -1741,6 +1741,31 @@
       }
     },
     {
+      "name": "animated-gradient-with-svg",
+      "type": "registry:component",
+      "title": "Animated Gradient With SVG",
+      "description": "SVG 도형이 겹쳐 흐르는 그라디언트 배경(animated gradient, mesh gradient).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/animated-gradient-with-svg.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-gradient-with-svg.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/animated-gradient-with-svg",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "animated-grain",
       "type": "registry:component",
       "title": "Animated Grain",
@@ -3232,6 +3257,33 @@
       }
     },
     {
+      "name": "basic-number-ticker",
+      "type": "registry:component",
+      "title": "Basic Number Ticker",
+      "description": "숫자가 목표까지 올라가는 카운터(number ticker, count up).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/basic-number-ticker.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/basic-number-ticker.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/basic-number-ticker",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "beam-circle",
       "type": "registry:component",
       "title": "Beam Circle",
@@ -3853,6 +3905,33 @@
       }
     },
     {
+      "name": "box-carousel",
+      "type": "registry:component",
+      "title": "Box Carousel",
+      "description": "상자가 굴러가며 넘어가는 3D 캐러셀(box carousel, cube slider).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/box-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/box-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/box-carousel",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "brand-section",
       "type": "registry:component",
       "title": "Brand Section",
@@ -3873,6 +3952,33 @@
         "source": "Serenity UI",
         "sourceUrl": "https://serenity-ui.com",
         "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "breathing-text",
+      "type": "registry:component",
+      "title": "Breathing Text",
+      "description": "글자 굵기가 숨쉬듯 오르내리는 텍스트(breathing text, variable font).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/breathing-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/breathing-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/breathing-text",
+        "author": "danielpetho",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -4251,6 +4357,31 @@
         "source": "UI Layouts",
         "sourceUrl": "https://www.ui-layouts.com/components/buyme-acoffee",
         "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "calculate-position",
+      "type": "registry:component",
+      "title": "Calculate Position",
+      "description": "SVG 경로 위 위치를 계산하는 유틸(calculate position).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/calculate-position.ts",
+          "type": "registry:component",
+          "target": "components/kidow/calculate-position.ts"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/calculate-position",
+        "author": "danielpetho",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -5746,6 +5877,33 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/CinematicScroll",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "circling-elements",
+      "type": "registry:component",
+      "title": "Circling Elements",
+      "description": "요소들이 원을 그리며 도는 배치(circling elements, orbit).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/circling-elements.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/circling-elements.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/circling-elements",
+        "author": "danielpetho",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -7577,6 +7735,33 @@
       }
     },
     {
+      "name": "css-box",
+      "type": "registry:component",
+      "title": "CSS Box",
+      "description": "CSS 만으로 만든 3D 상자(css box, 3d cube). 면마다 내용을 넣는다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/css-box.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/css-box.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/css-box",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "currency-transfer",
       "type": "registry:component",
       "title": "Currency Transfer",
@@ -7628,6 +7813,37 @@
         "source": "Kibo UI",
         "sourceUrl": "https://www.kibo-ui.com/components/cursor",
         "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "cursor-attractor-and-gravity",
+      "type": "registry:component",
+      "title": "Cursor Attractor And Gravity",
+      "description": "입자가 커서에 끌리고 중력을 받는 물리 효과(cursor attractor, gravity). matter-js 를 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "lodash",
+        "matter-js",
+        "svg-path-commander",
+        "poly-decomp",
+        "@types/matter-js"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/cursor-attractor-and-gravity.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cursor-attractor-and-gravity.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/cursor-attractor-and-gravity",
+        "author": "danielpetho",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -8228,6 +8444,31 @@
       }
     },
     {
+      "name": "demo-images",
+      "type": "registry:component",
+      "title": "Demo Images",
+      "description": "Fancy Components 예제가 함께 쓰는 이미지 목록(demo images).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/demo-images.ts",
+          "type": "registry:component",
+          "target": "components/kidow/demo-images.ts"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/demo-images",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "depth-chart",
       "type": "registry:component",
       "title": "Depth Chart",
@@ -8811,6 +9052,33 @@
       }
     },
     {
+      "name": "drag-elements",
+      "type": "registry:component",
+      "title": "Drag Elements",
+      "description": "자유롭게 끌어 옮기는 요소들(drag elements, draggable).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/drag-elements.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/drag-elements.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/drag-elements",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "drag-items",
       "type": "registry:component",
       "title": "Drag Items",
@@ -9029,6 +9297,33 @@
       }
     },
     {
+      "name": "elastic-line",
+      "type": "registry:component",
+      "title": "Elastic Line",
+      "description": "커서로 잡아당기면 늘어나는 탄성 선(elastic line, rubber band).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/elastic-line.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/elastic-line.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/elastic-line",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "elastic-pop-reveal",
       "type": "registry:component",
       "title": "Elastic Pop Reveal",
@@ -9124,6 +9419,33 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/electro-border",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "element-along-svg-path",
+      "type": "registry:component",
+      "title": "Element Along SVG Path",
+      "description": "SVG 경로를 따라 요소가 움직이는 효과(element along path, motion path).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/element-along-svg-path.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/element-along-svg-path.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/element-along-svg-path",
+        "author": "danielpetho",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -10397,6 +10719,33 @@
       }
     },
     {
+      "name": "float",
+      "type": "registry:component",
+      "title": "Float",
+      "description": "둥둥 떠 있는 부유 효과(float, hover animation).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/float.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/float.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/float",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "floating-label-input",
       "type": "registry:component",
       "title": "Floating Label Input",
@@ -11462,6 +11811,31 @@
       }
     },
     {
+      "name": "gooey-svg-filter",
+      "type": "registry:component",
+      "title": "Gooey SVG Filter",
+      "description": "요소가 물방울처럼 붙었다 떨어지는 SVG 필터(gooey filter, metaball).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/gooey-svg-filter.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gooey-svg-filter.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/gooey-svg-filter",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "gooey-text-morphing",
       "type": "registry:component",
       "title": "Gooey Text Morphing",
@@ -11808,6 +12182,37 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "gravity",
+      "type": "registry:component",
+      "title": "Gravity",
+      "description": "요소가 떨어지고 부딪히는 중력 상자(gravity, physics). matter-js 를 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "lodash",
+        "matter-js",
+        "svg-path-commander",
+        "poly-decomp",
+        "@types/matter-js"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/gravity.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gravity.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/gravity",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -14430,6 +14835,33 @@
       }
     },
     {
+      "name": "letter-3d-swap",
+      "type": "registry:component",
+      "title": "Letter 3D Swap",
+      "description": "글자가 3D 로 뒤집히며 바뀌는 텍스트(3d letter swap).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/letter-3d-swap.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/letter-3d-swap.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/letter-3d-swap",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "letter-cascade",
       "type": "registry:component",
       "title": "letter-cascade",
@@ -14453,6 +14885,61 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "letter-swap-forward-anim",
+      "type": "registry:component",
+      "title": "Letter Swap Forward Anim",
+      "description": "hover 하면 글자가 차례로 위로 밀려 바뀌는 텍스트(letter swap).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/letter-swap-forward-anim.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/letter-swap-forward-anim.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/letter-swap-forward-anim",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "letter-swap-pingpong-anim",
+      "type": "registry:component",
+      "title": "Letter Swap Pingpong Anim",
+      "description": "hover 에 따라 글자가 오갔다 하는 텍스트(letter swap pingpong).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "lodash",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/letter-swap-pingpong-anim.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/letter-swap-pingpong-anim.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/letter-swap-pingpong-anim",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -16280,6 +16767,33 @@
       }
     },
     {
+      "name": "marquee-along-svg-path",
+      "type": "registry:component",
+      "title": "Marquee Along SVG Path",
+      "description": "SVG 경로를 따라 흐르는 마퀴(marquee along path, curved marquee).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/marquee-along-svg-path.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/marquee-along-svg-path.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/marquee-along-svg-path",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "marquee-menu",
       "type": "registry:component",
       "title": "Marquee Menu",
@@ -16480,6 +16994,33 @@
         "source": "ElevenLabs UI",
         "sourceUrl": "https://ui.elevenlabs.io/docs/components/matrix",
         "author": "ElevenLabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "media-between-text",
+      "type": "registry:component",
+      "title": "Media Between Text",
+      "description": "글자 사이에 이미지·영상이 끼어드는 표현(media between text, inline media).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/media-between-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/media-between-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/media-between-text",
+        "author": "danielpetho",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -18143,6 +18684,33 @@
       }
     },
     {
+      "name": "parallax-floating",
+      "type": "registry:component",
+      "title": "Parallax Floating",
+      "description": "커서에 따라 깊이가 다른 요소가 따로 움직이는 시차 효과(parallax floating).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/parallax-floating.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/parallax-floating.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/parallax-floating",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "particle-button",
       "type": "registry:component",
       "title": "Particle Button",
@@ -18801,6 +19369,59 @@
         "source": "Cult UI",
         "sourceUrl": "https://www.cult-ui.com/docs/components/pixel-paragraph-words-inverse",
         "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "pixel-trail",
+      "type": "registry:component",
+      "title": "Pixel Trail",
+      "description": "커서가 지나간 자리에 픽셀이 남는 효과(pixel trail, cursor trail).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion",
+        "uuid"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/pixel-trail.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pixel-trail.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/pixel-trail",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "pixelate-svg-filter",
+      "type": "registry:component",
+      "title": "Pixelate SVG Filter",
+      "description": "이미지를 픽셀로 뭉개는 SVG 필터(pixelate filter, mosaic).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/pixelate-svg-filter.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pixelate-svg-filter.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/pixelate-svg-filter",
+        "author": "danielpetho",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -20196,6 +20817,62 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "random-letter-swap-forward-anim",
+      "type": "registry:component",
+      "title": "Random Letter Swap Forward Anim",
+      "description": "무작위 순서로 글자가 바뀌는 텍스트(random letter swap).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "lodash",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/random-letter-swap-forward-anim.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/random-letter-swap-forward-anim.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/random-letter-swap-forward-anim",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "random-letter-swap-pingpong-anim",
+      "type": "registry:component",
+      "title": "Random Letter Swap Pingpong Anim",
+      "description": "무작위 순서로 글자가 오갔다 하는 텍스트(random letter swap pingpong).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "lodash",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/random-letter-swap-pingpong-anim.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/random-letter-swap-pingpong-anim.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/random-letter-swap-pingpong-anim",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -21733,6 +22410,58 @@
       }
     },
     {
+      "name": "scramble-hover",
+      "type": "registry:component",
+      "title": "Scramble Hover",
+      "description": "hover 하면 글자가 뒤섞이는 텍스트(scramble hover, decode).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/scramble-hover.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scramble-hover.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/scramble-hover",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "scramble-in",
+      "type": "registry:component",
+      "title": "Scramble In",
+      "description": "나타날 때 글자가 뒤섞였다 자리를 찾는 텍스트(scramble in).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/scramble-in.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scramble-in.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/scramble-in",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "scratch-card",
       "type": "registry:component",
       "title": "Scratch Card",
@@ -21756,6 +22485,60 @@
         "sourceUrl": "https://ui.spectrumhq.in/docs/components/scratch-card",
         "author": "arihantcodes",
         "license": "Apache-2.0",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "screensaver",
+      "type": "registry:component",
+      "title": "Screensaver",
+      "description": "화면 안을 튕겨 다니는 화면보호기 효과(screensaver, dvd bounce).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/screensaver.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/screensaver.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/screensaver",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "scroll-and-swap-text",
+      "type": "registry:component",
+      "title": "Scroll And Swap Text",
+      "description": "스크롤에 따라 글자가 바뀌는 텍스트(scroll swap text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/scroll-and-swap-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-and-swap-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/scroll-and-swap-text",
+        "author": "danielpetho",
+        "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
     },
@@ -23090,6 +23873,60 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "simple-carousel",
+      "type": "registry:component",
+      "title": "Simple Carousel",
+      "description": "가벼운 캐러셀(simple carousel, slider).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/simple-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/simple-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/simple-carousel",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "simple-marquee",
+      "type": "registry:component",
+      "title": "Simple Marquee",
+      "description": "가벼운 마퀴(simple marquee, ticker).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/simple-marquee.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/simple-marquee.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/simple-marquee",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -24519,6 +25356,33 @@
       }
     },
     {
+      "name": "stacking-cards",
+      "type": "registry:component",
+      "title": "Stacking Cards",
+      "description": "스크롤하면 겹쳐 쌓이는 카드(stacking cards, sticky stack).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/stacking-cards.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stacking-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/stacking-cards",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "stagger-blur-effect",
       "type": "registry:component",
       "title": "Stagger Blur Effect",
@@ -25438,6 +26302,33 @@
       }
     },
     {
+      "name": "svg-path-to-vertices",
+      "type": "registry:component",
+      "title": "SVG Path To Vertices",
+      "description": "SVG 경로를 꼭짓점 배열로 바꾸는 유틸(svg path to vertices). 물리 컴포넌트가 쓴다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "svg-path-commander"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/svg-path-to-vertices.ts",
+          "type": "registry:component",
+          "target": "components/kidow/svg-path-to-vertices.ts"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/svg-path-to-vertices",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "svg-shapes",
       "type": "registry:component",
       "title": "SVG Shapes",
@@ -26297,6 +27188,33 @@
       }
     },
     {
+      "name": "text-along-path",
+      "type": "registry:component",
+      "title": "Text Along Path",
+      "description": "SVG 경로를 따라 흐르는 텍스트(text along path, curved text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-along-path.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-along-path.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/text-along-path",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "text-animate",
       "type": "registry:component",
       "title": "Text Animate",
@@ -26393,6 +27311,33 @@
       }
     },
     {
+      "name": "text-cursor-proximity",
+      "type": "registry:component",
+      "title": "Text Cursor Proximity",
+      "description": "커서가 가까운 글자만 반응하는 텍스트(cursor proximity text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-cursor-proximity.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-cursor-proximity.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/text-cursor-proximity",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "text-effect",
       "type": "registry:component",
       "title": "Text Effect",
@@ -26465,6 +27410,33 @@
         "source": "Cult UI",
         "sourceUrl": "https://www.cult-ui.com/docs/components/text-gif",
         "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "text-highlighter",
+      "type": "registry:component",
+      "title": "Text Highlighter",
+      "description": "형광펜으로 그은 듯 강조되는 텍스트(text highlighter, marker).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-highlighter.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-highlighter.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/text-highlighter",
+        "author": "danielpetho",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -26666,6 +27638,33 @@
         "source": "Motion Primitives",
         "sourceUrl": "https://motion-primitives.com/docs/text-roll",
         "author": "ibelick",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "text-rotate",
+      "type": "registry:component",
+      "title": "Text Rotate",
+      "description": "문구가 돌아가며 바뀌는 텍스트(text rotate, rotating words).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-rotate.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-rotate.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/text-rotate",
+        "author": "danielpetho",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -28169,6 +29168,116 @@
       }
     },
     {
+      "name": "underline-center",
+      "type": "registry:component",
+      "title": "Underline Center",
+      "description": "가운데에서 양쪽으로 퍼지는 밑줄(underline center, hover underline).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/underline-center.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/underline-center.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/underline-center",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "underline-comes-in-goes-out",
+      "type": "registry:component",
+      "title": "Underline Comes In Goes Out",
+      "description": "들어왔다 나가는 밑줄(underline in out).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/underline-comes-in-goes-out.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/underline-comes-in-goes-out.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/underline-comes-in-goes-out",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "underline-goes-out-comes-in",
+      "type": "registry:component",
+      "title": "Underline Goes Out Comes In",
+      "description": "나갔다 들어오는 밑줄(underline out in).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "clsx",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/underline-goes-out-comes-in.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/underline-goes-out-comes-in.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/underline-goes-out-comes-in",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "underline-to-background",
+      "type": "registry:component",
+      "title": "Underline To Background",
+      "description": "밑줄이 배경으로 번지는 효과(underline to background, highlight).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/underline-to-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/underline-to-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/underline-to-background",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "undo-pill",
       "type": "registry:component",
       "title": "Undo Pill",
@@ -28221,6 +29330,106 @@
       }
     },
     {
+      "name": "use-debounced-dimensions",
+      "type": "registry:component",
+      "title": "Use Debounced Dimensions",
+      "description": "요소 크기를 디바운스해 알려주는 훅(use debounced dimensions).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/use-debounced-dimensions.ts",
+          "type": "registry:component",
+          "target": "components/kidow/use-debounced-dimensions.ts"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/use-debounced-dimensions",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "use-detect-browser",
+      "type": "registry:component",
+      "title": "Use Detect Browser",
+      "description": "브라우저 종류를 알려주는 훅(use detect browser).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/use-detect-browser.ts",
+          "type": "registry:component",
+          "target": "components/kidow/use-detect-browser.ts"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/use-detect-browser",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "use-dimensions",
+      "type": "registry:component",
+      "title": "Use Dimensions",
+      "description": "요소의 크기를 알려주는 훅(use dimensions, measure).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/use-dimensions.ts",
+          "type": "registry:component",
+          "target": "components/kidow/use-dimensions.ts"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/use-dimensions",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "use-elastic-line-events",
+      "type": "registry:component",
+      "title": "Use Elastic Line Events",
+      "description": "탄성 선에 필요한 포인터 이벤트를 다루는 훅(use elastic line events).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/use-elastic-line-events.ts",
+          "type": "registry:component",
+          "target": "components/kidow/use-elastic-line-events.ts"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/use-elastic-line-events",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "use-follow-mouse",
       "type": "registry:component",
       "title": "Use Follow Mouse",
@@ -28243,6 +29452,56 @@
         "source": "Systaliko UI",
         "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/use-follow-mouse",
         "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "use-line-breakdown",
+      "type": "registry:component",
+      "title": "Use Line Breakdown",
+      "description": "텍스트를 줄 단위로 쪼개 주는 훅(use line breakdown).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/use-line-breakdown.ts",
+          "type": "registry:component",
+          "target": "components/kidow/use-line-breakdown.ts"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/use-line-breakdown",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "use-line-count",
+      "type": "registry:component",
+      "title": "Use Line Count",
+      "description": "텍스트가 몇 줄인지 세는 훅(use line count).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/use-line-count.ts",
+          "type": "registry:component",
+          "target": "components/kidow/use-line-count.ts"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/use-line-count",
+        "author": "danielpetho",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -28296,6 +29555,131 @@
       }
     },
     {
+      "name": "use-mounted",
+      "type": "registry:component",
+      "title": "Use Mounted",
+      "description": "마운트 여부를 알려주는 훅(use mounted, is client).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/use-mounted.ts",
+          "type": "registry:component",
+          "target": "components/kidow/use-mounted.ts"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/use-mounted",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "use-mouse-position",
+      "type": "registry:component",
+      "title": "Use Mouse Position",
+      "description": "마우스 위치를 알려주는 훅(use mouse position).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/use-mouse-position.ts",
+          "type": "registry:component",
+          "target": "components/kidow/use-mouse-position.ts"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/use-mouse-position",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "use-mouse-position-ref",
+      "type": "registry:component",
+      "title": "Use Mouse Position Ref",
+      "description": "리렌더 없이 마우스 위치를 추적하는 훅(use mouse position ref).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/use-mouse-position-ref.ts",
+          "type": "registry:component",
+          "target": "components/kidow/use-mouse-position-ref.ts"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/use-mouse-position-ref",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "use-mouse-vector",
+      "type": "registry:component",
+      "title": "Use Mouse Vector",
+      "description": "마우스 이동 방향과 속도를 알려주는 훅(use mouse vector).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/use-mouse-vector.ts",
+          "type": "registry:component",
+          "target": "components/kidow/use-mouse-vector.ts"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/use-mouse-vector",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "use-screen-size",
+      "type": "registry:component",
+      "title": "Use Screen Size",
+      "description": "화면 크기와 중단점을 알려주는 훅(use screen size, breakpoint).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/use-screen-size.ts",
+          "type": "registry:component",
+          "target": "components/kidow/use-screen-size.ts"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/use-screen-size",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "use-weather",
       "type": "registry:component",
       "title": "Use Weather",
@@ -28341,6 +29725,115 @@
         "source": "KokonutUI",
         "sourceUrl": "https://kokonutui.com/docs/components/v0-button",
         "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "variable-font-and-cursor",
+      "type": "registry:component",
+      "title": "Variable Font And Cursor",
+      "description": "커서 위치에 따라 가변 폰트 축이 변하는 텍스트(variable font, cursor).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/variable-font-and-cursor.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/variable-font-and-cursor.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/variable-font-and-cursor",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "variable-font-cursor-proximity",
+      "type": "registry:component",
+      "title": "Variable Font Cursor Proximity",
+      "description": "커서와의 거리에 따라 굵기가 변하는 가변 폰트 텍스트(variable font proximity).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/variable-font-cursor-proximity.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/variable-font-cursor-proximity.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/variable-font-cursor-proximity",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "variable-font-hover-by-letter",
+      "type": "registry:component",
+      "title": "Variable Font Hover By Letter",
+      "description": "hover 한 글자만 굵어지는 가변 폰트 텍스트(variable font hover).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "lodash",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/variable-font-hover-by-letter.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/variable-font-hover-by-letter.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/variable-font-hover-by-letter",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "variable-font-hover-by-random-letter",
+      "type": "registry:component",
+      "title": "Variable Font Hover By Random Letter",
+      "description": "무작위 글자가 굵어지는 가변 폰트 텍스트(variable font random).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/variable-font-hover-by-random-letter.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/variable-font-hover-by-random-letter.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/variable-font-hover-by-random-letter",
+        "author": "danielpetho",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -28499,6 +29992,33 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "vertical-cut-reveal",
+      "type": "registry:component",
+      "title": "Vertical Cut Reveal",
+      "description": "글자가 위아래로 잘려 올라오며 드러나는 텍스트(vertical cut reveal).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/vertical-cut-reveal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/vertical-cut-reveal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Fancy Components",
+        "sourceUrl": "https://www.fancycomponents.dev/docs/components/vertical-cut-reveal",
+        "author": "danielpetho",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {

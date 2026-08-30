@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "calculate-position",
+  "title": "Calculate Position",
+  "description": "SVG 경로 위 위치를 계산하는 유틸(calculate position).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/calculate-position.ts",
+      "content": "export function calculatePosition(\n  value: number | string | undefined,\n  containerSize: number,\n  elementSize: number\n): number {\n  // Handle percentage strings (e.g. \"50%\")\n  if (typeof value === \"string\" && value.endsWith(\"%\")) {\n    const percentage = parseFloat(value) / 100\n    return containerSize * percentage\n  }\n\n  // Handle direct pixel values\n  if (typeof value === \"number\") {\n    return value\n  }\n\n  // If no value provided, center the element\n  return (containerSize - elementSize) / 2\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/calculate-position.ts"
+    }
+  ],
+  "meta": {
+    "source": "Fancy Components",
+    "sourceUrl": "https://www.fancycomponents.dev/docs/components/calculate-position",
+    "author": "danielpetho",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "개발자 도구"
+  ],
+  "type": "registry:component"
+}
