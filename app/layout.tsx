@@ -4,7 +4,13 @@ import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 
 import { CopyCommand } from '@/components/copy-command'
-import { NAMESPACE, REGISTRY_URL } from '@/lib/registry'
+import { SearchCommand } from '@/components/search-command'
+import {
+  NAMESPACE,
+  REGISTRY_URL,
+  categorySlug,
+  groupByCategory,
+} from '@/lib/registry'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -27,6 +33,12 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
+  const categories = groupByCategory().map(([label, list]) => ({
+    label,
+    slug: categorySlug(label),
+    count: list.length,
+  }))
+
   return (
     <html
       lang="ko"
@@ -41,7 +53,8 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
             <p className="text-muted-foreground hidden text-sm sm:block">
               여러 UI 프레임워크를 한 곳에 · 출처 표기
             </p>
-            <div className="ml-auto">
+            <div className="ml-auto flex items-center gap-2">
+              <SearchCommand categories={categories} />
               <CopyCommand
                 command={`npx shadcn@latest registry add "${NAMESPACE}=${REGISTRY_URL}/r/{name}.json"`}
                 label="MCP · 레지스트리 등록"
