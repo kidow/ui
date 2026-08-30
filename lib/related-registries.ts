@@ -91,6 +91,15 @@ export const RELATED_REGISTRIES: RelatedRegistry[] = [
       '브라우저 DOM이 아니라 PDF 문서로 렌더된다. Tailwind를 쓰지 않고 shadcn 레지스트리도 아니며(자체 pdfx-cli), 라이선스 표기를 찾지 못했다.',
   },
   {
+    name: 'Aceternity UI',
+    url: 'https://ui.aceternity.com/components',
+    summary:
+      'shadcn 레지스트리(/registry.json)로 배포되는 컴포넌트 111종과 블록 167종. 이 바닥에서 가장 널리 쓰이는 곳 중 하나이고, 스크롤 연출과 3D 카드 계열의 원조 격인 것들이 많다.',
+    reason:
+      '오픈소스 라이선스가 없다. 공개 저장소도 LICENSE 파일도 없고, 약관이 "All intellectual property rights are reserved" 아래 Republish · Reproduce, duplicate or copy · Redistribute 를 모두 금지한다. 무료 컴포넌트는 각자 프로젝트에 복사해 쓰라는 것이지 모아서 다시 배포하라는 것이 아니다.',
+    revisitWhen: '오픈소스 라이선스로 공개하거나 개별 허락을 주면',
+  },
+  {
     name: 'ScrollX UI',
     url: 'https://scrollxui.dev/docs/components',
     summary:
