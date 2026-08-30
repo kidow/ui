@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "3d-marquee",
+  "title": "3D Marquee",
+  "description": "이미지가 기울어진 격자로 흐르는 3D 마퀴(3d marquee, tilted grid scroll).",
+  "dependencies": [
+    "motion",
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/3d-marquee.tsx",
+      "content": "\"use client\";\n\nimport { motion } from \"motion/react\";\nimport React from \"react\";\n\nexport interface MarqueeImage {\n  src: string;\n  alt: string;\n  href?: string;\n  target?: \"_blank\" | \"_self\" | \"_parent\" | \"_top\";\n}\n\nexport interface ThreeDMarqueeProps {\n  images: MarqueeImage[];\n  className?: string;\n  cols?: number; // default is 4\n  onImageClick?: (image: MarqueeImage, index: number) => void;\n}\n\nexport const ThreeDMarquee: React.FC<ThreeDMarqueeProps> = ({\n  images,\n  className = \"\",\n  cols = 4,\n  onImageClick,\n}) => {\n  // Clone the image list twice\n  const duplicatedImages = [...images, ...images];\n\n  const groupSize = Math.ceil(duplicatedImages.length / cols);\n  const imageGroups = Array.from({ length: cols }, (_, index) =>\n    duplicatedImages.slice(index * groupSize, (index + 1) * groupSize)\n  );\n\n  const handleImageClick = (image: MarqueeImage, globalIndex: number) => {\n    if (onImageClick) {\n      onImageClick(image, globalIndex);\n    } else if (image.href) {\n      window.open(image.href, image.target || \"_self\");\n    }\n  };\n\n  return (\n    <section\n      className={`mx-auto block h-[600px] max-sm:h-[400px] \n        overflow-hidden rounded-2xl bg-white dark:bg-black ${className}`}\n    >\n      <div\n        className=\"flex w-full h-full items-center justify-center\"\n        style={{\n          transform: \"rotateX(55deg) rotateY(0deg) rotateZ(45deg)\",\n        }}\n      >\n        <div className=\"w-full overflow-hidden scale-90 sm:scale-100\">\n          <div\n            className={`relative grid h-full w-full origin-center \n              grid-cols-2 sm:grid-cols-${cols} gap-4 transform \n              `}\n          >\n            {imageGroups.map((imagesInGroup, idx) => (\n              <motion.div\n                key={`column-${idx}`}\n                animate={{ y: idx % 2 === 0 ? 100 : -100 }}\n                transition={{\n                  duration: idx % 2 === 0 ? 10 : 15,\n                  repeat: Infinity,\n                  repeatType: \"reverse\",\n                }}\n                className=\"flex flex-col items-center gap-6 relative\"\n              >\n                <div className=\"absolute left-0 top-0 h-full w-0.5 bg-gray-200 dark:bg-gray-700\" />\n                {imagesInGroup.map((image, imgIdx) => {\n                  const globalIndex = idx * groupSize + imgIdx;\n                  const isClickable = image.href || onImageClick;\n\n                  return (\n                    <div key={`img-${imgIdx}`} className=\"relative\">\n                      <div className=\"absolute top-0 left-0 w-full h-0.5 bg-gray-200 dark:bg-gray-700\" />\n                      <motion.img\n                        whileHover={{ y: -10 }}\n                        transition={{ duration: 0.3, ease: \"easeInOut\" }}\n                        src={image.src}\n                        alt={image.alt}\n                        width={970}\n                        height={700}\n                        className={`aspect-[970/700] w-full max-w-[200px] rounded-lg object-cover ring ring-gray-300/30 dark:ring-gray-800/50 shadow-xl hover:shadow-2xl transition-shadow duration-300 ${\n                          isClickable ? \"cursor-pointer\" : \"\"\n                        }`}\n                        onClick={() => handleImageClick(image, globalIndex)}\n                      />\n                    </div>\n                  );\n                })}\n              </motion.div>\n            ))}\n          </div>\n        </div>\n      </div>\n    </section>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/3d-marquee.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/3d-marquee",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

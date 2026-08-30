@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "top-sticky-bar",
+  "title": "Top Sticky Bar",
+  "description": "상단 고정 공지 바(sticky banner, announcement bar).",
+  "dependencies": [
+    "motion",
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/top-sticky-bar.tsx",
+      "content": "\"use client\";\n\nimport { motion, Easing } from \"motion/react\";\nimport { cn } from \"@/lib/utils\"; // Assuming you have a utility for class name concatenation\nimport { useState, useEffect } from \"react\"; // Import useState and useEffect\n\ninterface TopStickyBarProps {\n  /**\n   * Controls the visibility of the bar. True to show, false to hide.\n   * This prop is ignored if `showOnScroll` is true.\n   */\n  show?: boolean; // Make optional as it might be controlled internally\n  /**\n   * If true, the bar's visibility will be controlled by scroll position.\n   * If false or undefined, the `show` prop controls visibility.\n   * @default false\n   */\n  showOnScroll?: boolean;\n  /**\n   * The scroll position (in pixels) after which the bar will become visible when `showOnScroll` is true.\n   * @default 200\n   */\n  scrollThreshold?: number;\n  /**\n   * The content to display inside the sticky bar. Can be a string, JSX, or any React Node.\n   */\n  children: React.ReactNode;\n  /**\n   * Optional. Additional Tailwind CSS classes to apply to the bar for styling.\n   * Defaults to basic styling for a top bar.\n   */\n  className?: string;\n  /**\n   * Optional. The animation duration in seconds.\n   * @default 0.4\n   */\n  duration?: number;\n  /**\n   * Optional. The easing function for the animation.\n   * @default \"easeInOut\"\n   */\n  ease?: Easing | Easing[];\n  /**\n   * Optional. The initial vertical offset for the animation (when hidden).\n   * @default -50\n   */\n  initialY?: number;\n  /**\n   * Optional. The vertical offset when the bar is shown.\n   * @default 0\n   */\n  visibleY?: number;\n  /**\n   * Optional. The vertical offset when the bar is hidden.\n   * @default -50\n   */\n  hiddenY?: number;\n}\n\nconst TopStickyBar = ({\n  show: externalShow = false, // Renamed to avoid conflict with internal state\n  showOnScroll = false,\n  scrollThreshold = 200,\n  children,\n  className,\n  duration = 0.4,\n  ease = \"easeInOut\",\n  initialY = -50,\n  visibleY = 0,\n  hiddenY = -50,\n}: TopStickyBarProps) => {\n  const [internalShow, setInternalShow] = useState(externalShow); // Initialize with externalShow\n\n  // Effect to manage scroll-based visibility\n  useEffect(() => {\n    if (!showOnScroll) {\n      setInternalShow(externalShow); // If not scroll-controlled, use external prop\n      return;\n    }\n\n    const handleScroll = () => {\n      if (window.scrollY > scrollThreshold) {\n        setInternalShow(true);\n      } else {\n        setInternalShow(false);\n      }\n    };\n\n    window.addEventListener(\"scroll\", handleScroll);\n    // Call once on mount to set initial state based on current scroll\n    handleScroll();\n\n    return () => window.\nremoveEventListener(\"scroll\", handleScroll);\n  }, [showOnScroll, scrollThreshold, externalShow]); // Re-run if these props change\n\n  // Determine the final `show` value\n  const finalShow = showOnScroll ? internalShow : externalShow;\n\n  return (\n    <motion.div\n      initial={{ y: initialY, opacity: 0 }}\n      animate={{\n        y: finalShow ? visibleY : hiddenY,\n        opacity: finalShow ? 1 : 0,\n      }}\n      transition={{ duration, ease }}\n      className={cn(\n        \"fixed top-0 left-0 w-full z-[60] bg-gray-800 text-white py-1 text-sm text-center shadow-md\",\n        className\n      )}\n    >\n      {children}\n    </motion.div>\n  );\n};\n\nexport default TopStickyBar;",
+      "type": "registry:component",
+      "target": "components/kidow/top-sticky-bar.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/top-sticky-bar",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "마케팅 섹션"
+  ],
+  "type": "registry:component"
+}

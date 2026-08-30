@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "image-reveal",
+  "title": "Image Reveal",
+  "description": "텍스트에 hover 하면 이미지가 드러나는 효과(image reveal on hover, text preview).",
+  "dependencies": [
+    "lucide-react",
+    "motion",
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/image-reveal.tsx",
+      "content": "\"use client\";\n\nimport React, { useState, useEffect } from \"react\";\nimport { motion, useMotionValue, useSpring } from \"motion/react\";\nimport { MoveUpRight as ArrowIcon } from \"lucide-react\";\n\ninterface VisualItem {\n  key: number;\n  url: string;\n  label: string;\n}\n\nconst visualData: VisualItem[] = [\n  {\n    key: 1,\n    url: \"https://images.pexels.com/photos/9002742/pexels-photo-9002742.jpeg\",\n    label: \"Pinky Island\",\n  },\n  {\n    key: 2,\n    url: \"https://images.pexels.com/photos/31622979/pexels-photo-31622979.jpeg\",\n    label: \"Greedy Model\",\n  },\n  {\n    key: 3,\n    url: \"https://images.pexels.com/photos/12187128/pexels-photo-12187128.jpeg\",\n    label: \"Sigma Connect\",\n  },\n  {\n    key: 4,\n    url: \"https://images.pexels.com/photos/28168248/pexels-photo-28168248.jpeg\",\n    label: \"Futuristic Gamma\",\n  },\n];\n\nconst ImageReveal: React.FC = () => {\n  const [focusedItem, setFocusedItem] = useState<VisualItem | null>(null);\n  const [isLargeScreen, setIsLargeScreen] = useState(true);\n\n  const cursorX = useMotionValue(0);\n  const cursorY = useMotionValue(0);\n  const smoothX = useSpring(cursorX, { stiffness: 300, damping: 40 });\n  const smoothY = useSpring(cursorY, { stiffness: 300, damping: 40 });\n\n  useEffect(() => {\n    const updateScreen = () => {\n      setIsLargeScreen(window.innerWidth >= 768);\n    };\n    updateScreen();\n    window.addEventListener(\"resize\", updateScreen);\n    return () => window.removeEventListener(\"resize\", updateScreen);\n  }, []);\n\n  const onMouseTrack = (e: React.MouseEvent) => {\n    cursorX.set(e.clientX);\n    cursorY.set(e.clientY);\n  };\n\n  const onHoverActivate = (item: VisualItem) => {\n    setFocusedItem(item);\n  };\n\n  const onHoverDeactivate = () => {\n    setFocusedItem(null);\n  };\n\n  return (\n    <div\n      className=\"relative mx-auto w-full min-h-fit bg-background rounded-md border overflow-hidden\"\n      onMouseMove={onMouseTrack}\n      onMouseLeave={onHoverDeactivate}\n    >\n      {visualData.map((item) => (\n        <div\n          key={item.key}\n          className=\"p-4 cursor-pointer relative sm:flex items-center justify-between\"\n          onMouseEnter={() => onHoverActivate(item)}\n        >\n          {!isLargeScreen && (\n            <img\n              src={item.url}\n              className=\"sm:w-32 sm:h-20 w-full h-52 object-cover rounded-md\"\n              alt={item.label}\n            />\n          )}\n          <h2\n            className={`newFont uppercase md:text-5xl sm:text-2xl text-xl font-semibold sm:py-6 py-2 leading-[100%] relative transition-colors ${\n              focusedItem?.key === item.key\n                ? \"mix-blend-difference z-20 text-gray-300\"\n                : \"text-foreground\"\n            }`}\n          >\n            {item.label}\n          </h2>\n          <button\n            className={`sm:block hidden p-4 rounded-full transition-all duration-300 ease-out ${\n              focusedItem?.key === item.key\n                ? \"mix-blend-difference z-20 bg-white text-black\"\n                : \"\"\n            }`}\n          >\n            <ArrowIcon className=\"w-8 h-8\" />\n          </button>\n          <div\n            className={`h-[2px] dark:bg-white bg-black absolute bottom-0 left-0 transition-all duration-300 ease-linear ${\n              focusedItem?.key === item.key ? \"w-full\" : \"w-0\"\n            }`}\n          />\n        </div>\n      ))}\n\n      {isLargeScreen && focusedItem && (\n        <motion.img\n          src={focusedItem.url}\n          alt={focusedItem.label}\n          className=\"fixed z-30 object-cover w-[300px] h-[400px] rounded-lg pointer-events-none shadow-2xl dark:bg-gray-950 bg-white\"\n          style={{\n            left: smoothX,\n            top: smoothY,\n            x: \"-50%\",\n            y: \"-50%\",\n          }}\n          initial={{ opacity: 0, scale: 0.5 }}\n          animate={{ opacity: 1, scale: 1 }}\n          exit={{ opacity: 0, scale: 0.5 }}\n          transition={{ type: \"spring\", stiffness: 300, damping: 30 }}\n        />\n      )}\n    </div>\n  );\n};\n\nexport default ImageReveal;\n",
+      "type": "registry:component",
+      "target": "components/kidow/image-reveal.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/image-reveal",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

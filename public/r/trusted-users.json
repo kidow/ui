@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "trusted-users",
+  "title": "Trusted Users",
+  "description": "사용자 아바타를 겹쳐 보여주는 소셜 프루프(trusted users, avatar group).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/trusted-users.tsx",
+      "content": "import React from \"react\";\nimport { Star } from \"lucide-react\";\nimport { cn } from \"@/lib/utils\";\nimport { CountUp } from \"./count-up\";\nimport Image from \"next/image\";\nimport Link from \"next/link\";\n\ninterface TrustedUsersProps {\n  avatars: string[];\n  rating?: number;\n  totalUsersText?: number;\n  caption?: string;\n  className?: string;\n  starColorClass?: string;\n  ringColors?: string[];\n}\n\nexport const TrustedUsers: React.FC<TrustedUsersProps> = ({\n  avatars,\n  rating = 5,\n  totalUsersText = 1000, // ✅ default as number\n  caption = \"Trusted by\",\n  className = \"\",\n  starColorClass = \"text-yellow-400\",\n  ringColors = [],\n}) => {\n  return (\n    <div\n      className={cn(\n        `flex items-center justify-center gap-6 bg-transparent\n          text-foreground py-4 px-4`,\n        className\n      )}\n    >\n      <div className=\"flex -space-x-4\">\n        {avatars.map((src, i) => (\n          <div\n            key={i}\n            className={`w-10 h-10 rounded-full overflow-hidden ring-1 ring-offset-2 ring-offset-black ${ringColors[i] || \"ring-blue-900\"\n              }`}\n          >\n            <Image\n              src={src}\n              alt={`Avatar ${i + 1}`}\n              width={40}\n              height={40}\n              className=\"w-full h-full object-cover\"\n              loading=\"lazy\"\n            />\n          </div>\n        ))}\n      </div>\n\n      <div className=\"flex flex-col items-start gap-1\">\n        <div className={`flex gap-1 ${starColorClass}`}>\n          {Array.from({ length: rating }).map((_, i) => (\n            <Star key={i} fill=\"currentColor\" className=\"w-4 h-4\" aria-hidden=\"true\" />\n          ))}\n        </div>\n        <div className=\"text-foreground text-xs md:text-md font-medium flex items-center flex-wrap\">\n          {caption}\n          <CountUp\n            value={totalUsersText}\n            duration={2}\n            separator=\",\"\n            className=\"ml-1 text-lg\"\n            suffix=\"+\"\n            colorScheme=\"gradient\"\n          />\n          <Link href=\"/pricing\" className=\"underline text-primarylw dark:text-greedy ml-1\">\n            Pro users\n          </Link>\n        </div>\n      </div>\n    </div>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/trusted-users.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/trusted-users",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

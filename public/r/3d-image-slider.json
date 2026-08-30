@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "3d-image-slider",
+  "title": "3D Image Slider",
+  "description": "3D 원근이 들어간 이미지 슬라이더(3d slider, depth slider).",
+  "dependencies": [
+    "motion",
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/3d-image-slider.tsx",
+      "content": "\"use client\";\n\nimport React from \"react\";\nimport { motion, useReducedMotion } from \"motion/react\";\n\nconst DEFAULT_DATA = [\n  \"https://images.unsplash.com/photo-1540968221243-29f5d70540bf?w=800&auto=format&fit=crop&q=60\",\n  \"https://images.unsplash.com/photo-1596135187959-562c650d98bc?w=800&auto=format&fit=crop&q=60\",\n  \"https://images.unsplash.com/photo-1628944682084-831f35256163?w=800&auto=format&fit=crop&q=60\",\n  \"https://images.unsplash.com/photo-1590013330451-3946e83e0392?w=800&auto=format&fit=crop&q=60\",\n  \"https://images.unsplash.com/photo-1590421959604-741d0eec0a2e?w=800&auto=format&fit=crop&q=60\",\n  \"https://images.unsplash.com/photo-1572613000712-eadc57acbecd?w=800&auto=format&fit=crop&q=60\",\n  \"https://images.unsplash.com/photo-1570097192570-4b49a6736f9f?w=800&auto=format&fit=crop&q=60\",\n  \"https://images.unsplash.com/photo-1620789550663-2b10e0080354?w=800&auto=format&fit=crop&q=60\",\n  \"https://images.unsplash.com/photo-1617775623669-20bff4ffaa5c?w=800&auto=format&fit=crop&q=60\",\n  \"https://images.unsplash.com/photo-1548600916-dc8492f8e845?w=800&auto=format&fit=crop&q=60\",\n  \"https://images.unsplash.com/photo-1573824969595-a76d4365a2e6?w=800&auto=format&fit=crop&q=60\",\n  \"https://images.unsplash.com/photo-1633936929709-59991b5fdd72?w=800&auto=format&fit=crop&q=60\",\n];\n\ninterface Slider3DProps {\n  /** Array of image URLs to display */\n  images?: string[];\n  /** Duration of one full 360-degree rotation (in seconds) */\n  duration?: number;\n  /** Width of each card. Can be px, rem, em, etc. */\n  cardWidth?: string;\n  /** CSS aspect ratio of the cards */\n  cardAspectRatio?: string;\n  /** CSS perspective value for the 3D container */\n  perspective?: string;\n  /** Additional classes for the outermost container */\n  containerClassName?: string;\n  /** Additional classes for the individual image elements */\n  imageClassName?: string;\n  /** Direction of the rotation */\n  rotationDirection?: \"left\" | \"right\";\n  /** Whether to apply a gradient fade mask on the edges */\n  withMask?: boolean;\n}\n\nexport default function ImageSlider3D({\n  images = DEFAULT_DATA,\n  duration = 32,\n  cardWidth = \"17.5em\",\n  cardAspectRatio = \"7/10\",\n  perspective = \"35em\",\n  containerClassName = \"\",\n  imageClassName = \"\",\n  rotationDirection = \"left\",\n  withMask = true,\n}: Slider3DProps) {\n  const n = images.length;\n  const prefersReducedMotion = useReducedMotion();\n  const animationDuration = prefersReducedMotion ? duration * 4 : duration;\n\n  // rotation angles based on direction\n  const rotationValues = rotationDirection === \"left\" ? [0, 360] : [360, 0];\n\n  const maskStyles = withMask\n    ? {\n      WebkitMask:\n        \"linear-gradient(90deg, transparent, #000 20% 80%, transparent)\",\n      mask: \"linear-gradient(90deg, transparent, #000 20% 80%, transparent)\",\n    }\n    : {};\n\n  return (\n    <div\n      className={`grid w-full h-full min-h-[500px] overflow-hidden place-items-center ${containerClassName}`}\n      style={{\n        perspective: perspective,\n        ...maskStyles,\n      }}\n    >\n      <motion.div\n        className=\"grid place-self-center pointer-events-auto\"\n        style={{\n          transformStyle: \"preserve-3d\",\n        }}\n        animate={{\n          rotateY: rotationValues,\n        }}\n        transition={{\n          duration: animationDuration,\n          ease: \"linear\",\n          repeat: Infinity,\n        }}\n      >\n        {images.map((src, i) => (\n          <img\n            key={i}\n            src={src}\n            alt={`Slide ${i}`}\n            className={`col-start-1 row-start-1 object-cover rounded-[1.5em] ${imageClassName}`}\n            style={{\n              width: cardWidth,\n              aspectRatio: cardAspectRatio,\n              backfaceVisibility: \"hidden\",\n              WebkitBackfaceVisibility: \"hidden\",\n              transform: `rotateY(calc(${i} * (1turn / ${n}))) translateZ(calc(-1 * (0.5 * ${cardWidth} + 0.5em) / tan(0.5 * (1turn / ${n}))))`,\n            }}\n          />\n        ))}\n      </motion.div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/3d-image-slider.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/3d-image-slider",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

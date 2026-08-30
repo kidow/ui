@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "scroll-cards",
+  "title": "Scroll Cards",
+  "description": "스크롤에 따라 카드가 쌓이는 섹션(scroll cards, sticky stack).",
+  "dependencies": [
+    "@gsap/react",
+    "gsap"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/scroll-cards.tsx",
+      "content": "\"use client\";\n\nimport { useGSAP } from \"@gsap/react\";\nimport gsap from \"gsap\";\nimport { ScrollTrigger } from \"gsap/ScrollTrigger\";\nimport { useRef } from \"react\";\nimport { cn } from \"@/lib/utils\";\n\ninterface CardData {\n  id: number | string;\n  image: string;\n  alt?: string;\n}\n\nexport interface ScrollCardsProps {\n  cards: CardData[];\n  /**\n   * Defines the direction from which the next card enters.\n   * @default \"bottom\"\n   */\n  direction?: \"bottom\" | \"top\" | \"left\" | \"right\";\n  className?: string;\n  containerClassName?: string;\n  imageClassName?: string;\n  /**\n   * The scale the current card scales down to.\n   * @default 0.7\n   */\n  cardScale?: number;\n  /**\n   * The rotation the current card rotates to.\n   * @default 5\n   */\n  cardRotation?: number;\n}\n\nexport function ScrollCards({\n  cards,\n  direction = \"bottom\",\n  className,\n  containerClassName,\n  imageClassName,\n  cardScale = 0.7,\n  cardRotation = 5,\n}: ScrollCardsProps) {\n  const container = useRef<HTMLDivElement>(null);\n  const imageRefs = useRef<(HTMLImageElement | null)[]>([]);\n\n  useGSAP(\n    () => {\n      gsap.registerPlugin(ScrollTrigger);\n\n      const imageElements = imageRefs.current.filter(Boolean);\n      const totalCards = imageElements.length;\n\n      if (!imageElements[0]) return;\n\n      gsap.set(imageElements[0], { x: \"0%\", y: \"0%\", scale: 1, rotation: 0 });\n\n      // Determine initial offset based on direction\n      const getInitialOffset = () => {\n        switch (direction) {\n          case \"top\":\n            return { y: \"-100%\", x: \"0%\" };\n          case \"left\":\n            return { x: \"-100%\", y: \"0%\" };\n          case \"right\":\n            return { x: \"100%\", y: \"0%\" };\n          case \"bottom\":\n          default:\n            return { y: \"100%\", x: \"0%\" };\n        }\n      };\n\n      for (let i = 1; i < totalCards; i++) {\n        gsap.set(imageElements[i], { ...getInitialOffset(), scale: 1, rotation: 0 });\n      }\n\n      const scrollTimeline = gsap.timeline({\n        scrollTrigger: {\n          trigger: container.current,\n          start: \"top top\",\n          end: `+=${window.innerHeight * totalCards}`,\n          pin: true,\n          scrub: 1,\n          pinSpacing: true,\n          anticipatePin: 1,\n        },\n      });\n\n      for (let i = 0; i < totalCards - 1; i++) {\n        const currentImage = imageElements[i];\n        const nextImage = imageElements[i + 1];\n        const position = i;\n\n        if (!currentImage || !nextImage) continue;\n\n        scrollTimeline.to(\n          currentImage,\n          {\n            scale: cardScale,\n            rotation: cardRotation,\n            duration: 1,\n            ease: \"power2.inOut\",\n          },\n          position,\n        );\n\n        scrollTimeline.to(\n          nextImage,\n          {\n            x: \"0%\",\n            y: \"0%\",\n            duration: 1,\n            ease: \"power2.inOut\",\n          },\n          position,\n        );\n      }\n\n      const resizeObserver = new ResizeObserver(() => {\n        ScrollTrigger.refresh();\n      });\n\n      if (container.current) {\n        resizeObserver.observe(container.current);\n      }\n\n      return () => {\n        resizeObserver.disconnect();\n        scrollTimeline.kill();\n      };\n    },\n    { scope: container, dependencies: [direction, cards.length, cardScale, cardRotation] }\n  );\n\n  return (\n    <div className={cn(\"relative w-full h-[70vh]\", className)} ref={container}>\n      <div className=\"lightswind-scroll-cards-trigger relative flex h-[70vh] w-full items-center justify-center overflow-hidden p-4 lg:p-8\">\n        <div\n          className={cn(\n            \"relative w-[95%] sm:w-[90%] lg:w-[85%] max-w-[1400px] aspect-[4/3] md:aspect-video overflow-hidden rounded-3xl shadow-xl\",\n            containerClassName\n          )}\n        >\n          {cards.map((card, i) => (\n            <img\n              key={card.id}\n              src={card.image}\n              alt={card.alt || `Scroll card gallery image ${i}`}\n              className={cn(\n                \"absolute top-0 left-0 h-full w-full object-cover rounded-3xl will-change-transform shadow-2xl\",\n                imageClassName\n              )}\n              ref={(el) => {\n                imageRefs.current[i] = el;\n              }}\n            />\n          ))}\n        </div>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/scroll-cards.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/scroll-cards",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

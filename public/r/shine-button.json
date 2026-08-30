@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "shine-button",
+  "title": "Shine Button",
+  "description": "광택이 지나가는 버튼(shine button, gloss cta).",
+  "files": [
+    {
+      "path": "registry/kidow/shine-button.tsx",
+      "content": "import React from \"react\";\n\ninterface ShineButtonProps {\n  label?: string;\n  onClick?: () => void;\n  className?: string;\n  size?: \"sm\" | \"md\" | \"lg\";\n  bgColor?: string; // Can be hex or gradient\n  disabled?: boolean;\n  children?: React.ReactNode;\n}\n\nconst sizeStyles: Record<\n  NonNullable<ShineButtonProps[\"size\"]>,\n  { padding: string; fontSize: string }\n> = {\n  sm: { padding: \"0.5rem 1rem\", fontSize: \"0.875rem\" },\n  md: { padding: \"0.6rem 1.4rem\", fontSize: \"1rem\" },\n  lg: { padding: \"0.8rem 1.8rem\", fontSize: \"1.125rem\" },\n};\n\nexport const ShineButton: React.FC<ShineButtonProps> = ({\n  label = \"Shine now\",\n  onClick,\n  className = \"\",\n  size = \"md\",\n  bgColor = \"linear-gradient(325deg, hsl(217 100% 56%) 0%, hsl(194 100% 69%) 55%, hsl(217 100% 56%) 90%)\",\n  disabled = false,\n  children,\n}) => {\n  const { padding, fontSize } = sizeStyles[size];\n\n  // Determine whether to use solid color or gradient\n  const backgroundImage = bgColor.startsWith(\"linear-gradient\")\n    ? bgColor\n    : `linear-gradient(to right, ${bgColor}, ${bgColor})`;\n\n  return (\n    <button\n      onClick={onClick}\n      disabled={disabled}\n      className={`relative text-white font-medium rounded-md min-w-[120px] min-h-[44px] transition-all duration-700 ease-in-out\n        border-none cursor-pointer shadow-[0px_0px_20px_rgba(71,184,255,0.5),0px_5px_5px_-1px_rgba(58,125,233,0.25),inset_4px_4px_8px_rgba(175,230,255,0.5),inset_-4px_-4px_8px_rgba(19,95,216,0.35)]\n        focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-blue-500\n        hover:bg-[length:280%_auto] active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed disabled:shadow-none ${className}`}\n      style={{\n        backgroundImage: disabled ? \"none\" : backgroundImage,\n        backgroundColor: disabled ? \"hsl(var(--muted))\" : undefined,\n        backgroundSize: \"280% auto\",\n        backgroundPosition: \"initial\",\n        color: disabled ? \"hsl(var(--muted-foreground))\" : \"hsl(0 0% 100%)\",\n        fontSize,\n        padding,\n        transition: \"0.8s\",\n      }}\n      onMouseEnter={(e) => {\n        if (!disabled) {\n          (e.target as HTMLButtonElement).style.backgroundPosition = \"right top\";\n        }\n      }}\n      onMouseLeave={(e) => {\n        if (!disabled) {\n          (e.target as HTMLButtonElement).style.backgroundPosition = \"initial\";\n        }\n      }}\n    >\n      {children || label}\n\n      {/* Shine effect */}\n      {!disabled && (\n        <div\n          className=\"absolute top-0 left-[-75%] w-[200%] \n        h-full bg-white/40 skew-x-[-20deg] opacity-0 \n        group-hover:opacity-100 animate-shine pointer-events-none z-20\"\n        />\n      )}\n    </button>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/shine-button.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/shine-button",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:component"
+}

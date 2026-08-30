@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "typing-text",
+  "title": "Typing Text",
+  "description": "타이핑되는 텍스트(typing text, typewriter).",
+  "dependencies": [
+    "motion",
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/typing-text.tsx",
+      "content": "\"use client\";\n\nimport { motion, Variants } from \"motion/react\";\nimport React, {\n  ElementType,\n  ReactNode,\n  useEffect,\n  useState,\n} from \"react\";\nimport { cn } from \"@/lib/utils\";\n\nexport interface TypingTextProps {\n  children: ReactNode;\n  as?: ElementType;\n  className?: string;\n  delay?: number;\n  duration?: number;\n  fontSize?: string;\n  fontWeight?: string;\n  color?: string;\n  letterSpacing?: string;\n  align?: \"left\" | \"center\" | \"right\";\n  loop?: boolean;\n}\n\nexport const TypingText = ({\n  children,\n  as: Component = \"div\",\n  className = \"\",\n  delay = 0,\n  duration = 2,\n  fontSize = \"text-4xl\",\n  fontWeight = \"font-bold\",\n  color = \"text-white\",\n  letterSpacing = \"tracking-wide\",\n  align = \"left\",\n  loop = false,\n}: TypingTextProps) => {\n  const [textContent, setTextContent] = useState<string>(\"\");\n\n  useEffect(() => {\n    const extractText = (node: ReactNode): string => {\n      if (typeof node === \"string\" || typeof node === \"number\") {\n        return node.toString();\n      }\n      if (Array.isArray(node)) {\n        return node.map(extractText).join(\"\");\n      }\n      if (React.isValidElement(node)) {\n        const element = node as React.ReactElement<any>;\n        if (typeof element.props.children !== \"undefined\") {\n          return extractText(element.props.children);\n        }\n      }\n      return \"\";\n    };\n\n    setTextContent(extractText(children));\n  }, [children]);\n\n  const characters = textContent.split(\"\").map((char) =>\n    char === \" \" ? \"\\u00A0\" : char\n  );\n\n  const characterVariants: Variants = {\n    hidden: { opacity: 0, scale: 0.95 },\n    visible: (i: number) => ({\n      opacity: 1,\n      scale: 1,\n      transition: {\n        delay: delay + i * (duration / characters.length),\n        duration: 0.3,\n        ease: \"easeInOut\",\n      },\n    }),\n  };\n\n  return React.createElement(\n    Component as any,\n    {\n      className: cn(\n        \"inline-flex\",\n        className,\n        fontSize,\n        fontWeight,\n        color,\n        letterSpacing,\n        align === \"center\"\n          ? \"justify-center text-center\"\n          : align === \"right\"\n          ? \"justify-end text-right\"\n          : \"justify-start text-left\"\n      ),\n    },\n    <motion.span\n      className=\"inline-block\"\n      initial=\"hidden\"\n      animate=\"visible\"\n      aria-label={textContent}\n      role=\"text\"\n    >\n      {characters.map((char, index) => (\n        <motion.span\n          key={`${char}-${index}`}\n          className=\"inline-block\"\n          variants={characterVariants}\n          custom={index}\n          initial=\"hidden\"\n          animate=\"visible\"\n        >\n          {char}\n        </motion.span>\n      ))}\n    </motion.span>\n  );\n};\n",
+      "type": "registry:component",
+      "target": "components/kidow/typing-text.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/typing-text",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

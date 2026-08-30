@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "drag-order-list",
+  "title": "Drag Order List",
+  "description": "A Drag Order List component for Lightswind UI.",
+  "dependencies": [
+    "lucide-react",
+    "motion",
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/drag-order-list.tsx",
+      "content": "\"use client\";\n\nimport React, { useEffect } from \"react\";\nimport {\n  useMotionValue,\n  Reorder,\n  useDragControls,\n  motion,\n  animate,\n  DragControls,\n} from \"motion/react\";\nimport { GripVertical } from \"lucide-react\";\n\nexport interface DragItem {\n  id: number;\n  title: string;\n  subtitle: string;\n  date: string;\n  link?: string;\n}\n\ninterface DragOrderListProps {\n  items: DragItem[];\n  onReorder?: (items: DragItem[]) => void;\n}\n\nexport function DragOrderList({ items, onReorder }: DragOrderListProps) {\n  const [list, setList] = React.useState(items);\n\n  useEffect(() => {\n    if (onReorder) onReorder(list);\n  }, [list]);\n\n  return (\n    <Reorder.Group\n      axis=\"y\"\n      values={list}\n      onReorder={setList}\n      className=\"space-y-4 w-full max-w-2xl mx-auto\"\n    >\n      {list.map((item) => (\n        <DragOrderItem key={item.id} item={item} />\n      ))}\n    </Reorder.Group>\n  );\n}\n\nfunction DragOrderItem({ item }: { item: DragItem }) {\n  const y = useMotionValue(0);\n  const boxShadow = useRaisedShadow(y);\n  const dragControls = useDragControls();\n\n  return (\n    <Reorder.Item\n      value={item}\n      style={{ boxShadow, y }}\n      dragListener={false}\n      dragControls={dragControls}\n      className=\"flex justify-between items-start p-4 bg-background \n     text-foreground rounded-xl border shadow-sm\"\n    >\n      <div className=\"flex flex-col space-y-1 flex-1\">\n        <h2 className=\"text-lg font-semibold\">{item.title}</h2>\n        <p className=\"text-sm text-muted-foreground\">{item.subtitle}</p>\n        <span className=\"text-xs text-muted-foreground\">{item.date}</span>\n        {item.link && (\n          <a\n            href={item.link}\n            target=\"_blank\"\n            rel=\"noopener noreferrer\"\n            className=\"mt-2 inline-block text-xs text-primarylw hover:underline\"\n          >\n            View details about {item.title}\n          </a>\n        )}\n      </div>\n      <ReorderHandle dragControls={dragControls} />\n    </Reorder.Item>\n  );\n}\n\nfunction ReorderHandle({ dragControls }: { dragControls: DragControls }) {\n  return (\n    <motion.div\n      whileTap={{ scale: 0.95 }}\n      onPointerDown={(e) => {\n        e.preventDefault();\n        dragControls.start(e);\n      }}\n      className=\"cursor-grab active:cursor-grabbing p-2 text-muted-foreground\"\n    >\n      <GripVertical />\n    </motion.div>\n  );\n}\n\nconst inactiveShadow = \"0px 0px 0px rgba(0,0,0,0.8)\";\n\nfunction useRaisedShadow(value: ReturnType<typeof useMotionValue>) {\n  const boxShadow = useMotionValue(inactiveShadow);\n\n  useEffect(() => {\n    let isActive = false;\n    return value.on(\"change\", (latest) => {\n      const wasActive = isActive;\n      if (latest !== 0) {\n        isActive = true;\n        if (isActive !== wasActive) {\n          animate(boxShadow, \"5px 5px 15px rgba(0,0,0,0.15)\");\n        }\n      } else {\n        isActive = false;\n        if (isActive !== wasActive) {\n          animate(boxShadow, inactiveShadow);\n        }\n      }\n    });\n  }, [value, boxShadow]);\n\n  return boxShadow;\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/drag-order-list.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/drag-order-list",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "미분류"
+  ],
+  "type": "registry:component"
+}

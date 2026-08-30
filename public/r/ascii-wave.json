@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "ascii-wave",
+  "title": "Ascii Wave",
+  "description": "아스키 문자로 그린 물결 배경(ascii wave, text art background).",
+  "dependencies": [
+    "next-themes"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/ascii-wave.tsx",
+      "content": "\"use client\";\n\nimport React, { useRef, useEffect } from \"react\";\nimport { useTheme } from \"next-themes\";\n\ninterface AsciiWaveProps {\n    className?: string;\n    color?: string; // Hex or generic color\n    speed?: number;\n}\n\nconst AsciiWave: React.FC<AsciiWaveProps> = ({\n    className,\n    color = \"#FF4500\",  // Default Firecrawl Orange\n    speed = 1\n}) => {\n    const canvasRef = useRef<HTMLCanvasElement>(null);\n    const containerRef = useRef<HTMLDivElement>(null);\n    const { theme } = useTheme() || {};\n\n    useEffect(() => {\n        const canvas = canvasRef.current;\n        const container = containerRef.current;\n        if (!canvas || !container) return;\n\n        const ctx = canvas.getContext(\"2d\");\n        if (!ctx) return;\n\n        let animationId: number;\n        let time = 0;\n\n        const resize = () => {\n            if (!container || !canvas) return;\n            const dpr = window.devicePixelRatio || 1;\n            canvas.width = container.clientWidth * dpr;\n            canvas.height = container.clientHeight * dpr;\n            ctx.scale(dpr, dpr);\n        };\n\n        const observer = new ResizeObserver(resize);\n        observer.observe(container);\n        resize();\n\n        // ASCII Characters sorted by density (light to dark)\n        const chars = \" .:+x*#\".split(\"\");\n        const fontSize = 12;\n        const columnWidth = 10;\n\n        const draw = () => {\n            // Clean clear for crisp pixels.\n            const width = container.clientWidth;\n            const height = container.clientHeight;\n\n            ctx.clearRect(0, 0, width, height);\n\n            ctx.font = `${fontSize}px monospace`;\n            ctx.fillStyle = color;\n\n            const columns = Math.ceil(width / columnWidth);\n            const rows = Math.ceil(height / fontSize);\n\n            // \"Fire\" Logic: Pure Vertical Ascent\n            for (let x = 0; x < columns; x++) {\n                // FIXED GEOMETRY (No traveling waves!)\n                // Amplitude modulation only (Standing Wave)\n                // x * 0.1 gives the mountain shape.\n                // We do NOT add 'time' to 'x' here.\n                const shapeBase = Math.sin(x * 0.1) * 0.6 + Math.cos(x * 0.25) * 0.4;\n\n                // Breath: Global pulsing to make it feel alive\n                const breath = Math.sin(time * 0.002 * speed) * 0.1;\n\n                // Flicker: High frequency jitter that does NOT travel\n                const flicker = Math.sin(time * 0.008 * speed + x * 100) * 0.05;\n\n                // Height calculation\n                const noise = shapeBase + breath + flicker;\n                const columnHeightNormal = Math.max(0.15, (noise + 1) / 2 * 0.6 + 0.15);\n                const activeRows = Math.floor(columnHeightNormal * rows);\n\n                for (let y = rows - 1; y > rows - activeRows; y--) {\n                    // PURE VERTICAL FLOW\n                    // No horizontal phase mixing (x * k) in the time component\n                    const flowShift = time * 0.005 * speed;\n\n                    // Independent column noise\n                    // y moves up over time (y - flowShift). \n                    // x acts only as a static seed/offset for variety between columns.\n                    const charNoise = Math.sin((y * 0.2) - flowShift + x * 10);\n\n                    // Top fade\n                    const distFromTop = (y - (rows - activeRows));\n                    const fade = Math.min(1, distFromTop / 6);\n\n                    // Char selection\n                    const normalizedNoise = (charNoise + 1) / 2;\n                    const charIndex = Math.floor(normalizedNoise * chars.length);\n                    const char = chars[Math.min(charIndex, chars.length - 1)];\n\n                    const posX = x * columnWidth;\n                    const posY = y * fontSize;\n\n                    // Glitch dropouts (holes in the flame)\n                    if (Math.random() > 0.95) continue;\n\n                    ctx.globalAlpha = fade;\n                    ctx.fillText(char, posX, posY);\n                }\n            }\n\n            ctx.globalAlpha = 1.0;\n            time += 16;\n            animationId = requestAnimationFrame(draw);\n        };\n\n        animationId = requestAnimationFrame(draw);\n\n        return () => {\n            observer.disconnect();\n            cancelAnimationFrame(animationId);\n        };\n    }, [color, speed, theme]);\n\n    return (\n        <div ref={containerRef} className={`w-full h-full overflow-hidden ${className}`}>\n            <canvas ref={canvasRef} className=\"block w-full h-full\" />\n        </div>\n    );\n};\n\nexport default AsciiWave;\n",
+      "type": "registry:component",
+      "target": "components/kidow/ascii-wave.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/ascii-wave",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "배경·패턴"
+  ],
+  "type": "registry:component"
+}

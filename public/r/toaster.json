@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "toaster",
+  "title": "Toaster",
+  "description": "A Toaster component for Lightswind UI.",
+  "dependencies": [
+    "lucide-react",
+    "motion",
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/toaster.tsx",
+      "content": "\nimport * as React from \"react\";\nimport { useToast } from \"@/hooks/use-toast\";\nimport {\n  Toast,\n  ToastClose,\n  ToastDescription,\n  ToastProvider,\n  ToastTitle,\n  ToastViewport,\n  ToastPosition,\n} from \"./toast\";\nimport { X } from \"lucide-react\";\nimport { AnimatePresence } from \"motion/react\";\n\nexport interface ToasterProps {\n  position?: ToastPosition;\n}\n\nexport function Toaster({ position = \"top-right\" }: ToasterProps) {\n  const { toasts, dismiss } = useToast();\n\n  return (\n    <ToastProvider>\n      <ToastViewport position={position}>\n        <AnimatePresence mode=\"popLayout\">\n          {toasts.map(({ id, title, description, action, type, variant, duration, icon, avatar, ...props }) => {\n            const toastVariant = variant || (\n              type === \"success\" ? \"success\" :\n                type === \"warning\" ? \"warning\" :\n                  type === \"info\" ? \"info\" :\n                    type === \"destructive\" ? \"destructive\" :\n                      type === \"loading\" ? \"loading\" :\n                        \"default\"\n            );\n\n            return (\n              <Toast\n                key={id}\n                {...props}\n                variant={toastVariant}\n                duration={duration}\n                icon={icon}\n                avatar={avatar}\n                onOpenChange={(open) => {\n                  if (!open) dismiss(id);\n                }}\n              >\n                <div className=\"grid gap-1\">\n                  {title && <ToastTitle>{title}</ToastTitle>}\n                  {description && <ToastDescription>{description}</ToastDescription>}\n                </div>\n                {action}\n              </Toast>\n            );\n          })}\n        </AnimatePresence>\n      </ToastViewport>\n    </ToastProvider>\n  );\n}",
+      "type": "registry:component",
+      "target": "components/kidow/toaster.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/toaster",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "미분류"
+  ],
+  "type": "registry:component"
+}

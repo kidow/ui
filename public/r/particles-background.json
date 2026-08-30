@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "particles-background",
+  "title": "Particles Background",
+  "description": "입자 배경(particles, canvas particles).",
+  "files": [
+    {
+      "path": "registry/kidow/particles-background.tsx",
+      "content": "import React, { useLayoutEffect } from 'react';\n\ndeclare global {\n  interface Window {\n    particlesJS: any;\n  }\n}\n\ninterface ParticlesBackgroundProps {\n  colors?: string[];\n  size?: number;\n  countDesktop?: number;\n  countTablet?: number;\n  countMobile?: number;\n  zIndex?: number;\n  height?: string;\n}\n\nconst ParticlesBackground: React.FC<ParticlesBackgroundProps> = ({\n  colors = ['#ff223e', '#5d1eb2', '#ff7300'],\n  size = 3,\n  countDesktop = 60,\n  countTablet = 50,\n  countMobile = 40,\n  zIndex = 0,\n  height = '100vh',\n}) => {\n  useLayoutEffect(() => {\n    const script = document.createElement('script');\n    script.src = \"https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js\";\n    script.onload = () => {\n      const particlesElement = document.getElementById('js-particles');\n      if (particlesElement && window.particlesJS) {\n        const getParticleCount = () => {\n          const screenWidth = window.innerWidth;\n          if (screenWidth > 1024) return countDesktop;\n          if (screenWidth > 768) return countTablet;\n          return countMobile;\n        };\n\n        window.particlesJS('js-particles', {\n          particles: {\n            number: {\n              value: getParticleCount(),\n            },\n            color: {\n              value: colors,\n            },\n            shape: {\n              type: 'circle',\n            },\n            opacity: {\n              value: 1,\n              random: false,\n            },\n            size: {\n              value: size,\n              random: true,\n            },\n            line_linked: {\n              enable: false,\n            },\n            move: {\n              enable: true,\n              speed: 2,\n              direction: 'none',\n              random: true,\n              straight: false,\n              out_mode: 'out',\n            },\n          },\n          interactivity: {\n            detect_on: 'canvas',\n            events: {\n              onhover: {\n                enable: false,\n              },\n              onclick: {\n                enable: false,\n              },\n              resize: true,\n            },\n          },\n          retina_detect: true,\n        });\n      }\n    };\n    document.body.appendChild(script);\n\n    return () => {\n      document.body.removeChild(script);\n    };\n  }, [colors, size, countDesktop, countTablet, countMobile]);\n\n  return (\n    <div\n      id=\"js-particles\"\n      style={{\n        width: '100%',\n        height: height,\n        position: 'absolute',\n        top: 0,\n        left: 0,\n        zIndex: zIndex,\n        pointerEvents: 'none',\n      }}\n    >\n      <style>{`\n        #js-particles canvas {\n          position: absolute;\n          width: 100%;\n          height: 100%;\n        }\n\n        .particles-js-canvas-el {\n          position: absolute;\n        }\n\n        .particles-js-canvas-el circle {\n          fill: currentColor;\n          filter: url(#glow);\n        }\n      `}</style>\n      <svg xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\">\n        <defs>\n          <filter id=\"glow\">\n            <feGaussianBlur stdDeviation=\"3.5\" result=\"coloredBlur\" />\n            <feMerge>\n              <feMergeNode in=\"coloredBlur\" />\n              <feMergeNode in=\"SourceGraphic\" />\n            </feMerge>\n          </filter>\n        </defs>\n      </svg>\n    </div>\n  );\n};\n\nexport default ParticlesBackground;\n",
+      "type": "registry:component",
+      "target": "components/kidow/particles-background.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/particles-background",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "배경·패턴"
+  ],
+  "type": "registry:component"
+}

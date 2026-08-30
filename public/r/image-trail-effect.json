@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "image-trail-effect",
+  "title": "Image Trail Effect",
+  "description": "A Image Trail Effect component for Lightswind UI.",
+  "files": [
+    {
+      "path": "registry/kidow/image-trail-effect.tsx",
+      "content": "\"use client\";\n\n// @ts-nocheck\n\"use client\";\nimport { cn } from \"@/lib/utils\";\nimport { createRef, ReactNode, useRef } from \"react\";\n\ninterface MouseTrailProps {\n  imageSources: string[];\n  content?: ReactNode;\n  containerClassName?: string;\n  imageClassName?: string;\n  triggerDistance?: number;\n  maxTrailImages?: number;\n  useFadeEffect?: boolean;\n}\n\nexport default function ImageTrailEffect({\n  imageSources,\n  content,\n  containerClassName,\n  maxTrailImages = 5,\n  imageClassName = \"w-40 h-48\",\n  triggerDistance = 20,\n  useFadeEffect = false,\n}: MouseTrailProps) {\n  const wrapperRef = useRef(null);\n  const imageRefs = useRef(\n    imageSources.map(() => createRef<HTMLImageElement>())\n  );\n  const zIndexCounterRef = useRef(1);\n\n  let imageIndex = 0;\n  let lastPosition = { x: 0, y: 0 };\n\n  const activateImage = (img: HTMLImageElement, x: number, y: number) => {\n    const containerBounds = wrapperRef.current?.getBoundingClientRect();\n    const relativeX = x - containerBounds.left;\n    const relativeY = y - containerBounds.top;\n\n    img.style.left = `${relativeX}px`;\n    img.style.top = `${relativeY}px`;\n\n    if (zIndexCounterRef.current > 40) {\n      zIndexCounterRef.current = 1;\n    }\n\n    img.style.zIndex = String(zIndexCounterRef.current++);\n    img.dataset.status = \"active\";\n\n    if (useFadeEffect) {\n      setTimeout(() => {\n        img.dataset.status = \"inactive\";\n      }, 1500);\n    }\n\n    lastPosition = { x, y };\n  };\n\n  const calculateDistance = (x: number, y: number) => {\n    return Math.hypot(x - lastPosition.x, y - lastPosition.y);\n  };\n\n  const deactivateImage = (img: HTMLImageElement) => {\n    img.dataset.status = \"inactive\";\n  };\n\n  const handleMouseMove = (e: MouseEvent | Touch) => {\n    if (\n      calculateDistance(e.clientX, e.clientY) >\n      window.innerWidth / triggerDistance\n    ) {\n      const leadImage =\n        imageRefs.current[imageIndex % imageRefs.current.length]?.current;\n      const tailImage =\n        imageRefs.current[\n          (imageIndex - maxTrailImages) % imageRefs.current.length\n        ]?.current;\n\n      if (leadImage) activateImage(leadImage, e.clientX, e.clientY);\n      if (tailImage) deactivateImage(tailImage);\n\n      imageIndex++;\n    }\n  };\n\n  const handleMouseLeave = () => {\n    // Deactivate all images when cursor leaves the container\n    imageRefs.current.forEach((ref) => {\n      if (ref.current) {\n        ref.current.dataset.status = \"inactive\";\n      }\n    });\n    // Reset position tracker so next entry restarts cleanly\n    lastPosition = { x: 0, y: 0 };\n  };\n\n  return (\n    <section\n      onMouseMove={handleMouseMove}\n      onMouseLeave={handleMouseLeave}\n      onTouchMove={(e) => handleMouseMove(e.touches[0] as unknown as React.MouseEvent)}\n      ref={wrapperRef}\n      className={cn(\n        `grid place-content-center h-[600px] w-full bg-background  text-foreground\n        relative overflow-hidden rounded-lg`,\n        containerClassName\n      )}\n    >\n      {imageSources.map((src, i) => (\n        <img\n          key={i}\n          ref={imageRefs.current[i]}\n          src={src}\n          alt={`trail-${i}`}\n          data-index={i}\n          data-status=\"inactive\"\n          className={cn(\n            \"object-cover scale-0 opacity:0 data-[status='active']:scale-100 data-[status='active']:opacity-100 transition-transform data-[status='active']:duration-500 duration-300 data-[status='active']:ease-out-expo absolute -translate-y-[50%] -translate-x-[50%]\",\n            imageClassName\n          )}\n        />\n      ))}\n      {content}\n    </section>\n  );\n}\n\n",
+      "type": "registry:component",
+      "target": "components/kidow/image-trail-effect.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/image-trail-effect",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "미분류"
+  ],
+  "type": "registry:component"
+}

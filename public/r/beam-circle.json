@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "beam-circle",
+  "title": "Beam Circle",
+  "description": "원을 그리며 도는 빛줄기(beam circle, rotating light).",
+  "dependencies": [
+    "lucide-react",
+    "motion",
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/beam-circle.tsx",
+      "content": "\"use client\";\nimport React, { useMemo } from \"react\";\nimport { motion, Transition } from \"motion/react\";\nimport { Sun, Cloud, MessageSquare, Briefcase, Zap } from \"lucide-react\";\n\n// --- Types ---\ntype OrbitConfig = {\n  id: number;\n  radiusFactor: number;\n  speed: number; // seconds per rotation\n  icon: React.ReactNode;\n  iconSize: number;\n  orbitColor?: string;\n  orbitThickness?: number;\n};\n\ntype BeamCircleProps = {\n  size?: number;\n  orbits?: OrbitConfig[];\n  centerIcon?: React.ReactNode;\n};\n\n// --- Default Orbits ---\nconst defaultOrbits: OrbitConfig[] = [\n  {\n    id: 1,\n    radiusFactor: 0.15,\n    speed: 7,\n    icon: <Zap className=\"text-yellow-400\" />,\n    iconSize: 20,\n    orbitColor: \"rgba(255, 193, 7, 0.4)\",\n    orbitThickness: 1.5,\n  },\n  {\n    id: 2,\n    radiusFactor: 0.35,\n    speed: 12,\n    icon: <MessageSquare className=\"text-sky-500\" />,\n    iconSize: 24,\n    orbitThickness: 1.5,\n  },\n  {\n    id: 3,\n    radiusFactor: 0.55,\n    speed: 9,\n    icon: <Briefcase className=\"text-green-500\" />,\n    iconSize: 28,\n    orbitColor: \"rgba(76, 175, 80, 0.4)\",\n    orbitThickness: 2,\n  },\n  {\n    id: 4,\n    radiusFactor: 0.75,\n    speed: 15,\n    icon: <Cloud className=\"text-slate-400\" />,\n    iconSize: 32,\n    orbitThickness: 1,\n  },\n];\n\n// --- Component ---\nconst BeamCircle: React.FC<BeamCircleProps> = ({\n  size = 300,\n  orbits: customOrbits,\n  centerIcon,\n}) => {\n  const orbitsData = useMemo(() => customOrbits || defaultOrbits, [customOrbits]);\n  const halfSize = size / 2;\n\n  // --- Define linear easing manually ---\n  const linearEase = (t: number) => t;\n\n  const rotationTransition = (duration: number): Transition => ({\n    repeat: Infinity,\n    duration,\n    ease: linearEase, // ✅ Works properly now\n  });\n\n  // --- Center Icon ---\n  const CenterIcon = useMemo(\n    () => (\n      <motion.div\n        className=\"rounded-full shadow-lg bg-foreground grid place-content-center\"\n        style={{ width: halfSize * 0.2, height: halfSize * 0.2 }}\n        animate={{ scale: [1, 1.1, 1] }}\n        transition={{ repeat: Infinity, duration: 2, ease: \"easeInOut\" as any }}\n      >\n        {centerIcon ? (\n          centerIcon\n        ) : (\n          <Sun className=\"text-background\" size={halfSize * 0.1} />\n        )}\n      </motion.div>\n    ),\n    [halfSize, centerIcon]\n  );\n\n  return (\n    <div className=\"flex justify-center items-center p-4 bg-transparent\">\n      <div className=\"relative\" style={{ width: size, height: size }}>\n        {orbitsData.map((orbit) => {\n          const orbitDiameter = size * orbit.radiusFactor;\n          const orbitRadius = orbitDiameter / 2;\n          const containerSize = size;\n\n          return (\n            <React.Fragment key={orbit.id}>\n              {/* Orbit Line */}\n              <div\n                className={`absolute rounded-full border border-dashed ${\n                  orbit.orbitColor ? \"\" : \"border-foreground/30 dark:border-foreground/40\"\n                }`}\n                style={{\n                  width: orbitDiameter,\n                  height: orbitDiameter,\n                  top: halfSize - orbitRadius,\n                  left: halfSize - orbitRadius,\n                  borderColor: orbit.orbitColor || undefined,\n                  borderWidth: orbit.orbitThickness || 1,\n                }}\n              />\n\n              {/* Rotating Container */}\n              <motion.div\n                className=\"absolute inset-0\"\n                style={{ width: containerSize, height: containerSize }}\n                animate={{ rotate: 360 }}\n                transition={rotationTransition(orbit.speed)}\n              >\n                {/* Traveling Icon */}\n                <div\n                  className=\"absolute\"\n                  style={{\n                    top: halfSize,\n                    left: halfSize + orbitRadius,\n                    transform: `translate(-50%, -50%)`,\n                  }}\n                >\n                  <motion.div\n                    className=\"rounded-full shadow-md grid place-content-center bg-foreground p-1\"\n                    style={{ width: orbit.iconSize, height: orbit.iconSize }}\n                    animate={{ rotate: -360 }}\n                    transition={rotationTransition(orbit.speed)}\n                  >\n                    {React.isValidElement(orbit.icon) ? (\n                      React.cloneElement(orbit.icon as any, {\n                        size: orbit.iconSize * 0.6,\n                      })\n                    ) : (\n                      orbit.icon\n                    )}\n                  </motion.div>\n                </div>\n              </motion.div>\n            </React.Fragment>\n          );\n        })}\n\n        {/* Central Icon */}\n        <div className=\"absolute inset-0 grid place-content-center z-10\">{CenterIcon}</div>\n      </div>\n\n      <style jsx global>{`\n        body {\n          font-family: \"Inter\", sans-serif;\n          margin: 0;\n        }\n      `}</style>\n    </div>\n  );\n};\n\nexport default BeamCircle;\n",
+      "type": "registry:component",
+      "target": "components/kidow/beam-circle.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/beam-circle",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "배경·패턴"
+  ],
+  "type": "registry:component"
+}

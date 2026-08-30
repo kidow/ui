@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "rolling-text-3d",
+  "title": "Rolling Text 3D",
+  "description": "글자가 3D로 굴러가며 바뀌는 텍스트(rolling text, 3d flip).",
+  "dependencies": [
+    "gsap"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/rolling-text-3d.tsx",
+      "content": "\"use client\";\n\nimport React, { useEffect, useRef } from \"react\";\nimport { gsap } from \"gsap\";\nimport { cn } from \"@/lib/utils\";\n\ninterface RollingText3DProps {\n  /**\n   * The text to be animated.\n   */\n  text: string;\n  /**\n   * Font size of the text (e.g., \"5vw\", \"48px\").\n   * Defaults to \"8vw\" for a professional hero look.\n   */\n  fontSize?: string;\n  /**\n   * Color of the text.\n   */\n  color?: string;\n  /**\n   * Additional tailwind classes for the container.\n   */\n  className?: string;\n  /**\n   * Duration of one full rotation cycle in seconds.\n   */\n  duration?: number;\n  /**\n   * Stagger delay between characters.\n   */\n  stagger?: number;\n  /**\n   * Perspective depth for the 3D effect.\n   */\n  perspective?: number;\n  /**\n   * Letter spacing.\n   */\n  letterSpacing?: string;\n  /**\n   * Number of duplicate lines in the \"tube\" (default is 4).\n   */\n  linesCount?: number;\n}\n\n/**\n * RollingText3D - A premium 3D text rotation component.\n * Replicates the \"Tube\" rotation effect using GSAP.\n */\nexport const RollingText3D = ({\n  text,\n  fontSize = \"8vw\",\n  color = \"currentColor\",\n  className,\n  duration = 0.9,\n  stagger = 0.08,\n  perspective = 700,\n  letterSpacing = \"-0.05em\",\n  linesCount = 4,\n}: RollingText3DProps) => {\n  const containerRef = useRef<HTMLDivElement>(null);\n  const tubeRef = useRef<HTMLDivElement>(null);\n\n  useEffect(() => {\n    if (!containerRef.current || !tubeRef.current) return;\n\n    const container = containerRef.current;\n    const lines = tubeRef.current.querySelectorAll(\".rolling-line\");\n    \n    // Set initial visibility\n    gsap.set(container, { visibility: \"visible\" });\n\n    // Manually split text into characters for each line\n    // This allows us to avoid the paid GSAP SplitText plugin while keeping the effect.\n    lines.forEach((line) => {\n      const content = line.textContent || \"\";\n      line.innerHTML = \"\";\n      content.split(\"\").forEach((char) => {\n        const span = document.createElement(\"span\");\n        span.textContent = char === \" \" ? \"\\u00A0\" : char;\n        span.style.display = \"inline-block\";\n        span.style.backfaceVisibility = \"hidden\";\n        line.appendChild(span);\n      });\n    });\n\n    const allLinesChars = Array.from(lines).map((line) => \n      Array.from(line.querySelectorAll(\"span\"))\n    );\n\n    // 3D setup logic\n    const update3D = () => {\n      const width = window.innerWidth;\n      const depth = -width / 8;\n      const transformOrigin = `50% 50% ${depth}px`;\n\n      gsap.set(lines, { perspective, transformStyle: \"preserve-3d\" });\n\n      const tl = gsap.timeline({ repeat: -1 });\n\n      allLinesChars.forEach((chars, index) => {\n        tl.fromTo(\n          chars,\n          { rotationX: -90, opacity: 0 },\n          { \n            rotationX: 90, \n            opacity: 1,\n            stagger, \n            duration, \n            ease: \"none\", \n            transformOrigin \n          },\n          index * (duration / 2) // staggered entry for each line\n        );\n      });\n\n      return tl;\n    };\n\n    const timeline = update3D();\n\n    // Handle resize\n    const handleResize = () => {\n      timeline.kill();\n      update3D();\n    };\n\n    window.addEventListener(\"resize\", handleResize);\n\n    return () => {\n      window.removeEventListener(\"resize\", handleResize);\n      timeline.kill();\n    };\n  }, [text, duration, stagger, perspective, linesCount]);\n\n  return (\n    <div\n      ref={containerRef}\n      className={cn(\n        \"relative flex items-center justify-center w-full h-full overflow-hidden select-none\",\n        className\n      )}\n      style={{ visibility: \"hidden\" }}\n    >\n      <div \n        ref={tubeRef} \n        className=\"relative w-full text-center\"\n        style={{ height: \"1.2em\" }} // Height based on line-height\n      >\n        {Array.from({ length: linesCount }).map((_, i) => (\n          <h1\n            key={i}\n            className=\"rolling-line absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 m-0 whitespace-nowrap\"\n            style={{\n              fontSize,\n              color,\n              letterSpacing,\n              lineHeight: 1,\n            }}\n          >\n            {text}\n          </h1>\n        ))}\n      </div>\n    </div>\n  );\n};\n\n",
+      "type": "registry:component",
+      "target": "components/kidow/rolling-text-3d.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/rolling-text-3d",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

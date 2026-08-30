@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "ripple-loader",
+  "title": "Ripple Loader",
+  "description": "물결이 퍼지는 로더(ripple loader, pulse loading).",
+  "dependencies": [
+    "motion",
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/ripple-loader.tsx",
+      "content": "\"use client\";\nimport React from \"react\";\nimport { motion } from \"motion/react\";\n\ntype RippleLoaderProps = {\n  icon?: React.ReactNode;\n  size?: number;\n  duration?: number; // in seconds\n  logoColor?: string;\n  className?: string;\n};\n\nconst RippleLoader: React.FC<RippleLoaderProps> = ({\n  icon,\n  size = 250,\n  duration = 2, // use number for easier calculations\n  logoColor = \"grey\",\n  className = \"\",\n}) => {\n  const baseInset = 40;\n  const rippleBoxes = Array.from({ length: 5 }, (_, i) => ({\n    inset: `${baseInset - i * 10}%`,\n    zIndex: 99 - i,\n    delay: i * 0.2,\n    opacity: 1 - i * 0.2,\n  }));\n\n  return (\n    <div\n      className={`relative ${className}`}\n      style={{ width: size, height: size }}\n    >\n      {rippleBoxes.map((box, i) => (\n        <motion.div\n          key={i}\n          className=\"absolute rounded-full border-t backdrop-blur-[5px]\"\n          style={{\n            inset: box.inset,\n            zIndex: box.zIndex,\n            borderColor: `rgba(100,100,100,${box.opacity})`,\n            background:\n              \"linear-gradient(0deg, rgba(50, 50, 50, 0.2), rgba(100, 100, 100, 0.2))\",\n          }}\n          animate={{\n            scale: [1, 1.3, 1],\n            boxShadow: [\n              \"rgba(0, 0, 0, 0.3) 0px 10px 10px 0px\",\n              \"rgba(0, 0, 0, 0.3) 0px 30px 20px 0px\",\n              \"rgba(0, 0, 0, 0.3) 0px 10px 10px 0px\",\n            ],\n          }}\n          transition={{\n            repeat: Infinity,\n            duration,\n            delay: box.delay,\n            ease: \"easeInOut\",\n          }}\n        />\n      ))}\n\n      {/* ICON CONTAINER \n        Set a specific z-index (e.g., 100) to ensure it's above all ripples.\n        Removed p-[20%] to give the icon max available space inside the center.\n      */}\n      <div\n        className=\"absolute inset-0 grid place-content-center\"\n        style={{ zIndex: 100, padding: `${baseInset / 2}%` }}\n      >\n        <motion.span\n          className=\"w-full h-full\"\n          animate={{ color: [logoColor, \"#ffffff\", logoColor] }}\n          transition={{\n            repeat: Infinity,\n            duration,\n            delay: 0.1,\n            ease: \"easeInOut\",\n          }}\n        >\n          <span\n            className=\"w-full h-full text-foreground\"\n            style={{ display: \"inline-block\", width: \"100%\", height: \"100%\" }}\n          >\n            {icon &&\n              React.cloneElement(icon as React.ReactElement<any>, {\n                className: \"w-full h-full\",\n              })}\n          </span>\n        </motion.span>\n      </div>\n    </div>\n  );\n};\n\nexport default RippleLoader;",
+      "type": "registry:component",
+      "target": "components/kidow/ripple-loader.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/ripple-loader",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

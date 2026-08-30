@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "draggable-reorder-list",
+  "title": "Draggable Reorder List",
+  "description": "끌어서 순서를 바꾸는 목록(drag to reorder, sortable list).",
+  "dependencies": [
+    "lucide-react",
+    "motion",
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/draggable-reorder-list.tsx",
+      "content": "\"use client\";\n\nimport React, { useState } from \"react\";\nimport {\n  motion,\n  AnimatePresence,\n  Reorder,\n  useDragControls,\n} from \"motion/react\";\nimport { GripVertical, X, Plus } from \"lucide-react\";\nimport { cn } from \"@/lib/utils\";\n\nexport interface ReorderItem {\n  id: string;\n  label: string;\n  description?: string;\n  icon?: React.ReactNode;\n}\n\ninterface DraggableReorderListProps {\n  /** Initial items */\n  items: ReorderItem[];\n  /** Callback with new order when reordered */\n  onReorder?: (items: ReorderItem[]) => void;\n  /** Allow removing items */\n  removable?: boolean;\n  /** Additional classes */\n  className?: string;\n}\n\nfunction Item({\n  item,\n  onRemove,\n  removable,\n}: {\n  item: ReorderItem;\n  onRemove: (id: string) => void;\n  removable: boolean;\n}) {\n  const dragControls = useDragControls();\n\n  return (\n    <Reorder.Item\n      value={item}\n      id={item.id}\n      dragListener={false}\n      dragControls={dragControls}\n      className=\"relative\"\n    >\n      <motion.div\n        layout\n        initial={{ opacity: 0, y: -8, scale: 0.98 }}\n        animate={{ opacity: 1, y: 0, scale: 1 }}\n        exit={{ opacity: 0, scale: 0.95, transition: { duration: 0.15 } }}\n        whileDrag={{\n          scale: 1.03,\n          boxShadow: \"0 16px 40px rgba(0,0,0,0.15)\",\n          zIndex: 50,\n        }}\n        transition={{ type: \"spring\", stiffness: 350, damping: 30 }}\n        onPointerDown={(e) => e.preventDefault()}\n        className={cn(\n          \"flex items-center gap-3 rounded-xl border bg-background px-4 py-3\",\n          \"shadow-sm hover:shadow-md transition-shadow cursor-default select-none\"\n        )}\n      >\n        {/* Drag Handle */}\n        <motion.div\n          onPointerDown={(e) => dragControls.start(e)}\n          className=\"flex-shrink-0 cursor-grab active:cursor-grabbing touch-none text-muted-foreground/40 hover:text-muted-foreground transition-colors\"\n          whileHover={{ scale: 1.1 }}\n        >\n          <GripVertical className=\"h-4 w-4\" />\n        </motion.div>\n\n        {/* Icon */}\n        {item.icon && (\n          <div className=\"flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-lg bg-muted text-muted-foreground\">\n            {item.icon}\n          </div>\n        )}\n\n        {/* Content */}\n        <div className=\"flex-1 min-w-0 pointer-events-none\">\n          <p className=\"text-sm font-medium truncate select-none text-foreground\">{item.label}</p>\n          {item.description && (\n            <p className=\"text-xs text-muted-foreground truncate mt-0.5 select-none\">\n              {item.description}\n            </p>\n          )}\n        </div>\n\n        {/* Remove Button */}\n        {removable && (\n          <motion.button\n            type=\"button\"\n            onClick={() => onRemove(item.id)}\n            aria-label={`Remove ${item.label}`}\n            className=\"flex-shrink-0 flex h-6 w-6 items-center justify-center rounded-full text-muted-foreground/40 hover:text-destructive hover:bg-destructive/10 transition-colors focus:outline-none\"\n            whileHover={{ scale: 1.15 }}\n            whileTap={{ scale: 0.9 }}\n          >\n            <X className=\"h-3.5 w-3.5\" />\n          </motion.button>\n        )}\n      </motion.div>\n    </Reorder.Item>\n  );\n}\n\nexport function DraggableReorderList({\n  items: initialItems,\n  onReorder,\n  removable = true,\n  className,\n}: DraggableReorderListProps) {\n  const [items, setItems] = useState<ReorderItem[]>(initialItems);\n\n  const handleReorder = (newOrder: ReorderItem[]) => {\n    setItems(newOrder);\n    onReorder?.(newOrder);\n  };\n\n  const handleRemove = (id: string) => {\n    const next = items.filter((item) => item.id !== id);\n    setItems(next);\n    onReorder?.(next);\n  };\n\n  return (\n    <div className={cn(\"w-full select-none\", className)} style={{ userSelect: \"none\" }}>\n      <Reorder.Group\n        axis=\"y\"\n        values={items}\n        onReorder={handleReorder}\n        className=\"flex flex-col gap-2\"\n        as=\"div\"\n      >\n        <AnimatePresence initial={false}>\n          {items.map((item) => (\n            <Item\n              key={item.id}\n              item={item}\n              onRemove={handleRemove}\n              removable={removable}\n            />\n          ))}\n        </AnimatePresence>\n      </Reorder.Group>\n\n      {items.length === 0 && (\n        <motion.div\n          initial={{ opacity: 0, y: 8 }}\n          animate={{ opacity: 1, y: 0 }}\n          className=\"flex flex-col items-center justify-center rounded-xl border border-dashed py-10 text-muted-foreground gap-2\"\n        >\n          <Plus className=\"h-5 w-5 opacity-40\" />\n          <p className=\"text-sm\">All items removed</p>\n        </motion.div>\n      )}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/draggable-reorder-list.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/draggable-reorder-list",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

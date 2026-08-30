@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "animated-copy-button",
+  "title": "Animated Copy Button",
+  "description": "복사하면 체크로 바뀌는 애니메이션 버튼(copy button, clipboard).",
+  "dependencies": [
+    "lucide-react",
+    "motion",
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/animated-copy-button.tsx",
+      "content": "\"use client\";\n\nimport React, { useState } from \"react\";\nimport { motion, AnimatePresence } from \"motion/react\";\nimport { Check, Copy } from \"lucide-react\";\nimport { cn } from \"@/lib/utils\";\n\ninterface AnimatedCopyButtonProps {\n  /** The text that will be copied to the clipboard */\n  textToCopy: string;\n  /** Optional classname for the button */\n  className?: string;\n  /** Size of the button */\n  size?: \"sm\" | \"md\" | \"lg\";\n  /** Optional callback fired when copied */\n  onCopy?: () => void;\n}\n\nexport function AnimatedCopyButton({\n  textToCopy,\n  className,\n  size = \"md\",\n  onCopy,\n}: AnimatedCopyButtonProps) {\n  const [isCopied, setIsCopied] = useState(false);\n\n  const handleCopy = async () => {\n    try {\n      await navigator.clipboard.writeText(textToCopy);\n      setIsCopied(true);\n      if (onCopy) onCopy();\n\n      // Reset after 2 seconds\n      setTimeout(() => {\n        setIsCopied(false);\n      }, 2000);\n    } catch (err) {\n      console.error(\"Failed to copy text: \", err);\n    }\n  };\n\n  const sizes = {\n    sm: \"h-8 w-8\",\n    md: \"h-10 w-10\",\n    lg: \"h-12 w-12\",\n  };\n\n  const iconSizes = {\n    sm: \"h-4 w-4\",\n    md: \"h-5 w-5\",\n    lg: \"h-6 w-6\",\n  };\n\n  return (\n    <button\n      onClick={handleCopy}\n      className={cn(\n        \"relative flex items-center justify-center rounded-md border bg-background transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2\",\n        sizes[size],\n        className\n      )}\n      aria-label=\"Copy to clipboard\"\n    >\n      <AnimatePresence initial={false}>\n        {isCopied ? (\n          <motion.div\n            key=\"check\"\n            initial={{ opacity: 0, scale: 0.5, rotate: -45 }}\n            animate={{ opacity: 1, scale: 1, rotate: 0 }}\n            exit={{ opacity: 0, scale: 0.5, rotate: 45 }}\n            transition={{ type: \"spring\", stiffness: 300, damping: 20 }}\n            className=\"absolute flex items-center justify-center text-green-500\"\n          >\n            <Check className={iconSizes[size]} />\n          </motion.div>\n        ) : (\n          <motion.div\n            key=\"copy\"\n            initial={{ opacity: 0, scale: 0.5 }}\n            animate={{ opacity: 1, scale: 1 }}\n            exit={{ opacity: 0, scale: 0.5 }}\n            transition={{ type: \"spring\", stiffness: 300, damping: 20 }}\n            className=\"absolute flex items-center justify-center text-foreground/70\"\n          >\n            <Copy className={iconSizes[size]} />\n          </motion.div>\n        )}\n      </AnimatePresence>\n      \n      {/* Background Ripple Effect on Copy */}\n      {isCopied && (\n        <motion.div\n          initial={{ opacity: 0.5, scale: 1 }}\n          animate={{ opacity: 0, scale: 2 }}\n          transition={{ duration: 0.5 }}\n          className=\"absolute inset-0 rounded-md bg-green-500/20\"\n        />\n      )}\n    </button>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/animated-copy-button.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/animated-copy-button",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:component"
+}

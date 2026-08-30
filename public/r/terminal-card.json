@@ -1,0 +1,31 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "terminal-card",
+  "title": "Terminal Card",
+  "description": "터미널 창 모양 카드(terminal card, console mockup). 문법 강조를 지원한다.",
+  "dependencies": [
+    "lucide-react",
+    "motion",
+    "motion",
+    "react-syntax-highlighter"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/terminal-card.tsx",
+      "content": "\"use client\";\n\nimport React, { useEffect, useState } from \"react\";\nimport { Copy, Terminal, Check } from \"lucide-react\";\nimport { cn } from \"@/lib/utils\";\nimport { motion } from \"motion/react\";\nimport dynamic from \"next/dynamic\";\nconst SyntaxHighlighter = dynamic(\n  () => import(\"react-syntax-highlighter\").then((mod) => mod.Prism),\n  { ssr: false }\n) as React.ComponentType<any>;\nimport { oneDark } from \"react-syntax-highlighter/dist/cjs/styles/prism\";\n\ntype TerminalCardProps = {\n  command: string;\n  language?: string;\n  className?: string;\n};\n\nconst TerminalCard: React.FC<TerminalCardProps> = ({ command, language = \"tsx\", className }) => {\n  const [copied, setCopied] = useState(false);\n  const [displayedText, setDisplayedText] = useState(\"\");\n  const [index, setIndex] = useState(0);\n  const [isComplete, setIsComplete] = useState(false);\n\n  // Typing animation logic\n  useEffect(() => {\n    let timeout: NodeJS.Timeout;\n\n    if (index < command.length) {\n      timeout = setTimeout(() => {\n        setDisplayedText((prev) => prev + command.charAt(index));\n        setIndex((prev) => prev + 1);\n      }, 40); // typing speed\n    } else {\n      setIsComplete(true);\n      timeout = setTimeout(() => {\n        setDisplayedText(\"\");\n        setIndex(0);\n        setIsComplete(false);\n      }, 2000); // restart delay\n    }\n\n    return () => clearTimeout(timeout);\n  }, [index, command]);\n\n  // Copy handler\n  const handleCopy = () => {\n    navigator.clipboard.writeText(command);\n    setCopied(true);\n    setTimeout(() => setCopied(false), 1500);\n  };\n\n  return (\n    <div\n      className={cn(\n        \"border rounded-lg backdrop-blur-md min-w-[300px] max-w-full\",\n        \"bg-white/70 border-gray-300 text-black\",\n        \"dark:bg-white/10 dark:border-gray-400/30 dark:text-white\",\n        className\n      )}\n    >\n      {/* Header */}\n      <div className=\"flex items-center justify-between px-3 py-2 bg-gray-100 dark:bg-[#202425] rounded-t-lg text-sm font-semibold text-gray-700 dark:text-gray-400\">\n        <div className=\"flex items-center gap-2\">\n          <Terminal className=\"w-4 h-4 text-primarylw\" />\n          Terminal\n        </div>\n        <button\n          className=\"p-1 border rounded transition hover:border-gray-600 dark:hover:border-white text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white\"\n          onClick={handleCopy}\n          aria-label=\"Copy to clipboard\"\n        >\n          {copied ? <Check className=\"w-4 h-4 text-green-500\" /> : <Copy className=\"w-4 h-4\" />}\n        </button>\n      </div>\n\n      {/* Content with Syntax Highlighting */}\n      <div className=\"rounded-b-lg text-sm font-mono p-3 bg-black text-white dark:bg-black max-h-[300px] overflow-auto\">\n        {isComplete ? (\n          <SyntaxHighlighter\n            language={language}\n            style={oneDark}\n            customStyle={{ background: \"transparent\", margin: 0, padding: 0 }}\n          >\n            {command}\n          </SyntaxHighlighter>\n        ) : (\n          <motion.pre className=\"whitespace-pre-wrap\">\n            {displayedText}\n            <motion.span\n              className=\"inline-block w-1 bg-white ml-1\"\n              animate={{ opacity: [0, 1] }}\n              transition={{ duration: 0.6, repeat: Infinity }}\n            />\n          </motion.pre>\n        )}\n      </div>\n    </div>\n  );\n};\n\nexport default TerminalCard;\n",
+      "type": "registry:component",
+      "target": "components/kidow/terminal-card.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/terminal-card",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "코드·터미널"
+  ],
+  "type": "registry:component"
+}

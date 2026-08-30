@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "orbit-card",
+  "title": "Orbit Card",
+  "description": "주위를 도는 요소가 있는 카드(orbit card, satellite).",
+  "files": [
+    {
+      "path": "registry/kidow/orbit-card.tsx",
+      "content": "\"use client\";\n\nimport React from \"react\";\n\ntype OrbitCardProps = {\n  children: React.ReactNode;\n  className?: string;\n};\n\nconst OrbitCard: React.FC<OrbitCardProps> = ({ children, className }) => {\n  return (\n    <div className={`relative ${className} rounded-xl`}>\n      {/* Glowing shadow background */}\n      <div className=\"absolute inset-0 z-0 flex items-center justify-center rounded-xl bg-background\">\n        <div className=\"absolute h-full w-full animate-orbit-glow rounded-xl\">\n          <div className=\"h-full w-full rounded-xl bg-transparent shadow-[0_0_30px_10px_rgba(59,130,246,0.5)]\"></div>\n        </div>\n      </div>\n\n      {/* Card Content */}\n      <div className=\"relative z-10 rounded-xl bg-background p-6 \">\n        {children}\n      </div>\n\n      {/* Keyframes for glowing effect */}\n      <style jsx>{`\n        @keyframes orbit-glow {\n          0% {\n            transform: scale(1);\n            box-shadow: 0 0 30px 10px rgba(59, 130, 246, 0.5);\n          }\n          50% {\n            transform: scale(1.05);\n            box-shadow: 0 0 40px 20px rgba(59, 130, 246, 0.3);\n          }\n          100% {\n            transform: scale(1);\n            box-shadow: 0 0 30px 10px rgba(59, 130, 246, 0.5);\n          }\n        }\n        .animate-orbit-glow {\n          animation: orbit-glow 4s ease-in-out infinite;\n        }\n      `}</style>\n    </div>\n  );\n};\n\nexport default OrbitCard;\n",
+      "type": "registry:component",
+      "target": "components/kidow/orbit-card.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/orbit-card",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "카드·테두리"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "interactive-card-gallery",
+  "title": "Interactive Card Gallery",
+  "description": "카드가 펼쳐지는 인터랙티브 갤러리(card gallery, expand on hover).",
+  "files": [
+    {
+      "path": "registry/kidow/interactive-card-gallery.tsx",
+      "content": "import React from \"react\";\nimport { cn } from \"@/lib/utils\";\n\nexport interface CardProps {\n  title: string;\n  description: string;\n  imageSrc: string;\n  buttonText: string;\n  buttonLink?: string;\n  imageAlt?: string;\n  accentColor?: string;\n  onClick?: () => void;\n}\n\ninterface InteractiveCardGalleryProps {\n  cards: CardProps[];\n  className?: string;\n  cardHeight?: string;\n  columns?: 1 | 2 | 3 | 4;\n  hoverScale?: number;\n  transitionDuration?: number;\n}\n\nconst CardItem = ({\n  title,\n  description,\n  imageSrc,\n  buttonText,\n  buttonLink,\n  imageAlt,\n  accentColor = \"yellow\",\n  onClick,\n}: CardProps) => {\n  const handleClick = (e: React.MouseEvent) => {\n    if (buttonLink) {\n      if (!onClick) return;\n      e.preventDefault();\n    }\n    onClick?.();\n  };\n\n  return (\n    <div className=\"relative flex items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg group h-full\">\n      <div\n        className=\"absolute inset-0 bg-cover bg-center transform transition-transform duration-700 ease-out group-hover:scale-110\"\n        style={{\n          backgroundImage: `url('${imageSrc}')`,\n        }}\n      />\n      <div className=\"absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-50\" />\n      <div className=\"relative flex flex-col items-center text-white p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-700 ease-out\">\n        <h2 className=\"text-lg font-bold\">{title}</h2>\n        <p className=\"mt-2 italic text-sm\">{description}</p>\n        <button\n          className={`mt-4 px-4 py-2 bg-black text-white font-bold text-xs uppercase tracking-wide rounded-lg hover:bg-gray-800 focus:outline-none focus:ring focus:ring-${accentColor}-400`}\n          onClick={handleClick}\n        >\n          {buttonText}\n        </button>\n      </div>\n    </div>\n  );\n};\n\nexport function InteractiveCardGallery({\n  cards,\n  className,\n  cardHeight = \"h-64\",\n  columns = 4,\n  hoverScale = 1.1,\n  transitionDuration = 700,\n}: InteractiveCardGalleryProps) {\n  const getGridCols = () => {\n    switch (columns) {\n      case 1: return \"grid-cols-1\";\n      case 2: return \"sm:grid-cols-2\";\n      case 3: return \"sm:grid-cols-2 lg:grid-cols-3\";\n      case 4: \n      default: return \"sm:grid-cols-2 lg:grid-cols-4\";\n    }\n  };\n\n  return (\n    <div \n      className={cn(\n        `grid gap-4 p-4 max-w-screen-lg mx-auto ${getGridCols()}`,\n        className\n      )}\n      style={{ \n        \"--hover-scale\": hoverScale, \n        \"--transition-duration\": `${transitionDuration}ms` \n      } as React.CSSProperties}\n    >\n      {cards.map((card, index) => (\n        <div key={index} className={cn(\"group\", cardHeight)}>\n          <CardItem {...card} />\n        </div>\n      ))}\n    </div>\n  );\n}",
+      "type": "registry:component",
+      "target": "components/kidow/interactive-card-gallery.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/interactive-card-gallery",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

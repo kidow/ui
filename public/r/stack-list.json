@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "stack-list",
+  "title": "Stack List",
+  "description": "겹쳐 쌓이는 목록(stack list, layered items).",
+  "dependencies": [
+    "lucide-react",
+    "motion",
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/stack-list.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\nimport { AnimatePresence, motion } from \"motion/react\";\nimport { ChevronDown } from \"lucide-react\";\n\ntype StackListItem = {\n  icon: React.ReactNode;\n  title: string;\n  subtitle: string;\n  date: string;\n};\n\ntype StackListProps = {\n  items: StackListItem[];\n  initialVisible?: number;\n  className?: string; // allows custom responsive width/styling\n};\n\nexport default function StackList({\n  items,\n  initialVisible = 1,\n  className = \"\",\n}: StackListProps) {\n  const [expanded, setExpanded] = useState(false);\n\n  const visibleItems = expanded ? items : items.slice(0, initialVisible);\n\n  return (\n    <div\n      className={`bg-transparent text-foreground mx-auto  \n         overflow-hidden ${className}`}\n    >\n      <div className=\"flex flex-col gap-4 relative\">\n        <AnimatePresence initial={false}>\n          {visibleItems.map((item, index) => (\n            <motion.div\n              key={item.title + index}\n              initial={{ opacity: 0, y: 20, scale: 0.95 }}\n              animate={{ opacity: 1, y: 0, scale: 1 }}\n              exit={{ opacity: 0, y: -20, scale: 0.95 }}\n              transition={{ duration: 0.3, delay: index * 0.05 }}\n              className=\"flex items-center gap-4 p-4 bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-700 rounded-2xl shadow-sm\"\n            >\n              <div className=\"w-12 h-12 bg-background rounded-xl \n              flex items-center justify-center text-foreground\">\n                {item.icon}\n              </div>\n              <div className=\"flex-1\">\n                <div className=\"text-xs xl:text-sm font-semibold text-gray-900 dark:text-white\">\n                  {item.title}\n                </div>\n                <div className=\"text-xs xl:text-sm text-gray-500 dark:text-gray-400\">\n                  {item.subtitle}\n                </div>\n              </div>\n              <div className=\"text-xs xl:text-sm text-gray-400\">{item.date}</div>\n            </motion.div>\n          ))}\n        </AnimatePresence>\n      </div>\n\n      {items.length > initialVisible && (\n        <button\n          onClick={() => setExpanded((prev) => !prev)}\n          className=\"mt-4 mx-auto flex items-center justify-center gap-2 px-4 py-2\n           border border-gray-300 dark:border-gray-700 rounded-full \n           text-xs xl:text-sm font-medium text-gray-600 dark:text-gray-300 transition \n           hover:bg-gray-100 dark:hover:bg-neutral-800\"\n        >\n          <span>{expanded ? \"Hide\" : \"Show All\"}</span>\n          <motion.div\n            animate={{ rotate: expanded ? 180 : 0 }}\n            transition={{ duration: 0.3 }}\n          >\n            <ChevronDown className=\"w-4 h-4\" />\n          </motion.div>\n        </button>\n      )}\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/stack-list.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/stack-list",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

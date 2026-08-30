@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "CinematicScroll",
+  "title": "CinematicScroll",
+  "description": "A CinematicScroll component for Lightswind UI.",
+  "dependencies": [
+    "motion",
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/CinematicScroll.tsx",
+      "content": "\"use client\";\n\nimport React, { useRef, useEffect, useState } from \"react\";\nimport { motion, useScroll, useSpring, useTransform } from \"motion/react\";\nimport { cn } from \"@/lib/utils\";\n\ninterface CinematicScrollProps {\n  children: React.ReactNode;\n  className?: string;\n  blurLayers?: number;\n  blurMax?: number;\n  blurSize?: number; // in pixels\n  accentColor?: string;\n  showScrollbar?: boolean;\n}\n\nexport const CinematicScroll = ({\n  children,\n  className,\n  blurLayers = 5,\n  blurMax = 20,\n  blurSize = 80,\n  accentColor = \"#3b82f6\",\n  showScrollbar = true,\n}: CinematicScrollProps) => {\n  const containerRef = useRef<HTMLDivElement>(null);\n  const scrollerRef = useRef<HTMLDivElement>(null);\n\n  const { scrollYProgress } = useScroll({\n    container: scrollerRef,\n  });\n\n  // Spring smooth progress for the custom bar\n  const scaleY = useSpring(scrollYProgress, {\n    stiffness: 100,\n    damping: 30,\n    restDelta: 0.001,\n  });\n\n  return (\n    <div\n      ref={containerRef}\n      className={cn(\n        \"relative w-full h-full overflow-hidden rounded-xl border border-border bg-background\",\n        className\n      )}\n      style={{\n        \"--blur-max\": blurMax,\n        \"--blur-size\": blurSize,\n        \"--accent\": accentColor,\n      } as React.CSSProperties}\n    >\n      {/* Top Blur Mask Layers */}\n      <div className=\"absolute top-0 left-0 right-0 z-30 pointer-events-none overflow-hidden\" style={{ height: blurSize }}>\n        {[...Array(blurLayers)].map((_, i) => (\n          <div\n            key={`top-${i}`}\n            className=\"absolute inset-0\"\n            style={{\n              backdropFilter: `blur(${Math.sin(((blurLayers - (i + 1)) / blurLayers) * Math.PI / 2) * blurMax}px) contrast(1.2) brightness(1.1)`,\n              maskImage: `linear-gradient(to bottom, black, transparent ${((i + 1) / blurLayers) * 100}%)`,\n              WebkitMaskImage: `linear-gradient(to bottom, black, transparent ${((i + 1) / blurLayers) * 100}%)`,\n            }}\n          />\n        ))}\n      </div>\n\n      {/* Bottom Blur Mask Layers */}\n      <div className=\"absolute bottom-0 left-0 right-0 z-30 pointer-events-none overflow-hidden rotate-180\" style={{ height: blurSize }}>\n        {[...Array(blurLayers)].map((_, i) => (\n          <div\n            key={`bottom-${i}`}\n            className=\"absolute inset-0\"\n            style={{\n              backdropFilter: `blur(${Math.sin(((blurLayers - (i + 1)) / blurLayers) * Math.PI / 2) * blurMax}px) contrast(1.2) brightness(1.1)`,\n              maskImage: `linear-gradient(to bottom, black, transparent ${((i + 1) / blurLayers) * 100}%)`,\n              WebkitMaskImage: `linear-gradient(to bottom, black, transparent ${((i + 1) / blurLayers) * 100}%)`,\n            }}\n          />\n        ))}\n      </div>\n\n      {/* Custom Scrollbar */}\n      {showScrollbar && (\n        <div className=\"absolute top-2 right-2 bottom-2 w-1.5 z-40 pointer-events-none hidden sm:block\">\n          <motion.div\n            className=\"w-full rounded-full origin-top\"\n            style={{\n              scaleY,\n              height: \"100%\",\n              background: `linear-gradient(to bottom, ${accentColor}, ${accentColor}dd)`,\n              boxShadow: `0 0 10px ${accentColor}44`,\n            }}\n          />\n        </div>\n      )}\n\n      {/* Main Scrollable Content */}\n      <div\n        ref={scrollerRef}\n        className=\"w-full h-full overflow-y-auto overflow-x-hidden custom-scrollbar\"\n        style={{ scrollbarWidth: \"none\" }} // Hide default scrollbar\n      >\n        <div className=\"px-6 py-12\">\n          {children}\n        </div>\n      </div>\n\n      <style jsx global>{`\n        .custom-scrollbar::-webkit-scrollbar {\n          display: none;\n        }\n      `}</style>\n    </div>\n  );\n};\n\nexport default CinematicScroll;\n",
+      "type": "registry:component",
+      "target": "components/kidow/CinematicScroll.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/CinematicScroll",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "미분류"
+  ],
+  "type": "registry:component"
+}

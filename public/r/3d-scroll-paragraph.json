@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "3d-scroll-paragraph",
+  "title": "3D Scroll Paragraph",
+  "description": "스크롤에 따라 문단이 3D로 눕고 서는 텍스트(3d scroll text, rotate on scroll).",
+  "dependencies": [
+    "@gsap/react",
+    "gsap"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/3d-scroll-paragraph.tsx",
+      "content": "\"use client\";\n\nimport { useGSAP } from \"@gsap/react\";\nimport gsap from \"gsap\";\nimport { ScrollTrigger } from \"gsap/ScrollTrigger\";\nimport { useRef } from \"react\";\nimport { cn } from \"@/lib/utils\";\n\nexport interface ScrollPara3DProps {\n  /**\n   * The text lines to reveal in 3D space.\n   */\n  lines: string[];\n  className?: string;\n  containerClassName?: string;\n  textClassName?: string;\n  /**\n   * The perspective depth distance in pixels.\n   * Less = more extreme 3D depth/stretch.\n   * @default 600\n   */\n  perspective?: number;\n  /**\n   * The tilt angle of the text floor plane (rotateX degrees).\n   * @default 50\n   */\n  angle?: number;\n  /**\n   * How much extra scrolling space to pin for the animation.\n   * Multiplier based on content height.\n   * @default 1.2\n   */\n  scrubSpeed?: number;\n  /**\n   * Font size in rem for each text line.\n   * @default 3.5\n   */\n  fontSize?: number;\n}\n\nexport function ScrollPara3D({\n  lines,\n  className,\n  containerClassName,\n  textClassName,\n  perspective = 600,\n  angle = 50,\n  scrubSpeed = 1.2,\n  fontSize = 3.5,\n}: ScrollPara3DProps) {\n  const sectionRef = useRef<HTMLDivElement>(null);\n  const contentRef = useRef<HTMLDivElement>(null);\n\n  useGSAP(\n    () => {\n      gsap.registerPlugin(ScrollTrigger);\n      if (!contentRef.current || !sectionRef.current) return;\n\n      const contentHeight = contentRef.current.offsetHeight;\n      const windowHeight = window.innerHeight;\n\n      const tl = gsap.timeline({\n        scrollTrigger: {\n          trigger: sectionRef.current,\n          start: \"top top\",\n          end: `+=${contentHeight * scrubSpeed}`,\n          pin: true,\n          scrub: 1,\n          anticipatePin: 1,\n        },\n      });\n\n      // Start just below so text is immediately visible on scroll\n      tl.fromTo(\n        contentRef.current,\n        { y: windowHeight * 0.3 },\n        { y: -contentHeight, ease: \"none\" }\n      );\n\n      return () => { tl.kill(); };\n    },\n    { dependencies: [lines.length, perspective, angle, scrubSpeed, fontSize] }\n  );\n\n  return (\n    <div\n      ref={sectionRef}\n      className={cn(\n        \"relative w-full h-screen overflow-hidden bg-background\",\n        className\n      )}\n      style={{ perspective: `${perspective}px` }}\n    >\n      {/* Top/bottom fade overlay */}\n      <div\n        className=\"absolute inset-0 z-10 pointer-events-none\"\n        style={{\n          background:\n            \"linear-gradient(to bottom, var(--background) 0%, transparent 15%, transparent 85%, var(--background) 100%)\",\n        }}\n      />\n\n      {/*\n        Tilted floor plane.\n        We use transformOrigin \"center bottom\" so the rotation pivots\n        at the bottom center of the plane → text crawls toward viewer naturally.\n        Width is 100% of the section.\n      */}\n      <div\n        style={{\n          position: \"absolute\",\n          inset: 0,\n          display: \"flex\",\n          alignItems: \"flex-end\",\n          justifyContent: \"center\",\n          transformStyle: \"preserve-3d\",\n          transform: `rotateX(${angle}deg)`,\n          transformOrigin: \"center bottom\",\n        }}\n      >\n        {/* Scrolling content strip */}\n        <div\n          ref={contentRef}\n          className={cn(\n            \"w-full flex flex-col items-center justify-start\",\n            containerClassName\n          )}\n          style={{ willChange: \"transform\" }}\n        >\n          {lines.map((line, i) => (\n            <p\n              key={i}\n              className={cn(\n                \"w-full text-center font-black uppercase text-primary tracking-tighter leading-tight\",\n                textClassName\n              )}\n              style={{ fontSize: `${fontSize}rem` }}\n            >\n              {line}\n            </p>\n          ))}\n        </div>\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/3d-scroll-paragraph.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/3d-scroll-paragraph",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

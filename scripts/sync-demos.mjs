@@ -18,11 +18,18 @@ const names = fs
   .map((file) => file.replace(/\.tsx$/, ''))
   .sort()
 
-const pascal = (name) =>
-  name
+/**
+ * 파일명 → 식별자.
+ * 3d-carousel 처럼 숫자로 시작하는 이름이 있어 앞에 밑줄을 붙인다.
+ * 자바스크립트 식별자는 숫자로 시작할 수 없다.
+ */
+const pascal = (name) => {
+  const id = name
     .split('-')
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
     .join('')
+  return /^\d/.test(id) ? `_${id}` : id
+}
 
 const imports = names.map((name) => `import ${pascal(name)}Demo from './${name}'`).join('\n')
 const entries = names.map((name) => `  '${name}': ${pascal(name)}Demo,`).join('\n')

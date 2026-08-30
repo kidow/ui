@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "interactive-card",
+  "title": "Interactive Card",
+  "description": "커서에 반응하는 인터랙티브 카드(interactive card, hover effect).",
+  "dependencies": [
+    "motion",
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/interactive-card.tsx",
+      "content": "\"use client\";\n\nimport { useRef, useState } from \"react\";\nimport { motion, useMotionValue, useTransform, useMotionTemplate } from \"motion/react\";\nimport { cn } from \"@/lib/utils\"; // Assuming cn is a utility for conditionally joining class names\n\nexport const InteractiveCard = ({\n  children,\n  className,\n  InteractiveColor = \"#07eae6ff\",\n  // backgroundColor = \"#0c0d16\",\n  // whiteCardBackgroundColor = \"#173eff\",\n  borderRadius = \"48px\",\n  rotationFactor = 0.4,\n  transitionDuration = 0.3,\n  transitionEasing = \"easeInOut\",\n  // Add a prop to accept Tailwind background classes\n  // Example: \"bg-gray-900 dark:bg-gray-800\"\n  tailwindBgClass = \"bg-transparent backdrop-blur-md\",\n}: {\n  children: React.ReactNode;\n  className?: string;\n  InteractiveColor?: string;\n  // If you're using tailwindBgClass, you might not need these anymore,\n  // or you could use them as fallbacks/defaults\n  // backgroundColor?: string;\n  // whiteCardBackgroundColor?: string;\n  borderRadius?: string;\n  rotationFactor?: number;\n  transitionDuration?: number;\n  transitionEasing?: string;\n  tailwindBgClass?: string; // Prop to accept Tailwind background classes\n}) => {\n  const cardRef = useRef<HTMLDivElement>(null);\n  const [isHovered, setIsHovered] = useState(false);\n\n  const x = useMotionValue(0);\n  const y = useMotionValue(0);\n\n  const rotateXTrans = useTransform(y, [0, 1], [rotationFactor * 15, -rotationFactor * 15]);\n  const rotateYTrans = useTransform(x, [0, 1], [-rotationFactor * 15, rotationFactor * 15]);\n\n  const handlePointerMove = (e: React.PointerEvent) => {\n    const bounds = cardRef.current?.getBoundingClientRect();\n    if (!bounds) return;\n\n    const px = (e.clientX - bounds.left) / bounds.width;\n    const py = (e.clientY - bounds.top) / bounds.height;\n\n    x.set(px);\n    y.set(py);\n  };\n\n  const xPercentage = useTransform(x, (val) => `${val * 100}%`);\n  const yPercentage = useTransform(y, (val) => `${val * 100}%`);\n\n  const interactiveBackground = useMotionTemplate`radial-gradient(circle at ${xPercentage} ${yPercentage}, ${InteractiveColor} 0%, transparent 80%)`;\n\n  return (\n    <motion.div\n      ref={cardRef}\n      onPointerMove={handlePointerMove}\n      onPointerEnter={() => setIsHovered(true)}\n      onPointerLeave={() => setIsHovered(false)}\n      style={{\n        perspective: 1000,\n        borderRadius,\n      }}\n      className=\"relative w-[320px] aspect-[17/21] isolate\"\n    >\n      <motion.div\n        style={{\n          rotateX: rotateXTrans,\n          rotateY: rotateYTrans,\n          transformStyle: \"preserve-3d\",\n          transition: `transform ${transitionDuration}s ${transitionEasing}`,\n        }}\n        className=\"w-full h-full rounded-xl overflow-hidden border shadow-lg\"\n      >\n        {/* Background Interactive Layer */}\n        <motion.div\n          className=\"absolute inset-0 rounded-xl z-0\"\n          style={{\n            background: interactiveBackground,\n            transition: `opacity ${transitionDuration}s ${transitionEasing}`,\n            opacity: isHovered ? 0.6 : 0,\n            pointerEvents: \"none\",\n          }}\n        />\n\n        {/* Content */}\n        <div\n          // Use cn to combine your custom className with the Tailwind background class\n          // You can also add dark mode classes here\n          className={cn(\n            \"relative z-10 w-full h-full\",\n            tailwindBgClass, // <--- Apply the Tailwind background class here\n            className, // Existing class for outer styling\n            // Example: Add a default text color for contrast\n            \"text-foreground\"\n          )}\n          style={{\n            borderRadius, // Keep borderRadius from props\n            // Remove the direct backgroundColor style application\n            // as it's now handled by Tailwind classes\n          }}\n        >\n          {children}\n        </div>\n      </motion.div>\n    </motion.div>\n  );\n};",
+      "type": "registry:component",
+      "target": "components/kidow/interactive-card.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/interactive-card",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "카드·테두리"
+  ],
+  "type": "registry:component"
+}

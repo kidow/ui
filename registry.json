@@ -4,6 +4,366 @@
   "homepage": "https://ui.dongwook.kim",
   "items": [
     {
+      "name": "3d-beam-circle",
+      "type": "registry:component",
+      "title": "3D Beam Circle",
+      "description": "원형으로 배치된 빛줄기가 회전하는 3D 배경(3d beam, light circle). 히어로 뒤 장식에 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/3d-beam-circle.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/3d-beam-circle.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/3d-beam-circle",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "3d-carousel",
+      "type": "registry:component",
+      "title": "3D Carousel",
+      "description": "원근을 준 3D 캐러셀(3d carousel, perspective slider). 카드가 깊이를 가지고 돌아간다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/3d-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/3d-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/3d-carousel",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "3d-glass-coin-carousel",
+      "type": "registry:component",
+      "title": "3D Glass Coin Carousel",
+      "description": "유리 동전처럼 회전하는 3D 캐러셀(glass carousel, coin flip). WebGL 셰이더로 굴절을 낸다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "next-themes",
+        "ogl"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/3d-glass-coin-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/3d-glass-coin-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/3d-glass-coin-carousel",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "3d-hover-gallery",
+      "type": "registry:component",
+      "title": "3D Hover Gallery",
+      "description": "hover 하면 이미지가 3D로 기울며 펼쳐지는 갤러리(3d gallery, hover tilt).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/3d-hover-gallery.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/3d-hover-gallery.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/3d-hover-gallery",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "3d-image-carousel",
+      "type": "registry:component",
+      "title": "3d Image Carousel",
+      "description": "이미지가 원통을 따라 도는 3D 캐러셀(3d image carousel, cylinder slider).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/3d-image-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/3d-image-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/3d-image-carousel",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "3d-image-pageflip",
+      "type": "registry:component",
+      "title": "3D Image Pageflip",
+      "description": "책장을 넘기듯 이미지가 젖혀지는 효과(page flip, book turn). 포트폴리오·앨범에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "next-themes"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/3d-image-pageflip.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/3d-image-pageflip.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/3d-image-pageflip",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "3d-image-ring",
+      "type": "registry:component",
+      "title": "3d Image Ring",
+      "description": "이미지가 고리 모양으로 늘어서 회전하는 3D 링(image ring, circular gallery).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/3d-image-ring.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/3d-image-ring.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/3d-image-ring",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "3d-image-slider",
+      "type": "registry:component",
+      "title": "3D Image Slider",
+      "description": "3D 원근이 들어간 이미지 슬라이더(3d slider, depth slider).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/3d-image-slider.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/3d-image-slider.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/3d-image-slider",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "3d-marquee",
+      "type": "registry:component",
+      "title": "3D Marquee",
+      "description": "이미지가 기울어진 격자로 흐르는 3D 마퀴(3d marquee, tilted grid scroll).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/3d-marquee.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/3d-marquee.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/3d-marquee",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "3d-perspective-card",
+      "type": "registry:component",
+      "title": "3D Perspective Card",
+      "description": "커서를 따라 기우는 원근 카드(perspective card, 3d tilt).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/3d-perspective-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/3d-perspective-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/3d-perspective-card",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "3d-scroll-paragraph",
+      "type": "registry:component",
+      "title": "3D Scroll Paragraph",
+      "description": "스크롤에 따라 문단이 3D로 눕고 서는 텍스트(3d scroll text, rotate on scroll).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "@gsap/react",
+        "gsap"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/3d-scroll-paragraph.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/3d-scroll-paragraph.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/3d-scroll-paragraph",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "3d-scroll-trigger",
+      "type": "registry:component",
+      "title": "3D Scroll Trigger",
+      "description": "스크롤 위치에 맞춰 3D 요소를 움직이는 트리거(scroll trigger, gsap scroll).",
+      "categories": [
+        "인터랙션"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/3d-scroll-trigger.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/3d-scroll-trigger.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/3d-scroll-trigger",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "3d-slider",
+      "type": "registry:component",
+      "title": "3D Slider",
+      "description": "깊이가 있는 3D 슬라이더(3d slider, depth carousel).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/3d-slider.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/3d-slider.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/3d-slider",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "3d-smokey-frame",
+      "type": "registry:component",
+      "title": "3D Smokey Frame",
+      "description": "연기가 피어오르는 3D 프레임 배경(smoke frame, shader smoke).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "next-themes"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/3d-smokey-frame.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/3d-smokey-frame.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/3d-smokey-frame",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "activity-graph",
       "type": "registry:component",
       "title": "Activity Graph",
@@ -62,6 +422,35 @@
       }
     },
     {
+      "name": "ai-aurora-blob",
+      "type": "registry:component",
+      "title": "Ai Aurora Blob",
+      "description": "AI 응답 중을 표현하는 오로라 블롭(aurora blob, ai thinking). 셰이더로 색이 일렁인다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion",
+        "ogl"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ai-aurora-blob.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ai-aurora-blob.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/ai-aurora-blob",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "ai-copy-button",
       "type": "registry:component",
       "title": "AI Copy Button",
@@ -87,6 +476,121 @@
         "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "ai-gooey-blob",
+      "type": "registry:component",
+      "title": "Ai Gooey Blob",
+      "description": "점성 있게 뭉쳤다 퍼지는 블롭(gooey blob, ai orb). 음성·AI 상태 표시에 쓴다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ai-gooey-blob.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ai-gooey-blob.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/ai-gooey-blob",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "ai-loading-state",
+      "type": "registry:component",
+      "title": "Ai Loading State",
+      "description": "AI가 생각하는 동안 보여주는 로딩 상태(ai loading, thinking indicator).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ai-loading-state.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ai-loading-state.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/ai-loading-state",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "ai-prompt",
+      "type": "registry:component",
+      "title": "Ai Prompt",
+      "description": "AI 프롬프트 입력창(ai prompt, chat input). 여러 줄 입력과 전송 버튼을 갖췄다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ai-prompt.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ai-prompt.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/ai-prompt",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "ai-prompt-bar",
+      "type": "registry:component",
+      "title": "Ai Prompt Bar",
+      "description": "하단 고정형 AI 프롬프트 바(prompt bar, chat bar). 채팅 화면 하단에 붙인다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ai-prompt-bar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ai-prompt-bar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/ai-prompt-bar",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -145,6 +649,39 @@
       }
     },
     {
+      "name": "ai-sidebar",
+      "type": "registry:component",
+      "title": "Ai Sidebar",
+      "description": "AI 대화 목록을 담는 사이드바(ai sidebar, chat history). 스레드 전환에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ai-sidebar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ai-sidebar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/ai-sidebar",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "android",
       "type": "registry:component",
       "title": "Android",
@@ -165,6 +702,33 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "angled-slider",
+      "type": "registry:component",
+      "title": "Angled Slider",
+      "description": "사선으로 기운 슬라이더(angled slider, skewed carousel).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/angled-slider.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/angled-slider.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/angled-slider",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -191,6 +755,29 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-bubble-particles",
+      "type": "registry:component",
+      "title": "Animated Bubble Particles",
+      "description": "거품 입자가 떠오르는 배경(bubble particles, floating dots).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-bubble-particles.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-bubble-particles.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/animated-bubble-particles",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -266,6 +853,60 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-copy-button",
+      "type": "registry:component",
+      "title": "Animated Copy Button",
+      "description": "복사하면 체크로 바뀌는 애니메이션 버튼(copy button, clipboard).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-copy-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-copy-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/animated-copy-button",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "animated-flow",
+      "type": "registry:component",
+      "title": "Animated Flow",
+      "description": "흐르는 선이 유기적으로 움직이는 배경(flow field, animated lines).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "next-themes"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-flow.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-flow.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/animated-flow",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -385,6 +1026,32 @@
       }
     },
     {
+      "name": "animated-grain",
+      "type": "registry:component",
+      "title": "Animated Grain",
+      "description": "움직이는 필름 그레인 오버레이(grain, film noise). 밋밋한 면에 질감을 얹는다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "next-themes"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-grain.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-grain.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/animated-grain",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "animated-grid-pattern",
       "type": "registry:component",
       "title": "Animated Grid Pattern",
@@ -437,6 +1104,34 @@
       }
     },
     {
+      "name": "animated-notification",
+      "type": "registry:component",
+      "title": "Animated Notification",
+      "description": "쌓이며 나타나는 알림(notification, toast stack).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "react-flip-toolkit",
+        "uuid"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-notification.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-notification.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/animated-notification",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "animated-number",
       "type": "registry:component",
       "title": "Animated Number",
@@ -460,6 +1155,32 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-particles",
+      "type": "registry:component",
+      "title": "Animated Particles",
+      "description": "입자가 떠다니는 배경(particles background, floating particles).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "next-themes"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-particles.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-particles.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/animated-particles",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -666,6 +1387,33 @@
       }
     },
     {
+      "name": "animated-wave",
+      "type": "registry:component",
+      "title": "Animated Wave",
+      "description": "파도가 일렁이는 배경(wave background, three.js wave).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "simplex-noise",
+        "three"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-wave.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-wave.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/animated-wave",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "api-ref-table",
       "type": "registry:component",
       "title": "API Reference Table",
@@ -762,6 +1510,55 @@
       }
     },
     {
+      "name": "ascii-wave",
+      "type": "registry:component",
+      "title": "Ascii Wave",
+      "description": "아스키 문자로 그린 물결 배경(ascii wave, text art background).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "next-themes"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ascii-wave.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ascii-wave.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/ascii-wave",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "aurora-background",
+      "type": "registry:component",
+      "title": "Aurora Background",
+      "description": "오로라가 흐르는 배경(aurora background, northern lights).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/aurora-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/aurora-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/aurora-background",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "aurora-flow",
       "type": "registry:component",
       "title": "Aurora Flow",
@@ -810,6 +1607,33 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "aurora-shader",
+      "type": "registry:component",
+      "title": "Aurora Shader",
+      "description": "WebGL 셰이더로 그린 오로라(aurora shader, ogl). 더 사실적인 결을 낸다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "next-themes",
+        "ogl"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/aurora-shader.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/aurora-shader.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/aurora-shader",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -862,6 +1686,29 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "aurora-text-effect",
+      "type": "registry:component",
+      "title": "Aurora Text Effect",
+      "description": "오로라 색이 흐르는 텍스트(aurora text, gradient headline).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/aurora-text-effect.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/aurora-text-effect.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/aurora-text-effect",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -1037,6 +1884,57 @@
         "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "beam-circle",
+      "type": "registry:component",
+      "title": "Beam Circle",
+      "description": "원을 그리며 도는 빛줄기(beam circle, rotating light).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/beam-circle.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/beam-circle.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/beam-circle",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "beam-grid-background",
+      "type": "registry:component",
+      "title": "Beam Grid Background",
+      "description": "격자를 따라 빛이 지나가는 배경(beam grid, light grid).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/beam-grid-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/beam-grid-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/beam-grid-background",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -2029,6 +2927,34 @@
       }
     },
     {
+      "name": "chain-carousel",
+      "type": "registry:component",
+      "title": "Chain Carousel",
+      "description": "체인처럼 이어진 캐러셀(chain carousel, linked slider).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/chain-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/chain-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/chain-carousel",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "character-morph",
       "type": "registry:component",
       "title": "Character Morph",
@@ -2112,6 +3038,33 @@
         "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "cinematic-scroll",
+      "type": "registry:component",
+      "title": "Cinematic Scroll",
+      "description": "영화적 연출로 장면이 전환되는 스크롤(cinematic scroll, pinned scene).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/cinematic-scroll.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cinematic-scroll.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/CinematicScroll",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -2727,6 +3680,32 @@
       }
     },
     {
+      "name": "code-hover-cards",
+      "type": "registry:component",
+      "title": "Code Hover Cards",
+      "description": "hover 하면 코드가 드러나는 카드(code hover card, snippet preview).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/code-hover-cards.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/code-hover-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/code-hover-cards",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "code-line",
       "type": "registry:component",
       "title": "Code Line",
@@ -3178,6 +4157,62 @@
       }
     },
     {
+      "name": "cool-slide-gallery",
+      "type": "registry:component",
+      "title": "Cool Slide Gallery",
+      "description": "슬라이드로 넘기는 갤러리(slide gallery, image slider).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/cool-slide-gallery.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cool-slide-gallery.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/cool-slide-gallery",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "cool-theme-toggle",
+      "type": "registry:component",
+      "title": "Cool Theme Toggle",
+      "description": "애니메이션이 들어간 다크모드 토글(theme toggle, dark mode switch).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/cool-theme-toggle.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cool-theme-toggle.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/cool-theme-toggle",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "copy-button",
       "type": "registry:component",
       "title": "Copy Button",
@@ -3250,6 +4285,84 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "cosmic-dust",
+      "type": "registry:component",
+      "title": "Cosmic Dust",
+      "description": "우주 먼지가 흩날리는 배경(cosmic dust, star particles).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/cosmic-dust.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cosmic-dust.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/cosmic-dust",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "cosmic-singularity",
+      "type": "registry:component",
+      "title": "Cosmic Singularity",
+      "description": "블랙홀처럼 빨려드는 배경(singularity, black hole shader).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion",
+        "motion",
+        "three"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/cosmic-singularity.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cosmic-singularity.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/cosmic-singularity",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "count-up",
+      "type": "registry:component",
+      "title": "Count Up",
+      "description": "숫자가 목표까지 올라가는 카운터(count up, number counter).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/count-up.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/count-up.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/count-up",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -3374,6 +4487,34 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "cyber-hive",
+      "type": "registry:component",
+      "title": "Cyber Hive",
+      "description": "벌집 격자가 맥동하는 사이버 배경(cyber hive, hexagon shader).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion",
+        "motion",
+        "three"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/cyber-hive.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cyber-hive.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/cyber-hive",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -3954,6 +5095,29 @@
       }
     },
     {
+      "name": "dot-grid-background",
+      "type": "registry:component",
+      "title": "Dot Grid Background",
+      "description": "점 격자 배경(dot grid, polka background).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dot-grid-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dot-grid-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/dot-grid-background",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "dot-pattern",
       "type": "registry:component",
       "title": "Dot Pattern",
@@ -4031,6 +5195,34 @@
         "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "draggable-reorder-list",
+      "type": "registry:component",
+      "title": "Draggable Reorder List",
+      "description": "끌어서 순서를 바꾸는 목록(drag to reorder, sortable list).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/draggable-reorder-list.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/draggable-reorder-list.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/draggable-reorder-list",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -4138,6 +5330,29 @@
       }
     },
     {
+      "name": "electro-border",
+      "type": "registry:component",
+      "title": "Electro Border",
+      "description": "전기가 흐르는 테두리(electric border, animated outline).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/electro-border.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/electro-border.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/electro-border",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "ember-burn",
       "type": "registry:component",
       "title": "Ember Burn",
@@ -4217,6 +5432,90 @@
       }
     },
     {
+      "name": "ether-waves",
+      "type": "registry:component",
+      "title": "Ether Waves",
+      "description": "에테르처럼 겹쳐 흐르는 파동 배경(ether waves, layered shader).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion",
+        "motion",
+        "three"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ether-waves.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ether-waves.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/ether-waves",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "expandable-search-bar",
+      "type": "registry:component",
+      "title": "Expandable Search Bar",
+      "description": "클릭하면 펼쳐지는 검색창(expandable search, search bar).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/expandable-search-bar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/expandable-search-bar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/expandable-search-bar",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "expandable-speed-dial",
+      "type": "registry:component",
+      "title": "Expandable Speed Dial",
+      "description": "펼쳐지는 플로팅 액션 버튼(speed dial, fab menu).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/expandable-speed-dial.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/expandable-speed-dial.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/expandable-speed-dial",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "expanded-map",
       "type": "registry:component",
       "title": "Expanded Map",
@@ -4289,6 +5588,33 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "fall-beam-background",
+      "type": "registry:component",
+      "title": "Fall Beam Background",
+      "description": "위에서 빛줄기가 쏟아지는 배경(falling beams, light rain).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/fall-beam-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/fall-beam-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/fall-beam-background",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -4698,6 +6024,85 @@
         "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "fluid-action-panel",
+      "type": "registry:component",
+      "title": "Fluid Action Panel",
+      "description": "유체처럼 펼쳐지는 액션 패널(action panel, floating menu).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/fluid-action-panel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/fluid-action-panel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/fluid-action-panel",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "fluid-button",
+      "type": "registry:component",
+      "title": "Fluid Button",
+      "description": "누르면 유체처럼 늘어나는 버튼(fluid button, liquid press).",
+      "categories": [
+        "버튼"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/fluid-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/fluid-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/fluid-button",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "fluid-chrome",
+      "type": "registry:component",
+      "title": "Fluid Chrome",
+      "description": "크롬이 흐르는 금속 셰이더 배경(fluid chrome, liquid metal).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion",
+        "motion",
+        "three"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/fluid-chrome.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/fluid-chrome.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/fluid-chrome",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -5153,6 +6558,52 @@
       }
     },
     {
+      "name": "glass-folder",
+      "type": "registry:component",
+      "title": "Glass Folder",
+      "description": "유리 질감 폴더 UI(glass folder, file stack).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-folder.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/glass-folder.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/glass-folder",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "glitch-button",
+      "type": "registry:component",
+      "title": "Glitch Button",
+      "description": "글리치가 이는 버튼(glitch button, cyberpunk cta).",
+      "categories": [
+        "버튼"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glitch-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/glitch-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/glitch-button",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "glitch-text",
       "type": "registry:component",
       "title": "Glitch Text",
@@ -5226,6 +6677,29 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "glowing-cards",
+      "type": "registry:component",
+      "title": "Glowing Cards",
+      "description": "테두리가 빛나는 카드 묶음(glowing cards, neon border).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glowing-cards.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/glowing-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/glowing-cards",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -5328,6 +6802,52 @@
       }
     },
     {
+      "name": "gradient-background",
+      "type": "registry:component",
+      "title": "Gradient Background",
+      "description": "색이 천천히 도는 그라디언트 배경(gradient background, mesh gradient).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/gradient-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gradient-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/gradient-background",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "gradient-button",
+      "type": "registry:component",
+      "title": "Gradient Button",
+      "description": "그라디언트가 도는 버튼(gradient button, colorful cta).",
+      "categories": [
+        "버튼"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/gradient-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gradient-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/gradient-button",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "gradient-hero-01",
       "type": "registry:component",
       "title": "Gradient Hero 01",
@@ -5397,6 +6917,59 @@
       }
     },
     {
+      "name": "grain-carousel",
+      "type": "registry:component",
+      "title": "Grain Carousel",
+      "description": "그레인 질감이 얹힌 캐러셀(grain carousel, film slider).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "next-themes"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/grain-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/grain-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/grain-carousel",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "grain-cursor",
+      "type": "registry:component",
+      "title": "Grain Cursor",
+      "description": "그레인 질감이 따라오는 커서(grain cursor, noise trail).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "three"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/grain-cursor.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/grain-cursor.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/grain-cursor",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "granular-dust-reveal",
       "type": "registry:component",
       "title": "Granular Dust Reveal",
@@ -5424,6 +6997,29 @@
       }
     },
     {
+      "name": "grid-dot-backgrounds",
+      "type": "registry:component",
+      "title": "Grid Dot Backgrounds",
+      "description": "격자와 점을 조합한 배경 모음(grid dot background, blueprint).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/grid-dot-backgrounds.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/grid-dot-backgrounds.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/grid-dot-backgrounds",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "grid-pattern",
       "type": "registry:component",
       "title": "Grid Pattern",
@@ -5444,6 +7040,55 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "hamburger-menu-overlay",
+      "type": "registry:component",
+      "title": "Hamburger Menu Overlay",
+      "description": "전체 화면 햄버거 메뉴(hamburger menu, fullscreen nav).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/hamburger-menu-overlay.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hamburger-menu-overlay.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/hamburger-menu-overlay",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "hanging-id-card",
+      "type": "registry:component",
+      "title": "Hanging Id Card",
+      "description": "줄에 매달려 흔들리는 사원증 카드(id card, lanyard physics).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/hanging-id-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hanging-id-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/HangingIdCard",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -5471,6 +7116,29 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "hell-background",
+      "type": "registry:component",
+      "title": "Hell Background",
+      "description": "불길이 이는 붉은 셰이더 배경(fire background, hell shader).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/hell-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hell-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/hell-background",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -5623,6 +7291,55 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "holo-button",
+      "type": "registry:component",
+      "title": "Holo Button",
+      "description": "홀로그램 질감 버튼(holographic button, iridescent).",
+      "categories": [
+        "버튼"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/holo-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/holo-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/holo-button",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "holographic-wave",
+      "type": "registry:component",
+      "title": "Holographic Wave",
+      "description": "홀로그램처럼 무지개빛이 흐르는 파동(holographic wave, iridescent).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "ogl"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/holographic-wave.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/holographic-wave.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/holographic-wave",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -5801,6 +7518,34 @@
       }
     },
     {
+      "name": "image-reveal",
+      "type": "registry:component",
+      "title": "Image Reveal",
+      "description": "텍스트에 hover 하면 이미지가 드러나는 효과(image reveal on hover, text preview).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/image-reveal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/image-reveal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/image-reveal",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "image-reveal-list",
       "type": "registry:component",
       "title": "Image Reveal List",
@@ -5928,6 +7673,32 @@
       }
     },
     {
+      "name": "infinite-drift",
+      "type": "registry:component",
+      "title": "Infinite Drift",
+      "description": "끝없이 흘러가는 표류 배경(infinite drift, endless scroll background).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "three"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/infinite-drift.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/infinite-drift.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/infinite-drift",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "infinite-image-field",
       "type": "registry:component",
       "title": "Infinite Image Field",
@@ -5998,6 +7769,102 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "interactive-card",
+      "type": "registry:component",
+      "title": "Interactive Card",
+      "description": "커서에 반응하는 인터랙티브 카드(interactive card, hover effect).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/interactive-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/interactive-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/interactive-card",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "interactive-card-gallery",
+      "type": "registry:component",
+      "title": "Interactive Card Gallery",
+      "description": "카드가 펼쳐지는 인터랙티브 갤러리(card gallery, expand on hover).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/interactive-card-gallery.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/interactive-card-gallery.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/interactive-card-gallery",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "interactive-gradient-card",
+      "type": "registry:component",
+      "title": "Interactive Gradient Card",
+      "description": "커서를 따라 그라디언트가 움직이는 카드(gradient card, spotlight).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/interactive-gradient-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/interactive-gradient-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/interactive-gradient-card",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "interactive-grid-background",
+      "type": "registry:component",
+      "title": "Interactive Grid Background",
+      "description": "커서에 반응하는 격자 배경(interactive grid, hover grid).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/interactive-grid-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/interactive-grid-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/interactive-grid-background",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -6195,6 +8062,32 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "iphone16-pro",
+      "type": "registry:component",
+      "title": "Iphone16 Pro",
+      "description": "아이폰 16 Pro 목업(iphone mockup, device frame).",
+      "categories": [
+        "디바이스 목업"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/iphone16-pro.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/iphone16-pro.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/iphone16-pro",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -6403,6 +8296,33 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "knowledge-convergence",
+      "type": "registry:component",
+      "title": "Knowledge Convergence",
+      "description": "선들이 한 점으로 모이는 지식 그래프풍 배경(convergence, network background).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/knowledge-convergence.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/knowledge-convergence.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/knowledge-convergence",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -6779,6 +8699,448 @@
       }
     },
     {
+      "name": "liquid-fluid",
+      "type": "registry:component",
+      "title": "Liquid Fluid",
+      "description": "유체가 섞이는 셰이더 배경(fluid simulation, liquid shader).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "gsap",
+        "motion",
+        "motion",
+        "ogl"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-fluid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-fluid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/liquid-fluid",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "liquid-glass-alert",
+      "type": "registry:component",
+      "title": "Liquid Glass Alert",
+      "description": "유리 질감 알림 배너(liquid glass alert, glassmorphism). Apple 스타일 반투명 표면.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-glass-alert.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-glass-alert.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/liquid-glass-alert",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "liquid-glass-alert-dialog",
+      "type": "registry:component",
+      "title": "Liquid Glass Alert Dialog",
+      "description": "유리 질감 확인 다이얼로그(glass alert dialog, confirm).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-glass-alert-dialog.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-glass-alert-dialog.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/liquid-glass-alert-dialog",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "liquid-glass-avatar",
+      "type": "registry:component",
+      "title": "Liquid Glass Avatar",
+      "description": "유리 질감 아바타(glass avatar, glassmorphism).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-glass-avatar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-glass-avatar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/liquid-glass-avatar",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "liquid-glass-badge",
+      "type": "registry:component",
+      "title": "Liquid Glass Badge",
+      "description": "유리 질감 배지(glass badge, glassmorphism).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-glass-badge.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-glass-badge.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/liquid-glass-badge",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "liquid-glass-button",
+      "type": "registry:component",
+      "title": "Liquid Glass Button",
+      "description": "유리 질감 버튼(glass button, glassmorphism cta).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-glass-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-glass-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/liquid-glass-button",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "liquid-glass-card",
+      "type": "registry:component",
+      "title": "Liquid Glass Card",
+      "description": "유리 질감 카드(glass card, glassmorphism). 뒤 배경이 비쳐 보인다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-glass-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-glass-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/liquid-glass-card",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "liquid-glass-chart",
+      "type": "registry:component",
+      "title": "Liquid Glass Chart",
+      "description": "유리 질감 차트(glass chart, glassmorphism graph).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-glass-chart.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-glass-chart.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/liquid-glass-chart",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "liquid-glass-checkbox",
+      "type": "registry:component",
+      "title": "Liquid Glass Checkbox",
+      "description": "유리 질감 체크박스(glass checkbox).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-glass-checkbox.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-glass-checkbox.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/liquid-glass-checkbox",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "liquid-glass-collapsible",
+      "type": "registry:component",
+      "title": "Liquid Glass Collapsible",
+      "description": "유리 질감 접기 패널(glass collapsible, accordion).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-glass-collapsible.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-glass-collapsible.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/liquid-glass-collapsible",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "liquid-glass-dialog",
+      "type": "registry:component",
+      "title": "Liquid Glass Dialog",
+      "description": "유리 질감 모달(glass dialog, modal).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-glass-dialog.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-glass-dialog.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/liquid-glass-dialog",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "liquid-glass-input",
+      "type": "registry:component",
+      "title": "Liquid Glass Input",
+      "description": "유리 질감 입력창(glass input).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-glass-input.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-glass-input.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/liquid-glass-input",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "liquid-glass-input-otp",
+      "type": "registry:component",
+      "title": "Liquid Glass Input OTP",
+      "description": "유리 질감 OTP 입력(glass otp, verification code).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-glass-input-otp.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-glass-input-otp.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/liquid-glass-input-otp",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "liquid-glass-select",
+      "type": "registry:component",
+      "title": "Liquid Glass Select",
+      "description": "유리 질감 셀렉트(glass select, dropdown).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-glass-select.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-glass-select.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/liquid-glass-select",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "liquid-glass-slider",
+      "type": "registry:component",
+      "title": "Liquid Glass Slider",
+      "description": "유리 질감 슬라이더(glass slider, range).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-glass-slider.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-glass-slider.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/liquid-glass-slider",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "liquid-glass-switch",
+      "type": "registry:component",
+      "title": "Liquid Glass Switch",
+      "description": "유리 질감 스위치(glass switch, toggle).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-glass-switch.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-glass-switch.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/liquid-glass-switch",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "liquid-gradient",
       "type": "registry:component",
       "title": "Liquid Gradient",
@@ -6880,6 +9242,33 @@
         "source": "JolyUI",
         "sourceUrl": "https://www.jolyui.dev/docs/components/liquid-metal-button",
         "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "liquid-surface",
+      "type": "registry:component",
+      "title": "Liquid Surface",
+      "description": "수면처럼 일렁이는 표면(liquid surface, water shader).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "gsap",
+        "three"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-surface.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-surface.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/liquid-surface",
+        "author": "codewithMUHILAN",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -7063,6 +9452,33 @@
       }
     },
     {
+      "name": "looping-words",
+      "type": "registry:component",
+      "title": "Looping Words",
+      "description": "단어가 순환하며 교체되는 텍스트(looping words, word rotator).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/looping-words.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/looping-words.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/looping-words",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "mac-keyboard",
       "type": "registry:component",
       "title": "Mac Keyboard",
@@ -7113,6 +9529,33 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "magic-loader",
+      "type": "registry:component",
+      "title": "Magic Loader",
+      "description": "로딩 스피너(magic loader, loading indicator).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/magic-loader.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/magic-loader.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/magic-loader",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -7168,6 +9611,33 @@
       }
     },
     {
+      "name": "magnetic-button",
+      "type": "registry:component",
+      "title": "Magnetic Button",
+      "description": "커서에 끌려오는 자석 버튼(magnetic button, cursor attraction).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/magnetic-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/magnetic-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/magnetic-button",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "magnetic-dock",
       "type": "registry:component",
       "title": "magnetic-dock",
@@ -7191,6 +9661,33 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "magnetic-field",
+      "type": "registry:component",
+      "title": "Magnetic Field",
+      "description": "자기장처럼 선이 휘는 배경(magnetic field, field lines).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/magnetic-field.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/magnetic-field.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/magnetic-field",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -7319,6 +9816,33 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "marquee-menu",
+      "type": "registry:component",
+      "title": "Marquee Menu",
+      "description": "항목에 hover 하면 텍스트가 흐르는 메뉴(marquee menu, hover nav).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/marquee-menu.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/marquee-menu.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/marquee-menu",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -7742,6 +10266,33 @@
       }
     },
     {
+      "name": "morphing-navigation",
+      "type": "registry:component",
+      "title": "Morphing Navigation",
+      "description": "형태가 변하는 내비게이션(morphing nav, animated menu).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/morphing-navigation.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/morphing-navigation.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/morphing-navigation",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "morphing-text",
       "type": "registry:component",
       "title": "Morphing Text",
@@ -7871,6 +10422,33 @@
       }
     },
     {
+      "name": "nebula-flow",
+      "type": "registry:component",
+      "title": "Nebula Flow",
+      "description": "성운이 흐르는 배경(nebula, space shader).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/nebula-flow.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/nebula-flow.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/nebula-flow",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "neon-gradient-card",
       "type": "registry:component",
       "title": "Neon Gradient Card",
@@ -7906,6 +10484,33 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "neural-link",
+      "type": "registry:component",
+      "title": "Neural Link",
+      "description": "신경망처럼 이어진 노드 배경(neural network, node graph).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/neural-link.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/neural-link.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/neural-link",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -8038,6 +10643,29 @@
       }
     },
     {
+      "name": "orbit-card",
+      "type": "registry:component",
+      "title": "Orbit Card",
+      "description": "주위를 도는 요소가 있는 카드(orbit card, satellite).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/orbit-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/orbit-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/orbit-card",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "orbit-card-stack",
       "type": "registry:component",
       "title": "Orbit Card Stack",
@@ -8134,6 +10762,29 @@
       }
     },
     {
+      "name": "particle-orbit-effect",
+      "type": "registry:component",
+      "title": "Particle Orbit Effect",
+      "description": "입자가 궤도를 도는 효과(particle orbit, orbiting dots).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/particle-orbit-effect.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/particle-orbit-effect.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/particle-orbit-effect",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "particles",
       "type": "registry:component",
       "title": "Particles",
@@ -8154,6 +10805,29 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "particles-background",
+      "type": "registry:component",
+      "title": "Particles Background",
+      "description": "입자 배경(particles, canvas particles).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/particles-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/particles-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/particles-background",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -8456,6 +11130,32 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "plasma-globe",
+      "type": "registry:component",
+      "title": "Plasma Globe",
+      "description": "플라즈마 구체(plasma globe, electric sphere). 전기가 뻗어나간다.",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "ogl"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/plasma-globe.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/plasma-globe.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/plasma-globe",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -9125,6 +11825,33 @@
       }
     },
     {
+      "name": "quantum-field",
+      "type": "registry:component",
+      "title": "Quantum Field",
+      "description": "양자장처럼 흔들리는 점 배경(quantum field, wave particles).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/quantum-field.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/quantum-field.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/quantum-field",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "radial-glow-button",
       "type": "registry:component",
       "title": "Radial Glow Button",
@@ -9227,6 +11954,56 @@
         "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "rays-background",
+      "type": "registry:component",
+      "title": "Rays Background",
+      "description": "광선이 퍼지는 배경(light rays, god rays).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/rays-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/rays-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/rays-background",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "reflect-background",
+      "type": "registry:component",
+      "title": "Reflect Background",
+      "description": "반사가 있는 표면 배경(reflection, mirror shader).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/reflect-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/reflect-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/reflect-background",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -9498,6 +12275,33 @@
       }
     },
     {
+      "name": "ripple-loader",
+      "type": "registry:component",
+      "title": "Ripple Loader",
+      "description": "물결이 퍼지는 로더(ripple loader, pulse loading).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ripple-loader.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ripple-loader.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/ripple-loader",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "ripple-transition",
       "type": "registry:component",
       "title": "Ripple Transition",
@@ -9526,6 +12330,32 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "rolling-text-3d",
+      "type": "registry:component",
+      "title": "Rolling Text 3D",
+      "description": "글자가 3D로 굴러가며 바뀌는 텍스트(rolling text, 3d flip).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "gsap"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/rolling-text-3d.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/rolling-text-3d.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/rolling-text-3d",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -9575,6 +12405,33 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "satin-flow",
+      "type": "registry:component",
+      "title": "Satin Flow",
+      "description": "새틴 천이 흐르는 듯한 배경(satin flow, silk shader).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/satin-flow.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/satin-flow.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/satin-flow",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -9653,6 +12510,60 @@
       }
     },
     {
+      "name": "scroll-cards",
+      "type": "registry:component",
+      "title": "Scroll Cards",
+      "description": "스크롤에 따라 카드가 쌓이는 섹션(scroll cards, sticky stack).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@gsap/react",
+        "gsap"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/scroll-cards.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/scroll-cards",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "scroll-carousel",
+      "type": "registry:component",
+      "title": "Scroll Carousel",
+      "description": "스크롤로 넘기는 캐러셀(scroll carousel, horizontal scroll).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "gsap",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/scroll-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/scroll-carousel",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "scroll-choreography",
       "type": "registry:component",
       "title": "scroll-choreography",
@@ -9679,6 +12590,33 @@
       }
     },
     {
+      "name": "scroll-list",
+      "type": "registry:component",
+      "title": "Scroll List",
+      "description": "스크롤에 반응하는 목록(scroll list, reveal on scroll).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/scroll-list.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-list.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/scroll-list",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "scroll-progress",
       "type": "registry:component",
       "title": "Scroll Progress",
@@ -9702,6 +12640,33 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "scroll-reveal",
+      "type": "registry:component",
+      "title": "Scroll Reveal",
+      "description": "스크롤하면 요소가 드러나는 래퍼(scroll reveal, fade in on scroll).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/scroll-reveal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-reveal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/scroll-reveal",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -9784,6 +12749,34 @@
       }
     },
     {
+      "name": "scroll-timeline",
+      "type": "registry:component",
+      "title": "Scroll Timeline",
+      "description": "스크롤을 따라 진행되는 타임라인(scroll timeline, story timeline).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/scroll-timeline.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-timeline.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/scroll-timeline",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "scrub-bar",
       "type": "registry:component",
       "title": "Scrub Bar",
@@ -9860,6 +12853,29 @@
       }
     },
     {
+      "name": "seasonal-hover-cards",
+      "type": "registry:component",
+      "title": "Seasonal Hover Cards",
+      "description": "계절 테마로 바뀌는 hover 카드(seasonal cards, theme hover).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/seasonal-hover-cards.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/seasonal-hover-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/seasonal-hover-cards",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "segmented-button",
       "type": "registry:component",
       "title": "Segmented Button",
@@ -9881,6 +12897,55 @@
         "source": "JolyUI",
         "sourceUrl": "https://www.jolyui.dev/docs/components/segmented-button",
         "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "shader-background",
+      "type": "registry:component",
+      "title": "Shader Background",
+      "description": "직접 셰이더를 넣어 쓰는 배경 컨테이너(shader background, glsl canvas).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/shader-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shader-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/shader-background",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "shader-card",
+      "type": "registry:component",
+      "title": "Shader Card",
+      "description": "셰이더 배경이 깔린 카드(shader card, glsl card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "next-themes"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/shader-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shader-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/shader-card",
+        "author": "codewithMUHILAN",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -10078,6 +13143,29 @@
       }
     },
     {
+      "name": "shine-button",
+      "type": "registry:component",
+      "title": "Shine Button",
+      "description": "광택이 지나가는 버튼(shine button, gloss cta).",
+      "categories": [
+        "버튼"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/shine-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shine-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/shine-button",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "shiny-button",
       "type": "registry:component",
       "title": "Shiny Button",
@@ -10101,6 +13189,33 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "shiny-text",
+      "type": "registry:component",
+      "title": "Shiny Text",
+      "description": "광택이 훑고 지나가는 텍스트(shiny text, shimmer).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/shiny-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shiny-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/shiny-text",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -10238,6 +13353,34 @@
       }
     },
     {
+      "name": "slide-to-confirm",
+      "type": "registry:component",
+      "title": "Slide To Confirm",
+      "description": "밀어서 확정하는 슬라이더(slide to confirm, swipe to unlock). 되돌릴 수 없는 동작 앞에 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/slide-to-confirm.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/slide-to-confirm.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/slide-to-confirm",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "slide-up-text",
       "type": "registry:component",
       "title": "Slide Up Text",
@@ -10264,6 +13407,55 @@
       }
     },
     {
+      "name": "sliding-cards",
+      "type": "registry:component",
+      "title": "Sliding Cards",
+      "description": "옆으로 미끄러지는 카드 목록(sliding cards, horizontal cards).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sliding-cards.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sliding-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/sliding-cards",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "sliding-logo-marquee",
+      "type": "registry:component",
+      "title": "Sliding Logo Marquee",
+      "description": "로고가 흐르는 마퀴(logo marquee, trusted by).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sliding-logo-marquee.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sliding-logo-marquee.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/sliding-logo-marquee",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "slinky-trail",
       "type": "registry:component",
       "title": "Slinky Trail",
@@ -10284,6 +13476,52 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "smokey-background",
+      "type": "registry:component",
+      "title": "Smokey Background",
+      "description": "연기가 퍼지는 배경(smoke background, fog shader).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/smokey-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/smokey-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/smokey-background",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "smokey-cursor",
+      "type": "registry:component",
+      "title": "Smokey Cursor",
+      "description": "연기가 따라오는 커서(smoke cursor, trail).",
+      "categories": [
+        "인터랙션"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/smokey-cursor.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/smokey-cursor.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/smokey-cursor",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -10366,6 +13604,58 @@
       }
     },
     {
+      "name": "sparkle-cursor",
+      "type": "registry:component",
+      "title": "Sparkle Cursor",
+      "description": "반짝이가 흩뿌려지는 커서(sparkle cursor, glitter trail).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "gsap"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sparkle-cursor.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sparkle-cursor.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/SparkleCursor",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "sparkle-navbar",
+      "type": "registry:component",
+      "title": "Sparkle Navbar",
+      "description": "반짝이는 내비게이션 바(sparkle navbar, glitter nav).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "gsap"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sparkle-navbar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sparkle-navbar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/sparkle-navbar",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "sparkles-text",
       "type": "registry:component",
       "title": "Sparkles Text",
@@ -10415,6 +13705,33 @@
         "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "spectrum-loader",
+      "type": "registry:component",
+      "title": "Spectrum Loader",
+      "description": "스펙트럼 색이 도는 로더(spectrum loader, rainbow loading).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/spectrum-loader.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/spectrum-loader.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/SpectrumLoader",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -10760,6 +14077,34 @@
       }
     },
     {
+      "name": "stack-list",
+      "type": "registry:component",
+      "title": "Stack List",
+      "description": "겹쳐 쌓이는 목록(stack list, layered items).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/stack-list.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stack-list.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/stack-list",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "stacked-logos",
       "type": "registry:component",
       "title": "Stacked Logos",
@@ -10834,6 +14179,29 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "stardust-button",
+      "type": "registry:component",
+      "title": "Stardust Button",
+      "description": "별가루가 흩날리는 버튼(stardust button, particle cta).",
+      "categories": [
+        "버튼"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/stardust-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stardust-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/stardust-button",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -11141,6 +14509,85 @@
       }
     },
     {
+      "name": "stripes-background",
+      "type": "registry:component",
+      "title": "Stripes Background",
+      "description": "줄무늬 배경(stripes, diagonal lines).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/stripes-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stripes-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/stripes-background",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "stylish-carousel",
+      "type": "registry:component",
+      "title": "Stylish Carousel",
+      "description": "장식이 들어간 캐러셀(stylish carousel, decorated slider).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/stylish-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stylish-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/stylish-carousel",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "team-carousel",
+      "type": "registry:component",
+      "title": "Team Carousel",
+      "description": "팀 구성원을 넘겨 보는 캐러셀(team carousel, member slider).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/team-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/team-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/team-carousel",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "team-reveal-grid",
       "type": "registry:component",
       "title": "Team Reveal Grid",
@@ -11187,6 +14634,35 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "terminal-card",
+      "type": "registry:component",
+      "title": "Terminal Card",
+      "description": "터미널 창 모양 카드(terminal card, console mockup). 문법 강조를 지원한다.",
+      "categories": [
+        "코드·터미널"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion",
+        "react-syntax-highlighter"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/terminal-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/terminal-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/terminal-card",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -11439,6 +14915,29 @@
       }
     },
     {
+      "name": "text-particle-animation",
+      "type": "registry:component",
+      "title": "Text Particle Animation",
+      "description": "입자가 모여 글자를 이루는 애니메이션(text particles, particle typography).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/text-particle-animation.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-particle-animation.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/text-particle-animation",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "text-repel",
       "type": "registry:component",
       "title": "text-repel",
@@ -11488,6 +14987,34 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "text-scroll-marquee",
+      "type": "registry:component",
+      "title": "Text Scroll Marquee",
+      "description": "스크롤에 반응해 흐르는 텍스트 마퀴(scroll marquee, velocity text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "@motionone/utils",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/text-scroll-marquee.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-scroll-marquee.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/text-scroll-marquee",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -11574,6 +15101,160 @@
         "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "toast",
+      "type": "registry:component",
+      "title": "Toast",
+      "description": "토스트 알림(toast, notification). Lightswind 자체 구현으로 shadcn sonner 와 별개다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/toast.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/toast.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/toast",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "toggle-theme",
+      "type": "registry:component",
+      "title": "Toggle Theme",
+      "description": "다크모드 전환 토글(theme toggle, light dark switch).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/toggle-theme.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/toggle-theme.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/toggle-theme",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "top-loader",
+      "type": "registry:component",
+      "title": "Top Loader",
+      "description": "페이지 상단 진행 바(top loader, nprogress). 라우트 전환에 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/top-loader.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/top-loader.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/top-loader",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "top-sticky-bar",
+      "type": "registry:component",
+      "title": "Top Sticky Bar",
+      "description": "상단 고정 공지 바(sticky banner, announcement bar).",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/top-sticky-bar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/top-sticky-bar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/top-sticky-bar",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "trial-button",
+      "type": "registry:component",
+      "title": "Trial Button",
+      "description": "무료 체험 유도용 강조 버튼(trial button, signup cta).",
+      "categories": [
+        "버튼"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/trial-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/trial-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/trial-button",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "trusted-users",
+      "type": "registry:component",
+      "title": "Trusted Users",
+      "description": "사용자 아바타를 겹쳐 보여주는 소셜 프루프(trusted users, avatar group).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/trusted-users.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/trusted-users.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/trusted-users",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -11771,6 +15452,33 @@
       }
     },
     {
+      "name": "typing-text",
+      "type": "registry:component",
+      "title": "Typing Text",
+      "description": "타이핑되는 텍스트(typing text, typewriter).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/typing-text.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/typing-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/typing-text",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "use-location",
       "type": "registry:component",
       "title": "Use Location",
@@ -11812,6 +15520,33 @@
         "source": "wigggle-ui",
         "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/use-weather",
         "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "vector-flow",
+      "type": "registry:component",
+      "title": "Vector Flow",
+      "description": "벡터장을 따라 입자가 흐르는 배경(vector field, flow particles).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/vector-flow.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/vector-flow.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/vector-flow",
+        "author": "codewithMUHILAN",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -12051,6 +15786,33 @@
       }
     },
     {
+      "name": "wave-background",
+      "type": "registry:component",
+      "title": "Wave Background",
+      "description": "물결 배경(wave background, animated waves).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/wave-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/wave-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/wave-background",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "wave-carousel",
       "type": "registry:component",
       "title": "Wave Carousel",
@@ -12122,6 +15884,32 @@
         "source": "ElevenLabs UI",
         "sourceUrl": "https://ui.elevenlabs.io/docs/components/waveform",
         "author": "ElevenLabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "wavy-ripple-background",
+      "type": "registry:component",
+      "title": "Wavy Ripple Background",
+      "description": "잔물결이 퍼지는 배경(ripple background, water ripple).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "ogl"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/wavy-ripple-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/wavy-ripple-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/wavy-ripple-background",
+        "author": "codewithMUHILAN",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -12695,6 +16483,32 @@
       }
     },
     {
+      "name": "woofy-hover-image",
+      "type": "registry:component",
+      "title": "Woofy Hover Image",
+      "description": "hover 하면 물결지는 이미지(wavy hover image, distortion).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "three"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/woofy-hover-image.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/woofy-hover-image.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/woofy-hover-image",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "word-rotate",
       "type": "registry:component",
       "title": "Word Rotate",
@@ -12744,6 +16558,34 @@
         "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "world-map",
+      "type": "registry:component",
+      "title": "World Map",
+      "description": "점으로 그린 세계 지도(world map, dotted map). 지역 연결선을 그린다.",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/world-map.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/world-map.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Lightswind UI",
+        "sourceUrl": "https://lightswind.com/components/world-map",
+        "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {

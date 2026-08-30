@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "stripes-background",
+  "title": "Stripes Background",
+  "description": "줄무늬 배경(stripes, diagonal lines).",
+  "files": [
+    {
+      "path": "registry/kidow/stripes-background.tsx",
+      "content": "// components/ui/StripesBackground.tsx\nimport React from \"react\";\nimport clsx from \"clsx\";\n\ninterface StripesBackgroundProps {\n  className?: string;\n  position?: \"left\" | \"right\" | \"top\" | \"bottom\" | \"full\";\n  width?: string;\n  height?: string;\n  opacity?: string;\n}\n\nconst StripesBackground: React.FC<StripesBackgroundProps> = ({\n  className,\n  position = \"right\",\n  width = \"w-full\",\n  height = \"h-full\",\n  opacity = \"opacity-30\", // This opacity applies to the div itself\n}) => {\n  const positionStyles = {\n    right: \"absolute top-0 right-0\",\n    left: \"absolute top-0 left-0\",\n    top: \"absolute top-0 left-0 w-full h-32\",\n    bottom: \"absolute bottom-0 left-0 w-full h-32\",\n    full: \"absolute inset-0\",\n  };\n\n  return (\n    <div\n      className={clsx(\n        \"pointer-events-none z-10\",\n        \"bg-[repeating-linear-gradient(45deg,_#00000066_0px,_#00000066_1px,_transparent_1px,_transparent_6px)]\",\n        \"dark:bg-[repeating-linear-gradient(45deg,_#ffffff66_0px,_#ffffff66_1px,_transparent_1px,_transparent_6px)]\",\n        positionStyles[position],\n        width,\n        height,\n        opacity,\n        className\n      )}\n    />\n  );\n};\n\nexport default StripesBackground;\n",
+      "type": "registry:component",
+      "target": "components/kidow/stripes-background.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Lightswind UI",
+    "sourceUrl": "https://lightswind.com/components/stripes-background",
+    "author": "codewithMUHILAN",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "배경·패턴"
+  ],
+  "type": "registry:component"
+}
