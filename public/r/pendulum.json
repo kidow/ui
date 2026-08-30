@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pendulum",
+  "title": "Pendulum",
+  "description": "좌우로 흔들리는 진자(pendulum, swing animation). 로딩이나 장식에 쓴다.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/pendulum.tsx",
+      "content": "\"use client\";\n \n\n/**\n * Copyright (c) 2025 Voxlet (Muhammad Kaif Nazeer)\n * Source: Voxlet UI — https://ui.voxletstudio.com\n *\n * 이 컴포넌트의 라이선스는 저작권 표시를 그대로 유지할 것을 요구한다.\n * 파일을 수정하더라도 위 표시를 지우거나 다른 이름을 추가하지 않는다.\n */\n\n// Visit https://voxlet-ui.vercel.app/ for more components like this\n\nimport { cn } from \"@/lib/utils\";\nimport { motion } from \"motion/react\";\n \ninterface PendulumProps {\n  className?: string;\n}\n \nconst Pendulum: React.FC<PendulumProps> = ({ className }) => {\n  return (\n    <div\n      className={cn(\n        \"w-full max-w-screen overflow-hidden h-screen flex items-start justify-center\",\n        className\n      )}\n    >\n      <div className=\"relative flex flex-col items-center justify-center\">\n        <motion.div\n          className=\"pendulum flex flex-col items-center justify-center\"\n          style={{\n            transformOrigin: \"50% 0%\",\n          }}\n          animate={{\n            rotate: [60, -60, 60],\n          }}\n          transition={{\n            repeat: Infinity,\n            duration: 3,\n            ease: [0.6, 0, 0.4, 1],\n          }}\n        >\n          <div className=\"w-[1px] h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] bg-white\"></div>\n \n          <motion.div\n            className=\"w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-full bg-white\"\n            style={{\n              boxShadow: \"inset 0 0 80px white, 0 0 30px white\",\n            }}\n            animate={{\n              boxShadow: [\n                \"inset 0 0 50px white, 0 0 20px white\",\n                \"inset 0 0 80px white, 0 0 30px white\",\n              ],\n            }}\n            transition={{\n              repeat: Infinity,\n              duration: 3,\n              ease: \"easeInOut\",\n            }}\n          />\n        </motion.div>\n      </div>\n    </div>\n  );\n};\n \nexport default Pendulum;",
+      "type": "registry:component",
+      "target": "components/kidow/pendulum.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Voxlet UI",
+    "sourceUrl": "https://ui.voxletstudio.com/components/pendulum",
+    "author": "voxletlabs",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "인터랙션"
+  ],
+  "type": "registry:component"
+}

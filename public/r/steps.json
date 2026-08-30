@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "steps",
+  "title": "Steps",
+  "description": "번호가 붙은 단계 안내(steps, stepper). 설치 가이드나 온보딩 절차를 순서대로 보여줄 때 쓴다.",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/steps.tsx",
+      "content": "\"use client\";\n\n/**\n * Copyright (c) 2025 Voxlet (Muhammad Kaif Nazeer)\n * Source: Voxlet UI — https://ui.voxletstudio.com\n *\n * 이 컴포넌트의 라이선스는 저작권 표시를 그대로 유지할 것을 요구한다.\n * 파일을 수정하더라도 위 표시를 지우거나 다른 이름을 추가하지 않는다.\n */\n\nimport * as React from \"react\";\n\ninterface StepProps {\n    title: string;\n    children: React.ReactNode;\n}\n\ninterface StepsProps {\n    children: React.ReactNode;\n}\n\nconst Step: React.FC<StepProps> = ({ title, children }) => {\n    return (\n        <div className=\"mb-4 last:mb-0\">\n            <h3 className=\"font-semibold text-md\">{title}</h3>\n            <div className=\"text-sm mt-2 text-muted-foreground\">{children}</div>\n        </div>\n    );\n};\n\nconst Steps: React.FC<StepsProps> = ({ children }) => {\n    const filteredChildren = React.Children.toArray(children).filter(\n        (child) => React.isValidElement(child)\n    ) as React.ReactElement<StepProps>[]; \n\n    return (\n        <ol className=\"relative border-l border-muted-foreground/20 ml-3\">\n            {filteredChildren.map((child, index) => (\n                <li key={index} className=\"mb-10 ml-6 last:mb-0\">\n                    <div className=\"absolute flex items-center justify-center w-8 h-8 rounded-full bg-background border border-muted-foreground/20 -left-4 ring-8 ring-background\">\n                        <span className=\"text-sm font-medium text-foreground\">{index + 1}</span>\n                    </div>\n                    {child}\n                </li>\n            ))}\n        </ol>\n    );\n};\n\nexport { Step, Steps };\nexport type { StepProps, StepsProps };",
+      "type": "registry:component",
+      "target": "components/kidow/steps.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Voxlet UI",
+    "sourceUrl": "https://ui.voxletstudio.com/components/steps",
+    "author": "voxletlabs",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:component"
+}

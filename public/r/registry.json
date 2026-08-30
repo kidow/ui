@@ -910,6 +910,33 @@
       }
     },
     {
+      "name": "animated-background",
+      "type": "registry:component",
+      "title": "Animated Background",
+      "description": "항목에 hover 하면 배경 하이라이트가 따라 움직이는 래퍼(animated background, hover highlight). 탭·내비·카드 목록을 감싸 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/animated-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Voxlet UI",
+        "sourceUrl": "https://ui.voxletstudio.com/components/animated-background",
+        "author": "voxletlabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "animated-beam",
       "type": "registry:component",
       "title": "Animated Beam",
@@ -933,6 +960,33 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "animated-beams-grid-background",
+      "type": "registry:component",
+      "title": "Animated Beams Grid Background",
+      "description": "격자를 따라 빛줄기가 지나가는 배경(animated beams, grid background).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/animated-beams-grid-background.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-beams-grid-background.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Voxlet UI",
+        "sourceUrl": "https://ui.voxletstudio.com/components/animated-beams-grid-background",
+        "author": "voxletlabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -1705,6 +1759,34 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/animated-wave",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "anime-navbar",
+      "type": "registry:component",
+      "title": "Anime Navbar",
+      "description": "활성 항목이 애니메이션으로 옮겨 다니는 내비게이션 바(animated navbar, tab indicator).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/anime-navbar.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/anime-navbar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Voxlet UI",
+        "sourceUrl": "https://ui.voxletstudio.com/components/anime-navbar",
+        "author": "voxletlabs",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -3531,6 +3613,34 @@
         "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "chat-widget",
+      "type": "registry:component",
+      "title": "Chat Widget",
+      "description": "우하단에 떠 있는 상담 채팅 위젯(chat widget, support bubble). 열면 대화창이 펼쳐진다.",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/chat-widget.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/chat-widget.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Voxlet UI",
+        "sourceUrl": "https://ui.voxletstudio.com/components/chat-widget",
+        "author": "voxletlabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -5835,6 +5945,33 @@
       }
     },
     {
+      "name": "download-button",
+      "type": "registry:component",
+      "title": "Download Button",
+      "description": "누르면 진행률이 차오르고 완료 표시로 바뀌는 다운로드 버튼(download button, progress button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/download-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/download-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Voxlet UI",
+        "sourceUrl": "https://ui.voxletstudio.com/components/download-button",
+        "author": "voxletlabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "download-sparkline",
       "type": "registry:component",
       "title": "Download Sparkline",
@@ -6670,6 +6807,33 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "flip-coin-button",
+      "type": "registry:component",
+      "title": "Flip Coin Button",
+      "description": "누르면 동전처럼 뒤집히는 버튼(flip coin button, 3d flip).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/flip-coin-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/flip-coin-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Voxlet UI",
+        "sourceUrl": "https://ui.voxletstudio.com/components/flip-coin-button",
+        "author": "voxletlabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -7872,6 +8036,33 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "gravity-box",
+      "type": "registry:component",
+      "title": "Gravity Box",
+      "description": "요소가 중력을 받아 떨어지고 부딪히는 물리 상자(gravity box, physics playground). matter-js 로 충돌을 계산한다. 태그·아이콘을 쏟아붓는 히어로 연출에 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "matter-js"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/gravity-box.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gravity-box.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Voxlet UI",
+        "sourceUrl": "https://ui.voxletstudio.com/components/gravity-box",
+        "author": "voxletlabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -10607,6 +10798,33 @@
       }
     },
     {
+      "name": "macbook-keyboard",
+      "type": "registry:component",
+      "title": "Macbook Keyboard",
+      "description": "맥북 키보드 목업(macbook keyboard, keyboard mockup). 실제 키 배열과 눌림 애니메이션을 갖췄다.",
+      "categories": [
+        "디바이스 목업"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/macbook-keyboard.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/macbook-keyboard.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Voxlet UI",
+        "sourceUrl": "https://ui.voxletstudio.com/components/macbook-keyboard",
+        "author": "voxletlabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "magic-card",
       "type": "registry:component",
       "title": "Magic Card",
@@ -10656,6 +10874,33 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/magic-loader",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "magic-wand",
+      "type": "registry:component",
+      "title": "Magic Wand",
+      "description": "커서를 따라다니며 반짝이를 뿌리는 마법봉 효과(magic wand cursor, sparkle trail).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/magic-wand.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/magic-wand.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Voxlet UI",
+        "sourceUrl": "https://ui.voxletstudio.com/components/magic-wand",
+        "author": "voxletlabs",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -12136,6 +12381,33 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/particles-background",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "pendulum",
+      "type": "registry:component",
+      "title": "Pendulum",
+      "description": "좌우로 흔들리는 진자(pendulum, swing animation). 로딩이나 장식에 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/pendulum.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pendulum.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Voxlet UI",
+        "sourceUrl": "https://ui.voxletstudio.com/components/pendulum",
+        "author": "voxletlabs",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -15604,6 +15876,33 @@
       }
     },
     {
+      "name": "space-box",
+      "type": "registry:component",
+      "title": "Space Box",
+      "description": "별이 지나가는 우주 상자 배경(space background, starfield).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/space-box.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/space-box.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Voxlet UI",
+        "sourceUrl": "https://ui.voxletstudio.com/components/space-box",
+        "author": "voxletlabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "sparkle-cursor",
       "type": "registry:component",
       "title": "Sparkle Cursor",
@@ -16384,6 +16683,31 @@
         "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "steps",
+      "type": "registry:component",
+      "title": "Steps",
+      "description": "번호가 붙은 단계 안내(steps, stepper). 설치 가이드나 온보딩 절차를 순서대로 보여줄 때 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/steps.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/steps.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Voxlet UI",
+        "sourceUrl": "https://ui.voxletstudio.com/components/steps",
+        "author": "voxletlabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
