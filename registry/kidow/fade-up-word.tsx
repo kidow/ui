@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useRef } from "react"
 import { HTMLMotionProps, motion, useInView } from "motion/react"

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 // npx shadcn-ui@latest add checkbox
 // npm  i react-use-measure

@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * jalco-ui
  * ColorPalette
@@ -24,7 +26,6 @@
  * - No external color parsing library — handles hex, rgb(), hsl(), oklch()
  */
 
-"use client"
 
 import * as React from "react"
 import { Check, Copy } from "lucide-react"

@@ -1,4 +1,5 @@
-'use client'
+"use client";
+
 import { ReactNode, useEffect } from 'react'
 import Lenis from 'lenis'
 

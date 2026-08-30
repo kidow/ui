@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-media-query",
+  "title": "Use Media Query",
+  "description": "미디어 쿼리 일치 여부를 알려주는 훅(use media query, responsive hook).",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/use-media-query.tsx",
+      "content": "\"use client\";\n\nimport { useEffect, useState } from 'react';\n\nexport function useMediaQuery(query: string) {\n  const [value, setValue] = useState(false);\n\n  useEffect(() => {\n    function onChange(event: MediaQueryListEvent) {\n      setValue(event.matches);\n    }\n\n    const result = matchMedia(query);\n    result.addEventListener('change', onChange);\n    setValue(result.matches);\n\n    return () => result.removeEventListener('change', onChange);\n  }, [query]);\n\n  return value;\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/use-media-query.tsx"
+    }
+  ],
+  "meta": {
+    "source": "UI Layouts",
+    "sourceUrl": "https://www.ui-layouts.com/components/use-media-query",
+    "author": "ui-layouts",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "개발자 도구"
+  ],
+  "type": "registry:component"
+}

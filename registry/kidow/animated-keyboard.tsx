@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { memo, ReactNode, useEffect, useState } from "react"
 import { cva, type VariantProps } from "class-variance-authority"

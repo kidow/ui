@@ -1,4 +1,5 @@
-'use client';
+"use client";
+
 import { motion, AnimatePresence } from 'motion/react';
 type ColorKey =
   | 'color1'

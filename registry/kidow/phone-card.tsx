@@ -1,4 +1,5 @@
 "use client";
+
 import { LazyVideo } from "./lazy-video";
 
 export interface PhoneCardProps {

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useEffect, useRef } from "react"
 import { Expo, gsap, Power1, Quint } from "gsap"

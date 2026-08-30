@@ -1,5 +1,4 @@
-'use client'
-
+"use client";
 
 /**
  * Copyright (c) 2025 Voxlet (Muhammad Kaif Nazeer)

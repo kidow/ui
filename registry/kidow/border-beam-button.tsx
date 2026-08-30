@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 /**
  * `border-beam` around `Button` — compact `beamSize="sm"` glow for controls.

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { CSSProperties, ReactNode, useEffect, useState } from "react"
 import { stagger, useAnimate } from "motion/react"

@@ -1,5 +1,4 @@
-"use client"
-
+"use client";
 
 /**
  * Copyright (c) 2024 Muhammad Kaif Nazeer

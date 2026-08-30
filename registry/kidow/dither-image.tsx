@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 /**
  * `DitherImage` — compound figure that applies a CSS-only Bayer dither effect

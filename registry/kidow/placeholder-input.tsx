@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { FaArrowRight } from "react-icons/fa";
@@ -84,7 +85,6 @@ const PlaceHolderInput = () => {
   const messageCharacters = Array.from(message);
 
   const codeString = `
-"use client";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { FaArrowRight } from "react-icons/fa";

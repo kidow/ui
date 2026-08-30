@@ -19,7 +19,6 @@
          inset: -1px;
        }
 */
-"use client"
 
 import {
   forwardRef,

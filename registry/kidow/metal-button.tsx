@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 /**
  * `metal-fx` around `Button` — liquid metal ring for controls.

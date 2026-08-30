@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "motion/react";
 import { useState } from "react";
 import { GeistSans } from "geist/font/sans";
@@ -7,7 +8,6 @@ function BubbleEffectButton() {
   const [copied, setCopied] = useState(false);
 
   const codeString = `
-'use client';
 
 const BubbleEffectButton = () => {
   return (

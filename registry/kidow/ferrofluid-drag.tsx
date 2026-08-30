@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useRef, useMemo, useId } from "react"
 import gsap from "gsap"

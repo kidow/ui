@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * jalco-ui
  * usePretext hooks
@@ -11,7 +13,6 @@
  * Powered by Pretext by Cheng Lou — github.com/chenglou/pretext
  */
 
-"use client"
 
 import * as React from "react"
 import type {

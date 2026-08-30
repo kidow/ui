@@ -1,7 +1,6 @@
 "use client";
 
 // components/ThreeDCarousel.tsx
-"use client";
 
 import React, {
   useRef,

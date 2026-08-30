@@ -1,4 +1,5 @@
-'use client';
+"use client";
+
 import React, { useRef, useState } from 'react';
 import { motion, MotionConfig } from 'motion/react';
 import useClickOutside from '@/components/kidow/use-click-outside';

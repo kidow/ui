@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "randomized-text-effect",
+  "title": "Randomized Text Effect",
+  "description": "글자가 무작위로 뒤섞였다 제자리를 찾는 텍스트(randomized text, scramble).",
+  "dependencies": [
+    "motion",
+    "@motionone/utils"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/randomized-text-effect.tsx",
+      "content": "\"use client\";\n\nimport React, { useCallback, useEffect, useState } from 'react';\n\nconst lettersAndSymbols = 'abcdefghijklmnopqrstuvwxyz!@#$%^&*-_+=;:<>,';\n\ninterface AnimatedTextProps {\n  text: string;\n}\n\nexport function RandomizedTextEffect({ text }: AnimatedTextProps) {\n  const [animatedText, setAnimatedText] = useState('');\n\n  const getRandomChar = useCallback(\n    () => lettersAndSymbols[Math.floor(Math.random() * lettersAndSymbols.length)],\n    []\n  );\n\n  const animateText = useCallback(async () => {\n    const duration = 50;\n    const revealDuration = 80;\n    const initialRandomDuration = 300;\n\n    const generateRandomText = () =>\n      text\n        .split('')\n        .map(() => getRandomChar())\n        .join('');\n\n    setAnimatedText(generateRandomText());\n\n    const endTime = Date.now() + initialRandomDuration;\n    while (Date.now() < endTime) {\n      await new Promise((resolve) => setTimeout(resolve, duration));\n      setAnimatedText(generateRandomText());\n    }\n\n    for (let i = 0; i < text.length; i++) {\n      await new Promise((resolve) => setTimeout(resolve, revealDuration));\n      setAnimatedText(\n        (prevText) =>\n          text.slice(0, i + 1) +\n          prevText\n            .slice(i + 1)\n            .split('')\n            .map(() => getRandomChar())\n            .join('')\n      );\n    }\n  }, [text, getRandomChar]);\n\n  useEffect(() => {\n    animateText();\n  }, [text, animateText]);\n\n  return <div className='relative inline-block'>{animatedText}</div>;\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/randomized-text-effect.tsx"
+    }
+  ],
+  "meta": {
+    "source": "UI Layouts",
+    "sourceUrl": "https://www.ui-layouts.com/components/randomized-text-effect",
+    "author": "ui-layouts",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:component"
+}

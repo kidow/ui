@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useCallback, useMemo, type HTMLAttributes } from "react"
 import { motion } from "motion/react"

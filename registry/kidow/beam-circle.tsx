@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useMemo } from "react";
 import { motion, Transition } from "motion/react";
 import { Sun, Cloud, MessageSquare, Briefcase, Zap } from "lucide-react";

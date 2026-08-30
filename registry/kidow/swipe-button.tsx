@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { CSSProperties, useEffect, useRef, useState } from "react"
 import { Check, ChevronRight } from "lucide-react"

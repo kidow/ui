@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { MouseEventHandler, ReactNode, useRef } from "react"
 import confetti from "canvas-confetti"

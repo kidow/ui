@@ -1,4 +1,5 @@
-'use client';
+"use client";
+
 import React, { useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
 import { Liquid ,Colors} from './liquid-gradient';

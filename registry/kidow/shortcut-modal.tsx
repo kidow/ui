@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState, ChangeEvent } from "react";
 import { GeistSans } from "geist/font/sans";
 import { IoMdSearch, IoMdClose } from "react-icons/io";

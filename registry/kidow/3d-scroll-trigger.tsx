@@ -1,7 +1,6 @@
 "use client";
 
 // ThreeDScrollTrigger.tsx
-"use client";
 
 import React, {
   useRef,

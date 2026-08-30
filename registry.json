@@ -1702,6 +1702,40 @@
       }
     },
     {
+      "name": "animated-tabs",
+      "type": "registry:component",
+      "title": "Animated Tabs",
+      "description": "표시가 미끄러지는 탭(animated tabs, sliding indicator).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/tab"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/animated-tabs/tab.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-tabs/tab.tsx"
+        },
+        {
+          "path": "registry/kidow/animated-tabs/preview-tab.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-tabs/preview-tab.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/animated-tabs",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "animated-theme-toggle",
       "type": "registry:component",
       "title": "Animated Theme Toggle",
@@ -2883,6 +2917,31 @@
       }
     },
     {
+      "name": "blur-vignette",
+      "type": "registry:component",
+      "title": "Blur Vignette",
+      "description": "가장자리를 흐리게 마감하는 비네트(blur vignette).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/blur-vignette.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/blur-vignette.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/blur-vignette",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "border-beam",
       "type": "registry:component",
       "title": "Border Beam",
@@ -3066,6 +3125,133 @@
       }
     },
     {
+      "name": "btn-animated-gradient",
+      "type": "registry:component",
+      "title": "Btn Animated Gradient",
+      "description": "그라디언트가 도는 버튼(animated gradient button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/btn-animated-gradient.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/btn-animated-gradient.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/btn-animated-gradient",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "btn-bg-shine",
+      "type": "registry:component",
+      "title": "Btn Bg Shine",
+      "description": "배경에 광택이 훑고 지나가는 버튼(shine button, bg shine).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/btn-bg-shine.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/btn-bg-shine.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/btn-bg-shine",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "btn-creative-right",
+      "type": "registry:component",
+      "title": "Btn Creative Right",
+      "description": "hover 하면 화살표가 오른쪽으로 미끄러지는 버튼(creative button, arrow slide).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/btn-creative-right.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/btn-creative-right.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/btn-creative-right",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "btn-hover-top-flip",
+      "type": "registry:component",
+      "title": "Btn Hover Top Flip",
+      "description": "hover 하면 글자가 위로 뒤집히는 버튼(flip button, text flip cta).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/btn-hover-top-flip.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/btn-hover-top-flip.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/btn-hover-top-flip",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "btn-rotating-gradient",
+      "type": "registry:component",
+      "title": "Btn Rotating Gradient",
+      "description": "테두리 그라디언트가 회전하는 버튼(rotating gradient button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/btn-rotating-gradient.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/btn-rotating-gradient.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/btn-rotating-gradient",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "bubble-effect-button",
       "type": "registry:component",
       "title": "Bubble Effect Button",
@@ -3088,6 +3274,33 @@
         "source": "Serenity UI",
         "sourceUrl": "https://serenity-ui.com",
         "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "buyme-acoffee",
+      "type": "registry:component",
+      "title": "Buyme Acoffee",
+      "description": "후원을 유도하는 커피 사주기 위젯(buy me a coffee, donation).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/buyme-acoffee.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/buyme-acoffee.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/buyme-acoffee",
+        "author": "ui-layouts",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -5837,6 +6050,114 @@
       }
     },
     {
+      "name": "creative-clippath",
+      "type": "registry:component",
+      "title": "Creative Clippath",
+      "description": "clip-path 로 이미지를 도형에 맞춰 자르는 효과(clip path, shaped image).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/creative-clippath.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/creative-clippath.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/creative-clippath",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "creative-hover-card",
+      "type": "registry:component",
+      "title": "Creative Hover Card",
+      "description": "hover 하면 내용이 드러나는 카드(creative hover card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/creative-hover-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/creative-hover-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/creative-hover-card",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "creative-imagemasking",
+      "type": "registry:component",
+      "title": "Creative Imagemasking",
+      "description": "이미지를 마스크로 오려내는 효과(image masking, mask reveal).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/creative-imagemasking.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/creative-imagemasking.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/creative-imagemasking",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "creative-videomasking",
+      "type": "registry:component",
+      "title": "Creative Videomasking",
+      "description": "영상을 마스크로 오려내는 효과(video masking).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/creative-videomasking.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/creative-videomasking.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/creative-videomasking",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "credit-card",
       "type": "registry:component",
       "title": "Credit Card",
@@ -6712,6 +7033,34 @@
       }
     },
     {
+      "name": "directional-drawer",
+      "type": "registry:component",
+      "title": "Directional Drawer",
+      "description": "네 방향에서 열리는 드로어(directional drawer, side sheet).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/directional-drawer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/directional-drawer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/directional-drawer",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "disclosure",
       "type": "registry:component",
       "title": "Disclosure",
@@ -7022,6 +7371,33 @@
         "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "drag-items",
+      "type": "registry:component",
+      "title": "Drag Items",
+      "description": "끌어서 옮기는 항목(drag items, draggable list).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/drag-items.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/drag-items.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/drag-items",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -8291,6 +8667,31 @@
       }
     },
     {
+      "name": "flipcountdown",
+      "type": "registry:component",
+      "title": "Flipcountdown",
+      "description": "숫자가 넘어가는 카운트다운(flip countdown, flip clock).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/flipcountdown.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/flipcountdown.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/flipcountdown",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "flipping-card",
       "type": "registry:component",
       "title": "Flipping Card",
@@ -8681,6 +9082,38 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "framer-normal-carousel",
+      "type": "registry:component",
+      "title": "Framer Normal Carousel",
+      "description": "motion 으로 만든 기본 캐러셀(carousel, slider).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/framer-normal-carousel/framer-normal-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/framer-normal-carousel/framer-normal-carousel.tsx"
+        },
+        {
+          "path": "registry/kidow/framer-normal-carousel/carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/framer-normal-carousel/carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/framer-normal-carousel",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -9326,6 +9759,31 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/gradient-background",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "gradient-border",
+      "type": "registry:component",
+      "title": "Gradient Border",
+      "description": "그라디언트 테두리(gradient border).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/gradient-border.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gradient-border.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/gradient-border",
+        "author": "ui-layouts",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -10189,6 +10647,31 @@
       }
     },
     {
+      "name": "horizontal-scroll",
+      "type": "registry:component",
+      "title": "Horizontal Scroll",
+      "description": "세로 스크롤을 가로 이동으로 바꾸는 섹션(horizontal scroll).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/horizontal-scroll.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/horizontal-scroll.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/horizontal-scroll",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "hover-preview",
       "type": "registry:component",
       "title": "Hover Preview",
@@ -10288,6 +10771,33 @@
         "source": "Cult UI",
         "sourceUrl": "https://www.cult-ui.com/docs/components/hover-video-player",
         "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "hovercard1",
+      "type": "registry:component",
+      "title": "Hovercard1",
+      "description": "hover 하면 이미지가 확대되며 정보가 올라오는 카드(hover card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/hovercard1.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hovercard1.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/hovercard1",
+        "author": "ui-layouts",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -10530,6 +11040,31 @@
       }
     },
     {
+      "name": "image-hover-accordion",
+      "type": "registry:component",
+      "title": "Image Hover Accordion",
+      "description": "hover 하면 펼쳐지는 이미지 아코디언(image accordion, expanding panels).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/image-hover-accordion.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/image-hover-accordion.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/image-hover-accordion",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "image-reveal",
       "type": "registry:component",
       "title": "Image Reveal",
@@ -10578,6 +11113,33 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "image-reveal2",
+      "type": "registry:component",
+      "title": "Image Reveal2",
+      "description": "hover 하면 이미지가 드러나는 효과(image reveal on hover).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@kidow/use-media-query"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/image-reveal2.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/image-reveal2.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/image-reveal2",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -10859,6 +11421,31 @@
         "source": "Motion Primitives",
         "sourceUrl": "https://motion-primitives.com/docs/infinite-slider",
         "author": "ibelick",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "infintyband",
+      "type": "registry:component",
+      "title": "Infintyband",
+      "description": "무한히 도는 띠(infinity band, looping ribbon).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/infintyband.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/infintyband.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/infintyband",
+        "author": "ui-layouts",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -11855,6 +12442,34 @@
       }
     },
     {
+      "name": "linear-modal",
+      "type": "registry:component",
+      "title": "Linear Modal",
+      "description": "Linear 식 명령 모달(linear modal, command modal).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/linear-modal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/linear-modal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/linear-modal",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "liquid-blob",
       "type": "registry:component",
       "title": "liquid-blob",
@@ -11955,6 +12570,33 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/liquid-fluid",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "liquid-glass",
+      "type": "registry:component",
+      "title": "Liquid Glass",
+      "description": "Apple 식 유리 굴절 표면(liquid glass, glassmorphism). SVG 변위 필터를 쓴다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/liquid-glass.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/liquid-glass.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/liquid-glass",
+        "author": "ui-layouts",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -12796,6 +13438,39 @@
       }
     },
     {
+      "name": "mac-genie",
+      "type": "registry:component",
+      "title": "Mac Genie",
+      "description": "macOS 지니 효과로 빨려 들어가는 애니메이션(genie effect, minimize animation).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "html-to-image",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/mac-genie/genie-effect.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/mac-genie/genie-effect.tsx"
+        },
+        {
+          "path": "registry/kidow/mac-genie/magnified-doc.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/mac-genie/magnified-doc.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/mac-genie",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "mac-keyboard",
       "type": "registry:component",
       "title": "Mac Keyboard",
@@ -13086,6 +13761,34 @@
         "author": "satisium",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "magnified-doc",
+      "type": "registry:component",
+      "title": "Magnified Doc",
+      "description": "문서 항목에 hover 하면 확대되는 목록(magnified doc, dock style list).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "@radix-ui/react-tooltip"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/magnified-doc.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/magnified-doc.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/magnified-doc",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -13421,6 +14124,36 @@
         "source": "wigggle-ui",
         "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/media-md-04",
         "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "media-modal",
+      "type": "registry:component",
+      "title": "Media Modal",
+      "description": "이미지·영상을 크게 띄우는 모달(media modal, lightbox).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [
+        "@kidow/use-media-query"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/media-modal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/media-modal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/media-modal",
+        "author": "ui-layouts",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -13999,6 +14732,59 @@
       }
     },
     {
+      "name": "motion-drawer",
+      "type": "registry:component",
+      "title": "Motion Drawer",
+      "description": "motion 으로 부드럽게 열리는 드로어(motion drawer).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/motion-drawer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/motion-drawer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/motion-drawer",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "motion-number-input",
+      "type": "registry:component",
+      "title": "Motion Number Input",
+      "description": "값이 굴러 올라가며 바뀌는 숫자 입력(motion number input, animated counter input).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/motion-number-input.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/motion-number-input.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/motion-number-input",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "mouse-effect-card",
       "type": "registry:component",
       "title": "Mouse Effect Card",
@@ -14024,6 +14810,31 @@
         "source": "KokonutUI",
         "sourceUrl": "https://kokonutui.com/docs/components/mouse-effect-card",
         "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "mousetrail",
+      "type": "registry:component",
+      "title": "Mousetrail",
+      "description": "커서를 따라 이미지가 흩뿌려지는 효과(image mousetrail, cursor trail).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/mousetrail.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/mousetrail.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/mousetrail",
+        "author": "ui-layouts",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -14085,6 +14896,48 @@
         "source": "shadcn Multi Select",
         "sourceUrl": "https://shadcn-multi-select-component.vercel.app",
         "author": "sersavan",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "multi-selector",
+      "type": "registry:component",
+      "title": "Multi Selector",
+      "description": "여러 값을 고르는 멀티 셀렉터(multi selector, multi select).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/multi-selector/multi-selector.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/multi-selector/multi-selector.tsx"
+        },
+        {
+          "path": "registry/kidow/multi-selector/button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/multi-selector/button.tsx"
+        },
+        {
+          "path": "registry/kidow/multi-selector/popover.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/multi-selector/popover.tsx"
+        },
+        {
+          "path": "registry/kidow/multi-selector/command.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/multi-selector/command.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/multi-selector",
+        "author": "ui-layouts",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -14234,6 +15087,31 @@
       }
     },
     {
+      "name": "nested-vaul-drawer",
+      "type": "registry:component",
+      "title": "Nested Vaul Drawer",
+      "description": "겹쳐 열리는 드로어(nested drawer, stacked sheet).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/nested-vaul-drawer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/nested-vaul-drawer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/nested-vaul-drawer",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "neumorph-button",
       "type": "registry:component",
       "title": "Neumorph Button",
@@ -14306,6 +15184,31 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/neural-link",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "noise-effect",
+      "type": "registry:component",
+      "title": "Noise Effect",
+      "description": "노이즈 질감을 얹는 오버레이(noise effect, grain overlay).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/noise-effect.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/noise-effect.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/noise-effect",
+        "author": "ui-layouts",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -14409,6 +15312,31 @@
         "source": "JolyUI",
         "sourceUrl": "https://www.jolyui.dev/docs/components/number-counter",
         "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "number-flow-trading",
+      "type": "registry:component",
+      "title": "Number Flow Trading",
+      "description": "시세처럼 숫자가 흐르는 표시(number flow, trading ticker).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/number-flow-trading.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/number-flow-trading.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/number-flow-trading",
+        "author": "ui-layouts",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -14683,6 +15611,33 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/particles-background",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "pass-strengthindicator",
+      "type": "registry:component",
+      "title": "Pass Strengthindicator",
+      "description": "비밀번호 강도를 막대로 보여주는 입력(password strength).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/pass-strengthindicator.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pass-strengthindicator.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/pass-strengthindicator",
+        "author": "ui-layouts",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -15870,6 +16825,33 @@
       }
     },
     {
+      "name": "progressive-carousel",
+      "type": "registry:component",
+      "title": "Progressive Carousel",
+      "description": "한 장이 커지며 넘어가는 캐러셀(progressive carousel, expanding slider).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/progressive-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/progressive-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/progressive-carousel",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "pulsating-button",
       "type": "registry:component",
       "title": "Pulsating Button",
@@ -16120,6 +17102,34 @@
         "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "randomized-text-effect",
+      "type": "registry:component",
+      "title": "Randomized Text Effect",
+      "description": "글자가 무작위로 뒤섞였다 제자리를 찾는 텍스트(randomized text, scramble).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion",
+        "@motionone/utils"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/randomized-text-effect.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/randomized-text-effect.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/randomized-text-effect",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -16840,6 +17850,62 @@
       }
     },
     {
+      "name": "responsive-header",
+      "type": "registry:component",
+      "title": "Responsive Header",
+      "description": "모바일에서 메뉴로 접히는 반응형 헤더(responsive header, navbar).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/responsive-header.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/responsive-header.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/responsive-header",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "responsive-modal",
+      "type": "registry:component",
+      "title": "Responsive Modal",
+      "description": "데스크톱은 모달, 모바일은 드로어로 바뀌는 대화상자(responsive modal, adaptive dialog).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/responsive-modal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/responsive-modal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/responsive-modal",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "retro-grid",
       "type": "registry:component",
       "title": "Retro Grid",
@@ -17230,6 +18296,33 @@
       }
     },
     {
+      "name": "scroll-animation",
+      "type": "registry:component",
+      "title": "Scroll Animation",
+      "description": "스크롤에 맞춰 요소를 움직이는 래퍼(scroll animation, reveal on scroll).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/scroll-animation.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-animation.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/scroll-animation",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "scroll-based-velocity",
       "type": "registry:component",
       "title": "Scroll Based Velocity",
@@ -17489,6 +18582,34 @@
         "source": "JolyUI",
         "sourceUrl": "https://www.jolyui.dev/docs/components/scroll-text",
         "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "scroll-text-marquee",
+      "type": "registry:component",
+      "title": "Scroll Text Marquee",
+      "description": "스크롤 속도에 반응해 흐르는 텍스트 마퀴(scroll marquee, velocity text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion",
+        "@motionone/utils"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/scroll-text-marquee.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/scroll-text-marquee.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/scroll-text-marquee",
+        "author": "ui-layouts",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -18147,6 +19268,33 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "showhide-pass",
+      "type": "registry:component",
+      "title": "Showhide Pass",
+      "description": "비밀번호 보기/숨기기 입력(password input, show hide).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/showhide-pass.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/showhide-pass.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/showhide-pass",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -18945,6 +20093,31 @@
       }
     },
     {
+      "name": "special-offer",
+      "type": "registry:component",
+      "title": "Special Offer",
+      "description": "한정 혜택을 알리는 배너(special offer, promo banner).",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/special-offer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/special-offer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/special-offer",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "special-text",
       "type": "registry:component",
       "title": "Special Text",
@@ -19523,6 +20696,31 @@
       }
     },
     {
+      "name": "stacking-card",
+      "type": "registry:component",
+      "title": "Stacking Card",
+      "description": "스크롤하면 카드가 겹쳐 쌓이는 섹션(stacking cards, sticky stack).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/stacking-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stacking-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/stacking-card",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "stagger-blur-effect",
       "type": "registry:component",
       "title": "Stagger Blur Effect",
@@ -19801,6 +20999,81 @@
         "source": "Voxlet UI",
         "sourceUrl": "https://ui.voxletstudio.com/components/steps",
         "author": "voxletlabs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "sticky-gallery",
+      "type": "registry:component",
+      "title": "Sticky Gallery",
+      "description": "고정된 채 이미지가 바뀌는 갤러리(sticky gallery).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/sticky-gallery.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sticky-gallery.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/sticky-gallery",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "sticky-hero-scroll",
+      "type": "registry:component",
+      "title": "Sticky Hero Scroll",
+      "description": "스크롤에 따라 내용이 바뀌는 고정 히어로(sticky hero scroll).",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/sticky-hero-scroll.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sticky-hero-scroll.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/sticky-hero-scroll",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "sticky-hero-section",
+      "type": "registry:component",
+      "title": "Sticky Hero Section",
+      "description": "스크롤해도 고정되는 히어로 섹션(sticky hero).",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/sticky-hero-section.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sticky-hero-section.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/sticky-hero-section",
+        "author": "ui-layouts",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -20097,6 +21370,33 @@
       }
     },
     {
+      "name": "stripecard",
+      "type": "registry:component",
+      "title": "Stripecard",
+      "description": "Stripe 느낌의 그라디언트 카드(stripe card, gradient card).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/stripecard.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stripecard.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/stripecard",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "striped-pattern",
       "type": "registry:component",
       "title": "Striped Pattern",
@@ -20248,6 +21548,33 @@
       }
     },
     {
+      "name": "swapy",
+      "type": "registry:component",
+      "title": "Swapy",
+      "description": "끌어서 자리를 맞바꾸는 레이아웃(swapy, drag to swap). 대시보드 위젯 배치에 쓴다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "swapy"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/swapy.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/swapy.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/swapy",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "swipe-button",
       "type": "registry:component",
       "title": "Swipe Button",
@@ -20360,6 +21687,33 @@
       }
     },
     {
+      "name": "tab",
+      "type": "registry:component",
+      "title": "Tab",
+      "description": "animated-tabs·tools-tab 이 함께 쓰는 탭 프리미티브(tab primitive).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/tab.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tab.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/tabs",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "tags",
       "type": "registry:component",
       "title": "Tags",
@@ -20387,6 +21741,31 @@
         "source": "Kibo UI",
         "sourceUrl": "https://www.kibo-ui.com/components/tags",
         "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "tags-input",
+      "type": "registry:component",
+      "title": "Tags Input",
+      "description": "태그를 입력하고 지우는 입력창(tags input, chips input).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/tags-input.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tags-input.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/tags-input",
+        "author": "ui-layouts",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -21512,6 +22891,33 @@
       }
     },
     {
+      "name": "timeline-animation",
+      "type": "registry:component",
+      "title": "Timeline Animation",
+      "description": "스크롤을 따라 진행되는 타임라인(timeline animation, scroll timeline).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/timeline-animation.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/timeline-animation.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/timeline-animation",
+        "author": "ui-layouts",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "timer",
       "type": "registry:component",
       "title": "Timer",
@@ -21711,6 +23117,33 @@
         "source": "Cult UI",
         "sourceUrl": "https://www.cult-ui.com/docs/components/toolbar-expandable",
         "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "tools-tab",
+      "type": "registry:component",
+      "title": "Tools Tab",
+      "description": "도구를 고르는 탭 묶음(tools tab, tool switcher).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "@kidow/tab"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/tools-tab.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tools-tab.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/tools-tab",
+        "author": "ui-layouts",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -22267,6 +23700,31 @@
         "source": "wigggle-ui",
         "sourceUrl": "https://wigggle-ui.vercel.app/docs/components/use-location",
         "author": "wigggle-ui",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "use-media-query",
+      "type": "registry:component",
+      "title": "Use Media Query",
+      "description": "미디어 쿼리 일치 여부를 알려주는 훅(use media query, responsive hook).",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/use-media-query.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/use-media-query.tsx"
+        }
+      ],
+      "meta": {
+        "source": "UI Layouts",
+        "sourceUrl": "https://www.ui-layouts.com/components/use-media-query",
+        "author": "ui-layouts",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }

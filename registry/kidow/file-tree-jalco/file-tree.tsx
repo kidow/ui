@@ -1,3 +1,5 @@
+"use client";
+
 /**
  * jalco-ui
  * FileTree
@@ -20,7 +22,6 @@
  * - No external dependencies — icons are bundled inline
  */
 
-"use client"
 
 import * as React from "react"
 import { cn } from "@/lib/utils"

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useLayoutEffect, useRef } from "react"
 import type React from "react"

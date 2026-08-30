@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { FaArrowRight } from "react-icons/fa";

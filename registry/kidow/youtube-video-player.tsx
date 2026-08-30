@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react"
 import { Maximize2, Minimize2, Play } from "lucide-react"

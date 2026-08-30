@@ -2,7 +2,6 @@
 
 // npm i embla-carousel-autoplay framer-motion lucide-react
 // npx shadcn@latest add carousel
-"use client";
 
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import Image from "next/image";

@@ -1,4 +1,5 @@
-'use client';
+"use client";
+
 import React, { useEffect, useRef } from 'react';
 import { Renderer, Camera, Geometry, Program, Mesh, RenderTarget, Vec2, Color, Texture } from 'ogl';
 import { useAnimationFrame } from "motion/react";

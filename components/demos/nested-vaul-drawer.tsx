@@ -1,0 +1,11 @@
+'use client'
+
+import NestedVaulDrawer from '@/components/kidow/nested-vaul-drawer'
+
+export default function NestedVaulDrawerDemo() {
+  return (
+    <div className="flex min-h-64 w-full items-center justify-center overflow-hidden p-2">
+      <NestedVaulDrawer />
+    </div>
+  )
+}

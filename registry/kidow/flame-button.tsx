@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useRef, useEffect } from "react";
 import { motion } from "motion/react";
 import { useState } from "react";
@@ -52,7 +53,6 @@ function FlameButton() {
   };
 
   const codeString = `
-"use client";
 import React, { useRef, useState, useEffect } from "react";
 import { motion } from "motion/react";
 import Link from "next/link";

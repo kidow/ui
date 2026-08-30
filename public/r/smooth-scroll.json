@@ -9,7 +9,7 @@
   "files": [
     {
       "path": "registry/kidow/smooth-scroll.tsx",
-      "content": "'use client'\nimport { ReactNode, useEffect } from 'react'\nimport Lenis from 'lenis'\n\nexport interface SmoothScrollProps {\n    children: ReactNode\n}\n\nexport function SmoothScroll({ children }: SmoothScrollProps) {\n    useEffect(() => {\n        const lenis = new Lenis()\n\n        function raf(time: number) {\n            lenis.raf(time)\n            requestAnimationFrame(raf)\n        }\n\n        requestAnimationFrame(raf)\n\n        // Remove loading class\n        document.body.classList.remove('loading');\n\n        return () => {\n            lenis.destroy()\n        }\n    }, [])\n\n    return <>{children}</>\n}\n\nexport default SmoothScroll\n",
+      "content": "\"use client\";\n\nimport { ReactNode, useEffect } from 'react'\nimport Lenis from 'lenis'\n\nexport interface SmoothScrollProps {\n    children: ReactNode\n}\n\nexport function SmoothScroll({ children }: SmoothScrollProps) {\n    useEffect(() => {\n        const lenis = new Lenis()\n\n        function raf(time: number) {\n            lenis.raf(time)\n            requestAnimationFrame(raf)\n        }\n\n        requestAnimationFrame(raf)\n\n        // Remove loading class\n        document.body.classList.remove('loading');\n\n        return () => {\n            lenis.destroy()\n        }\n    }, [])\n\n    return <>{children}</>\n}\n\nexport default SmoothScroll\n",
       "type": "registry:component",
       "target": "components/kidow/smooth-scroll.tsx"
     }

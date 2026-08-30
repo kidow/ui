@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { cn } from "@/lib/utils"
 import { useEffect, useRef, type HTMLAttributes, type PointerEvent } from "react"

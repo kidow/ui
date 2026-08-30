@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import * as React from "react"
 import { motion, useMotionValue, useSpring, useTransform, AnimatePresence, type MotionValue } from "motion/react"

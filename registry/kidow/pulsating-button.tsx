@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { useImperativeHandle, useLayoutEffect, useRef } from "react"
 

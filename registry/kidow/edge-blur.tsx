@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 interface EdgeBlurProps {
   position?: "top" | "bottom"

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ReactNode, RefObject, useEffect, useRef } from "react"
 import { ChevronUp, Loader } from "lucide-react"

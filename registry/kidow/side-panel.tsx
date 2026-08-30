@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React, { forwardRef, ReactNode } from "react"
 import { AnimatePresence, motion, MotionConfig } from "motion/react"

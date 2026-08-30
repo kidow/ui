@@ -1,4 +1,5 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { FaArrowRight } from "react-icons/fa";
@@ -65,7 +66,6 @@ function FadeBlurInput() {
   const messageCharacters = Array.from(message);
 
   const codeString = `
-"use client";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { FaArrowRight } from "react-icons/fa";
