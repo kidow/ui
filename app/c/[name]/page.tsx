@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { ChevronLeft, ExternalLink } from 'lucide-react'
 
 import { demos } from '@/components/demos'
+import { isSupportItem } from '@/lib/demo-flags'
 import { CopyCommand } from '@/components/copy-command'
 import { PreviewTabs } from '@/components/preview-tabs'
 import { Badge } from '@/components/ui/badge'
@@ -63,7 +64,11 @@ export default async function ComponentPage({ params }: PageProps<'/c/[name]'>) 
               Demo ? (
                 <Demo />
               ) : (
-                <span className="text-muted-foreground text-xs">데모 없음</span>
+                <span className="text-muted-foreground px-6 text-center text-xs">
+                  {isSupportItem(item.name, item.description)
+                    ? '다른 컴포넌트가 함께 설치해 쓰는 부품입니다. 아래 코드로 내용을 확인하세요.'
+                    : '데모 없음'}
+                </span>
               )
             }
           />

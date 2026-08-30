@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { demos } from '@/components/demos'
 import { LazyDemo } from '@/components/lazy-demo'
 import { Badge } from '@/components/ui/badge'
-import { hasGlobalEffect } from '@/lib/demo-flags'
+import { hasGlobalEffect, isSupportItem } from '@/lib/demo-flags'
 import type { RegistryItem } from '@/lib/registry'
 
 export function ComponentCard({ item }: { item: RegistryItem }) {
@@ -11,6 +11,7 @@ export function ComponentCard({ item }: { item: RegistryItem }) {
   // 카드 하나가 페이지 전체의 커서를 숨기거나 스크롤을 가로챈다.
   const skipped = hasGlobalEffect(item.name)
   const hasDemo = !skipped && Boolean(demos[item.name])
+  const support = !hasDemo && !skipped && isSupportItem(item.name, item.description)
 
   return (
     // 카드 전체를 <Link>로 감싸지 않는다 — 데모 안에 <a>가 있는 경우
@@ -24,7 +25,9 @@ export function ComponentCard({ item }: { item: RegistryItem }) {
           <span className="text-muted-foreground px-4 text-center text-xs">
             {skipped
               ? '페이지 전체에 적용되는 효과입니다. 상세에서 확인하세요.'
-              : '데모 없음'}
+              : support
+                ? '다른 컴포넌트가 함께 설치해 쓰는 부품입니다.'
+                : '데모 없음'}
           </span>
         )}
       </div>

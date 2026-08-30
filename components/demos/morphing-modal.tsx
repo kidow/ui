@@ -5,7 +5,7 @@ import { MorphingModal } from '@/components/kidow/morphing-modal/components/moti
 export default function MorphingModalDemo() {
   return (
     <div className="flex min-h-64 w-full items-center justify-center overflow-hidden p-2">
-      <MorphingModal viewId="수집" onClose={() => {}}>한 곳에 모은 컴포넌트</MorphingModal>
+      <MorphingModal viewId="수집" onClose={() => {}}>입력해 보세요</MorphingModal>
     </div>
   )
 }

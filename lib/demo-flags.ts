@@ -19,3 +19,19 @@ export const GLOBAL_EFFECT_DEMOS: ReadonlySet<string> = new Set([
 export function hasGlobalEffect(name: string) {
   return GLOBAL_EFFECT_DEMOS.has(name)
 }
+
+/**
+ * 단독으로는 화면에 그릴 것이 없는 항목.
+ *
+ * 훅·유틸·차트 부품처럼 다른 컴포넌트가 함께 설치해 쓰는 것들이다.
+ * "데모 없음"으로 두면 만들다 만 것처럼 보이므로 따로 알린다.
+ */
+export function isSupportItem(name: string, description = '') {
+  if (/^use-/.test(name)) return true
+  if (/(-utils|-variants|split-text|set-stagger-direction|calculate-position|svg-path-to-vertices|demo-images|icons|weather-utils)$/.test(name))
+    return true
+  // 차트 부품 — 부모 차트 안에서만 의미가 있다
+  if (/^(recharts-(chart|tooltip|legend|dot|brush|background)|chart-(kit|utils|context|animation|series|tooltip|stat-flow)|bklit-grid|x-axis|y-axis|background|legend|markers|reference-area|projection-line|profit-loss-line|pretext)$/.test(name))
+    return true
+  return /함께 설치된다|함께 쓴다|함께 설치한다/.test(description)
+}

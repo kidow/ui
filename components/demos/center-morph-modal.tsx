@@ -5,7 +5,7 @@ import { CenterMorphModal } from '@/components/kidow/center-morph-modal/componen
 export default function CenterMorphModalDemo() {
   return (
     <div className="flex min-h-64 w-full items-center justify-center overflow-hidden p-2">
-      <CenterMorphModal>한 곳에 모은 컴포넌트</CenterMorphModal>
+      <CenterMorphModal>입력해 보세요</CenterMorphModal>
     </div>
   )
 }
