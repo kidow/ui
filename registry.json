@@ -419,7 +419,7 @@
       "name": "achievement-badge",
       "type": "registry:component",
       "title": "Achievement Badge",
-      "description": "업적 배지(achievement badge, trophy). 잠김·해제 상태를 표현한다.",
+      "description": "업적 배지(achievement badge, trophy). 잠김·해제 상태를 표현한다. 게이미피케이션(gamification) 요소다.",
       "categories": [
         "미디어·데이터"
       ],
@@ -446,7 +446,7 @@
       "name": "achievement-card",
       "type": "registry:component",
       "title": "Achievement Card",
-      "description": "업적 하나를 설명과 함께 보여주는 카드(achievement card).",
+      "description": "업적 하나를 설명과 함께 보여주는 카드(achievement card). 게이미피케이션(gamification) 요소다.",
       "categories": [
         "카드·테두리"
       ],
@@ -475,7 +475,7 @@
       "name": "achievement-grid",
       "type": "registry:component",
       "title": "Achievement Grid",
-      "description": "업적을 격자로 나열한다(achievement grid).",
+      "description": "업적을 격자로 나열한다(achievement grid). 게이미피케이션(gamification) 요소다.",
       "categories": [
         "레이아웃·목록"
       ],
@@ -505,7 +505,7 @@
       "name": "achievement-list",
       "type": "registry:component",
       "title": "Achievement List",
-      "description": "업적을 진행률과 함께 목록으로 보여준다(achievement list).",
+      "description": "업적을 진행률과 함께 목록으로 보여준다(achievement list). 게이미피케이션(gamification) 요소다.",
       "categories": [
         "레이아웃·목록"
       ],
@@ -533,7 +533,7 @@
       "name": "achievement-unlocked",
       "type": "registry:component",
       "title": "Achievement Unlocked",
-      "description": "업적을 달성했을 때 띄우는 알림(achievement unlocked, toast).",
+      "description": "업적을 달성했을 때 띄우는 알림(achievement unlocked, toast). 게이미피케이션(gamification) 요소다.",
       "categories": [
         "인터랙션"
       ],
@@ -20874,7 +20874,7 @@
       "name": "leaderboard-card",
       "type": "registry:component",
       "title": "Leaderboard Card",
-      "description": "순위표를 카드에 담아 보여준다(leaderboard card).",
+      "description": "순위표를 카드에 담아 보여준다(leaderboard card). 게이미피케이션(gamification) 요소다.",
       "categories": [
         "카드·테두리"
       ],
@@ -20902,7 +20902,7 @@
       "name": "leaderboard-podium",
       "type": "registry:component",
       "title": "Leaderboard Podium",
-      "description": "상위 3인을 시상대로 보여준다(podium, top 3).",
+      "description": "상위 3인을 시상대로 보여준다(podium, top 3). 게이미피케이션(gamification) 요소다.",
       "categories": [
         "미디어·데이터"
       ],
@@ -20930,7 +20930,7 @@
       "name": "leaderboard-rankings",
       "type": "registry:component",
       "title": "Leaderboard Rankings",
-      "description": "순위표(leaderboard, 랭킹). 순위 변동을 표시한다.",
+      "description": "순위표(leaderboard, 랭킹). 순위 변동을 표시한다. 게이미피케이션(gamification) 요소다.",
       "categories": [
         "레이아웃·목록"
       ],
@@ -27291,7 +27291,7 @@
       "name": "points-awards",
       "type": "registry:component",
       "title": "Points Awards",
-      "description": "포인트를 준 활동 목록(points awards, reward log).",
+      "description": "포인트를 준 활동 목록(points awards, reward log). 게이미피케이션(gamification) 요소다.",
       "categories": [
         "레이아웃·목록"
       ],
@@ -27319,7 +27319,7 @@
       "name": "points-badge",
       "type": "registry:component",
       "title": "Points Badge",
-      "description": "포인트를 보여주는 배지(points badge, xp).",
+      "description": "포인트를 보여주는 배지(points badge, xp). 게이미피케이션(gamification) 요소다.",
       "categories": [
         "미디어·데이터"
       ],
@@ -27347,7 +27347,7 @@
       "name": "points-boost",
       "type": "registry:component",
       "title": "Points Boost",
-      "description": "포인트 부스트 상태를 알리는 표시(points boost, multiplier).",
+      "description": "포인트 부스트 상태를 알리는 표시(points boost, multiplier). 게이미피케이션(gamification) 요소다.",
       "categories": [
         "위젯"
       ],
@@ -27376,7 +27376,7 @@
       "name": "points-chart",
       "type": "registry:component",
       "title": "Points Chart",
-      "description": "포인트 획득 추이를 그린다(points chart, xp chart).",
+      "description": "포인트 획득 추이를 그린다(points chart, xp chart). 게이미피케이션(gamification) 요소다.",
       "categories": [
         "미디어·데이터"
       ],
@@ -27403,7 +27403,7 @@
       "name": "points-levels-list",
       "type": "registry:component",
       "title": "Points Levels List",
-      "description": "레벨과 필요 포인트를 목록으로 보여준다(levels list).",
+      "description": "레벨과 필요 포인트를 목록으로 보여준다(levels list). 게이미피케이션(gamification) 요소다.",
       "categories": [
         "레이아웃·목록"
       ],
@@ -27430,7 +27430,7 @@
       "name": "points-levels-timeline",
       "type": "registry:component",
       "title": "Points Levels Timeline",
-      "description": "레벨 구간을 타임라인으로 보여준다(levels timeline).",
+      "description": "레벨 구간을 타임라인으로 보여준다(levels timeline). 게이미피케이션(gamification) 요소다.",
       "categories": [
         "레이아웃·목록"
       ],
@@ -36934,7 +36934,7 @@
       "name": "streak-badge",
       "type": "registry:component",
       "title": "Streak Badge",
-      "description": "연속 달성 일수를 보여주는 배지(streak badge, 연속 기록).",
+      "description": "연속 달성 일수를 보여주는 배지(streak badge, 연속 기록). 게이미피케이션(gamification) 요소다.",
       "categories": [
         "미디어·데이터"
       ],
@@ -36962,7 +36962,7 @@
       "name": "streak-calendar",
       "type": "registry:component",
       "title": "Streak Calendar",
-      "description": "날짜별 달성 여부를 달력으로 보여준다(streak calendar, habit tracker).",
+      "description": "날짜별 달성 여부를 달력으로 보여준다(streak calendar, habit tracker). 게이미피케이션(gamification) 요소다.",
       "categories": [
         "미디어·데이터"
       ],
@@ -36989,7 +36989,7 @@
       "name": "streak-card",
       "type": "registry:component",
       "title": "Streak Card",
-      "description": "연속 기록을 요약해 보여주는 카드(streak card).",
+      "description": "연속 기록을 요약해 보여주는 카드(streak card). 게이미피케이션(gamification) 요소다.",
       "categories": [
         "카드·테두리"
       ],

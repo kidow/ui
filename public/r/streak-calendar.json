@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "streak-calendar",
   "title": "Streak Calendar",
-  "description": "날짜별 달성 여부를 달력으로 보여준다(streak calendar, habit tracker).",
+  "description": "날짜별 달성 여부를 달력으로 보여준다(streak calendar, habit tracker). 게이미피케이션(gamification) 요소다.",
   "dependencies": [
     "lucide-react"
   ],

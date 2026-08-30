@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "achievement-card",
   "title": "Achievement Card",
-  "description": "업적 하나를 설명과 함께 보여주는 카드(achievement card).",
+  "description": "업적 하나를 설명과 함께 보여주는 카드(achievement card). 게이미피케이션(gamification) 요소다.",
   "dependencies": [],
   "registryDependencies": [
     "@kidow/achievement-badge",

@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "streak-card",
   "title": "Streak Card",
-  "description": "연속 기록을 요약해 보여주는 카드(streak card).",
+  "description": "연속 기록을 요약해 보여주는 카드(streak card). 게이미피케이션(gamification) 요소다.",
   "dependencies": [
     "lucide-react"
   ],

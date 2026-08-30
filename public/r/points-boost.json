@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "points-boost",
   "title": "Points Boost",
-  "description": "포인트 부스트 상태를 알리는 표시(points boost, multiplier).",
+  "description": "포인트 부스트 상태를 알리는 표시(points boost, multiplier). 게이미피케이션(gamification) 요소다.",
   "dependencies": [
     "lucide-react"
   ],

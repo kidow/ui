@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "achievement-list",
   "title": "Achievement List",
-  "description": "업적을 진행률과 함께 목록으로 보여준다(achievement list).",
+  "description": "업적을 진행률과 함께 목록으로 보여준다(achievement list). 게이미피케이션(gamification) 요소다.",
   "dependencies": [
     "class-variance-authority",
     "lucide-react"

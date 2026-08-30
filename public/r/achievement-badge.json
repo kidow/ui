@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "achievement-badge",
   "title": "Achievement Badge",
-  "description": "업적 배지(achievement badge, trophy). 잠김·해제 상태를 표현한다.",
+  "description": "업적 배지(achievement badge, trophy). 잠김·해제 상태를 표현한다. 게이미피케이션(gamification) 요소다.",
   "dependencies": [
     "lucide-react"
   ],

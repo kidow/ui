@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "points-awards",
   "title": "Points Awards",
-  "description": "포인트를 준 활동 목록(points awards, reward log).",
+  "description": "포인트를 준 활동 목록(points awards, reward log). 게이미피케이션(gamification) 요소다.",
   "dependencies": [
     "@radix-ui/react-tooltip",
     "lucide-react"

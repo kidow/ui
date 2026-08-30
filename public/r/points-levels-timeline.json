@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "points-levels-timeline",
   "title": "Points Levels Timeline",
-  "description": "레벨 구간을 타임라인으로 보여준다(levels timeline).",
+  "description": "레벨 구간을 타임라인으로 보여준다(levels timeline). 게이미피케이션(gamification) 요소다.",
   "dependencies": [
     "lucide-react"
   ],

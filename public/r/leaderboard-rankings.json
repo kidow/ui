@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "leaderboard-rankings",
   "title": "Leaderboard Rankings",
-  "description": "순위표(leaderboard, 랭킹). 순위 변동을 표시한다.",
+  "description": "순위표(leaderboard, 랭킹). 순위 변동을 표시한다. 게이미피케이션(gamification) 요소다.",
   "dependencies": [
     "class-variance-authority",
     "lucide-react"

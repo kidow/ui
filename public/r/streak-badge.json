@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "streak-badge",
   "title": "Streak Badge",
-  "description": "연속 달성 일수를 보여주는 배지(streak badge, 연속 기록).",
+  "description": "연속 달성 일수를 보여주는 배지(streak badge, 연속 기록). 게이미피케이션(gamification) 요소다.",
   "dependencies": [
     "class-variance-authority",
     "lucide-react"

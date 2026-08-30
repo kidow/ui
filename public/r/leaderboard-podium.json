@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "leaderboard-podium",
   "title": "Leaderboard Podium",
-  "description": "상위 3인을 시상대로 보여준다(podium, top 3).",
+  "description": "상위 3인을 시상대로 보여준다(podium, top 3). 게이미피케이션(gamification) 요소다.",
   "dependencies": [
     "class-variance-authority",
     "lucide-react"

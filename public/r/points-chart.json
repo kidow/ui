@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "points-chart",
   "title": "Points Chart",
-  "description": "포인트 획득 추이를 그린다(points chart, xp chart).",
+  "description": "포인트 획득 추이를 그린다(points chart, xp chart). 게이미피케이션(gamification) 요소다.",
   "dependencies": [
     "recharts"
   ],

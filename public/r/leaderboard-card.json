@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "leaderboard-card",
   "title": "Leaderboard Card",
-  "description": "순위표를 카드에 담아 보여준다(leaderboard card).",
+  "description": "순위표를 카드에 담아 보여준다(leaderboard card). 게이미피케이션(gamification) 요소다.",
   "dependencies": [],
   "registryDependencies": [
     "@kidow/leaderboard-rankings",

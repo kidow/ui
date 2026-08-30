@@ -2,7 +2,7 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "points-badge",
   "title": "Points Badge",
-  "description": "포인트를 보여주는 배지(points badge, xp).",
+  "description": "포인트를 보여주는 배지(points badge, xp). 게이미피케이션(gamification) 요소다.",
   "dependencies": [
     "class-variance-authority",
     "lucide-react"
