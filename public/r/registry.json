@@ -603,6 +603,34 @@
       }
     },
     {
+      "name": "ai-instructions",
+      "type": "registry:component",
+      "title": "AI Instructions",
+      "description": "AI 지침을 편집하는 패널(ai instructions, system prompt editor). Manage and toggle AI instructions with a popover, search, and create-dialog",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "@hugeicons/core-free-icons",
+        "@hugeicons/react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/ai-instructions.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/ai-instructions.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/ai-instructions",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "ai-loading",
       "type": "registry:component",
       "title": "AI Loading",
@@ -2620,6 +2648,135 @@
       }
     },
     {
+      "name": "bg-animate-button",
+      "type": "registry:component",
+      "title": "BG Animate Button",
+      "description": "배경이 움직이는 버튼(animated background button). Button component with animated background effects and gradient transitions",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/bg-animate-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bg-animate-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/bg-animate-button",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "bg-animated-fractal-dot-grid",
+      "type": "registry:component",
+      "title": "BG Animated Fractal Dot Grid",
+      "description": "점 격자가 프랙탈로 움직이는 배경(dot grid background). Background animated fractal dot grid with performance optimization and responsive design",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/bg-animated-fractal-dot-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bg-animated-fractal-dot-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/bg-animated-fractal-dot-grid",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "bg-animated-gradient",
+      "type": "registry:component",
+      "title": "BG Animated Gradient",
+      "description": "색이 흐르는 그라디언트 배경(animated gradient). Animated gradient background component with customizable color transitions",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/bg-animated-gradient.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bg-animated-gradient.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/bg-animated-gradient",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "bg-image-texture",
+      "type": "registry:component",
+      "title": "BG Image Texture",
+      "description": "이미지 질감을 얹는 배경(image texture, noise overlay). Background texture component with multiple texture variants and customizable opacity",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/bg-image-texture.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bg-image-texture.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/bg-image-texture",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "bg-media",
+      "type": "registry:component",
+      "title": "BG Media",
+      "description": "영상·이미지를 배경으로 까는 래퍼(background media, video background). Background media component with video/image support and overlay effects",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/bg-media.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/bg-media.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/bg-media",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "blur-fade",
       "type": "registry:component",
       "title": "Blur Fade",
@@ -2722,6 +2879,35 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "border-beam-button",
+      "type": "registry:component",
+      "title": "Border Beam Button",
+      "description": "테두리를 빛이 도는 버튼(border beam button). Shadcn Button wrapped in Border Beam: animated border glow with compact icon and text variants",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "border-beam"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/border-beam-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/border-beam-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/border-beam-button",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -3571,6 +3757,33 @@
       }
     },
     {
+      "name": "canvas-fractal-grid",
+      "type": "registry:component",
+      "title": "Canvas Fractal Grid",
+      "description": "프랙탈 격자가 움직이는 캔버스 배경(fractal grid). Interactive canvas-based fractal dot grid with mouse tracking and wave effects",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/canvas-fractal-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/canvas-fractal-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/canvas-fractal-grid",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "card-curtain-reveal",
       "type": "registry:component",
       "title": "Card Curtain Reveal",
@@ -3955,6 +4168,34 @@
         "source": "Systaliko UI",
         "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/checkbox-field",
         "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "choice-poll",
+      "type": "registry:component",
+      "title": "Choice Poll",
+      "description": "선택지를 고르는 투표(choice poll, survey). Poll component with single or multiple selection, optional results, and keyboard navigation",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/choice-poll.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/choice-poll.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/choice-poll",
+        "author": "nolly-studio",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -5439,6 +5680,31 @@
       }
     },
     {
+      "name": "cosmic-button",
+      "type": "registry:component",
+      "title": "Cosmic Button",
+      "description": "우주 느낌의 발광 버튼(cosmic button, glow cta). Animated button/link with cosmic gradient border effect, renders as anchor or button",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/cosmic-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cosmic-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/cosmic-button",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "cosmic-dust",
       "type": "registry:component",
       "title": "Cosmic Dust",
@@ -5747,6 +6013,34 @@
         "source": "Systaliko UI",
         "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/custom-cursor",
         "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "cutout-card",
+      "type": "registry:component",
+      "title": "Cutout Card",
+      "description": "모서리를 도려낸 카드(cutout card, notched card). Image card with cutout corners, hover motion, inset labels, pins, and reveal actions",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion",
+        "@radix-ui/react-use-controllable-state"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/cutout-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/cutout-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/cutout-card",
+        "author": "nolly-studio",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -6336,6 +6630,34 @@
       }
     },
     {
+      "name": "direction-aware-tabs",
+      "type": "registry:component",
+      "title": "Direction Aware Tabs",
+      "description": "이동 방향에 맞춰 내용이 미끄러지는 탭(direction aware tabs). Tab component with direction-aware animations and smooth transitions",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "react-use-measure"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/direction-aware-tabs.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/direction-aware-tabs.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/direction-aware-tabs",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "discord-badge",
       "type": "registry:component",
       "title": "Discord Badge",
@@ -6367,6 +6689,31 @@
       }
     },
     {
+      "name": "distorted-glass",
+      "type": "registry:component",
+      "title": "Distorted Glass",
+      "description": "유리로 왜곡된 표면(distorted glass, refraction). A glass morphism effect component using SVG filters with fractal noise to create visual transitions between sections",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/distorted-glass.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/distorted-glass.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/distorted-glass",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "dither-gradient",
       "type": "registry:component",
       "title": "dither-gradient",
@@ -6387,6 +6734,33 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "dither-image",
+      "type": "registry:component",
+      "title": "Dither Image",
+      "description": "디더링으로 점묘화처럼 만드는 이미지(dither image, halftone). Compound Next.js image figure with CSS Bayer dither via dither-plugin, partial reveal overlays, and typed tuning props",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "dither-plugin"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/dither-image.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dither-image.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/dither-image",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -6628,6 +7002,33 @@
       }
     },
     {
+      "name": "dynamic-island",
+      "type": "registry:component",
+      "title": "Dynamic Island",
+      "description": "iPhone 다이나믹 아일랜드처럼 형태가 변하는 알림(dynamic island, morphing notification). iOS-style dynamic island component with expandable content and smooth animations",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/dynamic-island.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/dynamic-island.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/dynamic-island",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "dynamic-text",
       "type": "registry:component",
       "title": "Dynamic Text",
@@ -6650,6 +7051,31 @@
         "source": "KokonutUI",
         "sourceUrl": "https://kokonutui.com/docs/components/dynamic-text",
         "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "edge-blur",
+      "type": "registry:component",
+      "title": "Edge Blur",
+      "description": "가장자리를 흐리게 처리하는 오버레이(edge blur, vignette). Stacked backdrop-blur layers with a gradient mask for soft top or bottom screen edges",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/edge-blur.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/edge-blur.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/edge-blur",
+        "author": "nolly-studio",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -6889,6 +7315,33 @@
       }
     },
     {
+      "name": "expandable",
+      "type": "registry:component",
+      "title": "Expandable",
+      "description": "클릭하면 펼쳐지는 컨테이너(expandable, accordion card). Expandable component system with smooth animations and customizable presets",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/expandable.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/expandable.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/expandable",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "expandable-card",
       "type": "registry:component",
       "title": "Expandable Card",
@@ -6911,6 +7364,34 @@
         "source": "Badtz UI",
         "sourceUrl": "https://www.badtz-ui.com/docs/components/expandable-card",
         "author": "badtzx0",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "expandable-screen",
+      "type": "registry:component",
+      "title": "Expandable Screen",
+      "description": "전체 화면으로 펼쳐지는 카드(expandable screen, fullscreen card). A full-screen expandable component with morphing animations using shared layout IDs for smooth transitions",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/expandable-screen.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/expandable-screen.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/expandable-screen",
+        "author": "nolly-studio",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -7177,6 +7658,61 @@
       }
     },
     {
+      "name": "family-button",
+      "type": "registry:component",
+      "title": "Family Button",
+      "description": "누르면 옵션이 펼쳐지는 버튼(family button, expanding actions). Button component with family-style design and interactive hover effects",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/family-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/family-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/family-button",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "family-drawer",
+      "type": "registry:component",
+      "title": "Family Drawer",
+      "description": "단계마다 높이가 변하는 드로어(family drawer, morphing sheet). A multi-view drawer component with smooth animations, view navigation, and customizable content views",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "motion",
+        "react-use-measure",
+        "vaul",
+        "@radix-ui/react-slot"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/family-drawer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/family-drawer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/family-drawer",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "faq-accordion",
       "type": "registry:component",
       "title": "Faq Accordion",
@@ -7197,6 +7733,88 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "feature-carousel",
+      "type": "registry:component",
+      "title": "Feature Carousel",
+      "description": "기능을 넘겨 보여주는 캐러셀(feature carousel). Feature carousel component with smooth transitions and customizable layouts",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/feature-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/feature-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/feature-carousel",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "feature-poll",
+      "type": "registry:component",
+      "title": "Feature Poll",
+      "description": "기능 요청 투표(feature poll, roadmap voting). Feature poll component with single or multiple selection, optional results, and keyboard navigation",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/feature-poll.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/feature-poll.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/feature-poll",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "feature-voting",
+      "type": "registry:component",
+      "title": "Feature Voting",
+      "description": "기능에 찬반을 매기는 투표(feature voting, upvote). List of features with up-vote support, optional sorting by vote count, and controlled or uncontrolled state",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/feature-voting.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/feature-voting.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/feature-voting",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -7640,6 +8258,33 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "floating-panel",
+      "type": "registry:component",
+      "title": "Floating Panel",
+      "description": "떠 있는 액션 패널(floating panel, command panel). Floating panel component with backdrop blur and position-aware animations",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/floating-panel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/floating-panel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/floating-panel",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -8601,6 +9246,60 @@
       }
     },
     {
+      "name": "gradient-button-group",
+      "type": "registry:component",
+      "title": "Gradient Button Group",
+      "description": "그라디언트 버튼 묶음(gradient button group, segmented cta). Premium layered button group with animated active state, gradient ring accents, and theme toggle underlay",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/gradient-button-group.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gradient-button-group.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/gradient-button-group",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "gradient-heading",
+      "type": "registry:component",
+      "title": "Gradient Heading",
+      "description": "그라디언트가 들어간 제목(gradient heading, headline). Heading component with gradient text effects and customizable styling",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "@radix-ui/react-slot"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/gradient-heading.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/gradient-heading.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/gradient-heading",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "gradient-hero-01",
       "type": "registry:component",
       "title": "Gradient Hero 01",
@@ -8831,6 +9530,31 @@
       }
     },
     {
+      "name": "grid-beam",
+      "type": "registry:component",
+      "title": "Grid Beam",
+      "description": "격자 위를 빛이 지나가는 배경(grid beam). Canvas grid beam animation with palette presets, SVG dividers, and composable headless pieces via useGridBeam",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/grid-beam.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/grid-beam.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/grid-beam",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "grid-dot-backgrounds",
       "type": "registry:component",
       "title": "Grid Dot Backgrounds",
@@ -8971,6 +9695,156 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/hell-background",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "hero-color-panel",
+      "type": "registry:component",
+      "title": "Hero Color Panel",
+      "description": "색 패널이 움직이는 히어로 섹션(hero section, color panels). Split-layout hero section with responsive ColorPanels shader visuals, CTA, and tech stack badges",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [
+        "@paper-design/shaders-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/hero-color-panel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hero-color-panel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/hero-color-panel",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "hero-dithering",
+      "type": "registry:component",
+      "title": "Hero Dithering",
+      "description": "디더링 셰이더 배경의 히어로 섹션(hero section, dithering). Split-layout hero section with responsive dithering shader visuals, CTA, and tech stack badges",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [
+        "@paper-design/shaders-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/hero-dithering.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hero-dithering.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/hero-dithering",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "hero-heatmap",
+      "type": "registry:component",
+      "title": "Hero Heatmap",
+      "description": "히트맵 셰이더 히어로 섹션(hero section, heatmap). Split-layout hero section with responsive Heatmap shader visuals, CTA, and tech stack badges",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [
+        "@paper-design/shaders-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/hero-heatmap.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hero-heatmap.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/hero-heatmap",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "hero-liquid-metal",
+      "type": "registry:component",
+      "title": "Hero Liquid Metal",
+      "description": "액체 금속 셰이더 히어로 섹션(hero section, liquid metal). Split-layout hero section with responsive LiquidMetal shader visuals, CTA, and tech stack badges",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [
+        "@paper-design/shaders-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/hero-liquid-metal.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hero-liquid-metal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/hero-liquid-metal",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "hero-static-radial-gradient",
+      "type": "registry:component",
+      "title": "Hero Static Radial Gradient",
+      "description": "방사형 그라디언트 히어로 섹션(hero section, radial gradient). Split-layout hero section with responsive StaticRadialGradient shader visuals, CTA, and tech stack badges",
+      "categories": [
+        "마케팅 섹션"
+      ],
+      "dependencies": [
+        "@paper-design/shaders-react"
+      ],
+      "registryDependencies": [
+        "badge",
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/hero-static-radial-gradient.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hero-static-radial-gradient.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/hero-static-radial-gradient",
+        "author": "nolly-studio",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -9281,6 +10155,33 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "hover-video-player",
+      "type": "registry:component",
+      "title": "Hover Video Player",
+      "description": "hover 하면 재생되는 영상 플레이어(hover video, preview on hover). Video player component that plays on hover with smooth animations",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/hover-video-player.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/hover-video-player.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/hover-video-player",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -10097,6 +10998,37 @@
       }
     },
     {
+      "name": "intro-disclosure",
+      "type": "registry:component",
+      "title": "Intro Disclosure",
+      "description": "처음 방문자에게 기능을 소개하는 안내(intro tour, product onboarding). Intro disclosure component with expandable content and smooth animations",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "motion",
+        "react-use-measure"
+      ],
+      "registryDependencies": [
+        "button",
+        "aspect-ratio"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/intro-disclosure.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/intro-disclosure.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/intro-disclosure",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "iphone",
       "type": "registry:component",
       "title": "iPhone",
@@ -10641,6 +11573,31 @@
         "author": "xxtomm",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "lightboard",
+      "type": "registry:component",
+      "title": "Lightboard",
+      "description": "전구 격자로 글자·패턴을 그리는 전광판(lightboard, marquee sign). Interactive lightboard component with customizable grid and lighting effects",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/lightboard.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/lightboard.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/lightboard",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -11491,6 +12448,37 @@
       }
     },
     {
+      "name": "loading-carousel",
+      "type": "registry:component",
+      "title": "Loading Carousel",
+      "description": "로딩 진행과 함께 넘어가는 캐러셀(loading carousel, auto slider). Loading carousel component with smooth transitions and customizable content",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "embla-carousel-autoplay",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [
+        "carousel"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/loading-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/loading-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/loading-carousel",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "log-viewer",
       "type": "registry:component",
       "title": "Log Viewer",
@@ -11519,6 +12507,33 @@
         "author": "jal-co",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "logo-carousel",
+      "type": "registry:component",
+      "title": "Logo Carousel",
+      "description": "로고가 차례로 바뀌는 캐러셀(logo carousel, brand wall). Animated logo carousel with staggered animations and customizable columns",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/logo-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/logo-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/logo-carousel",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -12369,6 +13384,35 @@
       }
     },
     {
+      "name": "metal-button",
+      "type": "registry:component",
+      "title": "Metal Button",
+      "description": "금속 질감 버튼(metal button, chrome cta). Shadcn Button wrapped in MetalFx: animated liquid metal ring with text and icon variants",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "metal-fx"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/metal-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/metal-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/metal-button",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "meteors",
       "type": "registry:component",
       "title": "Meteors",
@@ -12444,6 +13488,58 @@
       }
     },
     {
+      "name": "minimal-card",
+      "type": "registry:component",
+      "title": "Minimal Card",
+      "description": "이미지·제목·설명만 담은 간결한 카드(minimal card). Clean and minimal card component with subtle styling and hover effects",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/minimal-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/minimal-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/minimal-card",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "mock-browser-window",
+      "type": "registry:component",
+      "title": "Mock Browser Window",
+      "description": "브라우저 창 목업(browser mockup, safari frame). A customizable browser window mockup component with support for Chrome, Safari, and generic styles, customizable sidebars, and themes",
+      "categories": [
+        "디바이스 목업"
+      ],
+      "dependencies": [],
+      "registryDependencies": [
+        "texture-overlay"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/mock-browser-window.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/mock-browser-window.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/mock-browser-window",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "mode-toggle",
       "type": "registry:component",
       "title": "Mode Toggle",
@@ -12499,6 +13595,33 @@
         "source": "EvilCharts",
         "sourceUrl": "https://evilcharts.com/docs",
         "author": "legions-developer",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "morph-surface",
+      "type": "registry:component",
+      "title": "Morph Surface",
+      "description": "형태가 변하는 표면(morph surface, fluid container). A morphing surface component with smooth animations, customizable dimensions, and configurable content",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/morph-surface.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/morph-surface.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/morph-surface",
+        "author": "nolly-studio",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -12890,6 +14013,56 @@
       }
     },
     {
+      "name": "neumorph-button",
+      "type": "registry:component",
+      "title": "Neumorph Button",
+      "description": "뉴모피즘 버튼(neumorphism button, soft ui). Neumorphic button component with soft shadows and tactile interaction effects",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/neumorph-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/neumorph-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/neumorph-button",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "neumorph-eyebrow",
+      "type": "registry:component",
+      "title": "Neumorph Eyebrow",
+      "description": "뉴모피즘 작은 라벨(neumorphism eyebrow, soft label). Neumorphic eyebrow component with soft shadow effects and modern styling",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/neumorph-eyebrow.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/neumorph-eyebrow.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/neumorph-eyebrow",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "neural-link",
       "type": "registry:component",
       "title": "Neural Link",
@@ -13043,6 +14216,36 @@
         "author": "magicuidesign",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "onboarding",
+      "type": "registry:component",
+      "title": "Onboarding",
+      "description": "단계별 온보딩 흐름(onboarding flow, setup steps). Composable multi-step onboarding primitives: Onboarding root with step navigation, FeatureCarousel, ChoiceGroup radio selector, TipsList, and StepIndicator with dots and pills variants",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "class-variance-authority"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/onboarding.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/onboarding.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/onboarding",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -13555,6 +14758,60 @@
       }
     },
     {
+      "name": "pixel-heading-character",
+      "type": "registry:component",
+      "title": "Pixel Heading Character",
+      "description": "글자 단위로 픽셀이 채워지는 제목(pixel heading). Per-character pixel-font heading with four animation modes using Geist pixel fonts",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "geist"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/pixel-heading-character.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pixel-heading-character.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/pixel-heading-character",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "pixel-heading-word",
+      "type": "registry:component",
+      "title": "Pixel Heading Word",
+      "description": "단어 단위로 픽셀이 채워지는 제목(pixel heading). Whole-word pixel-font heading that swaps or cycles fonts on hover using Geist pixel fonts",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "geist"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/pixel-heading-word.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pixel-heading-word.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/pixel-heading-word",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "pixel-image",
       "type": "registry:component",
       "title": "Pixel Image",
@@ -13598,6 +14855,60 @@
         "author": "harshjdhv",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "pixel-paragraph-words",
+      "type": "registry:component",
+      "title": "Pixel Paragraph Words",
+      "description": "단어가 픽셀로 나타나는 문단(pixel paragraph). Paragraph where specific words render in an interactive pixel font that swaps or cycles on hover",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "geist"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/pixel-paragraph-words.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pixel-paragraph-words.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/pixel-paragraph-words",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "pixel-paragraph-words-inverse",
+      "type": "registry:component",
+      "title": "Pixel Paragraph Words Inverse",
+      "description": "단어가 픽셀로 사라지는 문단(pixel paragraph inverse). Paragraph in pixel font where specific words escape into interactive sans/mono with hover swap or cycle",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "geist"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/pixel-paragraph-words-inverse.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/pixel-paragraph-words-inverse.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/pixel-paragraph-words-inverse",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -13703,6 +15014,36 @@
       }
     },
     {
+      "name": "poll-widget",
+      "type": "registry:component",
+      "title": "Poll Widget",
+      "description": "작은 투표 위젯(poll widget). Poll widget with inline, popover, and dialog modes, optional results, and animations",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "class-variance-authority",
+        "lucide-react",
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/poll-widget.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/poll-widget.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/poll-widget",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "pop-button",
       "type": "registry:component",
       "title": "Pop Button",
@@ -13749,6 +15090,33 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "popover-form",
+      "type": "registry:component",
+      "title": "Popover Form",
+      "description": "팝오버 안에서 입력받는 작은 폼(popover form, inline form). Form popover component with success states and animated transitions",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/popover-form.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/popover-form.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/popover-form",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -16159,6 +17527,35 @@
       }
     },
     {
+      "name": "shader-lens-blur",
+      "type": "registry:component",
+      "title": "Shader Lens Blur",
+      "description": "렌즈 블러 셰이더 배경(lens blur, depth of field). three.js 로 그린다. WebGL shader component with lens blur effects and mouse interaction",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion",
+        "three",
+        "jotai"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/shader-lens-blur.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shader-lens-blur.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/shader-lens-blur",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "shape-hero",
       "type": "registry:component",
       "title": "Shape Hero",
@@ -16209,6 +17606,31 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "shift-card",
+      "type": "registry:component",
+      "title": "Shift Card",
+      "description": "hover 하면 층이 어긋나 움직이는 카드(shift card, layered card). Card component with shift animation effects and hover interactions",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/shift-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/shift-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/shift-card",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -16553,6 +17975,31 @@
         "source": "JolyUI",
         "sourceUrl": "https://www.jolyui.dev/docs/components/shutter-text",
         "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "side-panel",
+      "type": "registry:component",
+      "title": "Side Panel",
+      "description": "옆에서 밀려 나오는 패널(side panel, side sheet). Sliding side panel component with customizable positioning and animations",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/side-panel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/side-panel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/side-panel",
+        "author": "nolly-studio",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -17144,6 +18591,34 @@
       }
     },
     {
+      "name": "sortable-list",
+      "type": "registry:component",
+      "title": "Sortable List",
+      "description": "끌어서 순서를 바꾸는 목록(sortable list, drag reorder). Drag-and-drop sortable list component with smooth animations and reordering",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "react-use-measure"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/sortable-list.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/sortable-list.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/sortable-list",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "space-box",
       "type": "registry:component",
       "title": "Space Box",
@@ -17698,6 +19173,31 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "squiggle-arrow",
+      "type": "registry:component",
+      "title": "Squiggle Arrow",
+      "description": "손그림 느낌의 곡선 화살표(squiggle arrow, hand drawn arrow). A playful, hand-drawn squiggly arrow component with customizable variants, directions, and sizes",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/squiggle-arrow.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/squiggle-arrow.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/squiggle-arrow",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -18322,6 +19822,33 @@
       }
     },
     {
+      "name": "stripe-bg-guides",
+      "type": "registry:component",
+      "title": "Stripe BG Guides",
+      "description": "Stripe 랜딩의 안내선 격자 배경(guide lines, blueprint grid). Stripe-style background guides component with animated patterns and effects",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/stripe-bg-guides.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/stripe-bg-guides.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/stripe-bg-guides",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "striped-pattern",
       "type": "registry:component",
       "title": "Striped Pattern",
@@ -18391,6 +19918,83 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/stylish-carousel",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "svg-bands",
+      "type": "registry:component",
+      "title": "SVG Bands",
+      "description": "띠 모양 SVG 장식(svg bands, ribbon shapes). Wide SVG section bands, battlement and zigzag trims, steep hero edges, and ornamental frames",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/svg-bands.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/svg-bands.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/svg-bands",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "svg-shapes",
+      "type": "registry:component",
+      "title": "SVG Shapes",
+      "description": "장식용 SVG 도형 모음(svg shapes, decorative blobs). Wide-aspect SVG shape and panel components for backgrounds and hero decorations",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/svg-shapes.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/svg-shapes.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/svg-shapes",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "svg-shapes-animated",
+      "type": "registry:component",
+      "title": "SVG Shapes Animated",
+      "description": "움직이는 장식용 SVG 도형(animated svg shapes). Scroll-triggered stroke-draw animations for wide SVG shapes and panels using Motion",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/svg-shapes-animated.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/svg-shapes-animated.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/svg-shapes-animated",
+        "author": "nolly-studio",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -18645,6 +20249,34 @@
       }
     },
     {
+      "name": "terminal-animation",
+      "type": "registry:component",
+      "title": "Terminal Animation",
+      "description": "명령이 차례로 실행되는 터미널 애니메이션(terminal animation, cli demo). Composable terminal animation primitives with typed command playback, tabbed scenarios, and customizable output rendering",
+      "categories": [
+        "코드·터미널"
+      ],
+      "dependencies": [
+        "@radix-ui/react-slot",
+        "@radix-ui/react-use-controllable-state"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/terminal-animation.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/terminal-animation.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/terminal-animation",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "terminal-card",
       "type": "registry:component",
       "title": "Terminal Card",
@@ -18871,6 +20503,31 @@
         "source": "Systaliko UI",
         "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/text-flip",
         "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "text-gif",
+      "type": "registry:component",
+      "title": "Text Gif",
+      "description": "글자 안에 움직이는 GIF 를 채우는 텍스트(text gif, video text). Text component with GIF-like animation effects and customizable styling",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-gif.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-gif.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/text-gif",
+        "author": "nolly-studio",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -19211,6 +20868,83 @@
       }
     },
     {
+      "name": "texture-button",
+      "type": "registry:component",
+      "title": "Texture Button",
+      "description": "질감이 들어간 버튼(texture button, tactile cta). Button component with texture overlay effects and customizable variants",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "@radix-ui/react-slot"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/texture-button.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/texture-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/texture-button",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "texture-card",
+      "type": "registry:component",
+      "title": "Texture Card",
+      "description": "질감 있는 표면의 카드(texture card). Card component with texture background and customizable styling options",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/texture-card.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/texture-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/texture-card",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "texture-overlay",
+      "type": "registry:component",
+      "title": "Texture Overlay",
+      "description": "표면에 질감을 얹는 오버레이(texture overlay, grain). Texture overlay component with various CSS gradient patterns for adding visual texture to backgrounds",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/texture-overlay.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/texture-overlay.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/texture-overlay",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "theme-switcher",
       "type": "registry:component",
       "title": "Theme Switcher",
@@ -19235,6 +20969,31 @@
         "source": "Kibo UI",
         "sourceUrl": "https://www.kibo-ui.com/components/theme-switcher",
         "author": "haydenbleasel",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "three-d-carousel",
+      "type": "registry:component",
+      "title": "Three D Carousel",
+      "description": "원통을 도는 3D 캐러셀(3d carousel). 3D carousel component with perspective effects and smooth item transitions",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/three-d-carousel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/three-d-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/three-d-carousel",
+        "author": "nolly-studio",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -19311,6 +21070,31 @@
         "source": "ui-x",
         "sourceUrl": "https://ui-x.junwen-k.dev/docs/components/time",
         "author": "junwen-k",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "timer",
+      "type": "registry:component",
+      "title": "Timer",
+      "description": "시간을 세는 타이머(timer, countdown, 스톱워치). Countdown timer component with customizable duration and visual styles",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/timer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/timer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/timer",
+        "author": "nolly-studio",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -19431,6 +21215,36 @@
         "source": "KokonutUI",
         "sourceUrl": "https://kokonutui.com/docs/components/toolbar",
         "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "toolbar-expandable",
+      "type": "registry:component",
+      "title": "Toolbar Expandable",
+      "description": "고른 도구가 펼쳐지는 툴바(expandable toolbar). Expandable toolbar component with step-based navigation, smooth animations, and enhanced scrolling",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "@radix-ui/react-scroll-area"
+      ],
+      "registryDependencies": [
+        "badge"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/toolbar-expandable.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/toolbar-expandable.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/toolbar-expandable",
+        "author": "nolly-studio",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -19644,6 +21458,31 @@
       }
     },
     {
+      "name": "tweet-grid",
+      "type": "registry:component",
+      "title": "Tweet Grid",
+      "description": "트윗을 벽돌처럼 배치한 격자(tweet grid, social wall). Grid layout component for displaying tweet-like content cards",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/tweet-grid.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tweet-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/tweet-grid",
+        "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "twisting-ribbon",
       "type": "registry:component",
       "title": "Twisting Ribbon",
@@ -19689,6 +21528,33 @@
         "source": "KokonutUI",
         "sourceUrl": "https://kokonutui.com/docs/components/type-writer",
         "author": "kokonut-labs",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "typewriter",
+      "type": "registry:component",
+      "title": "Typewriter",
+      "description": "타자기처럼 쳐지는 텍스트(typewriter, typing). Typewriter effect component with customizable typing speed and cursor animation",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/typewriter.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/typewriter.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/typewriter",
+        "author": "nolly-studio",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -20222,6 +22088,33 @@
         "source": "Serenity UI",
         "sourceUrl": "https://serenity-ui.com",
         "author": "ayushmxxn",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "vote-tally",
+      "type": "registry:component",
+      "title": "Vote Tally",
+      "description": "득표를 집계해 보여주는 표시(vote tally, results). List of items with up-vote support, optional sorting by vote count, and controlled or uncontrolled state",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/vote-tally.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/vote-tally.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/vote-tally",
+        "author": "nolly-studio",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -21078,6 +22971,35 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/world-map",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "youtube-video-player",
+      "type": "registry:component",
+      "title": "Youtube Video Player",
+      "description": "유튜브 영상 플레이어 래퍼(youtube player, embed). YouTube video player component with custom controls and smooth animations",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "button"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/youtube-video-player.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/youtube-video-player.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Cult UI",
+        "sourceUrl": "https://www.cult-ui.com/docs/components/youtube-video-player",
+        "author": "nolly-studio",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }

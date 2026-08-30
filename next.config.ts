@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "images.pexels.com" },
       { protocol: "https", hostname: "i.imgur.com" },
       { protocol: "https", hostname: "www.transparenttextures.com" },
+      { protocol: "https", hostname: "shaders.paper.design" },
     ],
   },
 };
