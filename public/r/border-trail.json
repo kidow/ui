@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "border-trail",
+  "title": "Border Trail",
+  "description": "테두리를 따라 빛이 한 바퀴 도는 효과(border trail, moving border). 카드나 입력창을 감싼다.",
+  "dependencies": [
+    "motion"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/border-trail.tsx",
+      "content": "'use client';\nimport { cn } from '@/lib/utils';\nimport { motion, Transition } from 'motion/react';\n\nexport type BorderTrailProps = {\n  className?: string;\n  size?: number;\n  transition?: Transition;\n  onAnimationComplete?: () => void;\n  style?: React.CSSProperties;\n};\n\nexport function BorderTrail({\n  className,\n  size = 60,\n  transition,\n  onAnimationComplete,\n  style,\n}: BorderTrailProps) {\n  const defaultTransition: Transition = {\n    repeat: Infinity,\n    duration: 5,\n    ease: 'linear',\n  };\n\n  return (\n    <div className='pointer-events-none absolute inset-0 rounded-[inherit] border border-transparent [mask-clip:padding-box,border-box] [mask-composite:intersect] [mask-image:linear-gradient(transparent,transparent),linear-gradient(#000,#000)]'>\n      <motion.div\n        className={cn('absolute aspect-square bg-zinc-500', className)}\n        style={{\n          width: size,\n          offsetPath: `rect(0 auto auto 0 round ${size}px)`,\n          ...style,\n        }}\n        animate={{\n          offsetDistance: ['0%', '100%'],\n        }}\n        transition={transition || defaultTransition}\n        onAnimationComplete={onAnimationComplete}\n      />\n    </div>\n  );\n}\n",
+      "type": "registry:component",
+      "target": "components/kidow/border-trail.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Motion Primitives",
+    "sourceUrl": "https://motion-primitives.com/docs/border-trail",
+    "author": "ibelick",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "카드·테두리"
+  ],
+  "type": "registry:component"
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-click-outside",
+  "title": "Use Click Outside",
+  "description": "요소 바깥을 클릭했을 때를 알려주는 훅(use click outside, outside click). morphing-dialog·morphing-popover·toolbar-dynamic 이 함께 쓴다.",
+  "dependencies": [],
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/kidow/use-click-outside.tsx",
+      "content": "import { RefObject, useEffect } from 'react';\n\nfunction useClickOutside<T extends HTMLElement>(\n  // React 19 의 useRef<T>(null) 은 RefObject<T | null> 을 만든다.\n  ref: RefObject<T | null>,\n  handler: (event: MouseEvent | TouchEvent) => void\n): void {\n  useEffect(() => {\n    const handleClickOutside = (event: MouseEvent | TouchEvent) => {\n      if (!ref || !ref.current || ref.current.contains(event.target as Node)) {\n        return;\n      }\n\n      handler(event);\n    };\n\n    document.addEventListener('mousedown', handleClickOutside);\n    document.addEventListener('touchstart', handleClickOutside);\n\n    return () => {\n      document.removeEventListener('mousedown', handleClickOutside);\n      document.removeEventListener('touchstart', handleClickOutside);\n    };\n  }, [ref, handler]);\n}\n\nexport default useClickOutside;\n",
+      "type": "registry:component",
+      "target": "components/kidow/use-click-outside.tsx"
+    }
+  ],
+  "meta": {
+    "source": "Motion Primitives",
+    "sourceUrl": "https://motion-primitives.com/docs/morphing-dialog",
+    "author": "ibelick",
+    "license": "MIT",
+    "retrievedAt": "2026-08-30"
+  },
+  "categories": [
+    "개발자 도구"
+  ],
+  "type": "registry:component"
+}

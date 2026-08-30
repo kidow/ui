@@ -47,6 +47,7 @@ import AnimatedGradientSpellDemo from './animated-gradient-spell'
 import AnimatedGradientTextDemo from './animated-gradient-text'
 import AnimatedGrainDemo from './animated-grain'
 import AnimatedGridPatternDemo from './animated-grid-pattern'
+import AnimatedGroupDemo from './animated-group'
 import AnimatedKeyboardDemo from './animated-keyboard'
 import AnimatedListDemo from './animated-list'
 import AnimatedNotificationDemo from './animated-notification'
@@ -102,6 +103,7 @@ import BorderBeamDemo from './border-beam'
 import BorderBeamButtonDemo from './border-beam-button'
 import BorderBeamComponentryDemo from './border-beam-componentry'
 import BorderBeamVengeanceDemo from './border-beam-vengeance'
+import BorderTrailDemo from './border-trail'
 import BottomHingeTextRevealDemo from './bottom-hinge-text-reveal'
 import BubbleEffectButtonDemo from './bubble-effect-button'
 import CalendarLg01Demo from './calendar-lg-01'
@@ -226,6 +228,7 @@ import DiagonalCarouselDemo from './diagonal-carousel'
 import DialogStackDemo from './dialog-stack'
 import DiffViewerDemo from './diff-viewer'
 import DirectionAwareTabsDemo from './direction-aware-tabs'
+import DisclosureDemo from './disclosure'
 import DistortedGlassDemo from './distorted-glass'
 import DitherGradientDemo from './dither-gradient'
 import DitherImageDemo from './dither-image'
@@ -308,6 +311,7 @@ import GlitchButtonDemo from './glitch-button'
 import GlitchTextDemo from './glitch-text'
 import GlobeDemo from './globe'
 import GlowBorderCardDemo from './glow-border-card'
+import GlowEffectDemo from './glow-effect'
 import GlowingButtonDemo from './glowing-button'
 import GlowingCardsDemo from './glowing-cards'
 import GlyphMatrixDemo from './glyph-matrix'
@@ -362,9 +366,11 @@ import ImageSplitDemo from './image-split'
 import ImageTrailDemo from './image-trail'
 import ImageTrailVengeanceDemo from './image-trail-vengeance'
 import ImageZoomDemo from './image-zoom'
+import InViewDemo from './in-view'
 import InfiniteDriftDemo from './infinite-drift'
 import InfiniteImageFieldDemo from './infinite-image-field'
 import InfiniteRibbonDemo from './infinite-ribbon'
+import InfiniteSliderDemo from './infinite-slider'
 import InteractiveBookDemo from './interactive-book'
 import InteractiveCardDemo from './interactive-card'
 import InteractiveGridBackgroundDemo from './interactive-grid-background'
@@ -469,7 +475,9 @@ import MorphSurfaceDemo from './morph-surface'
 import MorphTextDemo from './morph-text'
 import MorphicNavbarDemo from './morphic-navbar'
 import MorphingCursorDemo from './morphing-cursor'
+import MorphingDialogDemo from './morphing-dialog'
 import MorphingDisclosureDemo from './morphing-disclosure'
+import MorphingPopoverDemo from './morphing-popover'
 import MorphingTextDemo from './morphing-text'
 import MouseEffectCardDemo from './mouse-effect-card'
 import MultiColorTrailRevealDemo from './multi-color-trail-reveal'
@@ -632,6 +640,7 @@ import SportsSm04Demo from './sports-sm-04'
 import SportsSm05Demo from './sports-sm-05'
 import SportsSm06Demo from './sports-sm-06'
 import SportsSm07Demo from './sports-sm-07'
+import SpotlightDemo from './spotlight'
 import SpotlightCardDemo from './spotlight-card'
 import SpotlightCardsDemo from './spotlight-cards'
 import SpotlightListDemo from './spotlight-list'
@@ -681,15 +690,21 @@ import TestinomialCard2Demo from './testinomial-card2'
 import Text3dFlipDemo from './text-3d-flip'
 import TextAnimateDemo from './text-animate'
 import TextAnimateComponentryDemo from './text-animate-componentry'
+import TextEffectDemo from './text-effect'
 import TextFlipDemo from './text-flip'
 import TextGifDemo from './text-gif'
+import TextLoopDemo from './text-loop'
 import TextMarqueeDemo from './text-marquee'
 import TextMorphDemo from './text-morph'
 import TextMorphingDemo from './text-morphing'
 import TextParticleAnimationDemo from './text-particle-animation'
 import TextRepelDemo from './text-repel'
 import TextRevealDemo from './text-reveal'
+import TextRollDemo from './text-roll'
+import TextScrambleDemo from './text-scramble'
 import TextScrollReadDemo from './text-scroll-read'
+import TextShimmerDemo from './text-shimmer'
+import TextShimmerWaveDemo from './text-shimmer-wave'
 import TextStaggerHoverDemo from './text-stagger-hover'
 import TextStaggerIntervalDemo from './text-stagger-interval'
 import TextStaggerInviewDemo from './text-stagger-inview'
@@ -701,6 +716,7 @@ import TextureOverlayDemo from './texture-overlay'
 import ThemeSwitcherDemo from './theme-switcher'
 import ThreeDCarouselDemo from './three-d-carousel'
 import TickerDemo from './ticker'
+import TiltDemo from './tilt'
 import TiltCardDemo from './tilt-card'
 import TimeDemo from './time'
 import TimerDemo from './timer'
@@ -708,9 +724,11 @@ import TipJarDemo from './tip-jar'
 import ToastDemo from './toast'
 import ToggleThemeDemo from './toggle-theme'
 import ToolbarDemo from './toolbar'
+import ToolbarDynamicDemo from './toolbar-dynamic'
 import ToolbarExpandableDemo from './toolbar-expandable'
 import TopLoaderDemo from './top-loader'
 import TopStickyBarDemo from './top-sticky-bar'
+import TransitionPanelDemo from './transition-panel'
 import TreeDemo from './tree'
 import TrialButtonDemo from './trial-button'
 import TumblerRollRevealDemo from './tumbler-roll-reveal'
@@ -820,6 +838,7 @@ export const demos: Record<string, ComponentType> = {
   'animated-gradient-text': AnimatedGradientTextDemo,
   'animated-grain': AnimatedGrainDemo,
   'animated-grid-pattern': AnimatedGridPatternDemo,
+  'animated-group': AnimatedGroupDemo,
   'animated-keyboard': AnimatedKeyboardDemo,
   'animated-list': AnimatedListDemo,
   'animated-notification': AnimatedNotificationDemo,
@@ -875,6 +894,7 @@ export const demos: Record<string, ComponentType> = {
   'border-beam-button': BorderBeamButtonDemo,
   'border-beam-componentry': BorderBeamComponentryDemo,
   'border-beam-vengeance': BorderBeamVengeanceDemo,
+  'border-trail': BorderTrailDemo,
   'bottom-hinge-text-reveal': BottomHingeTextRevealDemo,
   'bubble-effect-button': BubbleEffectButtonDemo,
   'calendar-lg-01': CalendarLg01Demo,
@@ -999,6 +1019,7 @@ export const demos: Record<string, ComponentType> = {
   'dialog-stack': DialogStackDemo,
   'diff-viewer': DiffViewerDemo,
   'direction-aware-tabs': DirectionAwareTabsDemo,
+  'disclosure': DisclosureDemo,
   'distorted-glass': DistortedGlassDemo,
   'dither-gradient': DitherGradientDemo,
   'dither-image': DitherImageDemo,
@@ -1081,6 +1102,7 @@ export const demos: Record<string, ComponentType> = {
   'glitch-text': GlitchTextDemo,
   'globe': GlobeDemo,
   'glow-border-card': GlowBorderCardDemo,
+  'glow-effect': GlowEffectDemo,
   'glowing-button': GlowingButtonDemo,
   'glowing-cards': GlowingCardsDemo,
   'glyph-matrix': GlyphMatrixDemo,
@@ -1135,9 +1157,11 @@ export const demos: Record<string, ComponentType> = {
   'image-trail': ImageTrailDemo,
   'image-trail-vengeance': ImageTrailVengeanceDemo,
   'image-zoom': ImageZoomDemo,
+  'in-view': InViewDemo,
   'infinite-drift': InfiniteDriftDemo,
   'infinite-image-field': InfiniteImageFieldDemo,
   'infinite-ribbon': InfiniteRibbonDemo,
+  'infinite-slider': InfiniteSliderDemo,
   'interactive-book': InteractiveBookDemo,
   'interactive-card': InteractiveCardDemo,
   'interactive-grid-background': InteractiveGridBackgroundDemo,
@@ -1242,7 +1266,9 @@ export const demos: Record<string, ComponentType> = {
   'morph-text': MorphTextDemo,
   'morphic-navbar': MorphicNavbarDemo,
   'morphing-cursor': MorphingCursorDemo,
+  'morphing-dialog': MorphingDialogDemo,
   'morphing-disclosure': MorphingDisclosureDemo,
+  'morphing-popover': MorphingPopoverDemo,
   'morphing-text': MorphingTextDemo,
   'mouse-effect-card': MouseEffectCardDemo,
   'multi-color-trail-reveal': MultiColorTrailRevealDemo,
@@ -1405,6 +1431,7 @@ export const demos: Record<string, ComponentType> = {
   'sports-sm-05': SportsSm05Demo,
   'sports-sm-06': SportsSm06Demo,
   'sports-sm-07': SportsSm07Demo,
+  'spotlight': SpotlightDemo,
   'spotlight-card': SpotlightCardDemo,
   'spotlight-cards': SpotlightCardsDemo,
   'spotlight-list': SpotlightListDemo,
@@ -1454,15 +1481,21 @@ export const demos: Record<string, ComponentType> = {
   'text-3d-flip': Text3dFlipDemo,
   'text-animate': TextAnimateDemo,
   'text-animate-componentry': TextAnimateComponentryDemo,
+  'text-effect': TextEffectDemo,
   'text-flip': TextFlipDemo,
   'text-gif': TextGifDemo,
+  'text-loop': TextLoopDemo,
   'text-marquee': TextMarqueeDemo,
   'text-morph': TextMorphDemo,
   'text-morphing': TextMorphingDemo,
   'text-particle-animation': TextParticleAnimationDemo,
   'text-repel': TextRepelDemo,
   'text-reveal': TextRevealDemo,
+  'text-roll': TextRollDemo,
+  'text-scramble': TextScrambleDemo,
   'text-scroll-read': TextScrollReadDemo,
+  'text-shimmer': TextShimmerDemo,
+  'text-shimmer-wave': TextShimmerWaveDemo,
   'text-stagger-hover': TextStaggerHoverDemo,
   'text-stagger-interval': TextStaggerIntervalDemo,
   'text-stagger-inview': TextStaggerInviewDemo,
@@ -1474,6 +1507,7 @@ export const demos: Record<string, ComponentType> = {
   'theme-switcher': ThemeSwitcherDemo,
   'three-d-carousel': ThreeDCarouselDemo,
   'ticker': TickerDemo,
+  'tilt': TiltDemo,
   'tilt-card': TiltCardDemo,
   'time': TimeDemo,
   'timer': TimerDemo,
@@ -1481,9 +1515,11 @@ export const demos: Record<string, ComponentType> = {
   'toast': ToastDemo,
   'toggle-theme': ToggleThemeDemo,
   'toolbar': ToolbarDemo,
+  'toolbar-dynamic': ToolbarDynamicDemo,
   'toolbar-expandable': ToolbarExpandableDemo,
   'top-loader': TopLoaderDemo,
   'top-sticky-bar': TopStickyBarDemo,
+  'transition-panel': TransitionPanelDemo,
   'tree': TreeDemo,
   'trial-button': TrialButtonDemo,
   'tumbler-roll-reveal': TumblerRollRevealDemo,

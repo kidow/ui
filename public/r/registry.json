@@ -1453,6 +1453,33 @@
       }
     },
     {
+      "name": "animated-group",
+      "type": "registry:component",
+      "title": "Animated Group",
+      "description": "자식 요소를 차례로 나타나게 하는 래퍼(animated group, stagger children). 목록·격자에 등장 애니메이션을 한 번에 준다.",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/animated-group.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/animated-group.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/animated-group",
+        "author": "ibelick",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "animated-keyboard",
       "type": "registry:component",
       "title": "Animated Keyboard",
@@ -2957,6 +2984,33 @@
         "author": "Ashutoshx7",
         "license": "MIT",
         "retrievedAt": "2026-08-29"
+      }
+    },
+    {
+      "name": "border-trail",
+      "type": "registry:component",
+      "title": "Border Trail",
+      "description": "테두리를 따라 빛이 한 바퀴 도는 효과(border trail, moving border). 카드나 입력창을 감싼다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/border-trail.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/border-trail.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/border-trail",
+        "author": "ibelick",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
       }
     },
     {
@@ -6658,6 +6712,33 @@
       }
     },
     {
+      "name": "disclosure",
+      "type": "registry:component",
+      "title": "Disclosure",
+      "description": "높이가 부드럽게 늘어나며 열리는 접기 영역(disclosure, collapsible).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/disclosure.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/disclosure.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/disclosure",
+        "author": "ibelick",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "discord-badge",
       "type": "registry:component",
       "title": "Discord Badge",
@@ -9051,6 +9132,33 @@
       }
     },
     {
+      "name": "glow-effect",
+      "type": "registry:component",
+      "title": "Glow Effect",
+      "description": "요소 뒤에서 색이 번지는 발광 효과(glow effect, ambient glow).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/glow-effect.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/glow-effect.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/glow-effect",
+        "author": "ibelick",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "glowing-button",
       "type": "registry:component",
       "title": "Glowing Button",
@@ -10629,6 +10737,33 @@
       }
     },
     {
+      "name": "in-view",
+      "type": "registry:component",
+      "title": "In View",
+      "description": "화면에 들어올 때 애니메이션을 트리거하는 래퍼(in view, reveal on scroll).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/in-view.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/in-view.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/in-view",
+        "author": "ibelick",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "infinite-drift",
       "type": "registry:component",
       "title": "Infinite Drift",
@@ -10696,6 +10831,34 @@
         "source": "JolyUI",
         "sourceUrl": "https://www.jolyui.dev/docs/components/infinite-ribbon",
         "author": "Johuniq",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "infinite-slider",
+      "type": "registry:component",
+      "title": "Infinite Slider",
+      "description": "끊김 없이 흐르는 무한 슬라이더(infinite slider, marquee). 로고 월에 쓴다.",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "react-use-measure"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/infinite-slider.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/infinite-slider.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/infinite-slider",
+        "author": "ibelick",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -13700,6 +13863,35 @@
       }
     },
     {
+      "name": "morphing-dialog",
+      "type": "registry:component",
+      "title": "Morphing Dialog",
+      "description": "누른 자리에서 그대로 커지며 열리는 다이얼로그(morphing dialog, shared layout modal). 카드에서 상세로 이어지는 전환에 쓴다.",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/use-click-outside"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/morphing-dialog.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/morphing-dialog.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/morphing-dialog",
+        "author": "ibelick",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "morphing-disclosure",
       "type": "registry:component",
       "title": "Morphing Disclosure",
@@ -13750,6 +13942,35 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/morphing-navigation",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "morphing-popover",
+      "type": "registry:component",
+      "title": "Morphing Popover",
+      "description": "트리거에서 자연스럽게 늘어나며 열리는 팝오버(morphing popover).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/use-click-outside"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/morphing-popover.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/morphing-popover.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/morphing-popover",
+        "author": "ibelick",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -19071,6 +19292,33 @@
       }
     },
     {
+      "name": "spotlight",
+      "type": "registry:component",
+      "title": "Spotlight",
+      "description": "커서를 따라 빛이 비치는 스포트라이트 효과(spotlight, cursor glow). 카드 위에 얹는다.",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/spotlight.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/spotlight.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/spotlight",
+        "author": "ibelick",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "spotlight-card",
       "type": "registry:component",
       "title": "Spotlight Card",
@@ -20483,6 +20731,33 @@
       }
     },
     {
+      "name": "text-effect",
+      "type": "registry:component",
+      "title": "Text Effect",
+      "description": "글자·단어·줄 단위로 등장 방식을 고르는 텍스트 애니메이션(text effect, staggered text). blur·slide·fade 프리셋이 있다.",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-effect.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-effect.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/text-effect",
+        "author": "ibelick",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "text-flip",
       "type": "registry:component",
       "title": "Text Flip",
@@ -20528,6 +20803,33 @@
         "source": "Cult UI",
         "sourceUrl": "https://www.cult-ui.com/docs/components/text-gif",
         "author": "nolly-studio",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "text-loop",
+      "type": "registry:component",
+      "title": "Text Loop",
+      "description": "문구가 차례로 바뀌며 반복되는 텍스트(text loop, rotating words).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-loop.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-loop.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/text-loop",
+        "author": "ibelick",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -20680,6 +20982,60 @@
       }
     },
     {
+      "name": "text-roll",
+      "type": "registry:component",
+      "title": "Text Roll",
+      "description": "글자가 위아래로 굴러가며 바뀌는 텍스트(text roll, rolling letters).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-roll.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-roll.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/text-roll",
+        "author": "ibelick",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "text-scramble",
+      "type": "registry:component",
+      "title": "Text Scramble",
+      "description": "글자가 뒤섞였다 제자리를 찾는 텍스트(text scramble, decode effect).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-scramble.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-scramble.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/text-scramble",
+        "author": "ibelick",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "text-scroll-marquee",
       "type": "registry:component",
       "title": "Text Scroll Marquee",
@@ -20730,6 +21086,60 @@
         "source": "Systaliko UI",
         "sourceUrl": "https://systaliko-ui.vercel.app/docs/components/text-scroll-read",
         "author": "YoucefBnm",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "text-shimmer",
+      "type": "registry:component",
+      "title": "Text Shimmer",
+      "description": "광택이 훑고 지나가는 텍스트(text shimmer, shine text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-shimmer.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-shimmer.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/text-shimmer",
+        "author": "ibelick",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "text-shimmer-wave",
+      "type": "registry:component",
+      "title": "Text Shimmer Wave",
+      "description": "광택이 물결처럼 번지는 텍스트(shimmer wave, wavy shine).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/text-shimmer-wave.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/text-shimmer-wave.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/text-shimmer-wave",
+        "author": "ibelick",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -21026,6 +21436,33 @@
       }
     },
     {
+      "name": "tilt",
+      "type": "registry:component",
+      "title": "Tilt",
+      "description": "커서에 따라 기우는 3D 틸트 래퍼(tilt, 3d hover).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/tilt.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/tilt.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/tilt",
+        "author": "ibelick",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "tilt-card",
       "type": "registry:component",
       "title": "Tilt Card",
@@ -21220,6 +21657,35 @@
       }
     },
     {
+      "name": "toolbar-dynamic",
+      "type": "registry:component",
+      "title": "Toolbar Dynamic",
+      "description": "고른 도구에 맞춰 내용과 폭이 변하는 툴바(dynamic toolbar, morphing toolbar).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [
+        "@kidow/use-click-outside"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/toolbar-dynamic.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/toolbar-dynamic.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/toolbar-dynamic",
+        "author": "ibelick",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
       "name": "toolbar-expandable",
       "type": "registry:component",
       "title": "Toolbar Expandable",
@@ -21295,6 +21761,33 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/top-sticky-bar",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "transition-panel",
+      "type": "registry:component",
+      "title": "Transition Panel",
+      "description": "패널을 갈아 끼우며 높이까지 맞춰 전환하는 컨테이너(transition panel, animated tabs content).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/transition-panel.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/transition-panel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/transition-panel",
+        "author": "ibelick",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
@@ -21699,6 +22192,31 @@
         "source": "Lightswind UI",
         "sourceUrl": "https://lightswind.com/components/typing-text",
         "author": "codewithMUHILAN",
+        "license": "MIT",
+        "retrievedAt": "2026-08-30"
+      }
+    },
+    {
+      "name": "use-click-outside",
+      "type": "registry:component",
+      "title": "Use Click Outside",
+      "description": "요소 바깥을 클릭했을 때를 알려주는 훅(use click outside, outside click). morphing-dialog·morphing-popover·toolbar-dynamic 이 함께 쓴다.",
+      "categories": [
+        "개발자 도구"
+      ],
+      "dependencies": [],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/kidow/use-click-outside.tsx",
+          "type": "registry:component",
+          "target": "components/kidow/use-click-outside.tsx"
+        }
+      ],
+      "meta": {
+        "source": "Motion Primitives",
+        "sourceUrl": "https://motion-primitives.com/docs/morphing-dialog",
+        "author": "ibelick",
         "license": "MIT",
         "retrievedAt": "2026-08-30"
       }
