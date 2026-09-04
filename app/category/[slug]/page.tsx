@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { ChevronLeft } from 'lucide-react'
 
 import { ComponentCard } from '@/components/component-card'
+import { FilterableGrid } from '@/components/filterable-grid'
 import {
   CATEGORY_SLUGS,
   categoryFromSlug,
@@ -57,11 +58,15 @@ export default async function CategoryPage({ params }: PageProps<'/category/[slu
         </div>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {list.map((item) => (
-          <ComponentCard key={item.name} item={item} />
-        ))}
-      </div>
+      <FilterableGrid
+        entries={list.map((item) => ({
+          name: item.name,
+          title: item.title,
+          description: item.description,
+          source: item.meta.source,
+          card: <ComponentCard item={item} />,
+        }))}
+      />
 
       <nav className="flex flex-col gap-3 border-t pt-8">
         <h2 className="text-muted-foreground text-sm font-medium">다른 카테고리</h2>

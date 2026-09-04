@@ -5,6 +5,7 @@ import { LazyDemo } from '@/components/lazy-demo'
 import { Badge } from '@/components/ui/badge'
 import { hasGlobalEffect, isSupportItem } from '@/lib/demo-flags'
 import type { RegistryItem } from '@/lib/registry'
+import { sourceSlug } from '@/lib/source'
 
 export function ComponentCard({ item }: { item: RegistryItem }) {
   // 문서 전역에 손대는 데모는 목록에서 렌더하지 않는다.
@@ -34,12 +35,17 @@ export function ComponentCard({ item }: { item: RegistryItem }) {
       <div className="flex items-center gap-2 border-t px-4 py-3">
         <Link
           href={`/c/${item.name}`}
-          className="text-sm font-medium after:absolute after:inset-0"
+          className="min-w-0 truncate text-sm font-medium after:absolute after:inset-0"
         >
           {item.title}
         </Link>
-        <div className="ml-auto flex items-center gap-1.5">
-          <Badge variant="secondary">{item.meta.source}</Badge>
+        <div className="ml-auto flex shrink-0 items-center gap-1.5">
+          {/* 제목 링크가 카드 전체를 덮으므로(after:inset-0) 출처는 그 위로 올린다. */}
+          <Link href={`/source/${sourceSlug(item.meta.source)}`} className="relative z-10">
+            <Badge variant="secondary" className="hover:bg-secondary/60 transition-colors">
+              {item.meta.source}
+            </Badge>
+          </Link>
           <Badge variant="outline">{item.meta.license}</Badge>
         </div>
       </div>

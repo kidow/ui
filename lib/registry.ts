@@ -2,6 +2,9 @@ import { readFile } from 'node:fs/promises'
 import path from 'node:path'
 
 import registryJson from '@/registry.json'
+import { sourceSlug } from '@/lib/source'
+
+export { sourceSlug }
 
 export const REGISTRY_URL = 'https://ui.dongwook.kim'
 export const NAMESPACE = '@kidow'
@@ -109,4 +112,17 @@ export async function readItemSources(item: RegistryItem) {
       ),
     }))
   )
+}
+
+/** 출처별로 묶는다. 개수 많은 순. */
+export function groupBySource(list: RegistryItem[] = items) {
+  const groups = new Map<string, RegistryItem[]>()
+  for (const item of list) {
+    groups.set(item.meta.source, [...(groups.get(item.meta.source) ?? []), item])
+  }
+  return [...groups.entries()].sort(([, a], [, b]) => b.length - a.length)
+}
+
+export function sourceFromSlug(slug: string) {
+  return groupBySource().find(([source]) => sourceSlug(source) === slug)?.[0]
 }

@@ -9,6 +9,7 @@ import { demos } from '@/components/demos'
 import { LazyDemo } from '@/components/lazy-demo'
 import { Badge } from '@/components/ui/badge'
 import { hasGlobalEffect, isSupportItem } from '@/lib/demo-flags'
+import { sourceSlug } from '@/lib/source'
 import { SAMPLE_QUERIES, type SearchEntry, searchEntries } from '@/lib/search'
 
 /** 한 화면에 그리는 결과. 더 보기로 늘린다. */
@@ -44,7 +45,12 @@ function ResultCard({ entry }: { entry: SearchEntry }) {
           {entry.title}
         </Link>
         <div className="ml-auto flex shrink-0 items-center gap-1.5">
-          <Badge variant="secondary">{entry.source}</Badge>
+          {/* 제목 링크가 카드 전체를 덮으므로(after:inset-0) 출처는 그 위로 올린다. */}
+          <Link href={`/source/${sourceSlug(entry.source)}`} className="relative z-10">
+            <Badge variant="secondary" className="hover:bg-secondary/60 transition-colors">
+              {entry.source}
+            </Badge>
+          </Link>
           <Badge variant="outline">{entry.license}</Badge>
         </div>
       </div>

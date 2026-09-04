@@ -5,6 +5,7 @@ import { HomeSearch } from '@/components/home-search'
 import { McpSetupSection } from '@/components/mcp-setup-section'
 import { RelatedRegistriesSection } from '@/components/related-registries-section'
 import { ShadcnBaseSection } from '@/components/shadcn-base-section'
+import { SourcesSection } from '@/components/sources-section'
 import { categorySlug, groupByCategory, items } from '@/lib/registry'
 
 export default function Home() {
@@ -52,6 +53,7 @@ export default function Home() {
         </section>
       )}
 
+      <SourcesSection />
       <McpSetupSection />
       <ShadcnBaseSection />
       <RelatedRegistriesSection />

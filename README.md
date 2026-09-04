@@ -158,12 +158,14 @@ components/demos/          사이트 전용 데모 (배포 안 함, index.ts 는
 lib/related-registries.ts  담지 않은 곳과 그 사유
 lib/shadcn-base.ts         shadcn 기본 컴포넌트 목록 (중복 수집 방지)
 lib/demo-flags.ts          목록에서 렌더하지 않을 데모, 단독 렌더 불가 부품
-app/page.tsx               홈 (검색 · 분류 · MCP 안내 · 담지 않은 곳)
-app/category/[slug]/       분류별 목록
+app/page.tsx               홈 (검색 · 분류 · 출처 · MCP 안내 · 담지 않은 곳)
+app/category/[slug]/       분류별 목록 (이름·출처 필터)
+app/source/[slug]/         출처별 목록 (39곳)
 app/c/[name]/page.tsx      상세 (프리뷰 + 우측 출처 사이드바)
 app/search/page.tsx        검색 결과 (/search?q= · 주소로 공유 가능)
 app/search-index/route.ts  검색 색인 (정적 생성, 팔레트와 결과 페이지가 함께 씀)
 lib/search.ts              두 검색 표면이 함께 쓰는 채점 로직
+lib/source.ts              출처 slug (registry.ts 는 node:fs 를 읽어 클라이언트에서 못 씀)
 public/r/*.json            빌드 산출물
 ```
 
