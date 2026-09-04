@@ -1,18 +1,22 @@
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
+import { HomeSearch } from '@/components/home-search'
 import { McpSetupSection } from '@/components/mcp-setup-section'
 import { RelatedRegistriesSection } from '@/components/related-registries-section'
 import { ShadcnBaseSection } from '@/components/shadcn-base-section'
 import { categorySlug, groupByCategory, items } from '@/lib/registry'
 
 export default function Home() {
-  // 홈에서는 데모를 렌더하지 않는다. 458개를 한 페이지에 그리면 HTML 이 8MB 를 넘는다.
+  // 홈에서는 데모를 렌더하지 않는다. 1,500개를 한 페이지에 그리면 HTML 이 8MB 를 넘는다.
   const groups = groupByCategory().sort(([, a], [, b]) => b.length - a.length)
+  const sources = new Set(items.map((item) => item.meta.source)).size
 
   return (
+    // 사람이 링크를 받고 들어오는 곳이다. 찾는 수단(검색·분류)이 먼저 오고
+    // 에이전트 설정(MCP)은 그 아래에 둔다.
     <div className="flex flex-col gap-12">
-      <McpSetupSection />
+      <HomeSearch total={items.length} sources={sources} />
 
       {items.length === 0 ? (
         <div className="flex min-h-60 flex-col items-center justify-center gap-3 rounded-xl border border-dashed text-center">
@@ -48,6 +52,7 @@ export default function Home() {
         </section>
       )}
 
+      <McpSetupSection />
       <ShadcnBaseSection />
       <RelatedRegistriesSection />
     </div>

@@ -39,7 +39,7 @@ export function McpSetupSection() {
       </div>
       <ol className="grid gap-5 md:grid-cols-3">
         {STEPS.map((step, index) => (
-          <li key={step.title} className="flex flex-col gap-2">
+          <li key={step.title} className="flex min-w-0 flex-col gap-2">
             <div className="flex items-center gap-2">
               <span className="bg-muted text-muted-foreground flex size-5 shrink-0 items-center justify-center rounded-full text-xs font-medium">
                 {index + 1}

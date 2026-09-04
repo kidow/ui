@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { Search } from 'lucide-react'
+import { ArrowRight, Search } from 'lucide-react'
 
 import {
   Command,
@@ -13,36 +13,10 @@ import {
   CommandItem,
   CommandList,
 } from '@/components/ui/command'
+import { type SearchEntry, searchEntries } from '@/lib/search'
 
-interface SearchEntry {
-  name: string
-  title: string
-  description: string
-  category: string
-  slug: string
-  source: string
-}
-
-/** 결과가 617개까지 가면 팔레트가 버벅인다. 상위 40개만 그린다. */
+/** 결과가 1,500개까지 가면 팔레트가 버벅인다. 상위 40개만 그리고 나머지는 /search 로 넘긴다. */
 const LIMIT = 40
-
-/**
- * 이름·제목·설명·출처·카테고리를 한 번에 훑는다.
- * cmdk 기본 필터는 value 문자열 하나만 보므로 직접 점수를 매기고
- * shouldFilter={false} 로 넘긴다.
- */
-function score(entry: SearchEntry, query: string) {
-  const q = query.toLowerCase()
-  if (entry.name.toLowerCase() === q || entry.title.toLowerCase() === q) return 0
-  if (entry.name.toLowerCase().startsWith(q)) return 1
-  if (entry.title.toLowerCase().startsWith(q)) return 2
-  if (entry.name.toLowerCase().includes(q)) return 3
-  if (entry.title.toLowerCase().includes(q)) return 4
-  if (entry.description.toLowerCase().includes(q)) return 5
-  if (entry.category.includes(q) || entry.source.toLowerCase().includes(q))
-    return 6
-  return -1
-}
 
 export function SearchCommand({
   categories,
@@ -81,16 +55,8 @@ export function SearchCommand({
     }
   }, [open, entries.length])
 
-  const results = useMemo(() => {
-    const q = query.trim()
-    if (!q) return []
-    return entries
-      .map((entry) => ({ entry, rank: score(entry, q) }))
-      .filter(({ rank }) => rank >= 0)
-      .sort((a, b) => a.rank - b.rank || a.entry.name.localeCompare(b.entry.name))
-      .slice(0, LIMIT)
-      .map(({ entry }) => entry)
-  }, [entries, query])
+  const all = useMemo(() => searchEntries(entries, query), [entries, query])
+  const results = all.slice(0, LIMIT)
 
   const go = (href: string) => {
     setOpen(false)
@@ -129,7 +95,13 @@ export function SearchCommand({
             <>
               <CommandEmpty>결과가 없습니다.</CommandEmpty>
               {results.length ? (
-                <CommandGroup heading={`컴포넌트 ${results.length}개`}>
+                <CommandGroup
+                  heading={
+                    all.length > results.length
+                      ? `컴포넌트 ${all.length}개 중 ${results.length}개`
+                      : `컴포넌트 ${all.length}개`
+                  }
+                >
                   {results.map((entry) => (
                     <CommandItem
                       key={entry.name}
@@ -151,6 +123,20 @@ export function SearchCommand({
                       </span>
                     </CommandItem>
                   ))}
+                </CommandGroup>
+              ) : null}
+              {all.length ? (
+                <CommandGroup>
+                  <CommandItem
+                    value="__all__"
+                    onSelect={() => go(`/search?q=${encodeURIComponent(query.trim())}`)}
+                  >
+                    <ArrowRight className="size-4" />
+                    <span>결과 {all.length}개 전체 보기</span>
+                    <span className="text-muted-foreground ml-auto text-xs">
+                      주소로 공유할 수 있습니다
+                    </span>
+                  </CommandItem>
                 </CommandGroup>
               ) : null}
             </>
