@@ -44291,6 +44291,2028 @@
         "license": "MIT (저작권 표시 유지 조건)",
         "retrievedAt": "2026-08-30"
       }
+    },
+    {
+      "name": "ai-job-cards",
+      "type": "registry:ui",
+      "title": "Ai Job Cards",
+      "description": "버튼이나 세로 드래그로 넘기는 AI 구직 카드 더미(job cards, card stack).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ai-job-cards.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/ai-job-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/ai-job-cards",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "andromeda-button",
+      "type": "registry:ui",
+      "title": "Andromeda Button",
+      "description": "hover·focus·눌림·비활성 상태를 토큰으로 관리하는 버튼 패밀리 예시(button tokens, design system).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "@carbon/icons-react",
+        "class-variance-authority",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/andromeda-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/andromeda-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/andromeda-button",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "blind-pull-toggle",
+      "type": "registry:ui",
+      "title": "Blind Pull Toggle",
+      "description": "블라인드처럼 당기면 달·해 아이콘이 바뀌는 슬랫 애니메이션 토글(pull toggle, day/night).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/blind-pull-toggle.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/blind-pull-toggle.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/blind-pull-toggle",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "bubble-field",
+      "type": "registry:ui",
+      "title": "Bubble Field",
+      "description": "커서 근처에서 부풀었다 사라지는 캔버스 거품 배경(bubble field, canvas background).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/bubble-field.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/bubble-field.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/bubble-field",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "charging-widget",
+      "type": "registry:ui",
+      "title": "Charging Widget",
+      "description": "액체가 차오르며 도는 원형 충전 표시기(charging widget, liquid progress).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/charging-widget.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/charging-widget.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/charging-widget",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "crypto-swap",
+      "type": "registry:ui",
+      "title": "Crypto Swap",
+      "description": "실시간 시세와 슬리피지 설정을 갖춘 토큰 스왑 카드(crypto swap, token exchange).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/crypto-swap.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/crypto-swap.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/crypto-swap",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "cube-carousel",
+      "type": "registry:ui",
+      "title": "Cube Carousel",
+      "description": "드래그나 방향키로 굴리는 회전 큐브 사진 캐러셀(cube carousel, 3d cube).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/cube-carousel.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/cube-carousel.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/cube-carousel",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "curious-ai",
+      "type": "registry:ui",
+      "title": "Curious Ai",
+      "description": "커서를 눈으로 좇는 셰이더 기반 AI 오브(curious orb, shader eyes).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "motion",
+        "three"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/curious-ai.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/curious-ai.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/curious-ai",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "danger-stripes",
+      "type": "registry:ui",
+      "title": "Danger Stripes",
+      "description": "반복 문구가 들어간 경고 줄무늬 배경(danger stripes, warning pattern).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/danger-stripes.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/danger-stripes.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/danger-stripes",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "delete-button",
+      "type": "registry:ui",
+      "title": "Delete Button",
+      "description": "5초 카운트다운과 되돌리기가 있는 계정 삭제 버튼(delete button, undo countdown).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion",
+        "@phosphor-icons/react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/delete-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/delete-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/delete-button",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "diamond-grid-aicanvas",
+      "type": "registry:ui",
+      "title": "Diamond Grid",
+      "description": "점화 펄스가 퍼지는 다이아몬드 격자 배경(diamond grid, ignition pulse).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/diamond-grid-aicanvas.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/diamond-grid-aicanvas.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/diamond-grid",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "distortion-grid",
+      "type": "registry:ui",
+      "title": "Distortion Grid",
+      "description": "커서 근처가 물결치듯 휘는 캔버스 곡선 격자(distortion grid, wave distortion).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/distortion-grid.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/distortion-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/distortion-grid",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "dot-grid",
+      "type": "registry:ui",
+      "title": "Dot Grid",
+      "description": "커서 주변이 밝아지는 캔버스 점 격자 배경(dot grid, pointer glow).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/dot-grid.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/dot-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/dot-grid",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "emoji-burst",
+      "type": "registry:ui",
+      "title": "Emoji Burst",
+      "description": "누를 때마다 이모지가 방사형으로 터지는 버튼(emoji burst, particle button).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/emoji-burst.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/emoji-burst.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/emoji-burst",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "expanding-tabs",
+      "type": "registry:ui",
+      "title": "Expanding Tabs",
+      "description": "선택하면 아이콘 옆에 라벨이 펼쳐지는 알약형 탭(expanding tabs, icon tabs).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion",
+        "@phosphor-icons/react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/expanding-tabs.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/expanding-tabs.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/expanding-tabs",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "flip-calendar",
+      "type": "registry:ui",
+      "title": "Flip Calendar",
+      "description": "스플릿플랩으로 넘어가는 드래그 가능한 날짜 캘린더(flip calendar, split-flap).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/flip-calendar.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/flip-calendar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/flip-calendar",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glass-ai-compose",
+      "type": "registry:ui",
+      "title": "Glass Ai Compose",
+      "description": "모델·웹검색 옵션이 있는 글래스 스타일 AI 채팅 입력창(ai composer, glassmorphism).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-ai-compose.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glass-ai-compose.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glass-ai-compose",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glass-card",
+      "type": "registry:ui",
+      "title": "Glass Card",
+      "description": "이미지 배경 위에 기울어지는 글래스 기능 카드 세트(glass card, tilt effect).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-card.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glass-card.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glass-card",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glass-dock-aicanvas",
+      "type": "registry:ui",
+      "title": "Glass Dock",
+      "description": "커서가 지나가면 아이콘이 확대되는 가로 스크롤 글래스 독(glass dock, magnify).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-dock-aicanvas.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glass-dock-aicanvas.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glass-dock",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glass-modal",
+      "type": "registry:ui",
+      "title": "Glass Modal",
+      "description": "기능 목록과 함께 열리는 글래스 업그레이드 모달(glass modal, upgrade dialog).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-modal.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glass-modal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glass-modal",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glass-music-player",
+      "type": "registry:ui",
+      "title": "Glass Music Player",
+      "description": "곡 전환과 재생바가 있는 글래스 뮤직 플레이어(glass music player).",
+      "categories": [
+        "오디오·음성"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-music-player.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glass-music-player.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glass-music-player",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glass-navbar",
+      "type": "registry:ui",
+      "title": "Glass Navbar",
+      "description": "좁은 화면에서 드롭다운으로 바뀌는 반응형 글래스 내비바(glass navbar).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-navbar.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glass-navbar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glass-navbar",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glass-notification",
+      "type": "registry:ui",
+      "title": "Glass Notification",
+      "description": "옆으로 드래그해 지우고 복원할 수 있는 글래스 알림 스택(glass notification stack).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-notification.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glass-notification.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glass-notification",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glass-progress",
+      "type": "registry:ui",
+      "title": "Glass Progress",
+      "description": "카운터와 함께 순서대로 차오르는 글래스 진행 막대(glass progress, staggered bars).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-progress.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glass-progress.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glass-progress",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glass-search-bar",
+      "type": "registry:ui",
+      "title": "Glass Search Bar",
+      "description": "입력에 따라 후보가 걸러지는 글래스 검색창(glass search bar).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-search-bar.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glass-search-bar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glass-search-bar",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glass-sidebar",
+      "type": "registry:ui",
+      "title": "Glass Sidebar",
+      "description": "펼치면 라벨이, 접으면 툴팁이 나오는 글래스 내비 사이드바(glass sidebar).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-sidebar.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glass-sidebar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glass-sidebar",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glass-slider",
+      "type": "registry:ui",
+      "title": "Glass Slider",
+      "description": "그라디언트 색이 값을 따라가는 글래스 슬라이더(glass slider).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-slider.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glass-slider.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glass-slider",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glass-stepper",
+      "type": "registry:ui",
+      "title": "Glass Stepper",
+      "description": "증감 버튼과 진행 표시가 함께 있는 글래스 스테퍼 입력(glass stepper).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-stepper.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glass-stepper.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glass-stepper",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glass-tab-bar",
+      "type": "registry:ui",
+      "title": "Glass Tab Bar",
+      "description": "선택한 탭으로 알약이 이동하는 글래스 탭 바(glass tab bar).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-tab-bar.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glass-tab-bar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glass-tab-bar",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glass-tags",
+      "type": "registry:ui",
+      "title": "Glass Tags",
+      "description": "클릭해 체크·글로우로 선택 표시하는 글래스 태그 목록(glass tags).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-tags.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glass-tags.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glass-tags",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glass-toast",
+      "type": "registry:ui",
+      "title": "Glass Toast",
+      "description": "호버하면 멈추는 타이머형 글래스 토스트 스택(glass toast).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-toast.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glass-toast.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glass-toast",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glass-toggle",
+      "type": "registry:ui",
+      "title": "Glass Toggle",
+      "description": "스프링 애니메이션으로 켜지는 글래스 설정 토글(glass toggle, spring animation).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-toggle.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glass-toggle.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glass-toggle",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glass-user-menu",
+      "type": "registry:ui",
+      "title": "Glass User Menu",
+      "description": "아바타를 누르면 열리는 글래스 사용자 메뉴(glass user menu).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glass-user-menu.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glass-user-menu.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glass-user-menu",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glitch-button-aicanvas",
+      "type": "registry:ui",
+      "title": "Glitch Button",
+      "description": "호버하면 글자가 기호로 스크램블됐다 복원되는 터미널풍 버튼(glitch button, scramble).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glitch-button-aicanvas.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glitch-button-aicanvas.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/glitch-button",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "good-vibes",
+      "type": "registry:ui",
+      "title": "Good Vibes",
+      "description": "커서 근처 글자가 굵어지고 커지는 가변폰트 텍스트(pointer-reactive type).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/good-vibes.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/good-vibes.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/good-vibes",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "grid-lines",
+      "type": "registry:ui",
+      "title": "Grid Lines",
+      "description": "커서가 다가오면 렌즈처럼 휘어지는 점-선 캔버스 격자(grid lines background).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/grid-lines.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/grid-lines.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/grid-lines",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "halo-type",
+      "type": "registry:ui",
+      "title": "Halo Type",
+      "description": "회전하는 고리 모양으로 배치된 글자들(halo type, rotating ring text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/halo-type.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/halo-type.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/halo-type",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "interactive-card-stack",
+      "type": "registry:ui",
+      "title": "Interactive Card Stack",
+      "description": "드래그·탭·키보드로 넘기는 카드 더미(card stack, swipe cards).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/interactive-card-stack.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/interactive-card-stack.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/interactive-card-stack",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "jar-of-emotions",
+      "type": "registry:ui",
+      "title": "Jar Of Emotions",
+      "description": "감정을 고르면 물리엔진으로 튀어나오는 이모지 유리병(jar of emotions, physics).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion",
+        "matter-js"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/jar-of-emotions.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/jar-of-emotions.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/jar-of-emotions",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "label-cards",
+      "type": "registry:ui",
+      "title": "Label Cards",
+      "description": "호버·포커스하면 겹친 카드가 펼쳐지는 라벨 카드 더미(label cards, spread stack).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/label-cards.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/label-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/label-cards",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "magnetic-dots-aicanvas",
+      "type": "registry:ui",
+      "title": "Magnetic Dots",
+      "description": "커서가 당기면 스프링처럼 따라왔다 돌아가는 점 배경(magnetic dots, spring physics).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/magnetic-dots-aicanvas.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/magnetic-dots-aicanvas.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/magnetic-dots",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "magnetic-logo-cluster",
+      "type": "registry:ui",
+      "title": "Magnetic Logo Cluster",
+      "description": "화면 밖에서 날아와 자석처럼 커서에 끌리는 로고 무리(magnetic logo cluster).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/magnetic-logo-cluster.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/magnetic-logo-cluster.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/magnetic-logo-cluster",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "mark-toggle",
+      "type": "registry:ui",
+      "title": "Mark Toggle",
+      "description": "X와 체크 사이를 오가는 아이콘 썸이 있는 알약 토글(mark toggle).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/mark-toggle.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/mark-toggle.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/mark-toggle",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "mood-tracker",
+      "type": "registry:ui",
+      "title": "Mood Tracker",
+      "description": "요일별 기분을 매길 수 있는 주간 무드 트래커(mood tracker, weekly rating).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/mood-tracker.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/mood-tracker.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/mood-tracker",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "neon-clock",
+      "type": "registry:ui",
+      "title": "Neon Clock",
+      "description": "7세그먼트 네온 숫자로 표시하는 시계(neon clock, seven-segment).",
+      "categories": [
+        "위젯"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/neon-clock.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/neon-clock.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/neon-clock",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "new-project-modal",
+      "type": "registry:ui",
+      "title": "New Project Modal",
+      "description": "버튼에서 펼쳐지듯 열리는 새 프로젝트 생성 폼(new project modal).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/new-project-modal.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/new-project-modal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/new-project-modal",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "noise-bg",
+      "type": "registry:ui",
+      "title": "Noise Bg",
+      "description": "커서 근처가 밝아지는 입자 노이즈 캔버스 배경(noise background, particles).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/noise-bg.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/noise-bg.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/noise-bg",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "noise-field",
+      "type": "registry:ui",
+      "title": "Noise Field",
+      "description": "커서를 향해 방향을 트는 화살표 흐름 배경(noise field, flow arrows).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/noise-field.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/noise-field.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/noise-field",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "orbit",
+      "type": "registry:ui",
+      "title": "Orbit",
+      "description": "타원 궤도를 따라 배치되는 반응형 텍스트(orbit text, elliptical).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/orbit.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/orbit.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/orbit",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "particle-constellation",
+      "type": "registry:ui",
+      "title": "Particle Constellation",
+      "description": "커서가 밀어내는 방사형 캔버스 별자리(particle constellation).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/particle-constellation.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/particle-constellation.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/particle-constellation",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "particle-sphere",
+      "type": "registry:ui",
+      "title": "Particle Sphere",
+      "description": "Three.js 점 구름으로 그리는 회전 파티클 구체(particle sphere, three.js).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "dependencies": [
+        "three"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/particle-sphere.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/particle-sphere.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/particle-sphere",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "peel-corner-reveal",
+      "type": "registry:ui",
+      "title": "Peel Corner Reveal",
+      "description": "모서리를 접으면 QR 코드가 드러나는 Wi-Fi 카드(peel corner reveal, qr code).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion",
+        "qrcode.react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/peel-corner-reveal.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/peel-corner-reveal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/peel-corner-reveal",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "pill-toggle",
+      "type": "registry:ui",
+      "title": "Pill Toggle",
+      "description": "썸이 미끄러지듯 이동하는 알약형 토글(pill toggle, sliding thumb).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/pill-toggle.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/pill-toggle.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/pill-toggle",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "playful",
+      "type": "registry:ui",
+      "title": "Playful",
+      "description": "커서 거리에 따라 굵기·자간이 바뀌는 가변폰트 텍스트(playful type, variable font).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/playful.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/playful.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/playful",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "polaroid-stack",
+      "type": "registry:ui",
+      "title": "Polaroid Stack",
+      "description": "선택하면 앞으로 나오는 라벨 붙은 폴라로이드 카드 더미(polaroid stack).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/polaroid-stack.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/polaroid-stack.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/polaroid-stack",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "product-card-deck",
+      "type": "registry:ui",
+      "title": "Product Card Deck",
+      "description": "드래그로 순환하는 상품 카드 루프 덱(product card deck, loop).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/product-card-deck.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/product-card-deck.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/product-card-deck",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "radial-cards",
+      "type": "registry:ui",
+      "title": "Radial Cards",
+      "description": "회전하는 원형 트랙 위에 배치된 활동 카드(radial cards, rotating track).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/radial-cards.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/radial-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/radial-cards",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "radial-toolbar",
+      "type": "registry:ui",
+      "title": "Radial Toolbar",
+      "description": "펼치면 도구가 부채꼴로 퍼지는 방사형 툴바(radial toolbar).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/radial-toolbar.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/radial-toolbar.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/radial-toolbar",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "responsive-letters",
+      "type": "registry:ui",
+      "title": "Responsive Letters",
+      "description": "커서 거리에 따라 각 글자가 따로 반응하는 가변폰트 문자(responsive letters).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/responsive-letters.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/responsive-letters.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/responsive-letters",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "ripple-type",
+      "type": "registry:ui",
+      "title": "Ripple Type",
+      "description": "회전하는 글자 레이어가 부채처럼 겹치는 리플 타이포(ripple type).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/ripple-type.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/ripple-type.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/ripple-type",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "runway-loader",
+      "type": "registry:ui",
+      "title": "Runway Loader",
+      "description": "활주로를 달리는 비행기로 진행 단계를 보여주는 로더(runway loader, airplane).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/runway-loader.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/runway-loader.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/runway-loader",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "scramble-text",
+      "type": "registry:ui",
+      "title": "Scramble Text",
+      "description": "대기 중엔 뒤섞이다 호버하면 순서대로 맞춰지는 텍스트(scramble text).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion",
+        "geist"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/scramble-text.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/scramble-text.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/scramble-text",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "scroll-wipe-gallery",
+      "type": "registry:ui",
+      "title": "Scroll Wipe Gallery",
+      "description": "스크롤에 맞춰 사진이 와이프 전환되는 풀프레임 갤러리(scroll wipe gallery).",
+      "categories": [
+        "미디어·데이터"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/scroll-wipe-gallery.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/scroll-wipe-gallery.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/scroll-wipe-gallery",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "signature-pad",
+      "type": "registry:ui",
+      "title": "Signature Pad",
+      "description": "속도에 반응하는 서명 캔버스 모달(signature pad, velocity-sensitive).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/signature-pad.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/signature-pad.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/signature-pad",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "slice-type",
+      "type": "registry:ui",
+      "title": "Slice Type",
+      "description": "호버하면 조각이 어긋나며 색이 바뀌는 슬라이스 타이포그래피(slice type).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/slice-type.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/slice-type.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/slice-type",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "slide-deck",
+      "type": "registry:ui",
+      "title": "Slide Deck",
+      "description": "드래그나 버튼으로 넘기는 번호 매겨진 프레젠테이션 슬라이드 덱(slide deck).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/slide-deck.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/slide-deck.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/slide-deck",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "sphere-lines",
+      "type": "registry:ui",
+      "title": "Sphere Lines",
+      "description": "위도선이 겹쳐 도는 회전 캔버스 구체(sphere lines, wireframe globe).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sphere-lines.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/sphere-lines.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/sphere-lines",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "stack-tower",
+      "type": "registry:ui",
+      "title": "Stack Tower",
+      "description": "같은 단어를 세로로 쌓아 회전시키는 타이포그래피 타워(stack tower, rotating type).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/stack-tower.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/stack-tower.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/stack-tower",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "sticker-wall",
+      "type": "registry:ui",
+      "title": "Sticker Wall",
+      "description": "텍스트·이모지 스티커를 붙이고 끌 수 있는 물리엔진 벽(sticker wall, physics stickers).",
+      "categories": [
+        "인터랙션"
+      ],
+      "dependencies": [
+        "motion",
+        "matter-js"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sticker-wall.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/sticker-wall.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/sticker-wall",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "taga-toggle",
+      "type": "registry:ui",
+      "title": "Taga Toggle",
+      "description": "표정이 바뀌는 썸이 있는 알약형 토글(taga toggle, expressive face).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/taga-toggle.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/taga-toggle.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/taga-toggle",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "task-cards",
+      "type": "registry:ui",
+      "title": "Task Cards",
+      "description": "드래그나 화살표로 넘기는 겹친 작업 카드 덱(task cards, overlapping deck).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/task-cards.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/task-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/task-cards",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "text-blur-reveal",
+      "type": "registry:ui",
+      "title": "Text Blur Reveal",
+      "description": "블러와 위치 이동으로 순서대로 드러나는 문장(text blur reveal).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/text-blur-reveal.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/text-blur-reveal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/text-blur-reveal",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "tilted-coverflow",
+      "type": "registry:ui",
+      "title": "Tilted Coverflow",
+      "description": "기울어진 채 넘어가는 캡션 붙은 커버플로우(tilted coverflow).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/tilted-coverflow.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/tilted-coverflow.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/tilted-coverflow",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "upload-progress",
+      "type": "registry:ui",
+      "title": "Upload Progress",
+      "description": "일시정지·재개·취소가 가능한 파일 업로드 진행 카드(upload progress, file transfer).",
+      "categories": [
+        "위젯"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/upload-progress.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/upload-progress.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/upload-progress",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "voice-chat-pill",
+      "type": "registry:ui",
+      "title": "Voice Chat Pill",
+      "description": "펼치면 참여자 목록과 발화 표시가 나오는 음성채팅 알약(voice chat pill).",
+      "categories": [
+        "오디오·음성"
+      ],
+      "dependencies": [
+        "@phosphor-icons/react",
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/voice-chat-pill.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/voice-chat-pill.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/voice-chat-pill",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "wave-lines",
+      "type": "registry:ui",
+      "title": "Wave Lines",
+      "description": "커서가 밀어내는 세로 파형 캔버스 배경(wave lines, canvas waves).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/wave-lines.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/wave-lines.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/wave-lines",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "wild-morph",
+      "type": "registry:ui",
+      "title": "Wild Morph",
+      "description": "커서 위치에 따라 모서리가 뒤틀리는 단어(wild morph, matrix warp).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/wild-morph.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/wild-morph.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/wild-morph",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "x-grid",
+      "type": "registry:ui",
+      "title": "X Grid",
+      "description": "커서 근처가 밝아지는 연결된 X자 캔버스 격자(x grid background).",
+      "categories": [
+        "배경·패턴"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/x-grid.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/x-grid.tsx"
+        }
+      ],
+      "meta": {
+        "source": "AI Canvas",
+        "sourceUrl": "https://aicanvas.me/components/x-grid",
+        "author": "Alexandru Daniel Tatu",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
     }
   ]
 }

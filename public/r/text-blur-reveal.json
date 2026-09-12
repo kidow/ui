@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "text-blur-reveal",
+  "title": "Text Blur Reveal",
+  "description": "블러와 위치 이동으로 순서대로 드러나는 문장(text blur reveal).",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/text-blur-reveal.tsx",
+      "content": "'use client'\n\n// npm install motion\n/**\n * Reveals a short sentence through staggered blur and position transitions.\n * The call-to-action appears after the final word finishes animating.\n */\n\nimport { useState, useEffect } from 'react'\nimport { motion, AnimatePresence } from 'motion/react'\n\n// customize: replace the sentence and accented word indexes below\nconst WORDS = ['Craft', 'interfaces', 'that', 'feel', 'like', 'magic.']\nconst ACCENTED = new Set([1, 5]) \n\n\n// tune: raise to increase the delay between words\nconst STAGGER = 100\n// tune: raise to slow each word reveal\nconst DURATION = 650\nconst LAST_WORD_END = (WORDS.length - 1) * STAGGER + DURATION \nconst SHOW_BUTTON_AT = LAST_WORD_END + 150                     \n\nexport default function TextBlurReveal() {\n  const [showCTA, setShowCTA] = useState(false)\n\n  useEffect(() => {\n    const t = setTimeout(() => setShowCTA(true), SHOW_BUTTON_AT)\n    return () => clearTimeout(t)\n  }, [])\n\n  return (\n    <div className=\"relative flex min-h-screen w-full flex-col items-center justify-center gap-5 overflow-hidden\">\n\n      {}\n      <div\n        className=\"pointer-events-none absolute inset-0\"\n        style={{\n          backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px)',\n          backgroundSize: '24px 24px',\n        }}\n      />\n\n      {}\n      <div className=\"pointer-events-none absolute inset-0 flex items-center justify-center\">\n        <div className=\"h-40 w-80 rounded-full bg-indigo-600/20 blur-3xl\" />\n      </div>\n\n      {}\n      <div className=\"relative flex flex-wrap justify-center gap-x-[0.4em] gap-y-1\">\n        {WORDS.map((word, i) => (\n          <motion.span\n            key={i}\n            initial={{ opacity: 0, y: 22, filter: 'blur(14px)' }}\n            animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}\n            transition={{\n              duration: DURATION / 1000,\n              delay: (i * STAGGER) / 1000,\n              ease: [0.21, 0.47, 0.32, 0.98],\n            }}\n            className={\n              ACCENTED.has(i)\n                ? 'bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-4xl tracking-tight text-transparent'\n                : 'text-4xl tracking-tight text-white'\n            }\n            style={{ fontFamily: 'var(--font-geist-pixel-circle)' }}\n          >\n            {word}\n          </motion.span>\n        ))}\n      </div>\n\n      {}\n      <motion.p\n        key=\"sub\"\n        initial={{ opacity: 0, y: 8 }}\n        animate={{ opacity: 1, y: 0 }}\n        transition={{\n          duration: 0.55,\n          delay: ((WORDS.length - 1) * STAGGER + 200) / 1000,\n          ease: 'easeOut',\n        }}\n        className=\"relative text-base text-zinc-400\"\n      >\n        Drop any phrase. Works with any text.\n      </motion.p>\n\n      {}\n      <div className=\"flex h-10 items-center justify-center\">\n      <AnimatePresence>\n        {showCTA && (\n          <motion.button\n            initial={{ opacity: 0, y: 6 }}\n            animate={{ opacity: 1, y: 0 }}\n            exit={{ opacity: 0, y: 6 }}\n            transition={{ duration: 0.35, ease: 'easeOut' }}\n            whileHover={{ scale: 1.04 }}\n            whileTap={{ scale: 0.97 }}\n            className=\"relative rounded-full bg-gradient-to-r from-violet-500 to-indigo-500 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-indigo-500/30 transition-opacity hover:opacity-90\"\n          >\n            Start building\n          </motion.button>\n        )}\n      </AnimatePresence>\n      </div>\n\n    </div>\n  )\n}\n",
+      "type": "registry:ui",
+      "target": "components/kidow/text-blur-reveal.tsx"
+    }
+  ],
+  "meta": {
+    "source": "AI Canvas",
+    "sourceUrl": "https://aicanvas.me/components/text-blur-reveal",
+    "author": "Alexandru Daniel Tatu",
+    "license": "MIT",
+    "retrievedAt": "2026-09-12"
+  },
+  "categories": [
+    "텍스트 효과"
+  ],
+  "type": "registry:ui"
+}

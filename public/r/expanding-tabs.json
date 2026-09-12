@@ -1,0 +1,29 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "expanding-tabs",
+  "title": "Expanding Tabs",
+  "description": "선택하면 아이콘 옆에 라벨이 펼쳐지는 알약형 탭(expanding tabs, icon tabs).",
+  "dependencies": [
+    "motion",
+    "@phosphor-icons/react"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/expanding-tabs.tsx",
+      "content": "'use client'\n// npm install motion @phosphor-icons/react\n/**\n * Displays a pill-shaped tab list with icon-only inactive tabs.\n * Selecting a tab expands it to reveal its label with layout animation.\n */\n\nimport { useState } from 'react'\nimport { AnimatePresence, motion } from 'motion/react'\nimport {\n  Bell,\n  CalendarBlank,\n  EnvelopeSimple,\n  MagnifyingGlass,\n} from '@phosphor-icons/react'\n\nconst SPRING = { type: 'spring' as const, stiffness: 420, damping: 30, mass: 0.7 }\n\nconst tabs = [\n  { label: 'Inbox', icon: EnvelopeSimple },\n  { label: 'Calendar', icon: CalendarBlank },\n  { label: 'Alerts', icon: Bell },\n  { label: 'Search', icon: MagnifyingGlass },\n]\n\nexport default function ExpandingTabs() {\n  const [activeTab, setActiveTab] = useState('Inbox')\n\n  return (\n    <div className='flex min-h-screen w-full items-center justify-center bg-[#E3E3E8] dark:bg-[#0E0E0F]'>\n      <motion.div\n        layout\n        transition={SPRING}\n        role=\"tablist\"\n        aria-label=\"Mail navigation\"\n        className=\"flex max-w-[calc(100vw-1.5rem)] items-center gap-2 rounded-full border border-black/[0.035] bg-white/35 p-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.98)] dark:border-white/[0.055] dark:bg-white/[0.025] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.16)]\"\n      >\n        {tabs.map((tab) => {\n          const Icon = tab.icon\n          const isActive = activeTab === tab.label\n\n          return (\n            <motion.button\n              key={tab.label}\n              layout\n              type=\"button\"\n              role=\"tab\"\n              aria-selected={isActive}\n              aria-label={tab.label}\n              onClick={() => setActiveTab(tab.label)}\n              whileHover={isActive ? undefined : { scale: 1.045 }}\n              whileTap={{ scale: 0.94 }}\n              transition={SPRING}\n              className={`relative flex h-10 shrink-0 cursor-pointer items-center justify-start overflow-hidden rounded-full pl-2.5 outline-none focus-visible:ring-2 focus-visible:ring-black/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#E3E3E8] dark:focus-visible:ring-white/80 dark:focus-visible:ring-offset-[#0E0E0F] ${\n                isActive\n                  ? 'gap-2 bg-[#FCFCFD] pr-4 shadow-[0_7px_18px_rgba(32,32,36,0.14),0_1px_2px_rgba(32,32,36,0.08),inset_0_2px_0_rgba(255,255,255,0.98)] dark:bg-[#29292C] dark:shadow-[0_7px_18px_rgba(0,0,0,0.34),inset_0_1px_0_rgba(255,255,255,0.06),inset_0_2px_0_rgba(255,255,255,0.18)]'\n                  : 'w-10 bg-[#F8F8FA] shadow-[0_3px_9px_rgba(32,32,36,0.09),0_1px_1px_rgba(32,32,36,0.06),inset_0_2px_0_rgba(255,255,255,0.92)] dark:bg-[#202023] dark:shadow-[0_3px_9px_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.035),inset_0_2px_0_rgba(255,255,255,0.15)]'\n              }`}\n            >\n              <motion.span\n                animate={{ scale: isActive ? 1.03 : 1, opacity: isActive ? 1 : 0.78 }}\n                transition={SPRING}\n                className=\"flex shrink-0 items-center justify-center text-[#161618] dark:text-[#F3F3F4]\"\n              >\n                <Icon size=\"1.18em\" weight=\"regular\" aria-hidden=\"true\" />\n              </motion.span>\n\n              <AnimatePresence initial={false}>\n                {isActive && (\n                  <motion.span\n                    layout\n                    initial={{ opacity: 0, x: -7 }}\n                    animate={{ opacity: 1, x: 0 }}\n                    exit={{ opacity: 0, x: -7 }}\n                    transition={SPRING}\n                    className=\"whitespace-nowrap text-sm font-semibold tracking-[0.01em] text-[#161618] dark:text-[#F3F3F4]\"\n                  >\n                    {tab.label}\n                  </motion.span>\n                )}\n              </AnimatePresence>\n            </motion.button>\n          )\n        })}\n      </motion.div>\n    </div>\n  )\n}\n",
+      "type": "registry:ui",
+      "target": "components/kidow/expanding-tabs.tsx"
+    }
+  ],
+  "meta": {
+    "source": "AI Canvas",
+    "sourceUrl": "https://aicanvas.me/components/expanding-tabs",
+    "author": "Alexandru Daniel Tatu",
+    "license": "MIT",
+    "retrievedAt": "2026-09-12"
+  },
+  "categories": [
+    "레이아웃·목록"
+  ],
+  "type": "registry:ui"
+}
