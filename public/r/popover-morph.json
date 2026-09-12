@@ -37,7 +37,7 @@
   ],
   "meta": {
     "source": "beui",
-    "sourceUrl": "https://beui.dev/components/popover-morph",
+    "sourceUrl": "https://beui.dev/components/motion/popover",
     "author": "starc007",
     "license": "MIT",
     "retrievedAt": "2026-08-30"

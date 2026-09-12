@@ -37,7 +37,7 @@
   ],
   "meta": {
     "source": "beui",
-    "sourceUrl": "https://beui.dev/components/pull-to-refresh",
+    "sourceUrl": "https://beui.dev/components/motion/pull-to-refresh",
     "author": "starc007",
     "license": "MIT",
     "retrievedAt": "2026-08-30"

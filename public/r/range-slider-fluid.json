@@ -43,7 +43,7 @@
   ],
   "meta": {
     "source": "beui",
-    "sourceUrl": "https://beui.dev/components/range-slider-fluid",
+    "sourceUrl": "https://beui.dev/components/motion/range-slider",
     "author": "starc007",
     "license": "MIT",
     "retrievedAt": "2026-08-30"

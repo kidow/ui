@@ -55,7 +55,7 @@
   ],
   "meta": {
     "source": "beui",
-    "sourceUrl": "https://beui.dev/components/preview-rail",
+    "sourceUrl": "https://beui.dev/components/motion/preview-rail",
     "author": "starc007",
     "license": "MIT",
     "retrievedAt": "2026-08-30"

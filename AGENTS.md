@@ -10,12 +10,12 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 # 이 저장소는 shadcn 레지스트리다
 
-컴포넌트 1,554개를 38곳에서 모아 `@kidow` 네임스페이스로 배포한다.
+컴포넌트 1,562개를 39곳에서 모아 `@kidow` 네임스페이스로 배포한다.
 소스는 `registry/kidow/`, 목록은 `registry.json`, 배포는 https://ui.dongwook.kim 다.
 
 ## 새 컴포넌트를 만들기 전에 먼저 검색한다
 
-이미 있는 것을 다시 만들지 않는다. 1,554개 중에 있을 확률이 높다.
+이미 있는 것을 다시 만들지 않는다. 1,562개 중에 있을 확률이 높다.
 
 ```bash
 npx shadcn@latest search @kidow -q "marquee"

@@ -31,7 +31,7 @@
   ],
   "meta": {
     "source": "beui",
-    "sourceUrl": "https://beui.dev/components/shared-layout-bg",
+    "sourceUrl": "https://beui.dev/components/motion/shared-layout-bg",
     "author": "starc007",
     "license": "MIT",
     "retrievedAt": "2026-08-30"

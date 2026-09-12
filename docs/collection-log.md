@@ -10,7 +10,7 @@
 | 분류 | 14 |
 | 데모 | 1,509 (나머지 53개는 단독 렌더 불가한 부품) |
 | 제외 기록 | 31 |
-| 커밋 | 62 |
+| 커밋 | 63 |
 
 ---
 
@@ -50,7 +50,7 @@ MIT(저작권 표시 유지) 4. Apache-2.0 은 고지 의무가 있어 파일마
 | EvilCharts | 18 | MIT |
 | Trophy UI | 17 | MIT |
 | Serenity UI | 17 | MIT |
-| Voxlet UI | 12 | MIT + 저작권 표시 유지 |
+| Voxlet UI | 12 | MIT |
 | Arise UI | 10 | MIT |
 | ElevenLabs UI | 9 | MIT |
 | Rare UI | 8 | MIT |
@@ -189,6 +189,64 @@ npx shadcn@latest search @kidow -q "로딩"
 
 ---
 
+## 출처 링크 유지보수
+
+2026-09-12 에 `meta.sourceUrl` 1,562개를 전수 재확인했다. 처음 수집한 이후 두 주
+남짓 지났을 뿐인데 링크 1,399개(고유 URL 기준) 중 **664개가 죽어 있었다** — 절반에
+가깝다. 상류 사이트가 이 정도 속도로 바뀐다는 뜻이다.
+
+### 왜 이렇게 많이 죽었나
+
+병렬로 200개씩 찔러보니 도메인 전체가 404 로 보이는 경우가 많았다. 처음엔 사이트가
+망한 줄 알았는데, 브라우저로 직접 열어보면 홈페이지는 멀쩡했다 — Vercel 배포가 짧은
+시간에 몰린 요청을 봇으로 보고 캐시된 404 를 돌려준 것이었다. 그래서 검증을 세 단계로
+나눴다.
+
+1. 동시 20개로 전체를 훑어 의심 목록을 만든다
+2. 도메인별로 하나씩, 요청 사이 0.5~1초를 두고 다시 찔러본다 (버스트가 원인이면 여기서
+   사라진다)
+3. 그래도 죽어 있으면 브라우저로 직접 열어 실제 사이트 개편인지 확인한다
+
+이 과정에서 `loading-ui.com` 41개 전부가 가짜 경보였다 — 병렬 요청이 원인이었지,
+실제로는 `/components/` 가 아니라 `/docs/components/` 로 옮겨간 것뿐이었다(진짜 원인은
+따로 있었지만 처음엔 버스트 탓으로 오인할 뻔했다).
+
+### 진짜로 죽은 것들 — 사이트 개편
+
+거의 다 같은 패턴이다: 상류가 문서 사이트를 다시 짜면서 URL 구조를 바꿨다.
+
+| 출처 | 무엇이 바뀌었나 |
+| --- | --- |
+| wigggle-ui | 개별 컴포넌트 문서를 없애고 카테고리 통합 페이지로(`/widgets/<category>`) |
+| Spectrum UI | `/docs/components/<name>` → `/docs/<name>` 또는 `/charts/<name>`, 다수 컴포넌트 자체가 정리됨 |
+| beui | 평면 구조 → `/components/<category>/<name>`, 여러 변형이 기반 컴포넌트 페이지로 통합 |
+| Serenity UI | 사이트 전체 리디자인, 17개 중 9개만 남고 8개는 사라짐(1개는 이름도 바뀜: brand-section→brand-marquee) |
+| animata.design | bento-grid·card 카테고리의 번호·이름 변형 다수를 정리해 42개가 통째로 사라짐 |
+| ui-layouts.com | 54개 중 16개가 사라짐, www 서브도메인 자체가 죽고 베어 도메인만 살아있음 |
+| eldoraui / jolyui / spell.sh / badtz-ui / systaliko-ui | `/docs/<name>` ↔ `/docs/components/<name>` 사이를 오가거나 카테고리 세그먼트가 붙음 |
+| bklit.com | 차트 내부 부품(`chart-context`·`chart-series` 등)이 `/docs/utility/use-chart` 하나로 합쳐짐 |
+| lightswind.com | PascalCase 로 남아있던 4개가 kebab-case 로 바뀜(`CinematicScroll`→`cinematic-scroll`) |
+| Fancy Components | `/docs/*` 전체가 500 에러 — 브라우저로 직접 열어도 재현된다. 사이트 쪽 장애로 보이며 57개를 임시로 홈페이지로 돌려놨다. 복구되면 되돌릴 것 |
+
+각 사이트의 `sitemap.xml`·`llms.txt`를 받아 현재 살아있는 경로와 이름을 정규화해
+대조하는 방식으로 새 링크를 찾았다. 이름이 통째로 사라져 대응할 페이지가 없는
+항목은 홈페이지로 돌려뒀다 — 총 196개.
+
+### 가짜 경보로 확인하고 그대로 둔 것
+
+`motion-primitives.com`·`www.cult-ui.com`·`ui.elevenlabs.io` 세 곳은 curl 이 몇
+번을 다시 찔러도 계속 429 를 준다. 브라우저로 직접 열면 세 곳 다 페이지가 정상
+렌더된다 — Cloudflare 급 봇 차단이 curl 트래픽만 막는 것이지 링크가 죽은 게
+아니다. 98개를 그대로 뒀다.
+
+### 검증
+
+`git show`(원본)와 지금 상태를 대조해 원래 죽어 있던 664개가 전부 다른 URL로
+바뀌었는지, 그리고 바뀐 URL 이 실제로 200 을 주는지 두 번 확인했다. 최종
+1,271개 고유 URL 중 200 이 1,173개, 위 세 도메인의 429 가 98개, 그 외 0개.
+
+---
+
 ## 남은 것
 
 동작에는 지장이 없지만 다듬을 여지가 있는 것들.
@@ -198,3 +256,6 @@ npx shadcn@latest search @kidow -q "로딩"
 - **타입 검사 우회** — 상류가 `@ts-nocheck` 를 붙여 둔 파일이 몇 개 섞여 있다.
 - **재검토 대상** — 제외한 31곳 중 다수는 라이선스가 바뀌면 담을 수 있다. 조건을
   항목마다 적어 뒀다.
+- **Fancy Components 57개** — 상류 `/docs/*` 가 500 에러 중이라 임시로 홈페이지
+  링크로 돌려놨다. 사이트가 복구되면 원래 있던 `/docs/components/<name>` 경로로
+  되돌려야 한다.

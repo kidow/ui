@@ -38,7 +38,7 @@
   ],
   "meta": {
     "source": "beui",
-    "sourceUrl": "https://beui.dev/components/message-bubble",
+    "sourceUrl": "https://beui.dev/components/agents/message-bubble",
     "author": "starc007",
     "license": "MIT",
     "retrievedAt": "2026-08-30"

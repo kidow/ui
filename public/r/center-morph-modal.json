@@ -38,7 +38,7 @@
   ],
   "meta": {
     "source": "beui",
-    "sourceUrl": "https://beui.dev/components/center-morph-modal",
+    "sourceUrl": "https://beui.dev/components/motion/center-morph-modal",
     "author": "starc007",
     "license": "MIT",
     "retrievedAt": "2026-08-30"

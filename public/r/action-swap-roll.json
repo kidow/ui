@@ -37,7 +37,7 @@
   ],
   "meta": {
     "source": "beui",
-    "sourceUrl": "https://beui.dev/components/action-swap-roll",
+    "sourceUrl": "https://beui.dev/components/motion/action-swap",
     "author": "starc007",
     "license": "MIT",
     "retrievedAt": "2026-08-30"

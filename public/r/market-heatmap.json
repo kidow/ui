@@ -21,7 +21,7 @@
   ],
   "meta": {
     "source": "Spectrum UI",
-    "sourceUrl": "https://ui.spectrumhq.in/docs/components/market-heatmap",
+    "sourceUrl": "https://ui.spectrumhq.in/charts/heatmap",
     "author": "arihantcodes",
     "license": "Apache-2.0",
     "retrievedAt": "2026-08-30"
