@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "focus-input",
+  "title": "Focus Field",
+  "description": "포커스 시 깔끔하게 강조되는 입력창(focus input, animated focus).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/focus-input.tsx",
+      "content": "export function FocusField() {\n  return (\n    <label className=\"block w-[210px]\">\n      <span className=\"mb-[7px] block font-mono text-[10px] text-[#9298a1]\">Project name</span>\n      <input\n        className=\"w-full rounded-[5px] border border-[#363a42] bg-[#15171b] p-2 text-[11px] text-[#e8ebee] outline-none focus:border-[#f97316] focus:shadow-[0_0_0_3px_#f9731625]\"\n        placeholder=\"e.g. microkit-web\"\n      />\n    </label>\n  );\n}\n",
+      "type": "registry:ui",
+      "target": "components/kidow/focus-input.tsx"
+    }
+  ],
+  "meta": {
+    "source": "MicroKit",
+    "sourceUrl": "https://microkit.co/components/focus-input",
+    "author": "Henrique Barone",
+    "license": "MIT",
+    "retrievedAt": "2026-09-12"
+  },
+  "categories": [
+    "폼·입력"
+  ],
+  "type": "registry:ui"
+}

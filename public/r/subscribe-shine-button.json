@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "subscribe-shine-button",
+  "title": "Subscribe Shine Button",
+  "description": "가장자리를 도는 하이라이트가 있는 어두운 구독 알약 버튼(subscribe shine button).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/subscribe-shine-button.tsx",
+      "content": "export function SubscribeShineButton() {\n  return (\n    <button className=\"group relative flex h-[60px] w-[200px] items-center justify-center overflow-hidden rounded-full border-0 bg-transparent p-0 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-[#f97316]\">\n      <span className=\"h-[250px] w-[230px] shrink-0 bg-[linear-gradient(121deg,#1b1b1b_38%,#f0f0f0_50%,#1b1b1b_61%)]\" />\n      <span className=\"absolute inset-px flex items-center justify-center rounded-full bg-[#0b0b11] text-[13px] font-bold leading-none text-[#f0f0f0] uppercase\">\n        Subscribe\n      </span>\n    </button>\n  );\n}\n",
+      "type": "registry:ui",
+      "target": "components/kidow/subscribe-shine-button.tsx"
+    }
+  ],
+  "meta": {
+    "source": "MicroKit",
+    "sourceUrl": "https://microkit.co/components/subscribe-shine-button",
+    "author": "Henrique Barone",
+    "license": "MIT",
+    "retrievedAt": "2026-09-12"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:ui"
+}

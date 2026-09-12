@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "glow-arrow-button",
+  "title": "Glow Arrow Button",
+  "description": "은은한 글로우와 함께 화살표가 움직이는 밝은 CTA 버튼(glow arrow button).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/glow-arrow-button.tsx",
+      "content": "import { ArrowRight } from \"lucide-react\";\n\nexport function GlowArrowButton() {\n  return <button type=\"button\" className=\"group inline-flex cursor-pointer items-center gap-2 overflow-hidden rounded-full border-0 bg-[#f0f0f0] px-8 py-4 text-base font-medium text-[#111] transition-shadow duration-300 hover:shadow-[0_3px_20px_#f0f0f080] focus-visible:shadow-[0_3px_20px_#f0f0f080] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#f97316]\"><span>Get Started</span><ArrowRight aria-hidden=\"true\" size={16} strokeWidth={2.3} className=\"transition-transform duration-300 group-hover:translate-x-1 group-focus-visible:translate-x-1\" /></button>;\n}\n",
+      "type": "registry:ui",
+      "target": "components/kidow/glow-arrow-button.tsx"
+    }
+  ],
+  "meta": {
+    "source": "MicroKit",
+    "sourceUrl": "https://microkit.co/components/glow-arrow-button",
+    "author": "Henrique Barone",
+    "license": "MIT",
+    "retrievedAt": "2026-09-12"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:ui"
+}

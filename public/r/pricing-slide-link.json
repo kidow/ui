@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pricing-slide-link",
+  "title": "Pricing Slide Link",
+  "description": "화살표가 왼쪽에서 들어오며 자리 잡는 텍스트 링크(pricing slide link).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/pricing-slide-link.tsx",
+      "content": "import { ArrowRight } from \"lucide-react\";\n\nexport function PricingSlideLink() {\n  return (\n    <button className=\"group inline-flex items-center gap-2 overflow-hidden border-0 bg-transparent p-0 text-base font-medium leading-none text-[#f0f0f0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-[5px] focus-visible:outline-[#f97316]\">\n      <span className=\"flex size-[23px] -translate-x-[150%] items-center justify-center transition-transform duration-500 ease-[cubic-bezier(.16,1,.3,1)] group-hover:translate-x-0 group-focus-visible:translate-x-0\">\n        <ArrowRight size={23} strokeWidth={2.25} />\n      </span>\n      <span className=\"-translate-x-4 transition-transform duration-500 ease-[cubic-bezier(.16,1,.3,1)] group-hover:translate-x-0 group-focus-visible:translate-x-0\">\n        Pricing\n      </span>\n    </button>\n  );\n}\n",
+      "type": "registry:ui",
+      "target": "components/kidow/pricing-slide-link.tsx"
+    }
+  ],
+  "meta": {
+    "source": "MicroKit",
+    "sourceUrl": "https://microkit.co/components/pricing-slide-link",
+    "author": "Henrique Barone",
+    "license": "MIT",
+    "retrievedAt": "2026-09-12"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:ui"
+}

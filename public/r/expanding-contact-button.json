@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "expanding-contact-button",
+  "title": "Expanding Contact Button",
+  "description": "배경과 화살표 아이콘이 함께 펼쳐지는 연락 CTA 버튼(expanding contact button).",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "files": [
+    {
+      "path": "registry/kidow/expanding-contact-button.tsx",
+      "content": "import { ArrowRight } from \"lucide-react\";\n\nexport function ExpandingContactButton() {\n  return (\n    <button className=\"group relative inline-flex h-9 w-9 items-center overflow-hidden rounded-full border-0 bg-transparent p-0 text-[13px] font-medium leading-none text-[#f0f0f0] transition-[width,background-color,color] duration-[320ms] ease-[cubic-bezier(.4,0,.2,1)] hover:w-[145px] hover:bg-[#f4f4f5] hover:text-[#111] focus-visible:w-[145px] focus-visible:bg-[#f4f4f5] focus-visible:text-[#111]\">\n      <span className=\"relative z-10 grid size-9 shrink-0 place-items-center rounded-full bg-[#f97316] text-[#111]\">\n        <ArrowRight size={18} strokeWidth={2.5} />\n      </span>\n      <span className=\"absolute left-[47px] whitespace-nowrap opacity-0 -translate-x-[5px] transition-[opacity,transform] duration-[240ms] delay-[60ms] group-hover:translate-x-0 group-hover:opacity-100 group-focus-visible:translate-x-0 group-focus-visible:opacity-100\">\n        Get in touch\n      </span>\n    </button>\n  );\n}\n",
+      "type": "registry:ui",
+      "target": "components/kidow/expanding-contact-button.tsx"
+    }
+  ],
+  "meta": {
+    "source": "MicroKit",
+    "sourceUrl": "https://microkit.co/components/expanding-contact-button",
+    "author": "Henrique Barone",
+    "license": "MIT",
+    "retrievedAt": "2026-09-12"
+  },
+  "categories": [
+    "버튼"
+  ],
+  "type": "registry:ui"
+}

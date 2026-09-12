@@ -130,6 +130,7 @@ import AsciiGlitchRippleDemo from './ascii-glitch-ripple'
 import AsciiWaveDemo from './ascii-wave'
 import AttractButtonDemo from './attract-button'
 import AuroraBackgroundDemo from './aurora-background'
+import AuroraDownloadButtonDemo from './aurora-download-button'
 import AuroraFlowDemo from './aurora-flow'
 import AuroraHeroDemo from './aurora-hero'
 import AuroraShaderDemo from './aurora-shader'
@@ -167,6 +168,7 @@ import BgImageTextureDemo from './bg-image-texture'
 import BgMediaDemo from './bg-media'
 import BlindPullToggleDemo from './blind-pull-toggle'
 import BlurFadeDemo from './blur-fade'
+import BlurGlideMenuDemo from './blur-glide-menu'
 import BlurInTextDemo from './blur-in-text'
 import BlurOutUpDemo from './blur-out-up'
 import BlurRevealDemo from './blur-reveal'
@@ -274,6 +276,7 @@ import ChoiceboxDemo from './choicebox'
 import ChromaticTextRevealDemo from './chromatic-text-reveal'
 import CiBadgeDemo from './ci-badge'
 import CinematicScrollDemo from './cinematic-scroll'
+import CircleSurfaceButtonDemo from './circle-surface-button'
 import CirclingElementsDemo from './circling-elements'
 import CircuitBoardDemo from './circuit-board'
 import CircularBarsDemo from './circular-bars'
@@ -336,6 +339,9 @@ import ConfettiDemo from './confetti'
 import ConfettiButtonDemo from './confetti-button'
 import ConfirmationMessageDemo from './confirmation-message'
 import ConfirmerDemo from './confirmer'
+import ContactDetailsRevealDemo from './contact-details-reveal'
+import ContactRevealButtonDemo from './contact-reveal-button'
+import ContactUnderlineButtonDemo from './contact-underline-button'
 import ContentScanDemo from './content-scan'
 import ContextCardsDemo from './context-cards'
 import ContributionGraphDemo from './contribution-graph'
@@ -375,6 +381,8 @@ import CursorAttractorAndGravityDemo from './cursor-attractor-and-gravity'
 import CursorCardDemo from './cursor-card'
 import CursorCardsDemo from './cursor-cards'
 import CursorDrivenParticleTypographyDemo from './cursor-driven-particle-typography'
+import CursorEdgeGlowButtonDemo from './cursor-edge-glow-button'
+import CursorFollowShareButtonDemo from './cursor-follow-share-button'
 import CursorTrackerDemo from './cursor-tracker'
 import CursorTrailDemo from './cursor-trail'
 import CustomCursorDemo from './custom-cursor'
@@ -438,6 +446,7 @@ import DottedMapDemo from './dotted-map'
 import DoubleRingDemo from './double-ring'
 import DoubleUnderlineDemo from './double-underline'
 import DownloadButtonDemo from './download-button'
+import DownloadIosButtonDemo from './download-ios-button'
 import DownloadSparklineDemo from './download-sparkline'
 import DragElementsDemo from './drag-elements'
 import DragItemsDemo from './drag-items'
@@ -479,7 +488,10 @@ import ExpandableSearchBarDemo from './expandable-search-bar'
 import ExpandableSpeedDialDemo from './expandable-speed-dial'
 import ExpandedMapDemo from './expanded-map'
 import ExpandingArrowButtonDemo from './expanding-arrow-button'
+import ExpandingContactButtonDemo from './expanding-contact-button'
 import ExpandingCrossDemo from './expanding-cross'
+import ExpandingIconTabsDemo from './expanding-icon-tabs'
+import ExpandingNewsletterButtonDemo from './expanding-newsletter-button'
 import ExpandingTabsDemo from './expanding-tabs'
 import ExpenseTrackerDemo from './expense-tracker'
 import ExplodingInputDemo from './exploding-input'
@@ -538,6 +550,7 @@ import FloatDemo from './float'
 import FloatingDiamondsDemo from './floating-diamonds'
 import FloatingLabelInputDemo from './floating-label-input'
 import FloatingNavbarDemo from './floating-navbar'
+import FloatingNewsletterButtonDemo from './floating-newsletter-button'
 import FloatingPanelDemo from './floating-panel'
 import FloatingparticleFooterDemo from './floatingparticle-footer'
 import FlowButtonDemo from './flow-button'
@@ -558,6 +571,7 @@ import FluidSkeletonDemo from './fluid-skeleton'
 import FluidTabsDemo from './fluid-tabs'
 import FluidTypewriterDemo from './fluid-typewriter'
 import FocusBlurResolveDemo from './focus-blur-resolve'
+import FocusInputDemo from './focus-input'
 import FoldRevealDemo from './fold-reveal'
 import FolderComponentDemo from './folder-component'
 import FolderPreviewDemo from './folder-preview'
@@ -573,6 +587,7 @@ import GaugeChartDemo from './gauge-chart'
 import GearsDemo from './gears'
 import GenerateButtonDemo from './generate-button'
 import GetStartedButtonDemo from './get-started-button'
+import GetStartedCircleSwapDemo from './get-started-circle-swap'
 import GibberishTextDemo from './gibberish-text'
 import GithubActivityDemo from './github-activity'
 import GithubButtonDemo from './github-button'
@@ -611,6 +626,7 @@ import GlitchButtonDemo from './glitch-button'
 import GlitchButtonAicanvasDemo from './glitch-button-aicanvas'
 import GlitchTextDemo from './glitch-text'
 import GlobeDemo from './globe'
+import GlowArrowButtonDemo from './glow-arrow-button'
 import GlowBorderCardDemo from './glow-border-card'
 import GlowButtonDemo from './glow-button'
 import GlowCardDemo from './glow-card'
@@ -635,6 +651,7 @@ import GradientHeadingDemo from './gradient-heading'
 import GradientHero01Demo from './gradient-hero-01'
 import GradientSlideButtonDemo from './gradient-slide-button'
 import GradientSpinnerDemo from './gradient-spinner'
+import GradientUnderlineButtonDemo from './gradient-underline-button'
 import GradientWaveTextDemo from './gradient-wave-text'
 import GradualSpacingTextDemo from './gradual-spacing-text'
 import GrainCarouselDemo from './grain-carousel'
@@ -729,6 +746,7 @@ import InfintybandDemo from './infintyband'
 import InkDemo from './ink'
 import InlineCodeDemo from './inline-code'
 import InputModelDemo from './input-model'
+import InsetCircleButtonDemo from './inset-circle-button'
 import InsightCardsDemo from './insight-cards'
 import IntegrationPillsDemo from './integration-pills'
 import IntegrationsDemo from './integrations'
@@ -771,6 +789,7 @@ import KineticTextRevealDemo from './kinetic-text-reveal'
 import KnowledgeConvergenceDemo from './knowledge-convergence'
 import LabelCardsDemo from './label-cards'
 import LabelInputDemo from './label-input'
+import LayeredGradientButtonDemo from './layered-gradient-button'
 import LayeredStackDemo from './layered-stack'
 import LazyVideoDemo from './lazy-video'
 import LeaderboardCardDemo from './leaderboard-card'
@@ -854,6 +873,7 @@ import MagneticDockDemo from './magnetic-dock'
 import MagneticDotsDemo from './magnetic-dots'
 import MagneticDotsAicanvasDemo from './magnetic-dots-aicanvas'
 import MagneticFieldDemo from './magnetic-field'
+import MagneticFillButtonDemo from './magnetic-fill-button'
 import MagneticLogoClusterDemo from './magnetic-logo-cluster'
 import MagneticSnapRevealDemo from './magnetic-snap-reveal'
 import MagnifiedDocDemo from './magnified-doc'
@@ -935,12 +955,15 @@ import NavTabsDemo from './nav-tabs'
 import NebulaFlowDemo from './nebula-flow'
 import NeonClockDemo from './neon-clock'
 import NeonGradientCardDemo from './neon-gradient-card'
+import NeonInvertButtonDemo from './neon-invert-button'
 import NestedVaulDrawerDemo from './nested-vaul-drawer'
 import NeumorphButtonDemo from './neumorph-button'
 import NeumorphEyebrowDemo from './neumorph-eyebrow'
 import NeuralLinkDemo from './neural-link'
 import NewProjectModalDemo from './new-project-modal'
 import NewtonsCradleDemo from './newtons-cradle'
+import NextDotFillButtonDemo from './next-dot-fill-button'
+import NextRevealButtonDemo from './next-reveal-button'
 import NineDemo from './nine'
 import NoiseBgDemo from './noise-bg'
 import NoiseEffectDemo from './noise-effect'
@@ -960,6 +983,7 @@ import NumberTickerDemo from './number-ticker'
 import OffsetRingsDemo from './offset-rings'
 import OnboardingDemo from './onboarding'
 import OptionWheelDemo from './option-wheel'
+import OrangeCircleFillButtonDemo from './orange-circle-fill-button'
 import OrbitDemo from './orbit'
 import OrbitCardDemo from './orbit-card'
 import OrbitCardStackDemo from './orbit-card-stack'
@@ -971,6 +995,7 @@ import OrbitingDotDemo from './orbiting-dot'
 import OrderBookDemo from './order-book'
 import OrigamiShapeDemo from './origami-shape'
 import OtpInputDemo from './otp-input'
+import OutlineWipeButtonDemo from './outline-wipe-button'
 import PageTransitionDemo from './page-transition'
 import ParallaxDemo from './parallax'
 import ParallaxFloatingDemo from './parallax-floating'
@@ -1028,11 +1053,13 @@ import PopButtonVengeanceDemo from './pop-button-vengeance'
 import PopoverFormDemo from './popover-form'
 import PopoverMorphDemo from './popover-morph'
 import PortfolioChartDemo from './portfolio-chart'
+import PreviewBrowserButtonDemo from './preview-browser-button'
 import PreviewRailDemo from './preview-rail'
 import PriceChartDemo from './price-chart'
 import PricingDemo from './pricing'
 import Pricing01Demo from './pricing-01'
 import Pricing02Demo from './pricing-02'
+import PricingSlideLinkDemo from './pricing-slide-link'
 import PrismGradientDemo from './prism-gradient'
 import ProductCardDemo from './product-card'
 import ProductCardDeckDemo from './product-card-deck'
@@ -1055,6 +1082,8 @@ import ProgressIndicatorDemo from './progress-indicator'
 import ProgressWithValueDemo from './progress-with-value'
 import ProgressiveBlurDemo from './progressive-blur'
 import ProgressiveCarouselDemo from './progressive-carousel'
+import ProjectTextSwapButtonDemo from './project-text-swap-button'
+import ProjectsArrowButtonDemo from './projects-arrow-button'
 import PromptBarDemo from './prompt-bar'
 import PromptCardDemo from './prompt-card'
 import ProximitySidebarDemo from './proximity-sidebar'
@@ -1092,6 +1121,7 @@ import RatingDemo from './rating'
 import RatingStarsDemo from './rating-stars'
 import RaysBackgroundDemo from './rays-background'
 import ReactionBarDemo from './reaction-bar'
+import ReadMoreSwapDemo from './read-more-swap'
 import ReasoningTextDemo from './reasoning-text'
 import ReceiptDemo from './receipt'
 import RechartsAreaChartDemo from './recharts-area-chart'
@@ -1178,7 +1208,9 @@ import ScrubInputDemo from './scrub-input'
 import SearchDemo from './search'
 import SearchModalDemo from './search-modal'
 import SeasonalHoverCardsDemo from './seasonal-hover-cards'
+import SecurePurchaseButtonDemo from './secure-purchase-button'
 import SecurityAlertDemo from './security-alert'
+import SeeMoreSwapButtonDemo from './see-more-swap-button'
 import SegmentedButtonDemo from './segmented-button'
 import SelectMorphDemo from './select-morph'
 import SelectionActionsDemo from './selection-actions'
@@ -1245,10 +1277,14 @@ import SlideRightDemo from './slide-right'
 import SlideTextButtonDemo from './slide-text-button'
 import SlideToConfirmDemo from './slide-to-confirm'
 import SlideUpTextDemo from './slide-up-text'
+import SlidingArrowLabelDemo from './sliding-arrow-label'
 import SlidingBarsDemo from './sliding-bars'
 import SlidingCardsDemo from './sliding-cards'
+import SlidingContentTabsDemo from './sliding-content-tabs'
 import SlidingLogoMarqueeDemo from './sliding-logo-marquee'
 import SlidingNumberDemo from './sliding-number'
+import SlidingSendButtonDemo from './sliding-send-button'
+import SlidingUnderlineTabsDemo from './sliding-underline-tabs'
 import SlinkyTrailDemo from './slinky-trail'
 import SmokeInputDemo from './smoke-input'
 import SmokeyBackgroundDemo from './smokey-background'
@@ -1263,6 +1299,8 @@ import SmoothTabDemo from './smooth-tab'
 import SnippetDemo from './snippet'
 import SocialButtonDemo from './social-button'
 import SocialFlipButtonDemo from './social-flip-button'
+import SocialHighlightCardsDemo from './social-highlight-cards'
+import SocialIconButtonsDemo from './social-icon-buttons'
 import SocialProofAvatarsDemo from './social-proof-avatars'
 import SoftBlurInDemo from './soft-blur-in'
 import SortableListDemo from './sortable-list'
@@ -1296,6 +1334,7 @@ import SpotifyCardDemo from './spotify-card'
 import SpotlightDemo from './spotlight'
 import SpotlightCardDemo from './spotlight-card'
 import SpotlightCardsDemo from './spotlight-cards'
+import SpotlightIndicatorDemo from './spotlight-indicator'
 import SpotlightListDemo from './spotlight-list'
 import SpotlightNavbarDemo from './spotlight-navbar'
 import SpringBarsDemo from './spring-bars'
@@ -1323,6 +1362,8 @@ import StaggerTextDemo from './stagger-text'
 import StaggeredCardDemo from './staggered-card'
 import StaggeredGridDemo from './staggered-grid'
 import StaggeredLetterDemo from './staggered-letter'
+import StaggeredLetterGlowButtonDemo from './staggered-letter-glow-button'
+import StaggeredLetterTextSwapDemo from './staggered-letter-text-swap'
 import StarButtonDemo from './star-button'
 import StarRatingDemo from './star-rating'
 import StardustButtonDemo from './stardust-button'
@@ -1364,6 +1405,7 @@ import StripesBackgroundDemo from './stripes-background'
 import StudyTimerDemo from './study-timer'
 import StylishCarouselDemo from './stylish-carousel'
 import SubscribeCardDemo from './subscribe-card'
+import SubscribeShineButtonDemo from './subscribe-shine-button'
 import SunburstChartDemo from './sunburst-chart'
 import SurveyCardDemo from './survey-card'
 import SvgBandsDemo from './svg-bands'
@@ -1389,6 +1431,7 @@ import TableEditableDemo from './table-editable'
 import TagaToggleDemo from './taga-toggle'
 import TagsDemo from './tags'
 import TagsInputDemo from './tags-input'
+import TalkArrowRevealButtonDemo from './talk-arrow-reveal-button'
 import TaskCardsDemo from './task-cards'
 import TaskCheckboxDemo from './task-checkbox'
 import TaskRowsDemo from './task-rows'
@@ -1525,6 +1568,7 @@ import VerticalTilesDemo from './vertical-tiles'
 import VideoCarouselDemo from './video-carousel'
 import VideoPlayerDemo from './video-player'
 import VideoTextDemo from './video-text'
+import ViewMoreTextSwapDemo from './view-more-text-swap'
 import VoiceChatPillDemo from './voice-chat-pill'
 import VoiceMessageDemo from './voice-message'
 import VoiceTestimonialDemo from './voice-testimonial'
@@ -1562,8 +1606,10 @@ import WeatherSm09Demo from './weather-sm-09'
 import WebglLiquidDemo from './webgl-liquid'
 import WeeklyProgressDemo from './weekly-progress'
 import WeightlessFloatRevealDemo from './weightless-float-reveal'
+import WhatsNewGlowButtonDemo from './whats-new-glow-button'
 import WheelCarouselDemo from './wheel-carousel'
 import WheelPickerDemo from './wheel-picker'
+import WhiteContactOrbitButtonDemo from './white-contact-orbit-button'
 import WideCardDemo from './wide-card'
 import WidgetDemo from './widget'
 import WildMorphDemo from './wild-morph'
@@ -1579,6 +1625,7 @@ import WorkButtonDemo from './work-button'
 import WorldMapDemo from './world-map'
 import XGridDemo from './x-grid'
 import YearInDotsDemo from './year-in-dots'
+import YellowFillPreviewButtonDemo from './yellow-fill-preview-button'
 import YoutubeEmbedDemo from './youtube-embed'
 import YoutubeVideoPlayerDemo from './youtube-video-player'
 import ZAxisRevealDemo from './z-axis-reveal'
@@ -1723,6 +1770,7 @@ export const demos: Record<string, ComponentType> = {
   'ascii-wave': AsciiWaveDemo,
   'attract-button': AttractButtonDemo,
   'aurora-background': AuroraBackgroundDemo,
+  'aurora-download-button': AuroraDownloadButtonDemo,
   'aurora-flow': AuroraFlowDemo,
   'aurora-hero': AuroraHeroDemo,
   'aurora-shader': AuroraShaderDemo,
@@ -1760,6 +1808,7 @@ export const demos: Record<string, ComponentType> = {
   'bg-media': BgMediaDemo,
   'blind-pull-toggle': BlindPullToggleDemo,
   'blur-fade': BlurFadeDemo,
+  'blur-glide-menu': BlurGlideMenuDemo,
   'blur-in-text': BlurInTextDemo,
   'blur-out-up': BlurOutUpDemo,
   'blur-reveal': BlurRevealDemo,
@@ -1867,6 +1916,7 @@ export const demos: Record<string, ComponentType> = {
   'chromatic-text-reveal': ChromaticTextRevealDemo,
   'ci-badge': CiBadgeDemo,
   'cinematic-scroll': CinematicScrollDemo,
+  'circle-surface-button': CircleSurfaceButtonDemo,
   'circling-elements': CirclingElementsDemo,
   'circuit-board': CircuitBoardDemo,
   'circular-bars': CircularBarsDemo,
@@ -1929,6 +1979,9 @@ export const demos: Record<string, ComponentType> = {
   'confetti-button': ConfettiButtonDemo,
   'confirmation-message': ConfirmationMessageDemo,
   'confirmer': ConfirmerDemo,
+  'contact-details-reveal': ContactDetailsRevealDemo,
+  'contact-reveal-button': ContactRevealButtonDemo,
+  'contact-underline-button': ContactUnderlineButtonDemo,
   'content-scan': ContentScanDemo,
   'context-cards': ContextCardsDemo,
   'contribution-graph': ContributionGraphDemo,
@@ -1968,6 +2021,8 @@ export const demos: Record<string, ComponentType> = {
   'cursor-card': CursorCardDemo,
   'cursor-cards': CursorCardsDemo,
   'cursor-driven-particle-typography': CursorDrivenParticleTypographyDemo,
+  'cursor-edge-glow-button': CursorEdgeGlowButtonDemo,
+  'cursor-follow-share-button': CursorFollowShareButtonDemo,
   'cursor-tracker': CursorTrackerDemo,
   'cursor-trail': CursorTrailDemo,
   'custom-cursor': CustomCursorDemo,
@@ -2031,6 +2086,7 @@ export const demos: Record<string, ComponentType> = {
   'double-ring': DoubleRingDemo,
   'double-underline': DoubleUnderlineDemo,
   'download-button': DownloadButtonDemo,
+  'download-ios-button': DownloadIosButtonDemo,
   'download-sparkline': DownloadSparklineDemo,
   'drag-elements': DragElementsDemo,
   'drag-items': DragItemsDemo,
@@ -2072,7 +2128,10 @@ export const demos: Record<string, ComponentType> = {
   'expandable-speed-dial': ExpandableSpeedDialDemo,
   'expanded-map': ExpandedMapDemo,
   'expanding-arrow-button': ExpandingArrowButtonDemo,
+  'expanding-contact-button': ExpandingContactButtonDemo,
   'expanding-cross': ExpandingCrossDemo,
+  'expanding-icon-tabs': ExpandingIconTabsDemo,
+  'expanding-newsletter-button': ExpandingNewsletterButtonDemo,
   'expanding-tabs': ExpandingTabsDemo,
   'expense-tracker': ExpenseTrackerDemo,
   'exploding-input': ExplodingInputDemo,
@@ -2131,6 +2190,7 @@ export const demos: Record<string, ComponentType> = {
   'floating-diamonds': FloatingDiamondsDemo,
   'floating-label-input': FloatingLabelInputDemo,
   'floating-navbar': FloatingNavbarDemo,
+  'floating-newsletter-button': FloatingNewsletterButtonDemo,
   'floating-panel': FloatingPanelDemo,
   'floatingparticle-footer': FloatingparticleFooterDemo,
   'flow-button': FlowButtonDemo,
@@ -2151,6 +2211,7 @@ export const demos: Record<string, ComponentType> = {
   'fluid-tabs': FluidTabsDemo,
   'fluid-typewriter': FluidTypewriterDemo,
   'focus-blur-resolve': FocusBlurResolveDemo,
+  'focus-input': FocusInputDemo,
   'fold-reveal': FoldRevealDemo,
   'folder-component': FolderComponentDemo,
   'folder-preview': FolderPreviewDemo,
@@ -2166,6 +2227,7 @@ export const demos: Record<string, ComponentType> = {
   'gears': GearsDemo,
   'generate-button': GenerateButtonDemo,
   'get-started-button': GetStartedButtonDemo,
+  'get-started-circle-swap': GetStartedCircleSwapDemo,
   'gibberish-text': GibberishTextDemo,
   'github-activity': GithubActivityDemo,
   'github-button': GithubButtonDemo,
@@ -2204,6 +2266,7 @@ export const demos: Record<string, ComponentType> = {
   'glitch-button-aicanvas': GlitchButtonAicanvasDemo,
   'glitch-text': GlitchTextDemo,
   'globe': GlobeDemo,
+  'glow-arrow-button': GlowArrowButtonDemo,
   'glow-border-card': GlowBorderCardDemo,
   'glow-button': GlowButtonDemo,
   'glow-card': GlowCardDemo,
@@ -2228,6 +2291,7 @@ export const demos: Record<string, ComponentType> = {
   'gradient-hero-01': GradientHero01Demo,
   'gradient-slide-button': GradientSlideButtonDemo,
   'gradient-spinner': GradientSpinnerDemo,
+  'gradient-underline-button': GradientUnderlineButtonDemo,
   'gradient-wave-text': GradientWaveTextDemo,
   'gradual-spacing-text': GradualSpacingTextDemo,
   'grain-carousel': GrainCarouselDemo,
@@ -2322,6 +2386,7 @@ export const demos: Record<string, ComponentType> = {
   'ink': InkDemo,
   'inline-code': InlineCodeDemo,
   'input-model': InputModelDemo,
+  'inset-circle-button': InsetCircleButtonDemo,
   'insight-cards': InsightCardsDemo,
   'integration-pills': IntegrationPillsDemo,
   'integrations': IntegrationsDemo,
@@ -2364,6 +2429,7 @@ export const demos: Record<string, ComponentType> = {
   'knowledge-convergence': KnowledgeConvergenceDemo,
   'label-cards': LabelCardsDemo,
   'label-input': LabelInputDemo,
+  'layered-gradient-button': LayeredGradientButtonDemo,
   'layered-stack': LayeredStackDemo,
   'lazy-video': LazyVideoDemo,
   'leaderboard-card': LeaderboardCardDemo,
@@ -2447,6 +2513,7 @@ export const demos: Record<string, ComponentType> = {
   'magnetic-dots': MagneticDotsDemo,
   'magnetic-dots-aicanvas': MagneticDotsAicanvasDemo,
   'magnetic-field': MagneticFieldDemo,
+  'magnetic-fill-button': MagneticFillButtonDemo,
   'magnetic-logo-cluster': MagneticLogoClusterDemo,
   'magnetic-snap-reveal': MagneticSnapRevealDemo,
   'magnified-doc': MagnifiedDocDemo,
@@ -2528,12 +2595,15 @@ export const demos: Record<string, ComponentType> = {
   'nebula-flow': NebulaFlowDemo,
   'neon-clock': NeonClockDemo,
   'neon-gradient-card': NeonGradientCardDemo,
+  'neon-invert-button': NeonInvertButtonDemo,
   'nested-vaul-drawer': NestedVaulDrawerDemo,
   'neumorph-button': NeumorphButtonDemo,
   'neumorph-eyebrow': NeumorphEyebrowDemo,
   'neural-link': NeuralLinkDemo,
   'new-project-modal': NewProjectModalDemo,
   'newtons-cradle': NewtonsCradleDemo,
+  'next-dot-fill-button': NextDotFillButtonDemo,
+  'next-reveal-button': NextRevealButtonDemo,
   'nine': NineDemo,
   'noise-bg': NoiseBgDemo,
   'noise-effect': NoiseEffectDemo,
@@ -2553,6 +2623,7 @@ export const demos: Record<string, ComponentType> = {
   'offset-rings': OffsetRingsDemo,
   'onboarding': OnboardingDemo,
   'option-wheel': OptionWheelDemo,
+  'orange-circle-fill-button': OrangeCircleFillButtonDemo,
   'orbit': OrbitDemo,
   'orbit-card': OrbitCardDemo,
   'orbit-card-stack': OrbitCardStackDemo,
@@ -2564,6 +2635,7 @@ export const demos: Record<string, ComponentType> = {
   'order-book': OrderBookDemo,
   'origami-shape': OrigamiShapeDemo,
   'otp-input': OtpInputDemo,
+  'outline-wipe-button': OutlineWipeButtonDemo,
   'page-transition': PageTransitionDemo,
   'parallax': ParallaxDemo,
   'parallax-floating': ParallaxFloatingDemo,
@@ -2621,11 +2693,13 @@ export const demos: Record<string, ComponentType> = {
   'popover-form': PopoverFormDemo,
   'popover-morph': PopoverMorphDemo,
   'portfolio-chart': PortfolioChartDemo,
+  'preview-browser-button': PreviewBrowserButtonDemo,
   'preview-rail': PreviewRailDemo,
   'price-chart': PriceChartDemo,
   'pricing': PricingDemo,
   'pricing-01': Pricing01Demo,
   'pricing-02': Pricing02Demo,
+  'pricing-slide-link': PricingSlideLinkDemo,
   'prism-gradient': PrismGradientDemo,
   'product-card': ProductCardDemo,
   'product-card-deck': ProductCardDeckDemo,
@@ -2648,6 +2722,8 @@ export const demos: Record<string, ComponentType> = {
   'progress-with-value': ProgressWithValueDemo,
   'progressive-blur': ProgressiveBlurDemo,
   'progressive-carousel': ProgressiveCarouselDemo,
+  'project-text-swap-button': ProjectTextSwapButtonDemo,
+  'projects-arrow-button': ProjectsArrowButtonDemo,
   'prompt-bar': PromptBarDemo,
   'prompt-card': PromptCardDemo,
   'proximity-sidebar': ProximitySidebarDemo,
@@ -2685,6 +2761,7 @@ export const demos: Record<string, ComponentType> = {
   'rating-stars': RatingStarsDemo,
   'rays-background': RaysBackgroundDemo,
   'reaction-bar': ReactionBarDemo,
+  'read-more-swap': ReadMoreSwapDemo,
   'reasoning-text': ReasoningTextDemo,
   'receipt': ReceiptDemo,
   'recharts-area-chart': RechartsAreaChartDemo,
@@ -2771,7 +2848,9 @@ export const demos: Record<string, ComponentType> = {
   'search': SearchDemo,
   'search-modal': SearchModalDemo,
   'seasonal-hover-cards': SeasonalHoverCardsDemo,
+  'secure-purchase-button': SecurePurchaseButtonDemo,
   'security-alert': SecurityAlertDemo,
+  'see-more-swap-button': SeeMoreSwapButtonDemo,
   'segmented-button': SegmentedButtonDemo,
   'select-morph': SelectMorphDemo,
   'selection-actions': SelectionActionsDemo,
@@ -2838,10 +2917,14 @@ export const demos: Record<string, ComponentType> = {
   'slide-text-button': SlideTextButtonDemo,
   'slide-to-confirm': SlideToConfirmDemo,
   'slide-up-text': SlideUpTextDemo,
+  'sliding-arrow-label': SlidingArrowLabelDemo,
   'sliding-bars': SlidingBarsDemo,
   'sliding-cards': SlidingCardsDemo,
+  'sliding-content-tabs': SlidingContentTabsDemo,
   'sliding-logo-marquee': SlidingLogoMarqueeDemo,
   'sliding-number': SlidingNumberDemo,
+  'sliding-send-button': SlidingSendButtonDemo,
+  'sliding-underline-tabs': SlidingUnderlineTabsDemo,
   'slinky-trail': SlinkyTrailDemo,
   'smoke-input': SmokeInputDemo,
   'smokey-background': SmokeyBackgroundDemo,
@@ -2856,6 +2939,8 @@ export const demos: Record<string, ComponentType> = {
   'snippet': SnippetDemo,
   'social-button': SocialButtonDemo,
   'social-flip-button': SocialFlipButtonDemo,
+  'social-highlight-cards': SocialHighlightCardsDemo,
+  'social-icon-buttons': SocialIconButtonsDemo,
   'social-proof-avatars': SocialProofAvatarsDemo,
   'soft-blur-in': SoftBlurInDemo,
   'sortable-list': SortableListDemo,
@@ -2889,6 +2974,7 @@ export const demos: Record<string, ComponentType> = {
   'spotlight': SpotlightDemo,
   'spotlight-card': SpotlightCardDemo,
   'spotlight-cards': SpotlightCardsDemo,
+  'spotlight-indicator': SpotlightIndicatorDemo,
   'spotlight-list': SpotlightListDemo,
   'spotlight-navbar': SpotlightNavbarDemo,
   'spring-bars': SpringBarsDemo,
@@ -2916,6 +3002,8 @@ export const demos: Record<string, ComponentType> = {
   'staggered-card': StaggeredCardDemo,
   'staggered-grid': StaggeredGridDemo,
   'staggered-letter': StaggeredLetterDemo,
+  'staggered-letter-glow-button': StaggeredLetterGlowButtonDemo,
+  'staggered-letter-text-swap': StaggeredLetterTextSwapDemo,
   'star-button': StarButtonDemo,
   'star-rating': StarRatingDemo,
   'stardust-button': StardustButtonDemo,
@@ -2957,6 +3045,7 @@ export const demos: Record<string, ComponentType> = {
   'study-timer': StudyTimerDemo,
   'stylish-carousel': StylishCarouselDemo,
   'subscribe-card': SubscribeCardDemo,
+  'subscribe-shine-button': SubscribeShineButtonDemo,
   'sunburst-chart': SunburstChartDemo,
   'survey-card': SurveyCardDemo,
   'svg-bands': SvgBandsDemo,
@@ -2982,6 +3071,7 @@ export const demos: Record<string, ComponentType> = {
   'taga-toggle': TagaToggleDemo,
   'tags': TagsDemo,
   'tags-input': TagsInputDemo,
+  'talk-arrow-reveal-button': TalkArrowRevealButtonDemo,
   'task-cards': TaskCardsDemo,
   'task-checkbox': TaskCheckboxDemo,
   'task-rows': TaskRowsDemo,
@@ -3118,6 +3208,7 @@ export const demos: Record<string, ComponentType> = {
   'video-carousel': VideoCarouselDemo,
   'video-player': VideoPlayerDemo,
   'video-text': VideoTextDemo,
+  'view-more-text-swap': ViewMoreTextSwapDemo,
   'voice-chat-pill': VoiceChatPillDemo,
   'voice-message': VoiceMessageDemo,
   'voice-testimonial': VoiceTestimonialDemo,
@@ -3155,8 +3246,10 @@ export const demos: Record<string, ComponentType> = {
   'webgl-liquid': WebglLiquidDemo,
   'weekly-progress': WeeklyProgressDemo,
   'weightless-float-reveal': WeightlessFloatRevealDemo,
+  'whats-new-glow-button': WhatsNewGlowButtonDemo,
   'wheel-carousel': WheelCarouselDemo,
   'wheel-picker': WheelPickerDemo,
+  'white-contact-orbit-button': WhiteContactOrbitButtonDemo,
   'wide-card': WideCardDemo,
   'widget': WidgetDemo,
   'wild-morph': WildMorphDemo,
@@ -3172,6 +3265,7 @@ export const demos: Record<string, ComponentType> = {
   'world-map': WorldMapDemo,
   'x-grid': XGridDemo,
   'year-in-dots': YearInDotsDemo,
+  'yellow-fill-preview-button': YellowFillPreviewButtonDemo,
   'youtube-embed': YoutubeEmbedDemo,
   'youtube-video-player': YoutubeVideoPlayerDemo,
   'z-axis-reveal': ZAxisRevealDemo,

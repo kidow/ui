@@ -46313,6 +46313,1228 @@
         "license": "MIT",
         "retrievedAt": "2026-09-12"
       }
+    },
+    {
+      "name": "aurora-download-button",
+      "type": "registry:ui",
+      "title": "Aurora Download Button",
+      "description": "테두리가 빛나고 그림자가 번지는 파란 다운로드 버튼(aurora button, download).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/aurora-download-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/aurora-download-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/aurora-download-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "blur-glide-menu",
+      "type": "registry:ui",
+      "title": "Blur Glide Menu",
+      "description": "단계가 블러됐다 옆으로 미끄러지며 높이가 바뀌는 중첩 메뉴(blur glide menu, nested menu).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/blur-glide-menu.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/blur-glide-menu.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/blur-glide-menu",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "circle-surface-button",
+      "type": "registry:ui",
+      "title": "Circle Surface Button",
+      "description": "어두운 표면이 주황색으로 차오르는 원형 CTA 버튼(circle surface button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/circle-surface-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/circle-surface-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/circle-surface-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "contact-details-reveal",
+      "type": "registry:ui",
+      "title": "Contact Details Reveal",
+      "description": "위로 밀리며 연락처가 드러나는 흰색 라벨(contact reveal, details card).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/contact-details-reveal.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/contact-details-reveal.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/contact-details-reveal",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "contact-reveal-button",
+      "type": "registry:ui",
+      "title": "Contact Reveal Button",
+      "description": "호버하면 원형 화살표가 연락처 알약으로 바뀌는 버튼(contact reveal button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/contact-reveal-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/contact-reveal-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/contact-reveal-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "contact-underline-button",
+      "type": "registry:ui",
+      "title": "Contact Underline Button",
+      "description": "아이콘이 주황으로 바뀌고 밑줄이 그려지는 연락 버튼(contact underline button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/contact-underline-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/contact-underline-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/contact-underline-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "cursor-edge-glow-button",
+      "type": "registry:ui",
+      "title": "Cursor Edge Glow Button",
+      "description": "커서를 스프링처럼 따라가는 알약 빛과 좌우 가장자리 글로우(cursor edge glow button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/cursor-edge-glow-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/cursor-edge-glow-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/cursor-edge-glow-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "cursor-follow-share-button",
+      "type": "registry:ui",
+      "title": "Cursor Follow Share Button",
+      "description": "커서를 따라오는 발광 구슬이 있는 어두운 공유 알약 버튼(cursor follow share button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/cursor-follow-share-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/cursor-follow-share-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/cursor-follow-share-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "download-ios-button",
+      "type": "registry:ui",
+      "title": "Download for iOS Button",
+      "description": "너비 변화 없이 화살표만 드러나는 iOS 다운로드 버튼(download ios button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/download-ios-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/download-ios-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/download-ios-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "expanding-contact-button",
+      "type": "registry:ui",
+      "title": "Expanding Contact Button",
+      "description": "배경과 화살표 아이콘이 함께 펼쳐지는 연락 CTA 버튼(expanding contact button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/expanding-contact-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/expanding-contact-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/expanding-contact-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "expanding-icon-tabs",
+      "type": "registry:ui",
+      "title": "Expanding Icon Tabs",
+      "description": "선택한 탭이 넓어지며 라벨을 보여주고 나머지가 밀리는 아이콘 탭(expanding icon tabs).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/expanding-icon-tabs.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/expanding-icon-tabs.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/expanding-icon-tabs",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "expanding-newsletter-button",
+      "type": "registry:ui",
+      "title": "Expanding Newsletter Button",
+      "description": "커지는 원과 왼쪽에서 들어오는 화살표가 있는 뉴스레터 알약 버튼(expanding newsletter button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/expanding-newsletter-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/expanding-newsletter-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/expanding-newsletter-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "floating-newsletter-button",
+      "type": "registry:ui",
+      "title": "Floating Newsletter Button",
+      "description": "호버하면 커지며 떠오르는 흰색 글로우 뉴스레터 버튼(floating newsletter button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/floating-newsletter-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/floating-newsletter-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/floating-newsletter-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "focus-input",
+      "type": "registry:ui",
+      "title": "Focus Field",
+      "description": "포커스 시 깔끔하게 강조되는 입력창(focus input, animated focus).",
+      "categories": [
+        "폼·입력"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/focus-input.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/focus-input.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/focus-input",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "get-started-circle-swap",
+      "type": "registry:ui",
+      "title": "Get Started Circle Swap",
+      "description": "주황 원이 빠지며 방향 화살표가 들어오는 시작하기 버튼(get started circle swap).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/get-started-circle-swap.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/get-started-circle-swap.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/get-started-circle-swap",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "glow-arrow-button",
+      "type": "registry:ui",
+      "title": "Glow Arrow Button",
+      "description": "은은한 글로우와 함께 화살표가 움직이는 밝은 CTA 버튼(glow arrow button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/glow-arrow-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/glow-arrow-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/glow-arrow-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "gradient-underline-button",
+      "type": "registry:ui",
+      "title": "Gradient Underline Button",
+      "description": "글자가 커지며 따뜻한 그라디언트 밑줄이 자라는 라벨(gradient underline button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/gradient-underline-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/gradient-underline-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/gradient-underline-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "inset-circle-button",
+      "type": "registry:ui",
+      "title": "Inset Circle Button",
+      "description": "안쪽 표면이 접히며 어두운 바탕이 드러나는 원형 프로젝트 버튼(inset circle button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/inset-circle-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/inset-circle-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/inset-circle-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "layered-gradient-button",
+      "type": "registry:ui",
+      "title": "Layered Gradient Button",
+      "description": "그라디언트 글자와 겹친 표면이 은은히 움직이는 입체 알약 버튼(layered gradient button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/layered-gradient-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/layered-gradient-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/layered-gradient-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "magnetic-fill-button",
+      "type": "registry:ui",
+      "title": "Magnetic Fill Button",
+      "description": "아래에서 위로 배경이 차오르는 자석형 알약 버튼(magnetic fill button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/magnetic-fill-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/magnetic-fill-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/magnetic-fill-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "neon-invert-button",
+      "type": "registry:ui",
+      "title": "Neon Invert Button",
+      "description": "호버하면 어둡게 반전되며 은은히 빛나는 주황 CTA 버튼(neon invert button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/neon-invert-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/neon-invert-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/neon-invert-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "next-dot-fill-button",
+      "type": "registry:ui",
+      "title": "Next Dot Fill Button",
+      "description": "앞쪽 점이 채워지며 라벨이 화살표로 바뀌는 테두리 알약 버튼(next dot fill button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/next-dot-fill-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/next-dot-fill-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/next-dot-fill-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "next-reveal-button",
+      "type": "registry:ui",
+      "title": "Next Reveal Button",
+      "description": "화살표가 펼쳐지며 밝은 Next 버튼으로 바뀌는 컨트롤(next reveal button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/next-reveal-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/next-reveal-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/next-reveal-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "orange-circle-fill-button",
+      "type": "registry:ui",
+      "title": "Orange Circle Fill Button",
+      "description": "커지는 원이 채워지는 주황 테두리 알약 버튼(orange circle fill button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/orange-circle-fill-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/orange-circle-fill-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/orange-circle-fill-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "outline-wipe-button",
+      "type": "registry:ui",
+      "title": "Outline Wipe Button",
+      "description": "빈 윤곽 글자가 좌우로 쓸리는 막대 뒤에서 주황으로 채워지는 버튼(outline wipe button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/outline-wipe-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/outline-wipe-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/outline-wipe-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "preview-browser-button",
+      "type": "registry:ui",
+      "title": "Preview in Browser Button",
+      "description": "대각선 화살표가 미끄러져 지나가는 테두리 알약 버튼(preview browser button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/preview-browser-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/preview-browser-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/preview-browser-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "pricing-slide-link",
+      "type": "registry:ui",
+      "title": "Pricing Slide Link",
+      "description": "화살표가 왼쪽에서 들어오며 자리 잡는 텍스트 링크(pricing slide link).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/pricing-slide-link.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/pricing-slide-link.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/pricing-slide-link",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "project-text-swap-button",
+      "type": "registry:ui",
+      "title": "Project Text Swap Button",
+      "description": "호버하면 겹쳐진 라벨이 세로로 바뀌는 테두리 알약 버튼(project text swap button).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/project-text-swap-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/project-text-swap-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/project-text-swap-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "projects-arrow-button",
+      "type": "registry:ui",
+      "title": "Projects Arrow Button",
+      "description": "원형 화살표가 자기 자신을 통과해 미끄러지는 Projects 버튼(projects arrow button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/projects-arrow-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/projects-arrow-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/projects-arrow-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "read-more-swap",
+      "type": "registry:ui",
+      "title": "Read More Swap",
+      "description": "화살표가 오른쪽에서 주황 왼쪽 화살표로 바뀌는 텍스트 링크(read more swap).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/read-more-swap.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/read-more-swap.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/read-more-swap",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "secure-purchase-button",
+      "type": "registry:ui",
+      "title": "Secure Purchase Button",
+      "description": "픽셀 파동 로더가 결제 완료 후 방패 아이콘으로 바뀌었다 초기화되는 구매 버튼(secure purchase button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/secure-purchase-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/secure-purchase-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/secure-purchase-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "see-more-swap-button",
+      "type": "registry:ui",
+      "title": "See More Swap Button",
+      "description": "화살표 원이 반대편으로 옮겨가며 색이 바뀌는 알약 버튼(see more swap button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/see-more-swap-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/see-more-swap-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/see-more-swap-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "sliding-arrow-label",
+      "type": "registry:ui",
+      "title": "Sliding Arrow Label",
+      "description": "밝은 표면과 함께 화살표가 옆에서 미끄러져 들어오는 텍스트 라벨(sliding arrow label).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sliding-arrow-label.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/sliding-arrow-label.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/sliding-arrow-label",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "sliding-content-tabs",
+      "type": "registry:ui",
+      "title": "Sliding Content Tabs",
+      "description": "활성 표면이 미끄러지고 내용이 전환되는 탭 스위처(sliding content tabs).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sliding-content-tabs.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/sliding-content-tabs.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/sliding-content-tabs",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "sliding-send-button",
+      "type": "registry:ui",
+      "title": "Sliding Send Button",
+      "description": "라벨이 오른쪽으로 밀리고 주황 전송 아이콘이 왼쪽에서 들어오는 공유 버튼(sliding send button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sliding-send-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/sliding-send-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/sliding-send-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "sliding-underline-tabs",
+      "type": "registry:ui",
+      "title": "Sliding Underline Tabs",
+      "description": "주황 밑줄이 라벨 사이를 미끄러지는 탭 스위처(sliding underline tabs).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/sliding-underline-tabs.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/sliding-underline-tabs.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/sliding-underline-tabs",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "social-highlight-cards",
+      "type": "registry:ui",
+      "title": "Social Highlight Cards",
+      "description": "위쪽 레일이 빛나고 브랜드 색으로 물드는 소셜 카드(social highlight cards).",
+      "categories": [
+        "카드·테두리"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/social-highlight-cards.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/social-highlight-cards.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/social-highlight-cards",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "social-icon-buttons",
+      "type": "registry:ui",
+      "title": "Social Icon Buttons",
+      "description": "호버하면 아이콘이 브랜드 색 화살표로 바뀌는 원형 소셜 링크(social icon buttons).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/social-icon-buttons.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/social-icon-buttons.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/social-icon-buttons",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "spotlight-indicator",
+      "type": "registry:ui",
+      "title": "Spotlight Indicator",
+      "description": "선택한 항목으로 미끄러지는 빛나는 레일 인디케이터(spotlight indicator, vertical nav).",
+      "categories": [
+        "레이아웃·목록"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/spotlight-indicator.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/spotlight-indicator.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/spotlight-indicator",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "staggered-letter-glow-button",
+      "type": "registry:ui",
+      "title": "Staggered Letter Glow Button",
+      "description": "안쪽 주황 글로우와 함께 글자가 한 자씩 순서대로 올라가며 바뀌는 버튼(staggered letter glow button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/staggered-letter-glow-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/staggered-letter-glow-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/staggered-letter-glow-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "staggered-letter-text-swap",
+      "type": "registry:ui",
+      "title": "Staggered Letter Text Swap",
+      "description": "표면 없이 글자가 한 자씩 순서대로 위로 바뀌는 텍스트 인터랙션(staggered letter text swap).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/staggered-letter-text-swap.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/staggered-letter-text-swap.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/staggered-letter-text-swap",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "subscribe-shine-button",
+      "type": "registry:ui",
+      "title": "Subscribe Shine Button",
+      "description": "가장자리를 도는 하이라이트가 있는 어두운 구독 알약 버튼(subscribe shine button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/subscribe-shine-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/subscribe-shine-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/subscribe-shine-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "talk-arrow-reveal-button",
+      "type": "registry:ui",
+      "title": "Talk Arrow Reveal Button",
+      "description": "주황으로 채워지며 긴 화살표가 드러나는 문의하기 알약 버튼(talk arrow reveal button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/talk-arrow-reveal-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/talk-arrow-reveal-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/talk-arrow-reveal-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "view-more-text-swap",
+      "type": "registry:ui",
+      "title": "View More Text Swap",
+      "description": "호버하면 세로로 바뀌는 테두리 없는 View More 라벨(view more text swap).",
+      "categories": [
+        "텍스트 효과"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/view-more-text-swap.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/view-more-text-swap.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/view-more-text-swap",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "whats-new-glow-button",
+      "type": "registry:ui",
+      "title": "What's New Glow Button",
+      "description": "커서를 따라 주황·파랑 글로우가 움직이는 어두운 둥근 버튼(whats new glow button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/whats-new-glow-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/whats-new-glow-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/whats-new-glow-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "white-contact-orbit-button",
+      "type": "registry:ui",
+      "title": "White Contact Orbit Button",
+      "description": "화살표가 검은 원형 컨트롤로 자리 잡는 흰색 연락 알약 버튼(white contact orbit button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/white-contact-orbit-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/white-contact-orbit-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/white-contact-orbit-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
+    },
+    {
+      "name": "yellow-fill-preview-button",
+      "type": "registry:ui",
+      "title": "Yellow Fill Preview Button",
+      "description": "왼쪽부터 노란색으로 채워지는 미리보기 테두리 버튼(yellow fill preview button).",
+      "categories": [
+        "버튼"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/kidow/yellow-fill-preview-button.tsx",
+          "type": "registry:ui",
+          "target": "components/kidow/yellow-fill-preview-button.tsx"
+        }
+      ],
+      "meta": {
+        "source": "MicroKit",
+        "sourceUrl": "https://microkit.co/components/yellow-fill-preview-button",
+        "author": "Henrique Barone",
+        "license": "MIT",
+        "retrievedAt": "2026-09-12"
+      }
     }
   ]
 }
