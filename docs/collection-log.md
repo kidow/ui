@@ -9,7 +9,7 @@
 | 출처 | 39 |
 | 분류 | 14 |
 | 데모 | 1,509 (나머지 53개는 단독 렌더 불가한 부품) |
-| 제외 기록 | 31 |
+| 제외 기록 | 32 |
 | 커밋 | 63 |
 
 ---
@@ -66,16 +66,17 @@ MIT(저작권 표시 유지) 4. Apache-2.0 은 고지 의무가 있어 파일마
 
 ## 담지 않은 것
 
-31곳을 사유와 재검토 조건까지 [`lib/related-registries.ts`](../lib/related-registries.ts) 에
+32곳을 사유와 재검토 조건까지 [`lib/related-registries.ts`](../lib/related-registries.ts) 에
 남기고 홈의 "여기에 없는 것" 섹션에 표시한다. 별 개수와 품질은 판단 근거가 아니었다 —
 React Bits 는 46,000개가 넘는 별을 받았지만 라이선스가 막았다.
 
-### 라이선스가 재배포를 금지 (7)
+### 라이선스가 재배포를 금지 (8)
 
 MIT 라도 Commons Clause 가 붙어 "컴포넌트를 모아 다시 배포"하는 것을 금지하거나,
 약관이 권리를 유보한다.
 
-React Bits · Canvas UI · Sora Labs UI · Aceternity UI · ScrollX UI · ForgeUI · Skiper UI
+React Bits · Canvas UI · Sora Labs UI · Aceternity UI · ScrollX UI · ForgeUI · Skiper UI ·
+Spy UI
 
 ### 라이선스를 확인할 수 없음 (5)
 

@@ -149,6 +149,15 @@ export const RELATED_REGISTRIES: RelatedRegistry[] = [
     revisitWhen: '원저자가 재배포를 허용하는 라이선스로 바꾸거나 개별 허락을 주면',
   },
   {
+    name: 'Spy UI',
+    url: 'https://spyui.online/components',
+    summary:
+      'shadcn 호환 컴포넌트 600여 종(무료 200여 종 + Pro 600여 종 전체). 3D·AI 인터페이스·차트 계열이 두텁다.',
+    reason:
+      '오픈소스 라이선스가 없다. LICENSE 파일도 공개 저장소도 없고, GitHub 링크조차 사이트 어디에도 없다. 무료·Pro($99)·Lifetime($249) 로 나눠 파는 구독형 상품이고 "Commercial license" 문구는 구매자가 자기 프로젝트에 쓸 권리를 말하는 것이지, 모아서 다시 배포할 권리가 아니다.',
+    revisitWhen: '오픈소스 저장소와 라이선스를 공개하면',
+  },
+  {
     name: 'React Bits',
     url: 'https://www.reactbits.dev',
     summary:

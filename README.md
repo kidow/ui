@@ -98,7 +98,7 @@ npx shadcn@latest search @kidow -q "단계구분도"  # choropleth-chart
   공존하게 됩니다.
 - **브라우저에 렌더되지 않는 것** — PDF·이메일·터미널 전용 컴포넌트.
 
-검토했지만 담지 않은 31곳은 사유와 재검토 조건을 [lib/related-registries.ts](lib/related-registries.ts)
+검토했지만 담지 않은 32곳은 사유와 재검토 조건을 [lib/related-registries.ts](lib/related-registries.ts)
 에 남기고 홈의 "여기에 없는 것" 섹션에 표시합니다.
 
 ## 수집 기록
