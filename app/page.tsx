@@ -1,23 +1,43 @@
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+import { ComponentCard } from '@/components/component-card'
 
 import { HomeSearch } from '@/components/home-search'
 import { McpSetupSection } from '@/components/mcp-setup-section'
 import { RelatedRegistriesSection } from '@/components/related-registries-section'
 import { ShadcnBaseSection } from '@/components/shadcn-base-section'
 import { SourcesSection } from '@/components/sources-section'
-import { categorySlug, groupByCategory, items } from '@/lib/registry'
+import { categorySlug, getItem, groupByCategory, items } from '@/lib/registry'
 
 export default function Home() {
-  // 홈에서는 데모를 렌더하지 않는다. 1,500개를 한 페이지에 그리면 HTML 이 8MB 를 넘는다.
+  // 스크롤이나 사용자 입력 없이도 보이는 데모 6개로 홈의 렌더 비용을 제한한다.
   const groups = groupByCategory().sort(([, a], [, b]) => b.length - a.length)
   const sources = new Set(items.map((item) => item.meta.source)).size
+  const previews = ['animated-beam', 'globe', 'animated-list', 'marquee', 'border-beam', 'animated-gradient-text']
+    .flatMap((name) => {
+      const item = getItem(name)
+      return item ? [item] : []
+    })
 
   return (
     // 사람이 링크를 받고 들어오는 곳이다. 찾는 수단(검색·분류)이 먼저 오고
     // 에이전트 설정(MCP)은 그 아래에 둔다.
-    <div className="flex flex-col gap-12">
+    <div className="flex flex-col gap-10">
       <HomeSearch total={items.length} sources={sources} />
+
+      {previews.length > 0 && (
+        <section aria-labelledby="preview-heading" className="flex flex-col gap-5">
+          <div className="catalog-section-heading">
+            <div className="flex items-center gap-2.5">
+              <h2 id="preview-heading" className="text-sm font-semibold">컴포넌트 둘러보기</h2>
+              <span className="catalog-count">{items.length.toLocaleString()}</span>
+            </div>
+            <Link href="#categories" className="catalog-text-link">카테고리로 찾기 <ArrowRight size={14} /></Link>
+          </div>
+          <div className="catalog-grid">{previews.map((item) => <ComponentCard key={item.name} item={item} />)}</div>
+          <p className="text-muted-foreground text-xs">일부 컴포넌트의 미리보기입니다. 카테고리를 선택하면 전체 목록을 볼 수 있습니다.</p>
+        </section>
+      )}
 
       {items.length === 0 ? (
         <div className="flex min-h-60 flex-col items-center justify-center gap-3 rounded-xl border border-dashed text-center">
@@ -28,7 +48,7 @@ export default function Home() {
           </p>
         </div>
       ) : (
-        <section className="flex flex-col gap-4">
+        <section id="categories" className="flex scroll-mt-8 flex-col gap-4">
           <div className="flex items-baseline gap-2">
             <h2 className="font-heading text-xl font-semibold">카테고리</h2>
             <span className="text-muted-foreground text-sm">
@@ -40,7 +60,7 @@ export default function Home() {
               <Link
                 key={category}
                 href={`/category/${categorySlug(category)}`}
-                className="hover:border-foreground/20 group flex items-center justify-between rounded-xl border px-5 py-4 transition-colors"
+                className="catalog-category-card group flex items-center justify-between rounded-lg border px-4 py-3 transition-colors"
               >
                 <div className="flex flex-col gap-0.5">
                   <span className="font-medium">{category}</span>
@@ -53,7 +73,7 @@ export default function Home() {
         </section>
       )}
 
-      <SourcesSection />
+      <div id="sources" className="scroll-mt-8"><SourcesSection /></div>
       <McpSetupSection />
       <ShadcnBaseSection />
       <RelatedRegistriesSection />

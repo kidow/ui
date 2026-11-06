@@ -1,7 +1,7 @@
 'use client'
 
 import { type ReactNode, useMemo, useState } from 'react'
-import { Search, X } from 'lucide-react'
+import { LayoutGrid, Rows3, Search, X } from 'lucide-react'
 
 export interface FilterableEntry {
   name: string
@@ -29,6 +29,8 @@ export function FilterableGrid({
 }) {
   const [query, setQuery] = useState('')
   const [source, setSource] = useState('')
+  const [sort, setSort] = useState('default')
+  const [view, setView] = useState<'grid' | 'list'>('grid')
 
   const sources = useMemo(() => {
     const counts = new Map<string, number>()
@@ -40,7 +42,7 @@ export function FilterableGrid({
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase()
-    return entries.filter((entry) => {
+    const matches = entries.filter((entry) => {
       if (source && entry.source !== source) return false
       if (!q) return true
       return (
@@ -49,16 +51,18 @@ export function FilterableGrid({
         entry.description.toLowerCase().includes(q)
       )
     })
-  }, [entries, query, source])
+    return sort === 'name' ? matches.toSorted((a, b) => a.title.localeCompare(b.title, 'ko')) : matches
+  }, [entries, query, source, sort])
 
   const narrowed = Boolean(query.trim() || source)
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex flex-wrap items-center gap-2">
-        <div className="focus-within:border-foreground/30 flex h-9 min-w-0 flex-1 items-center gap-2 rounded-md border px-3 transition-colors sm:max-w-xs">
+      <div className="catalog-toolbar">
+        <div className="catalog-search-field flex h-9 min-w-40 flex-1 items-center gap-2 rounded-md border px-3 sm:max-w-xs">
           <Search className="text-muted-foreground size-4 shrink-0" />
           <input
+            aria-label="현재 목록에서 검색"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="이름·설명으로 좁히기"
@@ -70,6 +74,7 @@ export function FilterableGrid({
           // 네이티브 select 다. 39곳까지 가는 목록에 커스텀 팝오버를 얹을 이유가 없고,
           // 모바일에서는 OS 기본 피커가 더 낫다.
           <select
+            aria-label="출처 필터"
             value={source}
             onChange={(event) => setSource(event.target.value)}
             className="hover:bg-accent h-9 rounded-md border px-3 text-sm transition-colors"
@@ -97,13 +102,21 @@ export function FilterableGrid({
           </button>
         ) : null}
 
-        {narrowed ? (
-          <span className="text-muted-foreground text-sm">{filtered.length}개</span>
-        ) : null}
+        <span className="text-muted-foreground text-xs tabular-nums" aria-live="polite">{filtered.length}개</span>
+        <div className="ml-auto flex items-center gap-2">
+          <select aria-label="정렬 기준" value={sort} onChange={(event) => setSort(event.target.value)} className="catalog-sort">
+            <option value="default">기본 순서</option>
+            <option value="name">이름순</option>
+          </select>
+          <div className="catalog-view-switch" role="group" aria-label="보기 방식">
+            <button type="button" aria-label="그리드 보기" aria-pressed={view === 'grid'} onClick={() => setView('grid')}><LayoutGrid size={15} /></button>
+            <button type="button" aria-label="목록 보기" aria-pressed={view === 'list'} onClick={() => setView('list')}><Rows3 size={15} /></button>
+          </div>
+        </div>
       </div>
 
       {filtered.length ? (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="catalog-grid" data-view={view}>
           {filtered.map((entry) => (
             <div key={entry.name} className="contents">
               {entry.card}

@@ -7,7 +7,6 @@ import { Search } from 'lucide-react'
 
 import { demos } from '@/components/demos'
 import { LazyDemo } from '@/components/lazy-demo'
-import { Badge } from '@/components/ui/badge'
 import { hasGlobalEffect, isSupportItem } from '@/lib/demo-flags'
 import { sourceSlug } from '@/lib/source'
 import { SAMPLE_QUERIES, type SearchEntry, searchEntries } from '@/lib/search'
@@ -23,8 +22,8 @@ function ResultCard({ entry }: { entry: SearchEntry }) {
   return (
     // component-card.tsx 와 같은 구조다. 저기는 서버 컴포넌트라 여기서 쓸 수 없어
     // 모양만 맞춰 다시 쓴다. 한쪽을 고치면 다른 쪽도 맞춘다.
-    <article className="group hover:border-foreground/20 relative flex flex-col overflow-hidden rounded-xl border transition-colors">
-      <div className="bg-muted/40 pointer-events-none flex h-52 items-center justify-center overflow-hidden">
+    <article className="catalog-card group">
+      <div className="catalog-card-preview pointer-events-none" inert>
         {hasDemo ? (
           <LazyDemo name={entry.name} />
         ) : (
@@ -37,21 +36,19 @@ function ResultCard({ entry }: { entry: SearchEntry }) {
           </span>
         )}
       </div>
-      <div className="flex items-center gap-2 border-t px-4 py-3">
+      <div className="catalog-card-info">
         <Link
           href={`/c/${entry.name}`}
-          className="min-w-0 truncate text-sm font-medium after:absolute after:inset-0"
+          className="catalog-card-title after:absolute after:inset-0"
         >
           {entry.title}
         </Link>
-        <div className="ml-auto flex shrink-0 items-center gap-1.5">
+        <div className="catalog-card-meta">
           {/* 제목 링크가 카드 전체를 덮으므로(after:inset-0) 출처는 그 위로 올린다. */}
           <Link href={`/source/${sourceSlug(entry.source)}`} className="relative z-10">
-            <Badge variant="secondary" className="hover:bg-secondary/60 transition-colors">
-              {entry.source}
-            </Badge>
+            <span className="catalog-card-source">{entry.source}</span>
           </Link>
-          <Badge variant="outline">{entry.license}</Badge>
+          <span className="catalog-card-license">{entry.license}</span>
         </div>
       </div>
     </article>
@@ -67,12 +64,14 @@ export function SearchResults() {
   const [entries, setEntries] = useState<SearchEntry[]>([])
   const [loading, setLoading] = useState(true)
   const [shown, setShown] = useState(PAGE)
+  const [previousQuery, setPreviousQuery] = useState(query)
 
   // 뒤로 가기나 팔레트를 통한 이동으로 q 가 바뀌면 입력도 따라간다.
-  useEffect(() => {
+  if (previousQuery !== query) {
+    setPreviousQuery(query)
     setDraft(query)
     setShown(PAGE)
-  }, [query])
+  }
 
   useEffect(() => {
     let cancelled = false
@@ -108,9 +107,10 @@ export function SearchResults() {
         className="flex flex-col gap-3"
       >
         <h1 className="font-heading text-2xl font-semibold">검색</h1>
-        <div className="focus-within:border-foreground/30 flex h-12 items-center gap-3 rounded-xl border px-4 transition-colors">
+        <div className="catalog-search-field flex h-11 max-w-2xl items-center gap-3 rounded-lg border px-4 transition-colors">
           <Search className="text-muted-foreground size-4 shrink-0" />
           <input
+            aria-label="전체 컴포넌트 검색"
             autoFocus
             value={draft}
             onChange={(event) => setDraft(event.target.value)}
@@ -128,7 +128,7 @@ export function SearchResults() {
             <p className="text-muted-foreground text-sm">
               <span className="text-foreground font-medium">{query}</span> · {results.length}개
             </p>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="catalog-grid">
               {results.slice(0, shown).map((entry) => (
                 <ResultCard key={entry.name} entry={entry} />
               ))}

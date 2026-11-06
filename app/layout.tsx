@@ -5,6 +5,7 @@ import './globals.css'
 
 import { CopyCommand } from '@/components/copy-command'
 import { SearchCommand } from '@/components/search-command'
+import { CatalogNavigation } from '@/components/catalog-navigation'
 import {
   NAMESPACE,
   REGISTRY_URL,
@@ -44,15 +45,16 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
       lang="ko"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col">
-        <header className="border-b">
-          <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center gap-4 px-6 py-4">
-            <Link href="/" className="font-heading text-lg font-semibold">
-              kidow/ui
-            </Link>
-            <p className="text-muted-foreground hidden text-sm sm:block">
-              여러 UI 프레임워크를 한 곳에 · 출처 표기
-            </p>
+      <body className="catalog-app">
+        <a href="#main-content" className="catalog-skip-link">본문으로 건너뛰기</a>
+        <CatalogNavigation categories={categories} />
+        <div className="catalog-workspace">
+        <header className="catalog-header">
+          <div className="flex min-w-0 items-center gap-2 text-sm">
+            <Link href="/" className="text-muted-foreground hover:text-foreground">라이브러리</Link>
+            <span className="text-muted-foreground/50">/</span>
+            <span className="font-medium">컴포넌트</span>
+          </div>
             <div className="ml-auto flex items-center gap-2">
               <SearchCommand categories={categories} />
               <CopyCommand
@@ -60,15 +62,15 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
                 label="MCP · 레지스트리 등록"
               />
             </div>
-          </div>
         </header>
-        <main className="mx-auto w-full max-w-6xl flex-1 px-6 py-10">
+        <main id="main-content" className="catalog-main">
           {children}
         </main>
-        <footer className="text-muted-foreground border-t px-6 py-6 text-center text-sm">
+        <footer className="catalog-footer">
           모든 컴포넌트의 저작권은 각 원저자에게 있습니다. 각 상세 페이지에 출처와
           라이선스를 표기합니다.
         </footer>
+        </div>
       </body>
     </html>
   )

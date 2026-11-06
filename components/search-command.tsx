@@ -68,6 +68,7 @@ export function SearchCommand({
     <>
       <button
         type="button"
+        aria-label="컴포넌트 검색"
         onClick={() => setOpen(true)}
         className="text-muted-foreground hover:bg-accent hover:text-foreground flex h-9 items-center gap-2 rounded-md border px-3 text-sm transition-colors"
       >

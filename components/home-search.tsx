@@ -25,11 +25,11 @@ export function HomeSearch({ total, sources }: { total: number; sources: number 
   return (
     <section className="flex flex-col gap-5">
       <div className="flex flex-col gap-2">
-        <h1 className="font-heading text-3xl font-semibold tracking-tight">
-          컴포넌트 {total.toLocaleString()}개를 한 곳에서 찾습니다
+        <h1 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+          다음 아이디어를 위한 컴포넌트
         </h1>
         <p className="text-muted-foreground text-sm">
-          shadcn 호환 레지스트리 {sources}곳을 모았습니다. 출처와 라이선스를 함께 표기합니다.
+          {sources}곳에서 모은 {total.toLocaleString()}개의 컴포넌트. 미리 보고, 프로젝트에 가져가세요.
         </p>
       </div>
 
@@ -38,18 +38,17 @@ export function HomeSearch({ total, sources }: { total: number; sources: number 
           event.preventDefault()
           go(query)
         }}
-        className="focus-within:border-foreground/30 flex h-12 items-center gap-3 rounded-xl border px-4 transition-colors"
+        className="catalog-search-field flex h-11 max-w-2xl items-center gap-3 rounded-lg border px-3.5 transition-colors"
       >
         <Search className="text-muted-foreground size-4 shrink-0" />
         <input
+          aria-label="전체 컴포넌트 검색"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
           placeholder="찾는 컴포넌트를 적어 보세요 — marquee, 배경, 로딩 …"
           className="w-full min-w-0 bg-transparent text-sm outline-none"
         />
-        <kbd className="bg-muted hidden shrink-0 rounded px-1.5 py-0.5 font-mono text-[10px] sm:inline">
-          ⌘K
-        </kbd>
+        <button type="submit" className="catalog-search-submit">검색</button>
       </form>
 
       <div className="flex flex-wrap items-center gap-2">
@@ -58,7 +57,7 @@ export function HomeSearch({ total, sources }: { total: number; sources: number 
             key={sample}
             type="button"
             onClick={() => go(sample)}
-            className="text-muted-foreground hover:text-foreground hover:border-foreground/20 rounded-md border px-3 py-1.5 text-xs transition-colors"
+            className="catalog-suggestion"
           >
             {sample}
           </button>
